@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferences(scope Construct, id *string, config ComputeoptimizerRecommendationPreferencesConfig) ComputeoptimizerRecommendationPreferences
 ```
@@ -493,7 +493,7 @@ func ResetUtilizationPreference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferences_IsConstruct(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferen
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferences.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferences_IsTerraformResource(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferen
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 &computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferencesConfig {
 	Connection: interface{},
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesExternalMetricsPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 &computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferencesExternalMetricsPreference {
 	Source: *string,
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesPreferredResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 &computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferencesPreferredResource {
 	Name: *string,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 &computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferencesScope {
 	Name: *string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 &computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreference {
 	MetricName: *string,
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 &computeoptimizerrecommendationpreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParameters {
 	Headroom: *string,
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceList
 ```
@@ -1659,7 +1659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeoptimizerRecommendationPreferencesExternalMetricsPreferenceOutputReference
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesPreferredResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesPreferredResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeoptimizerRecommendationPreferencesPreferredResourceList
 ```
@@ -2108,7 +2108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesPreferredResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesPreferredResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeoptimizerRecommendationPreferencesPreferredResourceOutputReference
 ```
@@ -2455,7 +2455,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeoptimizerRecommendationPreferencesScopeList
 ```
@@ -2615,7 +2615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeoptimizerRecommendationPreferencesScopeOutputReference
 ```
@@ -2926,7 +2926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesUtilizationPreferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeoptimizerRecommendationPreferencesUtilizationPreferenceList
 ```
@@ -3086,7 +3086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersList
 ```
@@ -3246,7 +3246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeoptimizerRecommendationPreferencesUtilizationPreferenceMetricParametersOutputReference
 ```
@@ -3564,7 +3564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.computeoptimizerRecommendationPreferences.ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/computeoptimizerrecommendationpreferences"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/computeoptimizerrecommendationpreferences"
 
 computeoptimizerrecommendationpreferences.NewComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeoptimizerRecommendationPreferencesUtilizationPreferenceOutputReference
 ```

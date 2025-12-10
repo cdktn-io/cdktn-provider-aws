@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.NewDataAwsOpensearchserverlessLifecyclePolicy(scope Construct, id *string, config DataAwsOpensearchserverlessLifecyclePolicyConfig) DataAwsOpensearchserverlessLifecyclePolicy
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecycleP
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecycleP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOpensearchserverlessLifecyclePolicy.DataAwsOpensearchserverlessLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsopensearchserverlesslifecyclepolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsopensearchserverlesslifecyclepolicy"
 
 &dataawsopensearchserverlesslifecyclepolicy.DataAwsOpensearchserverlessLifecyclePolicyConfig {
 	Connection: interface{},

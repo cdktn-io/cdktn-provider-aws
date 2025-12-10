@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.NewDataAwsRdsGlobalCluster(scope Construct, id *string, config DataAwsRdsGlobalClusterConfig) DataAwsRdsGlobalCluster
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.DataAwsRdsGlobalCluster_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.DataAwsRdsGlobalCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsrdsglobalcluster.DataAwsRdsGlobalCluster_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.DataAwsRdsGlobalCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsrdsglobalcluster.DataAwsRdsGlobalCluster_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.DataAwsRdsGlobalCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 &dataawsrdsglobalcluster.DataAwsRdsGlobalClusterConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalClusterMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 &dataawsrdsglobalcluster.DataAwsRdsGlobalClusterMembers {
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalClusterMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.NewDataAwsRdsGlobalClusterMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRdsGlobalClusterMembersList
 ```
@@ -1011,7 +1011,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRdsGlobalCluster.DataAwsRdsGlobalClusterMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsrdsglobalcluster"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsrdsglobalcluster"
 
 dataawsrdsglobalcluster.NewDataAwsRdsGlobalClusterMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRdsGlobalClusterMembersOutputReference
 ```

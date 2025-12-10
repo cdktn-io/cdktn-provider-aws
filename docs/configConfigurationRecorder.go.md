@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorder(scope Construct, id *string, config ConfigConfigurationRecorderConfig) ConfigConfigurationRecorder
 ```
@@ -439,7 +439,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderConfig {
 	Connection: interface{},
@@ -873,8 +873,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecord
 	RoleArn: *string,
 	Id: *string,
 	Name: *string,
-	RecordingGroup: github.com/cdktf/cdktf-provider-aws-go/aws/v21.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup,
-	RecordingMode: github.com/cdktf/cdktf-provider-aws-go/aws/v21.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode,
+	RecordingGroup: github.com/cdktf/cdktf-provider-aws-go/aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup,
+	RecordingMode: github.com/cdktf/cdktf-provider-aws-go/aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode,
 	Region: *string,
 }
 ```
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingGroup {
 	AllSupported: interface{},
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes {
 	ResourceTypes: *[]*string,
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategy {
 	UseOnly: *string,
@@ -1211,11 +1211,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingMode {
 	RecordingFrequency: *string,
-	RecordingModeOverride: github.com/cdktf/cdktf-provider-aws-go/aws/v21.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride,
+	RecordingModeOverride: github.com/cdktf/cdktf-provider-aws-go/aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride,
 }
 ```
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride {
 	RecordingFrequency: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList
 ```
@@ -1481,7 +1481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingGroupOutputReference
 ```
@@ -2197,7 +2197,7 @@ func InternalValue() ConfigConfigurationRecorderRecordingGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupRecordingStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConfigurationRecorderRecordingGroupRecordingStrategyList
 ```
@@ -2357,7 +2357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference
 ```
@@ -2653,7 +2653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingModeOutputReference
 ```
@@ -2973,7 +2973,7 @@ func InternalValue() ConfigConfigurationRecorderRecordingMode
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference
 ```

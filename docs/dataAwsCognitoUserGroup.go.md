@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCognitoUserGroup.DataAwsCognitoUserGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroup"
 
 dataawscognitousergroup.NewDataAwsCognitoUserGroup(scope Construct, id *string, config DataAwsCognitoUserGroupConfig) DataAwsCognitoUserGroup
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCognitoUserGroup.DataAwsCognitoUserGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroup"
 
 dataawscognitousergroup.DataAwsCognitoUserGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCognitoUserGroup.DataAwsCognitoUserGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroup"
 
 dataawscognitousergroup.DataAwsCognitoUserGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawscognitousergroup.DataAwsCognitoUserGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCognitoUserGroup.DataAwsCognitoUserGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroup"
 
 dataawscognitousergroup.DataAwsCognitoUserGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawscognitousergroup.DataAwsCognitoUserGroup_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCognitoUserGroup.DataAwsCognitoUserGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroup"
 
 dataawscognitousergroup.DataAwsCognitoUserGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCognitoUserGroup.DataAwsCognitoUserGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscognitousergroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscognitousergroup"
 
 &dataawscognitousergroup.DataAwsCognitoUserGroupConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 dataawsroute.NewDataAwsRoute(scope Construct, id *string, config DataAwsRouteConfig) DataAwsRoute
 ```
@@ -401,7 +401,7 @@ func ResetVpcPeeringConnectionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 dataawsroute.DataAwsRoute_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 dataawsroute.DataAwsRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ dataawsroute.DataAwsRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRoute.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 dataawsroute.DataAwsRoute_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ dataawsroute.DataAwsRoute_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 dataawsroute.DataAwsRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1042,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 &dataawsroute.DataAwsRouteConfig {
 	Connection: interface{},
@@ -1066,7 +1066,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
 	NatGatewayId: *string,
 	NetworkInterfaceId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dataAwsRoute.DataAwsRouteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsRoute.DataAwsRouteTimeouts,
 	TransitGatewayId: *string,
 	VpcPeeringConnectionId: *string,
 }
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 &dataawsroute.DataAwsRouteTimeouts {
 	Read: *string,
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsRoute.DataAwsRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsroute"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsroute"
 
 dataawsroute.NewDataAwsRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsRouteTimeoutsOutputReference
 ```

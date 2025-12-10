@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganization(scope Construct, id *string, config ObservabilityadminCentralizationRuleForOrganizationConfig) ObservabilityadminCentralizationRuleForOrganization
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ observabilityadmincentralizationrulefororganization.ObservabilityadminCentraliza
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ observabilityadmincentralizationrulefororganization.ObservabilityadminCentraliza
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentral
 	Region: *string,
 	Rule: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationTimeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRule {
 	Destination: interface{},
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestination {
 	Account: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfiguration {
 	BackupConfiguration: interface{},
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfiguration {
 	KmsKeyArn: *string,
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfiguration {
 	EncryptionStrategy: *string,
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRuleSource {
 	Regions: *[]*string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfiguration {
 	EncryptedLogGroupStrategy: *string,
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 &observabilityadmincentralizationrulefororganization.ObservabilityadminCentralizationRuleForOrganizationTimeouts {
 	Create: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationList
 ```
@@ -1619,7 +1619,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationBackupConfigurationOutputReference
 ```
@@ -1944,7 +1944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationList
 ```
@@ -2104,7 +2104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationList
 ```
@@ -2264,7 +2264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationLogsEncryptionConfigurationOutputReference
 ```
@@ -2611,7 +2611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationDestinationLogsConfigurationOutputReference
 ```
@@ -2962,7 +2962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationList
 ```
@@ -3122,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleDestinationOutputReference
 ```
@@ -3475,7 +3475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleList
 ```
@@ -3635,7 +3635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleOutputReference
 ```
@@ -3986,7 +3986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleSourceList
 ```
@@ -4146,7 +4146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleSourceOutputReference
 ```
@@ -4499,7 +4499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationList
 ```
@@ -4659,7 +4659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObservabilityadminCentralizationRuleForOrganizationRuleSourceSourceLogsConfigurationOutputReference
 ```
@@ -4970,7 +4970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.observabilityadminCentralizationRuleForOrganization.ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/observabilityadmincentralizationrulefororganization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/observabilityadmincentralizationrulefororganization"
 
 observabilityadmincentralizationrulefororganization.NewObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityadminCentralizationRuleForOrganizationTimeoutsOutputReference
 ```

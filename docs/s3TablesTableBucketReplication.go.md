@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.NewS3TablesTableBucketReplication(scope Construct, id *string, config S3TablesTableBucketReplicationConfig) S3TablesTableBucketReplication
 ```
@@ -405,7 +405,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.S3TablesTableBucketReplication_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.S3TablesTableBucketReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ s3tablestablebucketreplication.S3TablesTableBucketReplication_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.S3TablesTableBucketReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ s3tablestablebucketreplication.S3TablesTableBucketReplication_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.S3TablesTableBucketReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 &s3tablestablebucketreplication.S3TablesTableBucketReplicationConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 &s3tablestablebucketreplication.S3TablesTableBucketReplicationRule {
 	Destination: interface{},
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 &s3tablestablebucketreplication.S3TablesTableBucketReplicationRuleDestination {
 	DestinationTableBucketArn: *string,
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationRuleDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.NewS3TablesTableBucketReplicationRuleDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableBucketReplicationRuleDestinationList
 ```
@@ -1183,7 +1183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.NewS3TablesTableBucketReplicationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableBucketReplicationRuleDestinationOutputReference
 ```
@@ -1472,7 +1472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.NewS3TablesTableBucketReplicationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableBucketReplicationRuleList
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3TablesTableBucketReplication.S3TablesTableBucketReplicationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3tablestablebucketreplication"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3tablestablebucketreplication"
 
 s3tablestablebucketreplication.NewS3TablesTableBucketReplicationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableBucketReplicationRuleOutputReference
 ```

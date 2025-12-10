@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.NewDataAwsVpclatticeService(scope Construct, id *string, config DataAwsVpclatticeServiceConfig) DataAwsVpclatticeService
 ```
@@ -311,7 +311,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsvpclatticeservice.DataAwsVpclatticeService_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.DataAwsVpclatticeService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -754,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 &dataawsvpclatticeservice.DataAwsVpclatticeServiceConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 &dataawsvpclatticeservice.DataAwsVpclatticeServiceDnsEntry {
 
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.NewDataAwsVpclatticeServiceDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpclatticeServiceDnsEntryList
 ```
@@ -1095,7 +1095,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsVpclatticeService.DataAwsVpclatticeServiceDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsvpclatticeservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsvpclatticeservice"
 
 dataawsvpclatticeservice.NewDataAwsVpclatticeServiceDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpclatticeServiceDnsEntryOutputReference
 ```

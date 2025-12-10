@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/proxyprotocolpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/proxyprotocolpolicy"
 
 proxyprotocolpolicy.NewProxyProtocolPolicy(scope Construct, id *string, config ProxyProtocolPolicyConfig) ProxyProtocolPolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/proxyprotocolpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/proxyprotocolpolicy"
 
 proxyprotocolpolicy.ProxyProtocolPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/proxyprotocolpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/proxyprotocolpolicy"
 
 proxyprotocolpolicy.ProxyProtocolPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ proxyprotocolpolicy.ProxyProtocolPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/proxyprotocolpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/proxyprotocolpolicy"
 
 proxyprotocolpolicy.ProxyProtocolPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ proxyprotocolpolicy.ProxyProtocolPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/proxyprotocolpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/proxyprotocolpolicy"
 
 proxyprotocolpolicy.ProxyProtocolPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.proxyProtocolPolicy.ProxyProtocolPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/proxyprotocolpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/proxyprotocolpolicy"
 
 &proxyprotocolpolicy.ProxyProtocolPolicyConfig {
 	Connection: interface{},

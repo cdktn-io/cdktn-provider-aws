@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.NewMedialiveInputSecurityGroup(scope Construct, id *string, config MedialiveInputSecurityGroupConfig) MedialiveInputSecurityGroup
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.MedialiveInputSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.MedialiveInputSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ medialiveinputsecuritygroup.MedialiveInputSecurityGroup_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.MedialiveInputSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ medialiveinputsecuritygroup.MedialiveInputSecurityGroup_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.MedialiveInputSecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 &medialiveinputsecuritygroup.MedialiveInputSecurityGroupConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygro
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeouts,
 }
 ```
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 &medialiveinputsecuritygroup.MedialiveInputSecurityGroupTimeouts {
 	Create: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 &medialiveinputsecuritygroup.MedialiveInputSecurityGroupWhitelistRules {
 	Cidr: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.NewMedialiveInputSecurityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MedialiveInputSecurityGroupTimeoutsOutputReference
 ```
@@ -1507,7 +1507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.NewMedialiveInputSecurityGroupWhitelistRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MedialiveInputSecurityGroupWhitelistRulesList
 ```
@@ -1667,7 +1667,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/medialiveinputsecuritygroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/medialiveinputsecuritygroup"
 
 medialiveinputsecuritygroup.NewMedialiveInputSecurityGroupWhitelistRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MedialiveInputSecurityGroupWhitelistRulesOutputReference
 ```

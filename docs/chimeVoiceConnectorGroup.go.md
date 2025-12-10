@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.NewChimeVoiceConnectorGroup(scope Construct, id *string, config ChimeVoiceConnectorGroupConfig) ChimeVoiceConnectorGroup
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.ChimeVoiceConnectorGroup_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.ChimeVoiceConnectorGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ chimevoiceconnectorgroup.ChimeVoiceConnectorGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.ChimeVoiceConnectorGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ chimevoiceconnectorgroup.ChimeVoiceConnectorGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.ChimeVoiceConnectorGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 &chimevoiceconnectorgroup.ChimeVoiceConnectorGroupConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 &chimevoiceconnectorgroup.ChimeVoiceConnectorGroupConnector {
 	Priority: *f64,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.NewChimeVoiceConnectorGroupConnectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChimeVoiceConnectorGroupConnectorList
 ```
@@ -1162,7 +1162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/chimevoiceconnectorgroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/chimevoiceconnectorgroup"
 
 chimevoiceconnectorgroup.NewChimeVoiceConnectorGroupConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChimeVoiceConnectorGroupConnectorOutputReference
 ```

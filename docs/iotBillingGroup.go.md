@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.NewIotBillingGroup(scope Construct, id *string, config IotBillingGroupConfig) IotBillingGroup
 ```
@@ -412,7 +412,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.IotBillingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.IotBillingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ iotbillinggroup.IotBillingGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.IotBillingGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ iotbillinggroup.IotBillingGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.IotBillingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 &iotbillinggroup.IotBillingGroupConfig {
 	Connection: interface{},
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 &iotbillinggroup.IotBillingGroupMetadata {
 
@@ -1019,7 +1019,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 &iotbillinggroup.IotBillingGroupProperties {
 	Description: *string,
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.NewIotBillingGroupMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotBillingGroupMetadataList
 ```
@@ -1202,7 +1202,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.NewIotBillingGroupMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotBillingGroupMetadataOutputReference
 ```
@@ -1480,7 +1480,7 @@ func InternalValue() IotBillingGroupMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.NewIotBillingGroupPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotBillingGroupPropertiesList
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.iotBillingGroup.IotBillingGroupPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/iotbillinggroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/iotbillinggroup"
 
 iotbillinggroup.NewIotBillingGroupPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotBillingGroupPropertiesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScope(scope Construct, id *string, config NetworkflowmonitorScopeConfig) NetworkflowmonitorScope
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NetworkflowmonitorScope_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NetworkflowmonitorScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ networkflowmonitorscope.NetworkflowmonitorScope_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NetworkflowmonitorScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ networkflowmonitorscope.NetworkflowmonitorScope_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NetworkflowmonitorScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 &networkflowmonitorscope.NetworkflowmonitorScopeConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
 	Region: *string,
 	Tags: *map[string]*string,
 	Target: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.networkflowmonitorScope.NetworkflowmonitorScopeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.networkflowmonitorScope.NetworkflowmonitorScopeTimeouts,
 }
 ```
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 &networkflowmonitorscope.NetworkflowmonitorScopeTarget {
 	Region: *string,
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 &networkflowmonitorscope.NetworkflowmonitorScopeTargetTargetIdentifier {
 	TargetType: *string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierTargetId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 &networkflowmonitorscope.NetworkflowmonitorScopeTargetTargetIdentifierTargetId {
 	AccountId: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 &networkflowmonitorscope.NetworkflowmonitorScopeTimeouts {
 	Create: *string,
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkflowmonitorScopeTargetList
 ```
@@ -1362,7 +1362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkflowmonitorScopeTargetOutputReference
 ```
@@ -1693,7 +1693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTargetTargetIdentifierList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkflowmonitorScopeTargetTargetIdentifierList
 ```
@@ -1853,7 +1853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTargetTargetIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkflowmonitorScopeTargetTargetIdentifierOutputReference
 ```
@@ -2184,7 +2184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierTargetIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTargetTargetIdentifierTargetIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkflowmonitorScopeTargetTargetIdentifierTargetIdList
 ```
@@ -2344,7 +2344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkflowmonitorScopeTargetTargetIdentifierTargetIdOutputReference
 ```
@@ -2633,7 +2633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkflowmonitorScope.NetworkflowmonitorScopeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkflowmonitorscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkflowmonitorscope"
 
 networkflowmonitorscope.NewNetworkflowmonitorScopeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkflowmonitorScopeTimeoutsOutputReference
 ```

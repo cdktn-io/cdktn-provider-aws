@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebAppCustomization.TransferWebAppCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebappcustomization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebappcustomization"
 
 transferwebappcustomization.NewTransferWebAppCustomization(scope Construct, id *string, config TransferWebAppCustomizationConfig) TransferWebAppCustomization
 ```
@@ -406,7 +406,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferWebAppCustomization.TransferWebAppCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebappcustomization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebappcustomization"
 
 transferwebappcustomization.TransferWebAppCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferWebAppCustomization.TransferWebAppCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebappcustomization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebappcustomization"
 
 transferwebappcustomization.TransferWebAppCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ transferwebappcustomization.TransferWebAppCustomization_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferWebAppCustomization.TransferWebAppCustomization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebappcustomization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebappcustomization"
 
 transferwebappcustomization.TransferWebAppCustomization_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ transferwebappcustomization.TransferWebAppCustomization_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.transferWebAppCustomization.TransferWebAppCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebappcustomization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebappcustomization"
 
 transferwebappcustomization.TransferWebAppCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWebAppCustomization.TransferWebAppCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebappcustomization"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebappcustomization"
 
 &transferwebappcustomization.TransferWebAppCustomizationConfig {
 	Connection: interface{},

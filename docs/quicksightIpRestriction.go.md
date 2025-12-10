@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiprestriction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightiprestriction"
 
 quicksightiprestriction.NewQuicksightIpRestriction(scope Construct, id *string, config QuicksightIpRestrictionConfig) QuicksightIpRestriction
 ```
@@ -413,7 +413,7 @@ func ResetVpcIdRestrictionRuleMap()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiprestriction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiprestriction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ quicksightiprestriction.QuicksightIpRestriction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiprestriction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ quicksightiprestriction.QuicksightIpRestriction_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.quicksightIpRestriction.QuicksightIpRestriction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiprestriction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightiprestriction"
 
 quicksightiprestriction.QuicksightIpRestriction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.quicksightIpRestriction.QuicksightIpRestrictionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/quicksightiprestriction"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/quicksightiprestriction"
 
 &quicksightiprestriction.QuicksightIpRestrictionConfig {
 	Connection: interface{},

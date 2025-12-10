@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzer(scope Construct, id *string, config AccessanalyzerAnalyzerConfig) AccessanalyzerAnalyzer
 ```
@@ -433,7 +433,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.AccessanalyzerAnalyzer_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.AccessanalyzerAnalyzer_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ accessanalyzeranalyzer.AccessanalyzerAnalyzer_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.AccessanalyzerAnalyzer_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ accessanalyzeranalyzer.AccessanalyzerAnalyzer_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.AccessanalyzerAnalyzer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfig {
 	Connection: interface{},
@@ -898,7 +898,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AnalyzerName: *string,
-	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws/v21.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-aws-go/aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfiguration,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1094,11 +1094,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfiguration {
-	InternalAccess: github.com/cdktf/cdktf-provider-aws-go/aws/v21.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccess,
-	UnusedAccess: github.com/cdktf/cdktf-provider-aws-go/aws/v21.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccess,
+	InternalAccess: github.com/cdktf/cdktf-provider-aws-go/aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccess,
+	UnusedAccess: github.com/cdktf/cdktf-provider-aws-go/aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccess,
 }
 ```
 
@@ -1144,10 +1144,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfigurationInternalAccess {
-	AnalysisRule: github.com/cdktf/cdktf-provider-aws-go/aws/v21.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule,
+	AnalysisRule: github.com/cdktf/cdktf-provider-aws-go/aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule,
 }
 ```
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRule {
 	Inclusion: interface{},
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusion {
 	AccountIds: *[]*string,
@@ -1272,10 +1272,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccess {
-	AnalysisRule: github.com/cdktf/cdktf-provider-aws-go/aws/v21.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule,
+	AnalysisRule: github.com/cdktf/cdktf-provider-aws-go/aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule,
 	UnusedAccessAge: *f64,
 }
 ```
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule {
 	Exclusion: interface{},
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 &accessanalyzeranalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusion {
 	AccountIds: *[]*string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionList
 ```
@@ -1562,7 +1562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleInclusionOutputReference
 ```
@@ -1916,7 +1916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRuleOutputReference
 ```
@@ -2207,7 +2207,7 @@ func InternalValue() AccessanalyzerAnalyzerConfigurationInternalAccessAnalysisRu
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationInternalAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessanalyzerAnalyzerConfigurationInternalAccessOutputReference
 ```
@@ -2498,7 +2498,7 @@ func InternalValue() AccessanalyzerAnalyzerConfigurationInternalAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessanalyzerAnalyzerConfigurationOutputReference
 ```
@@ -2831,7 +2831,7 @@ func InternalValue() AccessanalyzerAnalyzerConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionList
 ```
@@ -2991,7 +2991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleExclusionOutputReference
 ```
@@ -3316,7 +3316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRuleOutputReference
 ```
@@ -3607,7 +3607,7 @@ func InternalValue() AccessanalyzerAnalyzerConfigurationUnusedAccessAnalysisRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/accessanalyzeranalyzer"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/accessanalyzeranalyzer"
 
 accessanalyzeranalyzer.NewAccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessanalyzerAnalyzerConfigurationUnusedAccessOutputReference
 ```

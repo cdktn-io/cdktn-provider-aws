@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NewNetworkmonitorProbe(scope Construct, id *string, config NetworkmonitorProbeConfig) NetworkmonitorProbe
 ```
@@ -406,7 +406,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ networkmonitorprobe.NetworkmonitorProbe_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ networkmonitorprobe.NetworkmonitorProbe_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 networkmonitorprobe.NetworkmonitorProbe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.networkmonitorProbe.NetworkmonitorProbeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/networkmonitorprobe"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/networkmonitorprobe"
 
 &networkmonitorprobe.NetworkmonitorProbeConfig {
 	Connection: interface{},

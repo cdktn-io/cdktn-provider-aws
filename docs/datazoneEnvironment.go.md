@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironment(scope Construct, id *string, config DatazoneEnvironmentConfig) DatazoneEnvironment
 ```
@@ -460,7 +460,7 @@ func ResetUserParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.DatazoneEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.DatazoneEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ datazoneenvironment.DatazoneEnvironment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.DatazoneEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ datazoneenvironment.DatazoneEnvironment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.DatazoneEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1079,7 +1079,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 &datazoneenvironment.DatazoneEnvironmentConfig {
 	Connection: interface{},
@@ -1099,7 +1099,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
 	Description: *string,
 	GlossaryTerms: *[]*string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.datazoneEnvironment.DatazoneEnvironmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.datazoneEnvironment.DatazoneEnvironmentTimeouts,
 	UserParameters: interface{},
 }
 ```
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentLastDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 &datazoneenvironment.DatazoneEnvironmentLastDeployment {
 
@@ -1368,7 +1368,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentLastDeploymentFailureReasons.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 &datazoneenvironment.DatazoneEnvironmentLastDeploymentFailureReasons {
 
@@ -1381,7 +1381,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentProvisionedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 &datazoneenvironment.DatazoneEnvironmentProvisionedResources {
 
@@ -1394,7 +1394,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 &datazoneenvironment.DatazoneEnvironmentTimeouts {
 	Create: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentUserParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 &datazoneenvironment.DatazoneEnvironmentUserParameters {
 	Name: *string,
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentLastDeploymentFailureReasonsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentLastDeploymentFailureReasonsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneEnvironmentLastDeploymentFailureReasonsList
 ```
@@ -1657,7 +1657,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentLastDeploymentFailureReasonsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentLastDeploymentFailureReasonsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneEnvironmentLastDeploymentFailureReasonsOutputReference
 ```
@@ -1946,7 +1946,7 @@ func InternalValue() DatazoneEnvironmentLastDeploymentFailureReasons
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentLastDeploymentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentLastDeploymentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneEnvironmentLastDeploymentList
 ```
@@ -2095,7 +2095,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentLastDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentLastDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneEnvironmentLastDeploymentOutputReference
 ```
@@ -2428,7 +2428,7 @@ func InternalValue() DatazoneEnvironmentLastDeployment
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentProvisionedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentProvisionedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneEnvironmentProvisionedResourcesList
 ```
@@ -2577,7 +2577,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentProvisionedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentProvisionedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneEnvironmentProvisionedResourcesOutputReference
 ```
@@ -2888,7 +2888,7 @@ func InternalValue() DatazoneEnvironmentProvisionedResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneEnvironmentTimeoutsOutputReference
 ```
@@ -3224,7 +3224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentUserParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentUserParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneEnvironmentUserParametersList
 ```
@@ -3384,7 +3384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.datazoneEnvironment.DatazoneEnvironmentUserParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/datazoneenvironment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/datazoneenvironment"
 
 datazoneenvironment.NewDatazoneEnvironmentUserParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneEnvironmentUserParametersOutputReference
 ```

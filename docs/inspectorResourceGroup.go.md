@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.NewInspectorResourceGroup(scope Construct, id *string, config InspectorResourceGroupConfig) InspectorResourceGroup
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ inspectorresourcegroup.InspectorResourceGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ inspectorresourcegroup.InspectorResourceGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 inspectorresourcegroup.InspectorResourceGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.inspectorResourceGroup.InspectorResourceGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/inspectorresourcegroup"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/inspectorresourcegroup"
 
 &inspectorresourcegroup.InspectorResourceGroupConfig {
 	Connection: interface{},

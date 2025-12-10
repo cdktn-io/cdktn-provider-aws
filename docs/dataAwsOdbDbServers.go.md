@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.NewDataAwsOdbDbServers(scope Construct, id *string, config DataAwsOdbDbServersConfig) DataAwsOdbDbServers
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.DataAwsOdbDbServers_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.DataAwsOdbDbServers_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsodbdbservers.DataAwsOdbDbServers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.DataAwsOdbDbServers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsodbdbservers.DataAwsOdbDbServers_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.DataAwsOdbDbServers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 &dataawsodbdbservers.DataAwsOdbDbServersConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersDbServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 &dataawsodbdbservers.DataAwsOdbDbServersDbServers {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersDbServersDbServerPatchingDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 &dataawsodbdbservers.DataAwsOdbDbServersDbServersDbServerPatchingDetails {
 
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersDbServersDbServerPatchingDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.NewDataAwsOdbDbServersDbServersDbServerPatchingDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbDbServersDbServersDbServerPatchingDetailsList
 ```
@@ -916,7 +916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.NewDataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbDbServersDbServersDbServerPatchingDetailsOutputReference
 ```
@@ -1227,7 +1227,7 @@ func InternalValue() DataAwsOdbDbServersDbServersDbServerPatchingDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersDbServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.NewDataAwsOdbDbServersDbServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbDbServersDbServersList
 ```
@@ -1376,7 +1376,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbDbServers.DataAwsOdbDbServersDbServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbservers"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbservers"
 
 dataawsodbdbservers.NewDataAwsOdbDbServersDbServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbDbServersDbServersOutputReference
 ```

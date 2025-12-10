@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebIdentityProvider.WorkspaceswebIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebidentityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebidentityprovider"
 
 workspaceswebidentityprovider.NewWorkspaceswebIdentityProvider(scope Construct, id *string, config WorkspaceswebIdentityProviderConfig) WorkspaceswebIdentityProvider
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.workspaceswebIdentityProvider.WorkspaceswebIdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebidentityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebidentityprovider"
 
 workspaceswebidentityprovider.WorkspaceswebIdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.workspaceswebIdentityProvider.WorkspaceswebIdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebidentityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebidentityprovider"
 
 workspaceswebidentityprovider.WorkspaceswebIdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ workspaceswebidentityprovider.WorkspaceswebIdentityProvider_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.workspaceswebIdentityProvider.WorkspaceswebIdentityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebidentityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebidentityprovider"
 
 workspaceswebidentityprovider.WorkspaceswebIdentityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ workspaceswebidentityprovider.WorkspaceswebIdentityProvider_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.workspaceswebIdentityProvider.WorkspaceswebIdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebidentityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebidentityprovider"
 
 workspaceswebidentityprovider.WorkspaceswebIdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebIdentityProvider.WorkspaceswebIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebidentityprovider"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebidentityprovider"
 
 &workspaceswebidentityprovider.WorkspaceswebIdentityProviderConfig {
 	Connection: interface{},

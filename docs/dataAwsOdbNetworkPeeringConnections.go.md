@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.NewDataAwsOdbNetworkPeeringConnections(scope Construct, id *string, config DataAwsOdbNetworkPeeringConnectionsConfig) DataAwsOdbNetworkPeeringConnections
 ```
@@ -303,7 +303,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnections.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnections_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnections.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnections_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnections_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnections.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnections_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnections_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnections.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnections_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnectionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 &dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnectionsConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 &dataawsodbnetworkpeeringconnections.DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnections {
 
@@ -763,7 +763,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringc
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.NewDataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsList
 ```
@@ -923,7 +923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbNetworkPeeringConnections.DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbnetworkpeeringconnections"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbnetworkpeeringconnections"
 
 dataawsodbnetworkpeeringconnections.NewDataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbNetworkPeeringConnectionsOdbPeeringConnectionsOutputReference
 ```

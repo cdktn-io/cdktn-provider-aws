@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachment(scope Construct, id *string, config FsxS3AccessPointAttachmentConfig) FsxS3AccessPointAttachment
 ```
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.FsxS3AccessPointAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.FsxS3AccessPointAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ fsxs3accesspointattachment.FsxS3AccessPointAttachment_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.FsxS3AccessPointAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ fsxs3accesspointattachment.FsxS3AccessPointAttachment_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.FsxS3AccessPointAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachmen
 	OpenzfsConfiguration: interface{},
 	Region: *string,
 	S3AccessPoint: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentOpenzfsConfiguration {
 	VolumeId: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentity {
 	Type: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUser {
 	Gid: *f64,
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentS3AccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentS3AccessPoint {
 	Policy: *string,
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentS3AccessPointVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentS3AccessPointVpcConfiguration {
 	VpcId: *string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 &fsxs3accesspointattachment.FsxS3AccessPointAttachmentTimeouts {
 	Create: *string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityList
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityOutputReference
 ```
@@ -1861,7 +1861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserList
 ```
@@ -2021,7 +2021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxS3AccessPointAttachmentOpenzfsConfigurationFileSystemIdentityPosixUserOutputReference
 ```
@@ -2361,7 +2361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentOpenzfsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxS3AccessPointAttachmentOpenzfsConfigurationList
 ```
@@ -2521,7 +2521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxS3AccessPointAttachmentOpenzfsConfigurationOutputReference
 ```
@@ -2852,7 +2852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentS3AccessPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentS3AccessPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxS3AccessPointAttachmentS3AccessPointList
 ```
@@ -3012,7 +3012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentS3AccessPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentS3AccessPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxS3AccessPointAttachmentS3AccessPointOutputReference
 ```
@@ -3350,7 +3350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationList
 ```
@@ -3510,7 +3510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentS3AccessPointVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FsxS3AccessPointAttachmentS3AccessPointVpcConfigurationOutputReference
 ```
@@ -3806,7 +3806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.fsxS3AccessPointAttachment.FsxS3AccessPointAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/fsxs3accesspointattachment"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/fsxs3accesspointattachment"
 
 fsxs3accesspointattachment.NewFsxS3AccessPointAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FsxS3AccessPointAttachmentTimeoutsOutputReference
 ```

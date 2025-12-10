@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrimage"
 
 dataawsecrimage.NewDataAwsEcrImage(scope Construct, id *string, config DataAwsEcrImageConfig) DataAwsEcrImage
 ```
@@ -318,7 +318,7 @@ func ResetRegistryId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrimage"
 
 dataawsecrimage.DataAwsEcrImage_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrimage"
 
 dataawsecrimage.DataAwsEcrImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsecrimage.DataAwsEcrImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrimage"
 
 dataawsecrimage.DataAwsEcrImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsecrimage.DataAwsEcrImage_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrimage"
 
 dataawsecrimage.DataAwsEcrImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsEcrImage.DataAwsEcrImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsecrimage"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsecrimage"
 
 &dataawsecrimage.DataAwsEcrImageConfig {
 	Connection: interface{},

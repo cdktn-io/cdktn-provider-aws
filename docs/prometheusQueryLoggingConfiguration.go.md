@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfiguration(scope Construct, id *string, config PrometheusQueryLoggingConfigurationConfig) PrometheusQueryLoggingConfiguration
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfiguration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 &prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfigurationConfig {
 	Connection: interface{},
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingcon
 	WorkspaceId: *string,
 	Destination: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationTimeouts,
 }
 ```
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 &prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfigurationDestination {
 	CloudwatchLogs: interface{},
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 &prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfigurationDestinationCloudwatchLogs {
 	LogGroupArn: *string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 &prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfigurationDestinationFilters {
 	QspThreshold: *f64,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 &prometheusqueryloggingconfiguration.PrometheusQueryLoggingConfigurationTimeouts {
 	Create: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationDestinationCloudwatchLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsList
 ```
@@ -1308,7 +1308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusQueryLoggingConfigurationDestinationCloudwatchLogsOutputReference
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationDestinationFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusQueryLoggingConfigurationDestinationFiltersList
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationDestinationFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusQueryLoggingConfigurationDestinationFiltersOutputReference
 ```
@@ -2046,7 +2046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusQueryLoggingConfigurationDestinationList
 ```
@@ -2206,7 +2206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusQueryLoggingConfigurationDestinationOutputReference
 ```
@@ -2557,7 +2557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusQueryLoggingConfiguration.PrometheusQueryLoggingConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/prometheusqueryloggingconfiguration"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/prometheusqueryloggingconfiguration"
 
 prometheusqueryloggingconfiguration.NewPrometheusQueryLoggingConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusQueryLoggingConfigurationTimeoutsOutputReference
 ```

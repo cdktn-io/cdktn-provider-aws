@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebApp(scope Construct, id *string, config TransferWebAppConfig) TransferWebApp
 ```
@@ -446,7 +446,7 @@ func ResetWebAppUnits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.transferWebApp.TransferWebApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.TransferWebApp_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.transferWebApp.TransferWebApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.TransferWebApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ transferwebapp.TransferWebApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.transferWebApp.TransferWebApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.TransferWebApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ transferwebapp.TransferWebApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.transferWebApp.TransferWebApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.TransferWebApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWebApp.TransferWebAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 &transferwebapp.TransferWebAppConfig {
 	Connection: interface{},
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 &transferwebapp.TransferWebAppIdentityProviderDetails {
 	IdentityCenterConfig: interface{},
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 &transferwebapp.TransferWebAppIdentityProviderDetailsIdentityCenterConfig {
 	InstanceArn: *string,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.transferWebApp.TransferWebAppWebAppUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 &transferwebapp.TransferWebAppWebAppUnits {
 	Provisioned: *f64,
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebAppIdentityProviderDetailsIdentityCenterConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWebAppIdentityProviderDetailsIdentityCenterConfigList
 ```
@@ -1364,7 +1364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWebAppIdentityProviderDetailsIdentityCenterConfigOutputReference
 ```
@@ -1700,7 +1700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebAppIdentityProviderDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWebAppIdentityProviderDetailsList
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebAppIdentityProviderDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebAppIdentityProviderDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWebAppIdentityProviderDetailsOutputReference
 ```
@@ -2169,7 +2169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebAppWebAppUnitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebAppWebAppUnitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferWebAppWebAppUnitsList
 ```
@@ -2329,7 +2329,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.transferWebApp.TransferWebAppWebAppUnitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/transferwebapp"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/transferwebapp"
 
 transferwebapp.NewTransferWebAppWebAppUnitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferWebAppWebAppUnitsOutputReference
 ```

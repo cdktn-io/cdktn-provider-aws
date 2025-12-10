@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.NewBedrockagentcoreTokenVaultCmk(scope Construct, id *string, config BedrockagentcoreTokenVaultCmkConfig) BedrockagentcoreTokenVaultCmk
 ```
@@ -412,7 +412,7 @@ func ResetTokenVaultId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmk.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmk_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmk_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmk_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmk_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmk_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 &bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmkConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmkKmsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 &bedrockagentcoretokenvaultcmk.BedrockagentcoreTokenVaultCmkKmsConfiguration {
 	KeyType: *string,
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmkKmsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.NewBedrockagentcoreTokenVaultCmkKmsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreTokenVaultCmkKmsConfigurationList
 ```
@@ -1123,7 +1123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.bedrockagentcoreTokenVaultCmk.BedrockagentcoreTokenVaultCmkKmsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/bedrockagentcoretokenvaultcmk"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/bedrockagentcoretokenvaultcmk"
 
 bedrockagentcoretokenvaultcmk.NewBedrockagentcoreTokenVaultCmkKmsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreTokenVaultCmkKmsConfigurationOutputReference
 ```

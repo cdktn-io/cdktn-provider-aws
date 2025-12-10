@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 sagemakercoderepository.NewSagemakerCodeRepository(scope Construct, id *string, config SagemakerCodeRepositoryConfig) SagemakerCodeRepository
 ```
@@ -419,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 sagemakercoderepository.SagemakerCodeRepository_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 sagemakercoderepository.SagemakerCodeRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ sagemakercoderepository.SagemakerCodeRepository_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 sagemakercoderepository.SagemakerCodeRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ sagemakercoderepository.SagemakerCodeRepository_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 sagemakercoderepository.SagemakerCodeRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 &sagemakercoderepository.SagemakerCodeRepositoryConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	CodeRepositoryName: *string,
-	GitConfig: github.com/cdktf/cdktf-provider-aws-go/aws/v21.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfig,
+	GitConfig: github.com/cdktf/cdktf-provider-aws-go/aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfig,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 &sagemakercoderepository.SagemakerCodeRepositoryGitConfig {
 	RepositoryUrl: *string,
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/sagemakercoderepository"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/sagemakercoderepository"
 
 sagemakercoderepository.NewSagemakerCodeRepositoryGitConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerCodeRepositoryGitConfigOutputReference
 ```

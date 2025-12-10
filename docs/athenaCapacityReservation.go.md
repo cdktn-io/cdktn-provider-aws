@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 athenacapacityreservation.NewAthenaCapacityReservation(scope Construct, id *string, config AthenaCapacityReservationConfig) AthenaCapacityReservation
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 athenacapacityreservation.AthenaCapacityReservation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 athenacapacityreservation.AthenaCapacityReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ athenacapacityreservation.AthenaCapacityReservation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 athenacapacityreservation.AthenaCapacityReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ athenacapacityreservation.AthenaCapacityReservation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 athenacapacityreservation.AthenaCapacityReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 &athenacapacityreservation.AthenaCapacityReservationConfig {
 	Connection: interface{},
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation
 	TargetDpus: *f64,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.athenaCapacityReservation.AthenaCapacityReservationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.athenaCapacityReservation.AthenaCapacityReservationTimeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 &athenacapacityreservation.AthenaCapacityReservationTimeouts {
 	Create: *string,
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.athenaCapacityReservation.AthenaCapacityReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/athenacapacityreservation"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/athenacapacityreservation"
 
 athenacapacityreservation.NewAthenaCapacityReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaCapacityReservationTimeoutsOutputReference
 ```

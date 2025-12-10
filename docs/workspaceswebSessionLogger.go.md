@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLogger.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLogger(scope Construct, id *string, config WorkspaceswebSessionLoggerConfig) WorkspaceswebSessionLogger
 ```
@@ -453,7 +453,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLogger.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.WorkspaceswebSessionLogger_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLogger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.WorkspaceswebSessionLogger_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ workspaceswebsessionlogger.WorkspaceswebSessionLogger_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLogger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.WorkspaceswebSessionLogger_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ workspaceswebsessionlogger.WorkspaceswebSessionLogger_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLogger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.WorkspaceswebSessionLogger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 &workspaceswebsessionlogger.WorkspaceswebSessionLoggerConfig {
 	Connection: interface{},
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerEventFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 &workspaceswebsessionlogger.WorkspaceswebSessionLoggerEventFilter {
 	All: interface{},
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerEventFilterAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 &workspaceswebsessionlogger.WorkspaceswebSessionLoggerEventFilterAll {
 
@@ -1196,7 +1196,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogge
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 &workspaceswebsessionlogger.WorkspaceswebSessionLoggerLogConfiguration {
 	S3: interface{},
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerLogConfigurationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 &workspaceswebsessionlogger.WorkspaceswebSessionLoggerLogConfigurationS3 {
 	Bucket: *string,
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerEventFilterAllList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerEventFilterAllList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebSessionLoggerEventFilterAllList
 ```
@@ -1480,7 +1480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerEventFilterAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerEventFilterAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebSessionLoggerEventFilterAllOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerEventFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerEventFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebSessionLoggerEventFilterList
 ```
@@ -1907,7 +1907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerEventFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerEventFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebSessionLoggerEventFilterOutputReference
 ```
@@ -2245,7 +2245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerLogConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerLogConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebSessionLoggerLogConfigurationList
 ```
@@ -2405,7 +2405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebSessionLoggerLogConfigurationOutputReference
 ```
@@ -2714,7 +2714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerLogConfigurationS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerLogConfigurationS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebSessionLoggerLogConfigurationS3List
 ```
@@ -2874,7 +2874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.workspaceswebSessionLogger.WorkspaceswebSessionLoggerLogConfigurationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/workspaceswebsessionlogger"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/workspaceswebsessionlogger"
 
 workspaceswebsessionlogger.NewWorkspaceswebSessionLoggerLogConfigurationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebSessionLoggerLogConfigurationS3OutputReference
 ```

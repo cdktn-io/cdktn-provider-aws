@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3VectorsIndex.S3VectorsIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3vectorsindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3vectorsindex"
 
 s3vectorsindex.NewS3VectorsIndex(scope Construct, id *string, config S3VectorsIndexConfig) S3VectorsIndex
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.s3VectorsIndex.S3VectorsIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3vectorsindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.s3VectorsIndex.S3VectorsIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3vectorsindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ s3vectorsindex.S3VectorsIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.s3VectorsIndex.S3VectorsIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3vectorsindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ s3vectorsindex.S3VectorsIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.s3VectorsIndex.S3VectorsIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3vectorsindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3vectorsindex"
 
 s3vectorsindex.S3VectorsIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3VectorsIndex.S3VectorsIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/s3vectorsindex"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/s3vectorsindex"
 
 &s3vectorsindex.S3VectorsIndexConfig {
 	Connection: interface{},

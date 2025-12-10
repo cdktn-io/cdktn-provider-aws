@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayService(scope Construct, id *string, config EcsExpressGatewayServiceConfig) EcsExpressGatewayService
 ```
@@ -521,7 +521,7 @@ func ResetWaitForSteadyState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.EcsExpressGatewayService_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.EcsExpressGatewayService_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ ecsexpressgatewayservice.EcsExpressGatewayService_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.EcsExpressGatewayService_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ ecsexpressgatewayservice.EcsExpressGatewayService_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.EcsExpressGatewayService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1195,7 +1195,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServiceConfig {
 	Connection: interface{},
@@ -1218,7 +1218,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
 	ServiceName: *string,
 	Tags: *map[string]*string,
 	TaskRoleArn: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.ecsExpressGatewayService.EcsExpressGatewayServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.ecsExpressGatewayService.EcsExpressGatewayServiceTimeouts,
 	WaitForSteadyState: interface{},
 }
 ```
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceIngressPaths.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServiceIngressPaths {
 
@@ -1526,7 +1526,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServiceNetworkConfiguration {
 	SecurityGroups: *[]*string,
@@ -1572,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServicePrimaryContainer {
 	Image: *string,
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerAwsLogsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServicePrimaryContainerAwsLogsConfiguration {
 	LogGroup: *string,
@@ -1740,7 +1740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServicePrimaryContainerEnvironment {
 	Name: *string,
@@ -1786,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerRepositoryCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServicePrimaryContainerRepositoryCredentials {
 	CredentialsParameter: *string,
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServicePrimaryContainerSecret {
 	Name: *string,
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceScalingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServiceScalingTarget {
 	AutoScalingMetric: *string,
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 &ecsexpressgatewayservice.EcsExpressGatewayServiceTimeouts {
 	Create: *string,
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceIngressPathsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceIngressPathsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServiceIngressPathsList
 ```
@@ -2155,7 +2155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceIngressPathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceIngressPathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServiceIngressPathsOutputReference
 ```
@@ -2444,7 +2444,7 @@ func InternalValue() EcsExpressGatewayServiceIngressPaths
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServiceNetworkConfigurationList
 ```
@@ -2604,7 +2604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServiceNetworkConfigurationOutputReference
 ```
@@ -2929,7 +2929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerAwsLogsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerAwsLogsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServicePrimaryContainerAwsLogsConfigurationList
 ```
@@ -3089,7 +3089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerAwsLogsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerAwsLogsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServicePrimaryContainerAwsLogsConfigurationOutputReference
 ```
@@ -3414,7 +3414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServicePrimaryContainerEnvironmentList
 ```
@@ -3574,7 +3574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServicePrimaryContainerEnvironmentOutputReference
 ```
@@ -3885,7 +3885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServicePrimaryContainerList
 ```
@@ -4045,7 +4045,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServicePrimaryContainerOutputReference
 ```
@@ -4560,7 +4560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerRepositoryCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerRepositoryCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServicePrimaryContainerRepositoryCredentialsList
 ```
@@ -4720,7 +4720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerRepositoryCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerRepositoryCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServicePrimaryContainerRepositoryCredentialsOutputReference
 ```
@@ -5009,7 +5009,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServicePrimaryContainerSecretList
 ```
@@ -5169,7 +5169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServicePrimaryContainerSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServicePrimaryContainerSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServicePrimaryContainerSecretOutputReference
 ```
@@ -5480,7 +5480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceScalingTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceScalingTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EcsExpressGatewayServiceScalingTargetList
 ```
@@ -5640,7 +5640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceScalingTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceScalingTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EcsExpressGatewayServiceScalingTargetOutputReference
 ```
@@ -6023,7 +6023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ecsExpressGatewayService.EcsExpressGatewayServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ecsexpressgatewayservice"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ecsexpressgatewayservice"
 
 ecsexpressgatewayservice.NewEcsExpressGatewayServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EcsExpressGatewayServiceTimeoutsOutputReference
 ```

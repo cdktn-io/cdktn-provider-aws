@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBuses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.NewDataAwsCloudwatchEventBuses(scope Construct, id *string, config DataAwsCloudwatchEventBusesConfig) DataAwsCloudwatchEventBuses
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBuses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.DataAwsCloudwatchEventBuses_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBuses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.DataAwsCloudwatchEventBuses_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscloudwatcheventbuses.DataAwsCloudwatchEventBuses_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBuses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.DataAwsCloudwatchEventBuses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscloudwatcheventbuses.DataAwsCloudwatchEventBuses_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBuses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.DataAwsCloudwatchEventBuses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBusesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 &dataawscloudwatcheventbuses.DataAwsCloudwatchEventBusesConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBusesEventBuses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 &dataawscloudwatcheventbuses.DataAwsCloudwatchEventBusesEventBuses {
 
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbus
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBusesEventBusesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.NewDataAwsCloudwatchEventBusesEventBusesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCloudwatchEventBusesEventBusesList
 ```
@@ -908,7 +908,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsCloudwatchEventBuses.DataAwsCloudwatchEventBusesEventBusesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawscloudwatcheventbuses"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawscloudwatcheventbuses"
 
 dataawscloudwatcheventbuses.NewDataAwsCloudwatchEventBusesEventBusesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCloudwatchEventBusesEventBusesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestination(scope Construct, id *string, config AppfabricIngestionDestinationConfig) AppfabricIngestionDestination
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestina
 	ProcessingConfiguration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts,
 }
 ```
 
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfiguration {
 	AuditLog: interface{},
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLog {
 	Destination: interface{},
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination {
 	FirehoseStream: interface{},
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream {
 	StreamName: *string,
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket {
 	BucketName: *string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationProcessingConfiguration {
 	AuditLog: interface{},
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog {
 	Format: *string,
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationTimeouts {
 	Create: *string,
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference
 ```
@@ -1929,7 +1929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList
 ```
@@ -2089,7 +2089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference
 ```
@@ -2440,7 +2440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList
 ```
@@ -2600,7 +2600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference
 ```
@@ -2918,7 +2918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogList
 ```
@@ -3078,7 +3078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference
 ```
@@ -3387,7 +3387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationList
 ```
@@ -3547,7 +3547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationOutputReference
 ```
@@ -3856,7 +3856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationAuditLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationProcessingConfigurationAuditLogList
 ```
@@ -4016,7 +4016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference
 ```
@@ -4327,7 +4327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationProcessingConfigurationList
 ```
@@ -4487,7 +4487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationProcessingConfigurationOutputReference
 ```
@@ -4796,7 +4796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppfabricIngestionDestinationTimeoutsOutputReference
 ```

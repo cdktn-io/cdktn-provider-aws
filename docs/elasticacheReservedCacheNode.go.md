@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNode(scope Construct, id *string, config ElasticacheReservedCacheNodeConfig) ElasticacheReservedCacheNode
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ elasticachereservedcachenode.ElasticacheReservedCacheNode_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.ElasticacheReservedCacheNode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -968,7 +968,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 &elasticachereservedcachenode.ElasticacheReservedCacheNodeConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachen
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts,
 }
 ```
 
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeRecurringCharges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 &elasticachereservedcachenode.ElasticacheReservedCacheNodeRecurringCharges {
 
@@ -1174,7 +1174,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachen
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 &elasticachereservedcachenode.ElasticacheReservedCacheNodeTimeouts {
 	Create: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeRecurringChargesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNodeRecurringChargesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheReservedCacheNodeRecurringChargesList
 ```
@@ -1391,7 +1391,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeRecurringChargesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNodeRecurringChargesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticacheReservedCacheNodeRecurringChargesOutputReference
 ```
@@ -1680,7 +1680,7 @@ func InternalValue() ElasticacheReservedCacheNodeRecurringCharges
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.elasticacheReservedCacheNode.ElasticacheReservedCacheNodeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elasticachereservedcachenode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/elasticachereservedcachenode"
 
 elasticachereservedcachenode.NewElasticacheReservedCacheNodeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheReservedCacheNodeTimeoutsOutputReference
 ```

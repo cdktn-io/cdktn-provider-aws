@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.NewCodepipelineCustomActionType(scope Construct, id *string, config CodepipelineCustomActionTypeConfig) CodepipelineCustomActionType
 ```
@@ -472,7 +472,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.CodepipelineCustomActionType_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.CodepipelineCustomActionType_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ codepipelinecustomactiontype.CodepipelineCustomActionType_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.CodepipelineCustomActionType_IsTerraformResource(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ codepipelinecustomactiontype.CodepipelineCustomActionType_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.CodepipelineCustomActionType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 &codepipelinecustomactiontype.CodepipelineCustomActionTypeConfig {
 	Connection: interface{},
@@ -1036,14 +1036,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiont
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Category: *string,
-	InputArtifactDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v21.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetails,
-	OutputArtifactDetails: github.com/cdktf/cdktf-provider-aws-go/aws/v21.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetails,
+	InputArtifactDetails: github.com/cdktf/cdktf-provider-aws-go/aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetails,
+	OutputArtifactDetails: github.com/cdktf/cdktf-provider-aws-go/aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetails,
 	ProviderName: *string,
 	Version: *string,
 	ConfigurationProperty: interface{},
 	Id: *string,
 	Region: *string,
-	Settings: github.com/cdktf/cdktf-provider-aws-go/aws/v21.codepipelineCustomActionType.CodepipelineCustomActionTypeSettings,
+	Settings: github.com/cdktf/cdktf-provider-aws-go/aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettings,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 &codepipelinecustomactiontype.CodepipelineCustomActionTypeConfigurationProperty {
 	Key: interface{},
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 &codepipelinecustomactiontype.CodepipelineCustomActionTypeInputArtifactDetails {
 	MaximumCount: *f64,
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 &codepipelinecustomactiontype.CodepipelineCustomActionTypeOutputArtifactDetails {
 	MaximumCount: *f64,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 &codepipelinecustomactiontype.CodepipelineCustomActionTypeSettings {
 	EntityUrlTemplate: *string,
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.NewCodepipelineCustomActionTypeConfigurationPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodepipelineCustomActionTypeConfigurationPropertyList
 ```
@@ -1738,7 +1738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.NewCodepipelineCustomActionTypeConfigurationPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodepipelineCustomActionTypeConfigurationPropertyOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.NewCodepipelineCustomActionTypeInputArtifactDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineCustomActionTypeInputArtifactDetailsOutputReference
 ```
@@ -2473,7 +2473,7 @@ func InternalValue() CodepipelineCustomActionTypeInputArtifactDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.NewCodepipelineCustomActionTypeOutputArtifactDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference
 ```
@@ -2766,7 +2766,7 @@ func InternalValue() CodepipelineCustomActionTypeOutputArtifactDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/codepipelinecustomactiontype"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/codepipelinecustomactiontype"
 
 codepipelinecustomactiontype.NewCodepipelineCustomActionTypeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodepipelineCustomActionTypeSettingsOutputReference
 ```

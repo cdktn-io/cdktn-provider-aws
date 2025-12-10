@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationaccessscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.NewSsoadminApplicationAccessScope(scope Construct, id *string, config SsoadminApplicationAccessScopeConfig) SsoadminApplicationAccessScope
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationaccessscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationaccessscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationaccessscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationaccessscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminapplicationaccessscope"
 
 ssoadminapplicationaccessscope.SsoadminApplicationAccessScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.ssoadminApplicationAccessScope.SsoadminApplicationAccessScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/ssoadminapplicationaccessscope"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/ssoadminapplicationaccessscope"
 
 &ssoadminapplicationaccessscope.SsoadminApplicationAccessScopeConfig {
 	Connection: interface{},

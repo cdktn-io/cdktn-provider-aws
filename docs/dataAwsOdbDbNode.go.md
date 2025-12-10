@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbnode"
 
 dataawsodbdbnode.NewDataAwsOdbDbNode(scope Construct, id *string, config DataAwsOdbDbNodeConfig) DataAwsOdbDbNode
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsodbdbnode.DataAwsOdbDbNode_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNode.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbnode"
 
 dataawsodbdbnode.DataAwsOdbDbNode_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsOdbDbNode.DataAwsOdbDbNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsodbdbnode"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsodbdbnode"
 
 &dataawsodbdbnode.DataAwsOdbDbNodeConfig {
 	Connection: interface{},

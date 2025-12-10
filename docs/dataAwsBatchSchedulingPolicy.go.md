@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.NewDataAwsBatchSchedulingPolicy(scope Construct, id *string, config DataAwsBatchSchedulingPolicyConfig) DataAwsBatchSchedulingPolicy
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicy_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicy_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 &dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicyConfig {
 	Connection: interface{},
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 &dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicyFairSharePolicy {
 
@@ -850,7 +850,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpol
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 &dataawsbatchschedulingpolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistribution {
 
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpol
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.NewDataAwsBatchSchedulingPolicyFairSharePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchSchedulingPolicyFairSharePolicyList
 ```
@@ -1014,7 +1014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.NewDataAwsBatchSchedulingPolicyFairSharePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchSchedulingPolicyFairSharePolicyOutputReference
 ```
@@ -1314,7 +1314,7 @@ func InternalValue() DataAwsBatchSchedulingPolicyFairSharePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.NewDataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionList
 ```
@@ -1463,7 +1463,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbatchschedulingpolicy"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsbatchschedulingpolicy"
 
 dataawsbatchschedulingpolicy.NewDataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchSchedulingPolicyFairSharePolicyShareDistributionOutputReference
 ```

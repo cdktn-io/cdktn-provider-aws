@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmi(scope Construct, id *string, config DataAwsAmiConfig) DataAwsAmi
 ```
@@ -386,7 +386,7 @@ func ResetUefiData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.DataAwsAmi_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.DataAwsAmi_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ dataawsami.DataAwsAmi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmi.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.DataAwsAmi_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ dataawsami.DataAwsAmi_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.DataAwsAmi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1269,7 +1269,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 &dataawsami.DataAwsAmiBlockDeviceMappings {
 
@@ -1282,7 +1282,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 &dataawsami.DataAwsAmiConfig {
 	Connection: interface{},
@@ -1302,7 +1302,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
 	Owners: *[]*string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dataAwsAmi.DataAwsAmiTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws.dataAwsAmi.DataAwsAmiTimeouts,
 	UefiData: *string,
 }
 ```
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 &dataawsami.DataAwsAmiFilter {
 	Name: *string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 &dataawsami.DataAwsAmiProductCodes {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
 #### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 &dataawsami.DataAwsAmiTimeouts {
 	Read: *string,
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiBlockDeviceMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAmiBlockDeviceMappingsList
 ```
@@ -1803,7 +1803,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiBlockDeviceMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAmiBlockDeviceMappingsOutputReference
 ```
@@ -2114,7 +2114,7 @@ func InternalValue() DataAwsAmiBlockDeviceMappings
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAmiFilterList
 ```
@@ -2274,7 +2274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAmiFilterOutputReference
 ```
@@ -2585,7 +2585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiProductCodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAmiProductCodesList
 ```
@@ -2734,7 +2734,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiProductCodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAmiProductCodesOutputReference
 ```
@@ -3023,7 +3023,7 @@ func InternalValue() DataAwsAmiProductCodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsAmi.DataAwsAmiTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsami"
+import "github.com/cdktf/cdktf-provider-aws-go/aws/dataawsami"
 
 dataawsami.NewDataAwsAmiTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAmiTimeoutsOutputReference
 ```
