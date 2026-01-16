@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.NewDataAwsRedshiftDataShares(scope Construct, id *string, config DataAwsRedshiftDataSharesConfig) DataAwsRedshiftDataShares
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsredshiftdatashares.DataAwsRedshiftDataShares_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataShares.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.DataAwsRedshiftDataShares_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 &dataawsredshiftdatashares.DataAwsRedshiftDataSharesConfig {
 	Connection: interface{},
@@ -712,7 +712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataShares.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 &dataawsredshiftdatashares.DataAwsRedshiftDataSharesDataShares {
 
@@ -727,7 +727,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.NewDataAwsRedshiftDataSharesDataSharesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsRedshiftDataSharesDataSharesList
 ```
@@ -876,7 +876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRedshiftDataShares.DataAwsRedshiftDataSharesDataSharesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftdatashares"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftdatashares"
 
 dataawsredshiftdatashares.NewDataAwsRedshiftDataSharesDataSharesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsRedshiftDataSharesDataSharesOutputReference
 ```

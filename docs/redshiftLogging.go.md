@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftLogging.RedshiftLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftlogging"
 
 redshiftlogging.NewRedshiftLogging(scope Construct, id *string, config RedshiftLoggingConfig) RedshiftLogging
 ```
@@ -413,7 +413,7 @@ func ResetS3KeyPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftLogging.RedshiftLogging.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftlogging"
 
 redshiftlogging.RedshiftLogging_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftLogging.RedshiftLogging.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftlogging"
 
 redshiftlogging.RedshiftLogging_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ redshiftlogging.RedshiftLogging_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftLogging.RedshiftLogging.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftlogging"
 
 redshiftlogging.RedshiftLogging_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ redshiftlogging.RedshiftLogging_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftLogging.RedshiftLogging.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftlogging"
 
 redshiftlogging.RedshiftLogging_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -845,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftLogging.RedshiftLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftlogging"
 
 &redshiftlogging.RedshiftLoggingConfig {
 	Connection: interface{},

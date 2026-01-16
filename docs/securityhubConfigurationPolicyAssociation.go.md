@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 securityhubconfigurationpolicyassociation.NewSecurityhubConfigurationPolicyAssociation(scope Construct, id *string, config SecurityhubConfigurationPolicyAssociationConfig) SecurityhubConfigurationPolicyAssociation
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 &securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociationConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpo
 	TargetId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociationTimeouts,
 }
 ```
 
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 &securityhubconfigurationpolicyassociation.SecurityhubConfigurationPolicyAssociationTimeouts {
 	Create: *string,
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubConfigurationPolicyAssociation.SecurityhubConfigurationPolicyAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubconfigurationpolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubconfigurationpolicyassociation"
 
 securityhubconfigurationpolicyassociation.NewSecurityhubConfigurationPolicyAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubConfigurationPolicyAssociationTimeoutsOutputReference
 ```

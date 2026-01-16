@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/directoryservicetrust"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryservicetrust"
 
 directoryservicetrust.NewDirectoryServiceTrust(scope Construct, id *string, config DirectoryServiceTrustConfig) DirectoryServiceTrust
 ```
@@ -413,7 +413,7 @@ func ResetTrustType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/directoryservicetrust"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/directoryservicetrust"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ directoryservicetrust.DirectoryServiceTrust_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/directoryservicetrust"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ directoryservicetrust.DirectoryServiceTrust_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/directoryservicetrust"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryservicetrust"
 
 directoryservicetrust.DirectoryServiceTrust_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/directoryservicetrust"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryservicetrust"
 
 &directoryservicetrust.DirectoryServiceTrustConfig {
 	Connection: interface{},

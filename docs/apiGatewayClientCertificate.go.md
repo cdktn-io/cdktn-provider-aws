@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apigatewayclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayclientcertificate"
 
 apigatewayclientcertificate.NewApiGatewayClientCertificate(scope Construct, id *string, config ApiGatewayClientCertificateConfig) ApiGatewayClientCertificate
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apigatewayclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayclientcertificate"
 
 apigatewayclientcertificate.ApiGatewayClientCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apigatewayclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayclientcertificate"
 
 apigatewayclientcertificate.ApiGatewayClientCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ apigatewayclientcertificate.ApiGatewayClientCertificate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apigatewayclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayclientcertificate"
 
 apigatewayclientcertificate.ApiGatewayClientCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apigatewayclientcertificate.ApiGatewayClientCertificate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apigatewayclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayclientcertificate"
 
 apigatewayclientcertificate.ApiGatewayClientCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -856,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apigatewayclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayclientcertificate"
 
 &apigatewayclientcertificate.ApiGatewayClientCertificateConfig {
 	Connection: interface{},

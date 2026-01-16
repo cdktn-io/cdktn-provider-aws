@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroup(scope Construct, id *string, config AthenaWorkgroupConfig) AthenaWorkgroup
 ```
@@ -447,7 +447,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ athenaworkgroup.AthenaWorkgroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ athenaworkgroup.AthenaWorkgroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.AthenaWorkgroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfiguration,
+	Configuration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfiguration,
 	Description: *string,
 	ForceDestroy: interface{},
 	Id: *string,
@@ -1180,21 +1180,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfiguration {
 	BytesScannedCutoffPerQuery: *f64,
-	CustomerContentEncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationCustomerContentEncryptionConfiguration,
+	CustomerContentEncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationCustomerContentEncryptionConfiguration,
 	EnableMinimumEncryptionConfiguration: interface{},
 	EnforceWorkgroupConfiguration: interface{},
-	EngineVersion: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion,
+	EngineVersion: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion,
 	ExecutionRole: *string,
-	IdentityCenterConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationIdentityCenterConfiguration,
-	ManagedQueryResultsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfiguration,
-	MonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfiguration,
+	IdentityCenterConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationIdentityCenterConfiguration,
+	ManagedQueryResultsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfiguration,
+	MonitoringConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfiguration,
 	PublishCloudwatchMetricsEnabled: interface{},
 	RequesterPaysEnabled: interface{},
-	ResultConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration,
+	ResultConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration,
 }
 ```
 
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationCustomerContentEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationCustomerContentEncryptionConfiguration {
 	KmsKey: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationEngineVersion {
 	SelectedEngineVersion: *string,
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationIdentityCenterConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationIdentityCenterConfiguration {
 	EnableIdentityCenter: interface{},
@@ -1488,11 +1488,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfiguration {
 	Enabled: interface{},
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfiguration,
 }
 ```
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfiguration {
 	KmsKey: *string,
@@ -1568,12 +1568,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationMonitoringConfiguration {
-	CloudWatchLoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration,
-	ManagedLoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfiguration,
-	S3LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfiguration,
+	CloudWatchLoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration,
+	ManagedLoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfiguration,
+	S3LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfiguration,
 }
 ```
 
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration {
 	Enabled: interface{},
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType {
 	Key: *string,
@@ -1756,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfiguration {
 	Enabled: interface{},
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfiguration {
 	Enabled: interface{},
@@ -1862,11 +1862,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationResultConfiguration {
-	AclConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration,
+	AclConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration,
 	ExpectedBucketOwner: *string,
 	OutputLocation: *string,
 }
@@ -1940,7 +1940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration {
 	S3AclOption: *string,
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 &athenaworkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration {
 	EncryptionOption: *string,
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationCustomerContentEncryptionConfigurationOutputReference
 ```
@@ -2298,7 +2298,7 @@ func InternalValue() AthenaWorkgroupConfigurationCustomerContentEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationEngineVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationEngineVersionOutputReference
 ```
@@ -2587,7 +2587,7 @@ func InternalValue() AthenaWorkgroupConfigurationEngineVersion
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationIdentityCenterConfigurationOutputReference
 ```
@@ -2894,7 +2894,7 @@ func InternalValue() AthenaWorkgroupConfigurationIdentityCenterConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationManagedQueryResultsConfigurationEncryptionConfigurationOutputReference
 ```
@@ -3172,7 +3172,7 @@ func InternalValue() AthenaWorkgroupConfigurationManagedQueryResultsConfiguratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationManagedQueryResultsConfigurationOutputReference
 ```
@@ -3492,7 +3492,7 @@ func InternalValue() AthenaWorkgroupConfigurationManagedQueryResultsConfiguratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeList
 ```
@@ -3652,7 +3652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogTypeOutputReference
 ```
@@ -3963,7 +3963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationOutputReference
 ```
@@ -4334,7 +4334,7 @@ func InternalValue() AthenaWorkgroupConfigurationMonitoringConfigurationCloudWat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationMonitoringConfigurationManagedLoggingConfigurationOutputReference
 ```
@@ -4634,7 +4634,7 @@ func InternalValue() AthenaWorkgroupConfigurationMonitoringConfigurationManagedL
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationMonitoringConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationMonitoringConfigurationOutputReference
 ```
@@ -5009,7 +5009,7 @@ func InternalValue() AthenaWorkgroupConfigurationMonitoringConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationMonitoringConfigurationS3LoggingConfigurationOutputReference
 ```
@@ -5338,7 +5338,7 @@ func InternalValue() AthenaWorkgroupConfigurationMonitoringConfigurationS3Loggin
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationOutputReference
 ```
@@ -6013,7 +6013,7 @@ func InternalValue() AthenaWorkgroupConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference
 ```
@@ -6284,7 +6284,7 @@ func InternalValue() AthenaWorkgroupConfigurationResultConfigurationAclConfigura
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference
 ```
@@ -6591,7 +6591,7 @@ func InternalValue() AthenaWorkgroupConfigurationResultConfigurationEncryptionCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenaworkgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenaworkgroup"
 
 athenaworkgroup.NewAthenaWorkgroupConfigurationResultConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AthenaWorkgroupConfigurationResultConfigurationOutputReference
 ```

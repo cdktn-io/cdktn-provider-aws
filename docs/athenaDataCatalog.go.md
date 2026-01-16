@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenadatacatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenadatacatalog"
 
 athenadatacatalog.NewAthenaDataCatalog(scope Construct, id *string, config AthenaDataCatalogConfig) AthenaDataCatalog
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenadatacatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenadatacatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ athenadatacatalog.AthenaDataCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenadatacatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ athenadatacatalog.AthenaDataCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenadatacatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenadatacatalog"
 
 athenadatacatalog.AthenaDataCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/athenadatacatalog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/athenadatacatalog"
 
 &athenadatacatalog.AthenaDataCatalogConfig {
 	Connection: interface{},

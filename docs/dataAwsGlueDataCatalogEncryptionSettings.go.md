@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettings(scope Construct, id *string, config DataAwsGlueDataCatalogEncryptionSettingsConfig) DataAwsGlueDataCatalogEncryptionSettings
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettings_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSetting
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSetting
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 &dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettingsConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 &dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings {
 
@@ -796,7 +796,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 &dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption {
 
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencr
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 &dataawsgluedatacatalogencryptionsettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest {
 
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionList
 ```
@@ -973,7 +973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionOutputReference
 ```
@@ -1262,7 +1262,7 @@ func InternalValue() DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncrypti
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList
 ```
@@ -1411,7 +1411,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncrypti
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList
 ```
@@ -1860,7 +1860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgluedatacatalogencryptionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgluedatacatalogencryptionsettings"
 
 dataawsgluedatacatalogencryptionsettings.NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.NewDataAwsSsoadminApplicationProviders(scope Construct, id *string, config DataAwsSsoadminApplicationProvidersConfig) DataAwsSsoadminApplicationProviders
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProviders.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProviders_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProviders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProviders_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProviders_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProviders.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProviders_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProviders_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProviders.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProviders_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersApplicationProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 &dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProvidersApplicationProviders {
 
@@ -607,7 +607,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplication
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 &dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayData {
 
@@ -620,7 +620,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplication
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 &dataawsssoadminapplicationproviders.DataAwsSsoadminApplicationProvidersConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.NewDataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.NewDataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationProvidersApplicationProvidersDisplayDataOutputReference
 ```
@@ -1189,7 +1189,7 @@ func InternalValue() DataAwsSsoadminApplicationProvidersApplicationProvidersDisp
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersApplicationProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.NewDataAwsSsoadminApplicationProvidersApplicationProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationProvidersApplicationProvidersList
 ```
@@ -1338,7 +1338,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplicationProviders.DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssoadminapplicationproviders"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplicationproviders"
 
 dataawsssoadminapplicationproviders.NewDataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationProvidersApplicationProvidersOutputReference
 ```

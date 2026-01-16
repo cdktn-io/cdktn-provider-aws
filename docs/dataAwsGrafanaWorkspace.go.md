@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.NewDataAwsGrafanaWorkspace(scope Construct, id *string, config DataAwsGrafanaWorkspaceConfig) DataAwsGrafanaWorkspace
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgrafanaworkspace"
 
 dataawsgrafanaworkspace.DataAwsGrafanaWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -850,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsgrafanaworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsgrafanaworkspace"
 
 &dataawsgrafanaworkspace.DataAwsGrafanaWorkspaceConfig {
 	Connection: interface{},

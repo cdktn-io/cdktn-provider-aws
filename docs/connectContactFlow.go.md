@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectContactFlow.ConnectContactFlow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/connectcontactflow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectcontactflow"
 
 connectcontactflow.NewConnectContactFlow(scope Construct, id *string, config ConnectContactFlowConfig) ConnectContactFlow
 ```
@@ -441,7 +441,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.connectContactFlow.ConnectContactFlow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/connectcontactflow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectcontactflow"
 
 connectcontactflow.ConnectContactFlow_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.connectContactFlow.ConnectContactFlow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/connectcontactflow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectcontactflow"
 
 connectcontactflow.ConnectContactFlow_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ connectcontactflow.ConnectContactFlow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.connectContactFlow.ConnectContactFlow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/connectcontactflow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectcontactflow"
 
 connectcontactflow.ConnectContactFlow_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ connectcontactflow.ConnectContactFlow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.connectContactFlow.ConnectContactFlow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/connectcontactflow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectcontactflow"
 
 connectcontactflow.ConnectContactFlow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectContactFlow.ConnectContactFlowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/connectcontactflow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectcontactflow"
 
 &connectcontactflow.ConnectContactFlowConfig {
 	Connection: interface{},

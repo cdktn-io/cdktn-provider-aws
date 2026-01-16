@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.NewDataAwsMskBootstrapBrokers(scope Construct, id *string, config DataAwsMskBootstrapBrokersConfig) DataAwsMskBootstrapBrokers
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbootstrapbrokers"
 
 dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskBootstrapBrokers.DataAwsMskBootstrapBrokersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmskbootstrapbrokers"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbootstrapbrokers"
 
 &dataawsmskbootstrapbrokers.DataAwsMskBootstrapBrokersConfig {
 	Connection: interface{},

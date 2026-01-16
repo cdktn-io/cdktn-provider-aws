@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 fmsadminaccount.NewFmsAdminAccount(scope Construct, id *string, config FmsAdminAccountConfig) FmsAdminAccount
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ fmsadminaccount.FmsAdminAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ fmsadminaccount.FmsAdminAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 fmsadminaccount.FmsAdminAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 &fmsadminaccount.FmsAdminAccountConfig {
 	Connection: interface{},
@@ -779,7 +779,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.fmsAdminAccount.FmsAdminAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.fmsAdminAccount.FmsAdminAccountTimeouts,
 }
 ```
 
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 &fmsadminaccount.FmsAdminAccountTimeouts {
 	Create: *string,
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fmsAdminAccount.FmsAdminAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/fmsadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/fmsadminaccount"
 
 fmsadminaccount.NewFmsAdminAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FmsAdminAccountTimeoutsOutputReference
 ```

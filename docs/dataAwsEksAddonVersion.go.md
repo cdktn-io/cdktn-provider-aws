@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksaddonversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksaddonversion"
 
 dataawseksaddonversion.NewDataAwsEksAddonVersion(scope Construct, id *string, config DataAwsEksAddonVersionConfig) DataAwsEksAddonVersion
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksaddonversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksaddonversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksaddonversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawseksaddonversion.DataAwsEksAddonVersion_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksaddonversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksaddonversion"
 
 dataawseksaddonversion.DataAwsEksAddonVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksAddonVersion.DataAwsEksAddonVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksaddonversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksaddonversion"
 
 &dataawseksaddonversion.DataAwsEksAddonVersionConfig {
 	Connection: interface{},

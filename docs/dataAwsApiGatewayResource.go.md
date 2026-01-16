@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayresource"
 
 dataawsapigatewayresource.NewDataAwsApiGatewayResource(scope Construct, id *string, config DataAwsApiGatewayResourceConfig) DataAwsApiGatewayResource
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsapigatewayresource.DataAwsApiGatewayResource_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayresource"
 
 dataawsapigatewayresource.DataAwsApiGatewayResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayresource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayresource"
 
 &dataawsapigatewayresource.DataAwsApiGatewayResourceConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesv2dedicatedippool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesv2dedicatedippool"
 
 sesv2dedicatedippool.NewSesv2DedicatedIpPool(scope Construct, id *string, config Sesv2DedicatedIpPoolConfig) Sesv2DedicatedIpPool
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesv2dedicatedippool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesv2dedicatedippool"
 
 sesv2dedicatedippool.Sesv2DedicatedIpPool_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesv2dedicatedippool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesv2dedicatedippool"
 
 sesv2dedicatedippool.Sesv2DedicatedIpPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ sesv2dedicatedippool.Sesv2DedicatedIpPool_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesv2dedicatedippool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesv2dedicatedippool"
 
 sesv2dedicatedippool.Sesv2DedicatedIpPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ sesv2dedicatedippool.Sesv2DedicatedIpPool_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesv2dedicatedippool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesv2dedicatedippool"
 
 sesv2dedicatedippool.Sesv2DedicatedIpPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -845,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesv2dedicatedippool"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesv2dedicatedippool"
 
 &sesv2dedicatedippool.Sesv2DedicatedIpPoolConfig {
 	Connection: interface{},

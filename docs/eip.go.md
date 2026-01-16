@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eip.Eip.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.NewEip(scope Construct, id *string, config EipConfig) Eip
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eip.Eip.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eip.Eip.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ eip.Eip_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eip.Eip.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ eip.Eip_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eip.Eip.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1196,7 +1196,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eip.EipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 &eip.EipConfig {
 	Connection: interface{},
@@ -1219,7 +1219,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.eip.EipTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.eip.EipTimeouts,
 }
 ```
 
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eip.EipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 &eip.EipTimeouts {
 	Delete: *string,
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.NewEipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EipTimeoutsOutputReference
 ```

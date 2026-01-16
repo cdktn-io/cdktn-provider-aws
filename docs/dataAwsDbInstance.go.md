@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.NewDataAwsDbInstance(scope Construct, id *string, config DataAwsDbInstanceConfig) DataAwsDbInstance
 ```
@@ -304,7 +304,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.DataAwsDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.DataAwsDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsdbinstance.DataAwsDbInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.DataAwsDbInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsdbinstance.DataAwsDbInstance_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.DataAwsDbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1121,7 +1121,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 &dataawsdbinstance.DataAwsDbInstanceConfig {
 	Connection: interface{},
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 &dataawsdbinstance.DataAwsDbInstanceMasterUserSecret {
 
@@ -1299,7 +1299,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.NewDataAwsDbInstanceMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsDbInstanceMasterUserSecretList
 ```
@@ -1448,7 +1448,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDbInstance.DataAwsDbInstanceMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdbinstance"
 
 dataawsdbinstance.NewDataAwsDbInstanceMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsDbInstanceMasterUserSecretOutputReference
 ```

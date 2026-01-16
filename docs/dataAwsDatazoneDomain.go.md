@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 
 dataawsdatazonedomain.NewDataAwsDatazoneDomain(scope Construct, id *string, config DataAwsDatazoneDomainConfig) DataAwsDatazoneDomain
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 
 &dataawsdatazonedomain.DataAwsDatazoneDomainConfig {
 	Connection: interface{},

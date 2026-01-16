@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontact"
 
 dataawsssmcontactscontact.NewDataAwsSsmcontactsContact(scope Construct, id *string, config DataAwsSsmcontactsContactConfig) DataAwsSsmcontactsContact
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontact"
 
 dataawsssmcontactscontact.DataAwsSsmcontactsContact_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontact"
 
 dataawsssmcontactscontact.DataAwsSsmcontactsContact_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsssmcontactscontact.DataAwsSsmcontactsContact_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontact"
 
 dataawsssmcontactscontact.DataAwsSsmcontactsContact_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsssmcontactscontact.DataAwsSsmcontactsContact_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontact"
 
 dataawsssmcontactscontact.DataAwsSsmcontactsContact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsContact.DataAwsSsmcontactsContactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontact"
 
 &dataawsssmcontactscontact.DataAwsSsmcontactsContactConfig {
 	Connection: interface{},

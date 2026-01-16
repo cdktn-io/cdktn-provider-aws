@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistribution(scope Construct, id *string, config CloudfrontDistributionConfig) CloudfrontDistribution
 ```
@@ -655,7 +655,7 @@ func ResetWebAclId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistribution.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.CloudfrontDistribution_IsConstruct(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistribution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.CloudfrontDistribution_IsTerraformElement(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ cloudfrontdistribution.CloudfrontDistribution_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistribution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.CloudfrontDistribution_IsTerraformResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ cloudfrontdistribution.CloudfrontDistribution_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistribution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.CloudfrontDistribution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1637,7 +1637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionConfig {
 	Connection: interface{},
@@ -1647,22 +1647,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultCacheBehavior: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehavior,
+	DefaultCacheBehavior: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehavior,
 	Enabled: interface{},
 	Origin: interface{},
-	Restrictions: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionRestrictions,
-	ViewerCertificate: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificate,
+	Restrictions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionRestrictions,
+	ViewerCertificate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionViewerCertificate,
 	Aliases: *[]*string,
 	AnycastIpListId: *string,
 	Comment: *string,
-	ConnectionFunctionAssociation: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionConnectionFunctionAssociation,
+	ConnectionFunctionAssociation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionConnectionFunctionAssociation,
 	ContinuousDeploymentPolicyId: *string,
 	CustomErrorResponse: interface{},
 	DefaultRootObject: *string,
 	HttpVersion: *string,
 	Id: *string,
 	IsIpv6Enabled: interface{},
-	LoggingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfig,
+	LoggingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionLoggingConfig,
 	OrderedCacheBehavior: interface{},
 	OriginGroup: interface{},
 	PriceClass: *string,
@@ -1670,7 +1670,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 	Staging: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	ViewerMtlsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfig,
+	ViewerMtlsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfig,
 	WaitForDeployment: interface{},
 	WebAclId: *string,
 }
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionConnectionFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionConnectionFunctionAssociation {
 	Id: *string,
@@ -2161,7 +2161,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionCustomErrorResponse {
 	ErrorCode: *f64,
@@ -2235,7 +2235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionDefaultCacheBehavior {
 	AllowedMethods: *[]*string,
@@ -2246,9 +2246,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 	Compress: interface{},
 	DefaultTtl: *f64,
 	FieldLevelEncryptionId: *string,
-	ForwardedValues: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValues,
+	ForwardedValues: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValues,
 	FunctionAssociation: interface{},
-	GrpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfig,
+	GrpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfig,
 	LambdaFunctionAssociation: interface{},
 	MaxTtl: *f64,
 	MinTtl: *f64,
@@ -2541,10 +2541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValues {
-	Cookies: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies,
+	Cookies: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies,
 	QueryString: interface{},
 	Headers: *[]*string,
 	QueryStringCacheKeys: *[]*string,
@@ -2617,7 +2617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies {
 	Forward: *string,
@@ -2663,7 +2663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation {
 	EventType: *string,
@@ -2709,7 +2709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfig {
 	Enabled: interface{},
@@ -2741,7 +2741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation {
 	EventType: *string,
@@ -2801,7 +2801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionLoggingConfig {
 	Bucket: *string,
@@ -2861,7 +2861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrderedCacheBehavior {
 	AllowedMethods: *[]*string,
@@ -2873,9 +2873,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 	Compress: interface{},
 	DefaultTtl: *f64,
 	FieldLevelEncryptionId: *string,
-	ForwardedValues: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValues,
+	ForwardedValues: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValues,
 	FunctionAssociation: interface{},
-	GrpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfig,
+	GrpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfig,
 	LambdaFunctionAssociation: interface{},
 	MaxTtl: *f64,
 	MinTtl: *f64,
@@ -3181,10 +3181,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValues {
-	Cookies: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies,
+	Cookies: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies,
 	QueryString: interface{},
 	Headers: *[]*string,
 	QueryStringCacheKeys: *[]*string,
@@ -3257,7 +3257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies {
 	Forward: *string,
@@ -3303,7 +3303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation {
 	EventType: *string,
@@ -3349,7 +3349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfig {
 	Enabled: interface{},
@@ -3381,7 +3381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation {
 	EventType: *string,
@@ -3441,7 +3441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOrigin {
 	DomainName: *string,
@@ -3449,13 +3449,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 	ConnectionAttempts: *f64,
 	ConnectionTimeout: *f64,
 	CustomHeader: interface{},
-	CustomOriginConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfig,
+	CustomOriginConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfig,
 	OriginAccessControlId: *string,
 	OriginPath: *string,
-	OriginShield: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOriginOriginShield,
+	OriginShield: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOriginOriginShield,
 	ResponseCompletionTimeout: *f64,
-	S3OriginConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfig,
-	VpcOriginConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOriginVpcOriginConfig,
+	S3OriginConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfig,
+	VpcOriginConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOriginVpcOriginConfig,
 }
 ```
 
@@ -3637,7 +3637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginCustomHeader {
 	Name: *string,
@@ -3683,7 +3683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginCustomOriginConfig {
 	HttpPort: *f64,
@@ -3799,10 +3799,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginGroup {
-	FailoverCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteria,
+	FailoverCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteria,
 	Member: interface{},
 	OriginId: *string,
 }
@@ -3863,7 +3863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginGroupFailoverCriteria {
 	StatusCodes: *[]*f64,
@@ -3895,7 +3895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginGroupMember {
 	OriginId: *string,
@@ -3927,7 +3927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOriginShield.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginOriginShield {
 	Enabled: interface{},
@@ -3973,7 +3973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginS3OriginConfig {
 	OriginAccessIdentity: *string,
@@ -4005,7 +4005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginVpcOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionOriginVpcOriginConfig {
 	VpcOriginId: *string,
@@ -4079,10 +4079,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionRestrictions {
-	GeoRestriction: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestriction,
+	GeoRestriction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestriction,
 }
 ```
 
@@ -4113,7 +4113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionRestrictionsGeoRestriction {
 	RestrictionType: *string,
@@ -4159,7 +4159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionTrustedKeyGroups {
 
@@ -4172,7 +4172,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionTrustedKeyGroupsItems {
 
@@ -4185,7 +4185,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSigners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionTrustedSigners {
 
@@ -4198,7 +4198,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionTrustedSignersItems {
 
@@ -4211,7 +4211,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionViewerCertificate {
 	AcmCertificateArn: *string,
@@ -4299,11 +4299,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionViewerMtlsConfig {
 	Mode: *string,
-	TrustStoreConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfigTrustStoreConfig,
+	TrustStoreConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfigTrustStoreConfig,
 }
 ```
 
@@ -4347,7 +4347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfigTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 &cloudfrontdistribution.CloudfrontDistributionViewerMtlsConfigTrustStoreConfig {
 	TrustStoreId: *string,
@@ -4409,7 +4409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionConnectionFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionConnectionFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionConnectionFunctionAssociationOutputReference
 ```
@@ -4680,7 +4680,7 @@ func InternalValue() CloudfrontDistributionConnectionFunctionAssociation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionCustomErrorResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionCustomErrorResponseList
 ```
@@ -4840,7 +4840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionCustomErrorResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionCustomErrorResponseOutputReference
 ```
@@ -5216,7 +5216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference
 ```
@@ -5516,7 +5516,7 @@ func InternalValue() CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionDefaultCacheBehaviorForwardedValuesOutputReference
 ```
@@ -5880,7 +5880,7 @@ func InternalValue() CloudfrontDistributionDefaultCacheBehaviorForwardedValues
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList
 ```
@@ -6040,7 +6040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationOutputReference
 ```
@@ -6351,7 +6351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionDefaultCacheBehaviorGrpcConfigOutputReference
 ```
@@ -6629,7 +6629,7 @@ func InternalValue() CloudfrontDistributionDefaultCacheBehaviorGrpcConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationList
 ```
@@ -6789,7 +6789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference
 ```
@@ -7129,7 +7129,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionDefaultCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionDefaultCacheBehaviorOutputReference
 ```
@@ -7982,7 +7982,7 @@ func InternalValue() CloudfrontDistributionDefaultCacheBehavior
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionLoggingConfigOutputReference
 ```
@@ -8318,7 +8318,7 @@ func InternalValue() CloudfrontDistributionLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesOutputReference
 ```
@@ -8618,7 +8618,7 @@ func InternalValue() CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOrderedCacheBehaviorForwardedValuesOutputReference
 ```
@@ -8982,7 +8982,7 @@ func InternalValue() CloudfrontDistributionOrderedCacheBehaviorForwardedValues
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationList
 ```
@@ -9142,7 +9142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference
 ```
@@ -9453,7 +9453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorGrpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorGrpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOrderedCacheBehaviorGrpcConfigOutputReference
 ```
@@ -9731,7 +9731,7 @@ func InternalValue() CloudfrontDistributionOrderedCacheBehaviorGrpcConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationList
 ```
@@ -9891,7 +9891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationOutputReference
 ```
@@ -10231,7 +10231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOrderedCacheBehaviorList
 ```
@@ -10391,7 +10391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOrderedCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOrderedCacheBehaviorOutputReference
 ```
@@ -11284,7 +11284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginCustomHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOriginCustomHeaderList
 ```
@@ -11444,7 +11444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginCustomHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOriginCustomHeaderOutputReference
 ```
@@ -11755,7 +11755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginCustomOriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginCustomOriginConfigOutputReference
 ```
@@ -12179,7 +12179,7 @@ func InternalValue() CloudfrontDistributionOriginCustomOriginConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginGroupFailoverCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginGroupFailoverCriteriaOutputReference
 ```
@@ -12450,7 +12450,7 @@ func InternalValue() CloudfrontDistributionOriginGroupFailoverCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOriginGroupList
 ```
@@ -12610,7 +12610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginGroupMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOriginGroupMemberList
 ```
@@ -12770,7 +12770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginGroupMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOriginGroupMemberOutputReference
 ```
@@ -13059,7 +13059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOriginGroupOutputReference
 ```
@@ -13418,7 +13418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionOriginList
 ```
@@ -13578,7 +13578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOriginShieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginOriginShieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginOriginShieldOutputReference
 ```
@@ -13878,7 +13878,7 @@ func InternalValue() CloudfrontDistributionOriginOriginShield
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionOriginOutputReference
 ```
@@ -14544,7 +14544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginS3OriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginS3OriginConfigOutputReference
 ```
@@ -14815,7 +14815,7 @@ func InternalValue() CloudfrontDistributionOriginS3OriginConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginVpcOriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionOriginVpcOriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginVpcOriginConfigOutputReference
 ```
@@ -15173,7 +15173,7 @@ func InternalValue() CloudfrontDistributionOriginVpcOriginConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsGeoRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionRestrictionsGeoRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionRestrictionsGeoRestrictionOutputReference
 ```
@@ -15473,7 +15473,7 @@ func InternalValue() CloudfrontDistributionRestrictionsGeoRestriction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionRestrictionsOutputReference
 ```
@@ -15757,7 +15757,7 @@ func InternalValue() CloudfrontDistributionRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedKeyGroupsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionTrustedKeyGroupsItemsList
 ```
@@ -15906,7 +15906,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedKeyGroupsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionTrustedKeyGroupsItemsOutputReference
 ```
@@ -16195,7 +16195,7 @@ func InternalValue() CloudfrontDistributionTrustedKeyGroupsItems
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionTrustedKeyGroupsList
 ```
@@ -16344,7 +16344,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionTrustedKeyGroupsOutputReference
 ```
@@ -16633,7 +16633,7 @@ func InternalValue() CloudfrontDistributionTrustedKeyGroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedSignersItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionTrustedSignersItemsList
 ```
@@ -16782,7 +16782,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedSignersItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionTrustedSignersItemsOutputReference
 ```
@@ -17071,7 +17071,7 @@ func InternalValue() CloudfrontDistributionTrustedSignersItems
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedSignersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontDistributionTrustedSignersList
 ```
@@ -17220,7 +17220,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionTrustedSignersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontDistributionTrustedSignersOutputReference
 ```
@@ -17509,7 +17509,7 @@ func InternalValue() CloudfrontDistributionTrustedSigners
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionViewerCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionViewerCertificateOutputReference
 ```
@@ -17903,7 +17903,7 @@ func InternalValue() CloudfrontDistributionViewerCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionViewerMtlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionViewerMtlsConfigOutputReference
 ```
@@ -18223,7 +18223,7 @@ func InternalValue() CloudfrontDistributionViewerMtlsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionViewerMtlsConfigTrustStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontdistribution"
 
 cloudfrontdistribution.NewCloudfrontDistributionViewerMtlsConfigTrustStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionViewerMtlsConfigTrustStoreConfigOutputReference
 ```

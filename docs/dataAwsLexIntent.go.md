@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLexIntent.DataAwsLexIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexintent"
 
 dataawslexintent.NewDataAwsLexIntent(scope Construct, id *string, config DataAwsLexIntentConfig) DataAwsLexIntent
 ```
@@ -297,7 +297,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslexintent.DataAwsLexIntent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLexIntent.DataAwsLexIntent.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslexintent.DataAwsLexIntent_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLexIntent.DataAwsLexIntent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexintent"
 
 dataawslexintent.DataAwsLexIntent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLexIntent.DataAwsLexIntentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexintent"
 
 &dataawslexintent.DataAwsLexIntentConfig {
 	Connection: interface{},

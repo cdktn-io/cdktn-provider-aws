@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.NewDataAwsBackupReportPlan(scope Construct, id *string, config DataAwsBackupReportPlanConfig) DataAwsBackupReportPlan
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.DataAwsBackupReportPlan_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.DataAwsBackupReportPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbackupreportplan.DataAwsBackupReportPlan_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.DataAwsBackupReportPlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsbackupreportplan.DataAwsBackupReportPlan_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.DataAwsBackupReportPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 &dataawsbackupreportplan.DataAwsBackupReportPlanConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 &dataawsbackupreportplan.DataAwsBackupReportPlanReportDeliveryChannel {
 
@@ -894,7 +894,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 &dataawsbackupreportplan.DataAwsBackupReportPlanReportSetting {
 
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.NewDataAwsBackupReportPlanReportDeliveryChannelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupReportPlanReportDeliveryChannelList
 ```
@@ -1058,7 +1058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.NewDataAwsBackupReportPlanReportDeliveryChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupReportPlanReportDeliveryChannelOutputReference
 ```
@@ -1358,7 +1358,7 @@ func InternalValue() DataAwsBackupReportPlanReportDeliveryChannel
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.NewDataAwsBackupReportPlanReportSettingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupReportPlanReportSettingList
 ```
@@ -1507,7 +1507,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupreportplan"
 
 dataawsbackupreportplan.NewDataAwsBackupReportPlanReportSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupReportPlanReportSettingOutputReference
 ```

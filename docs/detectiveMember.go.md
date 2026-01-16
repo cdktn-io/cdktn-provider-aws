@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.detectiveMember.DetectiveMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/detectivemember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/detectivemember"
 
 detectivemember.NewDetectiveMember(scope Construct, id *string, config DetectiveMemberConfig) DetectiveMember
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.detectiveMember.DetectiveMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/detectivemember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/detectivemember"
 
 detectivemember.DetectiveMember_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.detectiveMember.DetectiveMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/detectivemember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/detectivemember"
 
 detectivemember.DetectiveMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ detectivemember.DetectiveMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.detectiveMember.DetectiveMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/detectivemember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/detectivemember"
 
 detectivemember.DetectiveMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ detectivemember.DetectiveMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.detectiveMember.DetectiveMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/detectivemember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/detectivemember"
 
 detectivemember.DetectiveMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.detectiveMember.DetectiveMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/detectivemember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/detectivemember"
 
 &detectivemember.DetectiveMemberConfig {
 	Connection: interface{},

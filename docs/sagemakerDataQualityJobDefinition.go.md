@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinition(scope Construct, id *string, config SagemakerDataQualityJobDefinitionConfig) SagemakerDataQualityJobDefinition
 ```
@@ -525,7 +525,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinition_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinition_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1111,7 +1111,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionConfig {
 	Connection: interface{},
@@ -1121,17 +1121,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdef
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DataQualityAppSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityAppSpecification,
-	DataQualityJobInput: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInput,
-	DataQualityJobOutputConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig,
-	JobResources: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResources,
+	DataQualityAppSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityAppSpecification,
+	DataQualityJobInput: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInput,
+	DataQualityJobOutputConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig,
+	JobResources: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResources,
 	RoleArn: *string,
-	DataQualityBaselineConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfig,
+	DataQualityBaselineConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfig,
 	Id: *string,
 	Name: *string,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfig,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfig,
 	Region: *string,
-	StoppingCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionStoppingCondition,
+	StoppingCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionStoppingCondition,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityAppSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityAppSpecification {
 	ImageUri: *string,
@@ -1488,11 +1488,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfig {
-	ConstraintsResource: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResource,
-	StatisticsResource: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResource,
+	ConstraintsResource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResource,
+	StatisticsResource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResource,
 }
 ```
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResource {
 	S3Uri: *string,
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResource {
 	S3Uri: *string,
@@ -1602,11 +1602,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobInput {
-	BatchTransformInput: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInput,
-	EndpointInput: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInput,
+	BatchTransformInput: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInput,
+	EndpointInput: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInput,
 }
 ```
 
@@ -1652,11 +1652,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInput {
 	DataCapturedDestinationS3Uri: *string,
-	DatasetFormat: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormat,
+	DatasetFormat: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormat,
 	LocalPath: *string,
 	S3DataDistributionType: *string,
 	S3InputMode: *string,
@@ -1742,11 +1742,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormat {
-	Csv: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsv,
-	Json: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJson,
+	Csv: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsv,
+	Json: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJson,
 }
 ```
 
@@ -1792,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsv {
 	Header: interface{},
@@ -1824,7 +1824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJson {
 	Line: interface{},
@@ -1856,7 +1856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInput {
 	EndpointName: *string,
@@ -1930,10 +1930,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig {
-	MonitoringOutputs: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputs,
+	MonitoringOutputs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputs,
 	KmsKeyId: *string,
 }
 ```
@@ -1978,10 +1978,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputs {
-	S3Output: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3Output,
+	S3Output: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3Output,
 }
 ```
 
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3Output.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3Output {
 	S3Uri: *string,
@@ -2072,10 +2072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionJobResources {
-	ClusterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResourcesClusterConfig,
+	ClusterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResourcesClusterConfig,
 }
 ```
 
@@ -2106,7 +2106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResourcesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionJobResourcesClusterConfig {
 	InstanceCount: *f64,
@@ -2180,12 +2180,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionNetworkConfig {
 	EnableInterContainerTrafficEncryption: interface{},
 	EnableNetworkIsolation: interface{},
-	VpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfigVpcConfig,
+	VpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfigVpcConfig,
 }
 ```
 
@@ -2242,7 +2242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfigVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionNetworkConfigVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionStoppingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 &sagemakerdataqualityjobdefinition.SagemakerDataQualityJobDefinitionStoppingCondition {
 	MaxRuntimeInSeconds: *f64,
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityAppSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityAppSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityAppSpecificationOutputReference
 ```
@@ -2680,7 +2680,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityAppSpecificatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityBaselineConfigConstraintsResourceOutputReference
 ```
@@ -2958,7 +2958,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityBaselineConfigC
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityBaselineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityBaselineConfigOutputReference
 ```
@@ -3291,7 +3291,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityBaselineConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityBaselineConfigStatisticsResourceOutputReference
 ```
@@ -3569,7 +3569,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityBaselineConfigS
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatCsvOutputReference
 ```
@@ -3847,7 +3847,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatJsonOutputReference
 ```
@@ -4125,7 +4125,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputDatasetFormatOutputReference
 ```
@@ -4458,7 +4458,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTransformInputOutputReference
 ```
@@ -4851,7 +4851,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobInputBatchTr
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobInputEndpointInputOutputReference
 ```
@@ -5209,7 +5209,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobInputEndpoin
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobInputOutputReference
 ```
@@ -5542,7 +5542,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobInput
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsOutputReference
 ```
@@ -5826,7 +5826,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3OutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3OutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigMonitoringOutputsS3OutputOutputReference
 ```
@@ -6155,7 +6155,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionDataQualityJobOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionDataQualityJobOutputConfigOutputReference
 ```
@@ -6468,7 +6468,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionDataQualityJobOutputConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionJobResourcesClusterConfigOutputReference
 ```
@@ -6812,7 +6812,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionJobResourcesClusterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionJobResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionJobResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionJobResourcesOutputReference
 ```
@@ -7096,7 +7096,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionJobResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionNetworkConfigOutputReference
 ```
@@ -7445,7 +7445,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionNetworkConfigVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionNetworkConfigVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionNetworkConfigVpcConfigOutputReference
 ```
@@ -7738,7 +7738,7 @@ func InternalValue() SagemakerDataQualityJobDefinitionNetworkConfigVpcConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerDataQualityJobDefinition.SagemakerDataQualityJobDefinitionStoppingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sagemakerdataqualityjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerdataqualityjobdefinition"
 
 sagemakerdataqualityjobdefinition.NewSagemakerDataQualityJobDefinitionStoppingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerDataQualityJobDefinitionStoppingConditionOutputReference
 ```

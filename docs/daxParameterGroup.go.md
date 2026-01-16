@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.NewDaxParameterGroup(scope Construct, id *string, config DaxParameterGroupConfig) DaxParameterGroup
 ```
@@ -419,7 +419,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ daxparametergroup.DaxParameterGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ daxparametergroup.DaxParameterGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.DaxParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 &daxparametergroup.DaxParameterGroupConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 &daxparametergroup.DaxParameterGroupParameters {
 	Name: *string,
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.NewDaxParameterGroupParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DaxParameterGroupParametersList
 ```
@@ -1205,7 +1205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.daxParameterGroup.DaxParameterGroupParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/daxparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/daxparametergroup"
 
 daxparametergroup.NewDaxParameterGroupParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DaxParameterGroupParametersOutputReference
 ```

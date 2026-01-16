@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/snstopicpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicpolicy"
 
 snstopicpolicy.NewSnsTopicPolicy(scope Construct, id *string, config SnsTopicPolicyConfig) SnsTopicPolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/snstopicpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/snstopicpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ snstopicpolicy.SnsTopicPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/snstopicpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ snstopicpolicy.SnsTopicPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/snstopicpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicpolicy"
 
 snstopicpolicy.SnsTopicPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.snsTopicPolicy.SnsTopicPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/snstopicpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicpolicy"
 
 &snstopicpolicy.SnsTopicPolicyConfig {
 	Connection: interface{},

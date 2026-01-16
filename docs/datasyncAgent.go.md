@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 datasyncagent.NewDatasyncAgent(scope Construct, id *string, config DatasyncAgentConfig) DatasyncAgent
 ```
@@ -475,7 +475,7 @@ func ResetVpcEndpointId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 datasyncagent.DatasyncAgent_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 datasyncagent.DatasyncAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ datasyncagent.DatasyncAgent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 datasyncagent.DatasyncAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ datasyncagent.DatasyncAgent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 datasyncagent.DatasyncAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1039,7 +1039,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 &datasyncagent.DatasyncAgentConfig {
 	Connection: interface{},
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
 	SubnetArns: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.datasyncAgent.DatasyncAgentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.datasyncAgent.DatasyncAgentTimeouts,
 	VpcEndpointId: *string,
 }
 ```
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 &datasyncagent.DatasyncAgentTimeouts {
 	Create: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datasyncagent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasyncagent"
 
 datasyncagent.NewDatasyncAgentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncAgentTimeoutsOutputReference
 ```

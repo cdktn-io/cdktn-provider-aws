@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnect(scope Construct, id *string, config DataAwsConnectQuickConnectConfig) DataAwsConnectQuickConnect
 ```
@@ -311,7 +311,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsconnectquickconnect.DataAwsConnectQuickConnect_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnect.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.DataAwsConnectQuickConnect_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfig {
 
@@ -947,7 +947,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig {
 
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfig {
 
@@ -973,7 +973,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 &dataawsconnectquickconnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfig {
 
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigList
 ```
@@ -1137,7 +1137,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigOutputReference
 ```
@@ -1448,7 +1448,7 @@ func InternalValue() DataAwsConnectQuickConnectQuickConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigList
 ```
@@ -1597,7 +1597,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference
 ```
@@ -1875,7 +1875,7 @@ func InternalValue() DataAwsConnectQuickConnectQuickConnectConfigPhoneConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigQueueConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigQueueConfigList
 ```
@@ -2024,7 +2024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigQueueConfigOutputReference
 ```
@@ -2313,7 +2313,7 @@ func InternalValue() DataAwsConnectQuickConnectQuickConnectConfigQueueConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigUserConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsConnectQuickConnectQuickConnectConfigUserConfigList
 ```
@@ -2462,7 +2462,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsconnectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsconnectquickconnect"
 
 dataawsconnectquickconnect.NewDataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference
 ```

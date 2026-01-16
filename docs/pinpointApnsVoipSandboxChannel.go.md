@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapnsvoipsandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapnsvoipsandboxchannel"
 
 pinpointapnsvoipsandboxchannel.NewPinpointApnsVoipSandboxChannel(scope Construct, id *string, config PinpointApnsVoipSandboxChannelConfig) PinpointApnsVoipSandboxChannel
 ```
@@ -448,7 +448,7 @@ func ResetTokenKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapnsvoipsandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapnsvoipsandboxchannel"
 
 pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannel_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapnsvoipsandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapnsvoipsandboxchannel"
 
 pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannel_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapnsvoipsandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapnsvoipsandboxchannel"
 
 pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannel_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapnsvoipsandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapnsvoipsandboxchannel"
 
 pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapnsvoipsandboxchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapnsvoipsandboxchannel"
 
 &pinpointapnsvoipsandboxchannel.PinpointApnsVoipSandboxChannelConfig {
 	Connection: interface{},

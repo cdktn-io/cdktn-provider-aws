@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebusersettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebusersettingsassociation"
 
 workspaceswebusersettingsassociation.NewWorkspaceswebUserSettingsAssociation(scope Construct, id *string, config WorkspaceswebUserSettingsAssociationConfig) WorkspaceswebUserSettingsAssociation
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebusersettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebusersettingsassociation"
 
 workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebusersettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebusersettingsassociation"
 
 workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociation_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebusersettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebusersettingsassociation"
 
 workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociation_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebusersettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebusersettingsassociation"
 
 workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebUserSettingsAssociation.WorkspaceswebUserSettingsAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebusersettingsassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebusersettingsassociation"
 
 &workspaceswebusersettingsassociation.WorkspaceswebUserSettingsAssociationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStore(scope Construct, id *string, config CloudtrailEventDataStoreConfig) CloudtrailEventDataStore
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ cloudtraileventdatastore.CloudtrailEventDataStore_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.CloudtrailEventDataStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1103,7 +1103,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreAdvancedEventSelector {
 	FieldSelector: interface{},
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector {
 	EndsWith: *[]*string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreConfig {
 	Connection: interface{},
@@ -1290,7 +1290,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TerminationProtectionEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts,
 }
 ```
 
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 &cloudtraileventdatastore.CloudtrailEventDataStoreTimeouts {
 	Create: *string,
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList
 ```
@@ -1796,7 +1796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference
 ```
@@ -2266,7 +2266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorList
 ```
@@ -2426,7 +2426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreAdvancedEventSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudtrailEventDataStoreAdvancedEventSelectorOutputReference
 ```
@@ -2764,7 +2764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudtraileventdatastore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudtraileventdatastore"
 
 cloudtraileventdatastore.NewCloudtrailEventDataStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudtrailEventDataStoreTimeoutsOutputReference
 ```

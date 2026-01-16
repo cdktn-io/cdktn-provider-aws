@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPrompt(scope Construct, id *string, config BedrockagentPromptConfig) BedrockagentPrompt
 ```
@@ -433,7 +433,7 @@ func ResetVariant()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPrompt.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.BedrockagentPrompt_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPrompt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.BedrockagentPrompt_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ bedrockagentprompt.BedrockagentPrompt_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPrompt.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.BedrockagentPrompt_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ bedrockagentprompt.BedrockagentPrompt_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPrompt.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.BedrockagentPrompt_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptConfig {
 	Connection: interface{},
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariant {
 	Name: *string,
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantGenAiResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantGenAiResource {
 	Agent: interface{},
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantGenAiResourceAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantGenAiResourceAgent {
 	AgentIdentifier: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantInferenceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantInferenceConfiguration {
 	Text: interface{},
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantInferenceConfigurationText.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantInferenceConfigurationText {
 	MaxTokens: *f64,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantMetadata {
 	Key: *string,
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfiguration {
 	Chat: interface{},
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChat {
 	InputVariable: interface{},
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatInputVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatInputVariable {
 	Name: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatMessage {
 	Role: *string,
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContent {
 	CachePoint: interface{},
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePoint {
 	Type: *string,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatSystem {
 	CachePoint: interface{},
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatSystemCachePoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatSystemCachePoint {
 	Type: *string,
@@ -1876,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfiguration {
 	Tool: interface{},
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationTool {
 	CachePoint: interface{},
@@ -1976,7 +1976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePoint {
 	Type: *string,
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoice {
 	Any: interface{},
@@ -2074,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAny.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAny {
 
@@ -2087,7 +2087,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAuto {
 
@@ -2100,7 +2100,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceTool {
 	Name: *string,
@@ -2132,7 +2132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpec {
 	Name: *string,
@@ -2194,7 +2194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchema {
 	Json: *string,
@@ -2226,7 +2226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationText.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationText {
 	Text: *string,
@@ -2290,7 +2290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextCachePoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationTextCachePoint {
 	Type: *string,
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextInputVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 &bedrockagentprompt.BedrockagentPromptVariantTemplateConfigurationTextInputVariable {
 	Name: *string,
@@ -2356,7 +2356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantGenAiResourceAgentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantGenAiResourceAgentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantGenAiResourceAgentList
 ```
@@ -2516,7 +2516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantGenAiResourceAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantGenAiResourceAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantGenAiResourceAgentOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantGenAiResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantGenAiResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantGenAiResourceList
 ```
@@ -2965,7 +2965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantGenAiResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantGenAiResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantGenAiResourceOutputReference
 ```
@@ -3274,7 +3274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantInferenceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantInferenceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantInferenceConfigurationList
 ```
@@ -3434,7 +3434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantInferenceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantInferenceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantInferenceConfigurationOutputReference
 ```
@@ -3743,7 +3743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantInferenceConfigurationTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantInferenceConfigurationTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantInferenceConfigurationTextList
 ```
@@ -3903,7 +3903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantInferenceConfigurationTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantInferenceConfigurationTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantInferenceConfigurationTextOutputReference
 ```
@@ -4286,7 +4286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantList
 ```
@@ -4446,7 +4446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantMetadataList
 ```
@@ -4606,7 +4606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantMetadataOutputReference
 ```
@@ -4917,7 +4917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantOutputReference
 ```
@@ -5454,7 +5454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatInputVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatInputVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatInputVariableList
 ```
@@ -5614,7 +5614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatInputVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatInputVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatInputVariableOutputReference
 ```
@@ -5903,7 +5903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatList
 ```
@@ -6063,7 +6063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointList
 ```
@@ -6223,7 +6223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatMessageContentCachePointOutputReference
 ```
@@ -6512,7 +6512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatMessageContentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatMessageContentList
 ```
@@ -6672,7 +6672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatMessageContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatMessageContentOutputReference
 ```
@@ -7010,7 +7010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatMessageList
 ```
@@ -7170,7 +7170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatMessageOutputReference
 ```
@@ -7501,7 +7501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatOutputReference
 ```
@@ -7936,7 +7936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatSystemCachePointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatSystemCachePointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatSystemCachePointList
 ```
@@ -8096,7 +8096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatSystemCachePointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatSystemCachePointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatSystemCachePointOutputReference
 ```
@@ -8385,7 +8385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatSystemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatSystemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatSystemList
 ```
@@ -8545,7 +8545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatSystemOutputReference
 ```
@@ -8883,7 +8883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationList
 ```
@@ -9043,7 +9043,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationOutputReference
 ```
@@ -9394,7 +9394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointList
 ```
@@ -9554,7 +9554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolCachePointOutputReference
 ```
@@ -9843,7 +9843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyList
 ```
@@ -10003,7 +10003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAnyOutputReference
 ```
@@ -10270,7 +10270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoList
 ```
@@ -10430,7 +10430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceAutoOutputReference
 ```
@@ -10697,7 +10697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceList
 ```
@@ -10857,7 +10857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceOutputReference
 ```
@@ -11250,7 +11250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolList
 ```
@@ -11410,7 +11410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolChoiceToolOutputReference
 ```
@@ -11699,7 +11699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolList
 ```
@@ -11859,7 +11859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolOutputReference
 ```
@@ -12210,7 +12210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaList
 ```
@@ -12370,7 +12370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecInputSchemaOutputReference
 ```
@@ -12666,7 +12666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecList
 ```
@@ -12826,7 +12826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationChatToolConfigurationToolToolSpecOutputReference
 ```
@@ -13186,7 +13186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationList
 ```
@@ -13346,7 +13346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationOutputReference
 ```
@@ -13697,7 +13697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextCachePointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationTextCachePointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationTextCachePointList
 ```
@@ -13857,7 +13857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationTextCachePointOutputReference
 ```
@@ -14146,7 +14146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextInputVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationTextInputVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationTextInputVariableList
 ```
@@ -14306,7 +14306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextInputVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationTextInputVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationTextInputVariableOutputReference
 ```
@@ -14595,7 +14595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationTextList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentPromptVariantTemplateConfigurationTextList
 ```
@@ -14755,7 +14755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentPrompt.BedrockagentPromptVariantTemplateConfigurationTextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentprompt"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentprompt"
 
 bedrockagentprompt.NewBedrockagentPromptVariantTemplateConfigurationTextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentPromptVariantTemplateConfigurationTextOutputReference
 ```

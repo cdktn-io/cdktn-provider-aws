@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.NewStoragegatewayFileSystemAssociation(scope Construct, id *string, config StoragegatewayFileSystemAssociationConfig) StoragegatewayFileSystemAssociation
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 &storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociationCacheAttributes {
 	CacheStaleTimeoutInSeconds: *f64,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 &storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociationConfig {
 	Connection: interface{},
@@ -1042,12 +1042,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemas
 	Password: *string,
 	Username: *string,
 	AuditDestinationArn: *string,
-	CacheAttributes: github.com/cdktn-io/cdktn-provider-aws-go/aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes,
+	CacheAttributes: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationTimeouts,
 }
 ```
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 &storagegatewayfilesystemassociation.StoragegatewayFileSystemAssociationTimeouts {
 	Create: *string,
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.NewStoragegatewayFileSystemAssociationCacheAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayFileSystemAssociationCacheAttributesOutputReference
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() StoragegatewayFileSystemAssociationCacheAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayfilesystemassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayfilesystemassociation"
 
 storagegatewayfilesystemassociation.NewStoragegatewayFileSystemAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayFileSystemAssociationTimeoutsOutputReference
 ```

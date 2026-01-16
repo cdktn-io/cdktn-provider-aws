@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProject(scope Construct, id *string, config CodebuildProjectConfig) CodebuildProject
 ```
@@ -675,7 +675,7 @@ func ResetVpcConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codebuildProject.CodebuildProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.CodebuildProject_IsConstruct(x interface{}) *bool
 ```
@@ -707,7 +707,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codebuildProject.CodebuildProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.CodebuildProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ codebuildproject.CodebuildProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codebuildProject.CodebuildProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.CodebuildProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -735,7 +735,7 @@ codebuildproject.CodebuildProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codebuildProject.CodebuildProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.CodebuildProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1591,7 +1591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectArtifacts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectArtifacts {
 	Type: *string,
@@ -1749,12 +1749,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectBuildBatchConfig {
 	ServiceRole: *string,
 	CombineArtifacts: interface{},
-	Restrictions: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictions,
+	Restrictions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectBuildBatchConfigRestrictions,
 	TimeoutInMins: *f64,
 }
 ```
@@ -1825,7 +1825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectBuildBatchConfigRestrictions {
 	ComputeTypesAllowed: *[]*string,
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectCache {
 	CacheNamespace: *string,
@@ -1945,7 +1945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectConfig {
 	Connection: interface{},
@@ -1955,22 +1955,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Artifacts: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectArtifacts,
-	Environment: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectEnvironment,
+	Artifacts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectArtifacts,
+	Environment: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectEnvironment,
 	Name: *string,
 	ServiceRole: *string,
-	Source: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSource,
+	Source: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSource,
 	AutoRetryLimit: *f64,
 	BadgeEnabled: interface{},
-	BuildBatchConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectBuildBatchConfig,
+	BuildBatchConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectBuildBatchConfig,
 	BuildTimeout: *f64,
-	Cache: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectCache,
+	Cache: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectCache,
 	ConcurrentBuildLimit: *f64,
 	Description: *string,
 	EncryptionKey: *string,
 	FileSystemLocations: interface{},
 	Id: *string,
-	LogsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectLogsConfig,
+	LogsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectLogsConfig,
 	ProjectVisibility: *string,
 	QueuedTimeout: *f64,
 	Region: *string,
@@ -1981,7 +1981,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
 	SourceVersion: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectVpcConfig,
+	VpcConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectVpcConfig,
 }
 ```
 
@@ -2454,19 +2454,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectEnvironment {
 	ComputeType: *string,
 	Image: *string,
 	Type: *string,
 	Certificate: *string,
-	DockerServer: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectEnvironmentDockerServer,
+	DockerServer: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectEnvironmentDockerServer,
 	EnvironmentVariable: interface{},
-	Fleet: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectEnvironmentFleet,
+	Fleet: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectEnvironmentFleet,
 	ImagePullCredentialsType: *string,
 	PrivilegedMode: interface{},
-	RegistryCredential: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredential,
+	RegistryCredential: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectEnvironmentRegistryCredential,
 }
 ```
 
@@ -2620,7 +2620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentDockerServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectEnvironmentDockerServer {
 	ComputeType: *string,
@@ -2666,7 +2666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectEnvironmentEnvironmentVariable {
 	Name: *string,
@@ -2726,7 +2726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectEnvironmentFleet {
 	FleetArn: *string,
@@ -2758,7 +2758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectEnvironmentRegistryCredential {
 	Credential: *string,
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectFileSystemLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectFileSystemLocations {
 	Identifier: *string,
@@ -2892,11 +2892,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectLogsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectLogsConfig {
-	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogs,
-	S3Logs: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectLogsConfigS3Logs,
+	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogs,
+	S3Logs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectLogsConfigS3Logs,
 }
 ```
 
@@ -2942,7 +2942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectLogsConfigCloudwatchLogs {
 	GroupName: *string,
@@ -3002,7 +3002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3Logs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectLogsConfigS3Logs {
 	BucketOwnerAccess: *string,
@@ -3076,7 +3076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifacts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSecondaryArtifacts {
 	ArtifactIdentifier: *string,
@@ -3234,16 +3234,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSecondarySources {
 	SourceIdentifier: *string,
 	Type: *string,
-	Auth: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSecondarySourcesAuth,
+	Auth: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSecondarySourcesAuth,
 	Buildspec: *string,
-	BuildStatusConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig,
+	BuildStatusConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig,
 	GitCloneDepth: *f64,
-	GitSubmodulesConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfig,
+	GitSubmodulesConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfig,
 	InsecureSsl: interface{},
 	Location: *string,
 	ReportBuildStatus: interface{},
@@ -3398,7 +3398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSecondarySourcesAuth {
 	Resource: *string,
@@ -3444,7 +3444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSecondarySourcesBuildStatusConfig {
 	Context: *string,
@@ -3490,7 +3490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSecondarySourcesGitSubmodulesConfig {
 	FetchSubmodules: interface{},
@@ -3522,7 +3522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSecondarySourceVersion {
 	SourceIdentifier: *string,
@@ -3568,15 +3568,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSource {
 	Type: *string,
-	Auth: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSourceAuth,
+	Auth: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSourceAuth,
 	Buildspec: *string,
-	BuildStatusConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSourceBuildStatusConfig,
+	BuildStatusConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSourceBuildStatusConfig,
 	GitCloneDepth: *f64,
-	GitSubmodulesConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfig,
+	GitSubmodulesConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codebuildProject.CodebuildProjectSourceGitSubmodulesConfig,
 	InsecureSsl: interface{},
 	Location: *string,
 	ReportBuildStatus: interface{},
@@ -3718,7 +3718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSourceAuth {
 	Resource: *string,
@@ -3764,7 +3764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSourceBuildStatusConfig {
 	Context: *string,
@@ -3810,7 +3810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectSourceGitSubmodulesConfig {
 	FetchSubmodules: interface{},
@@ -3842,7 +3842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 &codebuildproject.CodebuildProjectVpcConfig {
 	SecurityGroupIds: *[]*string,
@@ -3904,7 +3904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectArtifactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectArtifactsOutputReference
 ```
@@ -4436,7 +4436,7 @@ func InternalValue() CodebuildProjectArtifacts
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectBuildBatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectBuildBatchConfigOutputReference
 ```
@@ -4807,7 +4807,7 @@ func InternalValue() CodebuildProjectBuildBatchConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectBuildBatchConfigRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectBuildBatchConfigRestrictionsOutputReference
 ```
@@ -5114,7 +5114,7 @@ func InternalValue() CodebuildProjectBuildBatchConfigRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectCacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectCacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectCacheOutputReference
 ```
@@ -5479,7 +5479,7 @@ func InternalValue() CodebuildProjectCache
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentDockerServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectEnvironmentDockerServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectEnvironmentDockerServerOutputReference
 ```
@@ -5779,7 +5779,7 @@ func InternalValue() CodebuildProjectEnvironmentDockerServer
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectEnvironmentEnvironmentVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildProjectEnvironmentEnvironmentVariableList
 ```
@@ -5939,7 +5939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectEnvironmentEnvironmentVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildProjectEnvironmentEnvironmentVariableOutputReference
 ```
@@ -6279,7 +6279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectEnvironmentFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectEnvironmentFleetOutputReference
 ```
@@ -6557,7 +6557,7 @@ func InternalValue() CodebuildProjectEnvironmentFleet
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectEnvironmentOutputReference
 ```
@@ -7127,7 +7127,7 @@ func InternalValue() CodebuildProjectEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectEnvironmentRegistryCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectEnvironmentRegistryCredentialOutputReference
 ```
@@ -7420,7 +7420,7 @@ func InternalValue() CodebuildProjectEnvironmentRegistryCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectFileSystemLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildProjectFileSystemLocationsList
 ```
@@ -7580,7 +7580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectFileSystemLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildProjectFileSystemLocationsOutputReference
 ```
@@ -7992,7 +7992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectLogsConfigCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectLogsConfigCloudwatchLogsOutputReference
 ```
@@ -8328,7 +8328,7 @@ func InternalValue() CodebuildProjectLogsConfigCloudwatchLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectLogsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectLogsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectLogsConfigOutputReference
 ```
@@ -8661,7 +8661,7 @@ func InternalValue() CodebuildProjectLogsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectLogsConfigS3LogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectLogsConfigS3LogsOutputReference
 ```
@@ -9026,7 +9026,7 @@ func InternalValue() CodebuildProjectLogsConfigS3Logs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondaryArtifactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildProjectSecondaryArtifactsList
 ```
@@ -9186,7 +9186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondaryArtifactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildProjectSecondaryArtifactsOutputReference
 ```
@@ -9729,7 +9729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourcesAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSecondarySourcesAuthOutputReference
 ```
@@ -10022,7 +10022,7 @@ func InternalValue() CodebuildProjectSecondarySourcesAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourcesBuildStatusConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference
 ```
@@ -10329,7 +10329,7 @@ func InternalValue() CodebuildProjectSecondarySourcesBuildStatusConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference
 ```
@@ -10600,7 +10600,7 @@ func InternalValue() CodebuildProjectSecondarySourcesGitSubmodulesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildProjectSecondarySourcesList
 ```
@@ -10760,7 +10760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildProjectSecondarySourcesOutputReference
 ```
@@ -11342,7 +11342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourceVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodebuildProjectSecondarySourceVersionList
 ```
@@ -11502,7 +11502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSecondarySourceVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodebuildProjectSecondarySourceVersionOutputReference
 ```
@@ -11813,7 +11813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSourceAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSourceAuthOutputReference
 ```
@@ -12106,7 +12106,7 @@ func InternalValue() CodebuildProjectSourceAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSourceBuildStatusConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSourceBuildStatusConfigOutputReference
 ```
@@ -12413,7 +12413,7 @@ func InternalValue() CodebuildProjectSourceBuildStatusConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSourceGitSubmodulesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSourceGitSubmodulesConfigOutputReference
 ```
@@ -12684,7 +12684,7 @@ func InternalValue() CodebuildProjectSourceGitSubmodulesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectSourceOutputReference
 ```
@@ -13226,7 +13226,7 @@ func InternalValue() CodebuildProjectSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codebuildproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildproject"
 
 codebuildproject.NewCodebuildProjectVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodebuildProjectVpcConfigOutputReference
 ```

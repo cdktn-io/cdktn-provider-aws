@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafregionalrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafregionalrule"
 
 dataawswafregionalrule.NewDataAwsWafregionalRule(scope Construct, id *string, config DataAwsWafregionalRuleConfig) DataAwsWafregionalRule
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafregionalrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafregionalrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafregionalrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawswafregionalrule.DataAwsWafregionalRule_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafregionalrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafregionalrule"
 
 dataawswafregionalrule.DataAwsWafregionalRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafregionalRule.DataAwsWafregionalRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafregionalrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafregionalrule"
 
 &dataawswafregionalrule.DataAwsWafregionalRuleConfig {
 	Connection: interface{},

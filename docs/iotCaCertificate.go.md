@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificate(scope Construct, id *string, config IotCaCertificateConfig) IotCaCertificate
 ```
@@ -440,7 +440,7 @@ func ResetVerificationCertificatePem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ iotcacertificate.IotCaCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ iotcacertificate.IotCaCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.IotCaCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 &iotcacertificate.IotCaCertificateConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
 	CertificateMode: *string,
 	Id: *string,
 	Region: *string,
-	RegistrationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.iotCaCertificate.IotCaCertificateRegistrationConfig,
+	RegistrationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.iotCaCertificate.IotCaCertificateRegistrationConfig,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	VerificationCertificatePem: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificateRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 &iotcacertificate.IotCaCertificateRegistrationConfig {
 	RoleArn: *string,
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificateValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 &iotcacertificate.IotCaCertificateValidity {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificateRegistrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificateRegistrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotCaCertificateRegistrationConfigOutputReference
 ```
@@ -1653,7 +1653,7 @@ func InternalValue() IotCaCertificateRegistrationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificateValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificateValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotCaCertificateValidityList
 ```
@@ -1802,7 +1802,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotCaCertificate.IotCaCertificateValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iotcacertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iotcacertificate"
 
 iotcacertificate.NewIotCaCertificateValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotCaCertificateValidityOutputReference
 ```

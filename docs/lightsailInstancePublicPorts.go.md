@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.NewLightsailInstancePublicPorts(scope Construct, id *string, config LightsailInstancePublicPortsConfig) LightsailInstancePublicPorts
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ lightsailinstancepublicports.LightsailInstancePublicPorts_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.LightsailInstancePublicPorts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 &lightsailinstancepublicports.LightsailInstancePublicPortsConfig {
 	Connection: interface{},
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 &lightsailinstancepublicports.LightsailInstancePublicPortsPortInfo {
 	FromPort: *f64,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.NewLightsailInstancePublicPortsPortInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LightsailInstancePublicPortsPortInfoList
 ```
@@ -1211,7 +1211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsailinstancepublicports"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailinstancepublicports"
 
 lightsailinstancepublicports.NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LightsailInstancePublicPortsPortInfoOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NewNatGateway(scope Construct, id *string, config NatGatewayConfig) NatGateway
 ```
@@ -509,7 +509,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.natGateway.NatGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NatGateway_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.natGateway.NatGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NatGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ natgateway.NatGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.natGateway.NatGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NatGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ natgateway.NatGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NatGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1216,7 +1216,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 &natgateway.NatGatewayAvailabilityZoneAddress {
 	AllocationIds: *[]*string,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 &natgateway.NatGatewayConfig {
 	Connection: interface{},
@@ -1299,7 +1299,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
 	SubnetId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.natGateway.NatGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.natGateway.NatGatewayTimeouts,
 	VpcId: *string,
 }
 ```
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 &natgateway.NatGatewayRegionalNatGatewayAddress {
 
@@ -1610,7 +1610,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 &natgateway.NatGatewayTimeouts {
 	Create: *string,
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NewNatGatewayAvailabilityZoneAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NatGatewayAvailabilityZoneAddressList
 ```
@@ -1832,7 +1832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NewNatGatewayAvailabilityZoneAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NatGatewayAvailabilityZoneAddressOutputReference
 ```
@@ -2186,7 +2186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NewNatGatewayRegionalNatGatewayAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NatGatewayRegionalNatGatewayAddressList
 ```
@@ -2335,7 +2335,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NewNatGatewayRegionalNatGatewayAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NatGatewayRegionalNatGatewayAddressOutputReference
 ```
@@ -2679,7 +2679,7 @@ func InternalValue() NatGatewayRegionalNatGatewayAddress
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/natgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgateway"
 
 natgateway.NewNatGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatGatewayTimeoutsOutputReference
 ```

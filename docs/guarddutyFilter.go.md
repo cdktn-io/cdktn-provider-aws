@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.NewGuarddutyFilter(scope Construct, id *string, config GuarddutyFilterConfig) GuarddutyFilter
 ```
@@ -426,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.GuarddutyFilter_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.GuarddutyFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ guarddutyfilter.GuarddutyFilter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.GuarddutyFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ guarddutyfilter.GuarddutyFilter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.GuarddutyFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 &guarddutyfilter.GuarddutyFilterConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
 	Provisioners: *[]interface{},
 	Action: *string,
 	DetectorId: *string,
-	FindingCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws.guarddutyFilter.GuarddutyFilterFindingCriteria,
+	FindingCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.guarddutyFilter.GuarddutyFilterFindingCriteria,
 	Name: *string,
 	Rank: *f64,
 	Description: *string,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 &guarddutyfilter.GuarddutyFilterFindingCriteria {
 	Criterion: interface{},
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 &guarddutyfilter.GuarddutyFilterFindingCriteriaCriterion {
 	Field: *string,
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.NewGuarddutyFilterFindingCriteriaCriterionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GuarddutyFilterFindingCriteriaCriterionList
 ```
@@ -1535,7 +1535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.NewGuarddutyFilterFindingCriteriaCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GuarddutyFilterFindingCriteriaCriterionOutputReference
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutyfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutyfilter"
 
 guarddutyfilter.NewGuarddutyFilterFindingCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyFilterFindingCriteriaOutputReference
 ```

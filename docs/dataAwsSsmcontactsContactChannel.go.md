@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.NewDataAwsSsmcontactsContactChannel(scope Construct, id *string, config DataAwsSsmcontactsContactChannelConfig) DataAwsSsmcontactsContactChannel
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannel_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannel_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannel_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 &dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannelConfig {
 	Connection: interface{},
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannelDeliveryAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 &dataawsssmcontactscontactchannel.DataAwsSsmcontactsContactChannelDeliveryAddress {
 
@@ -842,7 +842,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannelDeliveryAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.NewDataAwsSsmcontactsContactChannelDeliveryAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsContactChannelDeliveryAddressList
 ```
@@ -991,7 +991,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsContactChannel.DataAwsSsmcontactsContactChannelDeliveryAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmcontactscontactchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactscontactchannel"
 
 dataawsssmcontactscontactchannel.NewDataAwsSsmcontactsContactChannelDeliveryAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsContactChannelDeliveryAddressOutputReference
 ```

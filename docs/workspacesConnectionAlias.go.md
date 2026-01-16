@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 workspacesconnectionalias.NewWorkspacesConnectionAlias(scope Construct, id *string, config WorkspacesConnectionAliasConfig) WorkspacesConnectionAlias
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 &workspacesconnectionalias.WorkspacesConnectionAliasConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
 	ConnectionString: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts,
 }
 ```
 
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 &workspacesconnectionalias.WorkspacesConnectionAliasTimeouts {
 	Create: *string,
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
 
 workspacesconnectionalias.NewWorkspacesConnectionAliasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesConnectionAliasTimeoutsOutputReference
 ```

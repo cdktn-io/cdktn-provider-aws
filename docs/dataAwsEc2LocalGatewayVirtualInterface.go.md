@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.NewDataAwsEc2LocalGatewayVirtualInterface(scope Construct, id *string, config DataAwsEc2LocalGatewayVirtualInterfaceConfig) DataAwsEc2LocalGatewayVirtualInterface
 ```
@@ -337,7 +337,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterface_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterface_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterface_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 &dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterfaceConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirt
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceTimeouts,
 }
 ```
 
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 &dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterfaceFilter {
 	Name: *string,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 &dataawsec2localgatewayvirtualinterface.DataAwsEc2LocalGatewayVirtualInterfaceTimeouts {
 	Read: *string,
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.NewDataAwsEc2LocalGatewayVirtualInterfaceFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2LocalGatewayVirtualInterfaceFilterList
 ```
@@ -1212,7 +1212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.NewDataAwsEc2LocalGatewayVirtualInterfaceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2LocalGatewayVirtualInterfaceFilterOutputReference
 ```
@@ -1523,7 +1523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgatewayvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgatewayvirtualinterface"
 
 dataawsec2localgatewayvirtualinterface.NewDataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2LocalGatewayVirtualInterfaceTimeoutsOutputReference
 ```

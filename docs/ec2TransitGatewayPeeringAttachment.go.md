@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 ec2transitgatewaypeeringattachment.NewEc2TransitGatewayPeeringAttachment(scope Construct, id *string, config Ec2TransitGatewayPeeringAttachmentConfig) Ec2TransitGatewayPeeringAttachment
 ```
@@ -433,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachment_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 &ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachmentConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringat
 	PeerTransitGatewayId: *string,
 	TransitGatewayId: *string,
 	Id: *string,
-	Options: github.com/cdktn-io/cdktn-provider-aws-go/aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachmentOptions,
+	Options: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachmentOptions,
 	PeerAccountId: *string,
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachmentOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 &ec2transitgatewaypeeringattachment.Ec2TransitGatewayPeeringAttachmentOptions {
 	DynamicRouting: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachmentOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2transitgatewaypeeringattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2transitgatewaypeeringattachment"
 
 ec2transitgatewaypeeringattachment.NewEc2TransitGatewayPeeringAttachmentOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TransitGatewayPeeringAttachmentOptionsOutputReference
 ```

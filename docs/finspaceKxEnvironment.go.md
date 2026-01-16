@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironment(scope Construct, id *string, config FinspaceKxEnvironmentConfig) FinspaceKxEnvironment
 ```
@@ -466,7 +466,7 @@ func ResetTransitGatewayConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.FinspaceKxEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.FinspaceKxEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ finspacekxenvironment.FinspaceKxEnvironment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.FinspaceKxEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ finspacekxenvironment.FinspaceKxEnvironment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.FinspaceKxEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentConfig {
 	Connection: interface{},
@@ -1047,8 +1047,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts,
-	TransitGatewayConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts,
+	TransitGatewayConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration,
 }
 ```
 
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentCustomDnsConfiguration {
 	CustomDnsServerIp: *string,
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentTimeouts {
 	Create: *string,
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentTransitGatewayConfiguration {
 	RoutableCidrSpace: *string,
@@ -1434,15 +1434,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfiguration {
 	CidrBlock: *string,
 	Protocol: *string,
 	RuleAction: *string,
 	RuleNumber: *f64,
-	IcmpTypeCode: github.com/cdktn-io/cdktn-provider-aws-go/aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode,
-	PortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange,
+	IcmpTypeCode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode,
+	PortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange,
 }
 ```
 
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCode {
 	Code: *f64,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 &finspacekxenvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRange {
 	From: *f64,
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentCustomDnsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxEnvironmentCustomDnsConfigurationList
 ```
@@ -1794,7 +1794,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentCustomDnsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentCustomDnsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxEnvironmentCustomDnsConfigurationOutputReference
 ```
@@ -2105,7 +2105,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxEnvironmentTimeoutsOutputReference
 ```
@@ -2441,7 +2441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationIcmpTypeCodeOutputReference
 ```
@@ -2734,7 +2734,7 @@ func InternalValue() FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentN
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList
 ```
@@ -2894,7 +2894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationOutputReference
 ```
@@ -3333,7 +3333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationPortRangeOutputReference
 ```
@@ -3626,7 +3626,7 @@ func InternalValue() FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentN
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxEnvironment.FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxenvironment"
 
 finspacekxenvironment.NewFinspaceKxEnvironmentTransitGatewayConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference
 ```

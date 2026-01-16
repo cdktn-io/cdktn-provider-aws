@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdocdborderabledbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.NewDataAwsDocdbOrderableDbInstance(scope Construct, id *string, config DataAwsDocdbOrderableDbInstanceConfig) DataAwsDocdbOrderableDbInstance
 ```
@@ -332,7 +332,7 @@ func ResetVpc()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdocdborderabledbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdocdborderabledbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdocdborderabledbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdocdborderabledbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance"
 
 dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdocdborderabledbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdocdborderabledbinstance"
 
 &dataawsdocdborderabledbinstance.DataAwsDocdbOrderableDbInstanceConfig {
 	Connection: interface{},

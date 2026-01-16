@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscurreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscurreportdefinition"
 
 dataawscurreportdefinition.NewDataAwsCurReportDefinition(scope Construct, id *string, config DataAwsCurReportDefinitionConfig) DataAwsCurReportDefinition
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscurreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscurreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscurreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscurreportdefinition.DataAwsCurReportDefinition_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscurreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscurreportdefinition"
 
 dataawscurreportdefinition.DataAwsCurReportDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscurreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscurreportdefinition"
 
 &dataawscurreportdefinition.DataAwsCurReportDefinitionConfig {
 	Connection: interface{},

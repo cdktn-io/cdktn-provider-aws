@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.NewAuditmanagerOrganizationAdminAccountRegistration(scope Construct, id *string, config AuditmanagerOrganizationAdminAccountRegistrationConfig) AuditmanagerOrganizationAdminAccountRegistration
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/auditmanagerorganizationadminaccountregistration"
 
 auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.auditmanagerOrganizationAdminAccountRegistration.AuditmanagerOrganizationAdminAccountRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/auditmanagerorganizationadminaccountregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/auditmanagerorganizationadminaccountregistration"
 
 &auditmanagerorganizationadminaccountregistration.AuditmanagerOrganizationAdminAccountRegistrationConfig {
 	Connection: interface{},

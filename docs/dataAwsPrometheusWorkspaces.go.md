@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.NewDataAwsPrometheusWorkspaces(scope Construct, id *string, config DataAwsPrometheusWorkspacesConfig) DataAwsPrometheusWorkspaces
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspaces.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspaces"
 
 dataawsprometheusworkspaces.DataAwsPrometheusWorkspaces_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsPrometheusWorkspaces.DataAwsPrometheusWorkspacesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsprometheusworkspaces"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspaces"
 
 &dataawsprometheusworkspaces.DataAwsPrometheusWorkspacesConfig {
 	Connection: interface{},

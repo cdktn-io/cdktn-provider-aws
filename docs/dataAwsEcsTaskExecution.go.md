@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecution(scope Construct, id *string, config DataAwsEcsTaskExecutionConfig) DataAwsEcsTaskExecution
 ```
@@ -467,7 +467,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecution.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.DataAwsEcsTaskExecution_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.DataAwsEcsTaskExecution_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ dataawsecstaskexecution.DataAwsEcsTaskExecution_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecution.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.DataAwsEcsTaskExecution_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ dataawsecstaskexecution.DataAwsEcsTaskExecution_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.DataAwsEcsTaskExecution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1185,7 +1185,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionConfig {
 	Connection: interface{},
@@ -1265,8 +1265,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
 	Group: *string,
 	Id: *string,
 	LaunchType: *string,
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionNetworkConfiguration,
-	Overrides: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverrides,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionNetworkConfiguration,
+	Overrides: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverrides,
 	PlacementConstraints: interface{},
 	PlacementStrategy: interface{},
 	PlatformVersion: *string,
@@ -1642,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionNetworkConfiguration {
 	Subnets: *[]*string,
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionOverrides {
 	ContainerOverrides: interface{},
@@ -1792,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionOverridesContainerOverrides {
 	Name: *string,
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironment {
 	Key: *string,
@@ -1958,7 +1958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements {
 	Type: *string,
@@ -2004,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionPlacementConstraints {
 	Type: *string,
@@ -2050,7 +2050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 &dataawsecstaskexecution.DataAwsEcsTaskExecutionPlacementStrategy {
 	Type: *string,
@@ -2098,7 +2098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskExecutionCapacityProviderStrategyList
 ```
@@ -2258,7 +2258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference
 ```
@@ -2605,7 +2605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEcsTaskExecutionNetworkConfigurationOutputReference
 ```
@@ -2934,7 +2934,7 @@ func InternalValue() DataAwsEcsTaskExecutionNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList
 ```
@@ -3094,7 +3094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentOutputReference
 ```
@@ -3405,7 +3405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesContainerOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskExecutionOverridesContainerOverridesList
 ```
@@ -3565,7 +3565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskExecutionOverridesContainerOverridesOutputReference
 ```
@@ -4054,7 +4054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsList
 ```
@@ -4214,7 +4214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference
 ```
@@ -4525,7 +4525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEcsTaskExecutionOverridesOutputReference
 ```
@@ -4932,7 +4932,7 @@ func InternalValue() DataAwsEcsTaskExecutionOverrides
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskExecutionPlacementConstraintsList
 ```
@@ -5092,7 +5092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskExecutionPlacementConstraintsOutputReference
 ```
@@ -5410,7 +5410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcsTaskExecutionPlacementStrategyList
 ```
@@ -5570,7 +5570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecutionPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsecstaskexecution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecstaskexecution"
 
 dataawsecstaskexecution.NewDataAwsEcsTaskExecutionPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcsTaskExecutionPlacementStrategyOutputReference
 ```

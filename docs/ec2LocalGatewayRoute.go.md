@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2localgatewayroute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2localgatewayroute"
 
 ec2localgatewayroute.NewEc2LocalGatewayRoute(scope Construct, id *string, config Ec2LocalGatewayRouteConfig) Ec2LocalGatewayRoute
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2localgatewayroute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2localgatewayroute"
 
 ec2localgatewayroute.Ec2LocalGatewayRoute_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2localgatewayroute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2localgatewayroute"
 
 ec2localgatewayroute.Ec2LocalGatewayRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ec2localgatewayroute.Ec2LocalGatewayRoute_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2localgatewayroute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2localgatewayroute"
 
 ec2localgatewayroute.Ec2LocalGatewayRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ec2localgatewayroute.Ec2LocalGatewayRoute_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2localgatewayroute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2localgatewayroute"
 
 ec2localgatewayroute.Ec2LocalGatewayRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2localgatewayroute"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2localgatewayroute"
 
 &ec2localgatewayroute.Ec2LocalGatewayRouteConfig {
 	Connection: interface{},

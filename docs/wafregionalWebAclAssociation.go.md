@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.NewWafregionalWebAclAssociation(scope Construct, id *string, config WafregionalWebAclAssociationConfig) WafregionalWebAclAssociation
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ wafregionalwebaclassociation.WafregionalWebAclAssociation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.WafregionalWebAclAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 &wafregionalwebaclassociation.WafregionalWebAclAssociationConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociati
 	WebAclId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeouts,
 }
 ```
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 &wafregionalwebaclassociation.WafregionalWebAclAssociationTimeouts {
 	Create: *string,
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalWebAclAssociation.WafregionalWebAclAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalwebaclassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalwebaclassociation"
 
 wafregionalwebaclassociation.NewWafregionalWebAclAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalWebAclAssociationTimeoutsOutputReference
 ```

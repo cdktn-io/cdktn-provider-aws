@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessor(scope Construct, id *string, config RekognitionStreamProcessorConfig) RekognitionStreamProcessor
 ```
@@ -539,7 +539,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ rekognitionstreamprocessor.RekognitionStreamProcessor_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.RekognitionStreamProcessor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorConfig {
 	Connection: interface{},
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor
 	RegionsOfInterest: interface{},
 	Settings: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts,
 }
 ```
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorDataSharingPreference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorDataSharingPreference {
 	OptIn: interface{},
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorInput {
 	KinesisVideoStream: interface{},
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputKinesisVideoStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorInputKinesisVideoStream {
 	Arn: *string,
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorNotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorNotificationChannel {
 	SnsTopicArn: *string,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorOutput {
 	KinesisDataStream: interface{},
@@ -1605,7 +1605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputKinesisDataStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorOutputKinesisDataStream {
 	Arn: *string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputS3Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorOutputS3Destination {
 	Bucket: *string,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorRegionsOfInterest {
 	BoundingBox: interface{},
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorRegionsOfInterestBoundingBox {
 	Height: *f64,
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygon.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorRegionsOfInterestPolygon {
 	X: *f64,
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorSettings {
 	ConnectedHome: interface{},
@@ -1921,7 +1921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsConnectedHome.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorSettingsConnectedHome {
 	Labels: *[]*string,
@@ -1971,7 +1971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsFaceSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorSettingsFaceSearch {
 	CollectionId: *string,
@@ -2021,7 +2021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 &rekognitionstreamprocessor.RekognitionStreamProcessorTimeouts {
 	Create: *string,
@@ -2089,7 +2089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorDataSharingPreferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorDataSharingPreferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorDataSharingPreferenceList
 ```
@@ -2249,7 +2249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorDataSharingPreferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorDataSharingPreferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorDataSharingPreferenceOutputReference
 ```
@@ -2538,7 +2538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputKinesisVideoStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputKinesisVideoStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorInputKinesisVideoStreamList
 ```
@@ -2698,7 +2698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputKinesisVideoStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputKinesisVideoStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorInputKinesisVideoStreamOutputReference
 ```
@@ -2987,7 +2987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorInputList
 ```
@@ -3147,7 +3147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorInputOutputReference
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorNotificationChannelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorNotificationChannelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorNotificationChannelList
 ```
@@ -3616,7 +3616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorNotificationChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorNotificationChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorNotificationChannelOutputReference
 ```
@@ -3912,7 +3912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputKinesisDataStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputKinesisDataStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorOutputKinesisDataStreamList
 ```
@@ -4072,7 +4072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputKinesisDataStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputKinesisDataStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorOutputKinesisDataStreamOutputReference
 ```
@@ -4368,7 +4368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorOutputList
 ```
@@ -4528,7 +4528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorOutputOutputReference
 ```
@@ -4879,7 +4879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputS3DestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputS3DestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorOutputS3DestinationList
 ```
@@ -5039,7 +5039,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorOutputS3DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorOutputS3DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorOutputS3DestinationOutputReference
 ```
@@ -5364,7 +5364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorRegionsOfInterestBoundingBoxList
 ```
@@ -5524,7 +5524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestBoundingBoxOutputReference
 ```
@@ -5907,7 +5907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorRegionsOfInterestList
 ```
@@ -6067,7 +6067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestOutputReference
 ```
@@ -6418,7 +6418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestPolygonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorRegionsOfInterestPolygonList
 ```
@@ -6578,7 +6578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorRegionsOfInterestPolygonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorRegionsOfInterestPolygonOutputReference
 ```
@@ -6903,7 +6903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsConnectedHomeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsConnectedHomeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorSettingsConnectedHomeList
 ```
@@ -7063,7 +7063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsConnectedHomeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsConnectedHomeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorSettingsConnectedHomeOutputReference
 ```
@@ -7388,7 +7388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsFaceSearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsFaceSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorSettingsFaceSearchList
 ```
@@ -7548,7 +7548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsFaceSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsFaceSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorSettingsFaceSearchOutputReference
 ```
@@ -7866,7 +7866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RekognitionStreamProcessorSettingsList
 ```
@@ -8026,7 +8026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RekognitionStreamProcessorSettingsOutputReference
 ```
@@ -8377,7 +8377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rekognitionStreamProcessor.RekognitionStreamProcessorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rekognitionstreamprocessor"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rekognitionstreamprocessor"
 
 rekognitionstreamprocessor.NewRekognitionStreamProcessorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RekognitionStreamProcessorTimeoutsOutputReference
 ```

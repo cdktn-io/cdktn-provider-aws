@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.NewDataAwsAvailabilityZones(scope Construct, id *string, config DataAwsAvailabilityZonesConfig) DataAwsAvailabilityZones
 ```
@@ -358,7 +358,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.DataAwsAvailabilityZones_IsConstruct(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.DataAwsAvailabilityZones_IsTerraformElement(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ dataawsavailabilityzones.DataAwsAvailabilityZones_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.DataAwsAvailabilityZones_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ dataawsavailabilityzones.DataAwsAvailabilityZones_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZones.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.DataAwsAvailabilityZones_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 &dataawsavailabilityzones.DataAwsAvailabilityZonesConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
 	Id: *string,
 	Region: *string,
 	State: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeouts,
 }
 ```
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 &dataawsavailabilityzones.DataAwsAvailabilityZonesFilter {
 	Name: *string,
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 &dataawsavailabilityzones.DataAwsAvailabilityZonesTimeouts {
 	Read: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.NewDataAwsAvailabilityZonesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAvailabilityZonesFilterList
 ```
@@ -1297,7 +1297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.NewDataAwsAvailabilityZonesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAvailabilityZonesFilterOutputReference
 ```
@@ -1608,7 +1608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAvailabilityZones.DataAwsAvailabilityZonesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsavailabilityzones"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsavailabilityzones"
 
 dataawsavailabilityzones.NewDataAwsAvailabilityZonesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAvailabilityZonesTimeoutsOutputReference
 ```

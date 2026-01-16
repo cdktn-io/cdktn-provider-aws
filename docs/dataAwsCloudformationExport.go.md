@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscloudformationexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.NewDataAwsCloudformationExport(scope Construct, id *string, config DataAwsCloudformationExportConfig) DataAwsCloudformationExport
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscloudformationexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscloudformationexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscloudformationexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscloudformationexport.DataAwsCloudformationExport_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscloudformationexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 dataawscloudformationexport.DataAwsCloudformationExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCloudformationExport.DataAwsCloudformationExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawscloudformationexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscloudformationexport"
 
 &dataawscloudformationexport.DataAwsCloudformationExportConfig {
 	Connection: interface{},

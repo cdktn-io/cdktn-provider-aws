@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.NewBackupRestoreTestingPlan(scope Construct, id *string, config BackupRestoreTestingPlanConfig) BackupRestoreTestingPlan
 ```
@@ -426,7 +426,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.BackupRestoreTestingPlan_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.BackupRestoreTestingPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ backuprestoretestingplan.BackupRestoreTestingPlan_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.BackupRestoreTestingPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ backuprestoretestingplan.BackupRestoreTestingPlan_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.BackupRestoreTestingPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 &backuprestoretestingplan.BackupRestoreTestingPlanConfig {
 	Connection: interface{},
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlanRecoveryPointSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 &backuprestoretestingplan.BackupRestoreTestingPlanRecoveryPointSelection {
 	Algorithm: *string,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlanRecoveryPointSelectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.NewBackupRestoreTestingPlanRecoveryPointSelectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupRestoreTestingPlanRecoveryPointSelectionList
 ```
@@ -1345,7 +1345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupRestoreTestingPlan.BackupRestoreTestingPlanRecoveryPointSelectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/backuprestoretestingplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backuprestoretestingplan"
 
 backuprestoretestingplan.NewBackupRestoreTestingPlanRecoveryPointSelectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BackupRestoreTestingPlanRecoveryPointSelectionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.NewGlobalacceleratorAccelerator(scope Construct, id *string, config GlobalacceleratorAcceleratorConfig) GlobalacceleratorAccelerator
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.GlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.GlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ globalacceleratoraccelerator.GlobalacceleratorAccelerator_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.GlobalacceleratorAccelerator_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ globalacceleratoraccelerator.GlobalacceleratorAccelerator_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.GlobalacceleratorAccelerator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1002,7 +1002,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 &globalacceleratoraccelerator.GlobalacceleratorAcceleratorAttributes {
 	FlowLogsEnabled: interface{},
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 &globalacceleratoraccelerator.GlobalacceleratorAcceleratorConfig {
 	Connection: interface{},
@@ -1073,14 +1073,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerat
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Attributes: github.com/cdktn-io/cdktn-provider-aws-go/aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributes,
 	Enabled: interface{},
 	Id: *string,
 	IpAddresses: *[]*string,
 	IpAddressType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeouts,
 }
 ```
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 &globalacceleratoraccelerator.GlobalacceleratorAcceleratorIpSets {
 
@@ -1310,7 +1310,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 &globalacceleratoraccelerator.GlobalacceleratorAcceleratorTimeouts {
 	Create: *string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.NewGlobalacceleratorAcceleratorAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalacceleratorAcceleratorAttributesOutputReference
 ```
@@ -1694,7 +1694,7 @@ func InternalValue() GlobalacceleratorAcceleratorAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.NewGlobalacceleratorAcceleratorIpSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GlobalacceleratorAcceleratorIpSetsList
 ```
@@ -1843,7 +1843,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.NewGlobalacceleratorAcceleratorIpSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GlobalacceleratorAcceleratorIpSetsOutputReference
 ```
@@ -2132,7 +2132,7 @@ func InternalValue() GlobalacceleratorAcceleratorIpSets
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/globalacceleratoraccelerator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/globalacceleratoraccelerator"
 
 globalacceleratoraccelerator.NewGlobalacceleratorAcceleratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlobalacceleratorAcceleratorTimeoutsOutputReference
 ```

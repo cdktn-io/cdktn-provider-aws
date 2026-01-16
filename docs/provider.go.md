@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.provider.AwsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 provider.NewAwsProvider(scope Construct, id *string, config AwsProviderConfig) AwsProvider
 ```
@@ -396,7 +396,7 @@ func ResetUserAgent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.provider.AwsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 provider.AwsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.provider.AwsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 provider.AwsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ provider.AwsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-aws.provider.AwsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 provider.AwsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ provider.AwsProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 provider.AwsProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1411,7 +1411,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 &provider.AwsProviderAssumeRole {
 	Duration: *string,
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 &provider.AwsProviderAssumeRoleWithWebIdentity {
 	Duration: *string,
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 &provider.AwsProviderConfig {
 	AccessKey: *string,
@@ -2312,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderDefaultTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 &provider.AwsProviderDefaultTags {
 	Tags: *map[string]*string,
@@ -2346,7 +2346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 &provider.AwsProviderEndpoints {
 	Accessanalyzer: *string,
@@ -7276,7 +7276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderIgnoreTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/provider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/provider"
 
 &provider.AwsProviderIgnoreTags {
 	KeyPrefixes: *[]*string,

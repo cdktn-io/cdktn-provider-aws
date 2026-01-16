@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
 
 appstreamuserstackassociation.NewAppstreamUserStackAssociation(scope Construct, id *string, config AppstreamUserStackAssociationConfig) AppstreamUserStackAssociation
 ```
@@ -399,7 +399,7 @@ func ResetSendEmailNotification()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
 
 &appstreamuserstackassociation.AppstreamUserStackAssociationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsWafIpset.DataAwsWafIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafipset"
 
 dataawswafipset.NewDataAwsWafIpset(scope Construct, id *string, config DataAwsWafIpsetConfig) DataAwsWafIpset
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawswafipset.DataAwsWafIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsWafIpset.DataAwsWafIpset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawswafipset.DataAwsWafIpset_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsWafIpset.DataAwsWafIpset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafipset"
 
 dataawswafipset.DataAwsWafIpset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsWafIpset.DataAwsWafIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawswafipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawswafipset"
 
 &dataawswafipset.DataAwsWafIpsetConfig {
 	Connection: interface{},

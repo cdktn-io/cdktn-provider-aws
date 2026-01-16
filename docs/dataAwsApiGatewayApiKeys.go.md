@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.NewDataAwsApiGatewayApiKeys(scope Construct, id *string, config DataAwsApiGatewayApiKeysConfig) DataAwsApiGatewayApiKeys
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 &dataawsapigatewayapikeys.DataAwsApiGatewayApiKeysConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 &dataawsapigatewayapikeys.DataAwsApiGatewayApiKeysItems {
 
@@ -813,7 +813,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.NewDataAwsApiGatewayApiKeysItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsApiGatewayApiKeysItemsList
 ```
@@ -962,7 +962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.NewDataAwsApiGatewayApiKeysItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsApiGatewayApiKeysItemsOutputReference
 ```

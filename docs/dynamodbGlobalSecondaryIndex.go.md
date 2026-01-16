@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndex(scope Construct, id *string, config DynamodbGlobalSecondaryIndexConfig) DynamodbGlobalSecondaryIndex
 ```
@@ -505,7 +505,7 @@ func ResetWarmThroughput()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndex_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndex_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndex_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexConfig {
 	Connection: interface{},
@@ -1020,8 +1020,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryind
 	Projection: interface{},
 	ProvisionedThroughput: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexTimeouts,
-	WarmThroughput: github.com/cdktn-io/cdktn-provider-aws-go/aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexWarmThroughput,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexTimeouts,
+	WarmThroughput: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexWarmThroughput,
 }
 ```
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexKeySchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexKeySchema {
 	AttributeName: *string,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexOnDemandThroughput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexOnDemandThroughput {
 	MaxReadRequestUnits: *f64,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexProjection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexProjection {
 	ProjectionType: *string,
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexProvisionedThroughput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexProvisionedThroughput {
 	ReadCapacityUnits: *f64,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexTimeouts {
 	Create: *string,
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexWarmThroughput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 &dynamodbglobalsecondaryindex.DynamodbGlobalSecondaryIndexWarmThroughput {
 	ReadUnitsPerSecond: *f64,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexKeySchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexKeySchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbGlobalSecondaryIndexKeySchemaList
 ```
@@ -1715,7 +1715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexKeySchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexKeySchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbGlobalSecondaryIndexKeySchemaOutputReference
 ```
@@ -2048,7 +2048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexOnDemandThroughputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexOnDemandThroughputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbGlobalSecondaryIndexOnDemandThroughputList
 ```
@@ -2208,7 +2208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexOnDemandThroughputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexOnDemandThroughputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbGlobalSecondaryIndexOnDemandThroughputOutputReference
 ```
@@ -2533,7 +2533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexProjectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexProjectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbGlobalSecondaryIndexProjectionList
 ```
@@ -2693,7 +2693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexProjectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexProjectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbGlobalSecondaryIndexProjectionOutputReference
 ```
@@ -3011,7 +3011,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexProvisionedThroughputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexProvisionedThroughputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynamodbGlobalSecondaryIndexProvisionedThroughputList
 ```
@@ -3171,7 +3171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexProvisionedThroughputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexProvisionedThroughputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynamodbGlobalSecondaryIndexProvisionedThroughputOutputReference
 ```
@@ -3496,7 +3496,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbGlobalSecondaryIndexTimeoutsOutputReference
 ```
@@ -3832,7 +3832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalSecondaryIndex.DynamodbGlobalSecondaryIndexWarmThroughputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dynamodbglobalsecondaryindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbglobalsecondaryindex"
 
 dynamodbglobalsecondaryindex.NewDynamodbGlobalSecondaryIndexWarmThroughputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbGlobalSecondaryIndexWarmThroughputOutputReference
 ```

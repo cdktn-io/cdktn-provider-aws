@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.NewDataAwsDynamodbTableItem(scope Construct, id *string, config DataAwsDynamodbTableItemConfig) DataAwsDynamodbTableItem
 ```
@@ -304,7 +304,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsdynamodbtableitem.DataAwsDynamodbTableItem_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdynamodbtableitem"
 
 dataawsdynamodbtableitem.DataAwsDynamodbTableItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbTableItem.DataAwsDynamodbTableItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdynamodbtableitem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdynamodbtableitem"
 
 &dataawsdynamodbtableitem.DataAwsDynamodbTableItemConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.NewRdsClusterParameterGroup(scope Construct, id *string, config RdsClusterParameterGroupConfig) RdsClusterParameterGroup
 ```
@@ -447,7 +447,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.RdsClusterParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.RdsClusterParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ rdsclusterparametergroup.RdsClusterParameterGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.RdsClusterParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ rdsclusterparametergroup.RdsClusterParameterGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.RdsClusterParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 &rdsclusterparametergroup.RdsClusterParameterGroupConfig {
 	Connection: interface{},
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 &rdsclusterparametergroup.RdsClusterParameterGroupParameter {
 	Name: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.NewRdsClusterParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsClusterParameterGroupParameterList
 ```
@@ -1402,7 +1402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/rdsclusterparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusterparametergroup"
 
 rdsclusterparametergroup.NewRdsClusterParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RdsClusterParameterGroupParameterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.NewCloudfrontTrustStore(scope Construct, id *string, config CloudfrontTrustStoreConfig) CloudfrontTrustStore
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.CloudfrontTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.CloudfrontTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ cloudfronttruststore.CloudfrontTrustStore_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.CloudfrontTrustStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ cloudfronttruststore.CloudfrontTrustStore_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.CloudfrontTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreCaCertificatesBundleSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 &cloudfronttruststore.CloudfrontTrustStoreCaCertificatesBundleSource {
 	CaCertificatesBundleS3Location: interface{},
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 &cloudfronttruststore.CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3Location {
 	Bucket: *string,
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 &cloudfronttruststore.CloudfrontTrustStoreConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
 	Name: *string,
 	CaCertificatesBundleSource: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontTrustStore.CloudfrontTrustStoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontTrustStore.CloudfrontTrustStoreTimeouts,
 }
 ```
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 &cloudfronttruststore.CloudfrontTrustStoreTimeouts {
 	Create: *string,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.NewCloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationList
 ```
@@ -1355,7 +1355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.NewCloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontTrustStoreCaCertificatesBundleSourceCaCertificatesBundleS3LocationOutputReference
 ```
@@ -1717,7 +1717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreCaCertificatesBundleSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.NewCloudfrontTrustStoreCaCertificatesBundleSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontTrustStoreCaCertificatesBundleSourceList
 ```
@@ -1877,7 +1877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.NewCloudfrontTrustStoreCaCertificatesBundleSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontTrustStoreCaCertificatesBundleSourceOutputReference
 ```
@@ -2186,7 +2186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontTrustStore.CloudfrontTrustStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfronttruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfronttruststore"
 
 cloudfronttruststore.NewCloudfrontTrustStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontTrustStoreTimeoutsOutputReference
 ```

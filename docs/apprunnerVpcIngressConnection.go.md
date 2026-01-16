@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 apprunnervpcingressconnection.NewApprunnerVpcIngressConnection(scope Construct, id *string, config ApprunnerVpcIngressConnectionConfig) ApprunnerVpcIngressConnection
 ```
@@ -419,7 +419,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 apprunnervpcingressconnection.ApprunnerVpcIngressConnection_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 apprunnervpcingressconnection.ApprunnerVpcIngressConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ apprunnervpcingressconnection.ApprunnerVpcIngressConnection_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 apprunnervpcingressconnection.ApprunnerVpcIngressConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ apprunnervpcingressconnection.ApprunnerVpcIngressConnection_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 apprunnervpcingressconnection.ApprunnerVpcIngressConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 &apprunnervpcingressconnection.ApprunnerVpcIngressConnectionConfig {
 	Connection: interface{},
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnect
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	IngressVpcConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfiguration,
+	IngressVpcConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfiguration,
 	Name: *string,
 	ServiceArn: *string,
 	Id: *string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 &apprunnervpcingressconnection.ApprunnerVpcIngressConnectionIngressVpcConfiguration {
 	VpcEndpointId: *string,
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerVpcIngressConnection.ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnervpcingressconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcingressconnection"
 
 apprunnervpcingressconnection.NewApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerVpcIngressConnectionIngressVpcConfigurationOutputReference
 ```

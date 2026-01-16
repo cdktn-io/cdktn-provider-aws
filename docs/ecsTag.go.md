@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsTag.EcsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ecstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecstag"
 
 ecstag.NewEcsTag(scope Construct, id *string, config EcsTagConfig) EcsTag
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsTag.EcsTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ecstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecstag"
 
 ecstag.EcsTag_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsTag.EcsTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ecstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecstag"
 
 ecstag.EcsTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ecstag.EcsTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsTag.EcsTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ecstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecstag"
 
 ecstag.EcsTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ecstag.EcsTag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsTag.EcsTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ecstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecstag"
 
 ecstag.EcsTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsTag.EcsTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ecstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecstag"
 
 &ecstag.EcsTagConfig {
 	Connection: interface{},

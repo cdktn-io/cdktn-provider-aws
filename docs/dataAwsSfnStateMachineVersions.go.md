@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.NewDataAwsSfnStateMachineVersions(scope Construct, id *string, config DataAwsSfnStateMachineVersionsConfig) DataAwsSfnStateMachineVersions
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssfnstatemachineversions"
 
 dataawssfnstatemachineversions.DataAwsSfnStateMachineVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSfnStateMachineVersions.DataAwsSfnStateMachineVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssfnstatemachineversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssfnstatemachineversions"
 
 &dataawssfnstatemachineversions.DataAwsSfnStateMachineVersionsConfig {
 	Connection: interface{},

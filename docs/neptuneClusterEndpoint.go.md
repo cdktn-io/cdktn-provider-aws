@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/neptuneclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/neptuneclusterendpoint"
 
 neptuneclusterendpoint.NewNeptuneClusterEndpoint(scope Construct, id *string, config NeptuneClusterEndpointConfig) NeptuneClusterEndpoint
 ```
@@ -420,7 +420,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/neptuneclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/neptuneclusterendpoint"
 
 neptuneclusterendpoint.NeptuneClusterEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/neptuneclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/neptuneclusterendpoint"
 
 neptuneclusterendpoint.NeptuneClusterEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ neptuneclusterendpoint.NeptuneClusterEndpoint_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/neptuneclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/neptuneclusterendpoint"
 
 neptuneclusterendpoint.NeptuneClusterEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ neptuneclusterendpoint.NeptuneClusterEndpoint_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/neptuneclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/neptuneclusterendpoint"
 
 neptuneclusterendpoint.NeptuneClusterEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/neptuneclusterendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/neptuneclusterendpoint"
 
 &neptuneclusterendpoint.NeptuneClusterEndpointConfig {
 	Connection: interface{},

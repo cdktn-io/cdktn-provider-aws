@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKinesisStreamConsumer.DataAwsKinesisStreamConsumer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisstreamconsumer"
 
 dataawskinesisstreamconsumer.NewDataAwsKinesisStreamConsumer(scope Construct, id *string, config DataAwsKinesisStreamConsumerConfig) DataAwsKinesisStreamConsumer
 ```
@@ -311,7 +311,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsKinesisStreamConsumer.DataAwsKinesisStreamConsumer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisstreamconsumer"
 
 dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumer_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsKinesisStreamConsumer.DataAwsKinesisStreamConsumer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisstreamconsumer"
 
 dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumer_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumer_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsKinesisStreamConsumer.DataAwsKinesisStreamConsumer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisstreamconsumer"
 
 dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumer_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsKinesisStreamConsumer.DataAwsKinesisStreamConsumer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisstreamconsumer"
 
 dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKinesisStreamConsumer.DataAwsKinesisStreamConsumerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisstreamconsumer"
 
 &dataawskinesisstreamconsumer.DataAwsKinesisStreamConsumerConfig {
 	Connection: interface{},

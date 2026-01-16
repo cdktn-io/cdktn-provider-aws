@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 glueconnection.NewGlueConnection(scope Construct, id *string, config GlueConnectionConfig) GlueConnection
 ```
@@ -468,7 +468,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueConnection.GlueConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 glueconnection.GlueConnection_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueConnection.GlueConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 glueconnection.GlueConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ glueconnection.GlueConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueConnection.GlueConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 glueconnection.GlueConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ glueconnection.GlueConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueConnection.GlueConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 glueconnection.GlueConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1032,7 +1032,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 &glueconnection.GlueConnectionConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
 	Description: *string,
 	Id: *string,
 	MatchCriteria: *[]*string,
-	PhysicalConnectionRequirements: github.com/cdktn-io/cdktn-provider-aws-go/aws.glueConnection.GlueConnectionPhysicalConnectionRequirements,
+	PhysicalConnectionRequirements: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueConnection.GlueConnectionPhysicalConnectionRequirements,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 &glueconnection.GlueConnectionPhysicalConnectionRequirements {
 	AvailabilityZone: *string,
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/glueconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueconnection"
 
 glueconnection.NewGlueConnectionPhysicalConnectionRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueConnectionPhysicalConnectionRequirementsOutputReference
 ```

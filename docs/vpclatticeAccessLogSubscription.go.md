@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeAccessLogSubscription.VpclatticeAccessLogSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpclatticeaccesslogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeaccesslogsubscription"
 
 vpclatticeaccesslogsubscription.NewVpclatticeAccessLogSubscription(scope Construct, id *string, config VpclatticeAccessLogSubscriptionConfig) VpclatticeAccessLogSubscription
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeAccessLogSubscription.VpclatticeAccessLogSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpclatticeaccesslogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeaccesslogsubscription"
 
 vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeAccessLogSubscription.VpclatticeAccessLogSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpclatticeaccesslogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeaccesslogsubscription"
 
 vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscription_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeAccessLogSubscription.VpclatticeAccessLogSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpclatticeaccesslogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeaccesslogsubscription"
 
 vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscription_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeAccessLogSubscription.VpclatticeAccessLogSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpclatticeaccesslogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeaccesslogsubscription"
 
 vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeAccessLogSubscription.VpclatticeAccessLogSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpclatticeaccesslogsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeaccesslogsubscription"
 
 &vpclatticeaccesslogsubscription.VpclatticeAccessLogSubscriptionConfig {
 	Connection: interface{},

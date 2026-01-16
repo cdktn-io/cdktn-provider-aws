@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShare(scope Construct, id *string, config StoragegatewayNfsFileShareConfig) StoragegatewayNfsFileShare
 ```
@@ -557,7 +557,7 @@ func ResetVpcEndpointDnsName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ storagegatewaynfsfileshare.StoragegatewayNfsFileShare_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.StoragegatewayNfsFileShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1407,7 +1407,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareCacheAttributes {
 	CacheStaleTimeoutInSeconds: *f64,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareConfig {
 	Connection: interface{},
@@ -1455,14 +1455,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare
 	RoleArn: *string,
 	AuditDestinationArn: *string,
 	BucketRegion: *string,
-	CacheAttributes: github.com/cdktn-io/cdktn-provider-aws-go/aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes,
+	CacheAttributes: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes,
 	DefaultStorageClass: *string,
 	FileShareName: *string,
 	GuessMimeTypeEnabled: interface{},
 	Id: *string,
 	KmsEncrypted: interface{},
 	KmsKeyArn: *string,
-	NfsFileShareDefaults: github.com/cdktn-io/cdktn-provider-aws-go/aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults,
+	NfsFileShareDefaults: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults,
 	NotificationPolicy: *string,
 	ObjectAcl: *string,
 	ReadOnly: interface{},
@@ -1471,7 +1471,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare
 	Squash: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts,
 	VpcEndpointDnsName: *string,
 }
 ```
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareNfsFileShareDefaults {
 	DirectoryMode: *string,
@@ -1962,7 +1962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 &storagegatewaynfsfileshare.StoragegatewayNfsFileShareTimeouts {
 	Create: *string,
@@ -2024,7 +2024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShareCacheAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayNfsFileShareCacheAttributesOutputReference
 ```
@@ -2302,7 +2302,7 @@ func InternalValue() StoragegatewayNfsFileShareCacheAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference
 ```
@@ -2667,7 +2667,7 @@ func InternalValue() StoragegatewayNfsFileShareNfsFileShareDefaults
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewaynfsfileshare"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewaynfsfileshare"
 
 storagegatewaynfsfileshare.NewStoragegatewayNfsFileShareTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StoragegatewayNfsFileShareTimeoutsOutputReference
 ```

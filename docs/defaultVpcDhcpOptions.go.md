@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpcdhcpoptions"
 
 defaultvpcdhcpoptions.NewDefaultVpcDhcpOptions(scope Construct, id *string, config DefaultVpcDhcpOptionsConfig) DefaultVpcDhcpOptions
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpcdhcpoptions"
 
 defaultvpcdhcpoptions.DefaultVpcDhcpOptions_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpcdhcpoptions"
 
 defaultvpcdhcpoptions.DefaultVpcDhcpOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ defaultvpcdhcpoptions.DefaultVpcDhcpOptions_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpcdhcpoptions"
 
 defaultvpcdhcpoptions.DefaultVpcDhcpOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ defaultvpcdhcpoptions.DefaultVpcDhcpOptions_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpcdhcpoptions"
 
 defaultvpcdhcpoptions.DefaultVpcDhcpOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.defaultVpcDhcpOptions.DefaultVpcDhcpOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpcdhcpoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpcdhcpoptions"
 
 &defaultvpcdhcpoptions.DefaultVpcDhcpOptionsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.mediaStoreContainer.MediaStoreContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/mediastorecontainer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.NewMediaStoreContainer(scope Construct, id *string, config MediaStoreContainerConfig) MediaStoreContainer
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.mediaStoreContainer.MediaStoreContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/mediastorecontainer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.mediaStoreContainer.MediaStoreContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/mediastorecontainer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ mediastorecontainer.MediaStoreContainer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.mediaStoreContainer.MediaStoreContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/mediastorecontainer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ mediastorecontainer.MediaStoreContainer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.mediaStoreContainer.MediaStoreContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/mediastorecontainer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/mediastorecontainer"
 
 mediastorecontainer.MediaStoreContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.mediaStoreContainer.MediaStoreContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/mediastorecontainer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/mediastorecontainer"
 
 &mediastorecontainer.MediaStoreContainerConfig {
 	Connection: interface{},

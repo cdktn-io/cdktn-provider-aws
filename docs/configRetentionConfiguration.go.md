@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configretentionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.NewConfigRetentionConfiguration(scope Construct, id *string, config ConfigRetentionConfigurationConfig) ConfigRetentionConfiguration
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configretentionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configretentionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configretentionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ configretentionconfiguration.ConfigRetentionConfiguration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configretentionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configretentionconfiguration"
 
 configretentionconfiguration.ConfigRetentionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configRetentionConfiguration.ConfigRetentionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configretentionconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configretentionconfiguration"
 
 &configretentionconfiguration.ConfigRetentionConfigurationConfig {
 	Connection: interface{},

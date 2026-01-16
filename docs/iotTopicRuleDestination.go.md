@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.NewIotTopicRuleDestination(scope Construct, id *string, config IotTopicRuleDestinationConfig) IotTopicRuleDestination
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.IotTopicRuleDestination_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.IotTopicRuleDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ iottopicruledestination.IotTopicRuleDestination_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.IotTopicRuleDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ iottopicruledestination.IotTopicRuleDestination_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.IotTopicRuleDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 &iottopicruledestination.IotTopicRuleDestinationConfig {
 	Connection: interface{},
@@ -852,11 +852,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	VpcConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfiguration,
+	VpcConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfiguration,
 	Enabled: interface{},
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.iotTopicRuleDestination.IotTopicRuleDestinationTimeouts,
 }
 ```
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 &iottopicruledestination.IotTopicRuleDestinationTimeouts {
 	Create: *string,
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 &iottopicruledestination.IotTopicRuleDestinationVpcConfiguration {
 	RoleArn: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.NewIotTopicRuleDestinationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleDestinationTimeoutsOutputReference
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/iottopicruledestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iottopicruledestination"
 
 iottopicruledestination.NewIotTopicRuleDestinationVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotTopicRuleDestinationVpcConfigurationOutputReference
 ```

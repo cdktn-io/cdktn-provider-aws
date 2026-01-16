@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.NewQbusinessApplication(scope Construct, id *string, config QbusinessApplicationConfig) QbusinessApplication
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.QbusinessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.QbusinessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ qbusinessapplication.QbusinessApplication_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.QbusinessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ qbusinessapplication.QbusinessApplication_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.QbusinessApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationAttachmentsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 &qbusinessapplication.QbusinessApplicationAttachmentsConfiguration {
 	AttachmentsControlMode: *string,
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 &qbusinessapplication.QbusinessApplicationConfig {
 	Connection: interface{},
@@ -1042,7 +1042,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
 	EncryptionConfiguration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.qbusinessApplication.QbusinessApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.qbusinessApplication.QbusinessApplicationTimeouts,
 }
 ```
 
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 &qbusinessapplication.QbusinessApplicationEncryptionConfiguration {
 	KmsKeyId: *string,
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 &qbusinessapplication.QbusinessApplicationTimeouts {
 	Create: *string,
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationAttachmentsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.NewQbusinessApplicationAttachmentsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QbusinessApplicationAttachmentsConfigurationList
 ```
@@ -1532,7 +1532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationAttachmentsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.NewQbusinessApplicationAttachmentsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QbusinessApplicationAttachmentsConfigurationOutputReference
 ```
@@ -1821,7 +1821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.NewQbusinessApplicationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QbusinessApplicationEncryptionConfigurationList
 ```
@@ -1981,7 +1981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.NewQbusinessApplicationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QbusinessApplicationEncryptionConfigurationOutputReference
 ```
@@ -2270,7 +2270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.qbusinessApplication.QbusinessApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/qbusinessapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/qbusinessapplication"
 
 qbusinessapplication.NewQbusinessApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QbusinessApplicationTimeoutsOutputReference
 ```

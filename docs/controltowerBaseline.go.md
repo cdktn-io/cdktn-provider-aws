@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaseline(scope Construct, id *string, config ControltowerBaselineConfig) ControltowerBaseline
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ controltowerbaseline.ControltowerBaseline_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ controltowerbaseline.ControltowerBaseline_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 &controltowerbaseline.ControltowerBaselineConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
 	Parameters: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.controltowerBaseline.ControltowerBaselineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.controltowerBaseline.ControltowerBaselineTimeouts,
 }
 ```
 
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 &controltowerbaseline.ControltowerBaselineParameters {
 	Key: *string,
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 &controltowerbaseline.ControltowerBaselineTimeouts {
 	Create: *string,
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaselineParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ControltowerBaselineParametersList
 ```
@@ -1388,7 +1388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaselineParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ControltowerBaselineParametersOutputReference
 ```
@@ -1699,7 +1699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaselineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ControltowerBaselineTimeoutsOutputReference
 ```

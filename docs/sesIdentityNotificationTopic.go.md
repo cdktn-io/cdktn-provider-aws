@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesidentitynotificationtopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesidentitynotificationtopic"
 
 sesidentitynotificationtopic.NewSesIdentityNotificationTopic(scope Construct, id *string, config SesIdentityNotificationTopicConfig) SesIdentityNotificationTopic
 ```
@@ -406,7 +406,7 @@ func ResetTopicArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesidentitynotificationtopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesidentitynotificationtopic"
 
 sesidentitynotificationtopic.SesIdentityNotificationTopic_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesidentitynotificationtopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesidentitynotificationtopic"
 
 sesidentitynotificationtopic.SesIdentityNotificationTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ sesidentitynotificationtopic.SesIdentityNotificationTopic_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesidentitynotificationtopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesidentitynotificationtopic"
 
 sesidentitynotificationtopic.SesIdentityNotificationTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ sesidentitynotificationtopic.SesIdentityNotificationTopic_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesidentitynotificationtopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesidentitynotificationtopic"
 
 sesidentitynotificationtopic.SesIdentityNotificationTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sesidentitynotificationtopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sesidentitynotificationtopic"
 
 &sesidentitynotificationtopic.SesIdentityNotificationTopicConfig {
 	Connection: interface{},

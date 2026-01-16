@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntent(scope Construct, id *string, config LexIntentConfig) LexIntent
 ```
@@ -573,7 +573,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lexIntent.LexIntent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.LexIntent_IsConstruct(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lexIntent.LexIntent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.LexIntent_IsTerraformElement(x interface{}) *bool
 ```
@@ -619,7 +619,7 @@ lexintent.LexIntent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lexIntent.LexIntent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.LexIntent_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ lexintent.LexIntent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lexIntent.LexIntent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.LexIntent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1247,7 +1247,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentConclusionStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentConclusionStatement {
 	Message: interface{},
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentConclusionStatementMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentConclusionStatementMessage {
 	Content: *string,
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentConfig {
 	Connection: interface{},
@@ -1365,21 +1365,21 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	FulfillmentActivity: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentFulfillmentActivity,
+	FulfillmentActivity: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentFulfillmentActivity,
 	Name: *string,
-	ConclusionStatement: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentConclusionStatement,
-	ConfirmationPrompt: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentConfirmationPrompt,
+	ConclusionStatement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentConclusionStatement,
+	ConfirmationPrompt: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentConfirmationPrompt,
 	CreateVersion: interface{},
 	Description: *string,
-	DialogCodeHook: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentDialogCodeHook,
-	FollowUpPrompt: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentFollowUpPrompt,
+	DialogCodeHook: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentDialogCodeHook,
+	FollowUpPrompt: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentFollowUpPrompt,
 	Id: *string,
 	ParentIntentSignature: *string,
 	Region: *string,
-	RejectionStatement: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentRejectionStatement,
+	RejectionStatement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentRejectionStatement,
 	SampleUtterances: *[]*string,
 	Slot: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentTimeouts,
 }
 ```
 
@@ -1688,7 +1688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentConfirmationPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentConfirmationPrompt {
 	MaxAttempts: *f64,
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentConfirmationPromptMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentConfirmationPromptMessage {
 	Content: *string,
@@ -1810,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentDialogCodeHook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentDialogCodeHook {
 	MessageVersion: *string,
@@ -1856,11 +1856,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFollowUpPrompt {
-	Prompt: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentFollowUpPromptPrompt,
-	RejectionStatement: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentFollowUpPromptRejectionStatement,
+	Prompt: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentFollowUpPromptPrompt,
+	RejectionStatement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentFollowUpPromptRejectionStatement,
 }
 ```
 
@@ -1906,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFollowUpPromptPrompt {
 	MaxAttempts: *f64,
@@ -1968,7 +1968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFollowUpPromptPromptMessage {
 	Content: *string,
@@ -2028,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFollowUpPromptRejectionStatement {
 	Message: interface{},
@@ -2076,7 +2076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFollowUpPromptRejectionStatementMessage {
 	Content: *string,
@@ -2136,11 +2136,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFulfillmentActivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFulfillmentActivity {
 	Type: *string,
-	CodeHook: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentFulfillmentActivityCodeHook,
+	CodeHook: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentFulfillmentActivityCodeHook,
 }
 ```
 
@@ -2184,7 +2184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentFulfillmentActivityCodeHook {
 	MessageVersion: *string,
@@ -2230,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentRejectionStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentRejectionStatement {
 	Message: interface{},
@@ -2278,7 +2278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentRejectionStatementMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentRejectionStatementMessage {
 	Content: *string,
@@ -2338,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentSlot {
 	Name: *string,
@@ -2349,7 +2349,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
 	ResponseCard: *string,
 	SampleUtterances: *[]*string,
 	SlotTypeVersion: *string,
-	ValueElicitationPrompt: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexIntent.LexIntentSlotValueElicitationPrompt,
+	ValueElicitationPrompt: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexIntent.LexIntentSlotValueElicitationPrompt,
 }
 ```
 
@@ -2484,7 +2484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentSlotValueElicitationPrompt {
 	MaxAttempts: *f64,
@@ -2546,7 +2546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentSlotValueElicitationPromptMessage {
 	Content: *string,
@@ -2606,7 +2606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexIntent.LexIntentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 &lexintent.LexIntentTimeouts {
 	Create: *string,
@@ -2668,7 +2668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentConclusionStatementMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentConclusionStatementMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentConclusionStatementMessageList
 ```
@@ -2828,7 +2828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentConclusionStatementMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentConclusionStatementMessageOutputReference
 ```
@@ -3168,7 +3168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentConclusionStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentConclusionStatementOutputReference
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() LexIntentConclusionStatement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentConfirmationPromptMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentConfirmationPromptMessageList
 ```
@@ -3641,7 +3641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentConfirmationPromptMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentConfirmationPromptMessageOutputReference
 ```
@@ -3981,7 +3981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentConfirmationPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentConfirmationPromptOutputReference
 ```
@@ -4316,7 +4316,7 @@ func InternalValue() LexIntentConfirmationPrompt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentDialogCodeHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentDialogCodeHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentDialogCodeHookOutputReference
 ```
@@ -4609,7 +4609,7 @@ func InternalValue() LexIntentDialogCodeHook
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentFollowUpPromptOutputReference
 ```
@@ -4928,7 +4928,7 @@ func InternalValue() LexIntentFollowUpPrompt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptPromptMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentFollowUpPromptPromptMessageList
 ```
@@ -5088,7 +5088,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptPromptMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentFollowUpPromptPromptMessageOutputReference
 ```
@@ -5428,7 +5428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentFollowUpPromptPromptOutputReference
 ```
@@ -5763,7 +5763,7 @@ func InternalValue() LexIntentFollowUpPromptPrompt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptRejectionStatementMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentFollowUpPromptRejectionStatementMessageList
 ```
@@ -5923,7 +5923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptRejectionStatementMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentFollowUpPromptRejectionStatementMessageOutputReference
 ```
@@ -6263,7 +6263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFollowUpPromptRejectionStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentFollowUpPromptRejectionStatementOutputReference
 ```
@@ -6576,7 +6576,7 @@ func InternalValue() LexIntentFollowUpPromptRejectionStatement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentFulfillmentActivityCodeHookOutputReference
 ```
@@ -6869,7 +6869,7 @@ func InternalValue() LexIntentFulfillmentActivityCodeHook
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentFulfillmentActivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentFulfillmentActivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentFulfillmentActivityOutputReference
 ```
@@ -7182,7 +7182,7 @@ func InternalValue() LexIntentFulfillmentActivity
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentRejectionStatementMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentRejectionStatementMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentRejectionStatementMessageList
 ```
@@ -7342,7 +7342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentRejectionStatementMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentRejectionStatementMessageOutputReference
 ```
@@ -7682,7 +7682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentRejectionStatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentRejectionStatementOutputReference
 ```
@@ -7995,7 +7995,7 @@ func InternalValue() LexIntentRejectionStatement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentSlotList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentSlotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentSlotList
 ```
@@ -8155,7 +8155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentSlotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentSlotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentSlotOutputReference
 ```
@@ -8675,7 +8675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentSlotValueElicitationPromptMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexIntentSlotValueElicitationPromptMessageList
 ```
@@ -8835,7 +8835,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentSlotValueElicitationPromptMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexIntentSlotValueElicitationPromptMessageOutputReference
 ```
@@ -9175,7 +9175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentSlotValueElicitationPromptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentSlotValueElicitationPromptOutputReference
 ```
@@ -9510,7 +9510,7 @@ func InternalValue() LexIntentSlotValueElicitationPrompt
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexIntent.LexIntentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexintent"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexintent"
 
 lexintent.NewLexIntentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexIntentTimeoutsOutputReference
 ```

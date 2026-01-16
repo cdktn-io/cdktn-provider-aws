@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.NewDataAwsSsmParametersByPath(scope Construct, id *string, config DataAwsSsmParametersByPathConfig) DataAwsSsmParametersByPath
 ```
@@ -304,7 +304,7 @@ func ResetWithDecryption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsssmparametersbypath.DataAwsSsmParametersByPath_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmparametersbypath"
 
 dataawsssmparametersbypath.DataAwsSsmParametersByPath_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPathConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssmparametersbypath"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmparametersbypath"
 
 &dataawsssmparametersbypath.DataAwsSsmParametersByPathConfig {
 	Connection: interface{},

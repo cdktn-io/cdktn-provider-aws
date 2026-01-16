@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointroutetableassociation"
 
 vpcendpointroutetableassociation.NewVpcEndpointRouteTableAssociation(scope Construct, id *string, config VpcEndpointRouteTableAssociationConfig) VpcEndpointRouteTableAssociation
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointroutetableassociation"
 
 vpcendpointroutetableassociation.VpcEndpointRouteTableAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointroutetableassociation"
 
 vpcendpointroutetableassociation.VpcEndpointRouteTableAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ vpcendpointroutetableassociation.VpcEndpointRouteTableAssociation_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointroutetableassociation"
 
 vpcendpointroutetableassociation.VpcEndpointRouteTableAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ vpcendpointroutetableassociation.VpcEndpointRouteTableAssociation_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointroutetableassociation"
 
 vpcendpointroutetableassociation.VpcEndpointRouteTableAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointroutetableassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointroutetableassociation"
 
 &vpcendpointroutetableassociation.VpcEndpointRouteTableAssociationConfig {
 	Connection: interface{},

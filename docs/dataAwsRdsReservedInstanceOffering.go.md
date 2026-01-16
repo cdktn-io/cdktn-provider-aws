@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdsreservedinstanceoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdsreservedinstanceoffering"
 
 dataawsrdsreservedinstanceoffering.NewDataAwsRdsReservedInstanceOffering(scope Construct, id *string, config DataAwsRdsReservedInstanceOfferingConfig) DataAwsRdsReservedInstanceOffering
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdsreservedinstanceoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdsreservedinstanceoffering"
 
 dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOffering_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdsreservedinstanceoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdsreservedinstanceoffering"
 
 dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOffering_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOffering_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdsreservedinstanceoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdsreservedinstanceoffering"
 
 dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOffering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOffering_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOffering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdsreservedinstanceoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdsreservedinstanceoffering"
 
 dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOffering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRdsReservedInstanceOffering.DataAwsRdsReservedInstanceOfferingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdsreservedinstanceoffering"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdsreservedinstanceoffering"
 
 &dataawsrdsreservedinstanceoffering.DataAwsRdsReservedInstanceOfferingConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codestarconnectionsconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codestarconnectionsconnection"
 
 codestarconnectionsconnection.NewCodestarconnectionsConnection(scope Construct, id *string, config CodestarconnectionsConnectionConfig) CodestarconnectionsConnection
 ```
@@ -420,7 +420,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codestarconnectionsconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codestarconnectionsconnection"
 
 codestarconnectionsconnection.CodestarconnectionsConnection_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codestarconnectionsconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codestarconnectionsconnection"
 
 codestarconnectionsconnection.CodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ codestarconnectionsconnection.CodestarconnectionsConnection_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codestarconnectionsconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codestarconnectionsconnection"
 
 codestarconnectionsconnection.CodestarconnectionsConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ codestarconnectionsconnection.CodestarconnectionsConnection_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codestarconnectionsconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codestarconnectionsconnection"
 
 codestarconnectionsconnection.CodestarconnectionsConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/codestarconnectionsconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codestarconnectionsconnection"
 
 &codestarconnectionsconnection.CodestarconnectionsConnectionConfig {
 	Connection: interface{},

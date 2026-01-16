@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.NewEmrBlockPublicAccessConfiguration(scope Construct, id *string, config EmrBlockPublicAccessConfigurationConfig) EmrBlockPublicAccessConfiguration
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfiguration_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfiguration_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 &emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfigurationConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 &emrblockpublicaccessconfiguration.EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRange {
 	MaxRange: *f64,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.NewEmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeList
 ```
@@ -1162,7 +1162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrBlockPublicAccessConfiguration.EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/emrblockpublicaccessconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/emrblockpublicaccessconfiguration"
 
 emrblockpublicaccessconfiguration.NewEmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmrBlockPublicAccessConfigurationPermittedPublicSecurityGroupRuleRangeOutputReference
 ```

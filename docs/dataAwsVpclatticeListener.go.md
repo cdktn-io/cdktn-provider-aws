@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListener(scope Construct, id *string, config DataAwsVpclatticeListenerConfig) DataAwsVpclatticeListener
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListener.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.DataAwsVpclatticeListener_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListener.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.DataAwsVpclatticeListener_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsvpclatticelistener.DataAwsVpclatticeListener_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListener.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.DataAwsVpclatticeListener_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsvpclatticelistener.DataAwsVpclatticeListener_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListener.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.DataAwsVpclatticeListener_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 &dataawsvpclatticelistener.DataAwsVpclatticeListenerConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 &dataawsvpclatticelistener.DataAwsVpclatticeListenerDefaultAction {
 
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionFixedResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 &dataawsvpclatticelistener.DataAwsVpclatticeListenerDefaultActionFixedResponse {
 
@@ -987,7 +987,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionForward.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 &dataawsvpclatticelistener.DataAwsVpclatticeListenerDefaultActionForward {
 
@@ -1000,7 +1000,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionForwardTargetGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 &dataawsvpclatticelistener.DataAwsVpclatticeListenerDefaultActionForwardTargetGroups {
 
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionFixedResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionFixedResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpclatticeListenerDefaultActionFixedResponseList
 ```
@@ -1164,7 +1164,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionFixedResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionFixedResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpclatticeListenerDefaultActionFixedResponseOutputReference
 ```
@@ -1442,7 +1442,7 @@ func InternalValue() DataAwsVpclatticeListenerDefaultActionFixedResponse
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionForwardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionForwardList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpclatticeListenerDefaultActionForwardList
 ```
@@ -1591,7 +1591,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionForwardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionForwardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpclatticeListenerDefaultActionForwardOutputReference
 ```
@@ -1869,7 +1869,7 @@ func InternalValue() DataAwsVpclatticeListenerDefaultActionForward
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionForwardTargetGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsList
 ```
@@ -2018,7 +2018,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionForwardTargetGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpclatticeListenerDefaultActionForwardTargetGroupsOutputReference
 ```
@@ -2307,7 +2307,7 @@ func InternalValue() DataAwsVpclatticeListenerDefaultActionForwardTargetGroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpclatticeListenerDefaultActionList
 ```
@@ -2456,7 +2456,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpclatticeListener.DataAwsVpclatticeListenerDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpclatticelistener"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpclatticelistener"
 
 dataawsvpclatticelistener.NewDataAwsVpclatticeListenerDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpclatticeListenerDefaultActionOutputReference
 ```

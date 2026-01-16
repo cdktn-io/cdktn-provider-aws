@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxGateway.DxGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 dxgateway.NewDxGateway(scope Construct, id *string, config DxGatewayConfig) DxGateway
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dxGateway.DxGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 dxgateway.DxGateway_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dxGateway.DxGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 dxgateway.DxGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ dxgateway.DxGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dxGateway.DxGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 dxgateway.DxGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ dxgateway.DxGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dxGateway.DxGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 dxgateway.DxGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxGateway.DxGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 &dxgateway.DxGatewayConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
 	Id: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dxGateway.DxGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dxGateway.DxGatewayTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxGateway.DxGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 &dxgateway.DxGatewayTimeouts {
 	Create: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxGateway.DxGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxgateway"
 
 dxgateway.NewDxGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxGatewayTimeoutsOutputReference
 ```

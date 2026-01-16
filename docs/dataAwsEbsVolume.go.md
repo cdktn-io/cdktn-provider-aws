@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.NewDataAwsEbsVolume(scope Construct, id *string, config DataAwsEbsVolumeConfig) DataAwsEbsVolume
 ```
@@ -344,7 +344,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.DataAwsEbsVolume_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.DataAwsEbsVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ dataawsebsvolume.DataAwsEbsVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.DataAwsEbsVolume_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ dataawsebsvolume.DataAwsEbsVolume_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.DataAwsEbsVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 &dataawsebsvolume.DataAwsEbsVolumeConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
 	MostRecent: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts,
 }
 ```
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 &dataawsebsvolume.DataAwsEbsVolumeFilter {
 	Name: *string,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 &dataawsebsvolume.DataAwsEbsVolumeTimeouts {
 	Read: *string,
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.NewDataAwsEbsVolumeFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEbsVolumeFilterList
 ```
@@ -1332,7 +1332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.NewDataAwsEbsVolumeFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEbsVolumeFilterOutputReference
 ```
@@ -1643,7 +1643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsvolume"
 
 dataawsebsvolume.NewDataAwsEbsVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEbsVolumeTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.NewControltowerLandingZone(scope Construct, id *string, config ControltowerLandingZoneConfig) ControltowerLandingZone
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.ControltowerLandingZone_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.ControltowerLandingZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ controltowerlandingzone.ControltowerLandingZone_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.ControltowerLandingZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ controltowerlandingzone.ControltowerLandingZone_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.ControltowerLandingZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 &controltowerlandingzone.ControltowerLandingZoneConfig {
 	Connection: interface{},
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.controltowerLandingZone.ControltowerLandingZoneTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.controltowerLandingZone.ControltowerLandingZoneTimeouts,
 }
 ```
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneDriftStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 &controltowerlandingzone.ControltowerLandingZoneDriftStatus {
 
@@ -1122,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 &controltowerlandingzone.ControltowerLandingZoneTimeouts {
 	Create: *string,
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneDriftStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.NewControltowerLandingZoneDriftStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ControltowerLandingZoneDriftStatusList
 ```
@@ -1333,7 +1333,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneDriftStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.NewControltowerLandingZoneDriftStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ControltowerLandingZoneDriftStatusOutputReference
 ```
@@ -1611,7 +1611,7 @@ func InternalValue() ControltowerLandingZoneDriftStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerLandingZone.ControltowerLandingZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/controltowerlandingzone"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerlandingzone"
 
 controltowerlandingzone.NewControltowerLandingZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ControltowerLandingZoneTimeoutsOutputReference
 ```

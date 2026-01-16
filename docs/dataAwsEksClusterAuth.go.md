@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterauth"
 
 dataawseksclusterauth.NewDataAwsEksClusterAuth(scope Construct, id *string, config DataAwsEksClusterAuthConfig) DataAwsEksClusterAuth
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawseksclusterauth.DataAwsEksClusterAuth_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterauth"
 
 dataawseksclusterauth.DataAwsEksClusterAuth_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterauth"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterauth"
 
 &dataawseksclusterauth.DataAwsEksClusterAuthConfig {
 	Connection: interface{},

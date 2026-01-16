@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.customerGateway.CustomerGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/customergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/customergateway"
 
 customergateway.NewCustomerGateway(scope Construct, id *string, config CustomerGatewayConfig) CustomerGateway
 ```
@@ -441,7 +441,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.customerGateway.CustomerGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/customergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/customergateway"
 
 customergateway.CustomerGateway_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.customerGateway.CustomerGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/customergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/customergateway"
 
 customergateway.CustomerGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ customergateway.CustomerGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.customerGateway.CustomerGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/customergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/customergateway"
 
 customergateway.CustomerGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ customergateway.CustomerGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.customerGateway.CustomerGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/customergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/customergateway"
 
 customergateway.CustomerGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.customerGateway.CustomerGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/customergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/customergateway"
 
 &customergateway.CustomerGatewayConfig {
 	Connection: interface{},

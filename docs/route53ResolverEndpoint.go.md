@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.NewRoute53ResolverEndpoint(scope Construct, id *string, config Route53ResolverEndpointConfig) Route53ResolverEndpoint
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.Route53ResolverEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.Route53ResolverEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ route53resolverendpoint.Route53ResolverEndpoint_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.Route53ResolverEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ route53resolverendpoint.Route53ResolverEndpoint_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.Route53ResolverEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1071,7 +1071,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 &route53resolverendpoint.Route53ResolverEndpointConfig {
 	Connection: interface{},
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TargetNameServerMetricsEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.route53ResolverEndpoint.Route53ResolverEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.route53ResolverEndpoint.Route53ResolverEndpointTimeouts,
 }
 ```
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 &route53resolverendpoint.Route53ResolverEndpointIpAddress {
 	SubnetId: *string,
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 &route53resolverendpoint.Route53ResolverEndpointTimeouts {
 	Create: *string,
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.NewRoute53ResolverEndpointIpAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Route53ResolverEndpointIpAddressList
 ```
@@ -1646,7 +1646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.NewRoute53ResolverEndpointIpAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Route53ResolverEndpointIpAddressOutputReference
 ```
@@ -2004,7 +2004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/route53resolverendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverendpoint"
 
 route53resolverendpoint.NewRoute53ResolverEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Route53ResolverEndpointTimeoutsOutputReference
 ```

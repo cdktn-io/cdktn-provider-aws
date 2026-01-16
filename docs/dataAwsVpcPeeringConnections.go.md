@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.NewDataAwsVpcPeeringConnections(scope Construct, id *string, config DataAwsVpcPeeringConnectionsConfig) DataAwsVpcPeeringConnections
 ```
@@ -337,7 +337,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.DataAwsVpcPeeringConnections_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.DataAwsVpcPeeringConnections_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ dataawsvpcpeeringconnections.DataAwsVpcPeeringConnections_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.DataAwsVpcPeeringConnections_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ dataawsvpcpeeringconnections.DataAwsVpcPeeringConnections_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.DataAwsVpcPeeringConnections_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 &dataawsvpcpeeringconnections.DataAwsVpcPeeringConnectionsConfig {
 	Connection: interface{},
@@ -739,7 +739,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnectio
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeouts,
 }
 ```
 
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 &dataawsvpcpeeringconnections.DataAwsVpcPeeringConnectionsFilter {
 	Name: *string,
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 &dataawsvpcpeeringconnections.DataAwsVpcPeeringConnectionsTimeouts {
 	Read: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.NewDataAwsVpcPeeringConnectionsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcPeeringConnectionsFilterList
 ```
@@ -1146,7 +1146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.NewDataAwsVpcPeeringConnectionsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcPeeringConnectionsFilterOutputReference
 ```
@@ -1457,7 +1457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcpeeringconnections"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcpeeringconnections"
 
 dataawsvpcpeeringconnections.NewDataAwsVpcPeeringConnectionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsVpcPeeringConnectionsTimeoutsOutputReference
 ```

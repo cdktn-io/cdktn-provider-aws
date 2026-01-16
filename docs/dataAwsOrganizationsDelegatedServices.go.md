@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.NewDataAwsOrganizationsDelegatedServices(scope Construct, id *string, config DataAwsOrganizationsDelegatedServicesConfig) DataAwsOrganizationsDelegatedServices
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 &dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServicesConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 &dataawsorganizationsdelegatedservices.DataAwsOrganizationsDelegatedServicesDelegatedServices {
 
@@ -753,7 +753,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelega
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.NewDataAwsOrganizationsDelegatedServicesDelegatedServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsDelegatedServicesDelegatedServicesList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsdelegatedservices"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsdelegatedservices"
 
 dataawsorganizationsdelegatedservices.NewDataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsDelegatedServicesDelegatedServicesOutputReference
 ```

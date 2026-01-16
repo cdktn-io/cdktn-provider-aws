@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessresourcepolicy"
 
 redshiftserverlessresourcepolicy.NewRedshiftserverlessResourcePolicy(scope Construct, id *string, config RedshiftserverlessResourcePolicyConfig) RedshiftserverlessResourcePolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessresourcepolicy"
 
 redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessresourcepolicy"
 
 redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessresourcepolicy"
 
 redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicy_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessresourcepolicy"
 
 redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftserverlessResourcePolicy.RedshiftserverlessResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessresourcepolicy"
 
 &redshiftserverlessresourcepolicy.RedshiftserverlessResourcePolicyConfig {
 	Connection: interface{},

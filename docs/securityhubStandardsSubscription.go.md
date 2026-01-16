@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 securityhubstandardssubscription.NewSecurityhubStandardsSubscription(scope Construct, id *string, config SecurityhubStandardsSubscriptionConfig) SecurityhubStandardsSubscription
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ securityhubstandardssubscription.SecurityhubStandardsSubscription_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 securityhubstandardssubscription.SecurityhubStandardsSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 &securityhubstandardssubscription.SecurityhubStandardsSubscriptionConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscr
 	StandardsArn: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts,
 }
 ```
 
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 &securityhubstandardssubscription.SecurityhubStandardsSubscriptionTimeouts {
 	Create: *string,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubStandardsSubscription.SecurityhubStandardsSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/securityhubstandardssubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubstandardssubscription"
 
 securityhubstandardssubscription.NewSecurityhubStandardsSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityhubStandardsSubscriptionTimeoutsOutputReference
 ```

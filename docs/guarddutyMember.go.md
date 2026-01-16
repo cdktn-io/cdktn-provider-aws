@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 guarddutymember.NewGuarddutyMember(scope Construct, id *string, config GuarddutyMemberConfig) GuarddutyMember
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ guarddutymember.GuarddutyMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ guarddutymember.GuarddutyMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 guarddutymember.GuarddutyMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 &guarddutymember.GuarddutyMemberConfig {
 	Connection: interface{},
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
 	InvitationMessage: *string,
 	Invite: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.guarddutyMember.GuarddutyMemberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.guarddutyMember.GuarddutyMemberTimeouts,
 }
 ```
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 &guarddutymember.GuarddutyMemberTimeouts {
 	Create: *string,
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 guarddutymember.NewGuarddutyMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyMemberTimeoutsOutputReference
 ```

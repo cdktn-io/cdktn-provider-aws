@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatement(scope Construct, id *string, config RedshiftdataStatementConfig) RedshiftdataStatement
 ```
@@ -474,7 +474,7 @@ func ResetWorkgroupName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ redshiftdatastatement.RedshiftdataStatement_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ redshiftdatastatement.RedshiftdataStatement_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.RedshiftdataStatement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1027,7 +1027,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 &redshiftdatastatement.RedshiftdataStatementConfig {
 	Connection: interface{},
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
 	Region: *string,
 	SecretArn: *string,
 	StatementName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.redshiftdataStatement.RedshiftdataStatementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftdataStatement.RedshiftdataStatementTimeouts,
 	WithEvent: interface{},
 	WorkgroupName: *string,
 }
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatementParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 &redshiftdatastatement.RedshiftdataStatementParameters {
 	Name: *string,
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 &redshiftdatastatement.RedshiftdataStatementTimeouts {
 	Create: *string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatementParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftdataStatementParametersList
 ```
@@ -1546,7 +1546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatementParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftdataStatementParametersOutputReference
 ```
@@ -1857,7 +1857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftdataStatement.RedshiftdataStatementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftdatastatement"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftdatastatement"
 
 redshiftdatastatement.NewRedshiftdataStatementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftdataStatementTimeoutsOutputReference
 ```

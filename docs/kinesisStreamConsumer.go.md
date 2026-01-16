@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/kinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kinesisstreamconsumer"
 
 kinesisstreamconsumer.NewKinesisStreamConsumer(scope Construct, id *string, config KinesisStreamConsumerConfig) KinesisStreamConsumer
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/kinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kinesisstreamconsumer"
 
 kinesisstreamconsumer.KinesisStreamConsumer_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/kinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kinesisstreamconsumer"
 
 kinesisstreamconsumer.KinesisStreamConsumer_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ kinesisstreamconsumer.KinesisStreamConsumer_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/kinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kinesisstreamconsumer"
 
 kinesisstreamconsumer.KinesisStreamConsumer_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ kinesisstreamconsumer.KinesisStreamConsumer_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kinesisStreamConsumer.KinesisStreamConsumer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/kinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kinesisstreamconsumer"
 
 kinesisstreamconsumer.KinesisStreamConsumer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kinesisStreamConsumer.KinesisStreamConsumerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/kinesisstreamconsumer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kinesisstreamconsumer"
 
 &kinesisstreamconsumer.KinesisStreamConsumerConfig {
 	Connection: interface{},

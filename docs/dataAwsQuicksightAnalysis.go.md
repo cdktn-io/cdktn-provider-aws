@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.NewDataAwsQuicksightAnalysis(scope Construct, id *string, config DataAwsQuicksightAnalysisConfig) DataAwsQuicksightAnalysis
 ```
@@ -304,7 +304,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysis.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.DataAwsQuicksightAnalysis_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.DataAwsQuicksightAnalysis_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsquicksightanalysis.DataAwsQuicksightAnalysis_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysis.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.DataAwsQuicksightAnalysis_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsquicksightanalysis.DataAwsQuicksightAnalysis_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysis.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.DataAwsQuicksightAnalysis_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 &dataawsquicksightanalysis.DataAwsQuicksightAnalysisConfig {
 	Connection: interface{},
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysisPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 &dataawsquicksightanalysis.DataAwsQuicksightAnalysisPermissions {
 
@@ -972,7 +972,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysisPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.NewDataAwsQuicksightAnalysisPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsQuicksightAnalysisPermissionsList
 ```
@@ -1121,7 +1121,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsQuicksightAnalysis.DataAwsQuicksightAnalysisPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsquicksightanalysis"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsquicksightanalysis"
 
 dataawsquicksightanalysis.NewDataAwsQuicksightAnalysisPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsQuicksightAnalysisPermissionsOutputReference
 ```

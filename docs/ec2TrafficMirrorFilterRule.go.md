@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.NewEc2TrafficMirrorFilterRule(scope Construct, id *string, config Ec2TrafficMirrorFilterRuleConfig) Ec2TrafficMirrorFilterRule
 ```
@@ -446,7 +446,7 @@ func ResetSourcePortRange()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRule_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 &ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRuleConfig {
 	Connection: interface{},
@@ -1027,11 +1027,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule
 	TrafficDirection: *string,
 	TrafficMirrorFilterId: *string,
 	Description: *string,
-	DestinationPortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRange,
+	DestinationPortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRange,
 	Id: *string,
 	Protocol: *f64,
 	Region: *string,
-	SourcePortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRange,
+	SourcePortRange: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRange,
 }
 ```
 
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 &ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRuleDestinationPortRange {
 	FromPort: *f64,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 &ec2trafficmirrorfilterrule.Ec2TrafficMirrorFilterRuleSourcePortRange {
 	FromPort: *f64,
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.NewEc2TrafficMirrorFilterRuleDestinationPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference
 ```
@@ -1690,7 +1690,7 @@ func InternalValue() Ec2TrafficMirrorFilterRuleDestinationPortRange
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ec2trafficmirrorfilterrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2trafficmirrorfilterrule"
 
 ec2trafficmirrorfilterrule.NewEc2TrafficMirrorFilterRuleSourcePortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference
 ```

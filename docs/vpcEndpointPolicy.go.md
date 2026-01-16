@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 vpcendpointpolicy.NewVpcEndpointPolicy(scope Construct, id *string, config VpcEndpointPolicyConfig) VpcEndpointPolicy
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vpcendpointpolicy.VpcEndpointPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ vpcendpointpolicy.VpcEndpointPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 vpcendpointpolicy.VpcEndpointPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 &vpcendpointpolicy.VpcEndpointPolicyConfig {
 	Connection: interface{},
@@ -832,7 +832,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
 	Id: *string,
 	Policy: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.vpcEndpointPolicy.VpcEndpointPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpcEndpointPolicy.VpcEndpointPolicyTimeouts,
 }
 ```
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 &vpcendpointpolicy.VpcEndpointPolicyTimeouts {
 	Create: *string,
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcendpointpolicy"
 
 vpcendpointpolicy.NewVpcEndpointPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEndpointPolicyTimeoutsOutputReference
 ```

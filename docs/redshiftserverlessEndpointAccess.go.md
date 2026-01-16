@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.NewRedshiftserverlessEndpointAccess(scope Construct, id *string, config RedshiftserverlessEndpointAccessConfig) RedshiftserverlessEndpointAccess
 ```
@@ -406,7 +406,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccess_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccess_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccess_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 &redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccessConfig {
 	Connection: interface{},
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 &redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccessVpcEndpoint {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpoint
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 &redshiftserverlessendpointaccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface {
 
@@ -1126,7 +1126,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.NewRedshiftserverlessEndpointAccessVpcEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftserverlessEndpointAccessVpcEndpointList
 ```
@@ -1275,7 +1275,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.NewRedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceList
 ```
@@ -1424,7 +1424,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.NewRedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftserverlessEndpointAccessVpcEndpointNetworkInterfaceOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftserverlessEndpointAccess.RedshiftserverlessEndpointAccessVpcEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftserverlessendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftserverlessendpointaccess"
 
 redshiftserverlessendpointaccess.NewRedshiftserverlessEndpointAccessVpcEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftserverlessEndpointAccessVpcEndpointOutputReference
 ```

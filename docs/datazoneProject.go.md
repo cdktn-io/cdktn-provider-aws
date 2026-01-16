@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneProject.DatazoneProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.NewDatazoneProject(scope Construct, id *string, config DatazoneProjectConfig) DatazoneProject
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datazoneProject.DatazoneProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.DatazoneProject_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datazoneProject.DatazoneProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.DatazoneProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ datazoneproject.DatazoneProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datazoneProject.DatazoneProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.DatazoneProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ datazoneproject.DatazoneProject_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datazoneProject.DatazoneProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.DatazoneProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneProject.DatazoneProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 &datazoneproject.DatazoneProjectConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
 	GlossaryTerms: *[]*string,
 	Region: *string,
 	SkipDeletionCheck: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.datazoneProject.DatazoneProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.datazoneProject.DatazoneProjectTimeouts,
 }
 ```
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneProject.DatazoneProjectFailureReasons.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 &datazoneproject.DatazoneProjectFailureReasons {
 
@@ -1152,7 +1152,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datazoneProject.DatazoneProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 &datazoneproject.DatazoneProjectTimeouts {
 	Create: *string,
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneProject.DatazoneProjectFailureReasonsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.NewDatazoneProjectFailureReasonsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatazoneProjectFailureReasonsList
 ```
@@ -1353,7 +1353,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneProject.DatazoneProjectFailureReasonsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.NewDatazoneProjectFailureReasonsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatazoneProjectFailureReasonsOutputReference
 ```
@@ -1642,7 +1642,7 @@ func InternalValue() DatazoneProjectFailureReasons
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneProject.DatazoneProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datazoneproject"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datazoneproject"
 
 datazoneproject.NewDatazoneProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatazoneProjectTimeoutsOutputReference
 ```

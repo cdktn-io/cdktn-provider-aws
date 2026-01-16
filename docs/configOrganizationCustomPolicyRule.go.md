@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 configorganizationcustompolicyrule.NewConfigOrganizationCustomPolicyRule(scope Construct, id *string, config ConfigOrganizationCustomPolicyRuleConfig) ConfigOrganizationCustomPolicyRule
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRule_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRule_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1127,7 +1127,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 &configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRuleConfig {
 	Connection: interface{},
@@ -1152,7 +1152,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompo
 	ResourceTypesScope: *[]*string,
 	TagKeyScope: *string,
 	TagValueScope: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRuleTimeouts,
 }
 ```
 
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 &configorganizationcustompolicyrule.ConfigOrganizationCustomPolicyRuleTimeouts {
 	Create: *string,
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationCustomPolicyRule.ConfigOrganizationCustomPolicyRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/configorganizationcustompolicyrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustompolicyrule"
 
 configorganizationcustompolicyrule.NewConfigOrganizationCustomPolicyRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigOrganizationCustomPolicyRuleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 networkfirewallfirewalltransitgatewayattachmentaccepter.NewNetworkfirewallFirewallTransitGatewayAttachmentAccepter(scope Construct, id *string, config NetworkfirewallFirewallTransitGatewayAttachmentAccepterConfig) NetworkfirewallFirewallTransitGatewayAttachmentAccepter
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallT
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallT
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 &networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltra
 	Provisioners: *[]interface{},
 	TransitGatewayAttachmentId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeouts,
 }
 ```
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 &networkfirewallfirewalltransitgatewayattachmentaccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeouts {
 	Create: *string,
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallFirewallTransitGatewayAttachmentAccepter.NetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallfirewalltransitgatewayattachmentaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallfirewalltransitgatewayattachmentaccepter"
 
 networkfirewallfirewalltransitgatewayattachmentaccepter.NewNetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallTransitGatewayAttachmentAccepterTimeoutsOutputReference
 ```

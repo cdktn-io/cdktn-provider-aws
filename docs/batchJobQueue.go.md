@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.NewBatchJobQueue(scope Construct, id *string, config BatchJobQueueConfig) BatchJobQueue
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.BatchJobQueue_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.BatchJobQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ batchjobqueue.BatchJobQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.BatchJobQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ batchjobqueue.BatchJobQueue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.BatchJobQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueComputeEnvironmentOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 &batchjobqueue.BatchJobQueueComputeEnvironmentOrder {
 	ComputeEnvironment: *string,
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 &batchjobqueue.BatchJobQueueConfig {
 	Connection: interface{},
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
 	Region: *string,
 	SchedulingPolicyArn: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.batchJobQueue.BatchJobQueueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.batchJobQueue.BatchJobQueueTimeouts,
 }
 ```
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueJobStateTimeLimitAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 &batchjobqueue.BatchJobQueueJobStateTimeLimitAction {
 	Action: *string,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 &batchjobqueue.BatchJobQueueTimeouts {
 	Create: *string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueComputeEnvironmentOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.NewBatchJobQueueComputeEnvironmentOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobQueueComputeEnvironmentOrderList
 ```
@@ -1563,7 +1563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueComputeEnvironmentOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.NewBatchJobQueueComputeEnvironmentOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobQueueComputeEnvironmentOrderOutputReference
 ```
@@ -1874,7 +1874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueJobStateTimeLimitActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.NewBatchJobQueueJobStateTimeLimitActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BatchJobQueueJobStateTimeLimitActionList
 ```
@@ -2034,7 +2034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueJobStateTimeLimitActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.NewBatchJobQueueJobStateTimeLimitActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BatchJobQueueJobStateTimeLimitActionOutputReference
 ```
@@ -2389,7 +2389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.batchJobQueue.BatchJobQueueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/batchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/batchjobqueue"
 
 batchjobqueue.NewBatchJobQueueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchJobQueueTimeoutsOutputReference
 ```

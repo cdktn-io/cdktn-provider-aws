@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.NewWafregionalIpset(scope Construct, id *string, config WafregionalIpsetConfig) WafregionalIpset
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ wafregionalipset.WafregionalIpset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ wafregionalipset.WafregionalIpset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.WafregionalIpset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpsetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 &wafregionalipset.WafregionalIpsetConfig {
 	Connection: interface{},
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 &wafregionalipset.WafregionalIpsetIpSetDescriptor {
 	Type: *string,
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.NewWafregionalIpsetIpSetDescriptorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalIpsetIpSetDescriptorList
 ```
@@ -1173,7 +1173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/wafregionalipset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalipset"
 
 wafregionalipset.NewWafregionalIpsetIpSetDescriptorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalIpsetIpSetDescriptorOutputReference
 ```

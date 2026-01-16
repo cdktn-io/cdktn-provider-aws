@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 lambdaalias.NewLambdaAlias(scope Construct, id *string, config LambdaAliasConfig) LambdaAlias
 ```
@@ -419,7 +419,7 @@ func ResetRoutingConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 lambdaalias.LambdaAlias_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 lambdaalias.LambdaAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ lambdaalias.LambdaAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 lambdaalias.LambdaAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ lambdaalias.LambdaAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaAlias.LambdaAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 lambdaalias.LambdaAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 &lambdaalias.LambdaAliasConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	RoutingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.lambdaAlias.LambdaAliasRoutingConfig,
+	RoutingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaAlias.LambdaAliasRoutingConfig,
 }
 ```
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 &lambdaalias.LambdaAliasRoutingConfig {
 	AdditionalVersionWeights: *map[string]*f64,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdaalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaalias"
 
 lambdaalias.NewLambdaAliasRoutingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaAliasRoutingConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBotAlias.LexBotAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.NewLexBotAlias(scope Construct, id *string, config LexBotAliasConfig) LexBotAlias
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lexBotAlias.LexBotAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.LexBotAlias_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lexBotAlias.LexBotAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.LexBotAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ lexbotalias.LexBotAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lexBotAlias.LexBotAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.LexBotAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ lexbotalias.LexBotAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lexBotAlias.LexBotAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.LexBotAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 &lexbotalias.LexBotAliasConfig {
 	Connection: interface{},
@@ -961,11 +961,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
 	BotName: *string,
 	BotVersion: *string,
 	Name: *string,
-	ConversationLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexBotAlias.LexBotAliasConversationLogs,
+	ConversationLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexBotAlias.LexBotAliasConversationLogs,
 	Description: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.lexBotAlias.LexBotAliasTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexBotAlias.LexBotAliasTimeouts,
 }
 ```
 
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 &lexbotalias.LexBotAliasConversationLogs {
 	IamRoleArn: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 &lexbotalias.LexBotAliasConversationLogsLogSettings {
 	Destination: *string,
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 &lexbotalias.LexBotAliasTimeouts {
 	Create: *string,
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.NewLexBotAliasConversationLogsLogSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LexBotAliasConversationLogsLogSettingsList
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.NewLexBotAliasConversationLogsLogSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LexBotAliasConversationLogsLogSettingsOutputReference
 ```
@@ -1888,7 +1888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.NewLexBotAliasConversationLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotAliasConversationLogsOutputReference
 ```
@@ -2201,7 +2201,7 @@ func InternalValue() LexBotAliasConversationLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBotAlias.LexBotAliasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lexbotalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexbotalias"
 
 lexbotalias.NewLexBotAliasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LexBotAliasTimeoutsOutputReference
 ```

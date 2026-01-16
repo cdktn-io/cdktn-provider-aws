@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayuploadbuffer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayuploadbuffer"
 
 storagegatewayuploadbuffer.NewStoragegatewayUploadBuffer(scope Construct, id *string, config StoragegatewayUploadBufferConfig) StoragegatewayUploadBuffer
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayuploadbuffer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayuploadbuffer"
 
 storagegatewayuploadbuffer.StoragegatewayUploadBuffer_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayuploadbuffer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayuploadbuffer"
 
 storagegatewayuploadbuffer.StoragegatewayUploadBuffer_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ storagegatewayuploadbuffer.StoragegatewayUploadBuffer_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayuploadbuffer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayuploadbuffer"
 
 storagegatewayuploadbuffer.StoragegatewayUploadBuffer_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ storagegatewayuploadbuffer.StoragegatewayUploadBuffer_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayuploadbuffer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayuploadbuffer"
 
 storagegatewayuploadbuffer.StoragegatewayUploadBuffer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBufferConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/storagegatewayuploadbuffer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/storagegatewayuploadbuffer"
 
 &storagegatewayuploadbuffer.StoragegatewayUploadBufferConfig {
 	Connection: interface{},

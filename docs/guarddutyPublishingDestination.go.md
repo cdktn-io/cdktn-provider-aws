@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutypublishingdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutypublishingdestination"
 
 guarddutypublishingdestination.NewGuarddutyPublishingDestination(scope Construct, id *string, config GuarddutyPublishingDestinationConfig) GuarddutyPublishingDestination
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutypublishingdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutypublishingdestination"
 
 guarddutypublishingdestination.GuarddutyPublishingDestination_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutypublishingdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutypublishingdestination"
 
 guarddutypublishingdestination.GuarddutyPublishingDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ guarddutypublishingdestination.GuarddutyPublishingDestination_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutypublishingdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutypublishingdestination"
 
 guarddutypublishingdestination.GuarddutyPublishingDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ guarddutypublishingdestination.GuarddutyPublishingDestination_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutypublishingdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutypublishingdestination"
 
 guarddutypublishingdestination.GuarddutyPublishingDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/guarddutypublishingdestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutypublishingdestination"
 
 &guarddutypublishingdestination.GuarddutyPublishingDestinationConfig {
 	Connection: interface{},

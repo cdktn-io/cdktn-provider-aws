@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsAccount.DataAwsOrganizationsAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsaccount"
 
 dataawsorganizationsaccount.NewDataAwsOrganizationsAccount(scope Construct, id *string, config DataAwsOrganizationsAccountConfig) DataAwsOrganizationsAccount
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsAccount.DataAwsOrganizationsAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsaccount"
 
 dataawsorganizationsaccount.DataAwsOrganizationsAccount_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsAccount.DataAwsOrganizationsAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsaccount"
 
 dataawsorganizationsaccount.DataAwsOrganizationsAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsorganizationsaccount.DataAwsOrganizationsAccount_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsAccount.DataAwsOrganizationsAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsaccount"
 
 dataawsorganizationsaccount.DataAwsOrganizationsAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsorganizationsaccount.DataAwsOrganizationsAccount_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsAccount.DataAwsOrganizationsAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsaccount"
 
 dataawsorganizationsaccount.DataAwsOrganizationsAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsAccount.DataAwsOrganizationsAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsaccount"
 
 &dataawsorganizationsaccount.DataAwsOrganizationsAccountConfig {
 	Connection: interface{},

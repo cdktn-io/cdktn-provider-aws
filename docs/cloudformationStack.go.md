@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudformationStack.CloudformationStack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 cloudformationstack.NewCloudformationStack(scope Construct, id *string, config CloudformationStackConfig) CloudformationStack
 ```
@@ -503,7 +503,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudformationStack.CloudformationStack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 cloudformationstack.CloudformationStack_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudformationStack.CloudformationStack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 cloudformationstack.CloudformationStack_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ cloudformationstack.CloudformationStack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudformationStack.CloudformationStack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 cloudformationstack.CloudformationStack_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ cloudformationstack.CloudformationStack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudformationStack.CloudformationStack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 cloudformationstack.CloudformationStack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1177,7 +1177,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudformationStack.CloudformationStackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 &cloudformationstack.CloudformationStackConfig {
 	Connection: interface{},
@@ -1203,7 +1203,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
 	TemplateBody: *string,
 	TemplateUrl: *string,
 	TimeoutInMinutes: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudformationStack.CloudformationStackTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudformationStack.CloudformationStackTimeouts,
 }
 ```
 
@@ -1524,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudformationStack.CloudformationStackTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 &cloudformationstack.CloudformationStackTimeouts {
 	Create: *string,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudformationStack.CloudformationStackTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudformationstack"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudformationstack"
 
 cloudformationstack.NewCloudformationStackTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudformationStackTimeoutsOutputReference
 ```

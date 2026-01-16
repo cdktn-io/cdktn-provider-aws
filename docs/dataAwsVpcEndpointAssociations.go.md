@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociations(scope Construct, id *string, config DataAwsVpcEndpointAssociationsConfig) DataAwsVpcEndpointAssociations
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.DataAwsVpcEndpointAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.DataAwsVpcEndpointAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsvpcendpointassociations.DataAwsVpcEndpointAssociations_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.DataAwsVpcEndpointAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsvpcendpointassociations.DataAwsVpcEndpointAssociations_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.DataAwsVpcEndpointAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 &dataawsvpcendpointassociations.DataAwsVpcEndpointAssociationsAssociations {
 
@@ -618,7 +618,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 &dataawsvpcendpointassociations.DataAwsVpcEndpointAssociationsAssociationsDnsEntry {
 
@@ -631,7 +631,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 &dataawsvpcendpointassociations.DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntry {
 
@@ -644,7 +644,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociat
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 &dataawsvpcendpointassociations.DataAwsVpcEndpointAssociationsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociationsAssociationsDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcEndpointAssociationsAssociationsDnsEntryList
 ```
@@ -927,7 +927,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcEndpointAssociationsAssociationsDnsEntryOutputReference
 ```
@@ -1216,7 +1216,7 @@ func InternalValue() DataAwsVpcEndpointAssociationsAssociationsDnsEntry
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociationsAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcEndpointAssociationsAssociationsList
 ```
@@ -1365,7 +1365,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociationsAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcEndpointAssociationsAssociationsOutputReference
 ```
@@ -1731,7 +1731,7 @@ func InternalValue() DataAwsVpcEndpointAssociationsAssociations
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryList
 ```
@@ -1880,7 +1880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcEndpointAssociations.DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsvpcendpointassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpcendpointassociations"
 
 dataawsvpcendpointassociations.NewDataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpcEndpointAssociationsAssociationsPrivateDnsEntryOutputReference
 ```

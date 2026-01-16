@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/macie2organizationadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2organizationadminaccount"
 
 macie2organizationadminaccount.NewMacie2OrganizationAdminAccount(scope Construct, id *string, config Macie2OrganizationAdminAccountConfig) Macie2OrganizationAdminAccount
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/macie2organizationadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/macie2organizationadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/macie2organizationadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ macie2organizationadminaccount.Macie2OrganizationAdminAccount_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/macie2organizationadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2organizationadminaccount"
 
 macie2organizationadminaccount.Macie2OrganizationAdminAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/macie2organizationadminaccount"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2organizationadminaccount"
 
 &macie2organizationadminaccount.Macie2OrganizationAdminAccountConfig {
 	Connection: interface{},

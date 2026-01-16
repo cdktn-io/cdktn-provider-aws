@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sfnActivity.SfnActivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 sfnactivity.NewSfnActivity(scope Construct, id *string, config SfnActivityConfig) SfnActivity
 ```
@@ -426,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sfnActivity.SfnActivity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 sfnactivity.SfnActivity_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sfnActivity.SfnActivity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 sfnactivity.SfnActivity_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ sfnactivity.SfnActivity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sfnActivity.SfnActivity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 sfnactivity.SfnActivity_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ sfnactivity.SfnActivity_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sfnActivity.SfnActivity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 sfnactivity.SfnActivity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sfnActivity.SfnActivityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 &sfnactivity.SfnActivityConfig {
 	Connection: interface{},
@@ -880,7 +880,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.sfnActivity.SfnActivityEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sfnActivity.SfnActivityEncryptionConfiguration,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sfnActivity.SfnActivityEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 &sfnactivity.SfnActivityEncryptionConfiguration {
 	KmsDataKeyReusePeriodSeconds: *f64,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sfnActivity.SfnActivityEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sfnactivity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sfnactivity"
 
 sfnactivity.NewSfnActivityEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SfnActivityEncryptionConfigurationOutputReference
 ```

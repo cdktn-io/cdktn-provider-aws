@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/notificationseventrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationseventrule"
 
 notificationseventrule.NewNotificationsEventRule(scope Construct, id *string, config NotificationsEventRuleConfig) NotificationsEventRule
 ```
@@ -385,7 +385,7 @@ func ResetEventPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/notificationseventrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationseventrule"
 
 notificationseventrule.NotificationsEventRule_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/notificationseventrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationseventrule"
 
 notificationseventrule.NotificationsEventRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ notificationseventrule.NotificationsEventRule_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/notificationseventrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationseventrule"
 
 notificationseventrule.NotificationsEventRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ notificationseventrule.NotificationsEventRule_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/notificationseventrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationseventrule"
 
 notificationseventrule.NotificationsEventRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsEventRule.NotificationsEventRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/notificationseventrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationseventrule"
 
 &notificationseventrule.NotificationsEventRuleConfig {
 	Connection: interface{},

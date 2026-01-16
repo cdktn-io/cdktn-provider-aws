@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.NewDataAwsSesv2EmailIdentity(scope Construct, id *string, config DataAwsSesv2EmailIdentityConfig) DataAwsSesv2EmailIdentity
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.DataAwsSesv2EmailIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.DataAwsSesv2EmailIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawssesv2emailidentity.DataAwsSesv2EmailIdentity_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.DataAwsSesv2EmailIdentity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawssesv2emailidentity.DataAwsSesv2EmailIdentity_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.DataAwsSesv2EmailIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 &dataawssesv2emailidentity.DataAwsSesv2EmailIdentityConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentityDkimSigningAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 &dataawssesv2emailidentity.DataAwsSesv2EmailIdentityDkimSigningAttributes {
 
@@ -896,7 +896,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentityDkimSigningAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.NewDataAwsSesv2EmailIdentityDkimSigningAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSesv2EmailIdentityDkimSigningAttributesList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSesv2EmailIdentity.DataAwsSesv2EmailIdentityDkimSigningAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssesv2emailidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssesv2emailidentity"
 
 dataawssesv2emailidentity.NewDataAwsSesv2EmailIdentityDkimSigningAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSesv2EmailIdentityDkimSigningAttributesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsaillbcertificateattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsaillbcertificateattachment"
 
 lightsaillbcertificateattachment.NewLightsailLbCertificateAttachment(scope Construct, id *string, config LightsailLbCertificateAttachmentConfig) LightsailLbCertificateAttachment
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsaillbcertificateattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsaillbcertificateattachment"
 
 lightsaillbcertificateattachment.LightsailLbCertificateAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsaillbcertificateattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsaillbcertificateattachment"
 
 lightsaillbcertificateattachment.LightsailLbCertificateAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ lightsaillbcertificateattachment.LightsailLbCertificateAttachment_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsaillbcertificateattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsaillbcertificateattachment"
 
 lightsaillbcertificateattachment.LightsailLbCertificateAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ lightsaillbcertificateattachment.LightsailLbCertificateAttachment_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsaillbcertificateattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsaillbcertificateattachment"
 
 lightsaillbcertificateattachment.LightsailLbCertificateAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailLbCertificateAttachment.LightsailLbCertificateAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lightsaillbcertificateattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsaillbcertificateattachment"
 
 &lightsaillbcertificateattachment.LightsailLbCertificateAttachmentConfig {
 	Connection: interface{},

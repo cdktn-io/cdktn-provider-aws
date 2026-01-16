@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssets(scope Construct, id *string, config DataexchangeRevisionAssetsConfig) DataexchangeRevisionAssets
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.DataexchangeRevisionAssets_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.DataexchangeRevisionAssets_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ dataexchangerevisionassets.DataexchangeRevisionAssets_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssets.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.DataexchangeRevisionAssets_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ dataexchangerevisionassets.DataexchangeRevisionAssets_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.DataexchangeRevisionAssets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -973,7 +973,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAsset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAsset {
 	CreateS3DataAccessFromS3Bucket: interface{},
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3Bucket {
 	AssetSource: interface{},
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSource {
 	Bucket: *string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrant {
 	KmsKeyArn: *string,
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAssetImportAssetsFromS3 {
 	AssetSource: interface{},
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSource {
 	Bucket: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrl {
 	Filename: *string,
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsConfig {
 	Connection: interface{},
@@ -1310,7 +1310,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets
 	ForceDestroy: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataexchangeRevisionAssets.DataexchangeRevisionAssetsTimeouts,
 }
 ```
 
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 &dataexchangerevisionassets.DataexchangeRevisionAssetsTimeouts {
 	Create: *string,
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantList
 ```
@@ -1709,7 +1709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceKmsKeysToGrantOutputReference
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceList
 ```
@@ -2158,7 +2158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketAssetSourceOutputReference
 ```
@@ -2547,7 +2547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketList
 ```
@@ -2707,7 +2707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetCreateS3DataAccessFromS3BucketOutputReference
 ```
@@ -3038,7 +3038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceList
 ```
@@ -3198,7 +3198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetImportAssetsFromS3AssetSourceOutputReference
 ```
@@ -3509,7 +3509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetImportAssetsFromS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetImportAssetsFromS3List
 ```
@@ -3669,7 +3669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetImportAssetsFromS3OutputReference
 ```
@@ -3978,7 +3978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlList
 ```
@@ -4138,7 +4138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetImportAssetsFromSignedUrlOutputReference
 ```
@@ -4427,7 +4427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataexchangeRevisionAssetsAssetList
 ```
@@ -4587,7 +4587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsAssetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsAssetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataexchangeRevisionAssetsAssetOutputReference
 ```
@@ -5035,7 +5035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataexchangeRevisionAssets.DataexchangeRevisionAssetsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataexchangerevisionassets"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataexchangerevisionassets"
 
 dataexchangerevisionassets.NewDataexchangeRevisionAssetsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataexchangeRevisionAssetsTimeoutsOutputReference
 ```

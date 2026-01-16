@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 dataawsec2serialconsoleaccess.NewDataAwsEc2SerialConsoleAccess(scope Construct, id *string, config DataAwsEc2SerialConsoleAccessConfig) DataAwsEc2SerialConsoleAccess
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccess_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccess_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccess_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccess_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 &dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccessConfig {
 	Connection: interface{},
@@ -666,7 +666,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleacc
 	Provisioners: *[]interface{},
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeouts,
 }
 ```
 
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 &dataawsec2serialconsoleaccess.DataAwsEc2SerialConsoleAccessTimeouts {
 	Read: *string,
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2serialconsoleaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2serialconsoleaccess"
 
 dataawsec2serialconsoleaccess.NewDataAwsEc2SerialConsoleAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2SerialConsoleAccessTimeoutsOutputReference
 ```

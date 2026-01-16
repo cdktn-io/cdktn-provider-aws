@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpc"
 
 defaultvpc.NewDefaultVpc(scope Construct, id *string, config DefaultVpcConfig) DefaultVpc
 ```
@@ -469,7 +469,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpc"
 
 defaultvpc.DefaultVpc_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpc"
 
 defaultvpc.DefaultVpc_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ defaultvpc.DefaultVpc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpc"
 
 defaultvpc.DefaultVpc_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ defaultvpc.DefaultVpc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.defaultVpc.DefaultVpc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpc"
 
 defaultvpc.DefaultVpc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1165,7 +1165,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.defaultVpc.DefaultVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/defaultvpc"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/defaultvpc"
 
 &defaultvpc.DefaultVpcConfig {
 	Connection: interface{},

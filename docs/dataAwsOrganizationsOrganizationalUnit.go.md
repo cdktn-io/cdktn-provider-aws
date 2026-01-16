@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnit.DataAwsOrganizationsOrganizationalUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit"
 
 dataawsorganizationsorganizationalunit.NewDataAwsOrganizationsOrganizationalUnit(scope Construct, id *string, config DataAwsOrganizationsOrganizationalUnitConfig) DataAwsOrganizationsOrganizationalUnit
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnit.DataAwsOrganizationsOrganizationalUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit"
 
 dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnit_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnit.DataAwsOrganizationsOrganizationalUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit"
 
 dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnit_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnit.DataAwsOrganizationsOrganizationalUnit.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit"
 
 dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnit_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnit_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnit.DataAwsOrganizationsOrganizationalUnit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit"
 
 dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnit.DataAwsOrganizationsOrganizationalUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunit"
 
 &dataawsorganizationsorganizationalunit.DataAwsOrganizationsOrganizationalUnitConfig {
 	Connection: interface{},

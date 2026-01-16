@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.NewFinspaceKxVolume(scope Construct, id *string, config FinspaceKxVolumeConfig) FinspaceKxVolume
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.FinspaceKxVolume_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.FinspaceKxVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ finspacekxvolume.FinspaceKxVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.FinspaceKxVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ finspacekxvolume.FinspaceKxVolume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.FinspaceKxVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1072,7 +1072,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeAttachedClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 &finspacekxvolume.FinspaceKxVolumeAttachedClusters {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 &finspacekxvolume.FinspaceKxVolumeConfig {
 	Connection: interface{},
@@ -1106,7 +1106,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.finspaceKxVolume.FinspaceKxVolumeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxVolume.FinspaceKxVolumeTimeouts,
 }
 ```
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 &finspacekxvolume.FinspaceKxVolumeNas1Configuration {
 	Size: *f64,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 &finspacekxvolume.FinspaceKxVolumeTimeouts {
 	Create: *string,
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeAttachedClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.NewFinspaceKxVolumeAttachedClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxVolumeAttachedClustersList
 ```
@@ -1621,7 +1621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeAttachedClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.NewFinspaceKxVolumeAttachedClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxVolumeAttachedClustersOutputReference
 ```
@@ -1921,7 +1921,7 @@ func InternalValue() FinspaceKxVolumeAttachedClusters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1ConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.NewFinspaceKxVolumeNas1ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxVolumeNas1ConfigurationList
 ```
@@ -2081,7 +2081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeNas1ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.NewFinspaceKxVolumeNas1ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxVolumeNas1ConfigurationOutputReference
 ```
@@ -2392,7 +2392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxVolume.FinspaceKxVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/finspacekxvolume"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxvolume"
 
 finspacekxvolume.NewFinspaceKxVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxVolumeTimeoutsOutputReference
 ```

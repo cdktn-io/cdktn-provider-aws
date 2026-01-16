@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.NewDataAwsApiGatewayDomainName(scope Construct, id *string, config DataAwsApiGatewayDomainNameConfig) DataAwsApiGatewayDomainName
 ```
@@ -304,7 +304,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.DataAwsApiGatewayDomainName_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.DataAwsApiGatewayDomainName_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsapigatewaydomainname.DataAwsApiGatewayDomainName_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.DataAwsApiGatewayDomainName_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsapigatewaydomainname.DataAwsApiGatewayDomainName_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.DataAwsApiGatewayDomainName_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 &dataawsapigatewaydomainname.DataAwsApiGatewayDomainNameConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 &dataawsapigatewaydomainname.DataAwsApiGatewayDomainNameEndpointConfiguration {
 
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainnam
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.NewDataAwsApiGatewayDomainNameEndpointConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsApiGatewayDomainNameEndpointConfigurationList
 ```
@@ -1176,7 +1176,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsapigatewaydomainname"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewaydomainname"
 
 dataawsapigatewaydomainname.NewDataAwsApiGatewayDomainNameEndpointConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference
 ```

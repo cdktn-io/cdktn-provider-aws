@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGateway(scope Construct, id *string, config DataAwsEc2LocalGatewayConfig) DataAwsEc2LocalGateway
 ```
@@ -344,7 +344,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ dataawsec2localgateway.DataAwsEc2LocalGateway_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.DataAwsEc2LocalGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 &dataawsec2localgateway.DataAwsEc2LocalGatewayConfig {
 	Connection: interface{},
@@ -780,7 +780,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
 	Region: *string,
 	State: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts,
 }
 ```
 
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 &dataawsec2localgateway.DataAwsEc2LocalGatewayFilter {
 	Name: *string,
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 &dataawsec2localgateway.DataAwsEc2LocalGatewayTimeouts {
 	Read: *string,
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2LocalGatewayFilterList
 ```
@@ -1200,7 +1200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2LocalGatewayFilterOutputReference
 ```
@@ -1511,7 +1511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsec2localgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2localgateway"
 
 dataawsec2localgateway.NewDataAwsEc2LocalGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2LocalGatewayTimeoutsOutputReference
 ```

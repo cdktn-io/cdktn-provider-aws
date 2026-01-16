@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoutpostssite"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostssite"
 
 dataawsoutpostssite.NewDataAwsOutpostsSite(scope Construct, id *string, config DataAwsOutpostsSiteConfig) DataAwsOutpostsSite
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoutpostssite"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostssite"
 
 dataawsoutpostssite.DataAwsOutpostsSite_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoutpostssite"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostssite"
 
 dataawsoutpostssite.DataAwsOutpostsSite_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsoutpostssite.DataAwsOutpostsSite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoutpostssite"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostssite"
 
 dataawsoutpostssite.DataAwsOutpostsSite_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsoutpostssite.DataAwsOutpostsSite_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoutpostssite"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostssite"
 
 dataawsoutpostssite.DataAwsOutpostsSite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoutpostssite"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostssite"
 
 &dataawsoutpostssite.DataAwsOutpostsSiteConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusrulegroupnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusrulegroupnamespace"
 
 prometheusrulegroupnamespace.NewPrometheusRuleGroupNamespace(scope Construct, id *string, config PrometheusRuleGroupNamespaceConfig) PrometheusRuleGroupNamespace
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusrulegroupnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusrulegroupnamespace"
 
 prometheusrulegroupnamespace.PrometheusRuleGroupNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusrulegroupnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusrulegroupnamespace"
 
 prometheusrulegroupnamespace.PrometheusRuleGroupNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ prometheusrulegroupnamespace.PrometheusRuleGroupNamespace_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusrulegroupnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusrulegroupnamespace"
 
 prometheusrulegroupnamespace.PrometheusRuleGroupNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ prometheusrulegroupnamespace.PrometheusRuleGroupNamespace_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusrulegroupnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusrulegroupnamespace"
 
 prometheusrulegroupnamespace.PrometheusRuleGroupNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusrulegroupnamespace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusrulegroupnamespace"
 
 &prometheusrulegroupnamespace.PrometheusRuleGroupNamespaceConfig {
 	Connection: interface{},

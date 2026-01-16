@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupselection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupselection"
 
 dataawsbackupselection.NewDataAwsBackupSelection(scope Construct, id *string, config DataAwsBackupSelectionConfig) DataAwsBackupSelection
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupselection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupselection"
 
 dataawsbackupselection.DataAwsBackupSelection_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupselection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupselection"
 
 dataawsbackupselection.DataAwsBackupSelection_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsbackupselection.DataAwsBackupSelection_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupselection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupselection"
 
 dataawsbackupselection.DataAwsBackupSelection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsbackupselection.DataAwsBackupSelection_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBackupSelection.DataAwsBackupSelection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupselection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupselection"
 
 dataawsbackupselection.DataAwsBackupSelection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupSelection.DataAwsBackupSelectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsbackupselection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupselection"
 
 &dataawsbackupselection.DataAwsBackupSelectionConfig {
 	Connection: interface{},

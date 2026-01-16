@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaLayerVersion.LambdaLayerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdalayerversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdalayerversion"
 
 lambdalayerversion.NewLambdaLayerVersion(scope Construct, id *string, config LambdaLayerVersionConfig) LambdaLayerVersion
 ```
@@ -462,7 +462,7 @@ func ResetSourceCodeHash()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaLayerVersion.LambdaLayerVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdalayerversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaLayerVersion.LambdaLayerVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdalayerversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ lambdalayerversion.LambdaLayerVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaLayerVersion.LambdaLayerVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdalayerversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ lambdalayerversion.LambdaLayerVersion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaLayerVersion.LambdaLayerVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdalayerversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdalayerversion"
 
 lambdalayerversion.LambdaLayerVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaLayerVersion.LambdaLayerVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lambdalayerversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdalayerversion"
 
 &lambdalayerversion.LambdaLayerVersionConfig {
 	Connection: interface{},

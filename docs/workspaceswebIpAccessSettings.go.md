@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.NewWorkspaceswebIpAccessSettings(scope Construct, id *string, config WorkspaceswebIpAccessSettingsConfig) WorkspaceswebIpAccessSettings
 ```
@@ -433,7 +433,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.WorkspaceswebIpAccessSettings_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.WorkspaceswebIpAccessSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ workspaceswebipaccesssettings.WorkspaceswebIpAccessSettings_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.WorkspaceswebIpAccessSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ workspaceswebipaccesssettings.WorkspaceswebIpAccessSettings_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.WorkspaceswebIpAccessSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 &workspaceswebipaccesssettings.WorkspaceswebIpAccessSettingsConfig {
 	Connection: interface{},
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettingsIpRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 &workspaceswebipaccesssettings.WorkspaceswebIpAccessSettingsIpRule {
 	IpRange: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettingsIpRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.NewWorkspaceswebIpAccessSettingsIpRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebIpAccessSettingsIpRuleList
 ```
@@ -1321,7 +1321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebIpAccessSettings.WorkspaceswebIpAccessSettingsIpRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebipaccesssettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebipaccesssettings"
 
 workspaceswebipaccesssettings.NewWorkspaceswebIpAccessSettingsIpRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebIpAccessSettingsIpRuleOutputReference
 ```

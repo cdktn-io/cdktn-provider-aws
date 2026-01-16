@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.NewS3TablesTableBucket(scope Construct, id *string, config S3TablesTableBucketConfig) S3TablesTableBucket
 ```
@@ -439,7 +439,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.S3TablesTableBucket_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.S3TablesTableBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ s3tablestablebucket.S3TablesTableBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.S3TablesTableBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ s3tablestablebucket.S3TablesTableBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.S3TablesTableBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 &s3tablestablebucket.S3TablesTableBucketConfig {
 	Connection: interface{},
@@ -915,9 +915,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3TablesTableBucket.S3TablesTableBucketEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3TablesTableBucket.S3TablesTableBucketEncryptionConfiguration,
 	ForceDestroy: interface{},
-	MaintenanceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfiguration,
+	MaintenanceConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfiguration,
 	Region: *string,
 	Tags: *map[string]*string,
 }
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 &s3tablestablebucket.S3TablesTableBucketEncryptionConfiguration {
 	KmsKeyArn: *string,
@@ -1138,10 +1138,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 &s3tablestablebucket.S3TablesTableBucketMaintenanceConfiguration {
-	IcebergUnreferencedFileRemoval: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval,
+	IcebergUnreferencedFileRemoval: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval,
 }
 ```
 
@@ -1170,10 +1170,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 &s3tablestablebucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemoval {
-	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings,
 	Status: *string,
 }
 ```
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 &s3tablestablebucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettings {
 	NonCurrentDays: *f64,
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.NewS3TablesTableBucketEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableBucketEncryptionConfigurationOutputReference
 ```
@@ -1571,7 +1571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.NewS3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalOutputReference
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.NewS3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableBucketMaintenanceConfigurationIcebergUnreferencedFileRemovalSettingsOutputReference
 ```
@@ -2198,7 +2198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableBucket.S3TablesTableBucketMaintenanceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3tablestablebucket"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablebucket"
 
 s3tablestablebucket.NewS3TablesTableBucketMaintenanceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3TablesTableBucketMaintenanceConfigurationOutputReference
 ```

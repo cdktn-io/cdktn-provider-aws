@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxmacseckeyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxmacseckeyassociation"
 
 dxmacseckeyassociation.NewDxMacsecKeyAssociation(scope Construct, id *string, config DxMacsecKeyAssociationConfig) DxMacsecKeyAssociation
 ```
@@ -413,7 +413,7 @@ func ResetSecretArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxmacseckeyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxmacseckeyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxmacseckeyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ dxmacseckeyassociation.DxMacsecKeyAssociation_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxmacseckeyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxmacseckeyassociation"
 
 dxmacseckeyassociation.DxMacsecKeyAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -856,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxMacsecKeyAssociation.DxMacsecKeyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dxmacseckeyassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxmacseckeyassociation"
 
 &dxmacseckeyassociation.DxMacsecKeyAssociationConfig {
 	Connection: interface{},

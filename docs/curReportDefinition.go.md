@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.curReportDefinition.CurReportDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/curreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/curreportdefinition"
 
 curreportdefinition.NewCurReportDefinition(scope Construct, id *string, config CurReportDefinitionConfig) CurReportDefinition
 ```
@@ -420,7 +420,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.curReportDefinition.CurReportDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/curreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/curreportdefinition"
 
 curreportdefinition.CurReportDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.curReportDefinition.CurReportDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/curreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/curreportdefinition"
 
 curreportdefinition.CurReportDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ curreportdefinition.CurReportDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.curReportDefinition.CurReportDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/curreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/curreportdefinition"
 
 curreportdefinition.CurReportDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ curreportdefinition.CurReportDefinition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.curReportDefinition.CurReportDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/curreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/curreportdefinition"
 
 curreportdefinition.CurReportDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1028,7 +1028,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.curReportDefinition.CurReportDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/curreportdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/curreportdefinition"
 
 &curreportdefinition.CurReportDefinitionConfig {
 	Connection: interface{},

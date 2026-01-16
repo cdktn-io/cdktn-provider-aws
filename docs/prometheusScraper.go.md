@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraper(scope Construct, id *string, config PrometheusScraperConfig) PrometheusScraper
 ```
@@ -479,7 +479,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.PrometheusScraper_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.PrometheusScraper_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ prometheusscraper.PrometheusScraper_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.PrometheusScraper_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ prometheusscraper.PrometheusScraper_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraper.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.PrometheusScraper_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
 	RoleConfiguration: interface{},
 	Source: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.prometheusScraper.PrometheusScraperTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.prometheusScraper.PrometheusScraperTimeouts,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperDestination {
 	Amp: interface{},
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperDestinationAmp {
 	WorkspaceArn: *string,
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperRoleConfiguration {
 	SourceRoleArn: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperSource {
 	Eks: interface{},
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperSourceEks {
 	ClusterArn: *string,
@@ -1418,7 +1418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 &prometheusscraper.PrometheusScraperTimeouts {
 	Create: *string,
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperDestinationAmpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperDestinationAmpList
 ```
@@ -1646,7 +1646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationAmpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperDestinationAmpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperDestinationAmpOutputReference
 ```
@@ -1935,7 +1935,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperDestinationList
 ```
@@ -2095,7 +2095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperDestinationOutputReference
 ```
@@ -2404,7 +2404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperRoleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperRoleConfigurationList
 ```
@@ -2564,7 +2564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperRoleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperRoleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperRoleConfigurationOutputReference
 ```
@@ -2889,7 +2889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperSourceEksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperSourceEksList
 ```
@@ -3049,7 +3049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceEksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperSourceEksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperSourceEksOutputReference
 ```
@@ -3389,7 +3389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrometheusScraperSourceList
 ```
@@ -3549,7 +3549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrometheusScraperSourceOutputReference
 ```
@@ -3858,7 +3858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusScraper.PrometheusScraperTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusscraper"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusscraper"
 
 prometheusscraper.NewPrometheusScraperTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusScraperTimeoutsOutputReference
 ```

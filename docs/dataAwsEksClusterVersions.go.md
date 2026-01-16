@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.NewDataAwsEksClusterVersions(scope Construct, id *string, config DataAwsEksClusterVersionsConfig) DataAwsEksClusterVersions
 ```
@@ -318,7 +318,7 @@ func ResetVersionStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.DataAwsEksClusterVersions_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.DataAwsEksClusterVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawseksclusterversions.DataAwsEksClusterVersions_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.DataAwsEksClusterVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawseksclusterversions.DataAwsEksClusterVersions_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.DataAwsEksClusterVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersionsClusterVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 &dataawseksclusterversions.DataAwsEksClusterVersionsClusterVersions {
 
@@ -741,7 +741,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 &dataawseksclusterversions.DataAwsEksClusterVersionsConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersionsClusterVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.NewDataAwsEksClusterVersionsClusterVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEksClusterVersionsClusterVersionsList
 ```
@@ -1080,7 +1080,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEksClusterVersions.DataAwsEksClusterVersionsClusterVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawseksclusterversions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawseksclusterversions"
 
 dataawseksclusterversions.NewDataAwsEksClusterVersionsClusterVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEksClusterVersionsClusterVersionsOutputReference
 ```

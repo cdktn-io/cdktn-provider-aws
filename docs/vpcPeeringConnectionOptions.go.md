@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.NewVpcPeeringConnectionOptions(scope Construct, id *string, config VpcPeeringConnectionOptionsConfig) VpcPeeringConnectionOptions
 ```
@@ -432,7 +432,7 @@ func ResetRequester()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.VpcPeeringConnectionOptions_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.VpcPeeringConnectionOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ vpcpeeringconnectionoptions.VpcPeeringConnectionOptions_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.VpcPeeringConnectionOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ vpcpeeringconnectionoptions.VpcPeeringConnectionOptions_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.VpcPeeringConnectionOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 &vpcpeeringconnectionoptions.VpcPeeringConnectionOptionsAccepter {
 	AllowRemoteVpcDnsResolution: interface{},
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 &vpcpeeringconnectionoptions.VpcPeeringConnectionOptionsConfig {
 	Connection: interface{},
@@ -874,10 +874,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoption
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	VpcPeeringConnectionId: *string,
-	Accepter: github.com/cdktn-io/cdktn-provider-aws-go/aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepter,
+	Accepter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepter,
 	Id: *string,
 	Region: *string,
-	Requester: github.com/cdktn-io/cdktn-provider-aws-go/aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequester,
+	Requester: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequester,
 }
 ```
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequester.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 &vpcpeeringconnectionoptions.VpcPeeringConnectionOptionsRequester {
 	AllowRemoteVpcDnsResolution: interface{},
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsAccepterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.NewVpcPeeringConnectionOptionsAccepterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionOptionsAccepterOutputReference
 ```
@@ -1356,7 +1356,7 @@ func InternalValue() VpcPeeringConnectionOptionsAccepter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptionsRequesterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/vpcpeeringconnectionoptions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpcpeeringconnectionoptions"
 
 vpcpeeringconnectionoptions.NewVpcPeeringConnectionOptionsRequesterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionOptionsRequesterOutputReference
 ```

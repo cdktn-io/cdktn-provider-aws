@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslocationtrackerassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationtrackerassociations"
 
 dataawslocationtrackerassociations.NewDataAwsLocationTrackerAssociations(scope Construct, id *string, config DataAwsLocationTrackerAssociationsConfig) DataAwsLocationTrackerAssociations
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslocationtrackerassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationtrackerassociations"
 
 dataawslocationtrackerassociations.DataAwsLocationTrackerAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslocationtrackerassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationtrackerassociations"
 
 dataawslocationtrackerassociations.DataAwsLocationTrackerAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawslocationtrackerassociations.DataAwsLocationTrackerAssociations_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslocationtrackerassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationtrackerassociations"
 
 dataawslocationtrackerassociations.DataAwsLocationTrackerAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawslocationtrackerassociations.DataAwsLocationTrackerAssociations_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslocationtrackerassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationtrackerassociations"
 
 dataawslocationtrackerassociations.DataAwsLocationTrackerAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslocationtrackerassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationtrackerassociations"
 
 &dataawslocationtrackerassociations.DataAwsLocationTrackerAssociationsConfig {
 	Connection: interface{},

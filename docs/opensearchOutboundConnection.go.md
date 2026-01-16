@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.NewOpensearchOutboundConnection(scope Construct, id *string, config OpensearchOutboundConnectionConfig) OpensearchOutboundConnection
 ```
@@ -472,7 +472,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.OpensearchOutboundConnection_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.OpensearchOutboundConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ opensearchoutboundconnection.OpensearchOutboundConnection_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.OpensearchOutboundConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ opensearchoutboundconnection.OpensearchOutboundConnection_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.OpensearchOutboundConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 &opensearchoutboundconnection.OpensearchOutboundConnectionConfig {
 	Connection: interface{},
@@ -981,14 +981,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnecti
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ConnectionAlias: *string,
-	LocalDomainInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfo,
-	RemoteDomainInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfo,
+	LocalDomainInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfo,
+	RemoteDomainInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfo,
 	AcceptConnection: interface{},
 	ConnectionMode: *string,
-	ConnectionProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionProperties,
+	ConnectionProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionProperties,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchOutboundConnection.OpensearchOutboundConnectionTimeouts,
 }
 ```
 
@@ -1211,10 +1211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 &opensearchoutboundconnection.OpensearchOutboundConnectionConnectionProperties {
-	CrossClusterSearch: github.com/cdktn-io/cdktn-provider-aws-go/aws.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch,
+	CrossClusterSearch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch,
 }
 ```
 
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 &opensearchoutboundconnection.OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearch {
 	SkipUnavailable: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 &opensearchoutboundconnection.OpensearchOutboundConnectionLocalDomainInfo {
 	DomainName: *string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 &opensearchoutboundconnection.OpensearchOutboundConnectionRemoteDomainInfo {
 	DomainName: *string,
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 &opensearchoutboundconnection.OpensearchOutboundConnectionTimeouts {
 	Create: *string,
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.NewOpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchOutboundConnectionConnectionPropertiesCrossClusterSearchOutputReference
 ```
@@ -1723,7 +1723,7 @@ func InternalValue() OpensearchOutboundConnectionConnectionPropertiesCrossCluste
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.NewOpensearchOutboundConnectionConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchOutboundConnectionConnectionPropertiesOutputReference
 ```
@@ -2025,7 +2025,7 @@ func InternalValue() OpensearchOutboundConnectionConnectionProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.NewOpensearchOutboundConnectionLocalDomainInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchOutboundConnectionLocalDomainInfoOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() OpensearchOutboundConnectionLocalDomainInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.NewOpensearchOutboundConnectionRemoteDomainInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchOutboundConnectionRemoteDomainInfoOutputReference
 ```
@@ -2655,7 +2655,7 @@ func InternalValue() OpensearchOutboundConnectionRemoteDomainInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchoutboundconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchoutboundconnection"
 
 opensearchoutboundconnection.NewOpensearchOutboundConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchOutboundConnectionTimeoutsOutputReference
 ```

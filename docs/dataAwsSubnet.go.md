@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.NewDataAwsSubnet(scope Construct, id *string, config DataAwsSubnetConfig) DataAwsSubnet
 ```
@@ -386,7 +386,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.DataAwsSubnet_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.DataAwsSubnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ dataawssubnet.DataAwsSubnet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.DataAwsSubnet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ dataawssubnet.DataAwsSubnet_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.DataAwsSubnet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1082,7 +1082,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 &dataawssubnet.DataAwsSubnetConfig {
 	Connection: interface{},
@@ -1102,7 +1102,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
 	Region: *string,
 	State: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsSubnet.DataAwsSubnetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsSubnet.DataAwsSubnetTimeouts,
 	VpcId: *string,
 }
 ```
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 &dataawssubnet.DataAwsSubnetFilter {
 	Name: *string,
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 &dataawssubnet.DataAwsSubnetTimeouts {
 	Read: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.NewDataAwsSubnetFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSubnetFilterList
 ```
@@ -1601,7 +1601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.NewDataAwsSubnetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSubnetFilterOutputReference
 ```
@@ -1912,7 +1912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSubnet.DataAwsSubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssubnet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssubnet"
 
 dataawssubnet.NewDataAwsSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsSubnetTimeoutsOutputReference
 ```

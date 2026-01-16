@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.NewDataAwsLexSlotType(scope Construct, id *string, config DataAwsLexSlotTypeConfig) DataAwsLexSlotType
 ```
@@ -297,7 +297,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslexslottype.DataAwsLexSlotType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslexslottype.DataAwsLexSlotType_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.DataAwsLexSlotType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 &dataawslexslottype.DataAwsLexSlotTypeConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 &dataawslexslottype.DataAwsLexSlotTypeEnumerationValue {
 
@@ -896,7 +896,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.NewDataAwsLexSlotTypeEnumerationValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLexSlotTypeEnumerationValueList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslexslottype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexslottype"
 
 dataawslexslottype.NewDataAwsLexSlotTypeEnumerationValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLexSlotTypeEnumerationValueOutputReference
 ```

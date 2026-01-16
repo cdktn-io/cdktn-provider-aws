@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApp.PinpointApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.NewPinpointApp(scope Construct, id *string, config PinpointAppConfig) PinpointApp
 ```
@@ -480,7 +480,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointApp.PinpointApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.PinpointApp_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointApp.PinpointApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.PinpointApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ pinpointapp.PinpointApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointApp.PinpointApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.PinpointApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ pinpointapp.PinpointApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointApp.PinpointApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.PinpointApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -989,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApp.PinpointAppCampaignHook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 &pinpointapp.PinpointAppCampaignHook {
 	LambdaFunctionName: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApp.PinpointAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 &pinpointapp.PinpointAppConfig {
 	Connection: interface{},
@@ -1059,12 +1059,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CampaignHook: github.com/cdktn-io/cdktn-provider-aws-go/aws.pinpointApp.PinpointAppCampaignHook,
+	CampaignHook: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.pinpointApp.PinpointAppCampaignHook,
 	Id: *string,
-	Limits: github.com/cdktn-io/cdktn-provider-aws-go/aws.pinpointApp.PinpointAppLimits,
+	Limits: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.pinpointApp.PinpointAppLimits,
 	Name: *string,
 	NamePrefix: *string,
-	QuietTime: github.com/cdktn-io/cdktn-provider-aws-go/aws.pinpointApp.PinpointAppQuietTime,
+	QuietTime: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.pinpointApp.PinpointAppQuietTime,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApp.PinpointAppLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 &pinpointapp.PinpointAppLimits {
 	Daily: *f64,
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointApp.PinpointAppQuietTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 &pinpointapp.PinpointAppQuietTime {
 	End: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.NewPinpointAppCampaignHookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PinpointAppCampaignHookOutputReference
 ```
@@ -1746,7 +1746,7 @@ func InternalValue() PinpointAppCampaignHook
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApp.PinpointAppLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.NewPinpointAppLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PinpointAppLimitsOutputReference
 ```
@@ -2111,7 +2111,7 @@ func InternalValue() PinpointAppLimits
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/pinpointapp"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointapp"
 
 pinpointapp.NewPinpointAppQuietTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PinpointAppQuietTimeOutputReference
 ```

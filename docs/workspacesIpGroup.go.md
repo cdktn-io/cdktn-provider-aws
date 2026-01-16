@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.NewWorkspacesIpGroup(scope Construct, id *string, config WorkspacesIpGroupConfig) WorkspacesIpGroup
 ```
@@ -433,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.WorkspacesIpGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.WorkspacesIpGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ workspacesipgroup.WorkspacesIpGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.WorkspacesIpGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ workspacesipgroup.WorkspacesIpGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.WorkspacesIpGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -876,7 +876,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 &workspacesipgroup.WorkspacesIpGroupConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroupRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 &workspacesipgroup.WorkspacesIpGroupRules {
 	Source: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.NewWorkspacesIpGroupRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspacesIpGroupRulesList
 ```
@@ -1291,7 +1291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesIpGroup.WorkspacesIpGroupRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspacesipgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesipgroup"
 
 workspacesipgroup.NewWorkspacesIpGroupRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspacesIpGroupRulesOutputReference
 ```

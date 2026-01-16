@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 dataawsebsencryptionbydefault.NewDataAwsEbsEncryptionByDefault(scope Construct, id *string, config DataAwsEbsEncryptionByDefaultConfig) DataAwsEbsEncryptionByDefault
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefault_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefault_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefault_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefault_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 &dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefaultConfig {
 	Connection: interface{},
@@ -666,7 +666,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefa
 	Provisioners: *[]interface{},
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeouts,
 }
 ```
 
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 &dataawsebsencryptionbydefault.DataAwsEbsEncryptionByDefaultTimeouts {
 	Read: *string,
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsebsencryptionbydefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsebsencryptionbydefault"
 
 dataawsebsencryptionbydefault.NewDataAwsEbsEncryptionByDefaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEbsEncryptionByDefaultTimeoutsOutputReference
 ```

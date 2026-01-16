@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftorderablecluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftorderablecluster"
 
 dataawsredshiftorderablecluster.NewDataAwsRedshiftOrderableCluster(scope Construct, id *string, config DataAwsRedshiftOrderableClusterConfig) DataAwsRedshiftOrderableCluster
 ```
@@ -318,7 +318,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftorderablecluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftorderablecluster"
 
 dataawsredshiftorderablecluster.DataAwsRedshiftOrderableCluster_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftorderablecluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftorderablecluster"
 
 dataawsredshiftorderablecluster.DataAwsRedshiftOrderableCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsredshiftorderablecluster.DataAwsRedshiftOrderableCluster_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftorderablecluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftorderablecluster"
 
 dataawsredshiftorderablecluster.DataAwsRedshiftOrderableCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsredshiftorderablecluster.DataAwsRedshiftOrderableCluster_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftorderablecluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftorderablecluster"
 
 dataawsredshiftorderablecluster.DataAwsRedshiftOrderableCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsredshiftorderablecluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsredshiftorderablecluster"
 
 &dataawsredshiftorderablecluster.DataAwsRedshiftOrderableClusterConfig {
 	Connection: interface{},

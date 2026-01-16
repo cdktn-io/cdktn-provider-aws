@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 
 appfabricingestion.NewAppfabricIngestion(scope Construct, id *string, config AppfabricIngestionConfig) AppfabricIngestion
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ appfabricingestion.AppfabricIngestion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ appfabricingestion.AppfabricIngestion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 
 &appfabricingestion.AppfabricIngestionConfig {
 	Connection: interface{},

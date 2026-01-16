@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskmsciphertext"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskmsciphertext"
 
 dataawskmsciphertext.NewDataAwsKmsCiphertext(scope Construct, id *string, config DataAwsKmsCiphertextConfig) DataAwsKmsCiphertext
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskmsciphertext"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskmsciphertext"
 
 dataawskmsciphertext.DataAwsKmsCiphertext_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskmsciphertext"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskmsciphertext"
 
 dataawskmsciphertext.DataAwsKmsCiphertext_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawskmsciphertext.DataAwsKmsCiphertext_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskmsciphertext"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskmsciphertext"
 
 dataawskmsciphertext.DataAwsKmsCiphertext_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawskmsciphertext.DataAwsKmsCiphertext_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskmsciphertext"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskmsciphertext"
 
 dataawskmsciphertext.DataAwsKmsCiphertext_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskmsciphertext"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskmsciphertext"
 
 &dataawskmsciphertext.DataAwsKmsCiphertextConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 servicecatalogprovisioningartifact.NewServicecatalogProvisioningArtifact(scope Construct, id *string, config ServicecatalogProvisioningArtifactConfig) ServicecatalogProvisioningArtifact
 ```
@@ -475,7 +475,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifact_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifact_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifact_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifact_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifact_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1072,7 +1072,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 &servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifactConfig {
 	Connection: interface{},
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioning
 	Region: *string,
 	TemplatePhysicalId: *string,
 	TemplateUrl: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifactTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifactTimeouts,
 	Type: *string,
 }
 ```
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifactTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 &servicecatalogprovisioningartifact.ServicecatalogProvisioningArtifactTimeouts {
 	Create: *string,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogProvisioningArtifact.ServicecatalogProvisioningArtifactTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/servicecatalogprovisioningartifact"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogprovisioningartifact"
 
 servicecatalogprovisioningartifact.NewServicecatalogProvisioningArtifactTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogProvisioningArtifactTimeoutsOutputReference
 ```

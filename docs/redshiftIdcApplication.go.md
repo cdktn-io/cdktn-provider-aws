@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplication(scope Construct, id *string, config RedshiftIdcApplicationConfig) RedshiftIdcApplication
 ```
@@ -446,7 +446,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.RedshiftIdcApplication_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.RedshiftIdcApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ redshiftidcapplication.RedshiftIdcApplication_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.RedshiftIdcApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ redshiftidcapplication.RedshiftIdcApplication_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.RedshiftIdcApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationAuthorizedTokenIssuer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationAuthorizedTokenIssuer {
 	AuthorizedAudiencesList: *[]*string,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationConfig {
 	Connection: interface{},
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegration {
 	LakeFormation: interface{},
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationLakeFormation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegrationLakeFormation {
 	LakeFormationQuery: interface{},
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQuery {
 	Authorization: *string,
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegrationRedshift {
 	Connect: interface{},
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationRedshiftConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegrationRedshiftConnect {
 	Authorization: *string,
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrants.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrants {
 	ReadWriteAccess: interface{},
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 &redshiftidcapplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccess {
 	Authorization: *string,
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationAuthorizedTokenIssuerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationAuthorizedTokenIssuerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationAuthorizedTokenIssuerList
 ```
@@ -1708,7 +1708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationAuthorizedTokenIssuerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationAuthorizedTokenIssuerOutputReference
 ```
@@ -2033,7 +2033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryList
 ```
@@ -2193,7 +2193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationLakeFormationLakeFormationQueryOutputReference
 ```
@@ -2482,7 +2482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationLakeFormationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationLakeFormationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationLakeFormationList
 ```
@@ -2642,7 +2642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationLakeFormationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationLakeFormationOutputReference
 ```
@@ -2951,7 +2951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationList
 ```
@@ -3111,7 +3111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationOutputReference
 ```
@@ -3504,7 +3504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationRedshiftConnectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationRedshiftConnectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationRedshiftConnectList
 ```
@@ -3664,7 +3664,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationRedshiftConnectOutputReference
 ```
@@ -3953,7 +3953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationRedshiftList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationRedshiftList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationRedshiftList
 ```
@@ -4113,7 +4113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationRedshiftOutputReference
 ```
@@ -4422,7 +4422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrantsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationS3AccessGrantsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationS3AccessGrantsList
 ```
@@ -4582,7 +4582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationS3AccessGrantsOutputReference
 ```
@@ -4891,7 +4891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessList
 ```
@@ -5051,7 +5051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftIdcApplication.RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftidcapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftidcapplication"
 
 redshiftidcapplication.NewRedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftIdcApplicationServiceIntegrationS3AccessGrantsReadWriteAccessOutputReference
 ```

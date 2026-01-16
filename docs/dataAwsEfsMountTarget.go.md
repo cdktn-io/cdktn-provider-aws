@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsefsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsefsmounttarget"
 
 dataawsefsmounttarget.NewDataAwsEfsMountTarget(scope Construct, id *string, config DataAwsEfsMountTargetConfig) DataAwsEfsMountTarget
 ```
@@ -311,7 +311,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsefsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsefsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsefsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsefsmounttarget.DataAwsEfsMountTarget_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsefsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsefsmounttarget"
 
 dataawsefsmounttarget.DataAwsEfsMountTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsefsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsefsmounttarget"
 
 &dataawsefsmounttarget.DataAwsEfsMountTargetConfig {
 	Connection: interface{},

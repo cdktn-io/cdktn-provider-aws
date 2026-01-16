@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 ebssnapshotcopy.NewEbsSnapshotCopy(scope Construct, id *string, config EbsSnapshotCopyConfig) EbsSnapshotCopy
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 ebssnapshotcopy.EbsSnapshotCopy_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 ebssnapshotcopy.EbsSnapshotCopy_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ ebssnapshotcopy.EbsSnapshotCopy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 ebssnapshotcopy.EbsSnapshotCopy_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ ebssnapshotcopy.EbsSnapshotCopy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 ebssnapshotcopy.EbsSnapshotCopy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1149,7 +1149,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 &ebssnapshotcopy.EbsSnapshotCopyConfig {
 	Connection: interface{},
@@ -1172,7 +1172,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TemporaryRestoreDays: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.ebsSnapshotCopy.EbsSnapshotCopyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.ebsSnapshotCopy.EbsSnapshotCopyTimeouts,
 }
 ```
 
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 &ebssnapshotcopy.EbsSnapshotCopyTimeouts {
 	Create: *string,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ebsSnapshotCopy.EbsSnapshotCopyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ebssnapshotcopy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ebssnapshotcopy"
 
 ebssnapshotcopy.NewEbsSnapshotCopyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EbsSnapshotCopyTimeoutsOutputReference
 ```

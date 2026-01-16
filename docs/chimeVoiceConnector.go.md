@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.chimeVoiceConnector.ChimeVoiceConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/chimevoiceconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/chimevoiceconnector"
 
 chimevoiceconnector.NewChimeVoiceConnector(scope Construct, id *string, config ChimeVoiceConnectorConfig) ChimeVoiceConnector
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.chimeVoiceConnector.ChimeVoiceConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/chimevoiceconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/chimevoiceconnector"
 
 chimevoiceconnector.ChimeVoiceConnector_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.chimeVoiceConnector.ChimeVoiceConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/chimevoiceconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/chimevoiceconnector"
 
 chimevoiceconnector.ChimeVoiceConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ chimevoiceconnector.ChimeVoiceConnector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.chimeVoiceConnector.ChimeVoiceConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/chimevoiceconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/chimevoiceconnector"
 
 chimevoiceconnector.ChimeVoiceConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ chimevoiceconnector.ChimeVoiceConnector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.chimeVoiceConnector.ChimeVoiceConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/chimevoiceconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/chimevoiceconnector"
 
 chimevoiceconnector.ChimeVoiceConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.chimeVoiceConnector.ChimeVoiceConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/chimevoiceconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/chimevoiceconnector"
 
 &chimevoiceconnector.ChimeVoiceConnectorConfig {
 	Connection: interface{},

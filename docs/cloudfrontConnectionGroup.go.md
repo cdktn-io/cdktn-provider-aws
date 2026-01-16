@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.NewCloudfrontConnectionGroup(scope Construct, id *string, config CloudfrontConnectionGroupConfig) CloudfrontConnectionGroup
 ```
@@ -433,7 +433,7 @@ func ResetWaitForDeployment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 &cloudfrontconnectiongroup.CloudfrontConnectionGroupConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
 	Enabled: interface{},
 	Ipv6Enabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts,
 	WaitForDeployment: interface{},
 }
 ```
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 &cloudfrontconnectiongroup.CloudfrontConnectionGroupTimeouts {
 	Create: *string,
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.NewCloudfrontConnectionGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontConnectionGroupTimeoutsOutputReference
 ```

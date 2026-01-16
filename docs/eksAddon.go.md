@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAddon.EksAddon.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.NewEksAddon(scope Construct, id *string, config EksAddonConfig) EksAddon
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eksAddon.EksAddon.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.EksAddon_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eksAddon.EksAddon.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.EksAddon_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ eksaddon.EksAddon_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eksAddon.EksAddon.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.EksAddon_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ eksaddon.EksAddon_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eksAddon.EksAddon.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.EksAddon_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1118,7 +1118,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAddon.EksAddonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 &eksaddon.EksAddonConfig {
 	Connection: interface{},
@@ -1141,7 +1141,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
 	ServiceAccountRoleArn: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.eksAddon.EksAddonTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.eksAddon.EksAddonTimeouts,
 }
 ```
 
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 &eksaddon.EksAddonPodIdentityAssociation {
 	RoleArn: *string,
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.eksAddon.EksAddonTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 &eksaddon.EksAddonTimeouts {
 	Create: *string,
@@ -1533,7 +1533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.NewEksAddonPodIdentityAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EksAddonPodIdentityAssociationList
 ```
@@ -1693,7 +1693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAddon.EksAddonPodIdentityAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.NewEksAddonPodIdentityAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EksAddonPodIdentityAssociationOutputReference
 ```
@@ -2004,7 +2004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksAddon.EksAddonTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/eksaddon"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eksaddon"
 
 eksaddon.NewEksAddonTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EksAddonTimeoutsOutputReference
 ```

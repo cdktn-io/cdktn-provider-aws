@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfiguration(scope Construct, id *string, config CognitoLogDeliveryConfigurationConfig) CognitoLogDeliveryConfiguration
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.CognitoLogDeliveryConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.CognitoLogDeliveryConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ cognitologdeliveryconfiguration.CognitoLogDeliveryConfiguration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.CognitoLogDeliveryConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ cognitologdeliveryconfiguration.CognitoLogDeliveryConfiguration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.CognitoLogDeliveryConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 &cognitologdeliveryconfiguration.CognitoLogDeliveryConfigurationConfig {
 	Connection: interface{},
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 &cognitologdeliveryconfiguration.CognitoLogDeliveryConfigurationLogConfigurations {
 	EventSource: *string,
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 &cognitologdeliveryconfiguration.CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfiguration {
 	LogGroupArn: *string,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 &cognitologdeliveryconfiguration.CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfiguration {
 	StreamArn: *string,
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 &cognitologdeliveryconfiguration.CognitoLogDeliveryConfigurationLogConfigurationsS3Configuration {
 	BucketArn: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationList
 ```
@@ -1260,7 +1260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsCloudWatchLogsConfigurationOutputReference
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationList
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsFirehoseConfigurationOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsList
 ```
@@ -2172,7 +2172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsOutputReference
 ```
@@ -2609,7 +2609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationList
 ```
@@ -2769,7 +2769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoLogDeliveryConfiguration.CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cognitologdeliveryconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitologdeliveryconfiguration"
 
 cognitologdeliveryconfiguration.NewCognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitoLogDeliveryConfigurationLogConfigurationsS3ConfigurationOutputReference
 ```

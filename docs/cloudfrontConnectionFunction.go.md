@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.NewCloudfrontConnectionFunction(scope Construct, id *string, config CloudfrontConnectionFunctionConfig) CloudfrontConnectionFunction
 ```
@@ -412,7 +412,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.CloudfrontConnectionFunction_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.CloudfrontConnectionFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ cloudfrontconnectionfunction.CloudfrontConnectionFunction_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.CloudfrontConnectionFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ cloudfrontconnectionfunction.CloudfrontConnectionFunction_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.CloudfrontConnectionFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 &cloudfrontconnectionfunction.CloudfrontConnectionFunctionConfig {
 	Connection: interface{},
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConnectionFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 &cloudfrontconnectionfunction.CloudfrontConnectionFunctionConnectionFunctionConfig {
 	Comment: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 &cloudfrontconnectionfunction.CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociation {
 	KeyValueStoreArn: *string,
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.NewCloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationList
 ```
@@ -1307,7 +1307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.NewCloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontConnectionFunctionConnectionFunctionConfigKeyValueStoreAssociationOutputReference
 ```
@@ -1596,7 +1596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConnectionFunctionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.NewCloudfrontConnectionFunctionConnectionFunctionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontConnectionFunctionConnectionFunctionConfigList
 ```
@@ -1756,7 +1756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionFunction.CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/cloudfrontconnectionfunction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectionfunction"
 
 cloudfrontconnectionfunction.NewCloudfrontConnectionFunctionConnectionFunctionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontConnectionFunctionConnectionFunctionConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.NewDataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits(scope Construct, id *string, config DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsConfig) DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrgan
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrgan
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildren.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 &dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildren {
 
@@ -618,7 +618,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorgani
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 &dataawsorganizationsorganizationalunitdescendantorganizationalunits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsConfig {
 	Connection: interface{},
@@ -753,7 +753,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.NewDataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnits.DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganizationalunitdescendantorganizationalunits"
 
 dataawsorganizationsorganizationalunitdescendantorganizationalunits.NewDataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsOrganizationalUnitDescendantOrganizationalUnitsChildrenOutputReference
 ```

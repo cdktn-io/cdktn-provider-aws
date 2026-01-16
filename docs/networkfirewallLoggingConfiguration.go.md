@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NewNetworkfirewallLoggingConfiguration(scope Construct, id *string, config NetworkfirewallLoggingConfigurationConfig) NetworkfirewallLoggingConfiguration
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NetworkfirewallLoggingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NetworkfirewallLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ networkfirewallloggingconfiguration.NetworkfirewallLoggingConfiguration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NetworkfirewallLoggingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ networkfirewallloggingconfiguration.NetworkfirewallLoggingConfiguration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NetworkfirewallLoggingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 &networkfirewallloggingconfiguration.NetworkfirewallLoggingConfigurationConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconf
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	FirewallArn: *string,
-	LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfiguration,
+	LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfiguration,
 	EnableMonitoringDashboard: interface{},
 	Id: *string,
 	Region: *string,
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 &networkfirewallloggingconfiguration.NetworkfirewallLoggingConfigurationLoggingConfiguration {
 	LogDestinationConfig: interface{},
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 &networkfirewallloggingconfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfig {
 	LogDestination: *map[string]*string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NewNetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList
 ```
@@ -1246,7 +1246,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NewNetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigOutputReference
 ```
@@ -1579,7 +1579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkfirewallloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkfirewallloggingconfiguration"
 
 networkfirewallloggingconfiguration.NewNetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftsnapshotscheduleassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftsnapshotscheduleassociation"
 
 redshiftsnapshotscheduleassociation.NewRedshiftSnapshotScheduleAssociation(scope Construct, id *string, config RedshiftSnapshotScheduleAssociationConfig) RedshiftSnapshotScheduleAssociation
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftsnapshotscheduleassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftsnapshotscheduleassociation"
 
 redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftsnapshotscheduleassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftsnapshotscheduleassociation"
 
 redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociation_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftsnapshotscheduleassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftsnapshotscheduleassociation"
 
 redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociation_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftsnapshotscheduleassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftsnapshotscheduleassociation"
 
 redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftSnapshotScheduleAssociation.RedshiftSnapshotScheduleAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/redshiftsnapshotscheduleassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftsnapshotscheduleassociation"
 
 &redshiftsnapshotscheduleassociation.RedshiftSnapshotScheduleAssociationConfig {
 	Connection: interface{},

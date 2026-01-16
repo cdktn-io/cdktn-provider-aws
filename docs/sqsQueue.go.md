@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sqsQueue.SqsQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 sqsqueue.NewSqsQueue(scope Construct, id *string, config SqsQueueConfig) SqsQueue
 ```
@@ -545,7 +545,7 @@ func ResetVisibilityTimeoutSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sqsQueue.SqsQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 sqsqueue.SqsQueue_IsConstruct(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sqsQueue.SqsQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 sqsqueue.SqsQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ sqsqueue.SqsQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sqsQueue.SqsQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 sqsqueue.SqsQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -605,7 +605,7 @@ sqsqueue.SqsQueue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sqsQueue.SqsQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 sqsqueue.SqsQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1340,7 +1340,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sqsQueue.SqsQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 &sqsqueue.SqsQueueConfig {
 	Connection: interface{},
@@ -1370,7 +1370,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
 	SqsManagedSseEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.sqsQueue.SqsQueueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sqsQueue.SqsQueueTimeouts,
 	VisibilityTimeoutSeconds: *f64,
 }
 ```
@@ -1757,7 +1757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sqsQueue.SqsQueueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 &sqsqueue.SqsQueueTimeouts {
 	Create: *string,
@@ -1819,7 +1819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sqsQueue.SqsQueueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/sqsqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sqsqueue"
 
 sqsqueue.NewSqsQueueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqsQueueTimeoutsOutputReference
 ```

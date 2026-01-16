@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDmsReplicationSubnetGroup.DataAwsDmsReplicationSubnetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdmsreplicationsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdmsreplicationsubnetgroup"
 
 dataawsdmsreplicationsubnetgroup.NewDataAwsDmsReplicationSubnetGroup(scope Construct, id *string, config DataAwsDmsReplicationSubnetGroupConfig) DataAwsDmsReplicationSubnetGroup
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDmsReplicationSubnetGroup.DataAwsDmsReplicationSubnetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdmsreplicationsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdmsreplicationsubnetgroup"
 
 dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDmsReplicationSubnetGroup.DataAwsDmsReplicationSubnetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdmsreplicationsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdmsreplicationsubnetgroup"
 
 dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroup_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDmsReplicationSubnetGroup.DataAwsDmsReplicationSubnetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdmsreplicationsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdmsreplicationsubnetgroup"
 
 dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroup_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDmsReplicationSubnetGroup.DataAwsDmsReplicationSubnetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdmsreplicationsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdmsreplicationsubnetgroup"
 
 dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDmsReplicationSubnetGroup.DataAwsDmsReplicationSubnetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsdmsreplicationsubnetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdmsreplicationsubnetgroup"
 
 &dataawsdmsreplicationsubnetgroup.DataAwsDmsReplicationSubnetGroupConfig {
 	Connection: interface{},

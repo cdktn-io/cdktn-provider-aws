@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.NewDevopsguruEventSourcesConfig(scope Construct, id *string, config DevopsguruEventSourcesConfigConfig) DevopsguruEventSourcesConfig
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.DevopsguruEventSourcesConfig_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.DevopsguruEventSourcesConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ devopsgurueventsourcesconfig.DevopsguruEventSourcesConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.DevopsguruEventSourcesConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ devopsgurueventsourcesconfig.DevopsguruEventSourcesConfig_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.DevopsguruEventSourcesConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -749,7 +749,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 &devopsgurueventsourcesconfig.DevopsguruEventSourcesConfigConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 &devopsgurueventsourcesconfig.DevopsguruEventSourcesConfigEventSources {
 	AmazonCodeGuruProfiler: interface{},
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 &devopsgurueventsourcesconfig.DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfiler {
 	Status: *string,
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.NewDevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerList
 ```
@@ -1111,7 +1111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.NewDevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevopsguruEventSourcesConfigEventSourcesAmazonCodeGuruProfilerOutputReference
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.NewDevopsguruEventSourcesConfigEventSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevopsguruEventSourcesConfigEventSourcesList
 ```
@@ -1560,7 +1560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruEventSourcesConfig.DevopsguruEventSourcesConfigEventSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/devopsgurueventsourcesconfig"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurueventsourcesconfig"
 
 devopsgurueventsourcesconfig.NewDevopsguruEventSourcesConfigEventSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevopsguruEventSourcesConfigEventSourcesOutputReference
 ```

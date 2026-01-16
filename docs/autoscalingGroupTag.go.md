@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 autoscalinggrouptag.NewAutoscalingGroupTagA(scope Construct, id *string, config AutoscalingGroupTagAConfig) AutoscalingGroupTagA
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ autoscalinggrouptag.AutoscalingGroupTagA_IsTerraformResource(x interface{}) *boo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 autoscalinggrouptag.AutoscalingGroupTagA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 &autoscalinggrouptag.AutoscalingGroupTagAConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AutoscalingGroupName: *string,
-	Tag: github.com/cdktn-io/cdktn-provider-aws-go/aws.autoscalingGroupTag.AutoscalingGroupTagTag,
+	Tag: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.autoscalingGroupTag.AutoscalingGroupTagTag,
 	Id: *string,
 	Region: *string,
 }
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 &autoscalinggrouptag.AutoscalingGroupTagTag {
 	Key: *string,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.autoscalingGroupTag.AutoscalingGroupTagTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/autoscalinggrouptag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/autoscalinggrouptag"
 
 autoscalinggrouptag.NewAutoscalingGroupTagTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoscalingGroupTagTagOutputReference
 ```

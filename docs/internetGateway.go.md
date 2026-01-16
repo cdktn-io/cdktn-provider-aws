@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.internetGateway.InternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 internetgateway.NewInternetGateway(scope Construct, id *string, config InternetGatewayConfig) InternetGateway
 ```
@@ -433,7 +433,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.internetGateway.InternetGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 internetgateway.InternetGateway_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.internetGateway.InternetGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 internetgateway.InternetGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ internetgateway.InternetGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.internetGateway.InternetGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 internetgateway.InternetGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ internetgateway.InternetGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.internetGateway.InternetGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 internetgateway.InternetGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -876,7 +876,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.internetGateway.InternetGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 &internetgateway.InternetGatewayConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.internetGateway.InternetGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.internetGateway.InternetGatewayTimeouts,
 	VpcId: *string,
 }
 ```
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.internetGateway.InternetGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 &internetgateway.InternetGatewayTimeouts {
 	Create: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.internetGateway.InternetGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/internetgateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/internetgateway"
 
 internetgateway.NewInternetGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InternetGatewayTimeoutsOutputReference
 ```

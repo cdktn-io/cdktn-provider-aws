@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.NewElasticacheUser(scope Construct, id *string, config ElasticacheUserConfig) ElasticacheUser
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.ElasticacheUser_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.ElasticacheUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ elasticacheuser.ElasticacheUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.ElasticacheUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ elasticacheuser.ElasticacheUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.ElasticacheUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUserAuthenticationMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 &elasticacheuser.ElasticacheUserAuthenticationMode {
 	Type: *string,
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 &elasticacheuser.ElasticacheUserConfig {
 	Connection: interface{},
@@ -1084,14 +1084,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
 	Engine: *string,
 	UserId: *string,
 	UserName: *string,
-	AuthenticationMode: github.com/cdktn-io/cdktn-provider-aws-go/aws.elasticacheUser.ElasticacheUserAuthenticationMode,
+	AuthenticationMode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.elasticacheUser.ElasticacheUserAuthenticationMode,
 	Id: *string,
 	NoPasswordRequired: interface{},
 	Passwords: *[]*string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.elasticacheUser.ElasticacheUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.elasticacheUser.ElasticacheUserTimeouts,
 }
 ```
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 &elasticacheuser.ElasticacheUserTimeouts {
 	Create: *string,
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUserAuthenticationModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.NewElasticacheUserAuthenticationModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheUserAuthenticationModeOutputReference
 ```
@@ -1736,7 +1736,7 @@ func InternalValue() ElasticacheUserAuthenticationMode
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.elasticacheUser.ElasticacheUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/elasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elasticacheuser"
 
 elasticacheuser.NewElasticacheUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticacheUserTimeoutsOutputReference
 ```

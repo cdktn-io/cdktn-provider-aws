@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTarget(scope Construct, id *string, config BedrockagentcoreGatewayTargetConfig) BedrockagentcoreGatewayTarget
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTarget_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTarget_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTarget_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytar
 	Description: *string,
 	Region: *string,
 	TargetConfiguration: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTimeouts,
 }
 ```
 
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetCredentialProviderConfiguration {
 	ApiKey: interface{},
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKey {
 	ProviderArn: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRole {
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytar
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauth {
 	ProviderArn: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfiguration {
 	Mcp: interface{},
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcp {
 	Lambda: interface{},
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambda {
 	LambdaArn: *string,
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchema {
 	InlinePayload: interface{},
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayload {
 	Description: *string,
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchema {
 	Type: *string,
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItems {
 	Type: *string,
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItems {
 	Type: *string,
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsProperty {
 	Name: *string,
@@ -1951,7 +1951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaProperty {
 	Name: *string,
@@ -2057,7 +2057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItems {
 	Type: *string,
@@ -2135,7 +2135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItems {
 	Type: *string,
@@ -2209,7 +2209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsProperty {
 	Name: *string,
@@ -2311,7 +2311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyProperty {
 	Name: *string,
@@ -2413,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchema {
 	Type: *string,
@@ -2491,7 +2491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItems {
 	Type: *string,
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItems {
 	Type: *string,
@@ -2643,7 +2643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsProperty {
 	Name: *string,
@@ -2745,7 +2745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaProperty {
 	Name: *string,
@@ -2851,7 +2851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItems {
 	Type: *string,
@@ -2929,7 +2929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItems {
 	Type: *string,
@@ -3003,7 +3003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsProperty {
 	Name: *string,
@@ -3105,7 +3105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyProperty {
 	Name: *string,
@@ -3207,7 +3207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3 {
 	BucketOwnerAccountId: *string,
@@ -3253,7 +3253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServer {
 	Endpoint: *string,
@@ -3285,7 +3285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchema {
 	InlinePayload: interface{},
@@ -3335,7 +3335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayload {
 	Payload: *string,
@@ -3367,7 +3367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3 {
 	BucketOwnerAccountId: *string,
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModel {
 	InlinePayload: interface{},
@@ -3463,7 +3463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayload {
 	Payload: *string,
@@ -3495,7 +3495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3 {
 	BucketOwnerAccountId: *string,
@@ -3541,7 +3541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 &bedrockagentcoregatewaytarget.BedrockagentcoreGatewayTargetTimeouts {
 	Create: *string,
@@ -3609,7 +3609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyList
 ```
@@ -3769,7 +3769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationApiKeyOutputReference
 ```
@@ -4145,7 +4145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleList
 ```
@@ -4305,7 +4305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationGatewayIamRoleOutputReference
 ```
@@ -4572,7 +4572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationList
 ```
@@ -4732,7 +4732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthList
 ```
@@ -4892,7 +4892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationOauthOutputReference
 ```
@@ -5232,7 +5232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetCredentialProviderConfigurationOutputReference
 ```
@@ -5625,7 +5625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationList
 ```
@@ -5785,7 +5785,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaList
 ```
@@ -5945,7 +5945,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaOutputReference
 ```
@@ -6276,7 +6276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsList
 ```
@@ -6436,7 +6436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsItemsOutputReference
 ```
@@ -6812,7 +6812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsList
 ```
@@ -6972,7 +6972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsOutputReference
 ```
@@ -7374,7 +7374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyList
 ```
@@ -7534,7 +7534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaItemsPropertyOutputReference
 ```
@@ -7961,7 +7961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaList
 ```
@@ -8121,7 +8121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaOutputReference
 ```
@@ -8523,7 +8523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsList
 ```
@@ -8683,7 +8683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsItemsOutputReference
 ```
@@ -9059,7 +9059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsList
 ```
@@ -9219,7 +9219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsOutputReference
 ```
@@ -9621,7 +9621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyList
 ```
@@ -9781,7 +9781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyItemsPropertyOutputReference
 ```
@@ -10208,7 +10208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyList
 ```
@@ -10368,7 +10368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyOutputReference
 ```
@@ -10821,7 +10821,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyList
 ```
@@ -10981,7 +10981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadInputSchemaPropertyPropertyOutputReference
 ```
@@ -11408,7 +11408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadList
 ```
@@ -11568,7 +11568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputReference
 ```
@@ -11963,7 +11963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsList
 ```
@@ -12123,7 +12123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsItemsOutputReference
 ```
@@ -12499,7 +12499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsList
 ```
@@ -12659,7 +12659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsOutputReference
 ```
@@ -13061,7 +13061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyList
 ```
@@ -13221,7 +13221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaItemsPropertyOutputReference
 ```
@@ -13648,7 +13648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaList
 ```
@@ -13808,7 +13808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaOutputReference
 ```
@@ -14210,7 +14210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsList
 ```
@@ -14370,7 +14370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsItemsOutputReference
 ```
@@ -14746,7 +14746,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsList
 ```
@@ -14906,7 +14906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsOutputReference
 ```
@@ -15308,7 +15308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyList
 ```
@@ -15468,7 +15468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyItemsPropertyOutputReference
 ```
@@ -15895,7 +15895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyList
 ```
@@ -16055,7 +16055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyOutputReference
 ```
@@ -16508,7 +16508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyList
 ```
@@ -16668,7 +16668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaInlinePayloadOutputSchemaPropertyPropertyOutputReference
 ```
@@ -17095,7 +17095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaList
 ```
@@ -17255,7 +17255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaOutputReference
 ```
@@ -17606,7 +17606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3List
 ```
@@ -17766,7 +17766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpLambdaToolSchemaS3OutputReference
 ```
@@ -18091,7 +18091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpList
 ```
@@ -18251,7 +18251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerList
 ```
@@ -18411,7 +18411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpMcpServerOutputReference
 ```
@@ -18700,7 +18700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadList
 ```
@@ -18860,7 +18860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaInlinePayloadOutputReference
 ```
@@ -19149,7 +19149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaList
 ```
@@ -19309,7 +19309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaOutputReference
 ```
@@ -19660,7 +19660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3List
 ```
@@ -19820,7 +19820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOpenApiSchemaS3OutputReference
 ```
@@ -20145,7 +20145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpOutputReference
 ```
@@ -20580,7 +20580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadList
 ```
@@ -20740,7 +20740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelInlinePayloadOutputReference
 ```
@@ -21029,7 +21029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelList
 ```
@@ -21189,7 +21189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelOutputReference
 ```
@@ -21540,7 +21540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3List
 ```
@@ -21700,7 +21700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationMcpSmithyModelS3OutputReference
 ```
@@ -22025,7 +22025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTargetConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTargetConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreGatewayTargetTargetConfigurationOutputReference
 ```
@@ -22334,7 +22334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreGatewayTarget.BedrockagentcoreGatewayTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/bedrockagentcoregatewaytarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoregatewaytarget"
 
 bedrockagentcoregatewaytarget.NewBedrockagentcoreGatewayTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreGatewayTargetTimeoutsOutputReference
 ```

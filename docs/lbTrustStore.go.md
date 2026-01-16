@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTrustStore.LbTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 lbtruststore.NewLbTrustStore(scope Construct, id *string, config LbTrustStoreConfig) LbTrustStore
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lbTrustStore.LbTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 lbtruststore.LbTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lbTrustStore.LbTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 lbtruststore.LbTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ lbtruststore.LbTrustStore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lbTrustStore.LbTrustStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 lbtruststore.LbTrustStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ lbtruststore.LbTrustStore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lbTrustStore.LbTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 lbtruststore.LbTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTrustStore.LbTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 &lbtruststore.LbTrustStoreConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.lbTrustStore.LbTrustStoreTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lbTrustStore.LbTrustStoreTimeouts,
 }
 ```
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbTrustStore.LbTrustStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 &lbtruststore.LbTrustStoreTimeouts {
 	Create: *string,
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbTrustStore.LbTrustStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/lbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbtruststore"
 
 lbtruststore.NewLbTrustStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTrustStoreTimeoutsOutputReference
 ```

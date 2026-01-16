@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdscertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdscertificate"
 
 dataawsrdscertificate.NewDataAwsRdsCertificate(scope Construct, id *string, config DataAwsRdsCertificateConfig) DataAwsRdsCertificate
 ```
@@ -304,7 +304,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdscertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdscertificate"
 
 dataawsrdscertificate.DataAwsRdsCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdscertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdscertificate"
 
 dataawsrdscertificate.DataAwsRdsCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsrdscertificate.DataAwsRdsCertificate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdscertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdscertificate"
 
 dataawsrdscertificate.DataAwsRdsCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsrdscertificate.DataAwsRdsCertificate_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdscertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdscertificate"
 
 dataawsrdscertificate.DataAwsRdsCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsrdscertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsrdscertificate"
 
 &dataawsrdscertificate.DataAwsRdsCertificateConfig {
 	Connection: interface{},

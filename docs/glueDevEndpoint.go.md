@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/gluedevendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluedevendpoint"
 
 gluedevendpoint.NewGlueDevEndpoint(scope Construct, id *string, config GlueDevEndpointConfig) GlueDevEndpoint
 ```
@@ -490,7 +490,7 @@ func ResetWorkerType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/gluedevendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluedevendpoint"
 
 gluedevendpoint.GlueDevEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/gluedevendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluedevendpoint"
 
 gluedevendpoint.GlueDevEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ gluedevendpoint.GlueDevEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/gluedevendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluedevendpoint"
 
 gluedevendpoint.GlueDevEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ gluedevendpoint.GlueDevEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/gluedevendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluedevendpoint"
 
 gluedevendpoint.GlueDevEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1274,7 +1274,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/gluedevendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluedevendpoint"
 
 &gluedevendpoint.GlueDevEndpointConfig {
 	Connection: interface{},

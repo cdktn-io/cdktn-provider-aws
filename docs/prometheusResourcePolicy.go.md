@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 prometheusresourcepolicy.NewPrometheusResourcePolicy(scope Construct, id *string, config PrometheusResourcePolicyConfig) PrometheusResourcePolicy
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 prometheusresourcepolicy.PrometheusResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 prometheusresourcepolicy.PrometheusResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ prometheusresourcepolicy.PrometheusResourcePolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 prometheusresourcepolicy.PrometheusResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ prometheusresourcepolicy.PrometheusResourcePolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 prometheusresourcepolicy.PrometheusResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 &prometheusresourcepolicy.PrometheusResourcePolicyConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
 	WorkspaceId: *string,
 	Region: *string,
 	RevisionId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.prometheusResourcePolicy.PrometheusResourcePolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.prometheusResourcePolicy.PrometheusResourcePolicyTimeouts,
 }
 ```
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 &prometheusresourcepolicy.PrometheusResourcePolicyTimeouts {
 	Create: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/prometheusresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/prometheusresourcepolicy"
 
 prometheusresourcepolicy.NewPrometheusResourcePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrometheusResourcePolicyTimeoutsOutputReference
 ```

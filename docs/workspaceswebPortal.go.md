@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 workspaceswebportal.NewWorkspaceswebPortal(scope Construct, id *string, config WorkspaceswebPortalConfig) WorkspaceswebPortal
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 workspaceswebportal.WorkspaceswebPortal_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 workspaceswebportal.WorkspaceswebPortal_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ workspaceswebportal.WorkspaceswebPortal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 workspaceswebportal.WorkspaceswebPortal_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ workspaceswebportal.WorkspaceswebPortal_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 workspaceswebportal.WorkspaceswebPortal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1135,7 +1135,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 &workspaceswebportal.WorkspaceswebPortalConfig {
 	Connection: interface{},
@@ -1154,7 +1154,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
 	MaxConcurrentSessions: *f64,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.workspaceswebPortal.WorkspaceswebPortalTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.workspaceswebPortal.WorkspaceswebPortalTimeouts,
 }
 ```
 
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortalTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 &workspaceswebportal.WorkspaceswebPortalTimeouts {
 	Create: *string,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebPortal.WorkspaceswebPortalTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebportal"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebportal"
 
 workspaceswebportal.NewWorkspaceswebPortalTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceswebPortalTimeoutsOutputReference
 ```

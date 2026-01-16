@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.NewDataAwsSsmInstances(scope Construct, id *string, config DataAwsSsmInstancesConfig) DataAwsSsmInstances
 ```
@@ -310,7 +310,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.DataAwsSsmInstances_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.DataAwsSsmInstances_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsssminstances.DataAwsSsmInstances_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.DataAwsSsmInstances_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsssminstances.DataAwsSsmInstances_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.DataAwsSsmInstances_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 &dataawsssminstances.DataAwsSsmInstancesConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstancesFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 &dataawsssminstances.DataAwsSsmInstancesFilter {
 	Name: *string,
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstancesFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.NewDataAwsSsmInstancesFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmInstancesFilterList
 ```
@@ -1013,7 +1013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmInstances.DataAwsSsmInstancesFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsssminstances"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssminstances"
 
 dataawsssminstances.NewDataAwsSsmInstancesFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmInstancesFilterOutputReference
 ```

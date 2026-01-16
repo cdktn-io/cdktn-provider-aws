@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.NewDataAwsKinesisFirehoseDeliveryStream(scope Construct, id *string, config DataAwsKinesisFirehoseDeliveryStreamConfig) DataAwsKinesisFirehoseDeliveryStream
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisfirehosedeliverystream"
 
 dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawskinesisfirehosedeliverystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawskinesisfirehosedeliverystream"
 
 &dataawskinesisfirehosedeliverystream.DataAwsKinesisFirehoseDeliveryStreamConfig {
 	Connection: interface{},

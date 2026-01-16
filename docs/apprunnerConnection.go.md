@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerConnection.ApprunnerConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnerconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerconnection"
 
 apprunnerconnection.NewApprunnerConnection(scope Construct, id *string, config ApprunnerConnectionConfig) ApprunnerConnection
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apprunnerConnection.ApprunnerConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnerconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apprunnerConnection.ApprunnerConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnerconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ apprunnerconnection.ApprunnerConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apprunnerConnection.ApprunnerConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnerconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ apprunnerconnection.ApprunnerConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apprunnerConnection.ApprunnerConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnerconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerconnection"
 
 apprunnerconnection.ApprunnerConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerConnection.ApprunnerConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/apprunnerconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerconnection"
 
 &apprunnerconnection.ApprunnerConnectionConfig {
 	Connection: interface{},

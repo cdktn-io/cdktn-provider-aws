@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualService(scope Construct, id *string, config DataAwsAppmeshVirtualServiceConfig) DataAwsAppmeshVirtualService
 ```
@@ -304,7 +304,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.DataAwsAppmeshVirtualService_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.DataAwsAppmeshVirtualService_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsappmeshvirtualservice.DataAwsAppmeshVirtualService_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.DataAwsAppmeshVirtualService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsappmeshvirtualservice.DataAwsAppmeshVirtualService_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.DataAwsAppmeshVirtualService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 &dataawsappmeshvirtualservice.DataAwsAppmeshVirtualServiceConfig {
 	Connection: interface{},
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 &dataawsappmeshvirtualservice.DataAwsAppmeshVirtualServiceSpec {
 
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 &dataawsappmeshvirtualservice.DataAwsAppmeshVirtualServiceSpecProvider {
 
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 &dataawsappmeshvirtualservice.DataAwsAppmeshVirtualServiceSpecProviderVirtualNode {
 
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 &dataawsappmeshvirtualservice.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouter {
 
@@ -1003,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualServiceSpecList
 ```
@@ -1152,7 +1152,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualServiceSpecOutputReference
 ```
@@ -1430,7 +1430,7 @@ func InternalValue() DataAwsAppmeshVirtualServiceSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualServiceSpecProviderList
 ```
@@ -1579,7 +1579,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualServiceSpecProviderOutputReference
 ```
@@ -1868,7 +1868,7 @@ func InternalValue() DataAwsAppmeshVirtualServiceSpecProvider
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeList
 ```
@@ -2017,7 +2017,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualServiceSpecProviderVirtualNodeOutputReference
 ```
@@ -2295,7 +2295,7 @@ func InternalValue() DataAwsAppmeshVirtualServiceSpecProviderVirtualNode
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterList
 ```
@@ -2444,7 +2444,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsappmeshvirtualservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsappmeshvirtualservice"
 
 dataawsappmeshvirtualservice.NewDataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAppmeshVirtualServiceSpecProviderVirtualRouterOutputReference
 ```

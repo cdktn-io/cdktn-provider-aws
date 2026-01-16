@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissions(scope Construct, id *string, config DataAwsLakeformationPermissionsConfig) DataAwsLakeformationPermissions
 ```
@@ -444,7 +444,7 @@ func ResetTableWithColumns()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.DataAwsLakeformationPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.DataAwsLakeformationPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ dataawslakeformationpermissions.DataAwsLakeformationPermissions_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.DataAwsLakeformationPermissions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ dataawslakeformationpermissions.DataAwsLakeformationPermissions_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.DataAwsLakeformationPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsConfig {
 	Connection: interface{},
@@ -1010,15 +1010,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermis
 	Principal: *string,
 	CatalogId: *string,
 	CatalogResource: interface{},
-	Database: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDatabase,
-	DataCellsFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataCellsFilter,
-	DataLocation: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataLocation,
+	Database: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDatabase,
+	DataCellsFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataCellsFilter,
+	DataLocation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataLocation,
 	Id: *string,
-	LfTag: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTag,
-	LfTagPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicy,
+	LfTag: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTag,
+	LfTagPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicy,
 	Region: *string,
-	Table: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTable,
-	TableWithColumns: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTableWithColumns,
+	Table: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTable,
+	TableWithColumns: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTableWithColumns,
 }
 ```
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsDatabase {
 	Name: *string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataCellsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsDataCellsFilter {
 	DatabaseName: *string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsDataLocation {
 	Arn: *string,
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsLfTag {
 	Key: *string,
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsLfTagPolicy {
 	Expression: interface{},
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsLfTagPolicyExpression {
 	Key: *string,
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsTable {
 	DatabaseName: *string,
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTableWithColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 &dataawslakeformationpermissions.DataAwsLakeformationPermissionsTableWithColumns {
 	DatabaseName: *string,
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsDatabaseOutputReference
 ```
@@ -2098,7 +2098,7 @@ func InternalValue() DataAwsLakeformationPermissionsDatabase
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataCellsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsDataCellsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsDataCellsFilterOutputReference
 ```
@@ -2435,7 +2435,7 @@ func InternalValue() DataAwsLakeformationPermissionsDataCellsFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsDataLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsDataLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsDataLocationOutputReference
 ```
@@ -2735,7 +2735,7 @@ func InternalValue() DataAwsLakeformationPermissionsDataLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsLfTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsLfTagOutputReference
 ```
@@ -3057,7 +3057,7 @@ func InternalValue() DataAwsLakeformationPermissionsLfTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpressionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsLfTagPolicyExpressionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLakeformationPermissionsLfTagPolicyExpressionList
 ```
@@ -3217,7 +3217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLakeformationPermissionsLfTagPolicyExpressionOutputReference
 ```
@@ -3528,7 +3528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsLfTagPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsLfTagPolicyOutputReference
 ```
@@ -3863,7 +3863,7 @@ func InternalValue() DataAwsLakeformationPermissionsLfTagPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsTableOutputReference
 ```
@@ -4221,7 +4221,7 @@ func InternalValue() DataAwsLakeformationPermissionsTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsTableWithColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawslakeformationpermissions"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslakeformationpermissions"
 
 dataawslakeformationpermissions.NewDataAwsLakeformationPermissionsTableWithColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsLakeformationPermissionsTableWithColumnsOutputReference
 ```

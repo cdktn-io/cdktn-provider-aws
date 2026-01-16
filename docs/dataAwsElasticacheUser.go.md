@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.NewDataAwsElasticacheUser(scope Construct, id *string, config DataAwsElasticacheUserConfig) DataAwsElasticacheUser
 ```
@@ -345,7 +345,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataawselasticacheuser.DataAwsElasticacheUser_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.DataAwsElasticacheUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 &dataawselasticacheuser.DataAwsElasticacheUserAuthenticationMode {
 	PasswordCount: *f64,
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 &dataawselasticacheuser.DataAwsElasticacheUserConfig {
 	Connection: interface{},
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.NewDataAwsElasticacheUserAuthenticationModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsElasticacheUserAuthenticationModeList
 ```
@@ -1253,7 +1253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheUser.DataAwsElasticacheUserAuthenticationModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawselasticacheuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheuser"
 
 dataawselasticacheuser.NewDataAwsElasticacheUserAuthenticationModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsElasticacheUserAuthenticationModeOutputReference
 ```

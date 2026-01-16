@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ssmmaintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ssmmaintenancewindow"
 
 ssmmaintenancewindow.NewSsmMaintenanceWindow(scope Construct, id *string, config SsmMaintenanceWindowConfig) SsmMaintenanceWindow
 ```
@@ -455,7 +455,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ssmmaintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ssmmaintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ssmmaintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ ssmmaintenancewindow.SsmMaintenanceWindow_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ssmmaintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ssmmaintenancewindow"
 
 ssmmaintenancewindow.SsmMaintenanceWindow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1074,7 +1074,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ssmMaintenanceWindow.SsmMaintenanceWindowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/ssmmaintenancewindow"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ssmmaintenancewindow"
 
 &ssmmaintenancewindow.SsmMaintenanceWindowConfig {
 	Connection: interface{},

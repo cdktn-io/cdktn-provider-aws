@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettings(scope Construct, id *string, config WorkspaceswebDataProtectionSettingsConfig) WorkspaceswebDataProtectionSettings
 ```
@@ -433,7 +433,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettings_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettings_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettings_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 &workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettingsConfig {
 	Connection: interface{},
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 &workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfiguration {
 	GlobalConfidenceLevel: *f64,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 &workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPattern {
 	BuiltInPatternId: *string,
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 &workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPattern {
 	PatternName: *string,
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 &workspaceswebdataprotectionsettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolder {
 	RedactionPlaceHolderType: *string,
@@ -1417,7 +1417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternList
 ```
@@ -1577,7 +1577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternCustomPatternOutputReference
 ```
@@ -1946,7 +1946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternList
 ```
@@ -2106,7 +2106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternOutputReference
 ```
@@ -2573,7 +2573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderList
 ```
@@ -2733,7 +2733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationInlineRedactionPatternRedactionPlaceHolderOutputReference
 ```
@@ -3051,7 +3051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationList
 ```
@@ -3211,7 +3211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebDataProtectionSettings.WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/workspaceswebdataprotectionsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebdataprotectionsettings"
 
 workspaceswebdataprotectionsettings.NewWorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkspaceswebDataProtectionSettingsInlineRedactionConfigurationOutputReference
 ```

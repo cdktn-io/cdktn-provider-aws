@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.NewDataAwsOdbDbServer(scope Construct, id *string, config DataAwsOdbDbServerConfig) DataAwsOdbDbServer
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.DataAwsOdbDbServer_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.DataAwsOdbDbServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsodbdbserver.DataAwsOdbDbServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.DataAwsOdbDbServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsodbdbserver.DataAwsOdbDbServer_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.DataAwsOdbDbServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -825,7 +825,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 &dataawsodbdbserver.DataAwsOdbDbServerConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServerDbServerPatchingDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 &dataawsodbdbserver.DataAwsOdbDbServerDbServerPatchingDetails {
 
@@ -993,7 +993,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServerDbServerPatchingDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.NewDataAwsOdbDbServerDbServerPatchingDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbDbServerDbServerPatchingDetailsList
 ```
@@ -1142,7 +1142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbDbServer.DataAwsOdbDbServerDbServerPatchingDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsodbdbserver"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbdbserver"
 
 dataawsodbdbserver.NewDataAwsOdbDbServerDbServerPatchingDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbDbServerDbServerPatchingDetailsOutputReference
 ```

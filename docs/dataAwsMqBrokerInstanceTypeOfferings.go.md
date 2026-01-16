@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.NewDataAwsMqBrokerInstanceTypeOfferings(scope Construct, id *string, config DataAwsMqBrokerInstanceTypeOfferingsConfig) DataAwsMqBrokerInstanceTypeOfferings
 ```
@@ -311,7 +311,7 @@ func ResetStorageType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferings_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferings_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferings_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferings_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -699,7 +699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 &dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions {
 
@@ -712,7 +712,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetyp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZones.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 &dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZones {
 
@@ -725,7 +725,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetyp
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 &dataawsmqbrokerinstancetypeofferings.DataAwsMqBrokerInstanceTypeOfferingsConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesList
 ```
@@ -1053,7 +1053,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZonesOutputReference
 ```
@@ -1331,7 +1331,7 @@ func InternalValue() DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList
 ```
@@ -1480,7 +1480,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsmqbrokerinstancetypeofferings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerinstancetypeofferings"
 
 dataawsmqbrokerinstancetypeofferings.NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference
 ```

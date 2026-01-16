@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingA(scope Construct, id *string, config S3BucketLoggingAConfig) S3BucketLoggingA
 ```
@@ -439,7 +439,7 @@ func ResetTargetObjectKeyFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ s3bucketlogging.S3BucketLoggingA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ s3bucketlogging.S3BucketLoggingA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingAConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
 	Id: *string,
 	Region: *string,
 	TargetGrant: interface{},
-	TargetObjectKeyFormat: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat,
+	TargetObjectKeyFormat: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat,
 }
 ```
 
@@ -1127,10 +1127,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetGrant {
-	Grantee: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee,
+	Grantee: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetGrantGrantee,
 	Permission: *string,
 }
 ```
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetGrantGrantee {
 	Type: *string,
@@ -1252,11 +1252,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetObjectKeyFormat {
-	PartitionedPrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix,
-	SimplePrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix,
+	PartitionedPrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix,
+	SimplePrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix,
 }
 ```
 
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix {
 	PartitionDateSource: *string,
@@ -1334,7 +1334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix {
 
@@ -1349,7 +1349,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetGrantGranteeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetGrantGranteeOutputReference
 ```
@@ -1718,7 +1718,7 @@ func InternalValue() S3BucketLoggingTargetGrantGrantee
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLoggingTargetGrantList
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketLoggingTargetGrantOutputReference
 ```
@@ -2202,7 +2202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetObjectKeyFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetObjectKeyFormatOutputReference
 ```
@@ -2535,7 +2535,7 @@ func InternalValue() S3BucketLoggingTargetObjectKeyFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference
 ```
@@ -2806,7 +2806,7 @@ func InternalValue() S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference
 ```

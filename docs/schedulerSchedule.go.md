@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerSchedule(scope Construct, id *string, config SchedulerScheduleConfig) SchedulerSchedule
 ```
@@ -488,7 +488,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.schedulerSchedule.SchedulerSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.schedulerSchedule.SchedulerSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ schedulerschedule.SchedulerSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.schedulerSchedule.SchedulerSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ schedulerschedule.SchedulerSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.schedulerSchedule.SchedulerSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.SchedulerSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1118,7 +1118,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleConfig {
 	Connection: interface{},
@@ -1128,9 +1128,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	FlexibleTimeWindow: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow,
+	FlexibleTimeWindow: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow,
 	ScheduleExpression: *string,
-	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTarget,
+	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTarget,
 	ActionAfterCompletion: *string,
 	Description: *string,
 	EndDate: *string,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleFlexibleTimeWindow {
 	Mode: *string,
@@ -1485,19 +1485,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTarget {
 	Arn: *string,
 	RoleArn: *string,
-	DeadLetterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig,
-	EcsParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters,
-	EventbridgeParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters,
+	DeadLetterConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig,
+	EcsParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetEcsParameters,
+	EventbridgeParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters,
 	Input: *string,
-	KinesisParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters,
-	RetryPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy,
-	SagemakerPipelineParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters,
-	SqsParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters,
+	KinesisParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetKinesisParameters,
+	RetryPolicy: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetRetryPolicy,
+	SagemakerPipelineParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters,
+	SqsParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetSqsParameters,
 }
 ```
 
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetDeadLetterConfig {
 	Arn: *string,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParameters {
 	TaskDefinitionArn: *string,
@@ -1698,7 +1698,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
 	EnableExecuteCommand: interface{},
 	Group: *string,
 	LaunchType: *string,
-	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration,
+	NetworkConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration,
 	PlacementConstraints: interface{},
 	PlacementStrategy: interface{},
 	PlatformVersion: *string,
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy {
 	CapacityProvider: *string,
@@ -1971,7 +1971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration {
 	Subnets: *[]*string,
@@ -2031,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersPlacementConstraints {
 	Type: *string,
@@ -2077,7 +2077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEcsParametersPlacementStrategy {
 	Type: *string,
@@ -2123,7 +2123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetEventbridgeParameters {
 	DetailType: *string,
@@ -2169,7 +2169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetKinesisParameters {
 	PartitionKey: *string,
@@ -2201,7 +2201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetRetryPolicy {
 	MaximumEventAgeInSeconds: *f64,
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetSagemakerPipelineParameters {
 	PipelineParameter: interface{},
@@ -2281,7 +2281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter {
 	Name: *string,
@@ -2327,7 +2327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 &schedulerschedule.SchedulerScheduleTargetSqsParameters {
 	MessageGroupId: *string,
@@ -2361,7 +2361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleFlexibleTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleFlexibleTimeWindowOutputReference
 ```
@@ -2661,7 +2661,7 @@ func InternalValue() SchedulerScheduleFlexibleTimeWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetDeadLetterConfigOutputReference
 ```
@@ -2932,7 +2932,7 @@ func InternalValue() SchedulerScheduleTargetDeadLetterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList
 ```
@@ -3092,7 +3092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 ```
@@ -3439,7 +3439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference
 ```
@@ -3768,7 +3768,7 @@ func InternalValue() SchedulerScheduleTargetEcsParametersNetworkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEcsParametersOutputReference
 ```
@@ -4468,7 +4468,7 @@ func InternalValue() SchedulerScheduleTargetEcsParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetEcsParametersPlacementConstraintsList
 ```
@@ -4628,7 +4628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference
 ```
@@ -4946,7 +4946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetEcsParametersPlacementStrategyList
 ```
@@ -5106,7 +5106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference
 ```
@@ -5424,7 +5424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetEventbridgeParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetEventbridgeParametersOutputReference
 ```
@@ -5717,7 +5717,7 @@ func InternalValue() SchedulerScheduleTargetEventbridgeParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetKinesisParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetKinesisParametersOutputReference
 ```
@@ -5988,7 +5988,7 @@ func InternalValue() SchedulerScheduleTargetKinesisParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetOutputReference
 ```
@@ -6604,7 +6604,7 @@ func InternalValue() SchedulerScheduleTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetRetryPolicyOutputReference
 ```
@@ -6911,7 +6911,7 @@ func InternalValue() SchedulerScheduleTargetRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSagemakerPipelineParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetSagemakerPipelineParametersOutputReference
 ```
@@ -7202,7 +7202,7 @@ func InternalValue() SchedulerScheduleTargetSagemakerPipelineParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList
 ```
@@ -7362,7 +7362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference
 ```
@@ -7673,7 +7673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/schedulerschedule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/schedulerschedule"
 
 schedulerschedule.NewSchedulerScheduleTargetSqsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchedulerScheduleTargetSqsParametersOutputReference
 ```

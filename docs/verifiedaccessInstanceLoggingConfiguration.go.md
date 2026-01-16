@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.NewVerifiedaccessInstanceLoggingConfiguration(scope Construct, id *string, config VerifiedaccessInstanceLoggingConfigurationConfig) VerifiedaccessInstanceLoggingConfiguration
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigur
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigur
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,14 +782,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 &verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogs {
-	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs,
+	CloudwatchLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs,
 	IncludeTrustContext: interface{},
-	KinesisDataFirehose: github.com/cdktn-io/cdktn-provider-aws-go/aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose,
+	KinesisDataFirehose: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose,
 	LogVersion: *string,
-	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsS3,
+	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsS3,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 &verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogs {
 	Enabled: interface{},
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 &verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehose {
 	Enabled: interface{},
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 &verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsS3 {
 	Enabled: interface{},
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 &verifiedaccessinstanceloggingconfiguration.VerifiedaccessInstanceLoggingConfigurationConfig {
 	Connection: interface{},
@@ -1052,7 +1052,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstancelogg
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccessLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogs,
+	AccessLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogs,
 	VerifiedaccessInstanceId: *string,
 	Id: *string,
 	Region: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.NewVerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwatchLogsOutputReference
 ```
@@ -1509,7 +1509,7 @@ func InternalValue() VerifiedaccessInstanceLoggingConfigurationAccessLogsCloudwa
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.NewVerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesisDataFirehoseOutputReference
 ```
@@ -1809,7 +1809,7 @@ func InternalValue() VerifiedaccessInstanceLoggingConfigurationAccessLogsKinesis
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.NewVerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessInstanceLoggingConfigurationAccessLogsOutputReference
 ```
@@ -2242,7 +2242,7 @@ func InternalValue() VerifiedaccessInstanceLoggingConfigurationAccessLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.verifiedaccessInstanceLoggingConfiguration.VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/verifiedaccessinstanceloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/verifiedaccessinstanceloggingconfiguration"
 
 verifiedaccessinstanceloggingconfiguration.NewVerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VerifiedaccessInstanceLoggingConfigurationAccessLogsS3OutputReference
 ```

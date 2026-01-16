@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/shieldprotectionhealthcheckassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldprotectionhealthcheckassociation"
 
 shieldprotectionhealthcheckassociation.NewShieldProtectionHealthCheckAssociation(scope Construct, id *string, config ShieldProtectionHealthCheckAssociationConfig) ShieldProtectionHealthCheckAssociation
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/shieldprotectionhealthcheckassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldprotectionhealthcheckassociation"
 
 shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/shieldprotectionhealthcheckassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldprotectionhealthcheckassociation"
 
 shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociation_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/shieldprotectionhealthcheckassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldprotectionhealthcheckassociation"
 
 shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociation_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/shieldprotectionhealthcheckassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldprotectionhealthcheckassociation"
 
 shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.shieldProtectionHealthCheckAssociation.ShieldProtectionHealthCheckAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/shieldprotectionhealthcheckassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldprotectionhealthcheckassociation"
 
 &shieldprotectionhealthcheckassociation.ShieldProtectionHealthCheckAssociationConfig {
 	Connection: interface{},

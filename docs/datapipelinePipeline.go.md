@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datapipelinepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datapipelinepipeline"
 
 datapipelinepipeline.NewDatapipelinePipeline(scope Construct, id *string, config DatapipelinePipelineConfig) DatapipelinePipeline
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datapipelinepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datapipelinepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ datapipelinepipeline.DatapipelinePipeline_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datapipelinepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ datapipelinepipeline.DatapipelinePipeline_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datapipelinepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datapipelinepipeline"
 
 datapipelinepipeline.DatapipelinePipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datapipelinePipeline.DatapipelinePipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/datapipelinepipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datapipelinepipeline"
 
 &datapipelinepipeline.DatapipelinePipelineConfig {
 	Connection: interface{},

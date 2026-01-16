@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsiampolicy"
 
 dataawsiampolicy.NewDataAwsIamPolicy(scope Construct, id *string, config DataAwsIamPolicyConfig) DataAwsIamPolicy
 ```
@@ -311,7 +311,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsiampolicy.DataAwsIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataawsiampolicy.DataAwsIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsiampolicy"
 
 dataawsiampolicy.DataAwsIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsIamPolicy.DataAwsIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsiampolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsiampolicy"
 
 &dataawsiampolicy.DataAwsIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.NewDataAwsSecurityGroup(scope Construct, id *string, config DataAwsSecurityGroupConfig) DataAwsSecurityGroup
 ```
@@ -351,7 +351,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.DataAwsSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.DataAwsSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ dataawssecuritygroup.DataAwsSecurityGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.DataAwsSecurityGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ dataawssecuritygroup.DataAwsSecurityGroup_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.DataAwsSecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 &dataawssecuritygroup.DataAwsSecurityGroupConfig {
 	Connection: interface{},
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
 	Name: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.dataAwsSecurityGroup.DataAwsSecurityGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsSecurityGroup.DataAwsSecurityGroupTimeouts,
 	VpcId: *string,
 }
 ```
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroupFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 &dataawssecuritygroup.DataAwsSecurityGroupFilter {
 	Name: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 &dataawssecuritygroup.DataAwsSecurityGroupTimeouts {
 	Read: *string,
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroupFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.NewDataAwsSecurityGroupFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSecurityGroupFilterList
 ```
@@ -1243,7 +1243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroupFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.NewDataAwsSecurityGroupFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSecurityGroupFilterOutputReference
 ```
@@ -1554,7 +1554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSecurityGroup.DataAwsSecurityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawssecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssecuritygroup"
 
 dataawssecuritygroup.NewDataAwsSecurityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsSecurityGroupTimeoutsOutputReference
 ```

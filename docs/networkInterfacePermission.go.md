@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 networkinterfacepermission.NewNetworkInterfacePermission(scope Construct, id *string, config NetworkInterfacePermissionConfig) NetworkInterfacePermission
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermission.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 networkinterfacepermission.NetworkInterfacePermission_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermission.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 networkinterfacepermission.NetworkInterfacePermission_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ networkinterfacepermission.NetworkInterfacePermission_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermission.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 networkinterfacepermission.NetworkInterfacePermission_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ networkinterfacepermission.NetworkInterfacePermission_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermission.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 networkinterfacepermission.NetworkInterfacePermission_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermissionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 &networkinterfacepermission.NetworkInterfacePermissionConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission
 	NetworkInterfaceId: *string,
 	Permission: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.networkInterfacePermission.NetworkInterfacePermissionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.networkInterfacePermission.NetworkInterfacePermissionTimeouts,
 }
 ```
 
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermissionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 &networkinterfacepermission.NetworkInterfacePermissionTimeouts {
 	Create: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterfacePermission.NetworkInterfacePermissionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/networkinterfacepermission"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacepermission"
 
 networkinterfacepermission.NewNetworkInterfacePermissionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfacePermissionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshMesh.AppmeshMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.NewAppmeshMesh(scope Construct, id *string, config AppmeshMeshConfig) AppmeshMesh
 ```
@@ -426,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appmeshMesh.AppmeshMesh.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appmeshMesh.AppmeshMesh.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ appmeshmesh.AppmeshMesh_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appmeshMesh.AppmeshMesh.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ appmeshmesh.AppmeshMesh_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appmeshMesh.AppmeshMesh.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.AppmeshMesh_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
 	Name: *string,
 	Id: *string,
 	Region: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws.appmeshMesh.AppmeshMeshSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.appmeshMesh.AppmeshMeshSpec,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1095,11 +1095,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshSpec {
-	EgressFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws.appmeshMesh.AppmeshMeshSpecEgressFilter,
-	ServiceDiscovery: github.com/cdktn-io/cdktn-provider-aws-go/aws.appmeshMesh.AppmeshMeshSpecServiceDiscovery,
+	EgressFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.appmeshMesh.AppmeshMeshSpecEgressFilter,
+	ServiceDiscovery: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.appmeshMesh.AppmeshMeshSpecServiceDiscovery,
 }
 ```
 
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshSpecEgressFilter {
 	Type: *string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshSpecServiceDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 &appmeshmesh.AppmeshMeshSpecServiceDiscovery {
 	IpPreference: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshSpecEgressFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.NewAppmeshMeshSpecEgressFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshMeshSpecEgressFilterOutputReference
 ```
@@ -1489,7 +1489,7 @@ func InternalValue() AppmeshMeshSpecEgressFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.NewAppmeshMeshSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshMeshSpecOutputReference
 ```
@@ -1822,7 +1822,7 @@ func InternalValue() AppmeshMeshSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appmeshMesh.AppmeshMeshSpecServiceDiscoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appmeshmesh"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appmeshmesh"
 
 appmeshmesh.NewAppmeshMeshSpecServiceDiscoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppmeshMeshSpecServiceDiscoveryOutputReference
 ```

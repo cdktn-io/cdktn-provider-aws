@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.NewAppconfigHostedConfigurationVersion(scope Construct, id *string, config AppconfigHostedConfigurationVersionConfig) AppconfigHostedConfigurationVersion
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appconfighostedconfigurationversion"
 
 appconfighostedconfigurationversion.AppconfigHostedConfigurationVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/appconfighostedconfigurationversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appconfighostedconfigurationversion"
 
 &appconfighostedconfigurationversion.AppconfigHostedConfigurationVersionConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.NewDbParameterGroup(scope Construct, id *string, config DbParameterGroupConfig) DbParameterGroup
 ```
@@ -454,7 +454,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.DbParameterGroup_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.DbParameterGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ dbparametergroup.DbParameterGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.DbParameterGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ dbparametergroup.DbParameterGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.DbParameterGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 &dbparametergroup.DbParameterGroupConfig {
 	Connection: interface{},
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroupParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 &dbparametergroup.DbParameterGroupParameter {
 	Name: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroupParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.NewDbParameterGroupParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbParameterGroupParameterList
 ```
@@ -1445,7 +1445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dbparametergroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbparametergroup"
 
 dbparametergroup.NewDbParameterGroupParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbParameterGroupParameterOutputReference
 ```

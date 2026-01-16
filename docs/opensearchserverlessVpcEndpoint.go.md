@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 opensearchserverlessvpcendpoint.NewOpensearchserverlessVpcEndpoint(scope Construct, id *string, config OpensearchserverlessVpcEndpointConfig) OpensearchserverlessVpcEndpoint
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpoint_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpoint_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 &opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpointConfig {
 	Connection: interface{},
@@ -859,7 +859,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcend
 	VpcId: *string,
 	Region: *string,
 	SecurityGroupIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpointTimeouts,
 }
 ```
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 &opensearchserverlessvpcendpoint.OpensearchserverlessVpcEndpointTimeouts {
 	Create: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessVpcEndpoint.OpensearchserverlessVpcEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/opensearchserverlessvpcendpoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlessvpcendpoint"
 
 opensearchserverlessvpcendpoint.NewOpensearchserverlessVpcEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchserverlessVpcEndpointTimeoutsOutputReference
 ```

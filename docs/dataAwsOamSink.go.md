@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOamSink.DataAwsOamSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoamsink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoamsink"
 
 dataawsoamsink.NewDataAwsOamSink(scope Construct, id *string, config DataAwsOamSinkConfig) DataAwsOamSink
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOamSink.DataAwsOamSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoamsink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOamSink.DataAwsOamSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoamsink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsoamsink.DataAwsOamSink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOamSink.DataAwsOamSink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoamsink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsoamsink.DataAwsOamSink_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOamSink.DataAwsOamSink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoamsink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoamsink"
 
 dataawsoamsink.DataAwsOamSink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOamSink.DataAwsOamSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/dataawsoamsink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoamsink"
 
 &dataawsoamsink.DataAwsOamSinkConfig {
 	Connection: interface{},
