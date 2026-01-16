@@ -27,13 +27,13 @@ jobs:
         with:
           ref: ${{ env.GIT_REF }}
           repository: ${{ env.GIT_REPO }}
-      - name: Auto-approve PRs by other users as team-tf-cdk
-        if: github.event.pull_request.user.login != 'team-tf-cdk' && (contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]')
+      - name: Auto-approve PRs by other users as team-cdk-terrain[bot]
+        if: github.event.pull_request.user.login != 'team-cdk-terrain[bot]' && (contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.pull_request.author_association) || github.actor == 'dependabot[bot]')
         env:
           GH_TOKEN: ${{ secrets.PROJEN_GITHUB_TOKEN }}
         run: gh pr review $PR_ID --approve
-      - name: Auto-approve PRs by team-tf-cdk as github-actions[bot]
-        if: github.event.pull_request.user.login == 'team-tf-cdk'
+      - name: Auto-approve PRs by team-cdk-terrain[bot] as github-actions[bot]
+        if: github.event.pull_request.user.login == 'team-cdk-terrain[bot]'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr review $PR_ID --approve
