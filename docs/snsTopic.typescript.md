@@ -1,28 +1,28 @@
-# `snsTopic` Submodule <a name="`snsTopic` Submodule" id="@cdktf/provider-aws.snsTopic"></a>
+# `snsTopic` Submodule <a name="`snsTopic` Submodule" id="@cdktn/provider-aws.snsTopic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SnsTopic <a name="SnsTopic" id="@cdktf/provider-aws.snsTopic.SnsTopic"></a>
+### SnsTopic <a name="SnsTopic" id="@cdktn/provider-aws.snsTopic.SnsTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic aws_sns_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic aws_sns_topic}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsTopic.SnsTopic.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.snsTopic.SnsTopic.Initializer"></a>
 
 ```typescript
-import { snsTopic } from '@cdktf/provider-aws'
+import { snsTopic } from '@cdktn/provider-aws'
 
 new snsTopic.SnsTopic(scope: Construct, id: string, config?: SnsTopicConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig">SnsTopicConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig">SnsTopicConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.snsTopic.SnsTopic.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.snsTopic.SnsTopic.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopic.SnsTopic.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopic.SnsTopic.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-aws.snsTopic.SnsTopic.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.snsTopic.SnsTopic.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig">SnsTopicConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig">SnsTopicConfig</a>
 
 ---
 
@@ -50,64 +50,64 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetApplicationFailureFeedbackRoleArn">resetApplicationFailureFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackRoleArn">resetApplicationSuccessFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackSampleRate">resetApplicationSuccessFeedbackSampleRate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetArchivePolicy">resetArchivePolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetContentBasedDeduplication">resetContentBasedDeduplication</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetDeliveryPolicy">resetDeliveryPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetDisplayName">resetDisplayName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetFifoThroughputScope">resetFifoThroughputScope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetFifoTopic">resetFifoTopic</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetFirehoseFailureFeedbackRoleArn">resetFirehoseFailureFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackRoleArn">resetFirehoseSuccessFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackSampleRate">resetFirehoseSuccessFeedbackSampleRate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetHttpFailureFeedbackRoleArn">resetHttpFailureFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackRoleArn">resetHttpSuccessFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackSampleRate">resetHttpSuccessFeedbackSampleRate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetKmsMasterKeyId">resetKmsMasterKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetLambdaFailureFeedbackRoleArn">resetLambdaFailureFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackRoleArn">resetLambdaSuccessFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackSampleRate">resetLambdaSuccessFeedbackSampleRate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetName">resetName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetNamePrefix">resetNamePrefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetPolicy">resetPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetSignatureVersion">resetSignatureVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetSqsFailureFeedbackRoleArn">resetSqsFailureFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackRoleArn">resetSqsSuccessFeedbackRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackSampleRate">resetSqsSuccessFeedbackSampleRate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetTagsAll">resetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.resetTracingConfig">resetTracingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetApplicationFailureFeedbackRoleArn">resetApplicationFailureFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackRoleArn">resetApplicationSuccessFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackSampleRate">resetApplicationSuccessFeedbackSampleRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetArchivePolicy">resetArchivePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetContentBasedDeduplication">resetContentBasedDeduplication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetDeliveryPolicy">resetDeliveryPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetDisplayName">resetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetFifoThroughputScope">resetFifoThroughputScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetFifoTopic">resetFifoTopic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetFirehoseFailureFeedbackRoleArn">resetFirehoseFailureFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackRoleArn">resetFirehoseSuccessFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackSampleRate">resetFirehoseSuccessFeedbackSampleRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetHttpFailureFeedbackRoleArn">resetHttpFailureFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackRoleArn">resetHttpSuccessFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackSampleRate">resetHttpSuccessFeedbackSampleRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetKmsMasterKeyId">resetKmsMasterKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetLambdaFailureFeedbackRoleArn">resetLambdaFailureFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackRoleArn">resetLambdaSuccessFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackSampleRate">resetLambdaSuccessFeedbackSampleRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetNamePrefix">resetNamePrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetPolicy">resetPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetSignatureVersion">resetSignatureVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetSqsFailureFeedbackRoleArn">resetSqsFailureFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackRoleArn">resetSqsSuccessFeedbackRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackSampleRate">resetSqsSuccessFeedbackSampleRate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.resetTracingConfig">resetTracingConfig</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.snsTopic.SnsTopic.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.snsTopic.SnsTopic.toString"></a>
 
 ```typescript
 public toString(): string
@@ -115,25 +115,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.snsTopic.SnsTopic.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.snsTopic.SnsTopic.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.snsTopic.SnsTopic.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.snsTopic.SnsTopic.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.snsTopic.SnsTopic.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.snsTopic.SnsTopic.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.snsTopic.SnsTopic.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.snsTopic.SnsTopic.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -141,7 +141,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.snsTopic.SnsTopic.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.snsTopic.SnsTopic.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -149,7 +149,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -157,19 +157,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.snsTopic.SnsTopic.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.snsTopic.SnsTopic.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.snsTopic.SnsTopic.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.snsTopic.SnsTopic.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.snsTopic.SnsTopic.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.snsTopic.SnsTopic.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -177,7 +177,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.snsTopic.SnsTopic.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.snsTopic.SnsTopic.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -185,7 +185,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.snsTopic.SnsTopic.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.snsTopic.SnsTopic.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -193,151 +193,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.snsTopic.SnsTopic.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.snsTopic.SnsTopic.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.snsTopic.SnsTopic.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.snsTopic.SnsTopic.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopic.SnsTopic.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopic.SnsTopic.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopic.SnsTopic.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopic.SnsTopic.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.snsTopic.SnsTopic.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.snsTopic.SnsTopic.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -347,7 +347,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -355,7 +355,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -363,7 +363,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -371,7 +371,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -379,7 +379,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -387,7 +387,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopic.SnsTopic.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopic.SnsTopic.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -395,187 +395,187 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetApplicationFailureFeedbackRoleArn` <a name="resetApplicationFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetApplicationFailureFeedbackRoleArn"></a>
+##### `resetApplicationFailureFeedbackRoleArn` <a name="resetApplicationFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetApplicationFailureFeedbackRoleArn"></a>
 
 ```typescript
 public resetApplicationFailureFeedbackRoleArn(): void
 ```
 
-##### `resetApplicationSuccessFeedbackRoleArn` <a name="resetApplicationSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackRoleArn"></a>
+##### `resetApplicationSuccessFeedbackRoleArn` <a name="resetApplicationSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public resetApplicationSuccessFeedbackRoleArn(): void
 ```
 
-##### `resetApplicationSuccessFeedbackSampleRate` <a name="resetApplicationSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackSampleRate"></a>
+##### `resetApplicationSuccessFeedbackSampleRate` <a name="resetApplicationSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetApplicationSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public resetApplicationSuccessFeedbackSampleRate(): void
 ```
 
-##### `resetArchivePolicy` <a name="resetArchivePolicy" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetArchivePolicy"></a>
+##### `resetArchivePolicy` <a name="resetArchivePolicy" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetArchivePolicy"></a>
 
 ```typescript
 public resetArchivePolicy(): void
 ```
 
-##### `resetContentBasedDeduplication` <a name="resetContentBasedDeduplication" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetContentBasedDeduplication"></a>
+##### `resetContentBasedDeduplication` <a name="resetContentBasedDeduplication" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetContentBasedDeduplication"></a>
 
 ```typescript
 public resetContentBasedDeduplication(): void
 ```
 
-##### `resetDeliveryPolicy` <a name="resetDeliveryPolicy" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetDeliveryPolicy"></a>
+##### `resetDeliveryPolicy` <a name="resetDeliveryPolicy" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetDeliveryPolicy"></a>
 
 ```typescript
 public resetDeliveryPolicy(): void
 ```
 
-##### `resetDisplayName` <a name="resetDisplayName" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetDisplayName"></a>
+##### `resetDisplayName` <a name="resetDisplayName" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetDisplayName"></a>
 
 ```typescript
 public resetDisplayName(): void
 ```
 
-##### `resetFifoThroughputScope` <a name="resetFifoThroughputScope" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetFifoThroughputScope"></a>
+##### `resetFifoThroughputScope` <a name="resetFifoThroughputScope" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetFifoThroughputScope"></a>
 
 ```typescript
 public resetFifoThroughputScope(): void
 ```
 
-##### `resetFifoTopic` <a name="resetFifoTopic" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetFifoTopic"></a>
+##### `resetFifoTopic` <a name="resetFifoTopic" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetFifoTopic"></a>
 
 ```typescript
 public resetFifoTopic(): void
 ```
 
-##### `resetFirehoseFailureFeedbackRoleArn` <a name="resetFirehoseFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetFirehoseFailureFeedbackRoleArn"></a>
+##### `resetFirehoseFailureFeedbackRoleArn` <a name="resetFirehoseFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetFirehoseFailureFeedbackRoleArn"></a>
 
 ```typescript
 public resetFirehoseFailureFeedbackRoleArn(): void
 ```
 
-##### `resetFirehoseSuccessFeedbackRoleArn` <a name="resetFirehoseSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackRoleArn"></a>
+##### `resetFirehoseSuccessFeedbackRoleArn` <a name="resetFirehoseSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public resetFirehoseSuccessFeedbackRoleArn(): void
 ```
 
-##### `resetFirehoseSuccessFeedbackSampleRate` <a name="resetFirehoseSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackSampleRate"></a>
+##### `resetFirehoseSuccessFeedbackSampleRate` <a name="resetFirehoseSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetFirehoseSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public resetFirehoseSuccessFeedbackSampleRate(): void
 ```
 
-##### `resetHttpFailureFeedbackRoleArn` <a name="resetHttpFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetHttpFailureFeedbackRoleArn"></a>
+##### `resetHttpFailureFeedbackRoleArn` <a name="resetHttpFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetHttpFailureFeedbackRoleArn"></a>
 
 ```typescript
 public resetHttpFailureFeedbackRoleArn(): void
 ```
 
-##### `resetHttpSuccessFeedbackRoleArn` <a name="resetHttpSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackRoleArn"></a>
+##### `resetHttpSuccessFeedbackRoleArn` <a name="resetHttpSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public resetHttpSuccessFeedbackRoleArn(): void
 ```
 
-##### `resetHttpSuccessFeedbackSampleRate` <a name="resetHttpSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackSampleRate"></a>
+##### `resetHttpSuccessFeedbackSampleRate` <a name="resetHttpSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetHttpSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public resetHttpSuccessFeedbackSampleRate(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetKmsMasterKeyId` <a name="resetKmsMasterKeyId" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetKmsMasterKeyId"></a>
+##### `resetKmsMasterKeyId` <a name="resetKmsMasterKeyId" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetKmsMasterKeyId"></a>
 
 ```typescript
 public resetKmsMasterKeyId(): void
 ```
 
-##### `resetLambdaFailureFeedbackRoleArn` <a name="resetLambdaFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetLambdaFailureFeedbackRoleArn"></a>
+##### `resetLambdaFailureFeedbackRoleArn` <a name="resetLambdaFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetLambdaFailureFeedbackRoleArn"></a>
 
 ```typescript
 public resetLambdaFailureFeedbackRoleArn(): void
 ```
 
-##### `resetLambdaSuccessFeedbackRoleArn` <a name="resetLambdaSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackRoleArn"></a>
+##### `resetLambdaSuccessFeedbackRoleArn` <a name="resetLambdaSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public resetLambdaSuccessFeedbackRoleArn(): void
 ```
 
-##### `resetLambdaSuccessFeedbackSampleRate` <a name="resetLambdaSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackSampleRate"></a>
+##### `resetLambdaSuccessFeedbackSampleRate` <a name="resetLambdaSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetLambdaSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public resetLambdaSuccessFeedbackSampleRate(): void
 ```
 
-##### `resetName` <a name="resetName" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetName"></a>
+##### `resetName` <a name="resetName" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetName"></a>
 
 ```typescript
 public resetName(): void
 ```
 
-##### `resetNamePrefix` <a name="resetNamePrefix" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetNamePrefix"></a>
+##### `resetNamePrefix` <a name="resetNamePrefix" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetNamePrefix"></a>
 
 ```typescript
 public resetNamePrefix(): void
 ```
 
-##### `resetPolicy` <a name="resetPolicy" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetPolicy"></a>
+##### `resetPolicy` <a name="resetPolicy" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetPolicy"></a>
 
 ```typescript
 public resetPolicy(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetSignatureVersion` <a name="resetSignatureVersion" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetSignatureVersion"></a>
+##### `resetSignatureVersion` <a name="resetSignatureVersion" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetSignatureVersion"></a>
 
 ```typescript
 public resetSignatureVersion(): void
 ```
 
-##### `resetSqsFailureFeedbackRoleArn` <a name="resetSqsFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetSqsFailureFeedbackRoleArn"></a>
+##### `resetSqsFailureFeedbackRoleArn` <a name="resetSqsFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetSqsFailureFeedbackRoleArn"></a>
 
 ```typescript
 public resetSqsFailureFeedbackRoleArn(): void
 ```
 
-##### `resetSqsSuccessFeedbackRoleArn` <a name="resetSqsSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackRoleArn"></a>
+##### `resetSqsSuccessFeedbackRoleArn` <a name="resetSqsSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public resetSqsSuccessFeedbackRoleArn(): void
 ```
 
-##### `resetSqsSuccessFeedbackSampleRate` <a name="resetSqsSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackSampleRate"></a>
+##### `resetSqsSuccessFeedbackSampleRate` <a name="resetSqsSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetSqsSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public resetSqsSuccessFeedbackSampleRate(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
 ```
 
-##### `resetTracingConfig` <a name="resetTracingConfig" id="@cdktf/provider-aws.snsTopic.SnsTopic.resetTracingConfig"></a>
+##### `resetTracingConfig` <a name="resetTracingConfig" id="@cdktn/provider-aws.snsTopic.SnsTopic.resetTracingConfig"></a>
 
 ```typescript
 public resetTracingConfig(): void
@@ -585,17 +585,17 @@ public resetTracingConfig(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SnsTopic resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SnsTopic resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.snsTopic.SnsTopic.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.snsTopic.SnsTopic.isConstruct"></a>
 
 ```typescript
-import { snsTopic } from '@cdktf/provider-aws'
+import { snsTopic } from '@cdktn/provider-aws'
 
 snsTopic.SnsTopic.isConstruct(x: any)
 ```
@@ -616,7 +616,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.snsTopic.SnsTopic.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.snsTopic.SnsTopic.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -624,45 +624,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.snsTopic.SnsTopic.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformElement"></a>
 
 ```typescript
-import { snsTopic } from '@cdktf/provider-aws'
+import { snsTopic } from '@cdktn/provider-aws'
 
 snsTopic.SnsTopic.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.snsTopic.SnsTopic.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.snsTopic.SnsTopic.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformResource"></a>
 
 ```typescript
-import { snsTopic } from '@cdktf/provider-aws'
+import { snsTopic } from '@cdktn/provider-aws'
 
 snsTopic.SnsTopic.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.snsTopic.SnsTopic.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.snsTopic.SnsTopic.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.snsTopic.SnsTopic.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport"></a>
 
 ```typescript
-import { snsTopic } from '@cdktf/provider-aws'
+import { snsTopic } from '@cdktn/provider-aws'
 
 snsTopic.SnsTopic.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a SnsTopic resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -670,7 +670,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -678,17 +678,17 @@ The construct id used in the generated config for the SnsTopic to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing SnsTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopic.SnsTopic.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -700,89 +700,89 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.beginningArchiveTime">beginningArchiveTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.owner">owner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArnInput">applicationFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArnInput">applicationSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRateInput">applicationSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.archivePolicyInput">archivePolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplicationInput">contentBasedDeduplicationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.deliveryPolicyInput">deliveryPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScopeInput">fifoThroughputScopeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoTopicInput">fifoTopicInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArnInput">firehoseFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArnInput">firehoseSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRateInput">firehoseSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArnInput">httpFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArnInput">httpSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRateInput">httpSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyIdInput">kmsMasterKeyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArnInput">lambdaFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArnInput">lambdaSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRateInput">lambdaSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.namePrefixInput">namePrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.signatureVersionInput">signatureVersionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArnInput">sqsFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArnInput">sqsSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRateInput">sqsSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tracingConfigInput">tracingConfigInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArn">applicationFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArn">applicationSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRate">applicationSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.archivePolicy">archivePolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplication">contentBasedDeduplication</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.deliveryPolicy">deliveryPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScope">fifoThroughputScope</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoTopic">fifoTopic</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArn">firehoseFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArn">firehoseSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRate">firehoseSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArn">httpFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArn">httpSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRate">httpSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyId">kmsMasterKeyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArn">lambdaFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArn">lambdaSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRate">lambdaSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.namePrefix">namePrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.policy">policy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.signatureVersion">signatureVersion</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArn">sqsFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArn">sqsSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRate">sqsSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tracingConfig">tracingConfig</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.beginningArchiveTime">beginningArchiveTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArnInput">applicationFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArnInput">applicationSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRateInput">applicationSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.archivePolicyInput">archivePolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplicationInput">contentBasedDeduplicationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.deliveryPolicyInput">deliveryPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScopeInput">fifoThroughputScopeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoTopicInput">fifoTopicInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArnInput">firehoseFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArnInput">firehoseSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRateInput">firehoseSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArnInput">httpFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArnInput">httpSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRateInput">httpSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyIdInput">kmsMasterKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArnInput">lambdaFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArnInput">lambdaSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRateInput">lambdaSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.namePrefixInput">namePrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.signatureVersionInput">signatureVersionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArnInput">sqsFailureFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArnInput">sqsSuccessFeedbackRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRateInput">sqsSuccessFeedbackSampleRateInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tracingConfigInput">tracingConfigInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArn">applicationFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArn">applicationSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRate">applicationSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.archivePolicy">archivePolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplication">contentBasedDeduplication</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.deliveryPolicy">deliveryPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScope">fifoThroughputScope</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoTopic">fifoTopic</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArn">firehoseFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArn">firehoseSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRate">firehoseSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArn">httpFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArn">httpSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRate">httpSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyId">kmsMasterKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArn">lambdaFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArn">lambdaSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRate">lambdaSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.namePrefix">namePrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.policy">policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.signatureVersion">signatureVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArn">sqsFailureFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArn">sqsSuccessFeedbackRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRate">sqsSuccessFeedbackSampleRate</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tracingConfig">tracingConfig</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -794,7 +794,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -804,7 +804,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -814,7 +814,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -824,7 +824,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -834,7 +834,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -844,7 +844,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -854,7 +854,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -864,7 +864,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -874,7 +874,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -884,7 +884,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -894,7 +894,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -904,7 +904,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -914,7 +914,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -924,7 +924,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -934,7 +934,7 @@ public readonly arn: string;
 
 ---
 
-##### `beginningArchiveTime`<sup>Required</sup> <a name="beginningArchiveTime" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.beginningArchiveTime"></a>
+##### `beginningArchiveTime`<sup>Required</sup> <a name="beginningArchiveTime" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.beginningArchiveTime"></a>
 
 ```typescript
 public readonly beginningArchiveTime: string;
@@ -944,7 +944,7 @@ public readonly beginningArchiveTime: string;
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -954,7 +954,7 @@ public readonly owner: string;
 
 ---
 
-##### `applicationFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="applicationFailureFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArnInput"></a>
+##### `applicationFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="applicationFailureFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly applicationFailureFeedbackRoleArnInput: string;
@@ -964,7 +964,7 @@ public readonly applicationFailureFeedbackRoleArnInput: string;
 
 ---
 
-##### `applicationSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="applicationSuccessFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArnInput"></a>
+##### `applicationSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="applicationSuccessFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly applicationSuccessFeedbackRoleArnInput: string;
@@ -974,7 +974,7 @@ public readonly applicationSuccessFeedbackRoleArnInput: string;
 
 ---
 
-##### `applicationSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="applicationSuccessFeedbackSampleRateInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRateInput"></a>
+##### `applicationSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="applicationSuccessFeedbackSampleRateInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRateInput"></a>
 
 ```typescript
 public readonly applicationSuccessFeedbackSampleRateInput: number;
@@ -984,7 +984,7 @@ public readonly applicationSuccessFeedbackSampleRateInput: number;
 
 ---
 
-##### `archivePolicyInput`<sup>Optional</sup> <a name="archivePolicyInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.archivePolicyInput"></a>
+##### `archivePolicyInput`<sup>Optional</sup> <a name="archivePolicyInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.archivePolicyInput"></a>
 
 ```typescript
 public readonly archivePolicyInput: string;
@@ -994,7 +994,7 @@ public readonly archivePolicyInput: string;
 
 ---
 
-##### `contentBasedDeduplicationInput`<sup>Optional</sup> <a name="contentBasedDeduplicationInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplicationInput"></a>
+##### `contentBasedDeduplicationInput`<sup>Optional</sup> <a name="contentBasedDeduplicationInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplicationInput"></a>
 
 ```typescript
 public readonly contentBasedDeduplicationInput: boolean | IResolvable;
@@ -1004,7 +1004,7 @@ public readonly contentBasedDeduplicationInput: boolean | IResolvable;
 
 ---
 
-##### `deliveryPolicyInput`<sup>Optional</sup> <a name="deliveryPolicyInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.deliveryPolicyInput"></a>
+##### `deliveryPolicyInput`<sup>Optional</sup> <a name="deliveryPolicyInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.deliveryPolicyInput"></a>
 
 ```typescript
 public readonly deliveryPolicyInput: string;
@@ -1014,7 +1014,7 @@ public readonly deliveryPolicyInput: string;
 
 ---
 
-##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.displayNameInput"></a>
+##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.displayNameInput"></a>
 
 ```typescript
 public readonly displayNameInput: string;
@@ -1024,7 +1024,7 @@ public readonly displayNameInput: string;
 
 ---
 
-##### `fifoThroughputScopeInput`<sup>Optional</sup> <a name="fifoThroughputScopeInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScopeInput"></a>
+##### `fifoThroughputScopeInput`<sup>Optional</sup> <a name="fifoThroughputScopeInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScopeInput"></a>
 
 ```typescript
 public readonly fifoThroughputScopeInput: string;
@@ -1034,7 +1034,7 @@ public readonly fifoThroughputScopeInput: string;
 
 ---
 
-##### `fifoTopicInput`<sup>Optional</sup> <a name="fifoTopicInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoTopicInput"></a>
+##### `fifoTopicInput`<sup>Optional</sup> <a name="fifoTopicInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoTopicInput"></a>
 
 ```typescript
 public readonly fifoTopicInput: boolean | IResolvable;
@@ -1044,7 +1044,7 @@ public readonly fifoTopicInput: boolean | IResolvable;
 
 ---
 
-##### `firehoseFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="firehoseFailureFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArnInput"></a>
+##### `firehoseFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="firehoseFailureFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly firehoseFailureFeedbackRoleArnInput: string;
@@ -1054,7 +1054,7 @@ public readonly firehoseFailureFeedbackRoleArnInput: string;
 
 ---
 
-##### `firehoseSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="firehoseSuccessFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArnInput"></a>
+##### `firehoseSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="firehoseSuccessFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly firehoseSuccessFeedbackRoleArnInput: string;
@@ -1064,7 +1064,7 @@ public readonly firehoseSuccessFeedbackRoleArnInput: string;
 
 ---
 
-##### `firehoseSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="firehoseSuccessFeedbackSampleRateInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRateInput"></a>
+##### `firehoseSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="firehoseSuccessFeedbackSampleRateInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRateInput"></a>
 
 ```typescript
 public readonly firehoseSuccessFeedbackSampleRateInput: number;
@@ -1074,7 +1074,7 @@ public readonly firehoseSuccessFeedbackSampleRateInput: number;
 
 ---
 
-##### `httpFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="httpFailureFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArnInput"></a>
+##### `httpFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="httpFailureFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly httpFailureFeedbackRoleArnInput: string;
@@ -1084,7 +1084,7 @@ public readonly httpFailureFeedbackRoleArnInput: string;
 
 ---
 
-##### `httpSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="httpSuccessFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArnInput"></a>
+##### `httpSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="httpSuccessFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly httpSuccessFeedbackRoleArnInput: string;
@@ -1094,7 +1094,7 @@ public readonly httpSuccessFeedbackRoleArnInput: string;
 
 ---
 
-##### `httpSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="httpSuccessFeedbackSampleRateInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRateInput"></a>
+##### `httpSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="httpSuccessFeedbackSampleRateInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRateInput"></a>
 
 ```typescript
 public readonly httpSuccessFeedbackSampleRateInput: number;
@@ -1104,7 +1104,7 @@ public readonly httpSuccessFeedbackSampleRateInput: number;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -1114,7 +1114,7 @@ public readonly idInput: string;
 
 ---
 
-##### `kmsMasterKeyIdInput`<sup>Optional</sup> <a name="kmsMasterKeyIdInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyIdInput"></a>
+##### `kmsMasterKeyIdInput`<sup>Optional</sup> <a name="kmsMasterKeyIdInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyIdInput"></a>
 
 ```typescript
 public readonly kmsMasterKeyIdInput: string;
@@ -1124,7 +1124,7 @@ public readonly kmsMasterKeyIdInput: string;
 
 ---
 
-##### `lambdaFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="lambdaFailureFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArnInput"></a>
+##### `lambdaFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="lambdaFailureFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly lambdaFailureFeedbackRoleArnInput: string;
@@ -1134,7 +1134,7 @@ public readonly lambdaFailureFeedbackRoleArnInput: string;
 
 ---
 
-##### `lambdaSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="lambdaSuccessFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArnInput"></a>
+##### `lambdaSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="lambdaSuccessFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly lambdaSuccessFeedbackRoleArnInput: string;
@@ -1144,7 +1144,7 @@ public readonly lambdaSuccessFeedbackRoleArnInput: string;
 
 ---
 
-##### `lambdaSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="lambdaSuccessFeedbackSampleRateInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRateInput"></a>
+##### `lambdaSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="lambdaSuccessFeedbackSampleRateInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRateInput"></a>
 
 ```typescript
 public readonly lambdaSuccessFeedbackSampleRateInput: number;
@@ -1154,7 +1154,7 @@ public readonly lambdaSuccessFeedbackSampleRateInput: number;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -1164,7 +1164,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `namePrefixInput`<sup>Optional</sup> <a name="namePrefixInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.namePrefixInput"></a>
+##### `namePrefixInput`<sup>Optional</sup> <a name="namePrefixInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.namePrefixInput"></a>
 
 ```typescript
 public readonly namePrefixInput: string;
@@ -1174,7 +1174,7 @@ public readonly namePrefixInput: string;
 
 ---
 
-##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.policyInput"></a>
+##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.policyInput"></a>
 
 ```typescript
 public readonly policyInput: string;
@@ -1184,7 +1184,7 @@ public readonly policyInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -1194,7 +1194,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `signatureVersionInput`<sup>Optional</sup> <a name="signatureVersionInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.signatureVersionInput"></a>
+##### `signatureVersionInput`<sup>Optional</sup> <a name="signatureVersionInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.signatureVersionInput"></a>
 
 ```typescript
 public readonly signatureVersionInput: number;
@@ -1204,7 +1204,7 @@ public readonly signatureVersionInput: number;
 
 ---
 
-##### `sqsFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="sqsFailureFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArnInput"></a>
+##### `sqsFailureFeedbackRoleArnInput`<sup>Optional</sup> <a name="sqsFailureFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly sqsFailureFeedbackRoleArnInput: string;
@@ -1214,7 +1214,7 @@ public readonly sqsFailureFeedbackRoleArnInput: string;
 
 ---
 
-##### `sqsSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="sqsSuccessFeedbackRoleArnInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArnInput"></a>
+##### `sqsSuccessFeedbackRoleArnInput`<sup>Optional</sup> <a name="sqsSuccessFeedbackRoleArnInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArnInput"></a>
 
 ```typescript
 public readonly sqsSuccessFeedbackRoleArnInput: string;
@@ -1224,7 +1224,7 @@ public readonly sqsSuccessFeedbackRoleArnInput: string;
 
 ---
 
-##### `sqsSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="sqsSuccessFeedbackSampleRateInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRateInput"></a>
+##### `sqsSuccessFeedbackSampleRateInput`<sup>Optional</sup> <a name="sqsSuccessFeedbackSampleRateInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRateInput"></a>
 
 ```typescript
 public readonly sqsSuccessFeedbackSampleRateInput: number;
@@ -1234,7 +1234,7 @@ public readonly sqsSuccessFeedbackSampleRateInput: number;
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -1244,7 +1244,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -1254,7 +1254,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `tracingConfigInput`<sup>Optional</sup> <a name="tracingConfigInput" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tracingConfigInput"></a>
+##### `tracingConfigInput`<sup>Optional</sup> <a name="tracingConfigInput" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tracingConfigInput"></a>
 
 ```typescript
 public readonly tracingConfigInput: string;
@@ -1264,7 +1264,7 @@ public readonly tracingConfigInput: string;
 
 ---
 
-##### `applicationFailureFeedbackRoleArn`<sup>Required</sup> <a name="applicationFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArn"></a>
+##### `applicationFailureFeedbackRoleArn`<sup>Required</sup> <a name="applicationFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly applicationFailureFeedbackRoleArn: string;
@@ -1274,7 +1274,7 @@ public readonly applicationFailureFeedbackRoleArn: string;
 
 ---
 
-##### `applicationSuccessFeedbackRoleArn`<sup>Required</sup> <a name="applicationSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArn"></a>
+##### `applicationSuccessFeedbackRoleArn`<sup>Required</sup> <a name="applicationSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly applicationSuccessFeedbackRoleArn: string;
@@ -1284,7 +1284,7 @@ public readonly applicationSuccessFeedbackRoleArn: string;
 
 ---
 
-##### `applicationSuccessFeedbackSampleRate`<sup>Required</sup> <a name="applicationSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRate"></a>
+##### `applicationSuccessFeedbackSampleRate`<sup>Required</sup> <a name="applicationSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.applicationSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly applicationSuccessFeedbackSampleRate: number;
@@ -1294,7 +1294,7 @@ public readonly applicationSuccessFeedbackSampleRate: number;
 
 ---
 
-##### `archivePolicy`<sup>Required</sup> <a name="archivePolicy" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.archivePolicy"></a>
+##### `archivePolicy`<sup>Required</sup> <a name="archivePolicy" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.archivePolicy"></a>
 
 ```typescript
 public readonly archivePolicy: string;
@@ -1304,7 +1304,7 @@ public readonly archivePolicy: string;
 
 ---
 
-##### `contentBasedDeduplication`<sup>Required</sup> <a name="contentBasedDeduplication" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplication"></a>
+##### `contentBasedDeduplication`<sup>Required</sup> <a name="contentBasedDeduplication" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.contentBasedDeduplication"></a>
 
 ```typescript
 public readonly contentBasedDeduplication: boolean | IResolvable;
@@ -1314,7 +1314,7 @@ public readonly contentBasedDeduplication: boolean | IResolvable;
 
 ---
 
-##### `deliveryPolicy`<sup>Required</sup> <a name="deliveryPolicy" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.deliveryPolicy"></a>
+##### `deliveryPolicy`<sup>Required</sup> <a name="deliveryPolicy" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.deliveryPolicy"></a>
 
 ```typescript
 public readonly deliveryPolicy: string;
@@ -1324,7 +1324,7 @@ public readonly deliveryPolicy: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -1334,7 +1334,7 @@ public readonly displayName: string;
 
 ---
 
-##### `fifoThroughputScope`<sup>Required</sup> <a name="fifoThroughputScope" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScope"></a>
+##### `fifoThroughputScope`<sup>Required</sup> <a name="fifoThroughputScope" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoThroughputScope"></a>
 
 ```typescript
 public readonly fifoThroughputScope: string;
@@ -1344,7 +1344,7 @@ public readonly fifoThroughputScope: string;
 
 ---
 
-##### `fifoTopic`<sup>Required</sup> <a name="fifoTopic" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.fifoTopic"></a>
+##### `fifoTopic`<sup>Required</sup> <a name="fifoTopic" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.fifoTopic"></a>
 
 ```typescript
 public readonly fifoTopic: boolean | IResolvable;
@@ -1354,7 +1354,7 @@ public readonly fifoTopic: boolean | IResolvable;
 
 ---
 
-##### `firehoseFailureFeedbackRoleArn`<sup>Required</sup> <a name="firehoseFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArn"></a>
+##### `firehoseFailureFeedbackRoleArn`<sup>Required</sup> <a name="firehoseFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly firehoseFailureFeedbackRoleArn: string;
@@ -1364,7 +1364,7 @@ public readonly firehoseFailureFeedbackRoleArn: string;
 
 ---
 
-##### `firehoseSuccessFeedbackRoleArn`<sup>Required</sup> <a name="firehoseSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArn"></a>
+##### `firehoseSuccessFeedbackRoleArn`<sup>Required</sup> <a name="firehoseSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly firehoseSuccessFeedbackRoleArn: string;
@@ -1374,7 +1374,7 @@ public readonly firehoseSuccessFeedbackRoleArn: string;
 
 ---
 
-##### `firehoseSuccessFeedbackSampleRate`<sup>Required</sup> <a name="firehoseSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRate"></a>
+##### `firehoseSuccessFeedbackSampleRate`<sup>Required</sup> <a name="firehoseSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.firehoseSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly firehoseSuccessFeedbackSampleRate: number;
@@ -1384,7 +1384,7 @@ public readonly firehoseSuccessFeedbackSampleRate: number;
 
 ---
 
-##### `httpFailureFeedbackRoleArn`<sup>Required</sup> <a name="httpFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArn"></a>
+##### `httpFailureFeedbackRoleArn`<sup>Required</sup> <a name="httpFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.httpFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly httpFailureFeedbackRoleArn: string;
@@ -1394,7 +1394,7 @@ public readonly httpFailureFeedbackRoleArn: string;
 
 ---
 
-##### `httpSuccessFeedbackRoleArn`<sup>Required</sup> <a name="httpSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArn"></a>
+##### `httpSuccessFeedbackRoleArn`<sup>Required</sup> <a name="httpSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly httpSuccessFeedbackRoleArn: string;
@@ -1404,7 +1404,7 @@ public readonly httpSuccessFeedbackRoleArn: string;
 
 ---
 
-##### `httpSuccessFeedbackSampleRate`<sup>Required</sup> <a name="httpSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRate"></a>
+##### `httpSuccessFeedbackSampleRate`<sup>Required</sup> <a name="httpSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.httpSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly httpSuccessFeedbackSampleRate: number;
@@ -1414,7 +1414,7 @@ public readonly httpSuccessFeedbackSampleRate: number;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1424,7 +1424,7 @@ public readonly id: string;
 
 ---
 
-##### `kmsMasterKeyId`<sup>Required</sup> <a name="kmsMasterKeyId" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyId"></a>
+##### `kmsMasterKeyId`<sup>Required</sup> <a name="kmsMasterKeyId" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.kmsMasterKeyId"></a>
 
 ```typescript
 public readonly kmsMasterKeyId: string;
@@ -1434,7 +1434,7 @@ public readonly kmsMasterKeyId: string;
 
 ---
 
-##### `lambdaFailureFeedbackRoleArn`<sup>Required</sup> <a name="lambdaFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArn"></a>
+##### `lambdaFailureFeedbackRoleArn`<sup>Required</sup> <a name="lambdaFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly lambdaFailureFeedbackRoleArn: string;
@@ -1444,7 +1444,7 @@ public readonly lambdaFailureFeedbackRoleArn: string;
 
 ---
 
-##### `lambdaSuccessFeedbackRoleArn`<sup>Required</sup> <a name="lambdaSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArn"></a>
+##### `lambdaSuccessFeedbackRoleArn`<sup>Required</sup> <a name="lambdaSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly lambdaSuccessFeedbackRoleArn: string;
@@ -1454,7 +1454,7 @@ public readonly lambdaSuccessFeedbackRoleArn: string;
 
 ---
 
-##### `lambdaSuccessFeedbackSampleRate`<sup>Required</sup> <a name="lambdaSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRate"></a>
+##### `lambdaSuccessFeedbackSampleRate`<sup>Required</sup> <a name="lambdaSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.lambdaSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly lambdaSuccessFeedbackSampleRate: number;
@@ -1464,7 +1464,7 @@ public readonly lambdaSuccessFeedbackSampleRate: number;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1474,7 +1474,7 @@ public readonly name: string;
 
 ---
 
-##### `namePrefix`<sup>Required</sup> <a name="namePrefix" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.namePrefix"></a>
+##### `namePrefix`<sup>Required</sup> <a name="namePrefix" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.namePrefix"></a>
 
 ```typescript
 public readonly namePrefix: string;
@@ -1484,7 +1484,7 @@ public readonly namePrefix: string;
 
 ---
 
-##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.policy"></a>
+##### `policy`<sup>Required</sup> <a name="policy" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.policy"></a>
 
 ```typescript
 public readonly policy: string;
@@ -1494,7 +1494,7 @@ public readonly policy: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1504,7 +1504,7 @@ public readonly region: string;
 
 ---
 
-##### `signatureVersion`<sup>Required</sup> <a name="signatureVersion" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.signatureVersion"></a>
+##### `signatureVersion`<sup>Required</sup> <a name="signatureVersion" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.signatureVersion"></a>
 
 ```typescript
 public readonly signatureVersion: number;
@@ -1514,7 +1514,7 @@ public readonly signatureVersion: number;
 
 ---
 
-##### `sqsFailureFeedbackRoleArn`<sup>Required</sup> <a name="sqsFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArn"></a>
+##### `sqsFailureFeedbackRoleArn`<sup>Required</sup> <a name="sqsFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly sqsFailureFeedbackRoleArn: string;
@@ -1524,7 +1524,7 @@ public readonly sqsFailureFeedbackRoleArn: string;
 
 ---
 
-##### `sqsSuccessFeedbackRoleArn`<sup>Required</sup> <a name="sqsSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArn"></a>
+##### `sqsSuccessFeedbackRoleArn`<sup>Required</sup> <a name="sqsSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly sqsSuccessFeedbackRoleArn: string;
@@ -1534,7 +1534,7 @@ public readonly sqsSuccessFeedbackRoleArn: string;
 
 ---
 
-##### `sqsSuccessFeedbackSampleRate`<sup>Required</sup> <a name="sqsSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRate"></a>
+##### `sqsSuccessFeedbackSampleRate`<sup>Required</sup> <a name="sqsSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.sqsSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly sqsSuccessFeedbackSampleRate: number;
@@ -1544,7 +1544,7 @@ public readonly sqsSuccessFeedbackSampleRate: number;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1554,7 +1554,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1564,7 +1564,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 ---
 
-##### `tracingConfig`<sup>Required</sup> <a name="tracingConfig" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tracingConfig"></a>
+##### `tracingConfig`<sup>Required</sup> <a name="tracingConfig" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tracingConfig"></a>
 
 ```typescript
 public readonly tracingConfig: string;
@@ -1578,11 +1578,11 @@ public readonly tracingConfig: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopic.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopic.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.snsTopic.SnsTopic.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.snsTopic.SnsTopic.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1594,12 +1594,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SnsTopicConfig <a name="SnsTopicConfig" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig"></a>
+### SnsTopicConfig <a name="SnsTopicConfig" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.Initializer"></a>
 
 ```typescript
-import { snsTopic } from '@cdktf/provider-aws'
+import { snsTopic } from '@cdktn/provider-aws'
 
 const snsTopicConfig: snsTopic.SnsTopicConfig = { ... }
 ```
@@ -1608,48 +1608,48 @@ const snsTopicConfig: snsTopic.SnsTopicConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.applicationFailureFeedbackRoleArn">applicationFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#application_failure_feedback_role_arn SnsTopic#application_failure_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackRoleArn">applicationSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#application_success_feedback_role_arn SnsTopic#application_success_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackSampleRate">applicationSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#application_success_feedback_sample_rate SnsTopic#application_success_feedback_sample_rate}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.archivePolicy">archivePolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#archive_policy SnsTopic#archive_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.contentBasedDeduplication">contentBasedDeduplication</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#content_based_deduplication SnsTopic#content_based_deduplication}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.deliveryPolicy">deliveryPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#delivery_policy SnsTopic#delivery_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#display_name SnsTopic#display_name}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.fifoThroughputScope">fifoThroughputScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#fifo_throughput_scope SnsTopic#fifo_throughput_scope}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.fifoTopic">fifoTopic</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#fifo_topic SnsTopic#fifo_topic}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.firehoseFailureFeedbackRoleArn">firehoseFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackRoleArn">firehoseSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#firehose_success_feedback_role_arn SnsTopic#firehose_success_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackSampleRate">firehoseSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#firehose_success_feedback_sample_rate SnsTopic#firehose_success_feedback_sample_rate}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.httpFailureFeedbackRoleArn">httpFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#http_failure_feedback_role_arn SnsTopic#http_failure_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackRoleArn">httpSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#http_success_feedback_role_arn SnsTopic#http_success_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackSampleRate">httpSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#http_success_feedback_sample_rate SnsTopic#http_success_feedback_sample_rate}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#id SnsTopic#id}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.kmsMasterKeyId">kmsMasterKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#kms_master_key_id SnsTopic#kms_master_key_id}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lambdaFailureFeedbackRoleArn">lambdaFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#lambda_failure_feedback_role_arn SnsTopic#lambda_failure_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackRoleArn">lambdaSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#lambda_success_feedback_role_arn SnsTopic#lambda_success_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackSampleRate">lambdaSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#lambda_success_feedback_sample_rate SnsTopic#lambda_success_feedback_sample_rate}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#name SnsTopic#name}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#name_prefix SnsTopic#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#policy SnsTopic#policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.signatureVersion">signatureVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#signature_version SnsTopic#signature_version}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.sqsFailureFeedbackRoleArn">sqsFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#sqs_failure_feedback_role_arn SnsTopic#sqs_failure_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackRoleArn">sqsSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#sqs_success_feedback_role_arn SnsTopic#sqs_success_feedback_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackSampleRate">sqsSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#sqs_success_feedback_sample_rate SnsTopic#sqs_success_feedback_sample_rate}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#tags SnsTopic#tags}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#tags_all SnsTopic#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.tracingConfig">tracingConfig</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#tracing_config SnsTopic#tracing_config}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.applicationFailureFeedbackRoleArn">applicationFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#application_failure_feedback_role_arn SnsTopic#application_failure_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackRoleArn">applicationSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#application_success_feedback_role_arn SnsTopic#application_success_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackSampleRate">applicationSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#application_success_feedback_sample_rate SnsTopic#application_success_feedback_sample_rate}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.archivePolicy">archivePolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#archive_policy SnsTopic#archive_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.contentBasedDeduplication">contentBasedDeduplication</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#content_based_deduplication SnsTopic#content_based_deduplication}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.deliveryPolicy">deliveryPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#delivery_policy SnsTopic#delivery_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#display_name SnsTopic#display_name}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.fifoThroughputScope">fifoThroughputScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#fifo_throughput_scope SnsTopic#fifo_throughput_scope}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.fifoTopic">fifoTopic</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#fifo_topic SnsTopic#fifo_topic}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.firehoseFailureFeedbackRoleArn">firehoseFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackRoleArn">firehoseSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#firehose_success_feedback_role_arn SnsTopic#firehose_success_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackSampleRate">firehoseSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#firehose_success_feedback_sample_rate SnsTopic#firehose_success_feedback_sample_rate}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.httpFailureFeedbackRoleArn">httpFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#http_failure_feedback_role_arn SnsTopic#http_failure_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackRoleArn">httpSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#http_success_feedback_role_arn SnsTopic#http_success_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackSampleRate">httpSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#http_success_feedback_sample_rate SnsTopic#http_success_feedback_sample_rate}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#id SnsTopic#id}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.kmsMasterKeyId">kmsMasterKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#kms_master_key_id SnsTopic#kms_master_key_id}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lambdaFailureFeedbackRoleArn">lambdaFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#lambda_failure_feedback_role_arn SnsTopic#lambda_failure_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackRoleArn">lambdaSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#lambda_success_feedback_role_arn SnsTopic#lambda_success_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackSampleRate">lambdaSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#lambda_success_feedback_sample_rate SnsTopic#lambda_success_feedback_sample_rate}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#name SnsTopic#name}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.namePrefix">namePrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#name_prefix SnsTopic#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#policy SnsTopic#policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.signatureVersion">signatureVersion</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#signature_version SnsTopic#signature_version}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.sqsFailureFeedbackRoleArn">sqsFailureFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#sqs_failure_feedback_role_arn SnsTopic#sqs_failure_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackRoleArn">sqsSuccessFeedbackRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#sqs_success_feedback_role_arn SnsTopic#sqs_success_feedback_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackSampleRate">sqsSuccessFeedbackSampleRate</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#sqs_success_feedback_sample_rate SnsTopic#sqs_success_feedback_sample_rate}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#tags SnsTopic#tags}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#tags_all SnsTopic#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.tracingConfig">tracingConfig</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#tracing_config SnsTopic#tracing_config}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1659,7 +1659,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1669,7 +1669,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1679,7 +1679,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1689,7 +1689,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1699,7 +1699,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1709,7 +1709,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1719,7 +1719,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `applicationFailureFeedbackRoleArn`<sup>Optional</sup> <a name="applicationFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.applicationFailureFeedbackRoleArn"></a>
+##### `applicationFailureFeedbackRoleArn`<sup>Optional</sup> <a name="applicationFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.applicationFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly applicationFailureFeedbackRoleArn: string;
@@ -1727,11 +1727,11 @@ public readonly applicationFailureFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#application_failure_feedback_role_arn SnsTopic#application_failure_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#application_failure_feedback_role_arn SnsTopic#application_failure_feedback_role_arn}.
 
 ---
 
-##### `applicationSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="applicationSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackRoleArn"></a>
+##### `applicationSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="applicationSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly applicationSuccessFeedbackRoleArn: string;
@@ -1739,11 +1739,11 @@ public readonly applicationSuccessFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#application_success_feedback_role_arn SnsTopic#application_success_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#application_success_feedback_role_arn SnsTopic#application_success_feedback_role_arn}.
 
 ---
 
-##### `applicationSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="applicationSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackSampleRate"></a>
+##### `applicationSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="applicationSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.applicationSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly applicationSuccessFeedbackSampleRate: number;
@@ -1751,11 +1751,11 @@ public readonly applicationSuccessFeedbackSampleRate: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#application_success_feedback_sample_rate SnsTopic#application_success_feedback_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#application_success_feedback_sample_rate SnsTopic#application_success_feedback_sample_rate}.
 
 ---
 
-##### `archivePolicy`<sup>Optional</sup> <a name="archivePolicy" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.archivePolicy"></a>
+##### `archivePolicy`<sup>Optional</sup> <a name="archivePolicy" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.archivePolicy"></a>
 
 ```typescript
 public readonly archivePolicy: string;
@@ -1763,11 +1763,11 @@ public readonly archivePolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#archive_policy SnsTopic#archive_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#archive_policy SnsTopic#archive_policy}.
 
 ---
 
-##### `contentBasedDeduplication`<sup>Optional</sup> <a name="contentBasedDeduplication" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.contentBasedDeduplication"></a>
+##### `contentBasedDeduplication`<sup>Optional</sup> <a name="contentBasedDeduplication" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.contentBasedDeduplication"></a>
 
 ```typescript
 public readonly contentBasedDeduplication: boolean | IResolvable;
@@ -1775,11 +1775,11 @@ public readonly contentBasedDeduplication: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#content_based_deduplication SnsTopic#content_based_deduplication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#content_based_deduplication SnsTopic#content_based_deduplication}.
 
 ---
 
-##### `deliveryPolicy`<sup>Optional</sup> <a name="deliveryPolicy" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.deliveryPolicy"></a>
+##### `deliveryPolicy`<sup>Optional</sup> <a name="deliveryPolicy" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.deliveryPolicy"></a>
 
 ```typescript
 public readonly deliveryPolicy: string;
@@ -1787,11 +1787,11 @@ public readonly deliveryPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#delivery_policy SnsTopic#delivery_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#delivery_policy SnsTopic#delivery_policy}.
 
 ---
 
-##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.displayName"></a>
+##### `displayName`<sup>Optional</sup> <a name="displayName" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -1799,11 +1799,11 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#display_name SnsTopic#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#display_name SnsTopic#display_name}.
 
 ---
 
-##### `fifoThroughputScope`<sup>Optional</sup> <a name="fifoThroughputScope" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.fifoThroughputScope"></a>
+##### `fifoThroughputScope`<sup>Optional</sup> <a name="fifoThroughputScope" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.fifoThroughputScope"></a>
 
 ```typescript
 public readonly fifoThroughputScope: string;
@@ -1811,11 +1811,11 @@ public readonly fifoThroughputScope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#fifo_throughput_scope SnsTopic#fifo_throughput_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#fifo_throughput_scope SnsTopic#fifo_throughput_scope}.
 
 ---
 
-##### `fifoTopic`<sup>Optional</sup> <a name="fifoTopic" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.fifoTopic"></a>
+##### `fifoTopic`<sup>Optional</sup> <a name="fifoTopic" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.fifoTopic"></a>
 
 ```typescript
 public readonly fifoTopic: boolean | IResolvable;
@@ -1823,11 +1823,11 @@ public readonly fifoTopic: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#fifo_topic SnsTopic#fifo_topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#fifo_topic SnsTopic#fifo_topic}.
 
 ---
 
-##### `firehoseFailureFeedbackRoleArn`<sup>Optional</sup> <a name="firehoseFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.firehoseFailureFeedbackRoleArn"></a>
+##### `firehoseFailureFeedbackRoleArn`<sup>Optional</sup> <a name="firehoseFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.firehoseFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly firehoseFailureFeedbackRoleArn: string;
@@ -1835,11 +1835,11 @@ public readonly firehoseFailureFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}.
 
 ---
 
-##### `firehoseSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="firehoseSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackRoleArn"></a>
+##### `firehoseSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="firehoseSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly firehoseSuccessFeedbackRoleArn: string;
@@ -1847,11 +1847,11 @@ public readonly firehoseSuccessFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#firehose_success_feedback_role_arn SnsTopic#firehose_success_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#firehose_success_feedback_role_arn SnsTopic#firehose_success_feedback_role_arn}.
 
 ---
 
-##### `firehoseSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="firehoseSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackSampleRate"></a>
+##### `firehoseSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="firehoseSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.firehoseSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly firehoseSuccessFeedbackSampleRate: number;
@@ -1859,11 +1859,11 @@ public readonly firehoseSuccessFeedbackSampleRate: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#firehose_success_feedback_sample_rate SnsTopic#firehose_success_feedback_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#firehose_success_feedback_sample_rate SnsTopic#firehose_success_feedback_sample_rate}.
 
 ---
 
-##### `httpFailureFeedbackRoleArn`<sup>Optional</sup> <a name="httpFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.httpFailureFeedbackRoleArn"></a>
+##### `httpFailureFeedbackRoleArn`<sup>Optional</sup> <a name="httpFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.httpFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly httpFailureFeedbackRoleArn: string;
@@ -1871,11 +1871,11 @@ public readonly httpFailureFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#http_failure_feedback_role_arn SnsTopic#http_failure_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#http_failure_feedback_role_arn SnsTopic#http_failure_feedback_role_arn}.
 
 ---
 
-##### `httpSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="httpSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackRoleArn"></a>
+##### `httpSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="httpSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly httpSuccessFeedbackRoleArn: string;
@@ -1883,11 +1883,11 @@ public readonly httpSuccessFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#http_success_feedback_role_arn SnsTopic#http_success_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#http_success_feedback_role_arn SnsTopic#http_success_feedback_role_arn}.
 
 ---
 
-##### `httpSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="httpSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackSampleRate"></a>
+##### `httpSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="httpSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.httpSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly httpSuccessFeedbackSampleRate: number;
@@ -1895,11 +1895,11 @@ public readonly httpSuccessFeedbackSampleRate: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#http_success_feedback_sample_rate SnsTopic#http_success_feedback_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#http_success_feedback_sample_rate SnsTopic#http_success_feedback_sample_rate}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1907,14 +1907,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#id SnsTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#id SnsTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `kmsMasterKeyId`<sup>Optional</sup> <a name="kmsMasterKeyId" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.kmsMasterKeyId"></a>
+##### `kmsMasterKeyId`<sup>Optional</sup> <a name="kmsMasterKeyId" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.kmsMasterKeyId"></a>
 
 ```typescript
 public readonly kmsMasterKeyId: string;
@@ -1922,11 +1922,11 @@ public readonly kmsMasterKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#kms_master_key_id SnsTopic#kms_master_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#kms_master_key_id SnsTopic#kms_master_key_id}.
 
 ---
 
-##### `lambdaFailureFeedbackRoleArn`<sup>Optional</sup> <a name="lambdaFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lambdaFailureFeedbackRoleArn"></a>
+##### `lambdaFailureFeedbackRoleArn`<sup>Optional</sup> <a name="lambdaFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lambdaFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly lambdaFailureFeedbackRoleArn: string;
@@ -1934,11 +1934,11 @@ public readonly lambdaFailureFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#lambda_failure_feedback_role_arn SnsTopic#lambda_failure_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#lambda_failure_feedback_role_arn SnsTopic#lambda_failure_feedback_role_arn}.
 
 ---
 
-##### `lambdaSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="lambdaSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackRoleArn"></a>
+##### `lambdaSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="lambdaSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly lambdaSuccessFeedbackRoleArn: string;
@@ -1946,11 +1946,11 @@ public readonly lambdaSuccessFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#lambda_success_feedback_role_arn SnsTopic#lambda_success_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#lambda_success_feedback_role_arn SnsTopic#lambda_success_feedback_role_arn}.
 
 ---
 
-##### `lambdaSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="lambdaSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackSampleRate"></a>
+##### `lambdaSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="lambdaSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.lambdaSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly lambdaSuccessFeedbackSampleRate: number;
@@ -1958,11 +1958,11 @@ public readonly lambdaSuccessFeedbackSampleRate: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#lambda_success_feedback_sample_rate SnsTopic#lambda_success_feedback_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#lambda_success_feedback_sample_rate SnsTopic#lambda_success_feedback_sample_rate}.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1970,11 +1970,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#name SnsTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#name SnsTopic#name}.
 
 ---
 
-##### `namePrefix`<sup>Optional</sup> <a name="namePrefix" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.namePrefix"></a>
+##### `namePrefix`<sup>Optional</sup> <a name="namePrefix" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.namePrefix"></a>
 
 ```typescript
 public readonly namePrefix: string;
@@ -1982,11 +1982,11 @@ public readonly namePrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#name_prefix SnsTopic#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#name_prefix SnsTopic#name_prefix}.
 
 ---
 
-##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.policy"></a>
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.policy"></a>
 
 ```typescript
 public readonly policy: string;
@@ -1994,11 +1994,11 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#policy SnsTopic#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#policy SnsTopic#policy}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -2008,11 +2008,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#region SnsTopic#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#region SnsTopic#region}
 
 ---
 
-##### `signatureVersion`<sup>Optional</sup> <a name="signatureVersion" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.signatureVersion"></a>
+##### `signatureVersion`<sup>Optional</sup> <a name="signatureVersion" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.signatureVersion"></a>
 
 ```typescript
 public readonly signatureVersion: number;
@@ -2020,11 +2020,11 @@ public readonly signatureVersion: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#signature_version SnsTopic#signature_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#signature_version SnsTopic#signature_version}.
 
 ---
 
-##### `sqsFailureFeedbackRoleArn`<sup>Optional</sup> <a name="sqsFailureFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.sqsFailureFeedbackRoleArn"></a>
+##### `sqsFailureFeedbackRoleArn`<sup>Optional</sup> <a name="sqsFailureFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.sqsFailureFeedbackRoleArn"></a>
 
 ```typescript
 public readonly sqsFailureFeedbackRoleArn: string;
@@ -2032,11 +2032,11 @@ public readonly sqsFailureFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#sqs_failure_feedback_role_arn SnsTopic#sqs_failure_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#sqs_failure_feedback_role_arn SnsTopic#sqs_failure_feedback_role_arn}.
 
 ---
 
-##### `sqsSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="sqsSuccessFeedbackRoleArn" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackRoleArn"></a>
+##### `sqsSuccessFeedbackRoleArn`<sup>Optional</sup> <a name="sqsSuccessFeedbackRoleArn" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackRoleArn"></a>
 
 ```typescript
 public readonly sqsSuccessFeedbackRoleArn: string;
@@ -2044,11 +2044,11 @@ public readonly sqsSuccessFeedbackRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#sqs_success_feedback_role_arn SnsTopic#sqs_success_feedback_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#sqs_success_feedback_role_arn SnsTopic#sqs_success_feedback_role_arn}.
 
 ---
 
-##### `sqsSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="sqsSuccessFeedbackSampleRate" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackSampleRate"></a>
+##### `sqsSuccessFeedbackSampleRate`<sup>Optional</sup> <a name="sqsSuccessFeedbackSampleRate" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.sqsSuccessFeedbackSampleRate"></a>
 
 ```typescript
 public readonly sqsSuccessFeedbackSampleRate: number;
@@ -2056,11 +2056,11 @@ public readonly sqsSuccessFeedbackSampleRate: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#sqs_success_feedback_sample_rate SnsTopic#sqs_success_feedback_sample_rate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#sqs_success_feedback_sample_rate SnsTopic#sqs_success_feedback_sample_rate}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2068,11 +2068,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#tags SnsTopic#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#tags SnsTopic#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -2080,11 +2080,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#tags_all SnsTopic#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#tags_all SnsTopic#tags_all}.
 
 ---
 
-##### `tracingConfig`<sup>Optional</sup> <a name="tracingConfig" id="@cdktf/provider-aws.snsTopic.SnsTopicConfig.property.tracingConfig"></a>
+##### `tracingConfig`<sup>Optional</sup> <a name="tracingConfig" id="@cdktn/provider-aws.snsTopic.SnsTopicConfig.property.tracingConfig"></a>
 
 ```typescript
 public readonly tracingConfig: string;
@@ -2092,7 +2092,7 @@ public readonly tracingConfig: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic#tracing_config SnsTopic#tracing_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic#tracing_config SnsTopic#tracing_config}.
 
 ---
 

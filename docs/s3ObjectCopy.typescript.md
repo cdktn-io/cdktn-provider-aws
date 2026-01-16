@@ -1,28 +1,28 @@
-# `s3ObjectCopy` Submodule <a name="`s3ObjectCopy` Submodule" id="@cdktf/provider-aws.s3ObjectCopy"></a>
+# `s3ObjectCopy` Submodule <a name="`s3ObjectCopy` Submodule" id="@cdktn/provider-aws.s3ObjectCopy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### S3ObjectCopy <a name="S3ObjectCopy" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy"></a>
+### S3ObjectCopy <a name="S3ObjectCopy" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy aws_s3_object_copy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy aws_s3_object_copy}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 new s3ObjectCopy.S3ObjectCopy(scope: Construct, id: string, config: S3ObjectCopyConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig">S3ObjectCopyConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig">S3ObjectCopyConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig">S3ObjectCopyConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig">S3ObjectCopyConfig</a>
 
 ---
 
@@ -50,75 +50,75 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.putGrant">putGrant</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.putOverrideProvider">putOverrideProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetAcl">resetAcl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetBucketKeyEnabled">resetBucketKeyEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCacheControl">resetCacheControl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetChecksumAlgorithm">resetChecksumAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentDisposition">resetContentDisposition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentEncoding">resetContentEncoding</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentLanguage">resetContentLanguage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentType">resetContentType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfMatch">resetCopyIfMatch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfModifiedSince">resetCopyIfModifiedSince</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfNoneMatch">resetCopyIfNoneMatch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfUnmodifiedSince">resetCopyIfUnmodifiedSince</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerAlgorithm">resetCustomerAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKey">resetCustomerKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKeyMd5">resetCustomerKeyMd5</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedBucketOwner">resetExpectedBucketOwner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedSourceBucketOwner">resetExpectedSourceBucketOwner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpires">resetExpires</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetGrant">resetGrant</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsEncryptionContext">resetKmsEncryptionContext</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadata">resetMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadataDirective">resetMetadataDirective</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockLegalHoldStatus">resetObjectLockLegalHoldStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockMode">resetObjectLockMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockRetainUntilDate">resetObjectLockRetainUntilDate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideProvider">resetOverrideProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRequestPayer">resetRequestPayer</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetServerSideEncryption">resetServerSideEncryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerAlgorithm">resetSourceCustomerAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKey">resetSourceCustomerKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKeyMd5">resetSourceCustomerKeyMd5</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetStorageClass">resetStorageClass</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTaggingDirective">resetTaggingDirective</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTagsAll">resetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetWebsiteRedirect">resetWebsiteRedirect</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.putGrant">putGrant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.putOverrideProvider">putOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetAcl">resetAcl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetBucketKeyEnabled">resetBucketKeyEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCacheControl">resetCacheControl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetChecksumAlgorithm">resetChecksumAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentDisposition">resetContentDisposition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentEncoding">resetContentEncoding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentLanguage">resetContentLanguage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentType">resetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfMatch">resetCopyIfMatch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfModifiedSince">resetCopyIfModifiedSince</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfNoneMatch">resetCopyIfNoneMatch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfUnmodifiedSince">resetCopyIfUnmodifiedSince</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerAlgorithm">resetCustomerAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKey">resetCustomerKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKeyMd5">resetCustomerKeyMd5</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedBucketOwner">resetExpectedBucketOwner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedSourceBucketOwner">resetExpectedSourceBucketOwner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpires">resetExpires</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetGrant">resetGrant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsEncryptionContext">resetKmsEncryptionContext</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadata">resetMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadataDirective">resetMetadataDirective</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockLegalHoldStatus">resetObjectLockLegalHoldStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockMode">resetObjectLockMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockRetainUntilDate">resetObjectLockRetainUntilDate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideProvider">resetOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRequestPayer">resetRequestPayer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetServerSideEncryption">resetServerSideEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerAlgorithm">resetSourceCustomerAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKey">resetSourceCustomerKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKeyMd5">resetSourceCustomerKeyMd5</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetStorageClass">resetStorageClass</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTaggingDirective">resetTaggingDirective</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetWebsiteRedirect">resetWebsiteRedirect</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toString"></a>
 
 ```typescript
 public toString(): string
@@ -126,25 +126,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -152,7 +152,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -160,7 +160,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -168,19 +168,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -188,7 +188,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -196,7 +196,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -204,151 +204,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -358,7 +358,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -366,7 +366,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -374,7 +374,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -382,7 +382,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -390,7 +390,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -398,7 +398,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -406,265 +406,265 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putGrant` <a name="putGrant" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.putGrant"></a>
+##### `putGrant` <a name="putGrant" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.putGrant"></a>
 
 ```typescript
 public putGrant(value: IResolvable | S3ObjectCopyGrant[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.putGrant.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.putGrant.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
 
 ---
 
-##### `putOverrideProvider` <a name="putOverrideProvider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.putOverrideProvider"></a>
+##### `putOverrideProvider` <a name="putOverrideProvider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.putOverrideProvider"></a>
 
 ```typescript
 public putOverrideProvider(value: S3ObjectCopyOverrideProvider): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.putOverrideProvider.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.putOverrideProvider.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
 
 ---
 
-##### `resetAcl` <a name="resetAcl" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetAcl"></a>
+##### `resetAcl` <a name="resetAcl" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetAcl"></a>
 
 ```typescript
 public resetAcl(): void
 ```
 
-##### `resetBucketKeyEnabled` <a name="resetBucketKeyEnabled" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetBucketKeyEnabled"></a>
+##### `resetBucketKeyEnabled` <a name="resetBucketKeyEnabled" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetBucketKeyEnabled"></a>
 
 ```typescript
 public resetBucketKeyEnabled(): void
 ```
 
-##### `resetCacheControl` <a name="resetCacheControl" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCacheControl"></a>
+##### `resetCacheControl` <a name="resetCacheControl" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCacheControl"></a>
 
 ```typescript
 public resetCacheControl(): void
 ```
 
-##### `resetChecksumAlgorithm` <a name="resetChecksumAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetChecksumAlgorithm"></a>
+##### `resetChecksumAlgorithm` <a name="resetChecksumAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetChecksumAlgorithm"></a>
 
 ```typescript
 public resetChecksumAlgorithm(): void
 ```
 
-##### `resetContentDisposition` <a name="resetContentDisposition" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentDisposition"></a>
+##### `resetContentDisposition` <a name="resetContentDisposition" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentDisposition"></a>
 
 ```typescript
 public resetContentDisposition(): void
 ```
 
-##### `resetContentEncoding` <a name="resetContentEncoding" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentEncoding"></a>
+##### `resetContentEncoding` <a name="resetContentEncoding" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentEncoding"></a>
 
 ```typescript
 public resetContentEncoding(): void
 ```
 
-##### `resetContentLanguage` <a name="resetContentLanguage" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentLanguage"></a>
+##### `resetContentLanguage` <a name="resetContentLanguage" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentLanguage"></a>
 
 ```typescript
 public resetContentLanguage(): void
 ```
 
-##### `resetContentType` <a name="resetContentType" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentType"></a>
+##### `resetContentType` <a name="resetContentType" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetContentType"></a>
 
 ```typescript
 public resetContentType(): void
 ```
 
-##### `resetCopyIfMatch` <a name="resetCopyIfMatch" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfMatch"></a>
+##### `resetCopyIfMatch` <a name="resetCopyIfMatch" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfMatch"></a>
 
 ```typescript
 public resetCopyIfMatch(): void
 ```
 
-##### `resetCopyIfModifiedSince` <a name="resetCopyIfModifiedSince" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfModifiedSince"></a>
+##### `resetCopyIfModifiedSince` <a name="resetCopyIfModifiedSince" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfModifiedSince"></a>
 
 ```typescript
 public resetCopyIfModifiedSince(): void
 ```
 
-##### `resetCopyIfNoneMatch` <a name="resetCopyIfNoneMatch" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfNoneMatch"></a>
+##### `resetCopyIfNoneMatch` <a name="resetCopyIfNoneMatch" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfNoneMatch"></a>
 
 ```typescript
 public resetCopyIfNoneMatch(): void
 ```
 
-##### `resetCopyIfUnmodifiedSince` <a name="resetCopyIfUnmodifiedSince" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfUnmodifiedSince"></a>
+##### `resetCopyIfUnmodifiedSince` <a name="resetCopyIfUnmodifiedSince" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCopyIfUnmodifiedSince"></a>
 
 ```typescript
 public resetCopyIfUnmodifiedSince(): void
 ```
 
-##### `resetCustomerAlgorithm` <a name="resetCustomerAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerAlgorithm"></a>
+##### `resetCustomerAlgorithm` <a name="resetCustomerAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerAlgorithm"></a>
 
 ```typescript
 public resetCustomerAlgorithm(): void
 ```
 
-##### `resetCustomerKey` <a name="resetCustomerKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKey"></a>
+##### `resetCustomerKey` <a name="resetCustomerKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKey"></a>
 
 ```typescript
 public resetCustomerKey(): void
 ```
 
-##### `resetCustomerKeyMd5` <a name="resetCustomerKeyMd5" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKeyMd5"></a>
+##### `resetCustomerKeyMd5` <a name="resetCustomerKeyMd5" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetCustomerKeyMd5"></a>
 
 ```typescript
 public resetCustomerKeyMd5(): void
 ```
 
-##### `resetExpectedBucketOwner` <a name="resetExpectedBucketOwner" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedBucketOwner"></a>
+##### `resetExpectedBucketOwner` <a name="resetExpectedBucketOwner" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedBucketOwner"></a>
 
 ```typescript
 public resetExpectedBucketOwner(): void
 ```
 
-##### `resetExpectedSourceBucketOwner` <a name="resetExpectedSourceBucketOwner" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedSourceBucketOwner"></a>
+##### `resetExpectedSourceBucketOwner` <a name="resetExpectedSourceBucketOwner" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpectedSourceBucketOwner"></a>
 
 ```typescript
 public resetExpectedSourceBucketOwner(): void
 ```
 
-##### `resetExpires` <a name="resetExpires" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpires"></a>
+##### `resetExpires` <a name="resetExpires" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetExpires"></a>
 
 ```typescript
 public resetExpires(): void
 ```
 
-##### `resetForceDestroy` <a name="resetForceDestroy" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetForceDestroy"></a>
+##### `resetForceDestroy` <a name="resetForceDestroy" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetForceDestroy"></a>
 
 ```typescript
 public resetForceDestroy(): void
 ```
 
-##### `resetGrant` <a name="resetGrant" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetGrant"></a>
+##### `resetGrant` <a name="resetGrant" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetGrant"></a>
 
 ```typescript
 public resetGrant(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetKmsEncryptionContext` <a name="resetKmsEncryptionContext" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsEncryptionContext"></a>
+##### `resetKmsEncryptionContext` <a name="resetKmsEncryptionContext" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsEncryptionContext"></a>
 
 ```typescript
 public resetKmsEncryptionContext(): void
 ```
 
-##### `resetKmsKeyId` <a name="resetKmsKeyId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsKeyId"></a>
+##### `resetKmsKeyId` <a name="resetKmsKeyId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetKmsKeyId"></a>
 
 ```typescript
 public resetKmsKeyId(): void
 ```
 
-##### `resetMetadata` <a name="resetMetadata" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadata"></a>
+##### `resetMetadata` <a name="resetMetadata" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadata"></a>
 
 ```typescript
 public resetMetadata(): void
 ```
 
-##### `resetMetadataDirective` <a name="resetMetadataDirective" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadataDirective"></a>
+##### `resetMetadataDirective` <a name="resetMetadataDirective" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetMetadataDirective"></a>
 
 ```typescript
 public resetMetadataDirective(): void
 ```
 
-##### `resetObjectLockLegalHoldStatus` <a name="resetObjectLockLegalHoldStatus" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockLegalHoldStatus"></a>
+##### `resetObjectLockLegalHoldStatus` <a name="resetObjectLockLegalHoldStatus" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockLegalHoldStatus"></a>
 
 ```typescript
 public resetObjectLockLegalHoldStatus(): void
 ```
 
-##### `resetObjectLockMode` <a name="resetObjectLockMode" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockMode"></a>
+##### `resetObjectLockMode` <a name="resetObjectLockMode" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockMode"></a>
 
 ```typescript
 public resetObjectLockMode(): void
 ```
 
-##### `resetObjectLockRetainUntilDate` <a name="resetObjectLockRetainUntilDate" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockRetainUntilDate"></a>
+##### `resetObjectLockRetainUntilDate` <a name="resetObjectLockRetainUntilDate" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetObjectLockRetainUntilDate"></a>
 
 ```typescript
 public resetObjectLockRetainUntilDate(): void
 ```
 
-##### `resetOverrideProvider` <a name="resetOverrideProvider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideProvider"></a>
+##### `resetOverrideProvider` <a name="resetOverrideProvider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetOverrideProvider"></a>
 
 ```typescript
 public resetOverrideProvider(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetRequestPayer` <a name="resetRequestPayer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRequestPayer"></a>
+##### `resetRequestPayer` <a name="resetRequestPayer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetRequestPayer"></a>
 
 ```typescript
 public resetRequestPayer(): void
 ```
 
-##### `resetServerSideEncryption` <a name="resetServerSideEncryption" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetServerSideEncryption"></a>
+##### `resetServerSideEncryption` <a name="resetServerSideEncryption" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetServerSideEncryption"></a>
 
 ```typescript
 public resetServerSideEncryption(): void
 ```
 
-##### `resetSourceCustomerAlgorithm` <a name="resetSourceCustomerAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerAlgorithm"></a>
+##### `resetSourceCustomerAlgorithm` <a name="resetSourceCustomerAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerAlgorithm"></a>
 
 ```typescript
 public resetSourceCustomerAlgorithm(): void
 ```
 
-##### `resetSourceCustomerKey` <a name="resetSourceCustomerKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKey"></a>
+##### `resetSourceCustomerKey` <a name="resetSourceCustomerKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKey"></a>
 
 ```typescript
 public resetSourceCustomerKey(): void
 ```
 
-##### `resetSourceCustomerKeyMd5` <a name="resetSourceCustomerKeyMd5" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKeyMd5"></a>
+##### `resetSourceCustomerKeyMd5` <a name="resetSourceCustomerKeyMd5" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetSourceCustomerKeyMd5"></a>
 
 ```typescript
 public resetSourceCustomerKeyMd5(): void
 ```
 
-##### `resetStorageClass` <a name="resetStorageClass" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetStorageClass"></a>
+##### `resetStorageClass` <a name="resetStorageClass" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetStorageClass"></a>
 
 ```typescript
 public resetStorageClass(): void
 ```
 
-##### `resetTaggingDirective` <a name="resetTaggingDirective" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTaggingDirective"></a>
+##### `resetTaggingDirective` <a name="resetTaggingDirective" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTaggingDirective"></a>
 
 ```typescript
 public resetTaggingDirective(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
 ```
 
-##### `resetWebsiteRedirect` <a name="resetWebsiteRedirect" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.resetWebsiteRedirect"></a>
+##### `resetWebsiteRedirect` <a name="resetWebsiteRedirect" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.resetWebsiteRedirect"></a>
 
 ```typescript
 public resetWebsiteRedirect(): void
@@ -674,17 +674,17 @@ public resetWebsiteRedirect(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a S3ObjectCopy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a S3ObjectCopy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 s3ObjectCopy.S3ObjectCopy.isConstruct(x: any)
 ```
@@ -705,7 +705,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -713,45 +713,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 s3ObjectCopy.S3ObjectCopy.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 s3ObjectCopy.S3ObjectCopy.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 s3ObjectCopy.S3ObjectCopy.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a S3ObjectCopy resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -759,7 +759,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -767,17 +767,17 @@ The construct id used in the generated config for the S3ObjectCopy to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing S3ObjectCopy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -789,122 +789,122 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32">checksumCrc32</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32C">checksumCrc32C</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc64Nvme">checksumCrc64Nvme</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha1">checksumSha1</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha256">checksumSha256</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.etag">etag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiration">expiration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grant">grant</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList">S3ObjectCopyGrantList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lastModified">lastModified</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference">S3ObjectCopyOverrideProviderOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestCharged">requestCharged</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceVersionId">sourceVersionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.aclInput">aclInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabledInput">bucketKeyEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControlInput">cacheControlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithmInput">checksumAlgorithmInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDispositionInput">contentDispositionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncodingInput">contentEncodingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguageInput">contentLanguageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatchInput">copyIfMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSinceInput">copyIfModifiedSinceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatchInput">copyIfNoneMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSinceInput">copyIfUnmodifiedSinceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithmInput">customerAlgorithmInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyInput">customerKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5Input">customerKeyMd5Input</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwnerInput">expectedBucketOwnerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwnerInput">expectedSourceBucketOwnerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiresInput">expiresInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grantInput">grantInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContextInput">kmsEncryptionContextInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirectiveInput">metadataDirectiveInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatusInput">objectLockLegalHoldStatusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockModeInput">objectLockModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDateInput">objectLockRetainUntilDateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProviderInput">overrideProviderInput</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayerInput">requestPayerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryptionInput">serverSideEncryptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithmInput">sourceCustomerAlgorithmInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyInput">sourceCustomerKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5Input">sourceCustomerKeyMd5Input</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClassInput">storageClassInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirectiveInput">taggingDirectiveInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirectInput">websiteRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.acl">acl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControl">cacheControl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatch">copyIfMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSince">copyIfModifiedSince</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatch">copyIfNoneMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSince">copyIfUnmodifiedSince</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithm">customerAlgorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKey">customerKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5">customerKeyMd5</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwner">expectedSourceBucketOwner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expires">expires</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContext">kmsEncryptionContext</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirective">metadataDirective</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayer">requestPayer</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithm">sourceCustomerAlgorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKey">sourceCustomerKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5">sourceCustomerKeyMd5</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClass">storageClass</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirective">taggingDirective</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32">checksumCrc32</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32C">checksumCrc32C</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc64Nvme">checksumCrc64Nvme</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha1">checksumSha1</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha256">checksumSha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.etag">etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiration">expiration</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grant">grant</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList">S3ObjectCopyGrantList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lastModified">lastModified</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference">S3ObjectCopyOverrideProviderOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestCharged">requestCharged</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceVersionId">sourceVersionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.aclInput">aclInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabledInput">bucketKeyEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControlInput">cacheControlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithmInput">checksumAlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDispositionInput">contentDispositionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncodingInput">contentEncodingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguageInput">contentLanguageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatchInput">copyIfMatchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSinceInput">copyIfModifiedSinceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatchInput">copyIfNoneMatchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSinceInput">copyIfUnmodifiedSinceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithmInput">customerAlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyInput">customerKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5Input">customerKeyMd5Input</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwnerInput">expectedBucketOwnerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwnerInput">expectedSourceBucketOwnerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiresInput">expiresInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grantInput">grantInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContextInput">kmsEncryptionContextInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirectiveInput">metadataDirectiveInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatusInput">objectLockLegalHoldStatusInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockModeInput">objectLockModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDateInput">objectLockRetainUntilDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProviderInput">overrideProviderInput</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayerInput">requestPayerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryptionInput">serverSideEncryptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithmInput">sourceCustomerAlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyInput">sourceCustomerKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5Input">sourceCustomerKeyMd5Input</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClassInput">storageClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirectiveInput">taggingDirectiveInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirectInput">websiteRedirectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.acl">acl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControl">cacheControl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatch">copyIfMatch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSince">copyIfModifiedSince</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatch">copyIfNoneMatch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSince">copyIfUnmodifiedSince</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithm">customerAlgorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKey">customerKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5">customerKeyMd5</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwner">expectedSourceBucketOwner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expires">expires</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContext">kmsEncryptionContext</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirective">metadataDirective</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayer">requestPayer</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.source">source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithm">sourceCustomerAlgorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKey">sourceCustomerKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5">sourceCustomerKeyMd5</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClass">storageClass</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirective">taggingDirective</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -916,7 +916,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -926,7 +926,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -936,7 +936,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -946,7 +946,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -956,7 +956,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -966,7 +966,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -976,7 +976,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -986,7 +986,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -996,7 +996,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -1006,7 +1006,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1016,7 +1016,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1026,7 +1026,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1036,7 +1036,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1046,7 +1046,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -1056,7 +1056,7 @@ public readonly arn: string;
 
 ---
 
-##### `checksumCrc32`<sup>Required</sup> <a name="checksumCrc32" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32"></a>
+##### `checksumCrc32`<sup>Required</sup> <a name="checksumCrc32" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32"></a>
 
 ```typescript
 public readonly checksumCrc32: string;
@@ -1066,7 +1066,7 @@ public readonly checksumCrc32: string;
 
 ---
 
-##### `checksumCrc32C`<sup>Required</sup> <a name="checksumCrc32C" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32C"></a>
+##### `checksumCrc32C`<sup>Required</sup> <a name="checksumCrc32C" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc32C"></a>
 
 ```typescript
 public readonly checksumCrc32C: string;
@@ -1076,7 +1076,7 @@ public readonly checksumCrc32C: string;
 
 ---
 
-##### `checksumCrc64Nvme`<sup>Required</sup> <a name="checksumCrc64Nvme" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc64Nvme"></a>
+##### `checksumCrc64Nvme`<sup>Required</sup> <a name="checksumCrc64Nvme" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumCrc64Nvme"></a>
 
 ```typescript
 public readonly checksumCrc64Nvme: string;
@@ -1086,7 +1086,7 @@ public readonly checksumCrc64Nvme: string;
 
 ---
 
-##### `checksumSha1`<sup>Required</sup> <a name="checksumSha1" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha1"></a>
+##### `checksumSha1`<sup>Required</sup> <a name="checksumSha1" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha1"></a>
 
 ```typescript
 public readonly checksumSha1: string;
@@ -1096,7 +1096,7 @@ public readonly checksumSha1: string;
 
 ---
 
-##### `checksumSha256`<sup>Required</sup> <a name="checksumSha256" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha256"></a>
+##### `checksumSha256`<sup>Required</sup> <a name="checksumSha256" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumSha256"></a>
 
 ```typescript
 public readonly checksumSha256: string;
@@ -1106,7 +1106,7 @@ public readonly checksumSha256: string;
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.etag"></a>
 
 ```typescript
 public readonly etag: string;
@@ -1116,7 +1116,7 @@ public readonly etag: string;
 
 ---
 
-##### `expiration`<sup>Required</sup> <a name="expiration" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiration"></a>
+##### `expiration`<sup>Required</sup> <a name="expiration" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiration"></a>
 
 ```typescript
 public readonly expiration: string;
@@ -1126,17 +1126,17 @@ public readonly expiration: string;
 
 ---
 
-##### `grant`<sup>Required</sup> <a name="grant" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grant"></a>
+##### `grant`<sup>Required</sup> <a name="grant" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grant"></a>
 
 ```typescript
 public readonly grant: S3ObjectCopyGrantList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList">S3ObjectCopyGrantList</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList">S3ObjectCopyGrantList</a>
 
 ---
 
-##### `lastModified`<sup>Required</sup> <a name="lastModified" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lastModified"></a>
+##### `lastModified`<sup>Required</sup> <a name="lastModified" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.lastModified"></a>
 
 ```typescript
 public readonly lastModified: string;
@@ -1146,17 +1146,17 @@ public readonly lastModified: string;
 
 ---
 
-##### `overrideProvider`<sup>Required</sup> <a name="overrideProvider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProvider"></a>
+##### `overrideProvider`<sup>Required</sup> <a name="overrideProvider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProvider"></a>
 
 ```typescript
 public readonly overrideProvider: S3ObjectCopyOverrideProviderOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference">S3ObjectCopyOverrideProviderOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference">S3ObjectCopyOverrideProviderOutputReference</a>
 
 ---
 
-##### `requestCharged`<sup>Required</sup> <a name="requestCharged" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestCharged"></a>
+##### `requestCharged`<sup>Required</sup> <a name="requestCharged" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestCharged"></a>
 
 ```typescript
 public readonly requestCharged: IResolvable;
@@ -1166,7 +1166,7 @@ public readonly requestCharged: IResolvable;
 
 ---
 
-##### `sourceVersionId`<sup>Required</sup> <a name="sourceVersionId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceVersionId"></a>
+##### `sourceVersionId`<sup>Required</sup> <a name="sourceVersionId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceVersionId"></a>
 
 ```typescript
 public readonly sourceVersionId: string;
@@ -1176,7 +1176,7 @@ public readonly sourceVersionId: string;
 
 ---
 
-##### `versionId`<sup>Required</sup> <a name="versionId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.versionId"></a>
+##### `versionId`<sup>Required</sup> <a name="versionId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.versionId"></a>
 
 ```typescript
 public readonly versionId: string;
@@ -1186,7 +1186,7 @@ public readonly versionId: string;
 
 ---
 
-##### `aclInput`<sup>Optional</sup> <a name="aclInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.aclInput"></a>
+##### `aclInput`<sup>Optional</sup> <a name="aclInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.aclInput"></a>
 
 ```typescript
 public readonly aclInput: string;
@@ -1196,7 +1196,7 @@ public readonly aclInput: string;
 
 ---
 
-##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketInput"></a>
+##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketInput"></a>
 
 ```typescript
 public readonly bucketInput: string;
@@ -1206,7 +1206,7 @@ public readonly bucketInput: string;
 
 ---
 
-##### `bucketKeyEnabledInput`<sup>Optional</sup> <a name="bucketKeyEnabledInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabledInput"></a>
+##### `bucketKeyEnabledInput`<sup>Optional</sup> <a name="bucketKeyEnabledInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabledInput"></a>
 
 ```typescript
 public readonly bucketKeyEnabledInput: boolean | IResolvable;
@@ -1216,7 +1216,7 @@ public readonly bucketKeyEnabledInput: boolean | IResolvable;
 
 ---
 
-##### `cacheControlInput`<sup>Optional</sup> <a name="cacheControlInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControlInput"></a>
+##### `cacheControlInput`<sup>Optional</sup> <a name="cacheControlInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControlInput"></a>
 
 ```typescript
 public readonly cacheControlInput: string;
@@ -1226,7 +1226,7 @@ public readonly cacheControlInput: string;
 
 ---
 
-##### `checksumAlgorithmInput`<sup>Optional</sup> <a name="checksumAlgorithmInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithmInput"></a>
+##### `checksumAlgorithmInput`<sup>Optional</sup> <a name="checksumAlgorithmInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithmInput"></a>
 
 ```typescript
 public readonly checksumAlgorithmInput: string;
@@ -1236,7 +1236,7 @@ public readonly checksumAlgorithmInput: string;
 
 ---
 
-##### `contentDispositionInput`<sup>Optional</sup> <a name="contentDispositionInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDispositionInput"></a>
+##### `contentDispositionInput`<sup>Optional</sup> <a name="contentDispositionInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDispositionInput"></a>
 
 ```typescript
 public readonly contentDispositionInput: string;
@@ -1246,7 +1246,7 @@ public readonly contentDispositionInput: string;
 
 ---
 
-##### `contentEncodingInput`<sup>Optional</sup> <a name="contentEncodingInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncodingInput"></a>
+##### `contentEncodingInput`<sup>Optional</sup> <a name="contentEncodingInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncodingInput"></a>
 
 ```typescript
 public readonly contentEncodingInput: string;
@@ -1256,7 +1256,7 @@ public readonly contentEncodingInput: string;
 
 ---
 
-##### `contentLanguageInput`<sup>Optional</sup> <a name="contentLanguageInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguageInput"></a>
+##### `contentLanguageInput`<sup>Optional</sup> <a name="contentLanguageInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguageInput"></a>
 
 ```typescript
 public readonly contentLanguageInput: string;
@@ -1266,7 +1266,7 @@ public readonly contentLanguageInput: string;
 
 ---
 
-##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentTypeInput"></a>
+##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentTypeInput"></a>
 
 ```typescript
 public readonly contentTypeInput: string;
@@ -1276,7 +1276,7 @@ public readonly contentTypeInput: string;
 
 ---
 
-##### `copyIfMatchInput`<sup>Optional</sup> <a name="copyIfMatchInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatchInput"></a>
+##### `copyIfMatchInput`<sup>Optional</sup> <a name="copyIfMatchInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatchInput"></a>
 
 ```typescript
 public readonly copyIfMatchInput: string;
@@ -1286,7 +1286,7 @@ public readonly copyIfMatchInput: string;
 
 ---
 
-##### `copyIfModifiedSinceInput`<sup>Optional</sup> <a name="copyIfModifiedSinceInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSinceInput"></a>
+##### `copyIfModifiedSinceInput`<sup>Optional</sup> <a name="copyIfModifiedSinceInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSinceInput"></a>
 
 ```typescript
 public readonly copyIfModifiedSinceInput: string;
@@ -1296,7 +1296,7 @@ public readonly copyIfModifiedSinceInput: string;
 
 ---
 
-##### `copyIfNoneMatchInput`<sup>Optional</sup> <a name="copyIfNoneMatchInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatchInput"></a>
+##### `copyIfNoneMatchInput`<sup>Optional</sup> <a name="copyIfNoneMatchInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatchInput"></a>
 
 ```typescript
 public readonly copyIfNoneMatchInput: string;
@@ -1306,7 +1306,7 @@ public readonly copyIfNoneMatchInput: string;
 
 ---
 
-##### `copyIfUnmodifiedSinceInput`<sup>Optional</sup> <a name="copyIfUnmodifiedSinceInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSinceInput"></a>
+##### `copyIfUnmodifiedSinceInput`<sup>Optional</sup> <a name="copyIfUnmodifiedSinceInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSinceInput"></a>
 
 ```typescript
 public readonly copyIfUnmodifiedSinceInput: string;
@@ -1316,7 +1316,7 @@ public readonly copyIfUnmodifiedSinceInput: string;
 
 ---
 
-##### `customerAlgorithmInput`<sup>Optional</sup> <a name="customerAlgorithmInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithmInput"></a>
+##### `customerAlgorithmInput`<sup>Optional</sup> <a name="customerAlgorithmInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithmInput"></a>
 
 ```typescript
 public readonly customerAlgorithmInput: string;
@@ -1326,7 +1326,7 @@ public readonly customerAlgorithmInput: string;
 
 ---
 
-##### `customerKeyInput`<sup>Optional</sup> <a name="customerKeyInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyInput"></a>
+##### `customerKeyInput`<sup>Optional</sup> <a name="customerKeyInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyInput"></a>
 
 ```typescript
 public readonly customerKeyInput: string;
@@ -1336,7 +1336,7 @@ public readonly customerKeyInput: string;
 
 ---
 
-##### `customerKeyMd5Input`<sup>Optional</sup> <a name="customerKeyMd5Input" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5Input"></a>
+##### `customerKeyMd5Input`<sup>Optional</sup> <a name="customerKeyMd5Input" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5Input"></a>
 
 ```typescript
 public readonly customerKeyMd5Input: string;
@@ -1346,7 +1346,7 @@ public readonly customerKeyMd5Input: string;
 
 ---
 
-##### `expectedBucketOwnerInput`<sup>Optional</sup> <a name="expectedBucketOwnerInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwnerInput"></a>
+##### `expectedBucketOwnerInput`<sup>Optional</sup> <a name="expectedBucketOwnerInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwnerInput"></a>
 
 ```typescript
 public readonly expectedBucketOwnerInput: string;
@@ -1356,7 +1356,7 @@ public readonly expectedBucketOwnerInput: string;
 
 ---
 
-##### `expectedSourceBucketOwnerInput`<sup>Optional</sup> <a name="expectedSourceBucketOwnerInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwnerInput"></a>
+##### `expectedSourceBucketOwnerInput`<sup>Optional</sup> <a name="expectedSourceBucketOwnerInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwnerInput"></a>
 
 ```typescript
 public readonly expectedSourceBucketOwnerInput: string;
@@ -1366,7 +1366,7 @@ public readonly expectedSourceBucketOwnerInput: string;
 
 ---
 
-##### `expiresInput`<sup>Optional</sup> <a name="expiresInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiresInput"></a>
+##### `expiresInput`<sup>Optional</sup> <a name="expiresInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expiresInput"></a>
 
 ```typescript
 public readonly expiresInput: string;
@@ -1376,7 +1376,7 @@ public readonly expiresInput: string;
 
 ---
 
-##### `forceDestroyInput`<sup>Optional</sup> <a name="forceDestroyInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroyInput"></a>
+##### `forceDestroyInput`<sup>Optional</sup> <a name="forceDestroyInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroyInput"></a>
 
 ```typescript
 public readonly forceDestroyInput: boolean | IResolvable;
@@ -1386,17 +1386,17 @@ public readonly forceDestroyInput: boolean | IResolvable;
 
 ---
 
-##### `grantInput`<sup>Optional</sup> <a name="grantInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grantInput"></a>
+##### `grantInput`<sup>Optional</sup> <a name="grantInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.grantInput"></a>
 
 ```typescript
 public readonly grantInput: IResolvable | S3ObjectCopyGrant[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -1406,7 +1406,7 @@ public readonly idInput: string;
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.keyInput"></a>
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.keyInput"></a>
 
 ```typescript
 public readonly keyInput: string;
@@ -1416,7 +1416,7 @@ public readonly keyInput: string;
 
 ---
 
-##### `kmsEncryptionContextInput`<sup>Optional</sup> <a name="kmsEncryptionContextInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContextInput"></a>
+##### `kmsEncryptionContextInput`<sup>Optional</sup> <a name="kmsEncryptionContextInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContextInput"></a>
 
 ```typescript
 public readonly kmsEncryptionContextInput: string;
@@ -1426,7 +1426,7 @@ public readonly kmsEncryptionContextInput: string;
 
 ---
 
-##### `kmsKeyIdInput`<sup>Optional</sup> <a name="kmsKeyIdInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyIdInput"></a>
+##### `kmsKeyIdInput`<sup>Optional</sup> <a name="kmsKeyIdInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyIdInput"></a>
 
 ```typescript
 public readonly kmsKeyIdInput: string;
@@ -1436,7 +1436,7 @@ public readonly kmsKeyIdInput: string;
 
 ---
 
-##### `metadataDirectiveInput`<sup>Optional</sup> <a name="metadataDirectiveInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirectiveInput"></a>
+##### `metadataDirectiveInput`<sup>Optional</sup> <a name="metadataDirectiveInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirectiveInput"></a>
 
 ```typescript
 public readonly metadataDirectiveInput: string;
@@ -1446,7 +1446,7 @@ public readonly metadataDirectiveInput: string;
 
 ---
 
-##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataInput"></a>
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataInput"></a>
 
 ```typescript
 public readonly metadataInput: {[ key: string ]: string};
@@ -1456,7 +1456,7 @@ public readonly metadataInput: {[ key: string ]: string};
 
 ---
 
-##### `objectLockLegalHoldStatusInput`<sup>Optional</sup> <a name="objectLockLegalHoldStatusInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatusInput"></a>
+##### `objectLockLegalHoldStatusInput`<sup>Optional</sup> <a name="objectLockLegalHoldStatusInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatusInput"></a>
 
 ```typescript
 public readonly objectLockLegalHoldStatusInput: string;
@@ -1466,7 +1466,7 @@ public readonly objectLockLegalHoldStatusInput: string;
 
 ---
 
-##### `objectLockModeInput`<sup>Optional</sup> <a name="objectLockModeInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockModeInput"></a>
+##### `objectLockModeInput`<sup>Optional</sup> <a name="objectLockModeInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockModeInput"></a>
 
 ```typescript
 public readonly objectLockModeInput: string;
@@ -1476,7 +1476,7 @@ public readonly objectLockModeInput: string;
 
 ---
 
-##### `objectLockRetainUntilDateInput`<sup>Optional</sup> <a name="objectLockRetainUntilDateInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDateInput"></a>
+##### `objectLockRetainUntilDateInput`<sup>Optional</sup> <a name="objectLockRetainUntilDateInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDateInput"></a>
 
 ```typescript
 public readonly objectLockRetainUntilDateInput: string;
@@ -1486,17 +1486,17 @@ public readonly objectLockRetainUntilDateInput: string;
 
 ---
 
-##### `overrideProviderInput`<sup>Optional</sup> <a name="overrideProviderInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProviderInput"></a>
+##### `overrideProviderInput`<sup>Optional</sup> <a name="overrideProviderInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.overrideProviderInput"></a>
 
 ```typescript
 public readonly overrideProviderInput: S3ObjectCopyOverrideProvider;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -1506,7 +1506,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `requestPayerInput`<sup>Optional</sup> <a name="requestPayerInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayerInput"></a>
+##### `requestPayerInput`<sup>Optional</sup> <a name="requestPayerInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayerInput"></a>
 
 ```typescript
 public readonly requestPayerInput: string;
@@ -1516,7 +1516,7 @@ public readonly requestPayerInput: string;
 
 ---
 
-##### `serverSideEncryptionInput`<sup>Optional</sup> <a name="serverSideEncryptionInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryptionInput"></a>
+##### `serverSideEncryptionInput`<sup>Optional</sup> <a name="serverSideEncryptionInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryptionInput"></a>
 
 ```typescript
 public readonly serverSideEncryptionInput: string;
@@ -1526,7 +1526,7 @@ public readonly serverSideEncryptionInput: string;
 
 ---
 
-##### `sourceCustomerAlgorithmInput`<sup>Optional</sup> <a name="sourceCustomerAlgorithmInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithmInput"></a>
+##### `sourceCustomerAlgorithmInput`<sup>Optional</sup> <a name="sourceCustomerAlgorithmInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithmInput"></a>
 
 ```typescript
 public readonly sourceCustomerAlgorithmInput: string;
@@ -1536,7 +1536,7 @@ public readonly sourceCustomerAlgorithmInput: string;
 
 ---
 
-##### `sourceCustomerKeyInput`<sup>Optional</sup> <a name="sourceCustomerKeyInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyInput"></a>
+##### `sourceCustomerKeyInput`<sup>Optional</sup> <a name="sourceCustomerKeyInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyInput"></a>
 
 ```typescript
 public readonly sourceCustomerKeyInput: string;
@@ -1546,7 +1546,7 @@ public readonly sourceCustomerKeyInput: string;
 
 ---
 
-##### `sourceCustomerKeyMd5Input`<sup>Optional</sup> <a name="sourceCustomerKeyMd5Input" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5Input"></a>
+##### `sourceCustomerKeyMd5Input`<sup>Optional</sup> <a name="sourceCustomerKeyMd5Input" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5Input"></a>
 
 ```typescript
 public readonly sourceCustomerKeyMd5Input: string;
@@ -1556,7 +1556,7 @@ public readonly sourceCustomerKeyMd5Input: string;
 
 ---
 
-##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceInput"></a>
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceInput"></a>
 
 ```typescript
 public readonly sourceInput: string;
@@ -1566,7 +1566,7 @@ public readonly sourceInput: string;
 
 ---
 
-##### `storageClassInput`<sup>Optional</sup> <a name="storageClassInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClassInput"></a>
+##### `storageClassInput`<sup>Optional</sup> <a name="storageClassInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClassInput"></a>
 
 ```typescript
 public readonly storageClassInput: string;
@@ -1576,7 +1576,7 @@ public readonly storageClassInput: string;
 
 ---
 
-##### `taggingDirectiveInput`<sup>Optional</sup> <a name="taggingDirectiveInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirectiveInput"></a>
+##### `taggingDirectiveInput`<sup>Optional</sup> <a name="taggingDirectiveInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirectiveInput"></a>
 
 ```typescript
 public readonly taggingDirectiveInput: string;
@@ -1586,7 +1586,7 @@ public readonly taggingDirectiveInput: string;
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -1596,7 +1596,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -1606,7 +1606,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `websiteRedirectInput`<sup>Optional</sup> <a name="websiteRedirectInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirectInput"></a>
+##### `websiteRedirectInput`<sup>Optional</sup> <a name="websiteRedirectInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirectInput"></a>
 
 ```typescript
 public readonly websiteRedirectInput: string;
@@ -1616,7 +1616,7 @@ public readonly websiteRedirectInput: string;
 
 ---
 
-##### `acl`<sup>Required</sup> <a name="acl" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.acl"></a>
+##### `acl`<sup>Required</sup> <a name="acl" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.acl"></a>
 
 ```typescript
 public readonly acl: string;
@@ -1626,7 +1626,7 @@ public readonly acl: string;
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucket"></a>
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucket"></a>
 
 ```typescript
 public readonly bucket: string;
@@ -1636,7 +1636,7 @@ public readonly bucket: string;
 
 ---
 
-##### `bucketKeyEnabled`<sup>Required</sup> <a name="bucketKeyEnabled" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabled"></a>
+##### `bucketKeyEnabled`<sup>Required</sup> <a name="bucketKeyEnabled" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.bucketKeyEnabled"></a>
 
 ```typescript
 public readonly bucketKeyEnabled: boolean | IResolvable;
@@ -1646,7 +1646,7 @@ public readonly bucketKeyEnabled: boolean | IResolvable;
 
 ---
 
-##### `cacheControl`<sup>Required</sup> <a name="cacheControl" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControl"></a>
+##### `cacheControl`<sup>Required</sup> <a name="cacheControl" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.cacheControl"></a>
 
 ```typescript
 public readonly cacheControl: string;
@@ -1656,7 +1656,7 @@ public readonly cacheControl: string;
 
 ---
 
-##### `checksumAlgorithm`<sup>Required</sup> <a name="checksumAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithm"></a>
+##### `checksumAlgorithm`<sup>Required</sup> <a name="checksumAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.checksumAlgorithm"></a>
 
 ```typescript
 public readonly checksumAlgorithm: string;
@@ -1666,7 +1666,7 @@ public readonly checksumAlgorithm: string;
 
 ---
 
-##### `contentDisposition`<sup>Required</sup> <a name="contentDisposition" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDisposition"></a>
+##### `contentDisposition`<sup>Required</sup> <a name="contentDisposition" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentDisposition"></a>
 
 ```typescript
 public readonly contentDisposition: string;
@@ -1676,7 +1676,7 @@ public readonly contentDisposition: string;
 
 ---
 
-##### `contentEncoding`<sup>Required</sup> <a name="contentEncoding" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncoding"></a>
+##### `contentEncoding`<sup>Required</sup> <a name="contentEncoding" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentEncoding"></a>
 
 ```typescript
 public readonly contentEncoding: string;
@@ -1686,7 +1686,7 @@ public readonly contentEncoding: string;
 
 ---
 
-##### `contentLanguage`<sup>Required</sup> <a name="contentLanguage" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguage"></a>
+##### `contentLanguage`<sup>Required</sup> <a name="contentLanguage" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentLanguage"></a>
 
 ```typescript
 public readonly contentLanguage: string;
@@ -1696,7 +1696,7 @@ public readonly contentLanguage: string;
 
 ---
 
-##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentType"></a>
+##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -1706,7 +1706,7 @@ public readonly contentType: string;
 
 ---
 
-##### `copyIfMatch`<sup>Required</sup> <a name="copyIfMatch" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatch"></a>
+##### `copyIfMatch`<sup>Required</sup> <a name="copyIfMatch" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfMatch"></a>
 
 ```typescript
 public readonly copyIfMatch: string;
@@ -1716,7 +1716,7 @@ public readonly copyIfMatch: string;
 
 ---
 
-##### `copyIfModifiedSince`<sup>Required</sup> <a name="copyIfModifiedSince" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSince"></a>
+##### `copyIfModifiedSince`<sup>Required</sup> <a name="copyIfModifiedSince" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfModifiedSince"></a>
 
 ```typescript
 public readonly copyIfModifiedSince: string;
@@ -1726,7 +1726,7 @@ public readonly copyIfModifiedSince: string;
 
 ---
 
-##### `copyIfNoneMatch`<sup>Required</sup> <a name="copyIfNoneMatch" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatch"></a>
+##### `copyIfNoneMatch`<sup>Required</sup> <a name="copyIfNoneMatch" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfNoneMatch"></a>
 
 ```typescript
 public readonly copyIfNoneMatch: string;
@@ -1736,7 +1736,7 @@ public readonly copyIfNoneMatch: string;
 
 ---
 
-##### `copyIfUnmodifiedSince`<sup>Required</sup> <a name="copyIfUnmodifiedSince" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSince"></a>
+##### `copyIfUnmodifiedSince`<sup>Required</sup> <a name="copyIfUnmodifiedSince" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.copyIfUnmodifiedSince"></a>
 
 ```typescript
 public readonly copyIfUnmodifiedSince: string;
@@ -1746,7 +1746,7 @@ public readonly copyIfUnmodifiedSince: string;
 
 ---
 
-##### `customerAlgorithm`<sup>Required</sup> <a name="customerAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithm"></a>
+##### `customerAlgorithm`<sup>Required</sup> <a name="customerAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerAlgorithm"></a>
 
 ```typescript
 public readonly customerAlgorithm: string;
@@ -1756,7 +1756,7 @@ public readonly customerAlgorithm: string;
 
 ---
 
-##### `customerKey`<sup>Required</sup> <a name="customerKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKey"></a>
+##### `customerKey`<sup>Required</sup> <a name="customerKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKey"></a>
 
 ```typescript
 public readonly customerKey: string;
@@ -1766,7 +1766,7 @@ public readonly customerKey: string;
 
 ---
 
-##### `customerKeyMd5`<sup>Required</sup> <a name="customerKeyMd5" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5"></a>
+##### `customerKeyMd5`<sup>Required</sup> <a name="customerKeyMd5" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.customerKeyMd5"></a>
 
 ```typescript
 public readonly customerKeyMd5: string;
@@ -1776,7 +1776,7 @@ public readonly customerKeyMd5: string;
 
 ---
 
-##### `expectedBucketOwner`<sup>Required</sup> <a name="expectedBucketOwner" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwner"></a>
+##### `expectedBucketOwner`<sup>Required</sup> <a name="expectedBucketOwner" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedBucketOwner"></a>
 
 ```typescript
 public readonly expectedBucketOwner: string;
@@ -1786,7 +1786,7 @@ public readonly expectedBucketOwner: string;
 
 ---
 
-##### `expectedSourceBucketOwner`<sup>Required</sup> <a name="expectedSourceBucketOwner" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwner"></a>
+##### `expectedSourceBucketOwner`<sup>Required</sup> <a name="expectedSourceBucketOwner" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expectedSourceBucketOwner"></a>
 
 ```typescript
 public readonly expectedSourceBucketOwner: string;
@@ -1796,7 +1796,7 @@ public readonly expectedSourceBucketOwner: string;
 
 ---
 
-##### `expires`<sup>Required</sup> <a name="expires" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expires"></a>
+##### `expires`<sup>Required</sup> <a name="expires" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.expires"></a>
 
 ```typescript
 public readonly expires: string;
@@ -1806,7 +1806,7 @@ public readonly expires: string;
 
 ---
 
-##### `forceDestroy`<sup>Required</sup> <a name="forceDestroy" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroy"></a>
+##### `forceDestroy`<sup>Required</sup> <a name="forceDestroy" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.forceDestroy"></a>
 
 ```typescript
 public readonly forceDestroy: boolean | IResolvable;
@@ -1816,7 +1816,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1826,7 +1826,7 @@ public readonly id: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1836,7 +1836,7 @@ public readonly key: string;
 
 ---
 
-##### `kmsEncryptionContext`<sup>Required</sup> <a name="kmsEncryptionContext" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContext"></a>
+##### `kmsEncryptionContext`<sup>Required</sup> <a name="kmsEncryptionContext" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsEncryptionContext"></a>
 
 ```typescript
 public readonly kmsEncryptionContext: string;
@@ -1846,7 +1846,7 @@ public readonly kmsEncryptionContext: string;
 
 ---
 
-##### `kmsKeyId`<sup>Required</sup> <a name="kmsKeyId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyId"></a>
+##### `kmsKeyId`<sup>Required</sup> <a name="kmsKeyId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.kmsKeyId"></a>
 
 ```typescript
 public readonly kmsKeyId: string;
@@ -1856,7 +1856,7 @@ public readonly kmsKeyId: string;
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadata"></a>
 
 ```typescript
 public readonly metadata: {[ key: string ]: string};
@@ -1866,7 +1866,7 @@ public readonly metadata: {[ key: string ]: string};
 
 ---
 
-##### `metadataDirective`<sup>Required</sup> <a name="metadataDirective" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirective"></a>
+##### `metadataDirective`<sup>Required</sup> <a name="metadataDirective" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.metadataDirective"></a>
 
 ```typescript
 public readonly metadataDirective: string;
@@ -1876,7 +1876,7 @@ public readonly metadataDirective: string;
 
 ---
 
-##### `objectLockLegalHoldStatus`<sup>Required</sup> <a name="objectLockLegalHoldStatus" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatus"></a>
+##### `objectLockLegalHoldStatus`<sup>Required</sup> <a name="objectLockLegalHoldStatus" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockLegalHoldStatus"></a>
 
 ```typescript
 public readonly objectLockLegalHoldStatus: string;
@@ -1886,7 +1886,7 @@ public readonly objectLockLegalHoldStatus: string;
 
 ---
 
-##### `objectLockMode`<sup>Required</sup> <a name="objectLockMode" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockMode"></a>
+##### `objectLockMode`<sup>Required</sup> <a name="objectLockMode" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockMode"></a>
 
 ```typescript
 public readonly objectLockMode: string;
@@ -1896,7 +1896,7 @@ public readonly objectLockMode: string;
 
 ---
 
-##### `objectLockRetainUntilDate`<sup>Required</sup> <a name="objectLockRetainUntilDate" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDate"></a>
+##### `objectLockRetainUntilDate`<sup>Required</sup> <a name="objectLockRetainUntilDate" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.objectLockRetainUntilDate"></a>
 
 ```typescript
 public readonly objectLockRetainUntilDate: string;
@@ -1906,7 +1906,7 @@ public readonly objectLockRetainUntilDate: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1916,7 +1916,7 @@ public readonly region: string;
 
 ---
 
-##### `requestPayer`<sup>Required</sup> <a name="requestPayer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayer"></a>
+##### `requestPayer`<sup>Required</sup> <a name="requestPayer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.requestPayer"></a>
 
 ```typescript
 public readonly requestPayer: string;
@@ -1926,7 +1926,7 @@ public readonly requestPayer: string;
 
 ---
 
-##### `serverSideEncryption`<sup>Required</sup> <a name="serverSideEncryption" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryption"></a>
+##### `serverSideEncryption`<sup>Required</sup> <a name="serverSideEncryption" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.serverSideEncryption"></a>
 
 ```typescript
 public readonly serverSideEncryption: string;
@@ -1936,7 +1936,7 @@ public readonly serverSideEncryption: string;
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -1946,7 +1946,7 @@ public readonly source: string;
 
 ---
 
-##### `sourceCustomerAlgorithm`<sup>Required</sup> <a name="sourceCustomerAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithm"></a>
+##### `sourceCustomerAlgorithm`<sup>Required</sup> <a name="sourceCustomerAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerAlgorithm"></a>
 
 ```typescript
 public readonly sourceCustomerAlgorithm: string;
@@ -1956,7 +1956,7 @@ public readonly sourceCustomerAlgorithm: string;
 
 ---
 
-##### `sourceCustomerKey`<sup>Required</sup> <a name="sourceCustomerKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKey"></a>
+##### `sourceCustomerKey`<sup>Required</sup> <a name="sourceCustomerKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKey"></a>
 
 ```typescript
 public readonly sourceCustomerKey: string;
@@ -1966,7 +1966,7 @@ public readonly sourceCustomerKey: string;
 
 ---
 
-##### `sourceCustomerKeyMd5`<sup>Required</sup> <a name="sourceCustomerKeyMd5" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5"></a>
+##### `sourceCustomerKeyMd5`<sup>Required</sup> <a name="sourceCustomerKeyMd5" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.sourceCustomerKeyMd5"></a>
 
 ```typescript
 public readonly sourceCustomerKeyMd5: string;
@@ -1976,7 +1976,7 @@ public readonly sourceCustomerKeyMd5: string;
 
 ---
 
-##### `storageClass`<sup>Required</sup> <a name="storageClass" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClass"></a>
+##### `storageClass`<sup>Required</sup> <a name="storageClass" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.storageClass"></a>
 
 ```typescript
 public readonly storageClass: string;
@@ -1986,7 +1986,7 @@ public readonly storageClass: string;
 
 ---
 
-##### `taggingDirective`<sup>Required</sup> <a name="taggingDirective" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirective"></a>
+##### `taggingDirective`<sup>Required</sup> <a name="taggingDirective" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.taggingDirective"></a>
 
 ```typescript
 public readonly taggingDirective: string;
@@ -1996,7 +1996,7 @@ public readonly taggingDirective: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2006,7 +2006,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -2016,7 +2016,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 ---
 
-##### `websiteRedirect`<sup>Required</sup> <a name="websiteRedirect" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirect"></a>
+##### `websiteRedirect`<sup>Required</sup> <a name="websiteRedirect" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.websiteRedirect"></a>
 
 ```typescript
 public readonly websiteRedirect: string;
@@ -2030,11 +2030,11 @@ public readonly websiteRedirect: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -2046,12 +2046,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### S3ObjectCopyConfig <a name="S3ObjectCopyConfig" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig"></a>
+### S3ObjectCopyConfig <a name="S3ObjectCopyConfig" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 const s3ObjectCopyConfig: s3ObjectCopy.S3ObjectCopyConfig = { ... }
 ```
@@ -2060,60 +2060,60 @@ const s3ObjectCopyConfig: s3ObjectCopy.S3ObjectCopyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#key S3ObjectCopy#key}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source S3ObjectCopy#source}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.acl">acl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#acl S3ObjectCopy#acl}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#bucket_key_enabled S3ObjectCopy#bucket_key_enabled}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.cacheControl">cacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#checksum_algorithm S3ObjectCopy#checksum_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfMatch">copyIfMatch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfModifiedSince">copyIfModifiedSince</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfNoneMatch">copyIfNoneMatch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfUnmodifiedSince">copyIfUnmodifiedSince</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerAlgorithm">customerAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#customer_algorithm S3ObjectCopy#customer_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKey">customerKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#customer_key S3ObjectCopy#customer_key}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKeyMd5">customerKeyMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#customer_key_md5 S3ObjectCopy#customer_key_md5}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#expected_bucket_owner S3ObjectCopy#expected_bucket_owner}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedSourceBucketOwner">expectedSourceBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#expected_source_bucket_owner S3ObjectCopy#expected_source_bucket_owner}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expires">expires</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.grant">grant</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]</code> | grant block. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsEncryptionContext">kmsEncryptionContext</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#kms_encryption_context S3ObjectCopy#kms_encryption_context}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#kms_key_id S3ObjectCopy#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadataDirective">metadataDirective</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#object_lock_legal_hold_status S3ObjectCopy#object_lock_legal_hold_status}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a></code> | override_provider block. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.requestPayer">requestPayer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#request_payer S3ObjectCopy#request_payer}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerAlgorithm">sourceCustomerAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKey">sourceCustomerKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKeyMd5">sourceCustomerKeyMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.taggingDirective">taggingDirective</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tags_all S3ObjectCopy#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#key S3ObjectCopy#key}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source S3ObjectCopy#source}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.acl">acl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#acl S3ObjectCopy#acl}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#bucket_key_enabled S3ObjectCopy#bucket_key_enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.cacheControl">cacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#checksum_algorithm S3ObjectCopy#checksum_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfMatch">copyIfMatch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfModifiedSince">copyIfModifiedSince</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfNoneMatch">copyIfNoneMatch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfUnmodifiedSince">copyIfUnmodifiedSince</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerAlgorithm">customerAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#customer_algorithm S3ObjectCopy#customer_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKey">customerKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#customer_key S3ObjectCopy#customer_key}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKeyMd5">customerKeyMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#customer_key_md5 S3ObjectCopy#customer_key_md5}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedBucketOwner">expectedBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#expected_bucket_owner S3ObjectCopy#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedSourceBucketOwner">expectedSourceBucketOwner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#expected_source_bucket_owner S3ObjectCopy#expected_source_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expires">expires</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.grant">grant</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]</code> | grant block. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsEncryptionContext">kmsEncryptionContext</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#kms_encryption_context S3ObjectCopy#kms_encryption_context}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#kms_key_id S3ObjectCopy#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadataDirective">metadataDirective</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#object_lock_legal_hold_status S3ObjectCopy#object_lock_legal_hold_status}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a></code> | override_provider block. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.requestPayer">requestPayer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#request_payer S3ObjectCopy#request_payer}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerAlgorithm">sourceCustomerAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKey">sourceCustomerKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKeyMd5">sourceCustomerKeyMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.taggingDirective">taggingDirective</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tags_all S3ObjectCopy#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -2123,7 +2123,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -2133,7 +2133,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -2143,7 +2143,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -2153,7 +2153,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -2163,7 +2163,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -2173,7 +2173,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -2183,7 +2183,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucket"></a>
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucket"></a>
 
 ```typescript
 public readonly bucket: string;
@@ -2191,11 +2191,11 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}.
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -2203,11 +2203,11 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#key S3ObjectCopy#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#key S3ObjectCopy#key}.
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -2215,11 +2215,11 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source S3ObjectCopy#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source S3ObjectCopy#source}.
 
 ---
 
-##### `acl`<sup>Optional</sup> <a name="acl" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.acl"></a>
+##### `acl`<sup>Optional</sup> <a name="acl" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.acl"></a>
 
 ```typescript
 public readonly acl: string;
@@ -2227,11 +2227,11 @@ public readonly acl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#acl S3ObjectCopy#acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#acl S3ObjectCopy#acl}.
 
 ---
 
-##### `bucketKeyEnabled`<sup>Optional</sup> <a name="bucketKeyEnabled" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucketKeyEnabled"></a>
+##### `bucketKeyEnabled`<sup>Optional</sup> <a name="bucketKeyEnabled" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.bucketKeyEnabled"></a>
 
 ```typescript
 public readonly bucketKeyEnabled: boolean | IResolvable;
@@ -2239,11 +2239,11 @@ public readonly bucketKeyEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#bucket_key_enabled S3ObjectCopy#bucket_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#bucket_key_enabled S3ObjectCopy#bucket_key_enabled}.
 
 ---
 
-##### `cacheControl`<sup>Optional</sup> <a name="cacheControl" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.cacheControl"></a>
+##### `cacheControl`<sup>Optional</sup> <a name="cacheControl" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.cacheControl"></a>
 
 ```typescript
 public readonly cacheControl: string;
@@ -2251,11 +2251,11 @@ public readonly cacheControl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}.
 
 ---
 
-##### `checksumAlgorithm`<sup>Optional</sup> <a name="checksumAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.checksumAlgorithm"></a>
+##### `checksumAlgorithm`<sup>Optional</sup> <a name="checksumAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.checksumAlgorithm"></a>
 
 ```typescript
 public readonly checksumAlgorithm: string;
@@ -2263,11 +2263,11 @@ public readonly checksumAlgorithm: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#checksum_algorithm S3ObjectCopy#checksum_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#checksum_algorithm S3ObjectCopy#checksum_algorithm}.
 
 ---
 
-##### `contentDisposition`<sup>Optional</sup> <a name="contentDisposition" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentDisposition"></a>
+##### `contentDisposition`<sup>Optional</sup> <a name="contentDisposition" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentDisposition"></a>
 
 ```typescript
 public readonly contentDisposition: string;
@@ -2275,11 +2275,11 @@ public readonly contentDisposition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}.
 
 ---
 
-##### `contentEncoding`<sup>Optional</sup> <a name="contentEncoding" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentEncoding"></a>
+##### `contentEncoding`<sup>Optional</sup> <a name="contentEncoding" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentEncoding"></a>
 
 ```typescript
 public readonly contentEncoding: string;
@@ -2287,11 +2287,11 @@ public readonly contentEncoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}.
 
 ---
 
-##### `contentLanguage`<sup>Optional</sup> <a name="contentLanguage" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentLanguage"></a>
+##### `contentLanguage`<sup>Optional</sup> <a name="contentLanguage" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentLanguage"></a>
 
 ```typescript
 public readonly contentLanguage: string;
@@ -2299,11 +2299,11 @@ public readonly contentLanguage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}.
 
 ---
 
-##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentType"></a>
+##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -2311,11 +2311,11 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}.
 
 ---
 
-##### `copyIfMatch`<sup>Optional</sup> <a name="copyIfMatch" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfMatch"></a>
+##### `copyIfMatch`<sup>Optional</sup> <a name="copyIfMatch" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfMatch"></a>
 
 ```typescript
 public readonly copyIfMatch: string;
@@ -2323,11 +2323,11 @@ public readonly copyIfMatch: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}.
 
 ---
 
-##### `copyIfModifiedSince`<sup>Optional</sup> <a name="copyIfModifiedSince" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfModifiedSince"></a>
+##### `copyIfModifiedSince`<sup>Optional</sup> <a name="copyIfModifiedSince" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfModifiedSince"></a>
 
 ```typescript
 public readonly copyIfModifiedSince: string;
@@ -2335,11 +2335,11 @@ public readonly copyIfModifiedSince: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}.
 
 ---
 
-##### `copyIfNoneMatch`<sup>Optional</sup> <a name="copyIfNoneMatch" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfNoneMatch"></a>
+##### `copyIfNoneMatch`<sup>Optional</sup> <a name="copyIfNoneMatch" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfNoneMatch"></a>
 
 ```typescript
 public readonly copyIfNoneMatch: string;
@@ -2347,11 +2347,11 @@ public readonly copyIfNoneMatch: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}.
 
 ---
 
-##### `copyIfUnmodifiedSince`<sup>Optional</sup> <a name="copyIfUnmodifiedSince" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfUnmodifiedSince"></a>
+##### `copyIfUnmodifiedSince`<sup>Optional</sup> <a name="copyIfUnmodifiedSince" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfUnmodifiedSince"></a>
 
 ```typescript
 public readonly copyIfUnmodifiedSince: string;
@@ -2359,11 +2359,11 @@ public readonly copyIfUnmodifiedSince: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}.
 
 ---
 
-##### `customerAlgorithm`<sup>Optional</sup> <a name="customerAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerAlgorithm"></a>
+##### `customerAlgorithm`<sup>Optional</sup> <a name="customerAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerAlgorithm"></a>
 
 ```typescript
 public readonly customerAlgorithm: string;
@@ -2371,11 +2371,11 @@ public readonly customerAlgorithm: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#customer_algorithm S3ObjectCopy#customer_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#customer_algorithm S3ObjectCopy#customer_algorithm}.
 
 ---
 
-##### `customerKey`<sup>Optional</sup> <a name="customerKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKey"></a>
+##### `customerKey`<sup>Optional</sup> <a name="customerKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKey"></a>
 
 ```typescript
 public readonly customerKey: string;
@@ -2383,11 +2383,11 @@ public readonly customerKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#customer_key S3ObjectCopy#customer_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#customer_key S3ObjectCopy#customer_key}.
 
 ---
 
-##### `customerKeyMd5`<sup>Optional</sup> <a name="customerKeyMd5" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKeyMd5"></a>
+##### `customerKeyMd5`<sup>Optional</sup> <a name="customerKeyMd5" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.customerKeyMd5"></a>
 
 ```typescript
 public readonly customerKeyMd5: string;
@@ -2395,11 +2395,11 @@ public readonly customerKeyMd5: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#customer_key_md5 S3ObjectCopy#customer_key_md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#customer_key_md5 S3ObjectCopy#customer_key_md5}.
 
 ---
 
-##### `expectedBucketOwner`<sup>Optional</sup> <a name="expectedBucketOwner" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedBucketOwner"></a>
+##### `expectedBucketOwner`<sup>Optional</sup> <a name="expectedBucketOwner" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedBucketOwner"></a>
 
 ```typescript
 public readonly expectedBucketOwner: string;
@@ -2407,11 +2407,11 @@ public readonly expectedBucketOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#expected_bucket_owner S3ObjectCopy#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#expected_bucket_owner S3ObjectCopy#expected_bucket_owner}.
 
 ---
 
-##### `expectedSourceBucketOwner`<sup>Optional</sup> <a name="expectedSourceBucketOwner" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedSourceBucketOwner"></a>
+##### `expectedSourceBucketOwner`<sup>Optional</sup> <a name="expectedSourceBucketOwner" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expectedSourceBucketOwner"></a>
 
 ```typescript
 public readonly expectedSourceBucketOwner: string;
@@ -2419,11 +2419,11 @@ public readonly expectedSourceBucketOwner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#expected_source_bucket_owner S3ObjectCopy#expected_source_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#expected_source_bucket_owner S3ObjectCopy#expected_source_bucket_owner}.
 
 ---
 
-##### `expires`<sup>Optional</sup> <a name="expires" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expires"></a>
+##### `expires`<sup>Optional</sup> <a name="expires" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.expires"></a>
 
 ```typescript
 public readonly expires: string;
@@ -2431,11 +2431,11 @@ public readonly expires: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}.
 
 ---
 
-##### `forceDestroy`<sup>Optional</sup> <a name="forceDestroy" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forceDestroy"></a>
+##### `forceDestroy`<sup>Optional</sup> <a name="forceDestroy" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.forceDestroy"></a>
 
 ```typescript
 public readonly forceDestroy: boolean | IResolvable;
@@ -2443,25 +2443,25 @@ public readonly forceDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}.
 
 ---
 
-##### `grant`<sup>Optional</sup> <a name="grant" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.grant"></a>
+##### `grant`<sup>Optional</sup> <a name="grant" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.grant"></a>
 
 ```typescript
 public readonly grant: IResolvable | S3ObjectCopyGrant[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
 
 grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#grant S3ObjectCopy#grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#grant S3ObjectCopy#grant}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -2469,14 +2469,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `kmsEncryptionContext`<sup>Optional</sup> <a name="kmsEncryptionContext" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsEncryptionContext"></a>
+##### `kmsEncryptionContext`<sup>Optional</sup> <a name="kmsEncryptionContext" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsEncryptionContext"></a>
 
 ```typescript
 public readonly kmsEncryptionContext: string;
@@ -2484,11 +2484,11 @@ public readonly kmsEncryptionContext: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#kms_encryption_context S3ObjectCopy#kms_encryption_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#kms_encryption_context S3ObjectCopy#kms_encryption_context}.
 
 ---
 
-##### `kmsKeyId`<sup>Optional</sup> <a name="kmsKeyId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsKeyId"></a>
+##### `kmsKeyId`<sup>Optional</sup> <a name="kmsKeyId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.kmsKeyId"></a>
 
 ```typescript
 public readonly kmsKeyId: string;
@@ -2496,11 +2496,11 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#kms_key_id S3ObjectCopy#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#kms_key_id S3ObjectCopy#kms_key_id}.
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadata"></a>
 
 ```typescript
 public readonly metadata: {[ key: string ]: string};
@@ -2508,11 +2508,11 @@ public readonly metadata: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}.
 
 ---
 
-##### `metadataDirective`<sup>Optional</sup> <a name="metadataDirective" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadataDirective"></a>
+##### `metadataDirective`<sup>Optional</sup> <a name="metadataDirective" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.metadataDirective"></a>
 
 ```typescript
 public readonly metadataDirective: string;
@@ -2520,11 +2520,11 @@ public readonly metadataDirective: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}.
 
 ---
 
-##### `objectLockLegalHoldStatus`<sup>Optional</sup> <a name="objectLockLegalHoldStatus" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockLegalHoldStatus"></a>
+##### `objectLockLegalHoldStatus`<sup>Optional</sup> <a name="objectLockLegalHoldStatus" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockLegalHoldStatus"></a>
 
 ```typescript
 public readonly objectLockLegalHoldStatus: string;
@@ -2532,11 +2532,11 @@ public readonly objectLockLegalHoldStatus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#object_lock_legal_hold_status S3ObjectCopy#object_lock_legal_hold_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#object_lock_legal_hold_status S3ObjectCopy#object_lock_legal_hold_status}.
 
 ---
 
-##### `objectLockMode`<sup>Optional</sup> <a name="objectLockMode" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockMode"></a>
+##### `objectLockMode`<sup>Optional</sup> <a name="objectLockMode" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockMode"></a>
 
 ```typescript
 public readonly objectLockMode: string;
@@ -2544,11 +2544,11 @@ public readonly objectLockMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}.
 
 ---
 
-##### `objectLockRetainUntilDate`<sup>Optional</sup> <a name="objectLockRetainUntilDate" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockRetainUntilDate"></a>
+##### `objectLockRetainUntilDate`<sup>Optional</sup> <a name="objectLockRetainUntilDate" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockRetainUntilDate"></a>
 
 ```typescript
 public readonly objectLockRetainUntilDate: string;
@@ -2556,25 +2556,25 @@ public readonly objectLockRetainUntilDate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}.
 
 ---
 
-##### `overrideProvider`<sup>Optional</sup> <a name="overrideProvider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.overrideProvider"></a>
+##### `overrideProvider`<sup>Optional</sup> <a name="overrideProvider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.overrideProvider"></a>
 
 ```typescript
 public readonly overrideProvider: S3ObjectCopyOverrideProvider;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
 
 override_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#override_provider S3ObjectCopy#override_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#override_provider S3ObjectCopy#override_provider}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -2584,11 +2584,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#region S3ObjectCopy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#region S3ObjectCopy#region}
 
 ---
 
-##### `requestPayer`<sup>Optional</sup> <a name="requestPayer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.requestPayer"></a>
+##### `requestPayer`<sup>Optional</sup> <a name="requestPayer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.requestPayer"></a>
 
 ```typescript
 public readonly requestPayer: string;
@@ -2596,11 +2596,11 @@ public readonly requestPayer: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#request_payer S3ObjectCopy#request_payer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#request_payer S3ObjectCopy#request_payer}.
 
 ---
 
-##### `serverSideEncryption`<sup>Optional</sup> <a name="serverSideEncryption" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryption"></a>
+##### `serverSideEncryption`<sup>Optional</sup> <a name="serverSideEncryption" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryption"></a>
 
 ```typescript
 public readonly serverSideEncryption: string;
@@ -2608,11 +2608,11 @@ public readonly serverSideEncryption: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}.
 
 ---
 
-##### `sourceCustomerAlgorithm`<sup>Optional</sup> <a name="sourceCustomerAlgorithm" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerAlgorithm"></a>
+##### `sourceCustomerAlgorithm`<sup>Optional</sup> <a name="sourceCustomerAlgorithm" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerAlgorithm"></a>
 
 ```typescript
 public readonly sourceCustomerAlgorithm: string;
@@ -2620,11 +2620,11 @@ public readonly sourceCustomerAlgorithm: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}.
 
 ---
 
-##### `sourceCustomerKey`<sup>Optional</sup> <a name="sourceCustomerKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKey"></a>
+##### `sourceCustomerKey`<sup>Optional</sup> <a name="sourceCustomerKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKey"></a>
 
 ```typescript
 public readonly sourceCustomerKey: string;
@@ -2632,11 +2632,11 @@ public readonly sourceCustomerKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}.
 
 ---
 
-##### `sourceCustomerKeyMd5`<sup>Optional</sup> <a name="sourceCustomerKeyMd5" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKeyMd5"></a>
+##### `sourceCustomerKeyMd5`<sup>Optional</sup> <a name="sourceCustomerKeyMd5" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.sourceCustomerKeyMd5"></a>
 
 ```typescript
 public readonly sourceCustomerKeyMd5: string;
@@ -2644,11 +2644,11 @@ public readonly sourceCustomerKeyMd5: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}.
 
 ---
 
-##### `storageClass`<sup>Optional</sup> <a name="storageClass" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.storageClass"></a>
+##### `storageClass`<sup>Optional</sup> <a name="storageClass" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.storageClass"></a>
 
 ```typescript
 public readonly storageClass: string;
@@ -2656,11 +2656,11 @@ public readonly storageClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}.
 
 ---
 
-##### `taggingDirective`<sup>Optional</sup> <a name="taggingDirective" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.taggingDirective"></a>
+##### `taggingDirective`<sup>Optional</sup> <a name="taggingDirective" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.taggingDirective"></a>
 
 ```typescript
 public readonly taggingDirective: string;
@@ -2668,11 +2668,11 @@ public readonly taggingDirective: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2680,11 +2680,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -2692,11 +2692,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tags_all S3ObjectCopy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tags_all S3ObjectCopy#tags_all}.
 
 ---
 
-##### `websiteRedirect`<sup>Optional</sup> <a name="websiteRedirect" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.websiteRedirect"></a>
+##### `websiteRedirect`<sup>Optional</sup> <a name="websiteRedirect" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig.property.websiteRedirect"></a>
 
 ```typescript
 public readonly websiteRedirect: string;
@@ -2704,16 +2704,16 @@ public readonly websiteRedirect: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}.
 
 ---
 
-### S3ObjectCopyGrant <a name="S3ObjectCopyGrant" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant"></a>
+### S3ObjectCopyGrant <a name="S3ObjectCopyGrant" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 const s3ObjectCopyGrant: s3ObjectCopy.S3ObjectCopyGrant = { ... }
 ```
@@ -2722,15 +2722,15 @@ const s3ObjectCopyGrant: s3ObjectCopy.S3ObjectCopyGrant = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.permissions">permissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#permissions S3ObjectCopy#permissions}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#type S3ObjectCopy#type}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#email S3ObjectCopy#email}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#uri S3ObjectCopy#uri}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.permissions">permissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#permissions S3ObjectCopy#permissions}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#type S3ObjectCopy#type}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#email S3ObjectCopy#email}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#uri S3ObjectCopy#uri}. |
 
 ---
 
-##### `permissions`<sup>Required</sup> <a name="permissions" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.permissions"></a>
+##### `permissions`<sup>Required</sup> <a name="permissions" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.permissions"></a>
 
 ```typescript
 public readonly permissions: string[];
@@ -2738,11 +2738,11 @@ public readonly permissions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#permissions S3ObjectCopy#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#permissions S3ObjectCopy#permissions}.
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -2750,11 +2750,11 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#type S3ObjectCopy#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#type S3ObjectCopy#type}.
 
 ---
 
-##### `email`<sup>Optional</sup> <a name="email" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.email"></a>
+##### `email`<sup>Optional</sup> <a name="email" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.email"></a>
 
 ```typescript
 public readonly email: string;
@@ -2762,11 +2762,11 @@ public readonly email: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#email S3ObjectCopy#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#email S3ObjectCopy#email}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -2774,14 +2774,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#id S3ObjectCopy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `uri`<sup>Optional</sup> <a name="uri" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.uri"></a>
+##### `uri`<sup>Optional</sup> <a name="uri" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant.property.uri"></a>
 
 ```typescript
 public readonly uri: string;
@@ -2789,16 +2789,16 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#uri S3ObjectCopy#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#uri S3ObjectCopy#uri}.
 
 ---
 
-### S3ObjectCopyOverrideProvider <a name="S3ObjectCopyOverrideProvider" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider"></a>
+### S3ObjectCopyOverrideProvider <a name="S3ObjectCopyOverrideProvider" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 const s3ObjectCopyOverrideProvider: s3ObjectCopy.S3ObjectCopyOverrideProvider = { ... }
 ```
@@ -2807,30 +2807,30 @@ const s3ObjectCopyOverrideProvider: s3ObjectCopy.S3ObjectCopyOverrideProvider = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a></code> | default_tags block. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a></code> | default_tags block. |
 
 ---
 
-##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.property.defaultTags"></a>
+##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider.property.defaultTags"></a>
 
 ```typescript
 public readonly defaultTags: S3ObjectCopyOverrideProviderDefaultTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#default_tags S3ObjectCopy#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#default_tags S3ObjectCopy#default_tags}
 
 ---
 
-### S3ObjectCopyOverrideProviderDefaultTags <a name="S3ObjectCopyOverrideProviderDefaultTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags"></a>
+### S3ObjectCopyOverrideProviderDefaultTags <a name="S3ObjectCopyOverrideProviderDefaultTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 const s3ObjectCopyOverrideProviderDefaultTags: s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags = { ... }
 ```
@@ -2839,11 +2839,11 @@ const s3ObjectCopyOverrideProviderDefaultTags: s3ObjectCopy.S3ObjectCopyOverride
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}. |
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2851,31 +2851,31 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### S3ObjectCopyGrantList <a name="S3ObjectCopyGrantList" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList"></a>
+### S3ObjectCopyGrantList <a name="S3ObjectCopyGrantList" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 new s3ObjectCopy.S3ObjectCopyGrantList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2883,7 +2883,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2891,7 +2891,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -2903,15 +2903,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -2921,19 +2921,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2941,13 +2941,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2957,13 +2957,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.get"></a>
 
 ```typescript
 public get(index: number): S3ObjectCopyGrantOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -2976,13 +2976,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2996,7 +2996,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3006,37 +3006,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | S3ObjectCopyGrant[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>[]
 
 ---
 
 
-### S3ObjectCopyGrantOutputReference <a name="S3ObjectCopyGrantOutputReference" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference"></a>
+### S3ObjectCopyGrantOutputReference <a name="S3ObjectCopyGrantOutputReference" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 new s3ObjectCopy.S3ObjectCopyGrantOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3044,7 +3044,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -3052,7 +3052,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -3060,7 +3060,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -3072,152 +3072,152 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetEmail">resetEmail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetUri">resetUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetEmail">resetEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetUri">resetUri</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3225,13 +3225,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3241,19 +3241,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetEmail` <a name="resetEmail" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetEmail"></a>
+##### `resetEmail` <a name="resetEmail" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetEmail"></a>
 
 ```typescript
 public resetEmail(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetUri` <a name="resetUri" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetUri"></a>
+##### `resetUri` <a name="resetUri" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.resetUri"></a>
 
 ```typescript
 public resetUri(): void
@@ -3264,23 +3264,23 @@ public resetUri(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissionsInput">permissionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uriInput">uriInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.email">email</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissions">permissions</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uri">uri</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissionsInput">permissionsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uriInput">uriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.email">email</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissions">permissions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uri">uri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3294,7 +3294,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3304,7 +3304,7 @@ public readonly fqn: string;
 
 ---
 
-##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.emailInput"></a>
+##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.emailInput"></a>
 
 ```typescript
 public readonly emailInput: string;
@@ -3314,7 +3314,7 @@ public readonly emailInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -3324,7 +3324,7 @@ public readonly idInput: string;
 
 ---
 
-##### `permissionsInput`<sup>Optional</sup> <a name="permissionsInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissionsInput"></a>
+##### `permissionsInput`<sup>Optional</sup> <a name="permissionsInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissionsInput"></a>
 
 ```typescript
 public readonly permissionsInput: string[];
@@ -3334,7 +3334,7 @@ public readonly permissionsInput: string[];
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: string;
@@ -3344,7 +3344,7 @@ public readonly typeInput: string;
 
 ---
 
-##### `uriInput`<sup>Optional</sup> <a name="uriInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uriInput"></a>
+##### `uriInput`<sup>Optional</sup> <a name="uriInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uriInput"></a>
 
 ```typescript
 public readonly uriInput: string;
@@ -3354,7 +3354,7 @@ public readonly uriInput: string;
 
 ---
 
-##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.email"></a>
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.email"></a>
 
 ```typescript
 public readonly email: string;
@@ -3364,7 +3364,7 @@ public readonly email: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3374,7 +3374,7 @@ public readonly id: string;
 
 ---
 
-##### `permissions`<sup>Required</sup> <a name="permissions" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissions"></a>
+##### `permissions`<sup>Required</sup> <a name="permissions" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.permissions"></a>
 
 ```typescript
 public readonly permissions: string[];
@@ -3384,7 +3384,7 @@ public readonly permissions: string[];
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -3394,7 +3394,7 @@ public readonly type: string;
 
 ---
 
-##### `uri`<sup>Required</sup> <a name="uri" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uri"></a>
+##### `uri`<sup>Required</sup> <a name="uri" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.uri"></a>
 
 ```typescript
 public readonly uri: string;
@@ -3404,35 +3404,35 @@ public readonly uri: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | S3ObjectCopyGrant;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant">S3ObjectCopyGrant</a>
 
 ---
 
 
-### S3ObjectCopyOverrideProviderDefaultTagsOutputReference <a name="S3ObjectCopyOverrideProviderDefaultTagsOutputReference" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference"></a>
+### S3ObjectCopyOverrideProviderDefaultTagsOutputReference <a name="S3ObjectCopyOverrideProviderDefaultTagsOutputReference" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 new s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3440,7 +3440,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -3452,150 +3452,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3603,13 +3603,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3619,7 +3619,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.resetTags"></a>
 
 ```typescript
 public resetTags(): void
@@ -3630,15 +3630,15 @@ public resetTags(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3652,7 +3652,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3662,7 +3662,7 @@ public readonly fqn: string;
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -3672,7 +3672,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -3682,35 +3682,35 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: S3ObjectCopyOverrideProviderDefaultTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
 
 ---
 
 
-### S3ObjectCopyOverrideProviderOutputReference <a name="S3ObjectCopyOverrideProviderOutputReference" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference"></a>
+### S3ObjectCopyOverrideProviderOutputReference <a name="S3ObjectCopyOverrideProviderOutputReference" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer"></a>
 
 ```typescript
-import { s3ObjectCopy } from '@cdktf/provider-aws'
+import { s3ObjectCopy } from '@cdktn/provider-aws'
 
 new s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3718,7 +3718,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -3730,151 +3730,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.putDefaultTags">putDefaultTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resetDefaultTags">resetDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.putDefaultTags">putDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resetDefaultTags">resetDefaultTags</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3882,13 +3882,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3898,19 +3898,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `putDefaultTags` <a name="putDefaultTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.putDefaultTags"></a>
+##### `putDefaultTags` <a name="putDefaultTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.putDefaultTags"></a>
 
 ```typescript
 public putDefaultTags(value: S3ObjectCopyOverrideProviderDefaultTags): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.putDefaultTags.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.putDefaultTags.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
 
 ---
 
-##### `resetDefaultTags` <a name="resetDefaultTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resetDefaultTags"></a>
+##### `resetDefaultTags` <a name="resetDefaultTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.resetDefaultTags"></a>
 
 ```typescript
 public resetDefaultTags(): void
@@ -3921,15 +3921,15 @@ public resetDefaultTags(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference">S3ObjectCopyOverrideProviderDefaultTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTagsInput">defaultTagsInput</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference">S3ObjectCopyOverrideProviderDefaultTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTagsInput">defaultTagsInput</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3943,7 +3943,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3953,33 +3953,33 @@ public readonly fqn: string;
 
 ---
 
-##### `defaultTags`<sup>Required</sup> <a name="defaultTags" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTags"></a>
+##### `defaultTags`<sup>Required</sup> <a name="defaultTags" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTags"></a>
 
 ```typescript
 public readonly defaultTags: S3ObjectCopyOverrideProviderDefaultTagsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference">S3ObjectCopyOverrideProviderDefaultTagsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTagsOutputReference">S3ObjectCopyOverrideProviderDefaultTagsOutputReference</a>
 
 ---
 
-##### `defaultTagsInput`<sup>Optional</sup> <a name="defaultTagsInput" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTagsInput"></a>
+##### `defaultTagsInput`<sup>Optional</sup> <a name="defaultTagsInput" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.defaultTagsInput"></a>
 
 ```typescript
 public readonly defaultTagsInput: S3ObjectCopyOverrideProviderDefaultTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderDefaultTags">S3ObjectCopyOverrideProviderDefaultTags</a>
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProviderOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: S3ObjectCopyOverrideProvider;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyOverrideProvider">S3ObjectCopyOverrideProvider</a>
 
 ---
 

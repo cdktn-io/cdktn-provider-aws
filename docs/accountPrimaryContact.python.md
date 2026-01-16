@@ -1,15 +1,15 @@
-# `accountPrimaryContact` Submodule <a name="`accountPrimaryContact` Submodule" id="@cdktf/provider-aws.accountPrimaryContact"></a>
+# `accountPrimaryContact` Submodule <a name="`accountPrimaryContact` Submodule" id="@cdktn/provider-aws.accountPrimaryContact"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AccountPrimaryContact <a name="AccountPrimaryContact" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact"></a>
+### AccountPrimaryContact <a name="AccountPrimaryContact" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact aws_account_primary_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact aws_account_primary_contact}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import account_primary_contact
+from cdktn_provider_aws import account_primary_contact
 
 accountPrimaryContact.AccountPrimaryContact(
   scope: Construct,
@@ -40,33 +40,33 @@ accountPrimaryContact.AccountPrimaryContact(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine1">address_line1</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.city">city</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.countryCode">country_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.phoneNumber">phone_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.postalCode">postal_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine2">address_line2</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine3">address_line3</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.companyName">company_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.districtOrCounty">district_or_county</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.stateOrRegion">state_or_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.websiteUrl">website_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine1">address_line1</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.city">city</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.countryCode">country_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.phoneNumber">phone_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.postalCode">postal_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine2">address_line2</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine3">address_line3</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.companyName">company_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.districtOrCounty">district_or_county</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.stateOrRegion">state_or_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.websiteUrl">website_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -74,7 +74,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -84,160 +84,160 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `address_line1`<sup>Required</sup> <a name="address_line1" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine1"></a>
+##### `address_line1`<sup>Required</sup> <a name="address_line1" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine1"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}.
 
 ---
 
-##### `city`<sup>Required</sup> <a name="city" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.city"></a>
+##### `city`<sup>Required</sup> <a name="city" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.city"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}.
 
 ---
 
-##### `country_code`<sup>Required</sup> <a name="country_code" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.countryCode"></a>
+##### `country_code`<sup>Required</sup> <a name="country_code" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.countryCode"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}.
 
 ---
 
-##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.fullName"></a>
+##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.fullName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}.
 
 ---
 
-##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.phoneNumber"></a>
+##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.phoneNumber"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}.
 
 ---
 
-##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.postalCode"></a>
+##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.postalCode"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}.
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}.
 
 ---
 
-##### `address_line2`<sup>Optional</sup> <a name="address_line2" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine2"></a>
+##### `address_line2`<sup>Optional</sup> <a name="address_line2" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine2"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}.
 
 ---
 
-##### `address_line3`<sup>Optional</sup> <a name="address_line3" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine3"></a>
+##### `address_line3`<sup>Optional</sup> <a name="address_line3" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.addressLine3"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}.
 
 ---
 
-##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.companyName"></a>
+##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.companyName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}.
 
 ---
 
-##### `district_or_county`<sup>Optional</sup> <a name="district_or_county" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.districtOrCounty"></a>
+##### `district_or_county`<sup>Optional</sup> <a name="district_or_county" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.districtOrCounty"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `state_or_region`<sup>Optional</sup> <a name="state_or_region" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.stateOrRegion"></a>
+##### `state_or_region`<sup>Optional</sup> <a name="state_or_region" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.stateOrRegion"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}.
 
 ---
 
-##### `website_url`<sup>Optional</sup> <a name="website_url" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.websiteUrl"></a>
+##### `website_url`<sup>Optional</sup> <a name="website_url" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.Initializer.parameter.websiteUrl"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}.
 
 ---
 
@@ -245,41 +245,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAccountId">reset_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine2">reset_address_line2</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine3">reset_address_line3</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetCompanyName">reset_company_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetDistrictOrCounty">reset_district_or_county</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetStateOrRegion">reset_state_or_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetWebsiteUrl">reset_website_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine2">reset_address_line2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine3">reset_address_line3</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetCompanyName">reset_company_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetDistrictOrCounty">reset_district_or_county</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetStateOrRegion">reset_state_or_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetWebsiteUrl">reset_website_url</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toString"></a>
 
 ```python
 def to_string() -> str
@@ -287,7 +287,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride"></a>
 
 ```python
 def add_override(
@@ -296,19 +296,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -318,7 +318,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -326,7 +326,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -334,19 +334,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -354,7 +354,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -364,7 +364,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -372,7 +372,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -380,13 +380,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -394,13 +394,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -408,13 +408,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -422,13 +422,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -436,13 +436,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -450,13 +450,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -464,13 +464,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -478,13 +478,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -492,19 +492,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom"></a>
 
 ```python
 def import_from(
@@ -513,19 +513,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -533,13 +533,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -551,7 +551,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -559,7 +559,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo"></a>
 
 ```python
 def move_to(
@@ -570,7 +570,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -578,7 +578,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -586,7 +586,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -596,7 +596,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -604,49 +604,49 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAccountId"></a>
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAccountId"></a>
 
 ```python
 def reset_account_id() -> None
 ```
 
-##### `reset_address_line2` <a name="reset_address_line2" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine2"></a>
+##### `reset_address_line2` <a name="reset_address_line2" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine2"></a>
 
 ```python
 def reset_address_line2() -> None
 ```
 
-##### `reset_address_line3` <a name="reset_address_line3" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine3"></a>
+##### `reset_address_line3` <a name="reset_address_line3" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetAddressLine3"></a>
 
 ```python
 def reset_address_line3() -> None
 ```
 
-##### `reset_company_name` <a name="reset_company_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetCompanyName"></a>
+##### `reset_company_name` <a name="reset_company_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetCompanyName"></a>
 
 ```python
 def reset_company_name() -> None
 ```
 
-##### `reset_district_or_county` <a name="reset_district_or_county" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetDistrictOrCounty"></a>
+##### `reset_district_or_county` <a name="reset_district_or_county" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetDistrictOrCounty"></a>
 
 ```python
 def reset_district_or_county() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_state_or_region` <a name="reset_state_or_region" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetStateOrRegion"></a>
+##### `reset_state_or_region` <a name="reset_state_or_region" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetStateOrRegion"></a>
 
 ```python
 def reset_state_or_region() -> None
 ```
 
-##### `reset_website_url` <a name="reset_website_url" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetWebsiteUrl"></a>
+##### `reset_website_url` <a name="reset_website_url" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.resetWebsiteUrl"></a>
 
 ```python
 def reset_website_url() -> None
@@ -656,17 +656,17 @@ def reset_website_url() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AccountPrimaryContact resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AccountPrimaryContact resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import account_primary_contact
+from cdktn_provider_aws import account_primary_contact
 
 accountPrimaryContact.AccountPrimaryContact.is_construct(
   x: typing.Any
@@ -689,7 +689,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -697,42 +697,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import account_primary_contact
+from cdktn_provider_aws import account_primary_contact
 
 accountPrimaryContact.AccountPrimaryContact.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import account_primary_contact
+from cdktn_provider_aws import account_primary_contact
 
 accountPrimaryContact.AccountPrimaryContact.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import account_primary_contact
+from cdktn_provider_aws import account_primary_contact
 
 accountPrimaryContact.AccountPrimaryContact.generate_config_for_import(
   scope: Construct,
@@ -744,7 +744,7 @@ accountPrimaryContact.AccountPrimaryContact.generate_config_for_import(
 
 Generates CDKTF code for importing a AccountPrimaryContact resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -752,7 +752,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -760,17 +760,17 @@ The construct id used in the generated config for the AccountPrimaryContact to i
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing AccountPrimaryContact that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -782,52 +782,52 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1Input">address_line1_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2Input">address_line2_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3Input">address_line3_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cityInput">city_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyNameInput">company_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCodeInput">country_code_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCountyInput">district_or_county_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullNameInput">full_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumberInput">phone_number_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCodeInput">postal_code_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegionInput">state_or_region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrlInput">website_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1">address_line1</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2">address_line2</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3">address_line3</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.city">city</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyName">company_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCode">country_code</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCounty">district_or_county</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullName">full_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumber">phone_number</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCode">postal_code</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegion">state_or_region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrl">website_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1Input">address_line1_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2Input">address_line2_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3Input">address_line3_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cityInput">city_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyNameInput">company_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCodeInput">country_code_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCountyInput">district_or_county_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullNameInput">full_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumberInput">phone_number_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCodeInput">postal_code_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegionInput">state_or_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrlInput">website_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1">address_line1</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2">address_line2</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3">address_line3</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.city">city</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyName">company_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCode">country_code</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCounty">district_or_county</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullName">full_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumber">phone_number</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCode">postal_code</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegion">state_or_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrl">website_url</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.node"></a>
 
 ```python
 node: Node
@@ -839,7 +839,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -849,7 +849,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fqn"></a>
 
 ```python
 fqn: str
@@ -859,7 +859,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -869,7 +869,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -879,7 +879,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -889,7 +889,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -899,7 +899,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -909,7 +909,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -919,7 +919,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -929,7 +929,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -939,7 +939,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -949,7 +949,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -959,7 +959,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -969,7 +969,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountIdInput"></a>
+##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountIdInput"></a>
 
 ```python
 account_id_input: str
@@ -979,7 +979,7 @@ account_id_input: str
 
 ---
 
-##### `address_line1_input`<sup>Optional</sup> <a name="address_line1_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1Input"></a>
+##### `address_line1_input`<sup>Optional</sup> <a name="address_line1_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1Input"></a>
 
 ```python
 address_line1_input: str
@@ -989,7 +989,7 @@ address_line1_input: str
 
 ---
 
-##### `address_line2_input`<sup>Optional</sup> <a name="address_line2_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2Input"></a>
+##### `address_line2_input`<sup>Optional</sup> <a name="address_line2_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2Input"></a>
 
 ```python
 address_line2_input: str
@@ -999,7 +999,7 @@ address_line2_input: str
 
 ---
 
-##### `address_line3_input`<sup>Optional</sup> <a name="address_line3_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3Input"></a>
+##### `address_line3_input`<sup>Optional</sup> <a name="address_line3_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3Input"></a>
 
 ```python
 address_line3_input: str
@@ -1009,7 +1009,7 @@ address_line3_input: str
 
 ---
 
-##### `city_input`<sup>Optional</sup> <a name="city_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cityInput"></a>
+##### `city_input`<sup>Optional</sup> <a name="city_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.cityInput"></a>
 
 ```python
 city_input: str
@@ -1019,7 +1019,7 @@ city_input: str
 
 ---
 
-##### `company_name_input`<sup>Optional</sup> <a name="company_name_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyNameInput"></a>
+##### `company_name_input`<sup>Optional</sup> <a name="company_name_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyNameInput"></a>
 
 ```python
 company_name_input: str
@@ -1029,7 +1029,7 @@ company_name_input: str
 
 ---
 
-##### `country_code_input`<sup>Optional</sup> <a name="country_code_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCodeInput"></a>
+##### `country_code_input`<sup>Optional</sup> <a name="country_code_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCodeInput"></a>
 
 ```python
 country_code_input: str
@@ -1039,7 +1039,7 @@ country_code_input: str
 
 ---
 
-##### `district_or_county_input`<sup>Optional</sup> <a name="district_or_county_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCountyInput"></a>
+##### `district_or_county_input`<sup>Optional</sup> <a name="district_or_county_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCountyInput"></a>
 
 ```python
 district_or_county_input: str
@@ -1049,7 +1049,7 @@ district_or_county_input: str
 
 ---
 
-##### `full_name_input`<sup>Optional</sup> <a name="full_name_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullNameInput"></a>
+##### `full_name_input`<sup>Optional</sup> <a name="full_name_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullNameInput"></a>
 
 ```python
 full_name_input: str
@@ -1059,7 +1059,7 @@ full_name_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1069,7 +1069,7 @@ id_input: str
 
 ---
 
-##### `phone_number_input`<sup>Optional</sup> <a name="phone_number_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumberInput"></a>
+##### `phone_number_input`<sup>Optional</sup> <a name="phone_number_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumberInput"></a>
 
 ```python
 phone_number_input: str
@@ -1079,7 +1079,7 @@ phone_number_input: str
 
 ---
 
-##### `postal_code_input`<sup>Optional</sup> <a name="postal_code_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCodeInput"></a>
+##### `postal_code_input`<sup>Optional</sup> <a name="postal_code_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCodeInput"></a>
 
 ```python
 postal_code_input: str
@@ -1089,7 +1089,7 @@ postal_code_input: str
 
 ---
 
-##### `state_or_region_input`<sup>Optional</sup> <a name="state_or_region_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegionInput"></a>
+##### `state_or_region_input`<sup>Optional</sup> <a name="state_or_region_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegionInput"></a>
 
 ```python
 state_or_region_input: str
@@ -1099,7 +1099,7 @@ state_or_region_input: str
 
 ---
 
-##### `website_url_input`<sup>Optional</sup> <a name="website_url_input" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrlInput"></a>
+##### `website_url_input`<sup>Optional</sup> <a name="website_url_input" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrlInput"></a>
 
 ```python
 website_url_input: str
@@ -1109,7 +1109,7 @@ website_url_input: str
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountId"></a>
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1119,7 +1119,7 @@ account_id: str
 
 ---
 
-##### `address_line1`<sup>Required</sup> <a name="address_line1" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1"></a>
+##### `address_line1`<sup>Required</sup> <a name="address_line1" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine1"></a>
 
 ```python
 address_line1: str
@@ -1129,7 +1129,7 @@ address_line1: str
 
 ---
 
-##### `address_line2`<sup>Required</sup> <a name="address_line2" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2"></a>
+##### `address_line2`<sup>Required</sup> <a name="address_line2" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine2"></a>
 
 ```python
 address_line2: str
@@ -1139,7 +1139,7 @@ address_line2: str
 
 ---
 
-##### `address_line3`<sup>Required</sup> <a name="address_line3" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3"></a>
+##### `address_line3`<sup>Required</sup> <a name="address_line3" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.addressLine3"></a>
 
 ```python
 address_line3: str
@@ -1149,7 +1149,7 @@ address_line3: str
 
 ---
 
-##### `city`<sup>Required</sup> <a name="city" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.city"></a>
+##### `city`<sup>Required</sup> <a name="city" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.city"></a>
 
 ```python
 city: str
@@ -1159,7 +1159,7 @@ city: str
 
 ---
 
-##### `company_name`<sup>Required</sup> <a name="company_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyName"></a>
+##### `company_name`<sup>Required</sup> <a name="company_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.companyName"></a>
 
 ```python
 company_name: str
@@ -1169,7 +1169,7 @@ company_name: str
 
 ---
 
-##### `country_code`<sup>Required</sup> <a name="country_code" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCode"></a>
+##### `country_code`<sup>Required</sup> <a name="country_code" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.countryCode"></a>
 
 ```python
 country_code: str
@@ -1179,7 +1179,7 @@ country_code: str
 
 ---
 
-##### `district_or_county`<sup>Required</sup> <a name="district_or_county" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCounty"></a>
+##### `district_or_county`<sup>Required</sup> <a name="district_or_county" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.districtOrCounty"></a>
 
 ```python
 district_or_county: str
@@ -1189,7 +1189,7 @@ district_or_county: str
 
 ---
 
-##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullName"></a>
+##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.fullName"></a>
 
 ```python
 full_name: str
@@ -1199,7 +1199,7 @@ full_name: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.id"></a>
 
 ```python
 id: str
@@ -1209,7 +1209,7 @@ id: str
 
 ---
 
-##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumber"></a>
+##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.phoneNumber"></a>
 
 ```python
 phone_number: str
@@ -1219,7 +1219,7 @@ phone_number: str
 
 ---
 
-##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCode"></a>
+##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.postalCode"></a>
 
 ```python
 postal_code: str
@@ -1229,7 +1229,7 @@ postal_code: str
 
 ---
 
-##### `state_or_region`<sup>Required</sup> <a name="state_or_region" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegion"></a>
+##### `state_or_region`<sup>Required</sup> <a name="state_or_region" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.stateOrRegion"></a>
 
 ```python
 state_or_region: str
@@ -1239,7 +1239,7 @@ state_or_region: str
 
 ---
 
-##### `website_url`<sup>Required</sup> <a name="website_url" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrl"></a>
+##### `website_url`<sup>Required</sup> <a name="website_url" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.websiteUrl"></a>
 
 ```python
 website_url: str
@@ -1253,11 +1253,11 @@ website_url: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContact.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1269,12 +1269,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AccountPrimaryContactConfig <a name="AccountPrimaryContactConfig" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig"></a>
+### AccountPrimaryContactConfig <a name="AccountPrimaryContactConfig" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import account_primary_contact
+from cdktn_provider_aws import account_primary_contact
 
 accountPrimaryContact.AccountPrimaryContactConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1305,31 +1305,31 @@ accountPrimaryContact.AccountPrimaryContactConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine1">address_line1</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.city">city</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.countryCode">country_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.phoneNumber">phone_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.postalCode">postal_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine2">address_line2</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine3">address_line3</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.companyName">company_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.districtOrCounty">district_or_county</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.stateOrRegion">state_or_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}. |
-| <code><a href="#@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.websiteUrl">website_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine1">address_line1</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.city">city</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.countryCode">country_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.phoneNumber">phone_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.postalCode">postal_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine2">address_line2</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine3">address_line3</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.companyName">company_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.districtOrCounty">district_or_county</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.stateOrRegion">state_or_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}. |
+| <code><a href="#@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.websiteUrl">website_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1339,7 +1339,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1349,7 +1349,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1359,7 +1359,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1369,7 +1369,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1379,7 +1379,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1389,7 +1389,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1399,7 +1399,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `address_line1`<sup>Required</sup> <a name="address_line1" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine1"></a>
+##### `address_line1`<sup>Required</sup> <a name="address_line1" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine1"></a>
 
 ```python
 address_line1: str
@@ -1407,11 +1407,11 @@ address_line1: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_1 AccountPrimaryContact#address_line_1}.
 
 ---
 
-##### `city`<sup>Required</sup> <a name="city" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.city"></a>
+##### `city`<sup>Required</sup> <a name="city" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.city"></a>
 
 ```python
 city: str
@@ -1419,11 +1419,11 @@ city: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#city AccountPrimaryContact#city}.
 
 ---
 
-##### `country_code`<sup>Required</sup> <a name="country_code" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.countryCode"></a>
+##### `country_code`<sup>Required</sup> <a name="country_code" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.countryCode"></a>
 
 ```python
 country_code: str
@@ -1431,11 +1431,11 @@ country_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#country_code AccountPrimaryContact#country_code}.
 
 ---
 
-##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.fullName"></a>
+##### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.fullName"></a>
 
 ```python
 full_name: str
@@ -1443,11 +1443,11 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#full_name AccountPrimaryContact#full_name}.
 
 ---
 
-##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.phoneNumber"></a>
+##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.phoneNumber"></a>
 
 ```python
 phone_number: str
@@ -1455,11 +1455,11 @@ phone_number: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#phone_number AccountPrimaryContact#phone_number}.
 
 ---
 
-##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.postalCode"></a>
+##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.postalCode"></a>
 
 ```python
 postal_code: str
@@ -1467,11 +1467,11 @@ postal_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#postal_code AccountPrimaryContact#postal_code}.
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1479,11 +1479,11 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#account_id AccountPrimaryContact#account_id}.
 
 ---
 
-##### `address_line2`<sup>Optional</sup> <a name="address_line2" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine2"></a>
+##### `address_line2`<sup>Optional</sup> <a name="address_line2" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine2"></a>
 
 ```python
 address_line2: str
@@ -1491,11 +1491,11 @@ address_line2: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_2 AccountPrimaryContact#address_line_2}.
 
 ---
 
-##### `address_line3`<sup>Optional</sup> <a name="address_line3" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine3"></a>
+##### `address_line3`<sup>Optional</sup> <a name="address_line3" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.addressLine3"></a>
 
 ```python
 address_line3: str
@@ -1503,11 +1503,11 @@ address_line3: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#address_line_3 AccountPrimaryContact#address_line_3}.
 
 ---
 
-##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.companyName"></a>
+##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.companyName"></a>
 
 ```python
 company_name: str
@@ -1515,11 +1515,11 @@ company_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#company_name AccountPrimaryContact#company_name}.
 
 ---
 
-##### `district_or_county`<sup>Optional</sup> <a name="district_or_county" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.districtOrCounty"></a>
+##### `district_or_county`<sup>Optional</sup> <a name="district_or_county" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.districtOrCounty"></a>
 
 ```python
 district_or_county: str
@@ -1527,11 +1527,11 @@ district_or_county: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#district_or_county AccountPrimaryContact#district_or_county}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.id"></a>
 
 ```python
 id: str
@@ -1539,14 +1539,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#id AccountPrimaryContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `state_or_region`<sup>Optional</sup> <a name="state_or_region" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.stateOrRegion"></a>
+##### `state_or_region`<sup>Optional</sup> <a name="state_or_region" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.stateOrRegion"></a>
 
 ```python
 state_or_region: str
@@ -1554,11 +1554,11 @@ state_or_region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#state_or_region AccountPrimaryContact#state_or_region}.
 
 ---
 
-##### `website_url`<sup>Optional</sup> <a name="website_url" id="@cdktf/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.websiteUrl"></a>
+##### `website_url`<sup>Optional</sup> <a name="website_url" id="@cdktn/provider-aws.accountPrimaryContact.AccountPrimaryContactConfig.property.websiteUrl"></a>
 
 ```python
 website_url: str
@@ -1566,7 +1566,7 @@ website_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/account_primary_contact#website_url AccountPrimaryContact#website_url}.
 
 ---
 

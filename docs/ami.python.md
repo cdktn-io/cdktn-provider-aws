@@ -1,15 +1,15 @@
-# `ami` Submodule <a name="`ami` Submodule" id="@cdktf/provider-aws.ami"></a>
+# `ami` Submodule <a name="`ami` Submodule" id="@cdktn/provider-aws.ami"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Ami <a name="Ami" id="@cdktf/provider-aws.ami.Ami"></a>
+### Ami <a name="Ami" id="@cdktn/provider-aws.ami.Ami"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami aws_ami}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami aws_ami}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.Ami.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ami.Ami.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.Ami(
   scope: Construct,
@@ -48,41 +48,41 @@ ami.Ami(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#name Ami#name}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.architecture">architecture</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#architecture Ami#architecture}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.bootMode">boot_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#boot_mode Ami#boot_mode}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.deprecationTime">deprecation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#deprecation_time Ami#deprecation_time}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#description Ami#description}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.ebsBlockDevice">ebs_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | ebs_block_device block. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.enaSupport">ena_support</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ena_support Ami#ena_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.ephemeralBlockDevice">ephemeral_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#id Ami#id}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.imageLocation">image_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#image_location Ami#image_location}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.imdsSupport">imds_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#imds_support Ami#imds_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.kernelId">kernel_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#kernel_id Ami#kernel_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.ramdiskId">ramdisk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.rootDeviceName">root_device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#root_device_name Ami#root_device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.sriovNetSupport">sriov_net_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags Ami#tags}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags_all Ami#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.tpmSupport">tpm_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tpm_support Ami#tpm_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.uefiData">uefi_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#uefi_data Ami#uefi_data}. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.Initializer.parameter.virtualizationType">virtualization_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#virtualization_type Ami#virtualization_type}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#name Ami#name}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.architecture">architecture</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#architecture Ami#architecture}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.bootMode">boot_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#boot_mode Ami#boot_mode}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.deprecationTime">deprecation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#deprecation_time Ami#deprecation_time}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#description Ami#description}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.ebsBlockDevice">ebs_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | ebs_block_device block. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.enaSupport">ena_support</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ena_support Ami#ena_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.ephemeralBlockDevice">ephemeral_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | ephemeral_block_device block. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#id Ami#id}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.imageLocation">image_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#image_location Ami#image_location}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.imdsSupport">imds_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#imds_support Ami#imds_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.kernelId">kernel_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#kernel_id Ami#kernel_id}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.ramdiskId">ramdisk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.rootDeviceName">root_device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#root_device_name Ami#root_device_name}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.sriovNetSupport">sriov_net_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags Ami#tags}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags_all Ami#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.tpmSupport">tpm_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tpm_support Ami#tpm_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.uefiData">uefi_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#uefi_data Ami#uefi_data}. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.Initializer.parameter.virtualizationType">virtualization_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#virtualization_type Ami#virtualization_type}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -90,7 +90,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -100,232 +100,232 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#name Ami#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#name Ami#name}.
 
 ---
 
-##### `architecture`<sup>Optional</sup> <a name="architecture" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.architecture"></a>
+##### `architecture`<sup>Optional</sup> <a name="architecture" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.architecture"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#architecture Ami#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#architecture Ami#architecture}.
 
 ---
 
-##### `boot_mode`<sup>Optional</sup> <a name="boot_mode" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.bootMode"></a>
+##### `boot_mode`<sup>Optional</sup> <a name="boot_mode" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.bootMode"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#boot_mode Ami#boot_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#boot_mode Ami#boot_mode}.
 
 ---
 
-##### `deprecation_time`<sup>Optional</sup> <a name="deprecation_time" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.deprecationTime"></a>
+##### `deprecation_time`<sup>Optional</sup> <a name="deprecation_time" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.deprecationTime"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#deprecation_time Ami#deprecation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#deprecation_time Ami#deprecation_time}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#description Ami#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#description Ami#description}.
 
 ---
 
-##### `ebs_block_device`<sup>Optional</sup> <a name="ebs_block_device" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.ebsBlockDevice"></a>
+##### `ebs_block_device`<sup>Optional</sup> <a name="ebs_block_device" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.ebsBlockDevice"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
 
 ---
 
-##### `ena_support`<sup>Optional</sup> <a name="ena_support" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.enaSupport"></a>
+##### `ena_support`<sup>Optional</sup> <a name="ena_support" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.enaSupport"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ena_support Ami#ena_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ena_support Ami#ena_support}.
 
 ---
 
-##### `ephemeral_block_device`<sup>Optional</sup> <a name="ephemeral_block_device" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.ephemeralBlockDevice"></a>
+##### `ephemeral_block_device`<sup>Optional</sup> <a name="ephemeral_block_device" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.ephemeralBlockDevice"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#id Ami#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#id Ami#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `image_location`<sup>Optional</sup> <a name="image_location" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.imageLocation"></a>
+##### `image_location`<sup>Optional</sup> <a name="image_location" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.imageLocation"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#image_location Ami#image_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#image_location Ami#image_location}.
 
 ---
 
-##### `imds_support`<sup>Optional</sup> <a name="imds_support" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.imdsSupport"></a>
+##### `imds_support`<sup>Optional</sup> <a name="imds_support" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.imdsSupport"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#imds_support Ami#imds_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#imds_support Ami#imds_support}.
 
 ---
 
-##### `kernel_id`<sup>Optional</sup> <a name="kernel_id" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.kernelId"></a>
+##### `kernel_id`<sup>Optional</sup> <a name="kernel_id" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.kernelId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#kernel_id Ami#kernel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#kernel_id Ami#kernel_id}.
 
 ---
 
-##### `ramdisk_id`<sup>Optional</sup> <a name="ramdisk_id" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.ramdiskId"></a>
+##### `ramdisk_id`<sup>Optional</sup> <a name="ramdisk_id" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.ramdiskId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#region Ami#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#region Ami#region}
 
 ---
 
-##### `root_device_name`<sup>Optional</sup> <a name="root_device_name" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.rootDeviceName"></a>
+##### `root_device_name`<sup>Optional</sup> <a name="root_device_name" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.rootDeviceName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#root_device_name Ami#root_device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#root_device_name Ami#root_device_name}.
 
 ---
 
-##### `sriov_net_support`<sup>Optional</sup> <a name="sriov_net_support" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.sriovNetSupport"></a>
+##### `sriov_net_support`<sup>Optional</sup> <a name="sriov_net_support" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.sriovNetSupport"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags Ami#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags Ami#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags_all Ami#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags_all Ami#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#timeouts Ami#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#timeouts Ami#timeouts}
 
 ---
 
-##### `tpm_support`<sup>Optional</sup> <a name="tpm_support" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.tpmSupport"></a>
+##### `tpm_support`<sup>Optional</sup> <a name="tpm_support" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.tpmSupport"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tpm_support Ami#tpm_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tpm_support Ami#tpm_support}.
 
 ---
 
-##### `uefi_data`<sup>Optional</sup> <a name="uefi_data" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.uefiData"></a>
+##### `uefi_data`<sup>Optional</sup> <a name="uefi_data" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.uefiData"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#uefi_data Ami#uefi_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#uefi_data Ami#uefi_data}.
 
 ---
 
-##### `virtualization_type`<sup>Optional</sup> <a name="virtualization_type" id="@cdktf/provider-aws.ami.Ami.Initializer.parameter.virtualizationType"></a>
+##### `virtualization_type`<sup>Optional</sup> <a name="virtualization_type" id="@cdktn/provider-aws.ami.Ami.Initializer.parameter.virtualizationType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#virtualization_type Ami#virtualization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#virtualization_type Ami#virtualization_type}.
 
 ---
 
@@ -333,57 +333,57 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.putEbsBlockDevice">put_ebs_block_device</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.putEphemeralBlockDevice">put_ephemeral_block_device</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetArchitecture">reset_architecture</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetBootMode">reset_boot_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetDeprecationTime">reset_deprecation_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetEbsBlockDevice">reset_ebs_block_device</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetEnaSupport">reset_ena_support</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetEphemeralBlockDevice">reset_ephemeral_block_device</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetImageLocation">reset_image_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetImdsSupport">reset_imds_support</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetKernelId">reset_kernel_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetRamdiskId">reset_ramdisk_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetRootDeviceName">reset_root_device_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetSriovNetSupport">reset_sriov_net_support</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetTagsAll">reset_tags_all</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetTpmSupport">reset_tpm_support</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetUefiData">reset_uefi_data</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.resetVirtualizationType">reset_virtualization_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.putEbsBlockDevice">put_ebs_block_device</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.putEphemeralBlockDevice">put_ephemeral_block_device</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetArchitecture">reset_architecture</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetBootMode">reset_boot_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetDeprecationTime">reset_deprecation_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetEbsBlockDevice">reset_ebs_block_device</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetEnaSupport">reset_ena_support</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetEphemeralBlockDevice">reset_ephemeral_block_device</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetImageLocation">reset_image_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetImdsSupport">reset_imds_support</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetKernelId">reset_kernel_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetRamdiskId">reset_ramdisk_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetRootDeviceName">reset_root_device_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetSriovNetSupport">reset_sriov_net_support</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetTpmSupport">reset_tpm_support</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetUefiData">reset_uefi_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.resetVirtualizationType">reset_virtualization_type</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ami.Ami.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ami.Ami.toString"></a>
 
 ```python
 def to_string() -> str
@@ -391,7 +391,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.ami.Ami.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.ami.Ami.addOverride"></a>
 
 ```python
 def add_override(
@@ -400,19 +400,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.ami.Ami.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.ami.Ami.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ami.Ami.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ami.Ami.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.ami.Ami.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.ami.Ami.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -422,7 +422,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.ami.Ami.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.ami.Ami.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -430,7 +430,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.ami.Ami.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.ami.Ami.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -438,19 +438,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.ami.Ami.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.ami.Ami.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.ami.Ami.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.ami.Ami.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.ami.Ami.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.ami.Ami.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -458,7 +458,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.ami.Ami.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.ami.Ami.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -468,7 +468,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.ami.Ami.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.ami.Ami.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -476,7 +476,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ami.Ami.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.ami.Ami.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -484,13 +484,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ami.Ami.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.ami.Ami.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -498,13 +498,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ami.Ami.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.ami.Ami.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -512,13 +512,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ami.Ami.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.ami.Ami.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -526,13 +526,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ami.Ami.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.ami.Ami.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -540,13 +540,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ami.Ami.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.ami.Ami.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -554,13 +554,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ami.Ami.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.ami.Ami.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -568,13 +568,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ami.Ami.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.ami.Ami.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -582,13 +582,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ami.Ami.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.ami.Ami.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -596,19 +596,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.ami.Ami.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.ami.Ami.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.ami.Ami.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.ami.Ami.importFrom"></a>
 
 ```python
 def import_from(
@@ -617,19 +617,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ami.Ami.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.ami.Ami.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ami.Ami.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ami.Ami.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ami.Ami.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.ami.Ami.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -637,13 +637,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.Ami.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.Ami.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.ami.Ami.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.ami.Ami.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -655,7 +655,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ami.Ami.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.ami.Ami.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -663,7 +663,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.ami.Ami.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.ami.Ami.moveTo"></a>
 
 ```python
 def move_to(
@@ -674,7 +674,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.ami.Ami.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.ami.Ami.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -682,7 +682,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.ami.Ami.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.ami.Ami.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -690,7 +690,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.ami.Ami.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.ami.Ami.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -700,7 +700,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ami.Ami.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.ami.Ami.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -708,7 +708,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_ebs_block_device` <a name="put_ebs_block_device" id="@cdktf/provider-aws.ami.Ami.putEbsBlockDevice"></a>
+##### `put_ebs_block_device` <a name="put_ebs_block_device" id="@cdktn/provider-aws.ami.Ami.putEbsBlockDevice"></a>
 
 ```python
 def put_ebs_block_device(
@@ -716,13 +716,13 @@ def put_ebs_block_device(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ami.Ami.putEbsBlockDevice.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ami.Ami.putEbsBlockDevice.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
 
 ---
 
-##### `put_ephemeral_block_device` <a name="put_ephemeral_block_device" id="@cdktf/provider-aws.ami.Ami.putEphemeralBlockDevice"></a>
+##### `put_ephemeral_block_device` <a name="put_ephemeral_block_device" id="@cdktn/provider-aws.ami.Ami.putEphemeralBlockDevice"></a>
 
 ```python
 def put_ephemeral_block_device(
@@ -730,13 +730,13 @@ def put_ephemeral_block_device(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.ami.Ami.putEphemeralBlockDevice.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.ami.Ami.putEphemeralBlockDevice.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-aws.ami.Ami.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.ami.Ami.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -746,151 +746,151 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.ami.Ami.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.ami.Ami.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#create Ami#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#create Ami#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.ami.Ami.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.ami.Ami.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#delete Ami#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#delete Ami#delete}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.ami.Ami.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.ami.Ami.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#update Ami#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#update Ami#update}.
 
 ---
 
-##### `reset_architecture` <a name="reset_architecture" id="@cdktf/provider-aws.ami.Ami.resetArchitecture"></a>
+##### `reset_architecture` <a name="reset_architecture" id="@cdktn/provider-aws.ami.Ami.resetArchitecture"></a>
 
 ```python
 def reset_architecture() -> None
 ```
 
-##### `reset_boot_mode` <a name="reset_boot_mode" id="@cdktf/provider-aws.ami.Ami.resetBootMode"></a>
+##### `reset_boot_mode` <a name="reset_boot_mode" id="@cdktn/provider-aws.ami.Ami.resetBootMode"></a>
 
 ```python
 def reset_boot_mode() -> None
 ```
 
-##### `reset_deprecation_time` <a name="reset_deprecation_time" id="@cdktf/provider-aws.ami.Ami.resetDeprecationTime"></a>
+##### `reset_deprecation_time` <a name="reset_deprecation_time" id="@cdktn/provider-aws.ami.Ami.resetDeprecationTime"></a>
 
 ```python
 def reset_deprecation_time() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.ami.Ami.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.ami.Ami.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_ebs_block_device` <a name="reset_ebs_block_device" id="@cdktf/provider-aws.ami.Ami.resetEbsBlockDevice"></a>
+##### `reset_ebs_block_device` <a name="reset_ebs_block_device" id="@cdktn/provider-aws.ami.Ami.resetEbsBlockDevice"></a>
 
 ```python
 def reset_ebs_block_device() -> None
 ```
 
-##### `reset_ena_support` <a name="reset_ena_support" id="@cdktf/provider-aws.ami.Ami.resetEnaSupport"></a>
+##### `reset_ena_support` <a name="reset_ena_support" id="@cdktn/provider-aws.ami.Ami.resetEnaSupport"></a>
 
 ```python
 def reset_ena_support() -> None
 ```
 
-##### `reset_ephemeral_block_device` <a name="reset_ephemeral_block_device" id="@cdktf/provider-aws.ami.Ami.resetEphemeralBlockDevice"></a>
+##### `reset_ephemeral_block_device` <a name="reset_ephemeral_block_device" id="@cdktn/provider-aws.ami.Ami.resetEphemeralBlockDevice"></a>
 
 ```python
 def reset_ephemeral_block_device() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.ami.Ami.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.ami.Ami.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_image_location` <a name="reset_image_location" id="@cdktf/provider-aws.ami.Ami.resetImageLocation"></a>
+##### `reset_image_location` <a name="reset_image_location" id="@cdktn/provider-aws.ami.Ami.resetImageLocation"></a>
 
 ```python
 def reset_image_location() -> None
 ```
 
-##### `reset_imds_support` <a name="reset_imds_support" id="@cdktf/provider-aws.ami.Ami.resetImdsSupport"></a>
+##### `reset_imds_support` <a name="reset_imds_support" id="@cdktn/provider-aws.ami.Ami.resetImdsSupport"></a>
 
 ```python
 def reset_imds_support() -> None
 ```
 
-##### `reset_kernel_id` <a name="reset_kernel_id" id="@cdktf/provider-aws.ami.Ami.resetKernelId"></a>
+##### `reset_kernel_id` <a name="reset_kernel_id" id="@cdktn/provider-aws.ami.Ami.resetKernelId"></a>
 
 ```python
 def reset_kernel_id() -> None
 ```
 
-##### `reset_ramdisk_id` <a name="reset_ramdisk_id" id="@cdktf/provider-aws.ami.Ami.resetRamdiskId"></a>
+##### `reset_ramdisk_id` <a name="reset_ramdisk_id" id="@cdktn/provider-aws.ami.Ami.resetRamdiskId"></a>
 
 ```python
 def reset_ramdisk_id() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.ami.Ami.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.ami.Ami.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_root_device_name` <a name="reset_root_device_name" id="@cdktf/provider-aws.ami.Ami.resetRootDeviceName"></a>
+##### `reset_root_device_name` <a name="reset_root_device_name" id="@cdktn/provider-aws.ami.Ami.resetRootDeviceName"></a>
 
 ```python
 def reset_root_device_name() -> None
 ```
 
-##### `reset_sriov_net_support` <a name="reset_sriov_net_support" id="@cdktf/provider-aws.ami.Ami.resetSriovNetSupport"></a>
+##### `reset_sriov_net_support` <a name="reset_sriov_net_support" id="@cdktn/provider-aws.ami.Ami.resetSriovNetSupport"></a>
 
 ```python
 def reset_sriov_net_support() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.ami.Ami.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.ami.Ami.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.ami.Ami.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.ami.Ami.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.ami.Ami.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.ami.Ami.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_tpm_support` <a name="reset_tpm_support" id="@cdktf/provider-aws.ami.Ami.resetTpmSupport"></a>
+##### `reset_tpm_support` <a name="reset_tpm_support" id="@cdktn/provider-aws.ami.Ami.resetTpmSupport"></a>
 
 ```python
 def reset_tpm_support() -> None
 ```
 
-##### `reset_uefi_data` <a name="reset_uefi_data" id="@cdktf/provider-aws.ami.Ami.resetUefiData"></a>
+##### `reset_uefi_data` <a name="reset_uefi_data" id="@cdktn/provider-aws.ami.Ami.resetUefiData"></a>
 
 ```python
 def reset_uefi_data() -> None
 ```
 
-##### `reset_virtualization_type` <a name="reset_virtualization_type" id="@cdktf/provider-aws.ami.Ami.resetVirtualizationType"></a>
+##### `reset_virtualization_type` <a name="reset_virtualization_type" id="@cdktn/provider-aws.ami.Ami.resetVirtualizationType"></a>
 
 ```python
 def reset_virtualization_type() -> None
@@ -900,17 +900,17 @@ def reset_virtualization_type() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Ami resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Ami resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.ami.Ami.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.ami.Ami.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.Ami.is_construct(
   x: typing.Any
@@ -933,7 +933,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.ami.Ami.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.ami.Ami.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -941,42 +941,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.ami.Ami.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.ami.Ami.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.Ami.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.ami.Ami.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.ami.Ami.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.ami.Ami.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.ami.Ami.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.Ami.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.ami.Ami.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.ami.Ami.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.ami.Ami.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.ami.Ami.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.Ami.generate_config_for_import(
   scope: Construct,
@@ -988,7 +988,7 @@ ami.Ami.generate_config_for_import(
 
 Generates CDKTF code for importing a Ami resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.ami.Ami.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.ami.Ami.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -996,7 +996,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.ami.Ami.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.ami.Ami.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1004,17 +1004,17 @@ The construct id used in the generated config for the Ami to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.ami.Ami.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.ami.Ami.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Ami that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ami.Ami.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ami.Ami.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -1026,80 +1026,80 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ebsBlockDevice">ebs_block_device</a></code> | <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList">AmiEbsBlockDeviceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ephemeralBlockDevice">ephemeral_block_device</a></code> | <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList">AmiEphemeralBlockDeviceList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.hypervisor">hypervisor</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.imageOwnerAlias">image_owner_alias</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.imageType">image_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.lastLaunchedTime">last_launched_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.manageEbsSnapshots">manage_ebs_snapshots</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.platform">platform</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.platformDetails">platform_details</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.public">public</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.rootSnapshotId">root_snapshot_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference">AmiTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.usageOperation">usage_operation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.architectureInput">architecture_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.bootModeInput">boot_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.deprecationTimeInput">deprecation_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ebsBlockDeviceInput">ebs_block_device_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.enaSupportInput">ena_support_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ephemeralBlockDeviceInput">ephemeral_block_device_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.imageLocationInput">image_location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.imdsSupportInput">imds_support_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.kernelIdInput">kernel_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ramdiskIdInput">ramdisk_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.rootDeviceNameInput">root_device_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.sriovNetSupportInput">sriov_net_support_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tpmSupportInput">tpm_support_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.uefiDataInput">uefi_data_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.virtualizationTypeInput">virtualization_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.architecture">architecture</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.bootMode">boot_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.deprecationTime">deprecation_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.enaSupport">ena_support</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.imageLocation">image_location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.imdsSupport">imds_support</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.kernelId">kernel_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.ramdiskId">ramdisk_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.rootDeviceName">root_device_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.sriovNetSupport">sriov_net_support</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tpmSupport">tpm_support</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.uefiData">uefi_data</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.virtualizationType">virtualization_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ebsBlockDevice">ebs_block_device</a></code> | <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList">AmiEbsBlockDeviceList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ephemeralBlockDevice">ephemeral_block_device</a></code> | <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList">AmiEphemeralBlockDeviceList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.hypervisor">hypervisor</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.imageOwnerAlias">image_owner_alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.imageType">image_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.lastLaunchedTime">last_launched_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.manageEbsSnapshots">manage_ebs_snapshots</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.platform">platform</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.platformDetails">platform_details</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.public">public</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.rootSnapshotId">root_snapshot_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference">AmiTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.usageOperation">usage_operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.architectureInput">architecture_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.bootModeInput">boot_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.deprecationTimeInput">deprecation_time_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ebsBlockDeviceInput">ebs_block_device_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.enaSupportInput">ena_support_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ephemeralBlockDeviceInput">ephemeral_block_device_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.imageLocationInput">image_location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.imdsSupportInput">imds_support_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.kernelIdInput">kernel_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ramdiskIdInput">ramdisk_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.rootDeviceNameInput">root_device_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.sriovNetSupportInput">sriov_net_support_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tpmSupportInput">tpm_support_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.uefiDataInput">uefi_data_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.virtualizationTypeInput">virtualization_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.architecture">architecture</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.bootMode">boot_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.deprecationTime">deprecation_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.enaSupport">ena_support</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.imageLocation">image_location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.imdsSupport">imds_support</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.kernelId">kernel_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.ramdiskId">ramdisk_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.rootDeviceName">root_device_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.sriovNetSupport">sriov_net_support</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tpmSupport">tpm_support</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.uefiData">uefi_data</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.virtualizationType">virtualization_type</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.ami.Ami.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.ami.Ami.property.node"></a>
 
 ```python
 node: Node
@@ -1111,7 +1111,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.ami.Ami.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.ami.Ami.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1121,7 +1121,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ami.Ami.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ami.Ami.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1131,7 +1131,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.ami.Ami.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.ami.Ami.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1141,7 +1141,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.ami.Ami.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.ami.Ami.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1151,7 +1151,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.ami.Ami.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.ami.Ami.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1161,7 +1161,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.ami.Ami.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.ami.Ami.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1171,7 +1171,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.ami.Ami.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.ami.Ami.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1181,7 +1181,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.ami.Ami.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.ami.Ami.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1191,7 +1191,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.ami.Ami.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.ami.Ami.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1201,7 +1201,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.ami.Ami.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.ami.Ami.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1211,7 +1211,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.ami.Ami.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.ami.Ami.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1221,7 +1221,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ami.Ami.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ami.Ami.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1231,7 +1231,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.ami.Ami.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.ami.Ami.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1241,7 +1241,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.ami.Ami.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.ami.Ami.property.arn"></a>
 
 ```python
 arn: str
@@ -1251,27 +1251,27 @@ arn: str
 
 ---
 
-##### `ebs_block_device`<sup>Required</sup> <a name="ebs_block_device" id="@cdktf/provider-aws.ami.Ami.property.ebsBlockDevice"></a>
+##### `ebs_block_device`<sup>Required</sup> <a name="ebs_block_device" id="@cdktn/provider-aws.ami.Ami.property.ebsBlockDevice"></a>
 
 ```python
 ebs_block_device: AmiEbsBlockDeviceList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList">AmiEbsBlockDeviceList</a>
+- *Type:* <a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList">AmiEbsBlockDeviceList</a>
 
 ---
 
-##### `ephemeral_block_device`<sup>Required</sup> <a name="ephemeral_block_device" id="@cdktf/provider-aws.ami.Ami.property.ephemeralBlockDevice"></a>
+##### `ephemeral_block_device`<sup>Required</sup> <a name="ephemeral_block_device" id="@cdktn/provider-aws.ami.Ami.property.ephemeralBlockDevice"></a>
 
 ```python
 ephemeral_block_device: AmiEphemeralBlockDeviceList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList">AmiEphemeralBlockDeviceList</a>
+- *Type:* <a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList">AmiEphemeralBlockDeviceList</a>
 
 ---
 
-##### `hypervisor`<sup>Required</sup> <a name="hypervisor" id="@cdktf/provider-aws.ami.Ami.property.hypervisor"></a>
+##### `hypervisor`<sup>Required</sup> <a name="hypervisor" id="@cdktn/provider-aws.ami.Ami.property.hypervisor"></a>
 
 ```python
 hypervisor: str
@@ -1281,7 +1281,7 @@ hypervisor: str
 
 ---
 
-##### `image_owner_alias`<sup>Required</sup> <a name="image_owner_alias" id="@cdktf/provider-aws.ami.Ami.property.imageOwnerAlias"></a>
+##### `image_owner_alias`<sup>Required</sup> <a name="image_owner_alias" id="@cdktn/provider-aws.ami.Ami.property.imageOwnerAlias"></a>
 
 ```python
 image_owner_alias: str
@@ -1291,7 +1291,7 @@ image_owner_alias: str
 
 ---
 
-##### `image_type`<sup>Required</sup> <a name="image_type" id="@cdktf/provider-aws.ami.Ami.property.imageType"></a>
+##### `image_type`<sup>Required</sup> <a name="image_type" id="@cdktn/provider-aws.ami.Ami.property.imageType"></a>
 
 ```python
 image_type: str
@@ -1301,7 +1301,7 @@ image_type: str
 
 ---
 
-##### `last_launched_time`<sup>Required</sup> <a name="last_launched_time" id="@cdktf/provider-aws.ami.Ami.property.lastLaunchedTime"></a>
+##### `last_launched_time`<sup>Required</sup> <a name="last_launched_time" id="@cdktn/provider-aws.ami.Ami.property.lastLaunchedTime"></a>
 
 ```python
 last_launched_time: str
@@ -1311,7 +1311,7 @@ last_launched_time: str
 
 ---
 
-##### `manage_ebs_snapshots`<sup>Required</sup> <a name="manage_ebs_snapshots" id="@cdktf/provider-aws.ami.Ami.property.manageEbsSnapshots"></a>
+##### `manage_ebs_snapshots`<sup>Required</sup> <a name="manage_ebs_snapshots" id="@cdktn/provider-aws.ami.Ami.property.manageEbsSnapshots"></a>
 
 ```python
 manage_ebs_snapshots: IResolvable
@@ -1321,7 +1321,7 @@ manage_ebs_snapshots: IResolvable
 
 ---
 
-##### `owner_id`<sup>Required</sup> <a name="owner_id" id="@cdktf/provider-aws.ami.Ami.property.ownerId"></a>
+##### `owner_id`<sup>Required</sup> <a name="owner_id" id="@cdktn/provider-aws.ami.Ami.property.ownerId"></a>
 
 ```python
 owner_id: str
@@ -1331,7 +1331,7 @@ owner_id: str
 
 ---
 
-##### `platform`<sup>Required</sup> <a name="platform" id="@cdktf/provider-aws.ami.Ami.property.platform"></a>
+##### `platform`<sup>Required</sup> <a name="platform" id="@cdktn/provider-aws.ami.Ami.property.platform"></a>
 
 ```python
 platform: str
@@ -1341,7 +1341,7 @@ platform: str
 
 ---
 
-##### `platform_details`<sup>Required</sup> <a name="platform_details" id="@cdktf/provider-aws.ami.Ami.property.platformDetails"></a>
+##### `platform_details`<sup>Required</sup> <a name="platform_details" id="@cdktn/provider-aws.ami.Ami.property.platformDetails"></a>
 
 ```python
 platform_details: str
@@ -1351,7 +1351,7 @@ platform_details: str
 
 ---
 
-##### `public`<sup>Required</sup> <a name="public" id="@cdktf/provider-aws.ami.Ami.property.public"></a>
+##### `public`<sup>Required</sup> <a name="public" id="@cdktn/provider-aws.ami.Ami.property.public"></a>
 
 ```python
 public: IResolvable
@@ -1361,7 +1361,7 @@ public: IResolvable
 
 ---
 
-##### `root_snapshot_id`<sup>Required</sup> <a name="root_snapshot_id" id="@cdktf/provider-aws.ami.Ami.property.rootSnapshotId"></a>
+##### `root_snapshot_id`<sup>Required</sup> <a name="root_snapshot_id" id="@cdktn/provider-aws.ami.Ami.property.rootSnapshotId"></a>
 
 ```python
 root_snapshot_id: str
@@ -1371,17 +1371,17 @@ root_snapshot_id: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.ami.Ami.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.ami.Ami.property.timeouts"></a>
 
 ```python
 timeouts: AmiTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference">AmiTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference">AmiTimeoutsOutputReference</a>
 
 ---
 
-##### `usage_operation`<sup>Required</sup> <a name="usage_operation" id="@cdktf/provider-aws.ami.Ami.property.usageOperation"></a>
+##### `usage_operation`<sup>Required</sup> <a name="usage_operation" id="@cdktn/provider-aws.ami.Ami.property.usageOperation"></a>
 
 ```python
 usage_operation: str
@@ -1391,7 +1391,7 @@ usage_operation: str
 
 ---
 
-##### `architecture_input`<sup>Optional</sup> <a name="architecture_input" id="@cdktf/provider-aws.ami.Ami.property.architectureInput"></a>
+##### `architecture_input`<sup>Optional</sup> <a name="architecture_input" id="@cdktn/provider-aws.ami.Ami.property.architectureInput"></a>
 
 ```python
 architecture_input: str
@@ -1401,7 +1401,7 @@ architecture_input: str
 
 ---
 
-##### `boot_mode_input`<sup>Optional</sup> <a name="boot_mode_input" id="@cdktf/provider-aws.ami.Ami.property.bootModeInput"></a>
+##### `boot_mode_input`<sup>Optional</sup> <a name="boot_mode_input" id="@cdktn/provider-aws.ami.Ami.property.bootModeInput"></a>
 
 ```python
 boot_mode_input: str
@@ -1411,7 +1411,7 @@ boot_mode_input: str
 
 ---
 
-##### `deprecation_time_input`<sup>Optional</sup> <a name="deprecation_time_input" id="@cdktf/provider-aws.ami.Ami.property.deprecationTimeInput"></a>
+##### `deprecation_time_input`<sup>Optional</sup> <a name="deprecation_time_input" id="@cdktn/provider-aws.ami.Ami.property.deprecationTimeInput"></a>
 
 ```python
 deprecation_time_input: str
@@ -1421,7 +1421,7 @@ deprecation_time_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.ami.Ami.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.ami.Ami.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1431,17 +1431,17 @@ description_input: str
 
 ---
 
-##### `ebs_block_device_input`<sup>Optional</sup> <a name="ebs_block_device_input" id="@cdktf/provider-aws.ami.Ami.property.ebsBlockDeviceInput"></a>
+##### `ebs_block_device_input`<sup>Optional</sup> <a name="ebs_block_device_input" id="@cdktn/provider-aws.ami.Ami.property.ebsBlockDeviceInput"></a>
 
 ```python
 ebs_block_device_input: IResolvable | typing.List[AmiEbsBlockDevice]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
 
 ---
 
-##### `ena_support_input`<sup>Optional</sup> <a name="ena_support_input" id="@cdktf/provider-aws.ami.Ami.property.enaSupportInput"></a>
+##### `ena_support_input`<sup>Optional</sup> <a name="ena_support_input" id="@cdktn/provider-aws.ami.Ami.property.enaSupportInput"></a>
 
 ```python
 ena_support_input: bool | IResolvable
@@ -1451,17 +1451,17 @@ ena_support_input: bool | IResolvable
 
 ---
 
-##### `ephemeral_block_device_input`<sup>Optional</sup> <a name="ephemeral_block_device_input" id="@cdktf/provider-aws.ami.Ami.property.ephemeralBlockDeviceInput"></a>
+##### `ephemeral_block_device_input`<sup>Optional</sup> <a name="ephemeral_block_device_input" id="@cdktn/provider-aws.ami.Ami.property.ephemeralBlockDeviceInput"></a>
 
 ```python
 ephemeral_block_device_input: IResolvable | typing.List[AmiEphemeralBlockDevice]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.ami.Ami.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.ami.Ami.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1471,7 +1471,7 @@ id_input: str
 
 ---
 
-##### `image_location_input`<sup>Optional</sup> <a name="image_location_input" id="@cdktf/provider-aws.ami.Ami.property.imageLocationInput"></a>
+##### `image_location_input`<sup>Optional</sup> <a name="image_location_input" id="@cdktn/provider-aws.ami.Ami.property.imageLocationInput"></a>
 
 ```python
 image_location_input: str
@@ -1481,7 +1481,7 @@ image_location_input: str
 
 ---
 
-##### `imds_support_input`<sup>Optional</sup> <a name="imds_support_input" id="@cdktf/provider-aws.ami.Ami.property.imdsSupportInput"></a>
+##### `imds_support_input`<sup>Optional</sup> <a name="imds_support_input" id="@cdktn/provider-aws.ami.Ami.property.imdsSupportInput"></a>
 
 ```python
 imds_support_input: str
@@ -1491,7 +1491,7 @@ imds_support_input: str
 
 ---
 
-##### `kernel_id_input`<sup>Optional</sup> <a name="kernel_id_input" id="@cdktf/provider-aws.ami.Ami.property.kernelIdInput"></a>
+##### `kernel_id_input`<sup>Optional</sup> <a name="kernel_id_input" id="@cdktn/provider-aws.ami.Ami.property.kernelIdInput"></a>
 
 ```python
 kernel_id_input: str
@@ -1501,7 +1501,7 @@ kernel_id_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.ami.Ami.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.ami.Ami.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1511,7 +1511,7 @@ name_input: str
 
 ---
 
-##### `ramdisk_id_input`<sup>Optional</sup> <a name="ramdisk_id_input" id="@cdktf/provider-aws.ami.Ami.property.ramdiskIdInput"></a>
+##### `ramdisk_id_input`<sup>Optional</sup> <a name="ramdisk_id_input" id="@cdktn/provider-aws.ami.Ami.property.ramdiskIdInput"></a>
 
 ```python
 ramdisk_id_input: str
@@ -1521,7 +1521,7 @@ ramdisk_id_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.ami.Ami.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.ami.Ami.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1531,7 +1531,7 @@ region_input: str
 
 ---
 
-##### `root_device_name_input`<sup>Optional</sup> <a name="root_device_name_input" id="@cdktf/provider-aws.ami.Ami.property.rootDeviceNameInput"></a>
+##### `root_device_name_input`<sup>Optional</sup> <a name="root_device_name_input" id="@cdktn/provider-aws.ami.Ami.property.rootDeviceNameInput"></a>
 
 ```python
 root_device_name_input: str
@@ -1541,7 +1541,7 @@ root_device_name_input: str
 
 ---
 
-##### `sriov_net_support_input`<sup>Optional</sup> <a name="sriov_net_support_input" id="@cdktf/provider-aws.ami.Ami.property.sriovNetSupportInput"></a>
+##### `sriov_net_support_input`<sup>Optional</sup> <a name="sriov_net_support_input" id="@cdktn/provider-aws.ami.Ami.property.sriovNetSupportInput"></a>
 
 ```python
 sriov_net_support_input: str
@@ -1551,7 +1551,7 @@ sriov_net_support_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.ami.Ami.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.ami.Ami.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1561,7 +1561,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.ami.Ami.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.ami.Ami.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1571,17 +1571,17 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.ami.Ami.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.ami.Ami.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | AmiTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
 
 ---
 
-##### `tpm_support_input`<sup>Optional</sup> <a name="tpm_support_input" id="@cdktf/provider-aws.ami.Ami.property.tpmSupportInput"></a>
+##### `tpm_support_input`<sup>Optional</sup> <a name="tpm_support_input" id="@cdktn/provider-aws.ami.Ami.property.tpmSupportInput"></a>
 
 ```python
 tpm_support_input: str
@@ -1591,7 +1591,7 @@ tpm_support_input: str
 
 ---
 
-##### `uefi_data_input`<sup>Optional</sup> <a name="uefi_data_input" id="@cdktf/provider-aws.ami.Ami.property.uefiDataInput"></a>
+##### `uefi_data_input`<sup>Optional</sup> <a name="uefi_data_input" id="@cdktn/provider-aws.ami.Ami.property.uefiDataInput"></a>
 
 ```python
 uefi_data_input: str
@@ -1601,7 +1601,7 @@ uefi_data_input: str
 
 ---
 
-##### `virtualization_type_input`<sup>Optional</sup> <a name="virtualization_type_input" id="@cdktf/provider-aws.ami.Ami.property.virtualizationTypeInput"></a>
+##### `virtualization_type_input`<sup>Optional</sup> <a name="virtualization_type_input" id="@cdktn/provider-aws.ami.Ami.property.virtualizationTypeInput"></a>
 
 ```python
 virtualization_type_input: str
@@ -1611,7 +1611,7 @@ virtualization_type_input: str
 
 ---
 
-##### `architecture`<sup>Required</sup> <a name="architecture" id="@cdktf/provider-aws.ami.Ami.property.architecture"></a>
+##### `architecture`<sup>Required</sup> <a name="architecture" id="@cdktn/provider-aws.ami.Ami.property.architecture"></a>
 
 ```python
 architecture: str
@@ -1621,7 +1621,7 @@ architecture: str
 
 ---
 
-##### `boot_mode`<sup>Required</sup> <a name="boot_mode" id="@cdktf/provider-aws.ami.Ami.property.bootMode"></a>
+##### `boot_mode`<sup>Required</sup> <a name="boot_mode" id="@cdktn/provider-aws.ami.Ami.property.bootMode"></a>
 
 ```python
 boot_mode: str
@@ -1631,7 +1631,7 @@ boot_mode: str
 
 ---
 
-##### `deprecation_time`<sup>Required</sup> <a name="deprecation_time" id="@cdktf/provider-aws.ami.Ami.property.deprecationTime"></a>
+##### `deprecation_time`<sup>Required</sup> <a name="deprecation_time" id="@cdktn/provider-aws.ami.Ami.property.deprecationTime"></a>
 
 ```python
 deprecation_time: str
@@ -1641,7 +1641,7 @@ deprecation_time: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.ami.Ami.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.ami.Ami.property.description"></a>
 
 ```python
 description: str
@@ -1651,7 +1651,7 @@ description: str
 
 ---
 
-##### `ena_support`<sup>Required</sup> <a name="ena_support" id="@cdktf/provider-aws.ami.Ami.property.enaSupport"></a>
+##### `ena_support`<sup>Required</sup> <a name="ena_support" id="@cdktn/provider-aws.ami.Ami.property.enaSupport"></a>
 
 ```python
 ena_support: bool | IResolvable
@@ -1661,7 +1661,7 @@ ena_support: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.ami.Ami.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.ami.Ami.property.id"></a>
 
 ```python
 id: str
@@ -1671,7 +1671,7 @@ id: str
 
 ---
 
-##### `image_location`<sup>Required</sup> <a name="image_location" id="@cdktf/provider-aws.ami.Ami.property.imageLocation"></a>
+##### `image_location`<sup>Required</sup> <a name="image_location" id="@cdktn/provider-aws.ami.Ami.property.imageLocation"></a>
 
 ```python
 image_location: str
@@ -1681,7 +1681,7 @@ image_location: str
 
 ---
 
-##### `imds_support`<sup>Required</sup> <a name="imds_support" id="@cdktf/provider-aws.ami.Ami.property.imdsSupport"></a>
+##### `imds_support`<sup>Required</sup> <a name="imds_support" id="@cdktn/provider-aws.ami.Ami.property.imdsSupport"></a>
 
 ```python
 imds_support: str
@@ -1691,7 +1691,7 @@ imds_support: str
 
 ---
 
-##### `kernel_id`<sup>Required</sup> <a name="kernel_id" id="@cdktf/provider-aws.ami.Ami.property.kernelId"></a>
+##### `kernel_id`<sup>Required</sup> <a name="kernel_id" id="@cdktn/provider-aws.ami.Ami.property.kernelId"></a>
 
 ```python
 kernel_id: str
@@ -1701,7 +1701,7 @@ kernel_id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.ami.Ami.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.ami.Ami.property.name"></a>
 
 ```python
 name: str
@@ -1711,7 +1711,7 @@ name: str
 
 ---
 
-##### `ramdisk_id`<sup>Required</sup> <a name="ramdisk_id" id="@cdktf/provider-aws.ami.Ami.property.ramdiskId"></a>
+##### `ramdisk_id`<sup>Required</sup> <a name="ramdisk_id" id="@cdktn/provider-aws.ami.Ami.property.ramdiskId"></a>
 
 ```python
 ramdisk_id: str
@@ -1721,7 +1721,7 @@ ramdisk_id: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.ami.Ami.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.ami.Ami.property.region"></a>
 
 ```python
 region: str
@@ -1731,7 +1731,7 @@ region: str
 
 ---
 
-##### `root_device_name`<sup>Required</sup> <a name="root_device_name" id="@cdktf/provider-aws.ami.Ami.property.rootDeviceName"></a>
+##### `root_device_name`<sup>Required</sup> <a name="root_device_name" id="@cdktn/provider-aws.ami.Ami.property.rootDeviceName"></a>
 
 ```python
 root_device_name: str
@@ -1741,7 +1741,7 @@ root_device_name: str
 
 ---
 
-##### `sriov_net_support`<sup>Required</sup> <a name="sriov_net_support" id="@cdktf/provider-aws.ami.Ami.property.sriovNetSupport"></a>
+##### `sriov_net_support`<sup>Required</sup> <a name="sriov_net_support" id="@cdktn/provider-aws.ami.Ami.property.sriovNetSupport"></a>
 
 ```python
 sriov_net_support: str
@@ -1751,7 +1751,7 @@ sriov_net_support: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.ami.Ami.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.ami.Ami.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1761,7 +1761,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.ami.Ami.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.ami.Ami.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1771,7 +1771,7 @@ tags_all: typing.Mapping[str]
 
 ---
 
-##### `tpm_support`<sup>Required</sup> <a name="tpm_support" id="@cdktf/provider-aws.ami.Ami.property.tpmSupport"></a>
+##### `tpm_support`<sup>Required</sup> <a name="tpm_support" id="@cdktn/provider-aws.ami.Ami.property.tpmSupport"></a>
 
 ```python
 tpm_support: str
@@ -1781,7 +1781,7 @@ tpm_support: str
 
 ---
 
-##### `uefi_data`<sup>Required</sup> <a name="uefi_data" id="@cdktf/provider-aws.ami.Ami.property.uefiData"></a>
+##### `uefi_data`<sup>Required</sup> <a name="uefi_data" id="@cdktn/provider-aws.ami.Ami.property.uefiData"></a>
 
 ```python
 uefi_data: str
@@ -1791,7 +1791,7 @@ uefi_data: str
 
 ---
 
-##### `virtualization_type`<sup>Required</sup> <a name="virtualization_type" id="@cdktf/provider-aws.ami.Ami.property.virtualizationType"></a>
+##### `virtualization_type`<sup>Required</sup> <a name="virtualization_type" id="@cdktn/provider-aws.ami.Ami.property.virtualizationType"></a>
 
 ```python
 virtualization_type: str
@@ -1805,11 +1805,11 @@ virtualization_type: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.Ami.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.Ami.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.ami.Ami.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.ami.Ami.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1821,12 +1821,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AmiConfig <a name="AmiConfig" id="@cdktf/provider-aws.ami.AmiConfig"></a>
+### AmiConfig <a name="AmiConfig" id="@cdktn/provider-aws.ami.AmiConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ami.AmiConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.ami.AmiConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1865,39 +1865,39 @@ ami.AmiConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#name Ami#name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.architecture">architecture</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#architecture Ami#architecture}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.bootMode">boot_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#boot_mode Ami#boot_mode}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.deprecationTime">deprecation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#deprecation_time Ami#deprecation_time}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#description Ami#description}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ebsBlockDevice">ebs_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | ebs_block_device block. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.enaSupport">ena_support</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ena_support Ami#ena_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ephemeralBlockDevice">ephemeral_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | ephemeral_block_device block. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#id Ami#id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.imageLocation">image_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#image_location Ami#image_location}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.imdsSupport">imds_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#imds_support Ami#imds_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.kernelId">kernel_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#kernel_id Ami#kernel_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.ramdiskId">ramdisk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.rootDeviceName">root_device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#root_device_name Ami#root_device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.sriovNetSupport">sriov_net_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags Ami#tags}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags_all Ami#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.tpmSupport">tpm_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tpm_support Ami#tpm_support}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.uefiData">uefi_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#uefi_data Ami#uefi_data}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiConfig.property.virtualizationType">virtualization_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#virtualization_type Ami#virtualization_type}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#name Ami#name}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.architecture">architecture</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#architecture Ami#architecture}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.bootMode">boot_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#boot_mode Ami#boot_mode}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.deprecationTime">deprecation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#deprecation_time Ami#deprecation_time}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#description Ami#description}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.ebsBlockDevice">ebs_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | ebs_block_device block. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.enaSupport">ena_support</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ena_support Ami#ena_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.ephemeralBlockDevice">ephemeral_block_device</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | ephemeral_block_device block. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#id Ami#id}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.imageLocation">image_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#image_location Ami#image_location}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.imdsSupport">imds_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#imds_support Ami#imds_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.kernelId">kernel_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#kernel_id Ami#kernel_id}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.ramdiskId">ramdisk_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.rootDeviceName">root_device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#root_device_name Ami#root_device_name}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.sriovNetSupport">sriov_net_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags Ami#tags}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags_all Ami#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.tpmSupport">tpm_support</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tpm_support Ami#tpm_support}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.uefiData">uefi_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#uefi_data Ami#uefi_data}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiConfig.property.virtualizationType">virtualization_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#virtualization_type Ami#virtualization_type}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.ami.AmiConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.ami.AmiConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1907,7 +1907,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.ami.AmiConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.ami.AmiConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1917,7 +1917,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.ami.AmiConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.ami.AmiConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1927,7 +1927,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.ami.AmiConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.ami.AmiConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1937,7 +1937,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.ami.AmiConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.ami.AmiConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1947,7 +1947,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.ami.AmiConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.ami.AmiConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1957,7 +1957,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.ami.AmiConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.ami.AmiConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1967,7 +1967,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.ami.AmiConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.ami.AmiConfig.property.name"></a>
 
 ```python
 name: str
@@ -1975,11 +1975,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#name Ami#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#name Ami#name}.
 
 ---
 
-##### `architecture`<sup>Optional</sup> <a name="architecture" id="@cdktf/provider-aws.ami.AmiConfig.property.architecture"></a>
+##### `architecture`<sup>Optional</sup> <a name="architecture" id="@cdktn/provider-aws.ami.AmiConfig.property.architecture"></a>
 
 ```python
 architecture: str
@@ -1987,11 +1987,11 @@ architecture: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#architecture Ami#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#architecture Ami#architecture}.
 
 ---
 
-##### `boot_mode`<sup>Optional</sup> <a name="boot_mode" id="@cdktf/provider-aws.ami.AmiConfig.property.bootMode"></a>
+##### `boot_mode`<sup>Optional</sup> <a name="boot_mode" id="@cdktn/provider-aws.ami.AmiConfig.property.bootMode"></a>
 
 ```python
 boot_mode: str
@@ -1999,11 +1999,11 @@ boot_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#boot_mode Ami#boot_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#boot_mode Ami#boot_mode}.
 
 ---
 
-##### `deprecation_time`<sup>Optional</sup> <a name="deprecation_time" id="@cdktf/provider-aws.ami.AmiConfig.property.deprecationTime"></a>
+##### `deprecation_time`<sup>Optional</sup> <a name="deprecation_time" id="@cdktn/provider-aws.ami.AmiConfig.property.deprecationTime"></a>
 
 ```python
 deprecation_time: str
@@ -2011,11 +2011,11 @@ deprecation_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#deprecation_time Ami#deprecation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#deprecation_time Ami#deprecation_time}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.ami.AmiConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.ami.AmiConfig.property.description"></a>
 
 ```python
 description: str
@@ -2023,25 +2023,25 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#description Ami#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#description Ami#description}.
 
 ---
 
-##### `ebs_block_device`<sup>Optional</sup> <a name="ebs_block_device" id="@cdktf/provider-aws.ami.AmiConfig.property.ebsBlockDevice"></a>
+##### `ebs_block_device`<sup>Optional</sup> <a name="ebs_block_device" id="@cdktn/provider-aws.ami.AmiConfig.property.ebsBlockDevice"></a>
 
 ```python
 ebs_block_device: IResolvable | typing.List[AmiEbsBlockDevice]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
 
 ebs_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ebs_block_device Ami#ebs_block_device}
 
 ---
 
-##### `ena_support`<sup>Optional</sup> <a name="ena_support" id="@cdktf/provider-aws.ami.AmiConfig.property.enaSupport"></a>
+##### `ena_support`<sup>Optional</sup> <a name="ena_support" id="@cdktn/provider-aws.ami.AmiConfig.property.enaSupport"></a>
 
 ```python
 ena_support: bool | IResolvable
@@ -2049,25 +2049,25 @@ ena_support: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ena_support Ami#ena_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ena_support Ami#ena_support}.
 
 ---
 
-##### `ephemeral_block_device`<sup>Optional</sup> <a name="ephemeral_block_device" id="@cdktf/provider-aws.ami.AmiConfig.property.ephemeralBlockDevice"></a>
+##### `ephemeral_block_device`<sup>Optional</sup> <a name="ephemeral_block_device" id="@cdktn/provider-aws.ami.AmiConfig.property.ephemeralBlockDevice"></a>
 
 ```python
 ephemeral_block_device: IResolvable | typing.List[AmiEphemeralBlockDevice]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
 
 ephemeral_block_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ephemeral_block_device Ami#ephemeral_block_device}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.ami.AmiConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.ami.AmiConfig.property.id"></a>
 
 ```python
 id: str
@@ -2075,14 +2075,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#id Ami#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#id Ami#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `image_location`<sup>Optional</sup> <a name="image_location" id="@cdktf/provider-aws.ami.AmiConfig.property.imageLocation"></a>
+##### `image_location`<sup>Optional</sup> <a name="image_location" id="@cdktn/provider-aws.ami.AmiConfig.property.imageLocation"></a>
 
 ```python
 image_location: str
@@ -2090,11 +2090,11 @@ image_location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#image_location Ami#image_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#image_location Ami#image_location}.
 
 ---
 
-##### `imds_support`<sup>Optional</sup> <a name="imds_support" id="@cdktf/provider-aws.ami.AmiConfig.property.imdsSupport"></a>
+##### `imds_support`<sup>Optional</sup> <a name="imds_support" id="@cdktn/provider-aws.ami.AmiConfig.property.imdsSupport"></a>
 
 ```python
 imds_support: str
@@ -2102,11 +2102,11 @@ imds_support: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#imds_support Ami#imds_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#imds_support Ami#imds_support}.
 
 ---
 
-##### `kernel_id`<sup>Optional</sup> <a name="kernel_id" id="@cdktf/provider-aws.ami.AmiConfig.property.kernelId"></a>
+##### `kernel_id`<sup>Optional</sup> <a name="kernel_id" id="@cdktn/provider-aws.ami.AmiConfig.property.kernelId"></a>
 
 ```python
 kernel_id: str
@@ -2114,11 +2114,11 @@ kernel_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#kernel_id Ami#kernel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#kernel_id Ami#kernel_id}.
 
 ---
 
-##### `ramdisk_id`<sup>Optional</sup> <a name="ramdisk_id" id="@cdktf/provider-aws.ami.AmiConfig.property.ramdiskId"></a>
+##### `ramdisk_id`<sup>Optional</sup> <a name="ramdisk_id" id="@cdktn/provider-aws.ami.AmiConfig.property.ramdiskId"></a>
 
 ```python
 ramdisk_id: str
@@ -2126,11 +2126,11 @@ ramdisk_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#ramdisk_id Ami#ramdisk_id}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.ami.AmiConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.ami.AmiConfig.property.region"></a>
 
 ```python
 region: str
@@ -2140,11 +2140,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#region Ami#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#region Ami#region}
 
 ---
 
-##### `root_device_name`<sup>Optional</sup> <a name="root_device_name" id="@cdktf/provider-aws.ami.AmiConfig.property.rootDeviceName"></a>
+##### `root_device_name`<sup>Optional</sup> <a name="root_device_name" id="@cdktn/provider-aws.ami.AmiConfig.property.rootDeviceName"></a>
 
 ```python
 root_device_name: str
@@ -2152,11 +2152,11 @@ root_device_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#root_device_name Ami#root_device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#root_device_name Ami#root_device_name}.
 
 ---
 
-##### `sriov_net_support`<sup>Optional</sup> <a name="sriov_net_support" id="@cdktf/provider-aws.ami.AmiConfig.property.sriovNetSupport"></a>
+##### `sriov_net_support`<sup>Optional</sup> <a name="sriov_net_support" id="@cdktn/provider-aws.ami.AmiConfig.property.sriovNetSupport"></a>
 
 ```python
 sriov_net_support: str
@@ -2164,11 +2164,11 @@ sriov_net_support: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#sriov_net_support Ami#sriov_net_support}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.ami.AmiConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.ami.AmiConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -2176,11 +2176,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags Ami#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags Ami#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.ami.AmiConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.ami.AmiConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -2188,25 +2188,25 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tags_all Ami#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tags_all Ami#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.ami.AmiConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.ami.AmiConfig.property.timeouts"></a>
 
 ```python
 timeouts: AmiTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#timeouts Ami#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#timeouts Ami#timeouts}
 
 ---
 
-##### `tpm_support`<sup>Optional</sup> <a name="tpm_support" id="@cdktf/provider-aws.ami.AmiConfig.property.tpmSupport"></a>
+##### `tpm_support`<sup>Optional</sup> <a name="tpm_support" id="@cdktn/provider-aws.ami.AmiConfig.property.tpmSupport"></a>
 
 ```python
 tpm_support: str
@@ -2214,11 +2214,11 @@ tpm_support: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#tpm_support Ami#tpm_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#tpm_support Ami#tpm_support}.
 
 ---
 
-##### `uefi_data`<sup>Optional</sup> <a name="uefi_data" id="@cdktf/provider-aws.ami.AmiConfig.property.uefiData"></a>
+##### `uefi_data`<sup>Optional</sup> <a name="uefi_data" id="@cdktn/provider-aws.ami.AmiConfig.property.uefiData"></a>
 
 ```python
 uefi_data: str
@@ -2226,11 +2226,11 @@ uefi_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#uefi_data Ami#uefi_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#uefi_data Ami#uefi_data}.
 
 ---
 
-##### `virtualization_type`<sup>Optional</sup> <a name="virtualization_type" id="@cdktf/provider-aws.ami.AmiConfig.property.virtualizationType"></a>
+##### `virtualization_type`<sup>Optional</sup> <a name="virtualization_type" id="@cdktn/provider-aws.ami.AmiConfig.property.virtualizationType"></a>
 
 ```python
 virtualization_type: str
@@ -2238,16 +2238,16 @@ virtualization_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#virtualization_type Ami#virtualization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#virtualization_type Ami#virtualization_type}.
 
 ---
 
-### AmiEbsBlockDevice <a name="AmiEbsBlockDevice" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice"></a>
+### AmiEbsBlockDevice <a name="AmiEbsBlockDevice" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiEbsBlockDevice(
   device_name: str,
@@ -2266,19 +2266,19 @@ ami.AmiEbsBlockDevice(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deviceName">device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#device_name Ami#device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deleteOnTermination">delete_on_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.encrypted">encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#encrypted Ami#encrypted}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#iops Ami#iops}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#outpost_arn Ami#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.snapshotId">snapshot_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#snapshot_id Ami#snapshot_id}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#throughput Ami#throughput}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeSize">volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#volume_size Ami#volume_size}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeType">volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#volume_type Ami#volume_type}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.deviceName">device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#device_name Ami#device_name}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.deleteOnTermination">delete_on_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.encrypted">encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#encrypted Ami#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#iops Ami#iops}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#outpost_arn Ami#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.snapshotId">snapshot_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#snapshot_id Ami#snapshot_id}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#throughput Ami#throughput}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.volumeSize">volume_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#volume_size Ami#volume_size}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.volumeType">volume_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#volume_type Ami#volume_type}. |
 
 ---
 
-##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deviceName"></a>
+##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.deviceName"></a>
 
 ```python
 device_name: str
@@ -2286,11 +2286,11 @@ device_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#device_name Ami#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#device_name Ami#device_name}.
 
 ---
 
-##### `delete_on_termination`<sup>Optional</sup> <a name="delete_on_termination" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.deleteOnTermination"></a>
+##### `delete_on_termination`<sup>Optional</sup> <a name="delete_on_termination" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.deleteOnTermination"></a>
 
 ```python
 delete_on_termination: bool | IResolvable
@@ -2298,11 +2298,11 @@ delete_on_termination: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#delete_on_termination Ami#delete_on_termination}.
 
 ---
 
-##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.encrypted"></a>
+##### `encrypted`<sup>Optional</sup> <a name="encrypted" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.encrypted"></a>
 
 ```python
 encrypted: bool | IResolvable
@@ -2310,11 +2310,11 @@ encrypted: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#encrypted Ami#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#encrypted Ami#encrypted}.
 
 ---
 
-##### `iops`<sup>Optional</sup> <a name="iops" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.iops"></a>
+##### `iops`<sup>Optional</sup> <a name="iops" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.iops"></a>
 
 ```python
 iops: typing.Union[int, float]
@@ -2322,11 +2322,11 @@ iops: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#iops Ami#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#iops Ami#iops}.
 
 ---
 
-##### `outpost_arn`<sup>Optional</sup> <a name="outpost_arn" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.outpostArn"></a>
+##### `outpost_arn`<sup>Optional</sup> <a name="outpost_arn" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.outpostArn"></a>
 
 ```python
 outpost_arn: str
@@ -2334,11 +2334,11 @@ outpost_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#outpost_arn Ami#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#outpost_arn Ami#outpost_arn}.
 
 ---
 
-##### `snapshot_id`<sup>Optional</sup> <a name="snapshot_id" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.snapshotId"></a>
+##### `snapshot_id`<sup>Optional</sup> <a name="snapshot_id" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.snapshotId"></a>
 
 ```python
 snapshot_id: str
@@ -2346,11 +2346,11 @@ snapshot_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#snapshot_id Ami#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#snapshot_id Ami#snapshot_id}.
 
 ---
 
-##### `throughput`<sup>Optional</sup> <a name="throughput" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.throughput"></a>
+##### `throughput`<sup>Optional</sup> <a name="throughput" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.throughput"></a>
 
 ```python
 throughput: typing.Union[int, float]
@@ -2358,11 +2358,11 @@ throughput: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#throughput Ami#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#throughput Ami#throughput}.
 
 ---
 
-##### `volume_size`<sup>Optional</sup> <a name="volume_size" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeSize"></a>
+##### `volume_size`<sup>Optional</sup> <a name="volume_size" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.volumeSize"></a>
 
 ```python
 volume_size: typing.Union[int, float]
@@ -2370,11 +2370,11 @@ volume_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#volume_size Ami#volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#volume_size Ami#volume_size}.
 
 ---
 
-##### `volume_type`<sup>Optional</sup> <a name="volume_type" id="@cdktf/provider-aws.ami.AmiEbsBlockDevice.property.volumeType"></a>
+##### `volume_type`<sup>Optional</sup> <a name="volume_type" id="@cdktn/provider-aws.ami.AmiEbsBlockDevice.property.volumeType"></a>
 
 ```python
 volume_type: str
@@ -2382,16 +2382,16 @@ volume_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#volume_type Ami#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#volume_type Ami#volume_type}.
 
 ---
 
-### AmiEphemeralBlockDevice <a name="AmiEphemeralBlockDevice" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDevice"></a>
+### AmiEphemeralBlockDevice <a name="AmiEphemeralBlockDevice" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDevice"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDevice.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiEphemeralBlockDevice(
   device_name: str,
@@ -2403,12 +2403,12 @@ ami.AmiEphemeralBlockDevice(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.deviceName">device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#device_name Ami#device_name}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.virtualName">virtual_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#virtual_name Ami#virtual_name}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice.property.deviceName">device_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#device_name Ami#device_name}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice.property.virtualName">virtual_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#virtual_name Ami#virtual_name}. |
 
 ---
 
-##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.deviceName"></a>
+##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDevice.property.deviceName"></a>
 
 ```python
 device_name: str
@@ -2416,11 +2416,11 @@ device_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#device_name Ami#device_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#device_name Ami#device_name}.
 
 ---
 
-##### `virtual_name`<sup>Required</sup> <a name="virtual_name" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDevice.property.virtualName"></a>
+##### `virtual_name`<sup>Required</sup> <a name="virtual_name" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDevice.property.virtualName"></a>
 
 ```python
 virtual_name: str
@@ -2428,16 +2428,16 @@ virtual_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#virtual_name Ami#virtual_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#virtual_name Ami#virtual_name}.
 
 ---
 
-### AmiTimeouts <a name="AmiTimeouts" id="@cdktf/provider-aws.ami.AmiTimeouts"></a>
+### AmiTimeouts <a name="AmiTimeouts" id="@cdktn/provider-aws.ami.AmiTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.ami.AmiTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.ami.AmiTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiTimeouts(
   create: str = None,
@@ -2450,13 +2450,13 @@ ami.AmiTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#create Ami#create}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#delete Ami#delete}. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#update Ami#update}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#create Ami#create}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#delete Ami#delete}. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#update Ami#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.ami.AmiTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.ami.AmiTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2464,11 +2464,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#create Ami#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#create Ami#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.ami.AmiTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.ami.AmiTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2476,11 +2476,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#delete Ami#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#delete Ami#delete}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.ami.AmiTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.ami.AmiTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2488,18 +2488,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/ami#update Ami#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ami#update Ami#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### AmiEbsBlockDeviceList <a name="AmiEbsBlockDeviceList" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList"></a>
+### AmiEbsBlockDeviceList <a name="AmiEbsBlockDeviceList" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiEbsBlockDeviceList(
   terraform_resource: IInterpolatingParent,
@@ -2510,13 +2510,13 @@ ami.AmiEbsBlockDeviceList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2524,7 +2524,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2532,7 +2532,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2544,15 +2544,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2564,19 +2564,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.resolve"></a>
 
 ```python
 def resolve(
@@ -2586,13 +2586,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2602,7 +2602,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.get"></a>
 
 ```python
 def get(
@@ -2610,7 +2610,7 @@ def get(
 ) -> AmiEbsBlockDeviceOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2623,13 +2623,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2643,7 +2643,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2653,23 +2653,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[AmiEbsBlockDevice]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>]
 
 ---
 
 
-### AmiEbsBlockDeviceOutputReference <a name="AmiEbsBlockDeviceOutputReference" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference"></a>
+### AmiEbsBlockDeviceOutputReference <a name="AmiEbsBlockDeviceOutputReference" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiEbsBlockDeviceOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2681,14 +2681,14 @@ ami.AmiEbsBlockDeviceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2696,7 +2696,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2704,7 +2704,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2712,7 +2712,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2724,37 +2724,37 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetDeleteOnTermination">reset_delete_on_termination</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetEncrypted">reset_encrypted</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetIops">reset_iops</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetOutpostArn">reset_outpost_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetSnapshotId">reset_snapshot_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetThroughput">reset_throughput</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeSize">reset_volume_size</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeType">reset_volume_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetDeleteOnTermination">reset_delete_on_termination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetEncrypted">reset_encrypted</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetIops">reset_iops</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetOutpostArn">reset_outpost_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetSnapshotId">reset_snapshot_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetThroughput">reset_throughput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeSize">reset_volume_size</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeType">reset_volume_type</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2762,13 +2762,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2776,13 +2776,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2790,13 +2790,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2804,13 +2804,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2818,13 +2818,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2832,13 +2832,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2846,13 +2846,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2860,13 +2860,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2874,13 +2874,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2888,13 +2888,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2904,13 +2904,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2920,49 +2920,49 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_delete_on_termination` <a name="reset_delete_on_termination" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetDeleteOnTermination"></a>
+##### `reset_delete_on_termination` <a name="reset_delete_on_termination" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetDeleteOnTermination"></a>
 
 ```python
 def reset_delete_on_termination() -> None
 ```
 
-##### `reset_encrypted` <a name="reset_encrypted" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetEncrypted"></a>
+##### `reset_encrypted` <a name="reset_encrypted" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetEncrypted"></a>
 
 ```python
 def reset_encrypted() -> None
 ```
 
-##### `reset_iops` <a name="reset_iops" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetIops"></a>
+##### `reset_iops` <a name="reset_iops" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetIops"></a>
 
 ```python
 def reset_iops() -> None
 ```
 
-##### `reset_outpost_arn` <a name="reset_outpost_arn" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetOutpostArn"></a>
+##### `reset_outpost_arn` <a name="reset_outpost_arn" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetOutpostArn"></a>
 
 ```python
 def reset_outpost_arn() -> None
 ```
 
-##### `reset_snapshot_id` <a name="reset_snapshot_id" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetSnapshotId"></a>
+##### `reset_snapshot_id` <a name="reset_snapshot_id" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetSnapshotId"></a>
 
 ```python
 def reset_snapshot_id() -> None
 ```
 
-##### `reset_throughput` <a name="reset_throughput" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetThroughput"></a>
+##### `reset_throughput` <a name="reset_throughput" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetThroughput"></a>
 
 ```python
 def reset_throughput() -> None
 ```
 
-##### `reset_volume_size` <a name="reset_volume_size" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeSize"></a>
+##### `reset_volume_size` <a name="reset_volume_size" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeSize"></a>
 
 ```python
 def reset_volume_size() -> None
 ```
 
-##### `reset_volume_type` <a name="reset_volume_type" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeType"></a>
+##### `reset_volume_type` <a name="reset_volume_type" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.resetVolumeType"></a>
 
 ```python
 def reset_volume_type() -> None
@@ -2973,31 +2973,31 @@ def reset_volume_type() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTerminationInput">delete_on_termination_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceNameInput">device_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encryptedInput">encrypted_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iopsInput">iops_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArnInput">outpost_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotIdInput">snapshot_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughputInput">throughput_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSizeInput">volume_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeTypeInput">volume_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTermination">delete_on_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encrypted">encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArn">outpost_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotId">snapshot_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSize">volume_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeType">volume_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTerminationInput">delete_on_termination_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceNameInput">device_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encryptedInput">encrypted_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iopsInput">iops_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArnInput">outpost_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotIdInput">snapshot_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughputInput">throughput_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSizeInput">volume_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeTypeInput">volume_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTermination">delete_on_termination</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encrypted">encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iops">iops</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArn">outpost_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotId">snapshot_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughput">throughput</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSize">volume_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeType">volume_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3011,7 +3011,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3021,7 +3021,7 @@ fqn: str
 
 ---
 
-##### `delete_on_termination_input`<sup>Optional</sup> <a name="delete_on_termination_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTerminationInput"></a>
+##### `delete_on_termination_input`<sup>Optional</sup> <a name="delete_on_termination_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTerminationInput"></a>
 
 ```python
 delete_on_termination_input: bool | IResolvable
@@ -3031,7 +3031,7 @@ delete_on_termination_input: bool | IResolvable
 
 ---
 
-##### `device_name_input`<sup>Optional</sup> <a name="device_name_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceNameInput"></a>
+##### `device_name_input`<sup>Optional</sup> <a name="device_name_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceNameInput"></a>
 
 ```python
 device_name_input: str
@@ -3041,7 +3041,7 @@ device_name_input: str
 
 ---
 
-##### `encrypted_input`<sup>Optional</sup> <a name="encrypted_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encryptedInput"></a>
+##### `encrypted_input`<sup>Optional</sup> <a name="encrypted_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encryptedInput"></a>
 
 ```python
 encrypted_input: bool | IResolvable
@@ -3051,7 +3051,7 @@ encrypted_input: bool | IResolvable
 
 ---
 
-##### `iops_input`<sup>Optional</sup> <a name="iops_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iopsInput"></a>
+##### `iops_input`<sup>Optional</sup> <a name="iops_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iopsInput"></a>
 
 ```python
 iops_input: typing.Union[int, float]
@@ -3061,7 +3061,7 @@ iops_input: typing.Union[int, float]
 
 ---
 
-##### `outpost_arn_input`<sup>Optional</sup> <a name="outpost_arn_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArnInput"></a>
+##### `outpost_arn_input`<sup>Optional</sup> <a name="outpost_arn_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArnInput"></a>
 
 ```python
 outpost_arn_input: str
@@ -3071,7 +3071,7 @@ outpost_arn_input: str
 
 ---
 
-##### `snapshot_id_input`<sup>Optional</sup> <a name="snapshot_id_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotIdInput"></a>
+##### `snapshot_id_input`<sup>Optional</sup> <a name="snapshot_id_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotIdInput"></a>
 
 ```python
 snapshot_id_input: str
@@ -3081,7 +3081,7 @@ snapshot_id_input: str
 
 ---
 
-##### `throughput_input`<sup>Optional</sup> <a name="throughput_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughputInput"></a>
+##### `throughput_input`<sup>Optional</sup> <a name="throughput_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughputInput"></a>
 
 ```python
 throughput_input: typing.Union[int, float]
@@ -3091,7 +3091,7 @@ throughput_input: typing.Union[int, float]
 
 ---
 
-##### `volume_size_input`<sup>Optional</sup> <a name="volume_size_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSizeInput"></a>
+##### `volume_size_input`<sup>Optional</sup> <a name="volume_size_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSizeInput"></a>
 
 ```python
 volume_size_input: typing.Union[int, float]
@@ -3101,7 +3101,7 @@ volume_size_input: typing.Union[int, float]
 
 ---
 
-##### `volume_type_input`<sup>Optional</sup> <a name="volume_type_input" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeTypeInput"></a>
+##### `volume_type_input`<sup>Optional</sup> <a name="volume_type_input" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeTypeInput"></a>
 
 ```python
 volume_type_input: str
@@ -3111,7 +3111,7 @@ volume_type_input: str
 
 ---
 
-##### `delete_on_termination`<sup>Required</sup> <a name="delete_on_termination" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTermination"></a>
+##### `delete_on_termination`<sup>Required</sup> <a name="delete_on_termination" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deleteOnTermination"></a>
 
 ```python
 delete_on_termination: bool | IResolvable
@@ -3121,7 +3121,7 @@ delete_on_termination: bool | IResolvable
 
 ---
 
-##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceName"></a>
+##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.deviceName"></a>
 
 ```python
 device_name: str
@@ -3131,7 +3131,7 @@ device_name: str
 
 ---
 
-##### `encrypted`<sup>Required</sup> <a name="encrypted" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encrypted"></a>
+##### `encrypted`<sup>Required</sup> <a name="encrypted" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.encrypted"></a>
 
 ```python
 encrypted: bool | IResolvable
@@ -3141,7 +3141,7 @@ encrypted: bool | IResolvable
 
 ---
 
-##### `iops`<sup>Required</sup> <a name="iops" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iops"></a>
+##### `iops`<sup>Required</sup> <a name="iops" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.iops"></a>
 
 ```python
 iops: typing.Union[int, float]
@@ -3151,7 +3151,7 @@ iops: typing.Union[int, float]
 
 ---
 
-##### `outpost_arn`<sup>Required</sup> <a name="outpost_arn" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArn"></a>
+##### `outpost_arn`<sup>Required</sup> <a name="outpost_arn" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.outpostArn"></a>
 
 ```python
 outpost_arn: str
@@ -3161,7 +3161,7 @@ outpost_arn: str
 
 ---
 
-##### `snapshot_id`<sup>Required</sup> <a name="snapshot_id" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotId"></a>
+##### `snapshot_id`<sup>Required</sup> <a name="snapshot_id" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.snapshotId"></a>
 
 ```python
 snapshot_id: str
@@ -3171,7 +3171,7 @@ snapshot_id: str
 
 ---
 
-##### `throughput`<sup>Required</sup> <a name="throughput" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughput"></a>
+##### `throughput`<sup>Required</sup> <a name="throughput" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.throughput"></a>
 
 ```python
 throughput: typing.Union[int, float]
@@ -3181,7 +3181,7 @@ throughput: typing.Union[int, float]
 
 ---
 
-##### `volume_size`<sup>Required</sup> <a name="volume_size" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSize"></a>
+##### `volume_size`<sup>Required</sup> <a name="volume_size" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeSize"></a>
 
 ```python
 volume_size: typing.Union[int, float]
@@ -3191,7 +3191,7 @@ volume_size: typing.Union[int, float]
 
 ---
 
-##### `volume_type`<sup>Required</sup> <a name="volume_type" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeType"></a>
+##### `volume_type`<sup>Required</sup> <a name="volume_type" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.volumeType"></a>
 
 ```python
 volume_type: str
@@ -3201,23 +3201,23 @@ volume_type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.ami.AmiEbsBlockDeviceOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | AmiEbsBlockDevice
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ami.AmiEbsBlockDevice">AmiEbsBlockDevice</a>
 
 ---
 
 
-### AmiEphemeralBlockDeviceList <a name="AmiEphemeralBlockDeviceList" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList"></a>
+### AmiEphemeralBlockDeviceList <a name="AmiEphemeralBlockDeviceList" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiEphemeralBlockDeviceList(
   terraform_resource: IInterpolatingParent,
@@ -3228,13 +3228,13 @@ ami.AmiEphemeralBlockDeviceList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3242,7 +3242,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3250,7 +3250,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3262,15 +3262,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3282,19 +3282,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.resolve"></a>
 
 ```python
 def resolve(
@@ -3304,13 +3304,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3320,7 +3320,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.get"></a>
 
 ```python
 def get(
@@ -3328,7 +3328,7 @@ def get(
 ) -> AmiEphemeralBlockDeviceOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3341,13 +3341,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3361,7 +3361,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3371,23 +3371,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[AmiEphemeralBlockDevice]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>]
 
 ---
 
 
-### AmiEphemeralBlockDeviceOutputReference <a name="AmiEphemeralBlockDeviceOutputReference" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference"></a>
+### AmiEphemeralBlockDeviceOutputReference <a name="AmiEphemeralBlockDeviceOutputReference" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiEphemeralBlockDeviceOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3399,14 +3399,14 @@ ami.AmiEphemeralBlockDeviceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3414,7 +3414,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3422,7 +3422,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3430,7 +3430,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3442,29 +3442,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3472,13 +3472,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3486,13 +3486,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3500,13 +3500,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3514,13 +3514,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3528,13 +3528,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3542,13 +3542,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3556,13 +3556,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3570,13 +3570,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3584,13 +3584,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3598,13 +3598,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3614,13 +3614,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3635,17 +3635,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceNameInput">device_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualNameInput">virtual_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualName">virtual_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceNameInput">device_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualNameInput">virtual_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualName">virtual_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3659,7 +3659,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3669,7 +3669,7 @@ fqn: str
 
 ---
 
-##### `device_name_input`<sup>Optional</sup> <a name="device_name_input" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceNameInput"></a>
+##### `device_name_input`<sup>Optional</sup> <a name="device_name_input" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceNameInput"></a>
 
 ```python
 device_name_input: str
@@ -3679,7 +3679,7 @@ device_name_input: str
 
 ---
 
-##### `virtual_name_input`<sup>Optional</sup> <a name="virtual_name_input" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualNameInput"></a>
+##### `virtual_name_input`<sup>Optional</sup> <a name="virtual_name_input" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualNameInput"></a>
 
 ```python
 virtual_name_input: str
@@ -3689,7 +3689,7 @@ virtual_name_input: str
 
 ---
 
-##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceName"></a>
+##### `device_name`<sup>Required</sup> <a name="device_name" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.deviceName"></a>
 
 ```python
 device_name: str
@@ -3699,7 +3699,7 @@ device_name: str
 
 ---
 
-##### `virtual_name`<sup>Required</sup> <a name="virtual_name" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualName"></a>
+##### `virtual_name`<sup>Required</sup> <a name="virtual_name" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.virtualName"></a>
 
 ```python
 virtual_name: str
@@ -3709,23 +3709,23 @@ virtual_name: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | AmiEphemeralBlockDevice
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ami.AmiEphemeralBlockDevice">AmiEphemeralBlockDevice</a>
 
 ---
 
 
-### AmiTimeoutsOutputReference <a name="AmiTimeoutsOutputReference" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference"></a>
+### AmiTimeoutsOutputReference <a name="AmiTimeoutsOutputReference" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import ami
+from cdktn_provider_aws import ami
 
 ami.AmiTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3735,12 +3735,12 @@ ami.AmiTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3748,7 +3748,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3760,32 +3760,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3793,13 +3793,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3807,13 +3807,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3821,13 +3821,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3835,13 +3835,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3849,13 +3849,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3863,13 +3863,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3877,13 +3877,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3891,13 +3891,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3905,13 +3905,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3919,13 +3919,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3935,13 +3935,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3951,19 +3951,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -3974,19 +3974,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4000,7 +4000,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4010,7 +4010,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -4020,7 +4020,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -4030,7 +4030,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -4040,7 +4040,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -4050,7 +4050,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -4060,7 +4060,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -4070,13 +4070,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.ami.AmiTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | AmiTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.ami.AmiTimeouts">AmiTimeouts</a>
 
 ---
 

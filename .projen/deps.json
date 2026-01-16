@@ -14,7 +14,7 @@
       "type": "build"
     },
     {
-      "name": "@cdktf/provider-project",
+      "name": "@cdktn/provider-project",
       "version": "^0.7.0",
       "type": "build"
     },
@@ -73,6 +73,11 @@
     },
     {
       "name": "projen",
+      "type": "build"
+    },
+    {
+      "name": "semver",
+      "version": "^7.5.3",
       "type": "build"
     },
     {

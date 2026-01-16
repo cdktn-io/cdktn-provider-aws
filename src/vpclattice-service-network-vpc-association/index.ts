@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,183 @@ import * as cdktf from 'cdktf';
 
 export interface VpclatticeServiceNetworkVpcAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#id VpclatticeServiceNetworkVpcAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#id VpclatticeServiceNetworkVpcAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#private_dns_enabled VpclatticeServiceNetworkVpcAssociation#private_dns_enabled}
+  */
+  readonly privateDnsEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#region VpclatticeServiceNetworkVpcAssociation#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#region VpclatticeServiceNetworkVpcAssociation#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#security_group_ids VpclatticeServiceNetworkVpcAssociation#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#security_group_ids VpclatticeServiceNetworkVpcAssociation#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#service_network_identifier VpclatticeServiceNetworkVpcAssociation#service_network_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#service_network_identifier VpclatticeServiceNetworkVpcAssociation#service_network_identifier}
   */
   readonly serviceNetworkIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#tags VpclatticeServiceNetworkVpcAssociation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#tags VpclatticeServiceNetworkVpcAssociation#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#tags_all VpclatticeServiceNetworkVpcAssociation#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#tags_all VpclatticeServiceNetworkVpcAssociation#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#vpc_identifier VpclatticeServiceNetworkVpcAssociation#vpc_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#vpc_identifier VpclatticeServiceNetworkVpcAssociation#vpc_identifier}
   */
   readonly vpcIdentifier: string;
   /**
+  * dns_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#dns_options VpclatticeServiceNetworkVpcAssociation#dns_options}
+  */
+  readonly dnsOptions?: VpclatticeServiceNetworkVpcAssociationDnsOptions;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#timeouts VpclatticeServiceNetworkVpcAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#timeouts VpclatticeServiceNetworkVpcAssociation#timeouts}
   */
   readonly timeouts?: VpclatticeServiceNetworkVpcAssociationTimeouts;
 }
+export interface VpclatticeServiceNetworkVpcAssociationDnsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#private_dns_preference VpclatticeServiceNetworkVpcAssociation#private_dns_preference}
+  */
+  readonly privateDnsPreference?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#private_dns_specified_domains VpclatticeServiceNetworkVpcAssociation#private_dns_specified_domains}
+  */
+  readonly privateDnsSpecifiedDomains?: string[];
+}
+
+export function vpclatticeServiceNetworkVpcAssociationDnsOptionsToTerraform(struct?: VpclatticeServiceNetworkVpcAssociationDnsOptionsOutputReference | VpclatticeServiceNetworkVpcAssociationDnsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    private_dns_preference: cdktf.stringToTerraform(struct!.privateDnsPreference),
+    private_dns_specified_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.privateDnsSpecifiedDomains),
+  }
+}
+
+
+export function vpclatticeServiceNetworkVpcAssociationDnsOptionsToHclTerraform(struct?: VpclatticeServiceNetworkVpcAssociationDnsOptionsOutputReference | VpclatticeServiceNetworkVpcAssociationDnsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    private_dns_preference: {
+      value: cdktf.stringToHclTerraform(struct!.privateDnsPreference),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_dns_specified_domains: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.privateDnsSpecifiedDomains),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VpclatticeServiceNetworkVpcAssociationDnsOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VpclatticeServiceNetworkVpcAssociationDnsOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._privateDnsPreference !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateDnsPreference = this._privateDnsPreference;
+    }
+    if (this._privateDnsSpecifiedDomains !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateDnsSpecifiedDomains = this._privateDnsSpecifiedDomains;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpclatticeServiceNetworkVpcAssociationDnsOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._privateDnsPreference = undefined;
+      this._privateDnsSpecifiedDomains = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._privateDnsPreference = value.privateDnsPreference;
+      this._privateDnsSpecifiedDomains = value.privateDnsSpecifiedDomains;
+    }
+  }
+
+  // private_dns_preference - computed: false, optional: true, required: false
+  private _privateDnsPreference?: string; 
+  public get privateDnsPreference() {
+    return this.getStringAttribute('private_dns_preference');
+  }
+  public set privateDnsPreference(value: string) {
+    this._privateDnsPreference = value;
+  }
+  public resetPrivateDnsPreference() {
+    this._privateDnsPreference = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsPreferenceInput() {
+    return this._privateDnsPreference;
+  }
+
+  // private_dns_specified_domains - computed: true, optional: true, required: false
+  private _privateDnsSpecifiedDomains?: string[]; 
+  public get privateDnsSpecifiedDomains() {
+    return cdktf.Fn.tolist(this.getListAttribute('private_dns_specified_domains'));
+  }
+  public set privateDnsSpecifiedDomains(value: string[]) {
+    this._privateDnsSpecifiedDomains = value;
+  }
+  public resetPrivateDnsSpecifiedDomains() {
+    this._privateDnsSpecifiedDomains = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsSpecifiedDomainsInput() {
+    return this._privateDnsSpecifiedDomains;
+  }
+}
 export interface VpclatticeServiceNetworkVpcAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#create VpclatticeServiceNetworkVpcAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#create VpclatticeServiceNetworkVpcAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#delete VpclatticeServiceNetworkVpcAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#delete VpclatticeServiceNetworkVpcAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#update VpclatticeServiceNetworkVpcAssociation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#update VpclatticeServiceNetworkVpcAssociation#update}
   */
   readonly update?: string;
 }
@@ -214,7 +341,7 @@ export class VpclatticeServiceNetworkVpcAssociationTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association}
 */
 export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResource {
 
@@ -230,7 +357,7 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
   * Generates CDKTF code for importing a VpclatticeServiceNetworkVpcAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpclatticeServiceNetworkVpcAssociation to import
-  * @param importFromId The id of the existing VpclatticeServiceNetworkVpcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpclatticeServiceNetworkVpcAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpclatticeServiceNetworkVpcAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -242,7 +369,7 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,7 +380,7 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
       terraformResourceType: 'aws_vpclattice_service_network_vpc_association',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -265,12 +392,14 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
       forEach: config.forEach
     });
     this._id = config.id;
+    this._privateDnsEnabled = config.privateDnsEnabled;
     this._region = config.region;
     this._securityGroupIds = config.securityGroupIds;
     this._serviceNetworkIdentifier = config.serviceNetworkIdentifier;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vpcIdentifier = config.vpcIdentifier;
+    this._dnsOptions.internalValue = config.dnsOptions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -302,6 +431,22 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // private_dns_enabled - computed: true, optional: true, required: false
+  private _privateDnsEnabled?: boolean | cdktf.IResolvable; 
+  public get privateDnsEnabled() {
+    return this.getBooleanAttribute('private_dns_enabled');
+  }
+  public set privateDnsEnabled(value: boolean | cdktf.IResolvable) {
+    this._privateDnsEnabled = value;
+  }
+  public resetPrivateDnsEnabled() {
+    this._privateDnsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsEnabledInput() {
+    return this._privateDnsEnabled;
   }
 
   // region - computed: true, optional: true, required: false
@@ -399,6 +544,22 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
     return this._vpcIdentifier;
   }
 
+  // dns_options - computed: false, optional: true, required: false
+  private _dnsOptions = new VpclatticeServiceNetworkVpcAssociationDnsOptionsOutputReference(this, "dns_options");
+  public get dnsOptions() {
+    return this._dnsOptions;
+  }
+  public putDnsOptions(value: VpclatticeServiceNetworkVpcAssociationDnsOptions) {
+    this._dnsOptions.internalValue = value;
+  }
+  public resetDnsOptions() {
+    this._dnsOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsOptionsInput() {
+    return this._dnsOptions.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new VpclatticeServiceNetworkVpcAssociationTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -422,12 +583,14 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
       region: cdktf.stringToTerraform(this._region),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       service_network_identifier: cdktf.stringToTerraform(this._serviceNetworkIdentifier),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       vpc_identifier: cdktf.stringToTerraform(this._vpcIdentifier),
+      dns_options: vpclatticeServiceNetworkVpcAssociationDnsOptionsToTerraform(this._dnsOptions.internalValue),
       timeouts: vpclatticeServiceNetworkVpcAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -439,6 +602,12 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      private_dns_enabled: {
+        value: cdktf.booleanToHclTerraform(this._privateDnsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
@@ -475,6 +644,12 @@ export class VpclatticeServiceNetworkVpcAssociation extends cdktf.TerraformResou
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      dns_options: {
+        value: vpclatticeServiceNetworkVpcAssociationDnsOptionsToHclTerraform(this._dnsOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpclatticeServiceNetworkVpcAssociationDnsOptionsList",
       },
       timeouts: {
         value: vpclatticeServiceNetworkVpcAssociationTimeoutsToHclTerraform(this._timeouts.internalValue),

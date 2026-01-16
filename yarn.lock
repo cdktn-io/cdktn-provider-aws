@@ -245,14 +245,6 @@
     fs-extra "8.1.0"
     glob "10.4.5"
 
-"@cdktf/provider-project@^0.7.0":
-  version "0.7.23"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.7.23.tgz#ceec8bb02d33931778daa56cfcc08b49f7598552"
-  integrity sha512-E3Wo6Ll+0hZuN/b8ucUTw+aLksEdu7NfKPBK6jQe51QocU4tYbKJlRi3srT32nmSclcVhC2L5Z6v8Zc63Eey2A==
-  dependencies:
-    change-case "^4.1.2"
-    fs-extra "^10.1.0"
-
 "@cdktf/provider-schema@0.21.0":
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/@cdktf/provider-schema/-/provider-schema-0.21.0.tgz#748abe22d7fe4b38112a2c51b2f3e12cad4e21bd"
@@ -262,6 +254,14 @@
     "@cdktf/hcl2json" "0.21.0"
     deepmerge "4.3.1"
     fs-extra "11.3.0"
+
+"@cdktn/provider-project@^0.7.0":
+  version "0.7.28"
+  resolved "https://registry.yarnpkg.com/@cdktn/provider-project/-/provider-project-0.7.28.tgz#b7885ba51a724a460cb789f9d47297bf8eda882c"
+  integrity sha512-OgHyMigBYGYn/yRB6LTYvMzN4jOUcj9ZpIk1LzHt6W3R8HXAPPnisKuzHztxg9ZPRKi8SnVHsY2UvEydSdQ40Q==
+  dependencies:
+    change-case "^4.1.2"
+    fs-extra "^10.1.0"
 
 "@csstools/color-helpers@^5.1.0":
   version "5.1.0"
@@ -3996,7 +3996,7 @@ semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.0.0, semver@^7.3.4, semver@^7.3.5, semver@^7.7.1, semver@^7.7.2, semver@^7.7.3:
+semver@^7.0.0, semver@^7.3.4, semver@^7.3.5, semver@^7.5.3, semver@^7.7.1, semver@^7.7.2, semver@^7.7.3:
   version "7.7.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.3.tgz#4b5f4143d007633a8dc671cd0a6ef9147b8bb946"
   integrity sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==

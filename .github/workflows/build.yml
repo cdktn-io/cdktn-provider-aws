@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 jobs:
   build:
-    runs-on: custom-linux-medium
+    runs-on: depot-ubuntu-24.04-8
     permissions:
       contents: write
     outputs:
@@ -67,15 +67,21 @@ jobs:
           overwrite: true
   self-mutation:
     needs: build
-    runs-on: custom-linux-medium
+    runs-on: depot-ubuntu-24.04-8
     permissions:
       contents: write
     if: always() && needs.build.outputs.self_mutation_happened && !(github.event.pull_request.head.repo.full_name != github.repository)
     steps:
+      - name: Generate token
+        id: generate_token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf
+        with:
+          app-id: ${{ secrets.PROJEN_APP_ID }}
+          private-key: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          token: ${{ secrets.PROJEN_GITHUB_TOKEN }}
+          token: ${{ steps.generate_token.outputs.token }}
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
       - name: Download patch
@@ -87,8 +93,8 @@ jobs:
         run: '[ -s ${{ runner.temp }}/repo.patch ] && git apply ${{ runner.temp }}/repo.patch || echo "Empty patch. Skipping."'
       - name: Set git identity
         run: |-
-          git config user.name "team-cdk-terrain[bot]"
-          git config user.email "github-team-cdk-terrain[bot]@hashicorp.com"
+          git config user.name "team-cdk-terrain"
+          git config user.email "github-team-cdk-terrain@cdktn.io"
       - name: Push changes
         env:
           PULL_REQUEST_REF: ${{ github.event.pull_request.head.ref }}
@@ -98,7 +104,7 @@ jobs:
           git push origin "HEAD:$PULL_REQUEST_REF"
   package-js:
     needs: build
-    runs-on: custom-linux-medium
+    runs-on: depot-ubuntu-24.04-8
     permissions:
       contents: read
     if: ${{ !needs.build.outputs.self_mutation_happened }}
@@ -130,47 +136,9 @@ jobs:
         run: cd .repo && npx projen package:js
       - name: Collect js artifact
         run: mv .repo/dist dist
-  package-java:
-    needs: build
-    runs-on: custom-linux-medium
-    permissions:
-      contents: read
-    if: ${{ !needs.build.outputs.self_mutation_happened }}
-    steps:
-      - uses: actions/setup-java@3a4f6e1af504cf6a31855fa899c6aa5355ba6c12
-        with:
-          distribution: corretto
-          java-version: "11"
-      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
-        with:
-          node-version: 20.9.0
-      - name: Download build artifacts
-        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
-        with:
-          name: build-artifact
-          path: dist
-      - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
-        continue-on-error: true
-      - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          path: .repo
-      - name: Install Dependencies
-        run: cd .repo && yarn install --check-files --frozen-lockfile
-      - name: Extract build artifact
-        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
-      - name: Move build artifact out of the way
-        run: mv dist dist.old
-      - name: Create java artifact
-        run: cd .repo && npx projen package:java
-      - name: Collect java artifact
-        run: mv .repo/dist dist
   package-python:
     needs: build
-    runs-on: custom-linux-medium
+    runs-on: depot-ubuntu-24.04-8
     permissions:
       contents: read
     if: ${{ !needs.build.outputs.self_mutation_happened }}
@@ -205,46 +173,9 @@ jobs:
         run: cd .repo && npx projen package:python
       - name: Collect python artifact
         run: mv .repo/dist dist
-  package-dotnet:
-    needs: build
-    runs-on: custom-linux-medium
-    permissions:
-      contents: read
-    if: ${{ !needs.build.outputs.self_mutation_happened }}
-    steps:
-      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
-        with:
-          node-version: 20.9.0
-      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9
-        with:
-          dotnet-version: 6.x
-      - name: Download build artifacts
-        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
-        with:
-          name: build-artifact
-          path: dist
-      - name: Restore build artifact permissions
-        run: cd dist && setfacl --restore=permissions-backup.acl
-        continue-on-error: true
-      - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          path: .repo
-      - name: Install Dependencies
-        run: cd .repo && yarn install --check-files --frozen-lockfile
-      - name: Extract build artifact
-        run: tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo
-      - name: Move build artifact out of the way
-        run: mv dist dist.old
-      - name: Create dotnet artifact
-        run: cd .repo && npx projen package:dotnet
-      - name: Collect dotnet artifact
-        run: mv .repo/dist dist
   package-go:
     needs: build
-    runs-on: custom-linux-medium
+    runs-on: depot-ubuntu-24.04-8
     permissions:
       contents: read
     if: ${{ !needs.build.outputs.self_mutation_happened }}
