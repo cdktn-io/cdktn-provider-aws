@@ -1,15 +1,15 @@
-# `configConfigRule` Submodule <a name="`configConfigRule` Submodule" id="@cdktf/provider-aws.configConfigRule"></a>
+# `configConfigRule` Submodule <a name="`configConfigRule` Submodule" id="@cdktn/provider-aws.configConfigRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ConfigConfigRule <a name="ConfigConfigRule" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule"></a>
+### ConfigConfigRule <a name="ConfigConfigRule" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule aws_config_config_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule aws_config_config_rule}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRule(
   scope: Construct,
@@ -37,30 +37,30 @@ configConfigRule.ConfigConfigRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#name ConfigConfigRule#name}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | source block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#description ConfigConfigRule#description}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.evaluationMode">evaluation_mode</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | evaluation_mode block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#id ConfigConfigRule#id}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.inputParameters">input_parameters</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope">scope</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | scope block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#name ConfigConfigRule#name}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | source block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#description ConfigConfigRule#description}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.evaluationMode">evaluation_mode</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | evaluation_mode block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#id ConfigConfigRule#id}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.inputParameters">input_parameters</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope">scope</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | scope block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -68,7 +68,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -78,144 +78,144 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#name ConfigConfigRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#name ConfigConfigRule#name}.
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.source"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#description ConfigConfigRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#description ConfigConfigRule#description}.
 
 ---
 
-##### `evaluation_mode`<sup>Optional</sup> <a name="evaluation_mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.evaluationMode"></a>
+##### `evaluation_mode`<sup>Optional</sup> <a name="evaluation_mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.evaluationMode"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
 
 evaluation_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#evaluation_mode ConfigConfigRule#evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#evaluation_mode ConfigConfigRule#evaluation_mode}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#id ConfigConfigRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#id ConfigConfigRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `input_parameters`<sup>Optional</sup> <a name="input_parameters" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.inputParameters"></a>
+##### `input_parameters`<sup>Optional</sup> <a name="input_parameters" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.inputParameters"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}.
 
 ---
 
-##### `maximum_execution_frequency`<sup>Optional</sup> <a name="maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.maximumExecutionFrequency"></a>
+##### `maximum_execution_frequency`<sup>Optional</sup> <a name="maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.maximumExecutionFrequency"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#region ConfigConfigRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#region ConfigConfigRule#region}
 
 ---
 
-##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope"></a>
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.scope"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}.
 
 ---
 
@@ -223,45 +223,45 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode">put_evaluation_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope">put_scope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource">put_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetEvaluationMode">reset_evaluation_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetInputParameters">reset_input_parameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetMaximumExecutionFrequency">reset_maximum_execution_frequency</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetScope">reset_scope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode">put_evaluation_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putScope">put_scope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putSource">put_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetEvaluationMode">reset_evaluation_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetInputParameters">reset_input_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetMaximumExecutionFrequency">reset_maximum_execution_frequency</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetScope">reset_scope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toString"></a>
 
 ```python
 def to_string() -> str
@@ -269,7 +269,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addOverride"></a>
 
 ```python
 def add_override(
@@ -278,19 +278,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -300,7 +300,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -308,7 +308,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -316,19 +316,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -336,7 +336,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -346,7 +346,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -354,7 +354,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -362,13 +362,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -376,13 +376,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -390,13 +390,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -404,13 +404,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -418,13 +418,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -432,13 +432,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -446,13 +446,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -460,13 +460,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -474,19 +474,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.importFrom"></a>
 
 ```python
 def import_from(
@@ -495,19 +495,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -515,13 +515,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -533,7 +533,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -541,7 +541,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveTo"></a>
 
 ```python
 def move_to(
@@ -552,7 +552,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -560,7 +560,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -568,7 +568,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -578,7 +578,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -586,7 +586,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_evaluation_mode` <a name="put_evaluation_mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode"></a>
+##### `put_evaluation_mode` <a name="put_evaluation_mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode"></a>
 
 ```python
 def put_evaluation_mode(
@@ -594,13 +594,13 @@ def put_evaluation_mode(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putEvaluationMode.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
 
 ---
 
-##### `put_scope` <a name="put_scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope"></a>
+##### `put_scope` <a name="put_scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putScope"></a>
 
 ```python
 def put_scope(
@@ -611,39 +611,39 @@ def put_scope(
 ) -> None
 ```
 
-###### `compliance_resource_id`<sup>Optional</sup> <a name="compliance_resource_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.complianceResourceId"></a>
+###### `compliance_resource_id`<sup>Optional</sup> <a name="compliance_resource_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.complianceResourceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}.
 
 ---
 
-###### `compliance_resource_types`<sup>Optional</sup> <a name="compliance_resource_types" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.complianceResourceTypes"></a>
+###### `compliance_resource_types`<sup>Optional</sup> <a name="compliance_resource_types" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.complianceResourceTypes"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}.
 
 ---
 
-###### `tag_key`<sup>Optional</sup> <a name="tag_key" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.tagKey"></a>
+###### `tag_key`<sup>Optional</sup> <a name="tag_key" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.tagKey"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}.
 
 ---
 
-###### `tag_value`<sup>Optional</sup> <a name="tag_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.tagValue"></a>
+###### `tag_value`<sup>Optional</sup> <a name="tag_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putScope.parameter.tagValue"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}.
 
 ---
 
-##### `put_source` <a name="put_source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource"></a>
+##### `put_source` <a name="put_source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putSource"></a>
 
 ```python
 def put_source(
@@ -654,91 +654,91 @@ def put_source(
 ) -> None
 ```
 
-###### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.owner"></a>
+###### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.owner"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
 
 ---
 
-###### `custom_policy_details`<sup>Optional</sup> <a name="custom_policy_details" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.customPolicyDetails"></a>
+###### `custom_policy_details`<sup>Optional</sup> <a name="custom_policy_details" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.customPolicyDetails"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
 
 custom_policy_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
 
 ---
 
-###### `source_detail`<sup>Optional</sup> <a name="source_detail" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.sourceDetail"></a>
+###### `source_detail`<sup>Optional</sup> <a name="source_detail" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.sourceDetail"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
 
 source_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
 
 ---
 
-###### `source_identifier`<sup>Optional</sup> <a name="source_identifier" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.sourceIdentifier"></a>
+###### `source_identifier`<sup>Optional</sup> <a name="source_identifier" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.putSource.parameter.sourceIdentifier"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_evaluation_mode` <a name="reset_evaluation_mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetEvaluationMode"></a>
+##### `reset_evaluation_mode` <a name="reset_evaluation_mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetEvaluationMode"></a>
 
 ```python
 def reset_evaluation_mode() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_input_parameters` <a name="reset_input_parameters" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetInputParameters"></a>
+##### `reset_input_parameters` <a name="reset_input_parameters" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetInputParameters"></a>
 
 ```python
 def reset_input_parameters() -> None
 ```
 
-##### `reset_maximum_execution_frequency` <a name="reset_maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetMaximumExecutionFrequency"></a>
+##### `reset_maximum_execution_frequency` <a name="reset_maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetMaximumExecutionFrequency"></a>
 
 ```python
 def reset_maximum_execution_frequency() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_scope` <a name="reset_scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetScope"></a>
+##### `reset_scope` <a name="reset_scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetScope"></a>
 
 ```python
 def reset_scope() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
@@ -748,17 +748,17 @@ def reset_tags_all() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ConfigConfigRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ConfigConfigRule resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRule.is_construct(
   x: typing.Any
@@ -781,7 +781,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -789,42 +789,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRule.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRule.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRule.generate_config_for_import(
   scope: Construct,
@@ -836,7 +836,7 @@ configConfigRule.ConfigConfigRule.generate_config_for_import(
 
 Generates CDKTF code for importing a ConfigConfigRule resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -844,7 +844,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -852,17 +852,17 @@ The construct id used in the generated config for the ConfigConfigRule to import
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing ConfigConfigRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -874,48 +874,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationMode">evaluation_mode</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList">ConfigConfigRuleEvaluationModeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.ruleId">rule_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.scope">scope</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference">ConfigConfigRuleScopeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.source">source</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference">ConfigConfigRuleSourceOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationModeInput">evaluation_mode_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.inputParametersInput">input_parameters_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequencyInput">maximum_execution_frequency_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.scopeInput">scope_input</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.sourceInput">source_input</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.inputParameters">input_parameters</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationMode">evaluation_mode</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList">ConfigConfigRuleEvaluationModeList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.ruleId">rule_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.scope">scope</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference">ConfigConfigRuleScopeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.source">source</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference">ConfigConfigRuleSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationModeInput">evaluation_mode_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.inputParametersInput">input_parameters_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequencyInput">maximum_execution_frequency_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.scopeInput">scope_input</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.sourceInput">source_input</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.inputParameters">input_parameters</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.node"></a>
 
 ```python
 node: Node
@@ -927,7 +927,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -937,7 +937,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.fqn"></a>
 
 ```python
 fqn: str
@@ -947,7 +947,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -957,7 +957,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -967,7 +967,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -977,7 +977,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -987,7 +987,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -997,7 +997,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1007,7 +1007,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1017,7 +1017,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1027,7 +1027,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1037,7 +1037,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1047,7 +1047,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1057,7 +1057,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.arn"></a>
 
 ```python
 arn: str
@@ -1067,17 +1067,17 @@ arn: str
 
 ---
 
-##### `evaluation_mode`<sup>Required</sup> <a name="evaluation_mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationMode"></a>
+##### `evaluation_mode`<sup>Required</sup> <a name="evaluation_mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationMode"></a>
 
 ```python
 evaluation_mode: ConfigConfigRuleEvaluationModeList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList">ConfigConfigRuleEvaluationModeList</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList">ConfigConfigRuleEvaluationModeList</a>
 
 ---
 
-##### `rule_id`<sup>Required</sup> <a name="rule_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.ruleId"></a>
+##### `rule_id`<sup>Required</sup> <a name="rule_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.ruleId"></a>
 
 ```python
 rule_id: str
@@ -1087,27 +1087,27 @@ rule_id: str
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.scope"></a>
 
 ```python
 scope: ConfigConfigRuleScopeOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference">ConfigConfigRuleScopeOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference">ConfigConfigRuleScopeOutputReference</a>
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.source"></a>
 
 ```python
 source: ConfigConfigRuleSourceOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference">ConfigConfigRuleSourceOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference">ConfigConfigRuleSourceOutputReference</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1117,17 +1117,17 @@ description_input: str
 
 ---
 
-##### `evaluation_mode_input`<sup>Optional</sup> <a name="evaluation_mode_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationModeInput"></a>
+##### `evaluation_mode_input`<sup>Optional</sup> <a name="evaluation_mode_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.evaluationModeInput"></a>
 
 ```python
 evaluation_mode_input: IResolvable | typing.List[ConfigConfigRuleEvaluationMode]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1137,7 +1137,7 @@ id_input: str
 
 ---
 
-##### `input_parameters_input`<sup>Optional</sup> <a name="input_parameters_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.inputParametersInput"></a>
+##### `input_parameters_input`<sup>Optional</sup> <a name="input_parameters_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.inputParametersInput"></a>
 
 ```python
 input_parameters_input: str
@@ -1147,7 +1147,7 @@ input_parameters_input: str
 
 ---
 
-##### `maximum_execution_frequency_input`<sup>Optional</sup> <a name="maximum_execution_frequency_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequencyInput"></a>
+##### `maximum_execution_frequency_input`<sup>Optional</sup> <a name="maximum_execution_frequency_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequencyInput"></a>
 
 ```python
 maximum_execution_frequency_input: str
@@ -1157,7 +1157,7 @@ maximum_execution_frequency_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1167,7 +1167,7 @@ name_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1177,27 +1177,27 @@ region_input: str
 
 ---
 
-##### `scope_input`<sup>Optional</sup> <a name="scope_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.scopeInput"></a>
+##### `scope_input`<sup>Optional</sup> <a name="scope_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.scopeInput"></a>
 
 ```python
 scope_input: ConfigConfigRuleScope
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
 
 ---
 
-##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.sourceInput"></a>
+##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.sourceInput"></a>
 
 ```python
 source_input: ConfigConfigRuleSource
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1207,7 +1207,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1217,7 +1217,7 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.description"></a>
 
 ```python
 description: str
@@ -1227,7 +1227,7 @@ description: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.id"></a>
 
 ```python
 id: str
@@ -1237,7 +1237,7 @@ id: str
 
 ---
 
-##### `input_parameters`<sup>Required</sup> <a name="input_parameters" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.inputParameters"></a>
+##### `input_parameters`<sup>Required</sup> <a name="input_parameters" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.inputParameters"></a>
 
 ```python
 input_parameters: str
@@ -1247,7 +1247,7 @@ input_parameters: str
 
 ---
 
-##### `maximum_execution_frequency`<sup>Required</sup> <a name="maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequency"></a>
+##### `maximum_execution_frequency`<sup>Required</sup> <a name="maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.maximumExecutionFrequency"></a>
 
 ```python
 maximum_execution_frequency: str
@@ -1257,7 +1257,7 @@ maximum_execution_frequency: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.name"></a>
 
 ```python
 name: str
@@ -1267,7 +1267,7 @@ name: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.region"></a>
 
 ```python
 region: str
@@ -1277,7 +1277,7 @@ region: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1287,7 +1287,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1301,11 +1301,11 @@ tags_all: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRule.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRule.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1317,12 +1317,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ConfigConfigRuleConfig <a name="ConfigConfigRuleConfig" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig"></a>
+### ConfigConfigRuleConfig <a name="ConfigConfigRuleConfig" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1350,28 +1350,28 @@ configConfigRule.ConfigConfigRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#name ConfigConfigRule#name}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.source">source</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | source block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#description ConfigConfigRule#description}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.evaluationMode">evaluation_mode</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | evaluation_mode block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#id ConfigConfigRule#id}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.inputParameters">input_parameters</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.scope">scope</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | scope block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#name ConfigConfigRule#name}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | source block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#description ConfigConfigRule#description}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.evaluationMode">evaluation_mode</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | evaluation_mode block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#id ConfigConfigRule#id}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.inputParameters">input_parameters</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.scope">scope</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | scope block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1381,7 +1381,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1391,7 +1391,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1401,7 +1401,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1411,7 +1411,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1421,7 +1421,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1431,7 +1431,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1441,7 +1441,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.name"></a>
 
 ```python
 name: str
@@ -1449,25 +1449,25 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#name ConfigConfigRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#name ConfigConfigRule#name}.
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.source"></a>
 
 ```python
 source: ConfigConfigRuleSource
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source ConfigConfigRule#source}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.description"></a>
 
 ```python
 description: str
@@ -1475,25 +1475,25 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#description ConfigConfigRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#description ConfigConfigRule#description}.
 
 ---
 
-##### `evaluation_mode`<sup>Optional</sup> <a name="evaluation_mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.evaluationMode"></a>
+##### `evaluation_mode`<sup>Optional</sup> <a name="evaluation_mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.evaluationMode"></a>
 
 ```python
 evaluation_mode: IResolvable | typing.List[ConfigConfigRuleEvaluationMode]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
 
 evaluation_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#evaluation_mode ConfigConfigRule#evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#evaluation_mode ConfigConfigRule#evaluation_mode}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.id"></a>
 
 ```python
 id: str
@@ -1501,14 +1501,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#id ConfigConfigRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#id ConfigConfigRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `input_parameters`<sup>Optional</sup> <a name="input_parameters" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.inputParameters"></a>
+##### `input_parameters`<sup>Optional</sup> <a name="input_parameters" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.inputParameters"></a>
 
 ```python
 input_parameters: str
@@ -1516,11 +1516,11 @@ input_parameters: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#input_parameters ConfigConfigRule#input_parameters}.
 
 ---
 
-##### `maximum_execution_frequency`<sup>Optional</sup> <a name="maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.maximumExecutionFrequency"></a>
+##### `maximum_execution_frequency`<sup>Optional</sup> <a name="maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.maximumExecutionFrequency"></a>
 
 ```python
 maximum_execution_frequency: str
@@ -1528,11 +1528,11 @@ maximum_execution_frequency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.region"></a>
 
 ```python
 region: str
@@ -1542,25 +1542,25 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#region ConfigConfigRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#region ConfigConfigRule#region}
 
 ---
 
-##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.scope"></a>
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.scope"></a>
 
 ```python
 scope: ConfigConfigRuleScope
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#scope ConfigConfigRule#scope}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1568,11 +1568,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags ConfigConfigRule#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1580,16 +1580,16 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tags_all ConfigConfigRule#tags_all}.
 
 ---
 
-### ConfigConfigRuleEvaluationMode <a name="ConfigConfigRuleEvaluationMode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode"></a>
+### ConfigConfigRuleEvaluationMode <a name="ConfigConfigRuleEvaluationMode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleEvaluationMode(
   mode: str = None
@@ -1600,11 +1600,11 @@ configConfigRule.ConfigConfigRuleEvaluationMode(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}. |
 
 ---
 
-##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.property.mode"></a>
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode.property.mode"></a>
 
 ```python
 mode: str
@@ -1612,16 +1612,16 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}.
 
 ---
 
-### ConfigConfigRuleScope <a name="ConfigConfigRuleScope" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope"></a>
+### ConfigConfigRuleScope <a name="ConfigConfigRuleScope" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleScope(
   compliance_resource_id: str = None,
@@ -1635,14 +1635,14 @@ configConfigRule.ConfigConfigRuleScope(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceId">compliance_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceTypes">compliance_resource_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagValue">tag_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceId">compliance_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceTypes">compliance_resource_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagKey">tag_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagValue">tag_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}. |
 
 ---
 
-##### `compliance_resource_id`<sup>Optional</sup> <a name="compliance_resource_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceId"></a>
+##### `compliance_resource_id`<sup>Optional</sup> <a name="compliance_resource_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceId"></a>
 
 ```python
 compliance_resource_id: str
@@ -1650,11 +1650,11 @@ compliance_resource_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#compliance_resource_id ConfigConfigRule#compliance_resource_id}.
 
 ---
 
-##### `compliance_resource_types`<sup>Optional</sup> <a name="compliance_resource_types" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceTypes"></a>
+##### `compliance_resource_types`<sup>Optional</sup> <a name="compliance_resource_types" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.complianceResourceTypes"></a>
 
 ```python
 compliance_resource_types: typing.List[str]
@@ -1662,11 +1662,11 @@ compliance_resource_types: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#compliance_resource_types ConfigConfigRule#compliance_resource_types}.
 
 ---
 
-##### `tag_key`<sup>Optional</sup> <a name="tag_key" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagKey"></a>
+##### `tag_key`<sup>Optional</sup> <a name="tag_key" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagKey"></a>
 
 ```python
 tag_key: str
@@ -1674,11 +1674,11 @@ tag_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tag_key ConfigConfigRule#tag_key}.
 
 ---
 
-##### `tag_value`<sup>Optional</sup> <a name="tag_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagValue"></a>
+##### `tag_value`<sup>Optional</sup> <a name="tag_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope.property.tagValue"></a>
 
 ```python
 tag_value: str
@@ -1686,16 +1686,16 @@ tag_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#tag_value ConfigConfigRule#tag_value}.
 
 ---
 
-### ConfigConfigRuleSource <a name="ConfigConfigRuleSource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource"></a>
+### ConfigConfigRuleSource <a name="ConfigConfigRuleSource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSource(
   owner: str,
@@ -1709,14 +1709,14 @@ configConfigRule.ConfigConfigRuleSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.customPolicyDetails">custom_policy_details</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | custom_policy_details block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceDetail">source_detail</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]</code> | source_detail block. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceIdentifier">source_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.customPolicyDetails">custom_policy_details</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | custom_policy_details block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceDetail">source_detail</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]</code> | source_detail block. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceIdentifier">source_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}. |
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.owner"></a>
 
 ```python
 owner: str
@@ -1724,39 +1724,39 @@ owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#owner ConfigConfigRule#owner}.
 
 ---
 
-##### `custom_policy_details`<sup>Optional</sup> <a name="custom_policy_details" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.customPolicyDetails"></a>
+##### `custom_policy_details`<sup>Optional</sup> <a name="custom_policy_details" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.customPolicyDetails"></a>
 
 ```python
 custom_policy_details: ConfigConfigRuleSourceCustomPolicyDetails
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
 
 custom_policy_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#custom_policy_details ConfigConfigRule#custom_policy_details}
 
 ---
 
-##### `source_detail`<sup>Optional</sup> <a name="source_detail" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceDetail"></a>
+##### `source_detail`<sup>Optional</sup> <a name="source_detail" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceDetail"></a>
 
 ```python
 source_detail: IResolvable | typing.List[ConfigConfigRuleSourceSourceDetail]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
 
 source_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source_detail ConfigConfigRule#source_detail}
 
 ---
 
-##### `source_identifier`<sup>Optional</sup> <a name="source_identifier" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceIdentifier"></a>
+##### `source_identifier`<sup>Optional</sup> <a name="source_identifier" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource.property.sourceIdentifier"></a>
 
 ```python
 source_identifier: str
@@ -1764,16 +1764,16 @@ source_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#source_identifier ConfigConfigRule#source_identifier}.
 
 ---
 
-### ConfigConfigRuleSourceCustomPolicyDetails <a name="ConfigConfigRuleSourceCustomPolicyDetails" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails"></a>
+### ConfigConfigRuleSourceCustomPolicyDetails <a name="ConfigConfigRuleSourceCustomPolicyDetails" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails(
   policy_runtime: str,
@@ -1786,13 +1786,13 @@ configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyRuntime">policy_runtime</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyText">policy_text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.enableDebugLogDelivery">enable_debug_log_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyRuntime">policy_runtime</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyText">policy_text</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.enableDebugLogDelivery">enable_debug_log_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}. |
 
 ---
 
-##### `policy_runtime`<sup>Required</sup> <a name="policy_runtime" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyRuntime"></a>
+##### `policy_runtime`<sup>Required</sup> <a name="policy_runtime" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyRuntime"></a>
 
 ```python
 policy_runtime: str
@@ -1800,11 +1800,11 @@ policy_runtime: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}.
 
 ---
 
-##### `policy_text`<sup>Required</sup> <a name="policy_text" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyText"></a>
+##### `policy_text`<sup>Required</sup> <a name="policy_text" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.policyText"></a>
 
 ```python
 policy_text: str
@@ -1812,11 +1812,11 @@ policy_text: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}.
 
 ---
 
-##### `enable_debug_log_delivery`<sup>Optional</sup> <a name="enable_debug_log_delivery" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.enableDebugLogDelivery"></a>
+##### `enable_debug_log_delivery`<sup>Optional</sup> <a name="enable_debug_log_delivery" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails.property.enableDebugLogDelivery"></a>
 
 ```python
 enable_debug_log_delivery: bool | IResolvable
@@ -1824,16 +1824,16 @@ enable_debug_log_delivery: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}.
 
 ---
 
-### ConfigConfigRuleSourceSourceDetail <a name="ConfigConfigRuleSourceSourceDetail" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail"></a>
+### ConfigConfigRuleSourceSourceDetail <a name="ConfigConfigRuleSourceSourceDetail" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSourceSourceDetail(
   event_source: str = None,
@@ -1846,13 +1846,13 @@ configConfigRule.ConfigConfigRuleSourceSourceDetail(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.eventSource">event_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.messageType">message_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.eventSource">event_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.messageType">message_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}. |
 
 ---
 
-##### `event_source`<sup>Optional</sup> <a name="event_source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.eventSource"></a>
+##### `event_source`<sup>Optional</sup> <a name="event_source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.eventSource"></a>
 
 ```python
 event_source: str
@@ -1860,11 +1860,11 @@ event_source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#event_source ConfigConfigRule#event_source}.
 
 ---
 
-##### `maximum_execution_frequency`<sup>Optional</sup> <a name="maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.maximumExecutionFrequency"></a>
+##### `maximum_execution_frequency`<sup>Optional</sup> <a name="maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.maximumExecutionFrequency"></a>
 
 ```python
 maximum_execution_frequency: str
@@ -1872,11 +1872,11 @@ maximum_execution_frequency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#maximum_execution_frequency ConfigConfigRule#maximum_execution_frequency}.
 
 ---
 
-##### `message_type`<sup>Optional</sup> <a name="message_type" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.messageType"></a>
+##### `message_type`<sup>Optional</sup> <a name="message_type" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail.property.messageType"></a>
 
 ```python
 message_type: str
@@ -1884,18 +1884,18 @@ message_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#message_type ConfigConfigRule#message_type}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ConfigConfigRuleEvaluationModeList <a name="ConfigConfigRuleEvaluationModeList" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList"></a>
+### ConfigConfigRuleEvaluationModeList <a name="ConfigConfigRuleEvaluationModeList" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleEvaluationModeList(
   terraform_resource: IInterpolatingParent,
@@ -1906,13 +1906,13 @@ configConfigRule.ConfigConfigRuleEvaluationModeList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1920,7 +1920,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1928,7 +1928,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1940,15 +1940,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1960,19 +1960,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve"></a>
 
 ```python
 def resolve(
@@ -1982,13 +1982,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1998,7 +1998,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get"></a>
 
 ```python
 def get(
@@ -2006,7 +2006,7 @@ def get(
 ) -> ConfigConfigRuleEvaluationModeOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2019,13 +2019,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2039,7 +2039,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2049,23 +2049,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ConfigConfigRuleEvaluationMode]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>]
 
 ---
 
 
-### ConfigConfigRuleEvaluationModeOutputReference <a name="ConfigConfigRuleEvaluationModeOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference"></a>
+### ConfigConfigRuleEvaluationModeOutputReference <a name="ConfigConfigRuleEvaluationModeOutputReference" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleEvaluationModeOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2077,14 +2077,14 @@ configConfigRule.ConfigConfigRuleEvaluationModeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2092,7 +2092,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2100,7 +2100,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2108,7 +2108,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2120,30 +2120,30 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resetMode">reset_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resetMode">reset_mode</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2151,13 +2151,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2165,13 +2165,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2179,13 +2179,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2193,13 +2193,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2207,13 +2207,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2221,13 +2221,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2235,13 +2235,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2249,13 +2249,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2263,13 +2263,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2277,13 +2277,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2293,13 +2293,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2309,7 +2309,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_mode` <a name="reset_mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resetMode"></a>
+##### `reset_mode` <a name="reset_mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.resetMode"></a>
 
 ```python
 def reset_mode() -> None
@@ -2320,15 +2320,15 @@ def reset_mode() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2342,7 +2342,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2352,7 +2352,7 @@ fqn: str
 
 ---
 
-##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.modeInput"></a>
+##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.modeInput"></a>
 
 ```python
 mode_input: str
@@ -2362,7 +2362,7 @@ mode_input: str
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.mode"></a>
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.mode"></a>
 
 ```python
 mode: str
@@ -2372,23 +2372,23 @@ mode: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationModeOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ConfigConfigRuleEvaluationMode
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleEvaluationMode">ConfigConfigRuleEvaluationMode</a>
 
 ---
 
 
-### ConfigConfigRuleScopeOutputReference <a name="ConfigConfigRuleScopeOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference"></a>
+### ConfigConfigRuleScopeOutputReference <a name="ConfigConfigRuleScopeOutputReference" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleScopeOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2398,12 +2398,12 @@ configConfigRule.ConfigConfigRuleScopeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2411,7 +2411,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2423,33 +2423,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceId">reset_compliance_resource_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceTypes">reset_compliance_resource_types</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagKey">reset_tag_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagValue">reset_tag_value</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceId">reset_compliance_resource_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceTypes">reset_compliance_resource_types</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagKey">reset_tag_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagValue">reset_tag_value</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2457,13 +2457,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2471,13 +2471,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2485,13 +2485,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2499,13 +2499,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2513,13 +2513,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2527,13 +2527,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2541,13 +2541,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2555,13 +2555,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2569,13 +2569,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2583,13 +2583,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2599,13 +2599,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2615,25 +2615,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_compliance_resource_id` <a name="reset_compliance_resource_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceId"></a>
+##### `reset_compliance_resource_id` <a name="reset_compliance_resource_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceId"></a>
 
 ```python
 def reset_compliance_resource_id() -> None
 ```
 
-##### `reset_compliance_resource_types` <a name="reset_compliance_resource_types" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceTypes"></a>
+##### `reset_compliance_resource_types` <a name="reset_compliance_resource_types" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetComplianceResourceTypes"></a>
 
 ```python
 def reset_compliance_resource_types() -> None
 ```
 
-##### `reset_tag_key` <a name="reset_tag_key" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagKey"></a>
+##### `reset_tag_key` <a name="reset_tag_key" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagKey"></a>
 
 ```python
 def reset_tag_key() -> None
 ```
 
-##### `reset_tag_value` <a name="reset_tag_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagValue"></a>
+##### `reset_tag_value` <a name="reset_tag_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.resetTagValue"></a>
 
 ```python
 def reset_tag_value() -> None
@@ -2644,21 +2644,21 @@ def reset_tag_value() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceIdInput">compliance_resource_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypesInput">compliance_resource_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKeyInput">tag_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValueInput">tag_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceId">compliance_resource_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypes">compliance_resource_types</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKey">tag_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValue">tag_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceIdInput">compliance_resource_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypesInput">compliance_resource_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKeyInput">tag_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValueInput">tag_value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceId">compliance_resource_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypes">compliance_resource_types</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKey">tag_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValue">tag_value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2672,7 +2672,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2682,7 +2682,7 @@ fqn: str
 
 ---
 
-##### `compliance_resource_id_input`<sup>Optional</sup> <a name="compliance_resource_id_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceIdInput"></a>
+##### `compliance_resource_id_input`<sup>Optional</sup> <a name="compliance_resource_id_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceIdInput"></a>
 
 ```python
 compliance_resource_id_input: str
@@ -2692,7 +2692,7 @@ compliance_resource_id_input: str
 
 ---
 
-##### `compliance_resource_types_input`<sup>Optional</sup> <a name="compliance_resource_types_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypesInput"></a>
+##### `compliance_resource_types_input`<sup>Optional</sup> <a name="compliance_resource_types_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypesInput"></a>
 
 ```python
 compliance_resource_types_input: typing.List[str]
@@ -2702,7 +2702,7 @@ compliance_resource_types_input: typing.List[str]
 
 ---
 
-##### `tag_key_input`<sup>Optional</sup> <a name="tag_key_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKeyInput"></a>
+##### `tag_key_input`<sup>Optional</sup> <a name="tag_key_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKeyInput"></a>
 
 ```python
 tag_key_input: str
@@ -2712,7 +2712,7 @@ tag_key_input: str
 
 ---
 
-##### `tag_value_input`<sup>Optional</sup> <a name="tag_value_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValueInput"></a>
+##### `tag_value_input`<sup>Optional</sup> <a name="tag_value_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValueInput"></a>
 
 ```python
 tag_value_input: str
@@ -2722,7 +2722,7 @@ tag_value_input: str
 
 ---
 
-##### `compliance_resource_id`<sup>Required</sup> <a name="compliance_resource_id" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceId"></a>
+##### `compliance_resource_id`<sup>Required</sup> <a name="compliance_resource_id" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceId"></a>
 
 ```python
 compliance_resource_id: str
@@ -2732,7 +2732,7 @@ compliance_resource_id: str
 
 ---
 
-##### `compliance_resource_types`<sup>Required</sup> <a name="compliance_resource_types" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypes"></a>
+##### `compliance_resource_types`<sup>Required</sup> <a name="compliance_resource_types" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.complianceResourceTypes"></a>
 
 ```python
 compliance_resource_types: typing.List[str]
@@ -2742,7 +2742,7 @@ compliance_resource_types: typing.List[str]
 
 ---
 
-##### `tag_key`<sup>Required</sup> <a name="tag_key" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKey"></a>
+##### `tag_key`<sup>Required</sup> <a name="tag_key" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagKey"></a>
 
 ```python
 tag_key: str
@@ -2752,7 +2752,7 @@ tag_key: str
 
 ---
 
-##### `tag_value`<sup>Required</sup> <a name="tag_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValue"></a>
+##### `tag_value`<sup>Required</sup> <a name="tag_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.tagValue"></a>
 
 ```python
 tag_value: str
@@ -2762,23 +2762,23 @@ tag_value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ConfigConfigRuleScope
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope">ConfigConfigRuleScope</a>
 
 ---
 
 
-### ConfigConfigRuleSourceCustomPolicyDetailsOutputReference <a name="ConfigConfigRuleSourceCustomPolicyDetailsOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference"></a>
+### ConfigConfigRuleSourceCustomPolicyDetailsOutputReference <a name="ConfigConfigRuleSourceCustomPolicyDetailsOutputReference" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2788,12 +2788,12 @@ configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2801,7 +2801,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2813,30 +2813,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resetEnableDebugLogDelivery">reset_enable_debug_log_delivery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resetEnableDebugLogDelivery">reset_enable_debug_log_delivery</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2844,13 +2844,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2858,13 +2858,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2872,13 +2872,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2886,13 +2886,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2900,13 +2900,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2914,13 +2914,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2928,13 +2928,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2942,13 +2942,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2956,13 +2956,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2970,13 +2970,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2986,13 +2986,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3002,7 +3002,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_enable_debug_log_delivery` <a name="reset_enable_debug_log_delivery" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resetEnableDebugLogDelivery"></a>
+##### `reset_enable_debug_log_delivery` <a name="reset_enable_debug_log_delivery" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.resetEnableDebugLogDelivery"></a>
 
 ```python
 def reset_enable_debug_log_delivery() -> None
@@ -3013,19 +3013,19 @@ def reset_enable_debug_log_delivery() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDeliveryInput">enable_debug_log_delivery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntimeInput">policy_runtime_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyTextInput">policy_text_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDelivery">enable_debug_log_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntime">policy_runtime</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyText">policy_text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDeliveryInput">enable_debug_log_delivery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntimeInput">policy_runtime_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyTextInput">policy_text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDelivery">enable_debug_log_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntime">policy_runtime</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyText">policy_text</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3039,7 +3039,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3049,7 +3049,7 @@ fqn: str
 
 ---
 
-##### `enable_debug_log_delivery_input`<sup>Optional</sup> <a name="enable_debug_log_delivery_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDeliveryInput"></a>
+##### `enable_debug_log_delivery_input`<sup>Optional</sup> <a name="enable_debug_log_delivery_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDeliveryInput"></a>
 
 ```python
 enable_debug_log_delivery_input: bool | IResolvable
@@ -3059,7 +3059,7 @@ enable_debug_log_delivery_input: bool | IResolvable
 
 ---
 
-##### `policy_runtime_input`<sup>Optional</sup> <a name="policy_runtime_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntimeInput"></a>
+##### `policy_runtime_input`<sup>Optional</sup> <a name="policy_runtime_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntimeInput"></a>
 
 ```python
 policy_runtime_input: str
@@ -3069,7 +3069,7 @@ policy_runtime_input: str
 
 ---
 
-##### `policy_text_input`<sup>Optional</sup> <a name="policy_text_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyTextInput"></a>
+##### `policy_text_input`<sup>Optional</sup> <a name="policy_text_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyTextInput"></a>
 
 ```python
 policy_text_input: str
@@ -3079,7 +3079,7 @@ policy_text_input: str
 
 ---
 
-##### `enable_debug_log_delivery`<sup>Required</sup> <a name="enable_debug_log_delivery" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDelivery"></a>
+##### `enable_debug_log_delivery`<sup>Required</sup> <a name="enable_debug_log_delivery" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.enableDebugLogDelivery"></a>
 
 ```python
 enable_debug_log_delivery: bool | IResolvable
@@ -3089,7 +3089,7 @@ enable_debug_log_delivery: bool | IResolvable
 
 ---
 
-##### `policy_runtime`<sup>Required</sup> <a name="policy_runtime" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntime"></a>
+##### `policy_runtime`<sup>Required</sup> <a name="policy_runtime" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyRuntime"></a>
 
 ```python
 policy_runtime: str
@@ -3099,7 +3099,7 @@ policy_runtime: str
 
 ---
 
-##### `policy_text`<sup>Required</sup> <a name="policy_text" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyText"></a>
+##### `policy_text`<sup>Required</sup> <a name="policy_text" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.policyText"></a>
 
 ```python
 policy_text: str
@@ -3109,23 +3109,23 @@ policy_text: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ConfigConfigRuleSourceCustomPolicyDetails
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
 
 ---
 
 
-### ConfigConfigRuleSourceOutputReference <a name="ConfigConfigRuleSourceOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference"></a>
+### ConfigConfigRuleSourceOutputReference <a name="ConfigConfigRuleSourceOutputReference" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSourceOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3135,12 +3135,12 @@ configConfigRule.ConfigConfigRuleSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3148,7 +3148,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3160,34 +3160,34 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails">put_custom_policy_details</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putSourceDetail">put_source_detail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetCustomPolicyDetails">reset_custom_policy_details</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceDetail">reset_source_detail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceIdentifier">reset_source_identifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails">put_custom_policy_details</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putSourceDetail">put_source_detail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetCustomPolicyDetails">reset_custom_policy_details</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceDetail">reset_source_detail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceIdentifier">reset_source_identifier</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3195,13 +3195,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3209,13 +3209,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3223,13 +3223,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3237,13 +3237,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3251,13 +3251,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3265,13 +3265,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3279,13 +3279,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3293,13 +3293,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3307,13 +3307,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3321,13 +3321,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3337,13 +3337,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3353,7 +3353,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_custom_policy_details` <a name="put_custom_policy_details" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails"></a>
+##### `put_custom_policy_details` <a name="put_custom_policy_details" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails"></a>
 
 ```python
 def put_custom_policy_details(
@@ -3363,31 +3363,31 @@ def put_custom_policy_details(
 ) -> None
 ```
 
-###### `policy_runtime`<sup>Required</sup> <a name="policy_runtime" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails.parameter.policyRuntime"></a>
+###### `policy_runtime`<sup>Required</sup> <a name="policy_runtime" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails.parameter.policyRuntime"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#policy_runtime ConfigConfigRule#policy_runtime}.
 
 ---
 
-###### `policy_text`<sup>Required</sup> <a name="policy_text" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails.parameter.policyText"></a>
+###### `policy_text`<sup>Required</sup> <a name="policy_text" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails.parameter.policyText"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#policy_text ConfigConfigRule#policy_text}.
 
 ---
 
-###### `enable_debug_log_delivery`<sup>Optional</sup> <a name="enable_debug_log_delivery" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails.parameter.enableDebugLogDelivery"></a>
+###### `enable_debug_log_delivery`<sup>Optional</sup> <a name="enable_debug_log_delivery" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putCustomPolicyDetails.parameter.enableDebugLogDelivery"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_config_rule#enable_debug_log_delivery ConfigConfigRule#enable_debug_log_delivery}.
 
 ---
 
-##### `put_source_detail` <a name="put_source_detail" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putSourceDetail"></a>
+##### `put_source_detail` <a name="put_source_detail" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putSourceDetail"></a>
 
 ```python
 def put_source_detail(
@@ -3395,25 +3395,25 @@ def put_source_detail(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putSourceDetail.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.putSourceDetail.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
 
 ---
 
-##### `reset_custom_policy_details` <a name="reset_custom_policy_details" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetCustomPolicyDetails"></a>
+##### `reset_custom_policy_details` <a name="reset_custom_policy_details" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetCustomPolicyDetails"></a>
 
 ```python
 def reset_custom_policy_details() -> None
 ```
 
-##### `reset_source_detail` <a name="reset_source_detail" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceDetail"></a>
+##### `reset_source_detail` <a name="reset_source_detail" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceDetail"></a>
 
 ```python
 def reset_source_detail() -> None
 ```
 
-##### `reset_source_identifier` <a name="reset_source_identifier" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceIdentifier"></a>
+##### `reset_source_identifier` <a name="reset_source_identifier" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.resetSourceIdentifier"></a>
 
 ```python
 def reset_source_identifier() -> None
@@ -3424,21 +3424,21 @@ def reset_source_identifier() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetails">custom_policy_details</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference">ConfigConfigRuleSourceCustomPolicyDetailsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetail">source_detail</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList">ConfigConfigRuleSourceSourceDetailList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetailsInput">custom_policy_details_input</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetailInput">source_detail_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifierInput">source_identifier_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifier">source_identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetails">custom_policy_details</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference">ConfigConfigRuleSourceCustomPolicyDetailsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetail">source_detail</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList">ConfigConfigRuleSourceSourceDetailList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetailsInput">custom_policy_details_input</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetailInput">source_detail_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifierInput">source_identifier_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifier">source_identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3452,7 +3452,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3462,37 +3462,37 @@ fqn: str
 
 ---
 
-##### `custom_policy_details`<sup>Required</sup> <a name="custom_policy_details" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetails"></a>
+##### `custom_policy_details`<sup>Required</sup> <a name="custom_policy_details" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetails"></a>
 
 ```python
 custom_policy_details: ConfigConfigRuleSourceCustomPolicyDetailsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference">ConfigConfigRuleSourceCustomPolicyDetailsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference">ConfigConfigRuleSourceCustomPolicyDetailsOutputReference</a>
 
 ---
 
-##### `source_detail`<sup>Required</sup> <a name="source_detail" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetail"></a>
+##### `source_detail`<sup>Required</sup> <a name="source_detail" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetail"></a>
 
 ```python
 source_detail: ConfigConfigRuleSourceSourceDetailList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList">ConfigConfigRuleSourceSourceDetailList</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList">ConfigConfigRuleSourceSourceDetailList</a>
 
 ---
 
-##### `custom_policy_details_input`<sup>Optional</sup> <a name="custom_policy_details_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetailsInput"></a>
+##### `custom_policy_details_input`<sup>Optional</sup> <a name="custom_policy_details_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.customPolicyDetailsInput"></a>
 
 ```python
 custom_policy_details_input: ConfigConfigRuleSourceCustomPolicyDetails
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails">ConfigConfigRuleSourceCustomPolicyDetails</a>
 
 ---
 
-##### `owner_input`<sup>Optional</sup> <a name="owner_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.ownerInput"></a>
+##### `owner_input`<sup>Optional</sup> <a name="owner_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.ownerInput"></a>
 
 ```python
 owner_input: str
@@ -3502,17 +3502,17 @@ owner_input: str
 
 ---
 
-##### `source_detail_input`<sup>Optional</sup> <a name="source_detail_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetailInput"></a>
+##### `source_detail_input`<sup>Optional</sup> <a name="source_detail_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceDetailInput"></a>
 
 ```python
 source_detail_input: IResolvable | typing.List[ConfigConfigRuleSourceSourceDetail]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
 
 ---
 
-##### `source_identifier_input`<sup>Optional</sup> <a name="source_identifier_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifierInput"></a>
+##### `source_identifier_input`<sup>Optional</sup> <a name="source_identifier_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifierInput"></a>
 
 ```python
 source_identifier_input: str
@@ -3522,7 +3522,7 @@ source_identifier_input: str
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.owner"></a>
 
 ```python
 owner: str
@@ -3532,7 +3532,7 @@ owner: str
 
 ---
 
-##### `source_identifier`<sup>Required</sup> <a name="source_identifier" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifier"></a>
+##### `source_identifier`<sup>Required</sup> <a name="source_identifier" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.sourceIdentifier"></a>
 
 ```python
 source_identifier: str
@@ -3542,23 +3542,23 @@ source_identifier: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ConfigConfigRuleSource
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
+- *Type:* <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource">ConfigConfigRuleSource</a>
 
 ---
 
 
-### ConfigConfigRuleSourceSourceDetailList <a name="ConfigConfigRuleSourceSourceDetailList" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList"></a>
+### ConfigConfigRuleSourceSourceDetailList <a name="ConfigConfigRuleSourceSourceDetailList" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSourceSourceDetailList(
   terraform_resource: IInterpolatingParent,
@@ -3569,13 +3569,13 @@ configConfigRule.ConfigConfigRuleSourceSourceDetailList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3583,7 +3583,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3591,7 +3591,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3603,15 +3603,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3623,19 +3623,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.resolve"></a>
 
 ```python
 def resolve(
@@ -3645,13 +3645,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3661,7 +3661,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.get"></a>
 
 ```python
 def get(
@@ -3669,7 +3669,7 @@ def get(
 ) -> ConfigConfigRuleSourceSourceDetailOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3682,13 +3682,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3702,7 +3702,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3712,23 +3712,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ConfigConfigRuleSourceSourceDetail]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>]
 
 ---
 
 
-### ConfigConfigRuleSourceSourceDetailOutputReference <a name="ConfigConfigRuleSourceSourceDetailOutputReference" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference"></a>
+### ConfigConfigRuleSourceSourceDetailOutputReference <a name="ConfigConfigRuleSourceSourceDetailOutputReference" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import config_config_rule
+from cdktn_provider_aws import config_config_rule
 
 configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3740,14 +3740,14 @@ configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3755,7 +3755,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3763,7 +3763,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3771,7 +3771,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3783,32 +3783,32 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetEventSource">reset_event_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMaximumExecutionFrequency">reset_maximum_execution_frequency</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMessageType">reset_message_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetEventSource">reset_event_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMaximumExecutionFrequency">reset_maximum_execution_frequency</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMessageType">reset_message_type</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3816,13 +3816,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3830,13 +3830,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3844,13 +3844,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3858,13 +3858,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3872,13 +3872,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3886,13 +3886,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3900,13 +3900,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3914,13 +3914,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3928,13 +3928,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3942,13 +3942,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3958,13 +3958,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3974,19 +3974,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_event_source` <a name="reset_event_source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetEventSource"></a>
+##### `reset_event_source` <a name="reset_event_source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetEventSource"></a>
 
 ```python
 def reset_event_source() -> None
 ```
 
-##### `reset_maximum_execution_frequency` <a name="reset_maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMaximumExecutionFrequency"></a>
+##### `reset_maximum_execution_frequency` <a name="reset_maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMaximumExecutionFrequency"></a>
 
 ```python
 def reset_maximum_execution_frequency() -> None
 ```
 
-##### `reset_message_type` <a name="reset_message_type" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMessageType"></a>
+##### `reset_message_type` <a name="reset_message_type" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.resetMessageType"></a>
 
 ```python
 def reset_message_type() -> None
@@ -3997,19 +3997,19 @@ def reset_message_type() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSourceInput">event_source_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequencyInput">maximum_execution_frequency_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageTypeInput">message_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSource">event_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageType">message_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSourceInput">event_source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequencyInput">maximum_execution_frequency_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageTypeInput">message_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSource">event_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequency">maximum_execution_frequency</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageType">message_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4023,7 +4023,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4033,7 +4033,7 @@ fqn: str
 
 ---
 
-##### `event_source_input`<sup>Optional</sup> <a name="event_source_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSourceInput"></a>
+##### `event_source_input`<sup>Optional</sup> <a name="event_source_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSourceInput"></a>
 
 ```python
 event_source_input: str
@@ -4043,7 +4043,7 @@ event_source_input: str
 
 ---
 
-##### `maximum_execution_frequency_input`<sup>Optional</sup> <a name="maximum_execution_frequency_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequencyInput"></a>
+##### `maximum_execution_frequency_input`<sup>Optional</sup> <a name="maximum_execution_frequency_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequencyInput"></a>
 
 ```python
 maximum_execution_frequency_input: str
@@ -4053,7 +4053,7 @@ maximum_execution_frequency_input: str
 
 ---
 
-##### `message_type_input`<sup>Optional</sup> <a name="message_type_input" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageTypeInput"></a>
+##### `message_type_input`<sup>Optional</sup> <a name="message_type_input" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageTypeInput"></a>
 
 ```python
 message_type_input: str
@@ -4063,7 +4063,7 @@ message_type_input: str
 
 ---
 
-##### `event_source`<sup>Required</sup> <a name="event_source" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSource"></a>
+##### `event_source`<sup>Required</sup> <a name="event_source" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.eventSource"></a>
 
 ```python
 event_source: str
@@ -4073,7 +4073,7 @@ event_source: str
 
 ---
 
-##### `maximum_execution_frequency`<sup>Required</sup> <a name="maximum_execution_frequency" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequency"></a>
+##### `maximum_execution_frequency`<sup>Required</sup> <a name="maximum_execution_frequency" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.maximumExecutionFrequency"></a>
 
 ```python
 maximum_execution_frequency: str
@@ -4083,7 +4083,7 @@ maximum_execution_frequency: str
 
 ---
 
-##### `message_type`<sup>Required</sup> <a name="message_type" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageType"></a>
+##### `message_type`<sup>Required</sup> <a name="message_type" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.messageType"></a>
 
 ```python
 message_type: str
@@ -4093,13 +4093,13 @@ message_type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ConfigConfigRuleSourceSourceDetail
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail">ConfigConfigRuleSourceSourceDetail</a>
 
 ---
 

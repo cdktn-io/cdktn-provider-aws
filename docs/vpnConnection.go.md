@@ -1,28 +1,28 @@
-# `vpnConnection` Submodule <a name="`vpnConnection` Submodule" id="@cdktf/provider-aws.vpnConnection"></a>
+# `vpnConnection` Submodule <a name="`vpnConnection` Submodule" id="@cdktn/provider-aws.vpnConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### VpnConnection <a name="VpnConnection" id="@cdktf/provider-aws.vpnConnection.VpnConnection"></a>
+### VpnConnection <a name="VpnConnection" id="@cdktn/provider-aws.vpnConnection.VpnConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection aws_vpn_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection aws_vpn_connection}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnection(scope Construct, id *string, config VpnConnectionConfig) VpnConnection
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig">VpnConnectionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig">VpnConnectionConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.vpnConnection.VpnConnection.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig">VpnConnectionConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig">VpnConnectionConfig</a>
 
 ---
 
@@ -50,93 +50,93 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.putTunnel1LogOptions">PutTunnel1LogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.putTunnel2LogOptions">PutTunnel2LogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetEnableAcceleration">ResetEnableAcceleration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetLocalIpv4NetworkCidr">ResetLocalIpv4NetworkCidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetLocalIpv6NetworkCidr">ResetLocalIpv6NetworkCidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetOutsideIpAddressType">ResetOutsideIpAddressType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetPresharedKeyStorage">ResetPresharedKeyStorage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv4NetworkCidr">ResetRemoteIpv4NetworkCidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv6NetworkCidr">ResetRemoteIpv6NetworkCidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetStaticRoutesOnly">ResetStaticRoutesOnly</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTransitGatewayId">ResetTransitGatewayId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTransportTransitGatewayAttachmentId">ResetTransportTransitGatewayAttachmentId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutAction">ResetTunnel1DpdTimeoutAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutSeconds">ResetTunnel1DpdTimeoutSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1EnableTunnelLifecycleControl">ResetTunnel1EnableTunnelLifecycleControl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1IkeVersions">ResetTunnel1IkeVersions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideCidr">ResetTunnel1InsideCidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideIpv6Cidr">ResetTunnel1InsideIpv6Cidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1LogOptions">ResetTunnel1LogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1DhGroupNumbers">ResetTunnel1Phase1DhGroupNumbers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1EncryptionAlgorithms">ResetTunnel1Phase1EncryptionAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1IntegrityAlgorithms">ResetTunnel1Phase1IntegrityAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1LifetimeSeconds">ResetTunnel1Phase1LifetimeSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2DhGroupNumbers">ResetTunnel1Phase2DhGroupNumbers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2EncryptionAlgorithms">ResetTunnel1Phase2EncryptionAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2IntegrityAlgorithms">ResetTunnel1Phase2IntegrityAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2LifetimeSeconds">ResetTunnel1Phase2LifetimeSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1PresharedKey">ResetTunnel1PresharedKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyFuzzPercentage">ResetTunnel1RekeyFuzzPercentage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyMarginTimeSeconds">ResetTunnel1RekeyMarginTimeSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1ReplayWindowSize">ResetTunnel1ReplayWindowSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1StartupAction">ResetTunnel1StartupAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutAction">ResetTunnel2DpdTimeoutAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutSeconds">ResetTunnel2DpdTimeoutSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2EnableTunnelLifecycleControl">ResetTunnel2EnableTunnelLifecycleControl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2IkeVersions">ResetTunnel2IkeVersions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideCidr">ResetTunnel2InsideCidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideIpv6Cidr">ResetTunnel2InsideIpv6Cidr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2LogOptions">ResetTunnel2LogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1DhGroupNumbers">ResetTunnel2Phase1DhGroupNumbers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1EncryptionAlgorithms">ResetTunnel2Phase1EncryptionAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1IntegrityAlgorithms">ResetTunnel2Phase1IntegrityAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1LifetimeSeconds">ResetTunnel2Phase1LifetimeSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2DhGroupNumbers">ResetTunnel2Phase2DhGroupNumbers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2EncryptionAlgorithms">ResetTunnel2Phase2EncryptionAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2IntegrityAlgorithms">ResetTunnel2Phase2IntegrityAlgorithms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2LifetimeSeconds">ResetTunnel2Phase2LifetimeSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2PresharedKey">ResetTunnel2PresharedKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyFuzzPercentage">ResetTunnel2RekeyFuzzPercentage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyMarginTimeSeconds">ResetTunnel2RekeyMarginTimeSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2ReplayWindowSize">ResetTunnel2ReplayWindowSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2StartupAction">ResetTunnel2StartupAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnelBandwidth">ResetTunnelBandwidth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnelInsideIpVersion">ResetTunnelInsideIpVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetVpnConcentratorId">ResetVpnConcentratorId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.resetVpnGatewayId">ResetVpnGatewayId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.putTunnel1LogOptions">PutTunnel1LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.putTunnel2LogOptions">PutTunnel2LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetEnableAcceleration">ResetEnableAcceleration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetLocalIpv4NetworkCidr">ResetLocalIpv4NetworkCidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetLocalIpv6NetworkCidr">ResetLocalIpv6NetworkCidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetOutsideIpAddressType">ResetOutsideIpAddressType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetPresharedKeyStorage">ResetPresharedKeyStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv4NetworkCidr">ResetRemoteIpv4NetworkCidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv6NetworkCidr">ResetRemoteIpv6NetworkCidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetStaticRoutesOnly">ResetStaticRoutesOnly</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTransitGatewayId">ResetTransitGatewayId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTransportTransitGatewayAttachmentId">ResetTransportTransitGatewayAttachmentId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutAction">ResetTunnel1DpdTimeoutAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutSeconds">ResetTunnel1DpdTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1EnableTunnelLifecycleControl">ResetTunnel1EnableTunnelLifecycleControl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1IkeVersions">ResetTunnel1IkeVersions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideCidr">ResetTunnel1InsideCidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideIpv6Cidr">ResetTunnel1InsideIpv6Cidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1LogOptions">ResetTunnel1LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1DhGroupNumbers">ResetTunnel1Phase1DhGroupNumbers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1EncryptionAlgorithms">ResetTunnel1Phase1EncryptionAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1IntegrityAlgorithms">ResetTunnel1Phase1IntegrityAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1LifetimeSeconds">ResetTunnel1Phase1LifetimeSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2DhGroupNumbers">ResetTunnel1Phase2DhGroupNumbers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2EncryptionAlgorithms">ResetTunnel1Phase2EncryptionAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2IntegrityAlgorithms">ResetTunnel1Phase2IntegrityAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2LifetimeSeconds">ResetTunnel1Phase2LifetimeSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1PresharedKey">ResetTunnel1PresharedKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyFuzzPercentage">ResetTunnel1RekeyFuzzPercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyMarginTimeSeconds">ResetTunnel1RekeyMarginTimeSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1ReplayWindowSize">ResetTunnel1ReplayWindowSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1StartupAction">ResetTunnel1StartupAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutAction">ResetTunnel2DpdTimeoutAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutSeconds">ResetTunnel2DpdTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2EnableTunnelLifecycleControl">ResetTunnel2EnableTunnelLifecycleControl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2IkeVersions">ResetTunnel2IkeVersions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideCidr">ResetTunnel2InsideCidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideIpv6Cidr">ResetTunnel2InsideIpv6Cidr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2LogOptions">ResetTunnel2LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1DhGroupNumbers">ResetTunnel2Phase1DhGroupNumbers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1EncryptionAlgorithms">ResetTunnel2Phase1EncryptionAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1IntegrityAlgorithms">ResetTunnel2Phase1IntegrityAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1LifetimeSeconds">ResetTunnel2Phase1LifetimeSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2DhGroupNumbers">ResetTunnel2Phase2DhGroupNumbers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2EncryptionAlgorithms">ResetTunnel2Phase2EncryptionAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2IntegrityAlgorithms">ResetTunnel2Phase2IntegrityAlgorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2LifetimeSeconds">ResetTunnel2Phase2LifetimeSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2PresharedKey">ResetTunnel2PresharedKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyFuzzPercentage">ResetTunnel2RekeyFuzzPercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyMarginTimeSeconds">ResetTunnel2RekeyMarginTimeSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2ReplayWindowSize">ResetTunnel2ReplayWindowSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2StartupAction">ResetTunnel2StartupAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnelBandwidth">ResetTunnelBandwidth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnelInsideIpVersion">ResetTunnelInsideIpVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetVpnConcentratorId">ResetVpnConcentratorId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.resetVpnGatewayId">ResetVpnGatewayId</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnection.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnection.toString"></a>
 
 ```go
 func ToString() *string
@@ -144,25 +144,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.vpnConnection.VpnConnection.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.vpnConnection.VpnConnection.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.vpnConnection.VpnConnection.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.vpnConnection.VpnConnection.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpnConnection.VpnConnection.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpnConnection.VpnConnection.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -170,7 +170,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -178,7 +178,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -186,19 +186,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.vpnConnection.VpnConnection.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.vpnConnection.VpnConnection.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.vpnConnection.VpnConnection.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.vpnConnection.VpnConnection.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.vpnConnection.VpnConnection.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.vpnConnection.VpnConnection.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -206,7 +206,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.vpnConnection.VpnConnection.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.vpnConnection.VpnConnection.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -214,7 +214,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpnConnection.VpnConnection.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.vpnConnection.VpnConnection.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -222,151 +222,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.vpnConnection.VpnConnection.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.vpnConnection.VpnConnection.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.vpnConnection.VpnConnection.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.vpnConnection.VpnConnection.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpnConnection.VpnConnection.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpnConnection.VpnConnection.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpnConnection.VpnConnection.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.vpnConnection.VpnConnection.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnection.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnection.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -376,7 +376,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -384,7 +384,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -392,7 +392,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -400,7 +400,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -408,7 +408,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -416,7 +416,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpnConnection.VpnConnection.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpnConnection.VpnConnection.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -424,373 +424,373 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTunnel1LogOptions` <a name="PutTunnel1LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.putTunnel1LogOptions"></a>
+##### `PutTunnel1LogOptions` <a name="PutTunnel1LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.putTunnel1LogOptions"></a>
 
 ```go
 func PutTunnel1LogOptions(value VpnConnectionTunnel1LogOptions)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpnConnection.VpnConnection.putTunnel1LogOptions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpnConnection.VpnConnection.putTunnel1LogOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
 
 ---
 
-##### `PutTunnel2LogOptions` <a name="PutTunnel2LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.putTunnel2LogOptions"></a>
+##### `PutTunnel2LogOptions` <a name="PutTunnel2LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.putTunnel2LogOptions"></a>
 
 ```go
 func PutTunnel2LogOptions(value VpnConnectionTunnel2LogOptions)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpnConnection.VpnConnection.putTunnel2LogOptions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpnConnection.VpnConnection.putTunnel2LogOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
 
 ---
 
-##### `ResetEnableAcceleration` <a name="ResetEnableAcceleration" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetEnableAcceleration"></a>
+##### `ResetEnableAcceleration` <a name="ResetEnableAcceleration" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetEnableAcceleration"></a>
 
 ```go
 func ResetEnableAcceleration()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetLocalIpv4NetworkCidr` <a name="ResetLocalIpv4NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetLocalIpv4NetworkCidr"></a>
+##### `ResetLocalIpv4NetworkCidr` <a name="ResetLocalIpv4NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetLocalIpv4NetworkCidr"></a>
 
 ```go
 func ResetLocalIpv4NetworkCidr()
 ```
 
-##### `ResetLocalIpv6NetworkCidr` <a name="ResetLocalIpv6NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetLocalIpv6NetworkCidr"></a>
+##### `ResetLocalIpv6NetworkCidr` <a name="ResetLocalIpv6NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetLocalIpv6NetworkCidr"></a>
 
 ```go
 func ResetLocalIpv6NetworkCidr()
 ```
 
-##### `ResetOutsideIpAddressType` <a name="ResetOutsideIpAddressType" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetOutsideIpAddressType"></a>
+##### `ResetOutsideIpAddressType` <a name="ResetOutsideIpAddressType" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetOutsideIpAddressType"></a>
 
 ```go
 func ResetOutsideIpAddressType()
 ```
 
-##### `ResetPresharedKeyStorage` <a name="ResetPresharedKeyStorage" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetPresharedKeyStorage"></a>
+##### `ResetPresharedKeyStorage` <a name="ResetPresharedKeyStorage" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetPresharedKeyStorage"></a>
 
 ```go
 func ResetPresharedKeyStorage()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetRemoteIpv4NetworkCidr` <a name="ResetRemoteIpv4NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv4NetworkCidr"></a>
+##### `ResetRemoteIpv4NetworkCidr` <a name="ResetRemoteIpv4NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv4NetworkCidr"></a>
 
 ```go
 func ResetRemoteIpv4NetworkCidr()
 ```
 
-##### `ResetRemoteIpv6NetworkCidr` <a name="ResetRemoteIpv6NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv6NetworkCidr"></a>
+##### `ResetRemoteIpv6NetworkCidr` <a name="ResetRemoteIpv6NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetRemoteIpv6NetworkCidr"></a>
 
 ```go
 func ResetRemoteIpv6NetworkCidr()
 ```
 
-##### `ResetStaticRoutesOnly` <a name="ResetStaticRoutesOnly" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetStaticRoutesOnly"></a>
+##### `ResetStaticRoutesOnly` <a name="ResetStaticRoutesOnly" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetStaticRoutesOnly"></a>
 
 ```go
 func ResetStaticRoutesOnly()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTagsAll"></a>
+##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTagsAll"></a>
 
 ```go
 func ResetTagsAll()
 ```
 
-##### `ResetTransitGatewayId` <a name="ResetTransitGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTransitGatewayId"></a>
+##### `ResetTransitGatewayId` <a name="ResetTransitGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTransitGatewayId"></a>
 
 ```go
 func ResetTransitGatewayId()
 ```
 
-##### `ResetTransportTransitGatewayAttachmentId` <a name="ResetTransportTransitGatewayAttachmentId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTransportTransitGatewayAttachmentId"></a>
+##### `ResetTransportTransitGatewayAttachmentId` <a name="ResetTransportTransitGatewayAttachmentId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTransportTransitGatewayAttachmentId"></a>
 
 ```go
 func ResetTransportTransitGatewayAttachmentId()
 ```
 
-##### `ResetTunnel1DpdTimeoutAction` <a name="ResetTunnel1DpdTimeoutAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutAction"></a>
+##### `ResetTunnel1DpdTimeoutAction` <a name="ResetTunnel1DpdTimeoutAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutAction"></a>
 
 ```go
 func ResetTunnel1DpdTimeoutAction()
 ```
 
-##### `ResetTunnel1DpdTimeoutSeconds` <a name="ResetTunnel1DpdTimeoutSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutSeconds"></a>
+##### `ResetTunnel1DpdTimeoutSeconds` <a name="ResetTunnel1DpdTimeoutSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1DpdTimeoutSeconds"></a>
 
 ```go
 func ResetTunnel1DpdTimeoutSeconds()
 ```
 
-##### `ResetTunnel1EnableTunnelLifecycleControl` <a name="ResetTunnel1EnableTunnelLifecycleControl" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1EnableTunnelLifecycleControl"></a>
+##### `ResetTunnel1EnableTunnelLifecycleControl` <a name="ResetTunnel1EnableTunnelLifecycleControl" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1EnableTunnelLifecycleControl"></a>
 
 ```go
 func ResetTunnel1EnableTunnelLifecycleControl()
 ```
 
-##### `ResetTunnel1IkeVersions` <a name="ResetTunnel1IkeVersions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1IkeVersions"></a>
+##### `ResetTunnel1IkeVersions` <a name="ResetTunnel1IkeVersions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1IkeVersions"></a>
 
 ```go
 func ResetTunnel1IkeVersions()
 ```
 
-##### `ResetTunnel1InsideCidr` <a name="ResetTunnel1InsideCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideCidr"></a>
+##### `ResetTunnel1InsideCidr` <a name="ResetTunnel1InsideCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideCidr"></a>
 
 ```go
 func ResetTunnel1InsideCidr()
 ```
 
-##### `ResetTunnel1InsideIpv6Cidr` <a name="ResetTunnel1InsideIpv6Cidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideIpv6Cidr"></a>
+##### `ResetTunnel1InsideIpv6Cidr` <a name="ResetTunnel1InsideIpv6Cidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1InsideIpv6Cidr"></a>
 
 ```go
 func ResetTunnel1InsideIpv6Cidr()
 ```
 
-##### `ResetTunnel1LogOptions` <a name="ResetTunnel1LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1LogOptions"></a>
+##### `ResetTunnel1LogOptions` <a name="ResetTunnel1LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1LogOptions"></a>
 
 ```go
 func ResetTunnel1LogOptions()
 ```
 
-##### `ResetTunnel1Phase1DhGroupNumbers` <a name="ResetTunnel1Phase1DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1DhGroupNumbers"></a>
+##### `ResetTunnel1Phase1DhGroupNumbers` <a name="ResetTunnel1Phase1DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1DhGroupNumbers"></a>
 
 ```go
 func ResetTunnel1Phase1DhGroupNumbers()
 ```
 
-##### `ResetTunnel1Phase1EncryptionAlgorithms` <a name="ResetTunnel1Phase1EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1EncryptionAlgorithms"></a>
+##### `ResetTunnel1Phase1EncryptionAlgorithms` <a name="ResetTunnel1Phase1EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1EncryptionAlgorithms"></a>
 
 ```go
 func ResetTunnel1Phase1EncryptionAlgorithms()
 ```
 
-##### `ResetTunnel1Phase1IntegrityAlgorithms` <a name="ResetTunnel1Phase1IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1IntegrityAlgorithms"></a>
+##### `ResetTunnel1Phase1IntegrityAlgorithms` <a name="ResetTunnel1Phase1IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1IntegrityAlgorithms"></a>
 
 ```go
 func ResetTunnel1Phase1IntegrityAlgorithms()
 ```
 
-##### `ResetTunnel1Phase1LifetimeSeconds` <a name="ResetTunnel1Phase1LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1LifetimeSeconds"></a>
+##### `ResetTunnel1Phase1LifetimeSeconds` <a name="ResetTunnel1Phase1LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase1LifetimeSeconds"></a>
 
 ```go
 func ResetTunnel1Phase1LifetimeSeconds()
 ```
 
-##### `ResetTunnel1Phase2DhGroupNumbers` <a name="ResetTunnel1Phase2DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2DhGroupNumbers"></a>
+##### `ResetTunnel1Phase2DhGroupNumbers` <a name="ResetTunnel1Phase2DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2DhGroupNumbers"></a>
 
 ```go
 func ResetTunnel1Phase2DhGroupNumbers()
 ```
 
-##### `ResetTunnel1Phase2EncryptionAlgorithms` <a name="ResetTunnel1Phase2EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2EncryptionAlgorithms"></a>
+##### `ResetTunnel1Phase2EncryptionAlgorithms` <a name="ResetTunnel1Phase2EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2EncryptionAlgorithms"></a>
 
 ```go
 func ResetTunnel1Phase2EncryptionAlgorithms()
 ```
 
-##### `ResetTunnel1Phase2IntegrityAlgorithms` <a name="ResetTunnel1Phase2IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2IntegrityAlgorithms"></a>
+##### `ResetTunnel1Phase2IntegrityAlgorithms` <a name="ResetTunnel1Phase2IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2IntegrityAlgorithms"></a>
 
 ```go
 func ResetTunnel1Phase2IntegrityAlgorithms()
 ```
 
-##### `ResetTunnel1Phase2LifetimeSeconds` <a name="ResetTunnel1Phase2LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2LifetimeSeconds"></a>
+##### `ResetTunnel1Phase2LifetimeSeconds` <a name="ResetTunnel1Phase2LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1Phase2LifetimeSeconds"></a>
 
 ```go
 func ResetTunnel1Phase2LifetimeSeconds()
 ```
 
-##### `ResetTunnel1PresharedKey` <a name="ResetTunnel1PresharedKey" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1PresharedKey"></a>
+##### `ResetTunnel1PresharedKey` <a name="ResetTunnel1PresharedKey" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1PresharedKey"></a>
 
 ```go
 func ResetTunnel1PresharedKey()
 ```
 
-##### `ResetTunnel1RekeyFuzzPercentage` <a name="ResetTunnel1RekeyFuzzPercentage" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyFuzzPercentage"></a>
+##### `ResetTunnel1RekeyFuzzPercentage` <a name="ResetTunnel1RekeyFuzzPercentage" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyFuzzPercentage"></a>
 
 ```go
 func ResetTunnel1RekeyFuzzPercentage()
 ```
 
-##### `ResetTunnel1RekeyMarginTimeSeconds` <a name="ResetTunnel1RekeyMarginTimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyMarginTimeSeconds"></a>
+##### `ResetTunnel1RekeyMarginTimeSeconds` <a name="ResetTunnel1RekeyMarginTimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1RekeyMarginTimeSeconds"></a>
 
 ```go
 func ResetTunnel1RekeyMarginTimeSeconds()
 ```
 
-##### `ResetTunnel1ReplayWindowSize` <a name="ResetTunnel1ReplayWindowSize" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1ReplayWindowSize"></a>
+##### `ResetTunnel1ReplayWindowSize` <a name="ResetTunnel1ReplayWindowSize" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1ReplayWindowSize"></a>
 
 ```go
 func ResetTunnel1ReplayWindowSize()
 ```
 
-##### `ResetTunnel1StartupAction` <a name="ResetTunnel1StartupAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel1StartupAction"></a>
+##### `ResetTunnel1StartupAction` <a name="ResetTunnel1StartupAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel1StartupAction"></a>
 
 ```go
 func ResetTunnel1StartupAction()
 ```
 
-##### `ResetTunnel2DpdTimeoutAction` <a name="ResetTunnel2DpdTimeoutAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutAction"></a>
+##### `ResetTunnel2DpdTimeoutAction` <a name="ResetTunnel2DpdTimeoutAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutAction"></a>
 
 ```go
 func ResetTunnel2DpdTimeoutAction()
 ```
 
-##### `ResetTunnel2DpdTimeoutSeconds` <a name="ResetTunnel2DpdTimeoutSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutSeconds"></a>
+##### `ResetTunnel2DpdTimeoutSeconds` <a name="ResetTunnel2DpdTimeoutSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2DpdTimeoutSeconds"></a>
 
 ```go
 func ResetTunnel2DpdTimeoutSeconds()
 ```
 
-##### `ResetTunnel2EnableTunnelLifecycleControl` <a name="ResetTunnel2EnableTunnelLifecycleControl" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2EnableTunnelLifecycleControl"></a>
+##### `ResetTunnel2EnableTunnelLifecycleControl` <a name="ResetTunnel2EnableTunnelLifecycleControl" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2EnableTunnelLifecycleControl"></a>
 
 ```go
 func ResetTunnel2EnableTunnelLifecycleControl()
 ```
 
-##### `ResetTunnel2IkeVersions` <a name="ResetTunnel2IkeVersions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2IkeVersions"></a>
+##### `ResetTunnel2IkeVersions` <a name="ResetTunnel2IkeVersions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2IkeVersions"></a>
 
 ```go
 func ResetTunnel2IkeVersions()
 ```
 
-##### `ResetTunnel2InsideCidr` <a name="ResetTunnel2InsideCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideCidr"></a>
+##### `ResetTunnel2InsideCidr` <a name="ResetTunnel2InsideCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideCidr"></a>
 
 ```go
 func ResetTunnel2InsideCidr()
 ```
 
-##### `ResetTunnel2InsideIpv6Cidr` <a name="ResetTunnel2InsideIpv6Cidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideIpv6Cidr"></a>
+##### `ResetTunnel2InsideIpv6Cidr` <a name="ResetTunnel2InsideIpv6Cidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2InsideIpv6Cidr"></a>
 
 ```go
 func ResetTunnel2InsideIpv6Cidr()
 ```
 
-##### `ResetTunnel2LogOptions` <a name="ResetTunnel2LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2LogOptions"></a>
+##### `ResetTunnel2LogOptions` <a name="ResetTunnel2LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2LogOptions"></a>
 
 ```go
 func ResetTunnel2LogOptions()
 ```
 
-##### `ResetTunnel2Phase1DhGroupNumbers` <a name="ResetTunnel2Phase1DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1DhGroupNumbers"></a>
+##### `ResetTunnel2Phase1DhGroupNumbers` <a name="ResetTunnel2Phase1DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1DhGroupNumbers"></a>
 
 ```go
 func ResetTunnel2Phase1DhGroupNumbers()
 ```
 
-##### `ResetTunnel2Phase1EncryptionAlgorithms` <a name="ResetTunnel2Phase1EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1EncryptionAlgorithms"></a>
+##### `ResetTunnel2Phase1EncryptionAlgorithms` <a name="ResetTunnel2Phase1EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1EncryptionAlgorithms"></a>
 
 ```go
 func ResetTunnel2Phase1EncryptionAlgorithms()
 ```
 
-##### `ResetTunnel2Phase1IntegrityAlgorithms` <a name="ResetTunnel2Phase1IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1IntegrityAlgorithms"></a>
+##### `ResetTunnel2Phase1IntegrityAlgorithms` <a name="ResetTunnel2Phase1IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1IntegrityAlgorithms"></a>
 
 ```go
 func ResetTunnel2Phase1IntegrityAlgorithms()
 ```
 
-##### `ResetTunnel2Phase1LifetimeSeconds` <a name="ResetTunnel2Phase1LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1LifetimeSeconds"></a>
+##### `ResetTunnel2Phase1LifetimeSeconds` <a name="ResetTunnel2Phase1LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase1LifetimeSeconds"></a>
 
 ```go
 func ResetTunnel2Phase1LifetimeSeconds()
 ```
 
-##### `ResetTunnel2Phase2DhGroupNumbers` <a name="ResetTunnel2Phase2DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2DhGroupNumbers"></a>
+##### `ResetTunnel2Phase2DhGroupNumbers` <a name="ResetTunnel2Phase2DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2DhGroupNumbers"></a>
 
 ```go
 func ResetTunnel2Phase2DhGroupNumbers()
 ```
 
-##### `ResetTunnel2Phase2EncryptionAlgorithms` <a name="ResetTunnel2Phase2EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2EncryptionAlgorithms"></a>
+##### `ResetTunnel2Phase2EncryptionAlgorithms` <a name="ResetTunnel2Phase2EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2EncryptionAlgorithms"></a>
 
 ```go
 func ResetTunnel2Phase2EncryptionAlgorithms()
 ```
 
-##### `ResetTunnel2Phase2IntegrityAlgorithms` <a name="ResetTunnel2Phase2IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2IntegrityAlgorithms"></a>
+##### `ResetTunnel2Phase2IntegrityAlgorithms` <a name="ResetTunnel2Phase2IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2IntegrityAlgorithms"></a>
 
 ```go
 func ResetTunnel2Phase2IntegrityAlgorithms()
 ```
 
-##### `ResetTunnel2Phase2LifetimeSeconds` <a name="ResetTunnel2Phase2LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2LifetimeSeconds"></a>
+##### `ResetTunnel2Phase2LifetimeSeconds` <a name="ResetTunnel2Phase2LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2Phase2LifetimeSeconds"></a>
 
 ```go
 func ResetTunnel2Phase2LifetimeSeconds()
 ```
 
-##### `ResetTunnel2PresharedKey` <a name="ResetTunnel2PresharedKey" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2PresharedKey"></a>
+##### `ResetTunnel2PresharedKey` <a name="ResetTunnel2PresharedKey" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2PresharedKey"></a>
 
 ```go
 func ResetTunnel2PresharedKey()
 ```
 
-##### `ResetTunnel2RekeyFuzzPercentage` <a name="ResetTunnel2RekeyFuzzPercentage" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyFuzzPercentage"></a>
+##### `ResetTunnel2RekeyFuzzPercentage` <a name="ResetTunnel2RekeyFuzzPercentage" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyFuzzPercentage"></a>
 
 ```go
 func ResetTunnel2RekeyFuzzPercentage()
 ```
 
-##### `ResetTunnel2RekeyMarginTimeSeconds` <a name="ResetTunnel2RekeyMarginTimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyMarginTimeSeconds"></a>
+##### `ResetTunnel2RekeyMarginTimeSeconds` <a name="ResetTunnel2RekeyMarginTimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2RekeyMarginTimeSeconds"></a>
 
 ```go
 func ResetTunnel2RekeyMarginTimeSeconds()
 ```
 
-##### `ResetTunnel2ReplayWindowSize` <a name="ResetTunnel2ReplayWindowSize" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2ReplayWindowSize"></a>
+##### `ResetTunnel2ReplayWindowSize` <a name="ResetTunnel2ReplayWindowSize" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2ReplayWindowSize"></a>
 
 ```go
 func ResetTunnel2ReplayWindowSize()
 ```
 
-##### `ResetTunnel2StartupAction` <a name="ResetTunnel2StartupAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnel2StartupAction"></a>
+##### `ResetTunnel2StartupAction` <a name="ResetTunnel2StartupAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnel2StartupAction"></a>
 
 ```go
 func ResetTunnel2StartupAction()
 ```
 
-##### `ResetTunnelBandwidth` <a name="ResetTunnelBandwidth" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnelBandwidth"></a>
+##### `ResetTunnelBandwidth` <a name="ResetTunnelBandwidth" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnelBandwidth"></a>
 
 ```go
 func ResetTunnelBandwidth()
 ```
 
-##### `ResetTunnelInsideIpVersion` <a name="ResetTunnelInsideIpVersion" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetTunnelInsideIpVersion"></a>
+##### `ResetTunnelInsideIpVersion` <a name="ResetTunnelInsideIpVersion" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetTunnelInsideIpVersion"></a>
 
 ```go
 func ResetTunnelInsideIpVersion()
 ```
 
-##### `ResetVpnConcentratorId` <a name="ResetVpnConcentratorId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetVpnConcentratorId"></a>
+##### `ResetVpnConcentratorId` <a name="ResetVpnConcentratorId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetVpnConcentratorId"></a>
 
 ```go
 func ResetVpnConcentratorId()
 ```
 
-##### `ResetVpnGatewayId` <a name="ResetVpnGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.resetVpnGatewayId"></a>
+##### `ResetVpnGatewayId` <a name="ResetVpnGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.resetVpnGatewayId"></a>
 
 ```go
 func ResetVpnGatewayId()
@@ -800,17 +800,17 @@ func ResetVpnGatewayId()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VpnConnection resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VpnConnection resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpnConnection.VpnConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.VpnConnection_IsConstruct(x interface{}) *bool
 ```
@@ -831,7 +831,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.vpnConnection.VpnConnection.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -839,45 +839,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpnConnection.VpnConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.VpnConnection_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.vpnConnection.VpnConnection.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.VpnConnection_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpnConnection.VpnConnection.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.vpnConnection.VpnConnection.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpnConnection.VpnConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.VpnConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a VpnConnection resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -885,7 +885,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -893,17 +893,17 @@ The construct id used in the generated config for the VpnConnection to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing VpnConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.vpnConnection.VpnConnection.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -915,162 +915,162 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.coreNetworkArn">CoreNetworkArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.coreNetworkAttachmentArn">CoreNetworkAttachmentArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.customerGatewayConfiguration">CustomerGatewayConfiguration</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.presharedKeyArn">PresharedKeyArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.routes">Routes</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList">VpnConnectionRoutesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.transitGatewayAttachmentId">TransitGatewayAttachmentId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Address">Tunnel1Address</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpAsn">Tunnel1BgpAsn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpHoldtime">Tunnel1BgpHoldtime</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1CgwInsideAddress">Tunnel1CgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptions">Tunnel1LogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference">VpnConnectionTunnel1LogOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1VgwInsideAddress">Tunnel1VgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Address">Tunnel2Address</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpAsn">Tunnel2BgpAsn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpHoldtime">Tunnel2BgpHoldtime</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2CgwInsideAddress">Tunnel2CgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptions">Tunnel2LogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference">VpnConnectionTunnel2LogOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2VgwInsideAddress">Tunnel2VgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.vgwTelemetry">VgwTelemetry</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList">VpnConnectionVgwTelemetryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.customerGatewayIdInput">CustomerGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.enableAccelerationInput">EnableAccelerationInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidrInput">LocalIpv4NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidrInput">LocalIpv6NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressTypeInput">OutsideIpAddressTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorageInput">PresharedKeyStorageInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidrInput">RemoteIpv4NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidrInput">RemoteIpv6NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnlyInput">StaticRoutesOnlyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentIdInput">TransportTransitGatewayAttachmentIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutActionInput">Tunnel1DpdTimeoutActionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSecondsInput">Tunnel1DpdTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControlInput">Tunnel1EnableTunnelLifecycleControlInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersionsInput">Tunnel1IkeVersionsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidrInput">Tunnel1InsideCidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6CidrInput">Tunnel1InsideIpv6CidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptionsInput">Tunnel1LogOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbersInput">Tunnel1Phase1DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithmsInput">Tunnel1Phase1EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithmsInput">Tunnel1Phase1IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSecondsInput">Tunnel1Phase1LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbersInput">Tunnel1Phase2DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithmsInput">Tunnel1Phase2EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithmsInput">Tunnel1Phase2IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSecondsInput">Tunnel1Phase2LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKeyInput">Tunnel1PresharedKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentageInput">Tunnel1RekeyFuzzPercentageInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSecondsInput">Tunnel1RekeyMarginTimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSizeInput">Tunnel1ReplayWindowSizeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupActionInput">Tunnel1StartupActionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutActionInput">Tunnel2DpdTimeoutActionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSecondsInput">Tunnel2DpdTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControlInput">Tunnel2EnableTunnelLifecycleControlInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersionsInput">Tunnel2IkeVersionsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidrInput">Tunnel2InsideCidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6CidrInput">Tunnel2InsideIpv6CidrInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptionsInput">Tunnel2LogOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbersInput">Tunnel2Phase1DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithmsInput">Tunnel2Phase1EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithmsInput">Tunnel2Phase1IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSecondsInput">Tunnel2Phase1LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbersInput">Tunnel2Phase2DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithmsInput">Tunnel2Phase2EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithmsInput">Tunnel2Phase2IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSecondsInput">Tunnel2Phase2LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKeyInput">Tunnel2PresharedKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentageInput">Tunnel2RekeyFuzzPercentageInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSecondsInput">Tunnel2RekeyMarginTimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSizeInput">Tunnel2ReplayWindowSizeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupActionInput">Tunnel2StartupActionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidthInput">TunnelBandwidthInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersionInput">TunnelInsideIpVersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorIdInput">VpnConcentratorIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayIdInput">VpnGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.customerGatewayId">CustomerGatewayId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.enableAcceleration">EnableAcceleration</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidr">LocalIpv4NetworkCidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidr">LocalIpv6NetworkCidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressType">OutsideIpAddressType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorage">PresharedKeyStorage</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidr">RemoteIpv4NetworkCidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidr">RemoteIpv6NetworkCidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnly">StaticRoutesOnly</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentId">TransportTransitGatewayAttachmentId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutAction">Tunnel1DpdTimeoutAction</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSeconds">Tunnel1DpdTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControl">Tunnel1EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersions">Tunnel1IkeVersions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidr">Tunnel1InsideCidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6Cidr">Tunnel1InsideIpv6Cidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbers">Tunnel1Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithms">Tunnel1Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithms">Tunnel1Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSeconds">Tunnel1Phase1LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbers">Tunnel1Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithms">Tunnel1Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithms">Tunnel1Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSeconds">Tunnel1Phase2LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKey">Tunnel1PresharedKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentage">Tunnel1RekeyFuzzPercentage</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSeconds">Tunnel1RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSize">Tunnel1ReplayWindowSize</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupAction">Tunnel1StartupAction</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutAction">Tunnel2DpdTimeoutAction</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSeconds">Tunnel2DpdTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControl">Tunnel2EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersions">Tunnel2IkeVersions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidr">Tunnel2InsideCidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6Cidr">Tunnel2InsideIpv6Cidr</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbers">Tunnel2Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithms">Tunnel2Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithms">Tunnel2Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSeconds">Tunnel2Phase1LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbers">Tunnel2Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithms">Tunnel2Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithms">Tunnel2Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSeconds">Tunnel2Phase2LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKey">Tunnel2PresharedKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentage">Tunnel2RekeyFuzzPercentage</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSeconds">Tunnel2RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSize">Tunnel2ReplayWindowSize</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupAction">Tunnel2StartupAction</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidth">TunnelBandwidth</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersion">TunnelInsideIpVersion</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorId">VpnConcentratorId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.coreNetworkArn">CoreNetworkArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.coreNetworkAttachmentArn">CoreNetworkAttachmentArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.customerGatewayConfiguration">CustomerGatewayConfiguration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.presharedKeyArn">PresharedKeyArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.routes">Routes</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList">VpnConnectionRoutesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.transitGatewayAttachmentId">TransitGatewayAttachmentId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Address">Tunnel1Address</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpAsn">Tunnel1BgpAsn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpHoldtime">Tunnel1BgpHoldtime</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1CgwInsideAddress">Tunnel1CgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptions">Tunnel1LogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference">VpnConnectionTunnel1LogOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1VgwInsideAddress">Tunnel1VgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Address">Tunnel2Address</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpAsn">Tunnel2BgpAsn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpHoldtime">Tunnel2BgpHoldtime</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2CgwInsideAddress">Tunnel2CgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptions">Tunnel2LogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference">VpnConnectionTunnel2LogOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2VgwInsideAddress">Tunnel2VgwInsideAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.vgwTelemetry">VgwTelemetry</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList">VpnConnectionVgwTelemetryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.customerGatewayIdInput">CustomerGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.enableAccelerationInput">EnableAccelerationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidrInput">LocalIpv4NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidrInput">LocalIpv6NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressTypeInput">OutsideIpAddressTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorageInput">PresharedKeyStorageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidrInput">RemoteIpv4NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidrInput">RemoteIpv6NetworkCidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnlyInput">StaticRoutesOnlyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentIdInput">TransportTransitGatewayAttachmentIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutActionInput">Tunnel1DpdTimeoutActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSecondsInput">Tunnel1DpdTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControlInput">Tunnel1EnableTunnelLifecycleControlInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersionsInput">Tunnel1IkeVersionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidrInput">Tunnel1InsideCidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6CidrInput">Tunnel1InsideIpv6CidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptionsInput">Tunnel1LogOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbersInput">Tunnel1Phase1DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithmsInput">Tunnel1Phase1EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithmsInput">Tunnel1Phase1IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSecondsInput">Tunnel1Phase1LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbersInput">Tunnel1Phase2DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithmsInput">Tunnel1Phase2EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithmsInput">Tunnel1Phase2IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSecondsInput">Tunnel1Phase2LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKeyInput">Tunnel1PresharedKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentageInput">Tunnel1RekeyFuzzPercentageInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSecondsInput">Tunnel1RekeyMarginTimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSizeInput">Tunnel1ReplayWindowSizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupActionInput">Tunnel1StartupActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutActionInput">Tunnel2DpdTimeoutActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSecondsInput">Tunnel2DpdTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControlInput">Tunnel2EnableTunnelLifecycleControlInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersionsInput">Tunnel2IkeVersionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidrInput">Tunnel2InsideCidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6CidrInput">Tunnel2InsideIpv6CidrInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptionsInput">Tunnel2LogOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbersInput">Tunnel2Phase1DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithmsInput">Tunnel2Phase1EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithmsInput">Tunnel2Phase1IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSecondsInput">Tunnel2Phase1LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbersInput">Tunnel2Phase2DhGroupNumbersInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithmsInput">Tunnel2Phase2EncryptionAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithmsInput">Tunnel2Phase2IntegrityAlgorithmsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSecondsInput">Tunnel2Phase2LifetimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKeyInput">Tunnel2PresharedKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentageInput">Tunnel2RekeyFuzzPercentageInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSecondsInput">Tunnel2RekeyMarginTimeSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSizeInput">Tunnel2ReplayWindowSizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupActionInput">Tunnel2StartupActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidthInput">TunnelBandwidthInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersionInput">TunnelInsideIpVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorIdInput">VpnConcentratorIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayIdInput">VpnGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.customerGatewayId">CustomerGatewayId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.enableAcceleration">EnableAcceleration</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidr">LocalIpv4NetworkCidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidr">LocalIpv6NetworkCidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressType">OutsideIpAddressType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorage">PresharedKeyStorage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidr">RemoteIpv4NetworkCidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidr">RemoteIpv6NetworkCidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnly">StaticRoutesOnly</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentId">TransportTransitGatewayAttachmentId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutAction">Tunnel1DpdTimeoutAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSeconds">Tunnel1DpdTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControl">Tunnel1EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersions">Tunnel1IkeVersions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidr">Tunnel1InsideCidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6Cidr">Tunnel1InsideIpv6Cidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbers">Tunnel1Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithms">Tunnel1Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithms">Tunnel1Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSeconds">Tunnel1Phase1LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbers">Tunnel1Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithms">Tunnel1Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithms">Tunnel1Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSeconds">Tunnel1Phase2LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKey">Tunnel1PresharedKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentage">Tunnel1RekeyFuzzPercentage</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSeconds">Tunnel1RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSize">Tunnel1ReplayWindowSize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupAction">Tunnel1StartupAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutAction">Tunnel2DpdTimeoutAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSeconds">Tunnel2DpdTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControl">Tunnel2EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersions">Tunnel2IkeVersions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidr">Tunnel2InsideCidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6Cidr">Tunnel2InsideIpv6Cidr</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbers">Tunnel2Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithms">Tunnel2Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithms">Tunnel2Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSeconds">Tunnel2Phase1LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbers">Tunnel2Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithms">Tunnel2Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithms">Tunnel2Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSeconds">Tunnel2Phase2LifetimeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKey">Tunnel2PresharedKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentage">Tunnel2RekeyFuzzPercentage</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSeconds">Tunnel2RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSize">Tunnel2ReplayWindowSize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupAction">Tunnel2StartupAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidth">TunnelBandwidth</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersion">TunnelInsideIpVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorId">VpnConcentratorId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.node"></a>
 
 ```go
 func Node() Node
@@ -1082,7 +1082,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -1092,7 +1092,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1102,7 +1102,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -1112,7 +1112,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -1122,7 +1122,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -1132,7 +1132,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -1142,7 +1142,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -1152,7 +1152,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -1162,7 +1162,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -1172,7 +1172,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -1182,7 +1182,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -1192,7 +1192,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -1202,7 +1202,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -1212,7 +1212,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -1222,7 +1222,7 @@ func Arn() *string
 
 ---
 
-##### `CoreNetworkArn`<sup>Required</sup> <a name="CoreNetworkArn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.coreNetworkArn"></a>
+##### `CoreNetworkArn`<sup>Required</sup> <a name="CoreNetworkArn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.coreNetworkArn"></a>
 
 ```go
 func CoreNetworkArn() *string
@@ -1232,7 +1232,7 @@ func CoreNetworkArn() *string
 
 ---
 
-##### `CoreNetworkAttachmentArn`<sup>Required</sup> <a name="CoreNetworkAttachmentArn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.coreNetworkAttachmentArn"></a>
+##### `CoreNetworkAttachmentArn`<sup>Required</sup> <a name="CoreNetworkAttachmentArn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.coreNetworkAttachmentArn"></a>
 
 ```go
 func CoreNetworkAttachmentArn() *string
@@ -1242,7 +1242,7 @@ func CoreNetworkAttachmentArn() *string
 
 ---
 
-##### `CustomerGatewayConfiguration`<sup>Required</sup> <a name="CustomerGatewayConfiguration" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.customerGatewayConfiguration"></a>
+##### `CustomerGatewayConfiguration`<sup>Required</sup> <a name="CustomerGatewayConfiguration" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.customerGatewayConfiguration"></a>
 
 ```go
 func CustomerGatewayConfiguration() *string
@@ -1252,7 +1252,7 @@ func CustomerGatewayConfiguration() *string
 
 ---
 
-##### `PresharedKeyArn`<sup>Required</sup> <a name="PresharedKeyArn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.presharedKeyArn"></a>
+##### `PresharedKeyArn`<sup>Required</sup> <a name="PresharedKeyArn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.presharedKeyArn"></a>
 
 ```go
 func PresharedKeyArn() *string
@@ -1262,17 +1262,17 @@ func PresharedKeyArn() *string
 
 ---
 
-##### `Routes`<sup>Required</sup> <a name="Routes" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.routes"></a>
+##### `Routes`<sup>Required</sup> <a name="Routes" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.routes"></a>
 
 ```go
 func Routes() VpnConnectionRoutesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList">VpnConnectionRoutesList</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList">VpnConnectionRoutesList</a>
 
 ---
 
-##### `TransitGatewayAttachmentId`<sup>Required</sup> <a name="TransitGatewayAttachmentId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.transitGatewayAttachmentId"></a>
+##### `TransitGatewayAttachmentId`<sup>Required</sup> <a name="TransitGatewayAttachmentId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.transitGatewayAttachmentId"></a>
 
 ```go
 func TransitGatewayAttachmentId() *string
@@ -1282,7 +1282,7 @@ func TransitGatewayAttachmentId() *string
 
 ---
 
-##### `Tunnel1Address`<sup>Required</sup> <a name="Tunnel1Address" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Address"></a>
+##### `Tunnel1Address`<sup>Required</sup> <a name="Tunnel1Address" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Address"></a>
 
 ```go
 func Tunnel1Address() *string
@@ -1292,7 +1292,7 @@ func Tunnel1Address() *string
 
 ---
 
-##### `Tunnel1BgpAsn`<sup>Required</sup> <a name="Tunnel1BgpAsn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpAsn"></a>
+##### `Tunnel1BgpAsn`<sup>Required</sup> <a name="Tunnel1BgpAsn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpAsn"></a>
 
 ```go
 func Tunnel1BgpAsn() *string
@@ -1302,7 +1302,7 @@ func Tunnel1BgpAsn() *string
 
 ---
 
-##### `Tunnel1BgpHoldtime`<sup>Required</sup> <a name="Tunnel1BgpHoldtime" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpHoldtime"></a>
+##### `Tunnel1BgpHoldtime`<sup>Required</sup> <a name="Tunnel1BgpHoldtime" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1BgpHoldtime"></a>
 
 ```go
 func Tunnel1BgpHoldtime() *f64
@@ -1312,7 +1312,7 @@ func Tunnel1BgpHoldtime() *f64
 
 ---
 
-##### `Tunnel1CgwInsideAddress`<sup>Required</sup> <a name="Tunnel1CgwInsideAddress" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1CgwInsideAddress"></a>
+##### `Tunnel1CgwInsideAddress`<sup>Required</sup> <a name="Tunnel1CgwInsideAddress" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1CgwInsideAddress"></a>
 
 ```go
 func Tunnel1CgwInsideAddress() *string
@@ -1322,17 +1322,17 @@ func Tunnel1CgwInsideAddress() *string
 
 ---
 
-##### `Tunnel1LogOptions`<sup>Required</sup> <a name="Tunnel1LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptions"></a>
+##### `Tunnel1LogOptions`<sup>Required</sup> <a name="Tunnel1LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptions"></a>
 
 ```go
 func Tunnel1LogOptions() VpnConnectionTunnel1LogOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference">VpnConnectionTunnel1LogOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference">VpnConnectionTunnel1LogOptionsOutputReference</a>
 
 ---
 
-##### `Tunnel1VgwInsideAddress`<sup>Required</sup> <a name="Tunnel1VgwInsideAddress" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1VgwInsideAddress"></a>
+##### `Tunnel1VgwInsideAddress`<sup>Required</sup> <a name="Tunnel1VgwInsideAddress" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1VgwInsideAddress"></a>
 
 ```go
 func Tunnel1VgwInsideAddress() *string
@@ -1342,7 +1342,7 @@ func Tunnel1VgwInsideAddress() *string
 
 ---
 
-##### `Tunnel2Address`<sup>Required</sup> <a name="Tunnel2Address" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Address"></a>
+##### `Tunnel2Address`<sup>Required</sup> <a name="Tunnel2Address" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Address"></a>
 
 ```go
 func Tunnel2Address() *string
@@ -1352,7 +1352,7 @@ func Tunnel2Address() *string
 
 ---
 
-##### `Tunnel2BgpAsn`<sup>Required</sup> <a name="Tunnel2BgpAsn" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpAsn"></a>
+##### `Tunnel2BgpAsn`<sup>Required</sup> <a name="Tunnel2BgpAsn" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpAsn"></a>
 
 ```go
 func Tunnel2BgpAsn() *string
@@ -1362,7 +1362,7 @@ func Tunnel2BgpAsn() *string
 
 ---
 
-##### `Tunnel2BgpHoldtime`<sup>Required</sup> <a name="Tunnel2BgpHoldtime" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpHoldtime"></a>
+##### `Tunnel2BgpHoldtime`<sup>Required</sup> <a name="Tunnel2BgpHoldtime" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2BgpHoldtime"></a>
 
 ```go
 func Tunnel2BgpHoldtime() *f64
@@ -1372,7 +1372,7 @@ func Tunnel2BgpHoldtime() *f64
 
 ---
 
-##### `Tunnel2CgwInsideAddress`<sup>Required</sup> <a name="Tunnel2CgwInsideAddress" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2CgwInsideAddress"></a>
+##### `Tunnel2CgwInsideAddress`<sup>Required</sup> <a name="Tunnel2CgwInsideAddress" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2CgwInsideAddress"></a>
 
 ```go
 func Tunnel2CgwInsideAddress() *string
@@ -1382,17 +1382,17 @@ func Tunnel2CgwInsideAddress() *string
 
 ---
 
-##### `Tunnel2LogOptions`<sup>Required</sup> <a name="Tunnel2LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptions"></a>
+##### `Tunnel2LogOptions`<sup>Required</sup> <a name="Tunnel2LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptions"></a>
 
 ```go
 func Tunnel2LogOptions() VpnConnectionTunnel2LogOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference">VpnConnectionTunnel2LogOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference">VpnConnectionTunnel2LogOptionsOutputReference</a>
 
 ---
 
-##### `Tunnel2VgwInsideAddress`<sup>Required</sup> <a name="Tunnel2VgwInsideAddress" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2VgwInsideAddress"></a>
+##### `Tunnel2VgwInsideAddress`<sup>Required</sup> <a name="Tunnel2VgwInsideAddress" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2VgwInsideAddress"></a>
 
 ```go
 func Tunnel2VgwInsideAddress() *string
@@ -1402,17 +1402,17 @@ func Tunnel2VgwInsideAddress() *string
 
 ---
 
-##### `VgwTelemetry`<sup>Required</sup> <a name="VgwTelemetry" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.vgwTelemetry"></a>
+##### `VgwTelemetry`<sup>Required</sup> <a name="VgwTelemetry" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.vgwTelemetry"></a>
 
 ```go
 func VgwTelemetry() VpnConnectionVgwTelemetryList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList">VpnConnectionVgwTelemetryList</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList">VpnConnectionVgwTelemetryList</a>
 
 ---
 
-##### `CustomerGatewayIdInput`<sup>Optional</sup> <a name="CustomerGatewayIdInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.customerGatewayIdInput"></a>
+##### `CustomerGatewayIdInput`<sup>Optional</sup> <a name="CustomerGatewayIdInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.customerGatewayIdInput"></a>
 
 ```go
 func CustomerGatewayIdInput() *string
@@ -1422,7 +1422,7 @@ func CustomerGatewayIdInput() *string
 
 ---
 
-##### `EnableAccelerationInput`<sup>Optional</sup> <a name="EnableAccelerationInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.enableAccelerationInput"></a>
+##### `EnableAccelerationInput`<sup>Optional</sup> <a name="EnableAccelerationInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.enableAccelerationInput"></a>
 
 ```go
 func EnableAccelerationInput() interface{}
@@ -1432,7 +1432,7 @@ func EnableAccelerationInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -1442,7 +1442,7 @@ func IdInput() *string
 
 ---
 
-##### `LocalIpv4NetworkCidrInput`<sup>Optional</sup> <a name="LocalIpv4NetworkCidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidrInput"></a>
+##### `LocalIpv4NetworkCidrInput`<sup>Optional</sup> <a name="LocalIpv4NetworkCidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidrInput"></a>
 
 ```go
 func LocalIpv4NetworkCidrInput() *string
@@ -1452,7 +1452,7 @@ func LocalIpv4NetworkCidrInput() *string
 
 ---
 
-##### `LocalIpv6NetworkCidrInput`<sup>Optional</sup> <a name="LocalIpv6NetworkCidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidrInput"></a>
+##### `LocalIpv6NetworkCidrInput`<sup>Optional</sup> <a name="LocalIpv6NetworkCidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidrInput"></a>
 
 ```go
 func LocalIpv6NetworkCidrInput() *string
@@ -1462,7 +1462,7 @@ func LocalIpv6NetworkCidrInput() *string
 
 ---
 
-##### `OutsideIpAddressTypeInput`<sup>Optional</sup> <a name="OutsideIpAddressTypeInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressTypeInput"></a>
+##### `OutsideIpAddressTypeInput`<sup>Optional</sup> <a name="OutsideIpAddressTypeInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressTypeInput"></a>
 
 ```go
 func OutsideIpAddressTypeInput() *string
@@ -1472,7 +1472,7 @@ func OutsideIpAddressTypeInput() *string
 
 ---
 
-##### `PresharedKeyStorageInput`<sup>Optional</sup> <a name="PresharedKeyStorageInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorageInput"></a>
+##### `PresharedKeyStorageInput`<sup>Optional</sup> <a name="PresharedKeyStorageInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorageInput"></a>
 
 ```go
 func PresharedKeyStorageInput() *string
@@ -1482,7 +1482,7 @@ func PresharedKeyStorageInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -1492,7 +1492,7 @@ func RegionInput() *string
 
 ---
 
-##### `RemoteIpv4NetworkCidrInput`<sup>Optional</sup> <a name="RemoteIpv4NetworkCidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidrInput"></a>
+##### `RemoteIpv4NetworkCidrInput`<sup>Optional</sup> <a name="RemoteIpv4NetworkCidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidrInput"></a>
 
 ```go
 func RemoteIpv4NetworkCidrInput() *string
@@ -1502,7 +1502,7 @@ func RemoteIpv4NetworkCidrInput() *string
 
 ---
 
-##### `RemoteIpv6NetworkCidrInput`<sup>Optional</sup> <a name="RemoteIpv6NetworkCidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidrInput"></a>
+##### `RemoteIpv6NetworkCidrInput`<sup>Optional</sup> <a name="RemoteIpv6NetworkCidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidrInput"></a>
 
 ```go
 func RemoteIpv6NetworkCidrInput() *string
@@ -1512,7 +1512,7 @@ func RemoteIpv6NetworkCidrInput() *string
 
 ---
 
-##### `StaticRoutesOnlyInput`<sup>Optional</sup> <a name="StaticRoutesOnlyInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnlyInput"></a>
+##### `StaticRoutesOnlyInput`<sup>Optional</sup> <a name="StaticRoutesOnlyInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnlyInput"></a>
 
 ```go
 func StaticRoutesOnlyInput() interface{}
@@ -1522,7 +1522,7 @@ func StaticRoutesOnlyInput() interface{}
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tagsAllInput"></a>
+##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tagsAllInput"></a>
 
 ```go
 func TagsAllInput() *map[string]*string
@@ -1532,7 +1532,7 @@ func TagsAllInput() *map[string]*string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -1542,7 +1542,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TransitGatewayIdInput`<sup>Optional</sup> <a name="TransitGatewayIdInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.transitGatewayIdInput"></a>
+##### `TransitGatewayIdInput`<sup>Optional</sup> <a name="TransitGatewayIdInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.transitGatewayIdInput"></a>
 
 ```go
 func TransitGatewayIdInput() *string
@@ -1552,7 +1552,7 @@ func TransitGatewayIdInput() *string
 
 ---
 
-##### `TransportTransitGatewayAttachmentIdInput`<sup>Optional</sup> <a name="TransportTransitGatewayAttachmentIdInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentIdInput"></a>
+##### `TransportTransitGatewayAttachmentIdInput`<sup>Optional</sup> <a name="TransportTransitGatewayAttachmentIdInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentIdInput"></a>
 
 ```go
 func TransportTransitGatewayAttachmentIdInput() *string
@@ -1562,7 +1562,7 @@ func TransportTransitGatewayAttachmentIdInput() *string
 
 ---
 
-##### `Tunnel1DpdTimeoutActionInput`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutActionInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutActionInput"></a>
+##### `Tunnel1DpdTimeoutActionInput`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutActionInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutActionInput"></a>
 
 ```go
 func Tunnel1DpdTimeoutActionInput() *string
@@ -1572,7 +1572,7 @@ func Tunnel1DpdTimeoutActionInput() *string
 
 ---
 
-##### `Tunnel1DpdTimeoutSecondsInput`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSecondsInput"></a>
+##### `Tunnel1DpdTimeoutSecondsInput`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSecondsInput"></a>
 
 ```go
 func Tunnel1DpdTimeoutSecondsInput() *f64
@@ -1582,7 +1582,7 @@ func Tunnel1DpdTimeoutSecondsInput() *f64
 
 ---
 
-##### `Tunnel1EnableTunnelLifecycleControlInput`<sup>Optional</sup> <a name="Tunnel1EnableTunnelLifecycleControlInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControlInput"></a>
+##### `Tunnel1EnableTunnelLifecycleControlInput`<sup>Optional</sup> <a name="Tunnel1EnableTunnelLifecycleControlInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControlInput"></a>
 
 ```go
 func Tunnel1EnableTunnelLifecycleControlInput() interface{}
@@ -1592,7 +1592,7 @@ func Tunnel1EnableTunnelLifecycleControlInput() interface{}
 
 ---
 
-##### `Tunnel1IkeVersionsInput`<sup>Optional</sup> <a name="Tunnel1IkeVersionsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersionsInput"></a>
+##### `Tunnel1IkeVersionsInput`<sup>Optional</sup> <a name="Tunnel1IkeVersionsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersionsInput"></a>
 
 ```go
 func Tunnel1IkeVersionsInput() *[]*string
@@ -1602,7 +1602,7 @@ func Tunnel1IkeVersionsInput() *[]*string
 
 ---
 
-##### `Tunnel1InsideCidrInput`<sup>Optional</sup> <a name="Tunnel1InsideCidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidrInput"></a>
+##### `Tunnel1InsideCidrInput`<sup>Optional</sup> <a name="Tunnel1InsideCidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidrInput"></a>
 
 ```go
 func Tunnel1InsideCidrInput() *string
@@ -1612,7 +1612,7 @@ func Tunnel1InsideCidrInput() *string
 
 ---
 
-##### `Tunnel1InsideIpv6CidrInput`<sup>Optional</sup> <a name="Tunnel1InsideIpv6CidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6CidrInput"></a>
+##### `Tunnel1InsideIpv6CidrInput`<sup>Optional</sup> <a name="Tunnel1InsideIpv6CidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6CidrInput"></a>
 
 ```go
 func Tunnel1InsideIpv6CidrInput() *string
@@ -1622,17 +1622,17 @@ func Tunnel1InsideIpv6CidrInput() *string
 
 ---
 
-##### `Tunnel1LogOptionsInput`<sup>Optional</sup> <a name="Tunnel1LogOptionsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptionsInput"></a>
+##### `Tunnel1LogOptionsInput`<sup>Optional</sup> <a name="Tunnel1LogOptionsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1LogOptionsInput"></a>
 
 ```go
 func Tunnel1LogOptionsInput() VpnConnectionTunnel1LogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
 
 ---
 
-##### `Tunnel1Phase1DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel1Phase1DhGroupNumbersInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbersInput"></a>
+##### `Tunnel1Phase1DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel1Phase1DhGroupNumbersInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbersInput"></a>
 
 ```go
 func Tunnel1Phase1DhGroupNumbersInput() *[]*f64
@@ -1642,7 +1642,7 @@ func Tunnel1Phase1DhGroupNumbersInput() *[]*f64
 
 ---
 
-##### `Tunnel1Phase1EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase1EncryptionAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithmsInput"></a>
+##### `Tunnel1Phase1EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase1EncryptionAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithmsInput"></a>
 
 ```go
 func Tunnel1Phase1EncryptionAlgorithmsInput() *[]*string
@@ -1652,7 +1652,7 @@ func Tunnel1Phase1EncryptionAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel1Phase1IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase1IntegrityAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithmsInput"></a>
+##### `Tunnel1Phase1IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase1IntegrityAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithmsInput"></a>
 
 ```go
 func Tunnel1Phase1IntegrityAlgorithmsInput() *[]*string
@@ -1662,7 +1662,7 @@ func Tunnel1Phase1IntegrityAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel1Phase1LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel1Phase1LifetimeSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSecondsInput"></a>
+##### `Tunnel1Phase1LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel1Phase1LifetimeSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSecondsInput"></a>
 
 ```go
 func Tunnel1Phase1LifetimeSecondsInput() *f64
@@ -1672,7 +1672,7 @@ func Tunnel1Phase1LifetimeSecondsInput() *f64
 
 ---
 
-##### `Tunnel1Phase2DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel1Phase2DhGroupNumbersInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbersInput"></a>
+##### `Tunnel1Phase2DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel1Phase2DhGroupNumbersInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbersInput"></a>
 
 ```go
 func Tunnel1Phase2DhGroupNumbersInput() *[]*f64
@@ -1682,7 +1682,7 @@ func Tunnel1Phase2DhGroupNumbersInput() *[]*f64
 
 ---
 
-##### `Tunnel1Phase2EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase2EncryptionAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithmsInput"></a>
+##### `Tunnel1Phase2EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase2EncryptionAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithmsInput"></a>
 
 ```go
 func Tunnel1Phase2EncryptionAlgorithmsInput() *[]*string
@@ -1692,7 +1692,7 @@ func Tunnel1Phase2EncryptionAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel1Phase2IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase2IntegrityAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithmsInput"></a>
+##### `Tunnel1Phase2IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel1Phase2IntegrityAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithmsInput"></a>
 
 ```go
 func Tunnel1Phase2IntegrityAlgorithmsInput() *[]*string
@@ -1702,7 +1702,7 @@ func Tunnel1Phase2IntegrityAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel1Phase2LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel1Phase2LifetimeSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSecondsInput"></a>
+##### `Tunnel1Phase2LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel1Phase2LifetimeSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSecondsInput"></a>
 
 ```go
 func Tunnel1Phase2LifetimeSecondsInput() *f64
@@ -1712,7 +1712,7 @@ func Tunnel1Phase2LifetimeSecondsInput() *f64
 
 ---
 
-##### `Tunnel1PresharedKeyInput`<sup>Optional</sup> <a name="Tunnel1PresharedKeyInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKeyInput"></a>
+##### `Tunnel1PresharedKeyInput`<sup>Optional</sup> <a name="Tunnel1PresharedKeyInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKeyInput"></a>
 
 ```go
 func Tunnel1PresharedKeyInput() *string
@@ -1722,7 +1722,7 @@ func Tunnel1PresharedKeyInput() *string
 
 ---
 
-##### `Tunnel1RekeyFuzzPercentageInput`<sup>Optional</sup> <a name="Tunnel1RekeyFuzzPercentageInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentageInput"></a>
+##### `Tunnel1RekeyFuzzPercentageInput`<sup>Optional</sup> <a name="Tunnel1RekeyFuzzPercentageInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentageInput"></a>
 
 ```go
 func Tunnel1RekeyFuzzPercentageInput() *f64
@@ -1732,7 +1732,7 @@ func Tunnel1RekeyFuzzPercentageInput() *f64
 
 ---
 
-##### `Tunnel1RekeyMarginTimeSecondsInput`<sup>Optional</sup> <a name="Tunnel1RekeyMarginTimeSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSecondsInput"></a>
+##### `Tunnel1RekeyMarginTimeSecondsInput`<sup>Optional</sup> <a name="Tunnel1RekeyMarginTimeSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSecondsInput"></a>
 
 ```go
 func Tunnel1RekeyMarginTimeSecondsInput() *f64
@@ -1742,7 +1742,7 @@ func Tunnel1RekeyMarginTimeSecondsInput() *f64
 
 ---
 
-##### `Tunnel1ReplayWindowSizeInput`<sup>Optional</sup> <a name="Tunnel1ReplayWindowSizeInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSizeInput"></a>
+##### `Tunnel1ReplayWindowSizeInput`<sup>Optional</sup> <a name="Tunnel1ReplayWindowSizeInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSizeInput"></a>
 
 ```go
 func Tunnel1ReplayWindowSizeInput() *f64
@@ -1752,7 +1752,7 @@ func Tunnel1ReplayWindowSizeInput() *f64
 
 ---
 
-##### `Tunnel1StartupActionInput`<sup>Optional</sup> <a name="Tunnel1StartupActionInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupActionInput"></a>
+##### `Tunnel1StartupActionInput`<sup>Optional</sup> <a name="Tunnel1StartupActionInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupActionInput"></a>
 
 ```go
 func Tunnel1StartupActionInput() *string
@@ -1762,7 +1762,7 @@ func Tunnel1StartupActionInput() *string
 
 ---
 
-##### `Tunnel2DpdTimeoutActionInput`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutActionInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutActionInput"></a>
+##### `Tunnel2DpdTimeoutActionInput`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutActionInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutActionInput"></a>
 
 ```go
 func Tunnel2DpdTimeoutActionInput() *string
@@ -1772,7 +1772,7 @@ func Tunnel2DpdTimeoutActionInput() *string
 
 ---
 
-##### `Tunnel2DpdTimeoutSecondsInput`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSecondsInput"></a>
+##### `Tunnel2DpdTimeoutSecondsInput`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSecondsInput"></a>
 
 ```go
 func Tunnel2DpdTimeoutSecondsInput() *f64
@@ -1782,7 +1782,7 @@ func Tunnel2DpdTimeoutSecondsInput() *f64
 
 ---
 
-##### `Tunnel2EnableTunnelLifecycleControlInput`<sup>Optional</sup> <a name="Tunnel2EnableTunnelLifecycleControlInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControlInput"></a>
+##### `Tunnel2EnableTunnelLifecycleControlInput`<sup>Optional</sup> <a name="Tunnel2EnableTunnelLifecycleControlInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControlInput"></a>
 
 ```go
 func Tunnel2EnableTunnelLifecycleControlInput() interface{}
@@ -1792,7 +1792,7 @@ func Tunnel2EnableTunnelLifecycleControlInput() interface{}
 
 ---
 
-##### `Tunnel2IkeVersionsInput`<sup>Optional</sup> <a name="Tunnel2IkeVersionsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersionsInput"></a>
+##### `Tunnel2IkeVersionsInput`<sup>Optional</sup> <a name="Tunnel2IkeVersionsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersionsInput"></a>
 
 ```go
 func Tunnel2IkeVersionsInput() *[]*string
@@ -1802,7 +1802,7 @@ func Tunnel2IkeVersionsInput() *[]*string
 
 ---
 
-##### `Tunnel2InsideCidrInput`<sup>Optional</sup> <a name="Tunnel2InsideCidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidrInput"></a>
+##### `Tunnel2InsideCidrInput`<sup>Optional</sup> <a name="Tunnel2InsideCidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidrInput"></a>
 
 ```go
 func Tunnel2InsideCidrInput() *string
@@ -1812,7 +1812,7 @@ func Tunnel2InsideCidrInput() *string
 
 ---
 
-##### `Tunnel2InsideIpv6CidrInput`<sup>Optional</sup> <a name="Tunnel2InsideIpv6CidrInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6CidrInput"></a>
+##### `Tunnel2InsideIpv6CidrInput`<sup>Optional</sup> <a name="Tunnel2InsideIpv6CidrInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6CidrInput"></a>
 
 ```go
 func Tunnel2InsideIpv6CidrInput() *string
@@ -1822,17 +1822,17 @@ func Tunnel2InsideIpv6CidrInput() *string
 
 ---
 
-##### `Tunnel2LogOptionsInput`<sup>Optional</sup> <a name="Tunnel2LogOptionsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptionsInput"></a>
+##### `Tunnel2LogOptionsInput`<sup>Optional</sup> <a name="Tunnel2LogOptionsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2LogOptionsInput"></a>
 
 ```go
 func Tunnel2LogOptionsInput() VpnConnectionTunnel2LogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
 
 ---
 
-##### `Tunnel2Phase1DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel2Phase1DhGroupNumbersInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbersInput"></a>
+##### `Tunnel2Phase1DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel2Phase1DhGroupNumbersInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbersInput"></a>
 
 ```go
 func Tunnel2Phase1DhGroupNumbersInput() *[]*f64
@@ -1842,7 +1842,7 @@ func Tunnel2Phase1DhGroupNumbersInput() *[]*f64
 
 ---
 
-##### `Tunnel2Phase1EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase1EncryptionAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithmsInput"></a>
+##### `Tunnel2Phase1EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase1EncryptionAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithmsInput"></a>
 
 ```go
 func Tunnel2Phase1EncryptionAlgorithmsInput() *[]*string
@@ -1852,7 +1852,7 @@ func Tunnel2Phase1EncryptionAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel2Phase1IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase1IntegrityAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithmsInput"></a>
+##### `Tunnel2Phase1IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase1IntegrityAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithmsInput"></a>
 
 ```go
 func Tunnel2Phase1IntegrityAlgorithmsInput() *[]*string
@@ -1862,7 +1862,7 @@ func Tunnel2Phase1IntegrityAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel2Phase1LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel2Phase1LifetimeSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSecondsInput"></a>
+##### `Tunnel2Phase1LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel2Phase1LifetimeSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSecondsInput"></a>
 
 ```go
 func Tunnel2Phase1LifetimeSecondsInput() *f64
@@ -1872,7 +1872,7 @@ func Tunnel2Phase1LifetimeSecondsInput() *f64
 
 ---
 
-##### `Tunnel2Phase2DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel2Phase2DhGroupNumbersInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbersInput"></a>
+##### `Tunnel2Phase2DhGroupNumbersInput`<sup>Optional</sup> <a name="Tunnel2Phase2DhGroupNumbersInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbersInput"></a>
 
 ```go
 func Tunnel2Phase2DhGroupNumbersInput() *[]*f64
@@ -1882,7 +1882,7 @@ func Tunnel2Phase2DhGroupNumbersInput() *[]*f64
 
 ---
 
-##### `Tunnel2Phase2EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase2EncryptionAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithmsInput"></a>
+##### `Tunnel2Phase2EncryptionAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase2EncryptionAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithmsInput"></a>
 
 ```go
 func Tunnel2Phase2EncryptionAlgorithmsInput() *[]*string
@@ -1892,7 +1892,7 @@ func Tunnel2Phase2EncryptionAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel2Phase2IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase2IntegrityAlgorithmsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithmsInput"></a>
+##### `Tunnel2Phase2IntegrityAlgorithmsInput`<sup>Optional</sup> <a name="Tunnel2Phase2IntegrityAlgorithmsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithmsInput"></a>
 
 ```go
 func Tunnel2Phase2IntegrityAlgorithmsInput() *[]*string
@@ -1902,7 +1902,7 @@ func Tunnel2Phase2IntegrityAlgorithmsInput() *[]*string
 
 ---
 
-##### `Tunnel2Phase2LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel2Phase2LifetimeSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSecondsInput"></a>
+##### `Tunnel2Phase2LifetimeSecondsInput`<sup>Optional</sup> <a name="Tunnel2Phase2LifetimeSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSecondsInput"></a>
 
 ```go
 func Tunnel2Phase2LifetimeSecondsInput() *f64
@@ -1912,7 +1912,7 @@ func Tunnel2Phase2LifetimeSecondsInput() *f64
 
 ---
 
-##### `Tunnel2PresharedKeyInput`<sup>Optional</sup> <a name="Tunnel2PresharedKeyInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKeyInput"></a>
+##### `Tunnel2PresharedKeyInput`<sup>Optional</sup> <a name="Tunnel2PresharedKeyInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKeyInput"></a>
 
 ```go
 func Tunnel2PresharedKeyInput() *string
@@ -1922,7 +1922,7 @@ func Tunnel2PresharedKeyInput() *string
 
 ---
 
-##### `Tunnel2RekeyFuzzPercentageInput`<sup>Optional</sup> <a name="Tunnel2RekeyFuzzPercentageInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentageInput"></a>
+##### `Tunnel2RekeyFuzzPercentageInput`<sup>Optional</sup> <a name="Tunnel2RekeyFuzzPercentageInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentageInput"></a>
 
 ```go
 func Tunnel2RekeyFuzzPercentageInput() *f64
@@ -1932,7 +1932,7 @@ func Tunnel2RekeyFuzzPercentageInput() *f64
 
 ---
 
-##### `Tunnel2RekeyMarginTimeSecondsInput`<sup>Optional</sup> <a name="Tunnel2RekeyMarginTimeSecondsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSecondsInput"></a>
+##### `Tunnel2RekeyMarginTimeSecondsInput`<sup>Optional</sup> <a name="Tunnel2RekeyMarginTimeSecondsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSecondsInput"></a>
 
 ```go
 func Tunnel2RekeyMarginTimeSecondsInput() *f64
@@ -1942,7 +1942,7 @@ func Tunnel2RekeyMarginTimeSecondsInput() *f64
 
 ---
 
-##### `Tunnel2ReplayWindowSizeInput`<sup>Optional</sup> <a name="Tunnel2ReplayWindowSizeInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSizeInput"></a>
+##### `Tunnel2ReplayWindowSizeInput`<sup>Optional</sup> <a name="Tunnel2ReplayWindowSizeInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSizeInput"></a>
 
 ```go
 func Tunnel2ReplayWindowSizeInput() *f64
@@ -1952,7 +1952,7 @@ func Tunnel2ReplayWindowSizeInput() *f64
 
 ---
 
-##### `Tunnel2StartupActionInput`<sup>Optional</sup> <a name="Tunnel2StartupActionInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupActionInput"></a>
+##### `Tunnel2StartupActionInput`<sup>Optional</sup> <a name="Tunnel2StartupActionInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupActionInput"></a>
 
 ```go
 func Tunnel2StartupActionInput() *string
@@ -1962,7 +1962,7 @@ func Tunnel2StartupActionInput() *string
 
 ---
 
-##### `TunnelBandwidthInput`<sup>Optional</sup> <a name="TunnelBandwidthInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidthInput"></a>
+##### `TunnelBandwidthInput`<sup>Optional</sup> <a name="TunnelBandwidthInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidthInput"></a>
 
 ```go
 func TunnelBandwidthInput() *string
@@ -1972,7 +1972,7 @@ func TunnelBandwidthInput() *string
 
 ---
 
-##### `TunnelInsideIpVersionInput`<sup>Optional</sup> <a name="TunnelInsideIpVersionInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersionInput"></a>
+##### `TunnelInsideIpVersionInput`<sup>Optional</sup> <a name="TunnelInsideIpVersionInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersionInput"></a>
 
 ```go
 func TunnelInsideIpVersionInput() *string
@@ -1982,7 +1982,7 @@ func TunnelInsideIpVersionInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -1992,7 +1992,7 @@ func TypeInput() *string
 
 ---
 
-##### `VpnConcentratorIdInput`<sup>Optional</sup> <a name="VpnConcentratorIdInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorIdInput"></a>
+##### `VpnConcentratorIdInput`<sup>Optional</sup> <a name="VpnConcentratorIdInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorIdInput"></a>
 
 ```go
 func VpnConcentratorIdInput() *string
@@ -2002,7 +2002,7 @@ func VpnConcentratorIdInput() *string
 
 ---
 
-##### `VpnGatewayIdInput`<sup>Optional</sup> <a name="VpnGatewayIdInput" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayIdInput"></a>
+##### `VpnGatewayIdInput`<sup>Optional</sup> <a name="VpnGatewayIdInput" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayIdInput"></a>
 
 ```go
 func VpnGatewayIdInput() *string
@@ -2012,7 +2012,7 @@ func VpnGatewayIdInput() *string
 
 ---
 
-##### `CustomerGatewayId`<sup>Required</sup> <a name="CustomerGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.customerGatewayId"></a>
+##### `CustomerGatewayId`<sup>Required</sup> <a name="CustomerGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.customerGatewayId"></a>
 
 ```go
 func CustomerGatewayId() *string
@@ -2022,7 +2022,7 @@ func CustomerGatewayId() *string
 
 ---
 
-##### `EnableAcceleration`<sup>Required</sup> <a name="EnableAcceleration" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.enableAcceleration"></a>
+##### `EnableAcceleration`<sup>Required</sup> <a name="EnableAcceleration" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.enableAcceleration"></a>
 
 ```go
 func EnableAcceleration() interface{}
@@ -2032,7 +2032,7 @@ func EnableAcceleration() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.id"></a>
 
 ```go
 func Id() *string
@@ -2042,7 +2042,7 @@ func Id() *string
 
 ---
 
-##### `LocalIpv4NetworkCidr`<sup>Required</sup> <a name="LocalIpv4NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidr"></a>
+##### `LocalIpv4NetworkCidr`<sup>Required</sup> <a name="LocalIpv4NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv4NetworkCidr"></a>
 
 ```go
 func LocalIpv4NetworkCidr() *string
@@ -2052,7 +2052,7 @@ func LocalIpv4NetworkCidr() *string
 
 ---
 
-##### `LocalIpv6NetworkCidr`<sup>Required</sup> <a name="LocalIpv6NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidr"></a>
+##### `LocalIpv6NetworkCidr`<sup>Required</sup> <a name="LocalIpv6NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.localIpv6NetworkCidr"></a>
 
 ```go
 func LocalIpv6NetworkCidr() *string
@@ -2062,7 +2062,7 @@ func LocalIpv6NetworkCidr() *string
 
 ---
 
-##### `OutsideIpAddressType`<sup>Required</sup> <a name="OutsideIpAddressType" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressType"></a>
+##### `OutsideIpAddressType`<sup>Required</sup> <a name="OutsideIpAddressType" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.outsideIpAddressType"></a>
 
 ```go
 func OutsideIpAddressType() *string
@@ -2072,7 +2072,7 @@ func OutsideIpAddressType() *string
 
 ---
 
-##### `PresharedKeyStorage`<sup>Required</sup> <a name="PresharedKeyStorage" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorage"></a>
+##### `PresharedKeyStorage`<sup>Required</sup> <a name="PresharedKeyStorage" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.presharedKeyStorage"></a>
 
 ```go
 func PresharedKeyStorage() *string
@@ -2082,7 +2082,7 @@ func PresharedKeyStorage() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.region"></a>
 
 ```go
 func Region() *string
@@ -2092,7 +2092,7 @@ func Region() *string
 
 ---
 
-##### `RemoteIpv4NetworkCidr`<sup>Required</sup> <a name="RemoteIpv4NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidr"></a>
+##### `RemoteIpv4NetworkCidr`<sup>Required</sup> <a name="RemoteIpv4NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv4NetworkCidr"></a>
 
 ```go
 func RemoteIpv4NetworkCidr() *string
@@ -2102,7 +2102,7 @@ func RemoteIpv4NetworkCidr() *string
 
 ---
 
-##### `RemoteIpv6NetworkCidr`<sup>Required</sup> <a name="RemoteIpv6NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidr"></a>
+##### `RemoteIpv6NetworkCidr`<sup>Required</sup> <a name="RemoteIpv6NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.remoteIpv6NetworkCidr"></a>
 
 ```go
 func RemoteIpv6NetworkCidr() *string
@@ -2112,7 +2112,7 @@ func RemoteIpv6NetworkCidr() *string
 
 ---
 
-##### `StaticRoutesOnly`<sup>Required</sup> <a name="StaticRoutesOnly" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnly"></a>
+##### `StaticRoutesOnly`<sup>Required</sup> <a name="StaticRoutesOnly" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.staticRoutesOnly"></a>
 
 ```go
 func StaticRoutesOnly() interface{}
@@ -2122,7 +2122,7 @@ func StaticRoutesOnly() interface{}
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -2132,7 +2132,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tagsAll"></a>
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tagsAll"></a>
 
 ```go
 func TagsAll() *map[string]*string
@@ -2142,7 +2142,7 @@ func TagsAll() *map[string]*string
 
 ---
 
-##### `TransitGatewayId`<sup>Required</sup> <a name="TransitGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.transitGatewayId"></a>
+##### `TransitGatewayId`<sup>Required</sup> <a name="TransitGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.transitGatewayId"></a>
 
 ```go
 func TransitGatewayId() *string
@@ -2152,7 +2152,7 @@ func TransitGatewayId() *string
 
 ---
 
-##### `TransportTransitGatewayAttachmentId`<sup>Required</sup> <a name="TransportTransitGatewayAttachmentId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentId"></a>
+##### `TransportTransitGatewayAttachmentId`<sup>Required</sup> <a name="TransportTransitGatewayAttachmentId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.transportTransitGatewayAttachmentId"></a>
 
 ```go
 func TransportTransitGatewayAttachmentId() *string
@@ -2162,7 +2162,7 @@ func TransportTransitGatewayAttachmentId() *string
 
 ---
 
-##### `Tunnel1DpdTimeoutAction`<sup>Required</sup> <a name="Tunnel1DpdTimeoutAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutAction"></a>
+##### `Tunnel1DpdTimeoutAction`<sup>Required</sup> <a name="Tunnel1DpdTimeoutAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutAction"></a>
 
 ```go
 func Tunnel1DpdTimeoutAction() *string
@@ -2172,7 +2172,7 @@ func Tunnel1DpdTimeoutAction() *string
 
 ---
 
-##### `Tunnel1DpdTimeoutSeconds`<sup>Required</sup> <a name="Tunnel1DpdTimeoutSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSeconds"></a>
+##### `Tunnel1DpdTimeoutSeconds`<sup>Required</sup> <a name="Tunnel1DpdTimeoutSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1DpdTimeoutSeconds"></a>
 
 ```go
 func Tunnel1DpdTimeoutSeconds() *f64
@@ -2182,7 +2182,7 @@ func Tunnel1DpdTimeoutSeconds() *f64
 
 ---
 
-##### `Tunnel1EnableTunnelLifecycleControl`<sup>Required</sup> <a name="Tunnel1EnableTunnelLifecycleControl" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControl"></a>
+##### `Tunnel1EnableTunnelLifecycleControl`<sup>Required</sup> <a name="Tunnel1EnableTunnelLifecycleControl" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1EnableTunnelLifecycleControl"></a>
 
 ```go
 func Tunnel1EnableTunnelLifecycleControl() interface{}
@@ -2192,7 +2192,7 @@ func Tunnel1EnableTunnelLifecycleControl() interface{}
 
 ---
 
-##### `Tunnel1IkeVersions`<sup>Required</sup> <a name="Tunnel1IkeVersions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersions"></a>
+##### `Tunnel1IkeVersions`<sup>Required</sup> <a name="Tunnel1IkeVersions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1IkeVersions"></a>
 
 ```go
 func Tunnel1IkeVersions() *[]*string
@@ -2202,7 +2202,7 @@ func Tunnel1IkeVersions() *[]*string
 
 ---
 
-##### `Tunnel1InsideCidr`<sup>Required</sup> <a name="Tunnel1InsideCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidr"></a>
+##### `Tunnel1InsideCidr`<sup>Required</sup> <a name="Tunnel1InsideCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideCidr"></a>
 
 ```go
 func Tunnel1InsideCidr() *string
@@ -2212,7 +2212,7 @@ func Tunnel1InsideCidr() *string
 
 ---
 
-##### `Tunnel1InsideIpv6Cidr`<sup>Required</sup> <a name="Tunnel1InsideIpv6Cidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6Cidr"></a>
+##### `Tunnel1InsideIpv6Cidr`<sup>Required</sup> <a name="Tunnel1InsideIpv6Cidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1InsideIpv6Cidr"></a>
 
 ```go
 func Tunnel1InsideIpv6Cidr() *string
@@ -2222,7 +2222,7 @@ func Tunnel1InsideIpv6Cidr() *string
 
 ---
 
-##### `Tunnel1Phase1DhGroupNumbers`<sup>Required</sup> <a name="Tunnel1Phase1DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbers"></a>
+##### `Tunnel1Phase1DhGroupNumbers`<sup>Required</sup> <a name="Tunnel1Phase1DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1DhGroupNumbers"></a>
 
 ```go
 func Tunnel1Phase1DhGroupNumbers() *[]*f64
@@ -2232,7 +2232,7 @@ func Tunnel1Phase1DhGroupNumbers() *[]*f64
 
 ---
 
-##### `Tunnel1Phase1EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase1EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithms"></a>
+##### `Tunnel1Phase1EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase1EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1EncryptionAlgorithms"></a>
 
 ```go
 func Tunnel1Phase1EncryptionAlgorithms() *[]*string
@@ -2242,7 +2242,7 @@ func Tunnel1Phase1EncryptionAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel1Phase1IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase1IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithms"></a>
+##### `Tunnel1Phase1IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase1IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1IntegrityAlgorithms"></a>
 
 ```go
 func Tunnel1Phase1IntegrityAlgorithms() *[]*string
@@ -2252,7 +2252,7 @@ func Tunnel1Phase1IntegrityAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel1Phase1LifetimeSeconds`<sup>Required</sup> <a name="Tunnel1Phase1LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSeconds"></a>
+##### `Tunnel1Phase1LifetimeSeconds`<sup>Required</sup> <a name="Tunnel1Phase1LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase1LifetimeSeconds"></a>
 
 ```go
 func Tunnel1Phase1LifetimeSeconds() *f64
@@ -2262,7 +2262,7 @@ func Tunnel1Phase1LifetimeSeconds() *f64
 
 ---
 
-##### `Tunnel1Phase2DhGroupNumbers`<sup>Required</sup> <a name="Tunnel1Phase2DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbers"></a>
+##### `Tunnel1Phase2DhGroupNumbers`<sup>Required</sup> <a name="Tunnel1Phase2DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2DhGroupNumbers"></a>
 
 ```go
 func Tunnel1Phase2DhGroupNumbers() *[]*f64
@@ -2272,7 +2272,7 @@ func Tunnel1Phase2DhGroupNumbers() *[]*f64
 
 ---
 
-##### `Tunnel1Phase2EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase2EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithms"></a>
+##### `Tunnel1Phase2EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase2EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2EncryptionAlgorithms"></a>
 
 ```go
 func Tunnel1Phase2EncryptionAlgorithms() *[]*string
@@ -2282,7 +2282,7 @@ func Tunnel1Phase2EncryptionAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel1Phase2IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase2IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithms"></a>
+##### `Tunnel1Phase2IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel1Phase2IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2IntegrityAlgorithms"></a>
 
 ```go
 func Tunnel1Phase2IntegrityAlgorithms() *[]*string
@@ -2292,7 +2292,7 @@ func Tunnel1Phase2IntegrityAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel1Phase2LifetimeSeconds`<sup>Required</sup> <a name="Tunnel1Phase2LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSeconds"></a>
+##### `Tunnel1Phase2LifetimeSeconds`<sup>Required</sup> <a name="Tunnel1Phase2LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1Phase2LifetimeSeconds"></a>
 
 ```go
 func Tunnel1Phase2LifetimeSeconds() *f64
@@ -2302,7 +2302,7 @@ func Tunnel1Phase2LifetimeSeconds() *f64
 
 ---
 
-##### `Tunnel1PresharedKey`<sup>Required</sup> <a name="Tunnel1PresharedKey" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKey"></a>
+##### `Tunnel1PresharedKey`<sup>Required</sup> <a name="Tunnel1PresharedKey" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1PresharedKey"></a>
 
 ```go
 func Tunnel1PresharedKey() *string
@@ -2312,7 +2312,7 @@ func Tunnel1PresharedKey() *string
 
 ---
 
-##### `Tunnel1RekeyFuzzPercentage`<sup>Required</sup> <a name="Tunnel1RekeyFuzzPercentage" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentage"></a>
+##### `Tunnel1RekeyFuzzPercentage`<sup>Required</sup> <a name="Tunnel1RekeyFuzzPercentage" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyFuzzPercentage"></a>
 
 ```go
 func Tunnel1RekeyFuzzPercentage() *f64
@@ -2322,7 +2322,7 @@ func Tunnel1RekeyFuzzPercentage() *f64
 
 ---
 
-##### `Tunnel1RekeyMarginTimeSeconds`<sup>Required</sup> <a name="Tunnel1RekeyMarginTimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSeconds"></a>
+##### `Tunnel1RekeyMarginTimeSeconds`<sup>Required</sup> <a name="Tunnel1RekeyMarginTimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1RekeyMarginTimeSeconds"></a>
 
 ```go
 func Tunnel1RekeyMarginTimeSeconds() *f64
@@ -2332,7 +2332,7 @@ func Tunnel1RekeyMarginTimeSeconds() *f64
 
 ---
 
-##### `Tunnel1ReplayWindowSize`<sup>Required</sup> <a name="Tunnel1ReplayWindowSize" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSize"></a>
+##### `Tunnel1ReplayWindowSize`<sup>Required</sup> <a name="Tunnel1ReplayWindowSize" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1ReplayWindowSize"></a>
 
 ```go
 func Tunnel1ReplayWindowSize() *f64
@@ -2342,7 +2342,7 @@ func Tunnel1ReplayWindowSize() *f64
 
 ---
 
-##### `Tunnel1StartupAction`<sup>Required</sup> <a name="Tunnel1StartupAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupAction"></a>
+##### `Tunnel1StartupAction`<sup>Required</sup> <a name="Tunnel1StartupAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel1StartupAction"></a>
 
 ```go
 func Tunnel1StartupAction() *string
@@ -2352,7 +2352,7 @@ func Tunnel1StartupAction() *string
 
 ---
 
-##### `Tunnel2DpdTimeoutAction`<sup>Required</sup> <a name="Tunnel2DpdTimeoutAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutAction"></a>
+##### `Tunnel2DpdTimeoutAction`<sup>Required</sup> <a name="Tunnel2DpdTimeoutAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutAction"></a>
 
 ```go
 func Tunnel2DpdTimeoutAction() *string
@@ -2362,7 +2362,7 @@ func Tunnel2DpdTimeoutAction() *string
 
 ---
 
-##### `Tunnel2DpdTimeoutSeconds`<sup>Required</sup> <a name="Tunnel2DpdTimeoutSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSeconds"></a>
+##### `Tunnel2DpdTimeoutSeconds`<sup>Required</sup> <a name="Tunnel2DpdTimeoutSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2DpdTimeoutSeconds"></a>
 
 ```go
 func Tunnel2DpdTimeoutSeconds() *f64
@@ -2372,7 +2372,7 @@ func Tunnel2DpdTimeoutSeconds() *f64
 
 ---
 
-##### `Tunnel2EnableTunnelLifecycleControl`<sup>Required</sup> <a name="Tunnel2EnableTunnelLifecycleControl" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControl"></a>
+##### `Tunnel2EnableTunnelLifecycleControl`<sup>Required</sup> <a name="Tunnel2EnableTunnelLifecycleControl" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2EnableTunnelLifecycleControl"></a>
 
 ```go
 func Tunnel2EnableTunnelLifecycleControl() interface{}
@@ -2382,7 +2382,7 @@ func Tunnel2EnableTunnelLifecycleControl() interface{}
 
 ---
 
-##### `Tunnel2IkeVersions`<sup>Required</sup> <a name="Tunnel2IkeVersions" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersions"></a>
+##### `Tunnel2IkeVersions`<sup>Required</sup> <a name="Tunnel2IkeVersions" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2IkeVersions"></a>
 
 ```go
 func Tunnel2IkeVersions() *[]*string
@@ -2392,7 +2392,7 @@ func Tunnel2IkeVersions() *[]*string
 
 ---
 
-##### `Tunnel2InsideCidr`<sup>Required</sup> <a name="Tunnel2InsideCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidr"></a>
+##### `Tunnel2InsideCidr`<sup>Required</sup> <a name="Tunnel2InsideCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideCidr"></a>
 
 ```go
 func Tunnel2InsideCidr() *string
@@ -2402,7 +2402,7 @@ func Tunnel2InsideCidr() *string
 
 ---
 
-##### `Tunnel2InsideIpv6Cidr`<sup>Required</sup> <a name="Tunnel2InsideIpv6Cidr" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6Cidr"></a>
+##### `Tunnel2InsideIpv6Cidr`<sup>Required</sup> <a name="Tunnel2InsideIpv6Cidr" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2InsideIpv6Cidr"></a>
 
 ```go
 func Tunnel2InsideIpv6Cidr() *string
@@ -2412,7 +2412,7 @@ func Tunnel2InsideIpv6Cidr() *string
 
 ---
 
-##### `Tunnel2Phase1DhGroupNumbers`<sup>Required</sup> <a name="Tunnel2Phase1DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbers"></a>
+##### `Tunnel2Phase1DhGroupNumbers`<sup>Required</sup> <a name="Tunnel2Phase1DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1DhGroupNumbers"></a>
 
 ```go
 func Tunnel2Phase1DhGroupNumbers() *[]*f64
@@ -2422,7 +2422,7 @@ func Tunnel2Phase1DhGroupNumbers() *[]*f64
 
 ---
 
-##### `Tunnel2Phase1EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase1EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithms"></a>
+##### `Tunnel2Phase1EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase1EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1EncryptionAlgorithms"></a>
 
 ```go
 func Tunnel2Phase1EncryptionAlgorithms() *[]*string
@@ -2432,7 +2432,7 @@ func Tunnel2Phase1EncryptionAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel2Phase1IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase1IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithms"></a>
+##### `Tunnel2Phase1IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase1IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1IntegrityAlgorithms"></a>
 
 ```go
 func Tunnel2Phase1IntegrityAlgorithms() *[]*string
@@ -2442,7 +2442,7 @@ func Tunnel2Phase1IntegrityAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel2Phase1LifetimeSeconds`<sup>Required</sup> <a name="Tunnel2Phase1LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSeconds"></a>
+##### `Tunnel2Phase1LifetimeSeconds`<sup>Required</sup> <a name="Tunnel2Phase1LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase1LifetimeSeconds"></a>
 
 ```go
 func Tunnel2Phase1LifetimeSeconds() *f64
@@ -2452,7 +2452,7 @@ func Tunnel2Phase1LifetimeSeconds() *f64
 
 ---
 
-##### `Tunnel2Phase2DhGroupNumbers`<sup>Required</sup> <a name="Tunnel2Phase2DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbers"></a>
+##### `Tunnel2Phase2DhGroupNumbers`<sup>Required</sup> <a name="Tunnel2Phase2DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2DhGroupNumbers"></a>
 
 ```go
 func Tunnel2Phase2DhGroupNumbers() *[]*f64
@@ -2462,7 +2462,7 @@ func Tunnel2Phase2DhGroupNumbers() *[]*f64
 
 ---
 
-##### `Tunnel2Phase2EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase2EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithms"></a>
+##### `Tunnel2Phase2EncryptionAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase2EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2EncryptionAlgorithms"></a>
 
 ```go
 func Tunnel2Phase2EncryptionAlgorithms() *[]*string
@@ -2472,7 +2472,7 @@ func Tunnel2Phase2EncryptionAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel2Phase2IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase2IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithms"></a>
+##### `Tunnel2Phase2IntegrityAlgorithms`<sup>Required</sup> <a name="Tunnel2Phase2IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2IntegrityAlgorithms"></a>
 
 ```go
 func Tunnel2Phase2IntegrityAlgorithms() *[]*string
@@ -2482,7 +2482,7 @@ func Tunnel2Phase2IntegrityAlgorithms() *[]*string
 
 ---
 
-##### `Tunnel2Phase2LifetimeSeconds`<sup>Required</sup> <a name="Tunnel2Phase2LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSeconds"></a>
+##### `Tunnel2Phase2LifetimeSeconds`<sup>Required</sup> <a name="Tunnel2Phase2LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2Phase2LifetimeSeconds"></a>
 
 ```go
 func Tunnel2Phase2LifetimeSeconds() *f64
@@ -2492,7 +2492,7 @@ func Tunnel2Phase2LifetimeSeconds() *f64
 
 ---
 
-##### `Tunnel2PresharedKey`<sup>Required</sup> <a name="Tunnel2PresharedKey" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKey"></a>
+##### `Tunnel2PresharedKey`<sup>Required</sup> <a name="Tunnel2PresharedKey" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2PresharedKey"></a>
 
 ```go
 func Tunnel2PresharedKey() *string
@@ -2502,7 +2502,7 @@ func Tunnel2PresharedKey() *string
 
 ---
 
-##### `Tunnel2RekeyFuzzPercentage`<sup>Required</sup> <a name="Tunnel2RekeyFuzzPercentage" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentage"></a>
+##### `Tunnel2RekeyFuzzPercentage`<sup>Required</sup> <a name="Tunnel2RekeyFuzzPercentage" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyFuzzPercentage"></a>
 
 ```go
 func Tunnel2RekeyFuzzPercentage() *f64
@@ -2512,7 +2512,7 @@ func Tunnel2RekeyFuzzPercentage() *f64
 
 ---
 
-##### `Tunnel2RekeyMarginTimeSeconds`<sup>Required</sup> <a name="Tunnel2RekeyMarginTimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSeconds"></a>
+##### `Tunnel2RekeyMarginTimeSeconds`<sup>Required</sup> <a name="Tunnel2RekeyMarginTimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2RekeyMarginTimeSeconds"></a>
 
 ```go
 func Tunnel2RekeyMarginTimeSeconds() *f64
@@ -2522,7 +2522,7 @@ func Tunnel2RekeyMarginTimeSeconds() *f64
 
 ---
 
-##### `Tunnel2ReplayWindowSize`<sup>Required</sup> <a name="Tunnel2ReplayWindowSize" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSize"></a>
+##### `Tunnel2ReplayWindowSize`<sup>Required</sup> <a name="Tunnel2ReplayWindowSize" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2ReplayWindowSize"></a>
 
 ```go
 func Tunnel2ReplayWindowSize() *f64
@@ -2532,7 +2532,7 @@ func Tunnel2ReplayWindowSize() *f64
 
 ---
 
-##### `Tunnel2StartupAction`<sup>Required</sup> <a name="Tunnel2StartupAction" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupAction"></a>
+##### `Tunnel2StartupAction`<sup>Required</sup> <a name="Tunnel2StartupAction" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnel2StartupAction"></a>
 
 ```go
 func Tunnel2StartupAction() *string
@@ -2542,7 +2542,7 @@ func Tunnel2StartupAction() *string
 
 ---
 
-##### `TunnelBandwidth`<sup>Required</sup> <a name="TunnelBandwidth" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidth"></a>
+##### `TunnelBandwidth`<sup>Required</sup> <a name="TunnelBandwidth" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelBandwidth"></a>
 
 ```go
 func TunnelBandwidth() *string
@@ -2552,7 +2552,7 @@ func TunnelBandwidth() *string
 
 ---
 
-##### `TunnelInsideIpVersion`<sup>Required</sup> <a name="TunnelInsideIpVersion" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersion"></a>
+##### `TunnelInsideIpVersion`<sup>Required</sup> <a name="TunnelInsideIpVersion" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tunnelInsideIpVersion"></a>
 
 ```go
 func TunnelInsideIpVersion() *string
@@ -2562,7 +2562,7 @@ func TunnelInsideIpVersion() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.type"></a>
 
 ```go
 func Type() *string
@@ -2572,7 +2572,7 @@ func Type() *string
 
 ---
 
-##### `VpnConcentratorId`<sup>Required</sup> <a name="VpnConcentratorId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorId"></a>
+##### `VpnConcentratorId`<sup>Required</sup> <a name="VpnConcentratorId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnConcentratorId"></a>
 
 ```go
 func VpnConcentratorId() *string
@@ -2582,7 +2582,7 @@ func VpnConcentratorId() *string
 
 ---
 
-##### `VpnGatewayId`<sup>Required</sup> <a name="VpnGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayId"></a>
+##### `VpnGatewayId`<sup>Required</sup> <a name="VpnGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.vpnGatewayId"></a>
 
 ```go
 func VpnGatewayId() *string
@@ -2596,11 +2596,11 @@ func VpnGatewayId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnection.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnection.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.vpnConnection.VpnConnection.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.vpnConnection.VpnConnection.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -2612,12 +2612,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### VpnConnectionConfig <a name="VpnConnectionConfig" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig"></a>
+### VpnConnectionConfig <a name="VpnConnectionConfig" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionConfig {
 	Connection: interface{},
@@ -2649,7 +2649,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 	Tunnel1IkeVersions: *[]*string,
 	Tunnel1InsideCidr: *string,
 	Tunnel1InsideIpv6Cidr: *string,
-	Tunnel1LogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel1LogOptions,
+	Tunnel1LogOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel1LogOptions,
 	Tunnel1Phase1DhGroupNumbers: *[]*f64,
 	Tunnel1Phase1EncryptionAlgorithms: *[]*string,
 	Tunnel1Phase1IntegrityAlgorithms: *[]*string,
@@ -2669,7 +2669,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 	Tunnel2IkeVersions: *[]*string,
 	Tunnel2InsideCidr: *string,
 	Tunnel2InsideIpv6Cidr: *string,
-	Tunnel2LogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel2LogOptions,
+	Tunnel2LogOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel2LogOptions,
 	Tunnel2Phase1DhGroupNumbers: *[]*f64,
 	Tunnel2Phase1EncryptionAlgorithms: *[]*string,
 	Tunnel2Phase1IntegrityAlgorithms: *[]*string,
@@ -2694,77 +2694,77 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.customerGatewayId">CustomerGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#customer_gateway_id VpnConnection#customer_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#type VpnConnection#type}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.enableAcceleration">EnableAcceleration</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#enable_acceleration VpnConnection#enable_acceleration}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#id VpnConnection#id}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv4NetworkCidr">LocalIpv4NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#local_ipv4_network_cidr VpnConnection#local_ipv4_network_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv6NetworkCidr">LocalIpv6NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#local_ipv6_network_cidr VpnConnection#local_ipv6_network_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.outsideIpAddressType">OutsideIpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#outside_ip_address_type VpnConnection#outside_ip_address_type}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.presharedKeyStorage">PresharedKeyStorage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#preshared_key_storage VpnConnection#preshared_key_storage}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv4NetworkCidr">RemoteIpv4NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#remote_ipv4_network_cidr VpnConnection#remote_ipv4_network_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv6NetworkCidr">RemoteIpv6NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#remote_ipv6_network_cidr VpnConnection#remote_ipv6_network_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.staticRoutesOnly">StaticRoutesOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#static_routes_only VpnConnection#static_routes_only}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tags VpnConnection#tags}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tags_all VpnConnection#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#transit_gateway_id VpnConnection#transit_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.transportTransitGatewayAttachmentId">TransportTransitGatewayAttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#transport_transit_gateway_attachment_id VpnConnection#transport_transit_gateway_attachment_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutAction">Tunnel1DpdTimeoutAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_action VpnConnection#tunnel1_dpd_timeout_action}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutSeconds">Tunnel1DpdTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_seconds VpnConnection#tunnel1_dpd_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1EnableTunnelLifecycleControl">Tunnel1EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_enable_tunnel_lifecycle_control VpnConnection#tunnel1_enable_tunnel_lifecycle_control}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1IkeVersions">Tunnel1IkeVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_ike_versions VpnConnection#tunnel1_ike_versions}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideCidr">Tunnel1InsideCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_inside_cidr VpnConnection#tunnel1_inside_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideIpv6Cidr">Tunnel1InsideIpv6Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_inside_ipv6_cidr VpnConnection#tunnel1_inside_ipv6_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1LogOptions">Tunnel1LogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a></code> | tunnel1_log_options block. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1DhGroupNumbers">Tunnel1Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_dh_group_numbers VpnConnection#tunnel1_phase1_dh_group_numbers}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1EncryptionAlgorithms">Tunnel1Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_encryption_algorithms VpnConnection#tunnel1_phase1_encryption_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1IntegrityAlgorithms">Tunnel1Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_integrity_algorithms VpnConnection#tunnel1_phase1_integrity_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1LifetimeSeconds">Tunnel1Phase1LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_lifetime_seconds VpnConnection#tunnel1_phase1_lifetime_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2DhGroupNumbers">Tunnel1Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_dh_group_numbers VpnConnection#tunnel1_phase2_dh_group_numbers}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2EncryptionAlgorithms">Tunnel1Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_encryption_algorithms VpnConnection#tunnel1_phase2_encryption_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2IntegrityAlgorithms">Tunnel1Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_integrity_algorithms VpnConnection#tunnel1_phase2_integrity_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2LifetimeSeconds">Tunnel1Phase2LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_lifetime_seconds VpnConnection#tunnel1_phase2_lifetime_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1PresharedKey">Tunnel1PresharedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_preshared_key VpnConnection#tunnel1_preshared_key}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyFuzzPercentage">Tunnel1RekeyFuzzPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_rekey_fuzz_percentage VpnConnection#tunnel1_rekey_fuzz_percentage}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyMarginTimeSeconds">Tunnel1RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_rekey_margin_time_seconds VpnConnection#tunnel1_rekey_margin_time_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1ReplayWindowSize">Tunnel1ReplayWindowSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_replay_window_size VpnConnection#tunnel1_replay_window_size}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1StartupAction">Tunnel1StartupAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_startup_action VpnConnection#tunnel1_startup_action}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutAction">Tunnel2DpdTimeoutAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_action VpnConnection#tunnel2_dpd_timeout_action}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutSeconds">Tunnel2DpdTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_seconds VpnConnection#tunnel2_dpd_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2EnableTunnelLifecycleControl">Tunnel2EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_enable_tunnel_lifecycle_control VpnConnection#tunnel2_enable_tunnel_lifecycle_control}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2IkeVersions">Tunnel2IkeVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_ike_versions VpnConnection#tunnel2_ike_versions}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideCidr">Tunnel2InsideCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_inside_cidr VpnConnection#tunnel2_inside_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideIpv6Cidr">Tunnel2InsideIpv6Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_inside_ipv6_cidr VpnConnection#tunnel2_inside_ipv6_cidr}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2LogOptions">Tunnel2LogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a></code> | tunnel2_log_options block. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1DhGroupNumbers">Tunnel2Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_dh_group_numbers VpnConnection#tunnel2_phase1_dh_group_numbers}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1EncryptionAlgorithms">Tunnel2Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_encryption_algorithms VpnConnection#tunnel2_phase1_encryption_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1IntegrityAlgorithms">Tunnel2Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_integrity_algorithms VpnConnection#tunnel2_phase1_integrity_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1LifetimeSeconds">Tunnel2Phase1LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_lifetime_seconds VpnConnection#tunnel2_phase1_lifetime_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2DhGroupNumbers">Tunnel2Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_dh_group_numbers VpnConnection#tunnel2_phase2_dh_group_numbers}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2EncryptionAlgorithms">Tunnel2Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_encryption_algorithms VpnConnection#tunnel2_phase2_encryption_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2IntegrityAlgorithms">Tunnel2Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_integrity_algorithms VpnConnection#tunnel2_phase2_integrity_algorithms}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2LifetimeSeconds">Tunnel2Phase2LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_lifetime_seconds VpnConnection#tunnel2_phase2_lifetime_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2PresharedKey">Tunnel2PresharedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_preshared_key VpnConnection#tunnel2_preshared_key}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyFuzzPercentage">Tunnel2RekeyFuzzPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_rekey_fuzz_percentage VpnConnection#tunnel2_rekey_fuzz_percentage}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyMarginTimeSeconds">Tunnel2RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_rekey_margin_time_seconds VpnConnection#tunnel2_rekey_margin_time_seconds}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2ReplayWindowSize">Tunnel2ReplayWindowSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_replay_window_size VpnConnection#tunnel2_replay_window_size}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2StartupAction">Tunnel2StartupAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_startup_action VpnConnection#tunnel2_startup_action}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelBandwidth">TunnelBandwidth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel_bandwidth VpnConnection#tunnel_bandwidth}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelInsideIpVersion">TunnelInsideIpVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel_inside_ip_version VpnConnection#tunnel_inside_ip_version}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnConcentratorId">VpnConcentratorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#vpn_concentrator_id VpnConnection#vpn_concentrator_id}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#vpn_gateway_id VpnConnection#vpn_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.customerGatewayId">CustomerGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#customer_gateway_id VpnConnection#customer_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#type VpnConnection#type}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.enableAcceleration">EnableAcceleration</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#enable_acceleration VpnConnection#enable_acceleration}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#id VpnConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv4NetworkCidr">LocalIpv4NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#local_ipv4_network_cidr VpnConnection#local_ipv4_network_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv6NetworkCidr">LocalIpv6NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#local_ipv6_network_cidr VpnConnection#local_ipv6_network_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.outsideIpAddressType">OutsideIpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#outside_ip_address_type VpnConnection#outside_ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.presharedKeyStorage">PresharedKeyStorage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#preshared_key_storage VpnConnection#preshared_key_storage}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv4NetworkCidr">RemoteIpv4NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#remote_ipv4_network_cidr VpnConnection#remote_ipv4_network_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv6NetworkCidr">RemoteIpv6NetworkCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#remote_ipv6_network_cidr VpnConnection#remote_ipv6_network_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.staticRoutesOnly">StaticRoutesOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#static_routes_only VpnConnection#static_routes_only}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tags VpnConnection#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tags_all VpnConnection#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#transit_gateway_id VpnConnection#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.transportTransitGatewayAttachmentId">TransportTransitGatewayAttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#transport_transit_gateway_attachment_id VpnConnection#transport_transit_gateway_attachment_id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutAction">Tunnel1DpdTimeoutAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_action VpnConnection#tunnel1_dpd_timeout_action}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutSeconds">Tunnel1DpdTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_seconds VpnConnection#tunnel1_dpd_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1EnableTunnelLifecycleControl">Tunnel1EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_enable_tunnel_lifecycle_control VpnConnection#tunnel1_enable_tunnel_lifecycle_control}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1IkeVersions">Tunnel1IkeVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_ike_versions VpnConnection#tunnel1_ike_versions}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideCidr">Tunnel1InsideCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_inside_cidr VpnConnection#tunnel1_inside_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideIpv6Cidr">Tunnel1InsideIpv6Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_inside_ipv6_cidr VpnConnection#tunnel1_inside_ipv6_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1LogOptions">Tunnel1LogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a></code> | tunnel1_log_options block. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1DhGroupNumbers">Tunnel1Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_dh_group_numbers VpnConnection#tunnel1_phase1_dh_group_numbers}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1EncryptionAlgorithms">Tunnel1Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_encryption_algorithms VpnConnection#tunnel1_phase1_encryption_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1IntegrityAlgorithms">Tunnel1Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_integrity_algorithms VpnConnection#tunnel1_phase1_integrity_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1LifetimeSeconds">Tunnel1Phase1LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_lifetime_seconds VpnConnection#tunnel1_phase1_lifetime_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2DhGroupNumbers">Tunnel1Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_dh_group_numbers VpnConnection#tunnel1_phase2_dh_group_numbers}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2EncryptionAlgorithms">Tunnel1Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_encryption_algorithms VpnConnection#tunnel1_phase2_encryption_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2IntegrityAlgorithms">Tunnel1Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_integrity_algorithms VpnConnection#tunnel1_phase2_integrity_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2LifetimeSeconds">Tunnel1Phase2LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_lifetime_seconds VpnConnection#tunnel1_phase2_lifetime_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1PresharedKey">Tunnel1PresharedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_preshared_key VpnConnection#tunnel1_preshared_key}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyFuzzPercentage">Tunnel1RekeyFuzzPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_rekey_fuzz_percentage VpnConnection#tunnel1_rekey_fuzz_percentage}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyMarginTimeSeconds">Tunnel1RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_rekey_margin_time_seconds VpnConnection#tunnel1_rekey_margin_time_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1ReplayWindowSize">Tunnel1ReplayWindowSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_replay_window_size VpnConnection#tunnel1_replay_window_size}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1StartupAction">Tunnel1StartupAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_startup_action VpnConnection#tunnel1_startup_action}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutAction">Tunnel2DpdTimeoutAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_action VpnConnection#tunnel2_dpd_timeout_action}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutSeconds">Tunnel2DpdTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_seconds VpnConnection#tunnel2_dpd_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2EnableTunnelLifecycleControl">Tunnel2EnableTunnelLifecycleControl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_enable_tunnel_lifecycle_control VpnConnection#tunnel2_enable_tunnel_lifecycle_control}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2IkeVersions">Tunnel2IkeVersions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_ike_versions VpnConnection#tunnel2_ike_versions}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideCidr">Tunnel2InsideCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_inside_cidr VpnConnection#tunnel2_inside_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideIpv6Cidr">Tunnel2InsideIpv6Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_inside_ipv6_cidr VpnConnection#tunnel2_inside_ipv6_cidr}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2LogOptions">Tunnel2LogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a></code> | tunnel2_log_options block. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1DhGroupNumbers">Tunnel2Phase1DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_dh_group_numbers VpnConnection#tunnel2_phase1_dh_group_numbers}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1EncryptionAlgorithms">Tunnel2Phase1EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_encryption_algorithms VpnConnection#tunnel2_phase1_encryption_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1IntegrityAlgorithms">Tunnel2Phase1IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_integrity_algorithms VpnConnection#tunnel2_phase1_integrity_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1LifetimeSeconds">Tunnel2Phase1LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_lifetime_seconds VpnConnection#tunnel2_phase1_lifetime_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2DhGroupNumbers">Tunnel2Phase2DhGroupNumbers</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_dh_group_numbers VpnConnection#tunnel2_phase2_dh_group_numbers}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2EncryptionAlgorithms">Tunnel2Phase2EncryptionAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_encryption_algorithms VpnConnection#tunnel2_phase2_encryption_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2IntegrityAlgorithms">Tunnel2Phase2IntegrityAlgorithms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_integrity_algorithms VpnConnection#tunnel2_phase2_integrity_algorithms}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2LifetimeSeconds">Tunnel2Phase2LifetimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_lifetime_seconds VpnConnection#tunnel2_phase2_lifetime_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2PresharedKey">Tunnel2PresharedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_preshared_key VpnConnection#tunnel2_preshared_key}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyFuzzPercentage">Tunnel2RekeyFuzzPercentage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_rekey_fuzz_percentage VpnConnection#tunnel2_rekey_fuzz_percentage}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyMarginTimeSeconds">Tunnel2RekeyMarginTimeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_rekey_margin_time_seconds VpnConnection#tunnel2_rekey_margin_time_seconds}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2ReplayWindowSize">Tunnel2ReplayWindowSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_replay_window_size VpnConnection#tunnel2_replay_window_size}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2StartupAction">Tunnel2StartupAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_startup_action VpnConnection#tunnel2_startup_action}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelBandwidth">TunnelBandwidth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel_bandwidth VpnConnection#tunnel_bandwidth}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelInsideIpVersion">TunnelInsideIpVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel_inside_ip_version VpnConnection#tunnel_inside_ip_version}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnConcentratorId">VpnConcentratorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#vpn_concentrator_id VpnConnection#vpn_concentrator_id}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnGatewayId">VpnGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#vpn_gateway_id VpnConnection#vpn_gateway_id}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -2774,7 +2774,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -2784,7 +2784,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -2794,7 +2794,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -2804,7 +2804,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -2814,7 +2814,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -2824,7 +2824,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -2834,7 +2834,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `CustomerGatewayId`<sup>Required</sup> <a name="CustomerGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.customerGatewayId"></a>
+##### `CustomerGatewayId`<sup>Required</sup> <a name="CustomerGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.customerGatewayId"></a>
 
 ```go
 CustomerGatewayId *string
@@ -2842,11 +2842,11 @@ CustomerGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#customer_gateway_id VpnConnection#customer_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#customer_gateway_id VpnConnection#customer_gateway_id}.
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.type"></a>
 
 ```go
 Type *string
@@ -2854,11 +2854,11 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#type VpnConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#type VpnConnection#type}.
 
 ---
 
-##### `EnableAcceleration`<sup>Optional</sup> <a name="EnableAcceleration" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.enableAcceleration"></a>
+##### `EnableAcceleration`<sup>Optional</sup> <a name="EnableAcceleration" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.enableAcceleration"></a>
 
 ```go
 EnableAcceleration interface{}
@@ -2866,11 +2866,11 @@ EnableAcceleration interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#enable_acceleration VpnConnection#enable_acceleration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#enable_acceleration VpnConnection#enable_acceleration}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.id"></a>
 
 ```go
 Id *string
@@ -2878,14 +2878,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#id VpnConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#id VpnConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `LocalIpv4NetworkCidr`<sup>Optional</sup> <a name="LocalIpv4NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv4NetworkCidr"></a>
+##### `LocalIpv4NetworkCidr`<sup>Optional</sup> <a name="LocalIpv4NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv4NetworkCidr"></a>
 
 ```go
 LocalIpv4NetworkCidr *string
@@ -2893,11 +2893,11 @@ LocalIpv4NetworkCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#local_ipv4_network_cidr VpnConnection#local_ipv4_network_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#local_ipv4_network_cidr VpnConnection#local_ipv4_network_cidr}.
 
 ---
 
-##### `LocalIpv6NetworkCidr`<sup>Optional</sup> <a name="LocalIpv6NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv6NetworkCidr"></a>
+##### `LocalIpv6NetworkCidr`<sup>Optional</sup> <a name="LocalIpv6NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.localIpv6NetworkCidr"></a>
 
 ```go
 LocalIpv6NetworkCidr *string
@@ -2905,11 +2905,11 @@ LocalIpv6NetworkCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#local_ipv6_network_cidr VpnConnection#local_ipv6_network_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#local_ipv6_network_cidr VpnConnection#local_ipv6_network_cidr}.
 
 ---
 
-##### `OutsideIpAddressType`<sup>Optional</sup> <a name="OutsideIpAddressType" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.outsideIpAddressType"></a>
+##### `OutsideIpAddressType`<sup>Optional</sup> <a name="OutsideIpAddressType" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.outsideIpAddressType"></a>
 
 ```go
 OutsideIpAddressType *string
@@ -2917,11 +2917,11 @@ OutsideIpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#outside_ip_address_type VpnConnection#outside_ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#outside_ip_address_type VpnConnection#outside_ip_address_type}.
 
 ---
 
-##### `PresharedKeyStorage`<sup>Optional</sup> <a name="PresharedKeyStorage" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.presharedKeyStorage"></a>
+##### `PresharedKeyStorage`<sup>Optional</sup> <a name="PresharedKeyStorage" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.presharedKeyStorage"></a>
 
 ```go
 PresharedKeyStorage *string
@@ -2929,11 +2929,11 @@ PresharedKeyStorage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#preshared_key_storage VpnConnection#preshared_key_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#preshared_key_storage VpnConnection#preshared_key_storage}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.region"></a>
 
 ```go
 Region *string
@@ -2943,11 +2943,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#region VpnConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#region VpnConnection#region}
 
 ---
 
-##### `RemoteIpv4NetworkCidr`<sup>Optional</sup> <a name="RemoteIpv4NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv4NetworkCidr"></a>
+##### `RemoteIpv4NetworkCidr`<sup>Optional</sup> <a name="RemoteIpv4NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv4NetworkCidr"></a>
 
 ```go
 RemoteIpv4NetworkCidr *string
@@ -2955,11 +2955,11 @@ RemoteIpv4NetworkCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#remote_ipv4_network_cidr VpnConnection#remote_ipv4_network_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#remote_ipv4_network_cidr VpnConnection#remote_ipv4_network_cidr}.
 
 ---
 
-##### `RemoteIpv6NetworkCidr`<sup>Optional</sup> <a name="RemoteIpv6NetworkCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv6NetworkCidr"></a>
+##### `RemoteIpv6NetworkCidr`<sup>Optional</sup> <a name="RemoteIpv6NetworkCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.remoteIpv6NetworkCidr"></a>
 
 ```go
 RemoteIpv6NetworkCidr *string
@@ -2967,11 +2967,11 @@ RemoteIpv6NetworkCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#remote_ipv6_network_cidr VpnConnection#remote_ipv6_network_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#remote_ipv6_network_cidr VpnConnection#remote_ipv6_network_cidr}.
 
 ---
 
-##### `StaticRoutesOnly`<sup>Optional</sup> <a name="StaticRoutesOnly" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.staticRoutesOnly"></a>
+##### `StaticRoutesOnly`<sup>Optional</sup> <a name="StaticRoutesOnly" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.staticRoutesOnly"></a>
 
 ```go
 StaticRoutesOnly interface{}
@@ -2979,11 +2979,11 @@ StaticRoutesOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#static_routes_only VpnConnection#static_routes_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#static_routes_only VpnConnection#static_routes_only}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -2991,11 +2991,11 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tags VpnConnection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tags VpnConnection#tags}.
 
 ---
 
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tagsAll"></a>
+##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tagsAll"></a>
 
 ```go
 TagsAll *map[string]*string
@@ -3003,11 +3003,11 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tags_all VpnConnection#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tags_all VpnConnection#tags_all}.
 
 ---
 
-##### `TransitGatewayId`<sup>Optional</sup> <a name="TransitGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.transitGatewayId"></a>
+##### `TransitGatewayId`<sup>Optional</sup> <a name="TransitGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.transitGatewayId"></a>
 
 ```go
 TransitGatewayId *string
@@ -3015,11 +3015,11 @@ TransitGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#transit_gateway_id VpnConnection#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#transit_gateway_id VpnConnection#transit_gateway_id}.
 
 ---
 
-##### `TransportTransitGatewayAttachmentId`<sup>Optional</sup> <a name="TransportTransitGatewayAttachmentId" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.transportTransitGatewayAttachmentId"></a>
+##### `TransportTransitGatewayAttachmentId`<sup>Optional</sup> <a name="TransportTransitGatewayAttachmentId" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.transportTransitGatewayAttachmentId"></a>
 
 ```go
 TransportTransitGatewayAttachmentId *string
@@ -3027,11 +3027,11 @@ TransportTransitGatewayAttachmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#transport_transit_gateway_attachment_id VpnConnection#transport_transit_gateway_attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#transport_transit_gateway_attachment_id VpnConnection#transport_transit_gateway_attachment_id}.
 
 ---
 
-##### `Tunnel1DpdTimeoutAction`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutAction" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutAction"></a>
+##### `Tunnel1DpdTimeoutAction`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutAction" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutAction"></a>
 
 ```go
 Tunnel1DpdTimeoutAction *string
@@ -3039,11 +3039,11 @@ Tunnel1DpdTimeoutAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_action VpnConnection#tunnel1_dpd_timeout_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_action VpnConnection#tunnel1_dpd_timeout_action}.
 
 ---
 
-##### `Tunnel1DpdTimeoutSeconds`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutSeconds"></a>
+##### `Tunnel1DpdTimeoutSeconds`<sup>Optional</sup> <a name="Tunnel1DpdTimeoutSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1DpdTimeoutSeconds"></a>
 
 ```go
 Tunnel1DpdTimeoutSeconds *f64
@@ -3051,11 +3051,11 @@ Tunnel1DpdTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_seconds VpnConnection#tunnel1_dpd_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_dpd_timeout_seconds VpnConnection#tunnel1_dpd_timeout_seconds}.
 
 ---
 
-##### `Tunnel1EnableTunnelLifecycleControl`<sup>Optional</sup> <a name="Tunnel1EnableTunnelLifecycleControl" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1EnableTunnelLifecycleControl"></a>
+##### `Tunnel1EnableTunnelLifecycleControl`<sup>Optional</sup> <a name="Tunnel1EnableTunnelLifecycleControl" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1EnableTunnelLifecycleControl"></a>
 
 ```go
 Tunnel1EnableTunnelLifecycleControl interface{}
@@ -3063,11 +3063,11 @@ Tunnel1EnableTunnelLifecycleControl interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_enable_tunnel_lifecycle_control VpnConnection#tunnel1_enable_tunnel_lifecycle_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_enable_tunnel_lifecycle_control VpnConnection#tunnel1_enable_tunnel_lifecycle_control}.
 
 ---
 
-##### `Tunnel1IkeVersions`<sup>Optional</sup> <a name="Tunnel1IkeVersions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1IkeVersions"></a>
+##### `Tunnel1IkeVersions`<sup>Optional</sup> <a name="Tunnel1IkeVersions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1IkeVersions"></a>
 
 ```go
 Tunnel1IkeVersions *[]*string
@@ -3075,11 +3075,11 @@ Tunnel1IkeVersions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_ike_versions VpnConnection#tunnel1_ike_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_ike_versions VpnConnection#tunnel1_ike_versions}.
 
 ---
 
-##### `Tunnel1InsideCidr`<sup>Optional</sup> <a name="Tunnel1InsideCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideCidr"></a>
+##### `Tunnel1InsideCidr`<sup>Optional</sup> <a name="Tunnel1InsideCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideCidr"></a>
 
 ```go
 Tunnel1InsideCidr *string
@@ -3087,11 +3087,11 @@ Tunnel1InsideCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_inside_cidr VpnConnection#tunnel1_inside_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_inside_cidr VpnConnection#tunnel1_inside_cidr}.
 
 ---
 
-##### `Tunnel1InsideIpv6Cidr`<sup>Optional</sup> <a name="Tunnel1InsideIpv6Cidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideIpv6Cidr"></a>
+##### `Tunnel1InsideIpv6Cidr`<sup>Optional</sup> <a name="Tunnel1InsideIpv6Cidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1InsideIpv6Cidr"></a>
 
 ```go
 Tunnel1InsideIpv6Cidr *string
@@ -3099,25 +3099,25 @@ Tunnel1InsideIpv6Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_inside_ipv6_cidr VpnConnection#tunnel1_inside_ipv6_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_inside_ipv6_cidr VpnConnection#tunnel1_inside_ipv6_cidr}.
 
 ---
 
-##### `Tunnel1LogOptions`<sup>Optional</sup> <a name="Tunnel1LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1LogOptions"></a>
+##### `Tunnel1LogOptions`<sup>Optional</sup> <a name="Tunnel1LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1LogOptions"></a>
 
 ```go
 Tunnel1LogOptions VpnConnectionTunnel1LogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
 
 tunnel1_log_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_log_options VpnConnection#tunnel1_log_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_log_options VpnConnection#tunnel1_log_options}
 
 ---
 
-##### `Tunnel1Phase1DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel1Phase1DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1DhGroupNumbers"></a>
+##### `Tunnel1Phase1DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel1Phase1DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1DhGroupNumbers"></a>
 
 ```go
 Tunnel1Phase1DhGroupNumbers *[]*f64
@@ -3125,11 +3125,11 @@ Tunnel1Phase1DhGroupNumbers *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_dh_group_numbers VpnConnection#tunnel1_phase1_dh_group_numbers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_dh_group_numbers VpnConnection#tunnel1_phase1_dh_group_numbers}.
 
 ---
 
-##### `Tunnel1Phase1EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase1EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1EncryptionAlgorithms"></a>
+##### `Tunnel1Phase1EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase1EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1EncryptionAlgorithms"></a>
 
 ```go
 Tunnel1Phase1EncryptionAlgorithms *[]*string
@@ -3137,11 +3137,11 @@ Tunnel1Phase1EncryptionAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_encryption_algorithms VpnConnection#tunnel1_phase1_encryption_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_encryption_algorithms VpnConnection#tunnel1_phase1_encryption_algorithms}.
 
 ---
 
-##### `Tunnel1Phase1IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase1IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1IntegrityAlgorithms"></a>
+##### `Tunnel1Phase1IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase1IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1IntegrityAlgorithms"></a>
 
 ```go
 Tunnel1Phase1IntegrityAlgorithms *[]*string
@@ -3149,11 +3149,11 @@ Tunnel1Phase1IntegrityAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_integrity_algorithms VpnConnection#tunnel1_phase1_integrity_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_integrity_algorithms VpnConnection#tunnel1_phase1_integrity_algorithms}.
 
 ---
 
-##### `Tunnel1Phase1LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel1Phase1LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1LifetimeSeconds"></a>
+##### `Tunnel1Phase1LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel1Phase1LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase1LifetimeSeconds"></a>
 
 ```go
 Tunnel1Phase1LifetimeSeconds *f64
@@ -3161,11 +3161,11 @@ Tunnel1Phase1LifetimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase1_lifetime_seconds VpnConnection#tunnel1_phase1_lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase1_lifetime_seconds VpnConnection#tunnel1_phase1_lifetime_seconds}.
 
 ---
 
-##### `Tunnel1Phase2DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel1Phase2DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2DhGroupNumbers"></a>
+##### `Tunnel1Phase2DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel1Phase2DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2DhGroupNumbers"></a>
 
 ```go
 Tunnel1Phase2DhGroupNumbers *[]*f64
@@ -3173,11 +3173,11 @@ Tunnel1Phase2DhGroupNumbers *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_dh_group_numbers VpnConnection#tunnel1_phase2_dh_group_numbers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_dh_group_numbers VpnConnection#tunnel1_phase2_dh_group_numbers}.
 
 ---
 
-##### `Tunnel1Phase2EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase2EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2EncryptionAlgorithms"></a>
+##### `Tunnel1Phase2EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase2EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2EncryptionAlgorithms"></a>
 
 ```go
 Tunnel1Phase2EncryptionAlgorithms *[]*string
@@ -3185,11 +3185,11 @@ Tunnel1Phase2EncryptionAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_encryption_algorithms VpnConnection#tunnel1_phase2_encryption_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_encryption_algorithms VpnConnection#tunnel1_phase2_encryption_algorithms}.
 
 ---
 
-##### `Tunnel1Phase2IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase2IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2IntegrityAlgorithms"></a>
+##### `Tunnel1Phase2IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel1Phase2IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2IntegrityAlgorithms"></a>
 
 ```go
 Tunnel1Phase2IntegrityAlgorithms *[]*string
@@ -3197,11 +3197,11 @@ Tunnel1Phase2IntegrityAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_integrity_algorithms VpnConnection#tunnel1_phase2_integrity_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_integrity_algorithms VpnConnection#tunnel1_phase2_integrity_algorithms}.
 
 ---
 
-##### `Tunnel1Phase2LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel1Phase2LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2LifetimeSeconds"></a>
+##### `Tunnel1Phase2LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel1Phase2LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1Phase2LifetimeSeconds"></a>
 
 ```go
 Tunnel1Phase2LifetimeSeconds *f64
@@ -3209,11 +3209,11 @@ Tunnel1Phase2LifetimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_phase2_lifetime_seconds VpnConnection#tunnel1_phase2_lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_phase2_lifetime_seconds VpnConnection#tunnel1_phase2_lifetime_seconds}.
 
 ---
 
-##### `Tunnel1PresharedKey`<sup>Optional</sup> <a name="Tunnel1PresharedKey" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1PresharedKey"></a>
+##### `Tunnel1PresharedKey`<sup>Optional</sup> <a name="Tunnel1PresharedKey" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1PresharedKey"></a>
 
 ```go
 Tunnel1PresharedKey *string
@@ -3221,11 +3221,11 @@ Tunnel1PresharedKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_preshared_key VpnConnection#tunnel1_preshared_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_preshared_key VpnConnection#tunnel1_preshared_key}.
 
 ---
 
-##### `Tunnel1RekeyFuzzPercentage`<sup>Optional</sup> <a name="Tunnel1RekeyFuzzPercentage" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyFuzzPercentage"></a>
+##### `Tunnel1RekeyFuzzPercentage`<sup>Optional</sup> <a name="Tunnel1RekeyFuzzPercentage" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyFuzzPercentage"></a>
 
 ```go
 Tunnel1RekeyFuzzPercentage *f64
@@ -3233,11 +3233,11 @@ Tunnel1RekeyFuzzPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_rekey_fuzz_percentage VpnConnection#tunnel1_rekey_fuzz_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_rekey_fuzz_percentage VpnConnection#tunnel1_rekey_fuzz_percentage}.
 
 ---
 
-##### `Tunnel1RekeyMarginTimeSeconds`<sup>Optional</sup> <a name="Tunnel1RekeyMarginTimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyMarginTimeSeconds"></a>
+##### `Tunnel1RekeyMarginTimeSeconds`<sup>Optional</sup> <a name="Tunnel1RekeyMarginTimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1RekeyMarginTimeSeconds"></a>
 
 ```go
 Tunnel1RekeyMarginTimeSeconds *f64
@@ -3245,11 +3245,11 @@ Tunnel1RekeyMarginTimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_rekey_margin_time_seconds VpnConnection#tunnel1_rekey_margin_time_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_rekey_margin_time_seconds VpnConnection#tunnel1_rekey_margin_time_seconds}.
 
 ---
 
-##### `Tunnel1ReplayWindowSize`<sup>Optional</sup> <a name="Tunnel1ReplayWindowSize" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1ReplayWindowSize"></a>
+##### `Tunnel1ReplayWindowSize`<sup>Optional</sup> <a name="Tunnel1ReplayWindowSize" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1ReplayWindowSize"></a>
 
 ```go
 Tunnel1ReplayWindowSize *f64
@@ -3257,11 +3257,11 @@ Tunnel1ReplayWindowSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_replay_window_size VpnConnection#tunnel1_replay_window_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_replay_window_size VpnConnection#tunnel1_replay_window_size}.
 
 ---
 
-##### `Tunnel1StartupAction`<sup>Optional</sup> <a name="Tunnel1StartupAction" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1StartupAction"></a>
+##### `Tunnel1StartupAction`<sup>Optional</sup> <a name="Tunnel1StartupAction" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel1StartupAction"></a>
 
 ```go
 Tunnel1StartupAction *string
@@ -3269,11 +3269,11 @@ Tunnel1StartupAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel1_startup_action VpnConnection#tunnel1_startup_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel1_startup_action VpnConnection#tunnel1_startup_action}.
 
 ---
 
-##### `Tunnel2DpdTimeoutAction`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutAction" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutAction"></a>
+##### `Tunnel2DpdTimeoutAction`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutAction" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutAction"></a>
 
 ```go
 Tunnel2DpdTimeoutAction *string
@@ -3281,11 +3281,11 @@ Tunnel2DpdTimeoutAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_action VpnConnection#tunnel2_dpd_timeout_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_action VpnConnection#tunnel2_dpd_timeout_action}.
 
 ---
 
-##### `Tunnel2DpdTimeoutSeconds`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutSeconds"></a>
+##### `Tunnel2DpdTimeoutSeconds`<sup>Optional</sup> <a name="Tunnel2DpdTimeoutSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2DpdTimeoutSeconds"></a>
 
 ```go
 Tunnel2DpdTimeoutSeconds *f64
@@ -3293,11 +3293,11 @@ Tunnel2DpdTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_seconds VpnConnection#tunnel2_dpd_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_dpd_timeout_seconds VpnConnection#tunnel2_dpd_timeout_seconds}.
 
 ---
 
-##### `Tunnel2EnableTunnelLifecycleControl`<sup>Optional</sup> <a name="Tunnel2EnableTunnelLifecycleControl" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2EnableTunnelLifecycleControl"></a>
+##### `Tunnel2EnableTunnelLifecycleControl`<sup>Optional</sup> <a name="Tunnel2EnableTunnelLifecycleControl" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2EnableTunnelLifecycleControl"></a>
 
 ```go
 Tunnel2EnableTunnelLifecycleControl interface{}
@@ -3305,11 +3305,11 @@ Tunnel2EnableTunnelLifecycleControl interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_enable_tunnel_lifecycle_control VpnConnection#tunnel2_enable_tunnel_lifecycle_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_enable_tunnel_lifecycle_control VpnConnection#tunnel2_enable_tunnel_lifecycle_control}.
 
 ---
 
-##### `Tunnel2IkeVersions`<sup>Optional</sup> <a name="Tunnel2IkeVersions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2IkeVersions"></a>
+##### `Tunnel2IkeVersions`<sup>Optional</sup> <a name="Tunnel2IkeVersions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2IkeVersions"></a>
 
 ```go
 Tunnel2IkeVersions *[]*string
@@ -3317,11 +3317,11 @@ Tunnel2IkeVersions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_ike_versions VpnConnection#tunnel2_ike_versions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_ike_versions VpnConnection#tunnel2_ike_versions}.
 
 ---
 
-##### `Tunnel2InsideCidr`<sup>Optional</sup> <a name="Tunnel2InsideCidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideCidr"></a>
+##### `Tunnel2InsideCidr`<sup>Optional</sup> <a name="Tunnel2InsideCidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideCidr"></a>
 
 ```go
 Tunnel2InsideCidr *string
@@ -3329,11 +3329,11 @@ Tunnel2InsideCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_inside_cidr VpnConnection#tunnel2_inside_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_inside_cidr VpnConnection#tunnel2_inside_cidr}.
 
 ---
 
-##### `Tunnel2InsideIpv6Cidr`<sup>Optional</sup> <a name="Tunnel2InsideIpv6Cidr" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideIpv6Cidr"></a>
+##### `Tunnel2InsideIpv6Cidr`<sup>Optional</sup> <a name="Tunnel2InsideIpv6Cidr" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2InsideIpv6Cidr"></a>
 
 ```go
 Tunnel2InsideIpv6Cidr *string
@@ -3341,25 +3341,25 @@ Tunnel2InsideIpv6Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_inside_ipv6_cidr VpnConnection#tunnel2_inside_ipv6_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_inside_ipv6_cidr VpnConnection#tunnel2_inside_ipv6_cidr}.
 
 ---
 
-##### `Tunnel2LogOptions`<sup>Optional</sup> <a name="Tunnel2LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2LogOptions"></a>
+##### `Tunnel2LogOptions`<sup>Optional</sup> <a name="Tunnel2LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2LogOptions"></a>
 
 ```go
 Tunnel2LogOptions VpnConnectionTunnel2LogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
 
 tunnel2_log_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_log_options VpnConnection#tunnel2_log_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_log_options VpnConnection#tunnel2_log_options}
 
 ---
 
-##### `Tunnel2Phase1DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel2Phase1DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1DhGroupNumbers"></a>
+##### `Tunnel2Phase1DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel2Phase1DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1DhGroupNumbers"></a>
 
 ```go
 Tunnel2Phase1DhGroupNumbers *[]*f64
@@ -3367,11 +3367,11 @@ Tunnel2Phase1DhGroupNumbers *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_dh_group_numbers VpnConnection#tunnel2_phase1_dh_group_numbers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_dh_group_numbers VpnConnection#tunnel2_phase1_dh_group_numbers}.
 
 ---
 
-##### `Tunnel2Phase1EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase1EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1EncryptionAlgorithms"></a>
+##### `Tunnel2Phase1EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase1EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1EncryptionAlgorithms"></a>
 
 ```go
 Tunnel2Phase1EncryptionAlgorithms *[]*string
@@ -3379,11 +3379,11 @@ Tunnel2Phase1EncryptionAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_encryption_algorithms VpnConnection#tunnel2_phase1_encryption_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_encryption_algorithms VpnConnection#tunnel2_phase1_encryption_algorithms}.
 
 ---
 
-##### `Tunnel2Phase1IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase1IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1IntegrityAlgorithms"></a>
+##### `Tunnel2Phase1IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase1IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1IntegrityAlgorithms"></a>
 
 ```go
 Tunnel2Phase1IntegrityAlgorithms *[]*string
@@ -3391,11 +3391,11 @@ Tunnel2Phase1IntegrityAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_integrity_algorithms VpnConnection#tunnel2_phase1_integrity_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_integrity_algorithms VpnConnection#tunnel2_phase1_integrity_algorithms}.
 
 ---
 
-##### `Tunnel2Phase1LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel2Phase1LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1LifetimeSeconds"></a>
+##### `Tunnel2Phase1LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel2Phase1LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase1LifetimeSeconds"></a>
 
 ```go
 Tunnel2Phase1LifetimeSeconds *f64
@@ -3403,11 +3403,11 @@ Tunnel2Phase1LifetimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase1_lifetime_seconds VpnConnection#tunnel2_phase1_lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase1_lifetime_seconds VpnConnection#tunnel2_phase1_lifetime_seconds}.
 
 ---
 
-##### `Tunnel2Phase2DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel2Phase2DhGroupNumbers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2DhGroupNumbers"></a>
+##### `Tunnel2Phase2DhGroupNumbers`<sup>Optional</sup> <a name="Tunnel2Phase2DhGroupNumbers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2DhGroupNumbers"></a>
 
 ```go
 Tunnel2Phase2DhGroupNumbers *[]*f64
@@ -3415,11 +3415,11 @@ Tunnel2Phase2DhGroupNumbers *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_dh_group_numbers VpnConnection#tunnel2_phase2_dh_group_numbers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_dh_group_numbers VpnConnection#tunnel2_phase2_dh_group_numbers}.
 
 ---
 
-##### `Tunnel2Phase2EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase2EncryptionAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2EncryptionAlgorithms"></a>
+##### `Tunnel2Phase2EncryptionAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase2EncryptionAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2EncryptionAlgorithms"></a>
 
 ```go
 Tunnel2Phase2EncryptionAlgorithms *[]*string
@@ -3427,11 +3427,11 @@ Tunnel2Phase2EncryptionAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_encryption_algorithms VpnConnection#tunnel2_phase2_encryption_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_encryption_algorithms VpnConnection#tunnel2_phase2_encryption_algorithms}.
 
 ---
 
-##### `Tunnel2Phase2IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase2IntegrityAlgorithms" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2IntegrityAlgorithms"></a>
+##### `Tunnel2Phase2IntegrityAlgorithms`<sup>Optional</sup> <a name="Tunnel2Phase2IntegrityAlgorithms" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2IntegrityAlgorithms"></a>
 
 ```go
 Tunnel2Phase2IntegrityAlgorithms *[]*string
@@ -3439,11 +3439,11 @@ Tunnel2Phase2IntegrityAlgorithms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_integrity_algorithms VpnConnection#tunnel2_phase2_integrity_algorithms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_integrity_algorithms VpnConnection#tunnel2_phase2_integrity_algorithms}.
 
 ---
 
-##### `Tunnel2Phase2LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel2Phase2LifetimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2LifetimeSeconds"></a>
+##### `Tunnel2Phase2LifetimeSeconds`<sup>Optional</sup> <a name="Tunnel2Phase2LifetimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2Phase2LifetimeSeconds"></a>
 
 ```go
 Tunnel2Phase2LifetimeSeconds *f64
@@ -3451,11 +3451,11 @@ Tunnel2Phase2LifetimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_phase2_lifetime_seconds VpnConnection#tunnel2_phase2_lifetime_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_phase2_lifetime_seconds VpnConnection#tunnel2_phase2_lifetime_seconds}.
 
 ---
 
-##### `Tunnel2PresharedKey`<sup>Optional</sup> <a name="Tunnel2PresharedKey" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2PresharedKey"></a>
+##### `Tunnel2PresharedKey`<sup>Optional</sup> <a name="Tunnel2PresharedKey" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2PresharedKey"></a>
 
 ```go
 Tunnel2PresharedKey *string
@@ -3463,11 +3463,11 @@ Tunnel2PresharedKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_preshared_key VpnConnection#tunnel2_preshared_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_preshared_key VpnConnection#tunnel2_preshared_key}.
 
 ---
 
-##### `Tunnel2RekeyFuzzPercentage`<sup>Optional</sup> <a name="Tunnel2RekeyFuzzPercentage" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyFuzzPercentage"></a>
+##### `Tunnel2RekeyFuzzPercentage`<sup>Optional</sup> <a name="Tunnel2RekeyFuzzPercentage" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyFuzzPercentage"></a>
 
 ```go
 Tunnel2RekeyFuzzPercentage *f64
@@ -3475,11 +3475,11 @@ Tunnel2RekeyFuzzPercentage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_rekey_fuzz_percentage VpnConnection#tunnel2_rekey_fuzz_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_rekey_fuzz_percentage VpnConnection#tunnel2_rekey_fuzz_percentage}.
 
 ---
 
-##### `Tunnel2RekeyMarginTimeSeconds`<sup>Optional</sup> <a name="Tunnel2RekeyMarginTimeSeconds" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyMarginTimeSeconds"></a>
+##### `Tunnel2RekeyMarginTimeSeconds`<sup>Optional</sup> <a name="Tunnel2RekeyMarginTimeSeconds" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2RekeyMarginTimeSeconds"></a>
 
 ```go
 Tunnel2RekeyMarginTimeSeconds *f64
@@ -3487,11 +3487,11 @@ Tunnel2RekeyMarginTimeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_rekey_margin_time_seconds VpnConnection#tunnel2_rekey_margin_time_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_rekey_margin_time_seconds VpnConnection#tunnel2_rekey_margin_time_seconds}.
 
 ---
 
-##### `Tunnel2ReplayWindowSize`<sup>Optional</sup> <a name="Tunnel2ReplayWindowSize" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2ReplayWindowSize"></a>
+##### `Tunnel2ReplayWindowSize`<sup>Optional</sup> <a name="Tunnel2ReplayWindowSize" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2ReplayWindowSize"></a>
 
 ```go
 Tunnel2ReplayWindowSize *f64
@@ -3499,11 +3499,11 @@ Tunnel2ReplayWindowSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_replay_window_size VpnConnection#tunnel2_replay_window_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_replay_window_size VpnConnection#tunnel2_replay_window_size}.
 
 ---
 
-##### `Tunnel2StartupAction`<sup>Optional</sup> <a name="Tunnel2StartupAction" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2StartupAction"></a>
+##### `Tunnel2StartupAction`<sup>Optional</sup> <a name="Tunnel2StartupAction" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnel2StartupAction"></a>
 
 ```go
 Tunnel2StartupAction *string
@@ -3511,11 +3511,11 @@ Tunnel2StartupAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel2_startup_action VpnConnection#tunnel2_startup_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel2_startup_action VpnConnection#tunnel2_startup_action}.
 
 ---
 
-##### `TunnelBandwidth`<sup>Optional</sup> <a name="TunnelBandwidth" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelBandwidth"></a>
+##### `TunnelBandwidth`<sup>Optional</sup> <a name="TunnelBandwidth" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelBandwidth"></a>
 
 ```go
 TunnelBandwidth *string
@@ -3523,11 +3523,11 @@ TunnelBandwidth *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel_bandwidth VpnConnection#tunnel_bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel_bandwidth VpnConnection#tunnel_bandwidth}.
 
 ---
 
-##### `TunnelInsideIpVersion`<sup>Optional</sup> <a name="TunnelInsideIpVersion" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelInsideIpVersion"></a>
+##### `TunnelInsideIpVersion`<sup>Optional</sup> <a name="TunnelInsideIpVersion" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.tunnelInsideIpVersion"></a>
 
 ```go
 TunnelInsideIpVersion *string
@@ -3535,11 +3535,11 @@ TunnelInsideIpVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#tunnel_inside_ip_version VpnConnection#tunnel_inside_ip_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#tunnel_inside_ip_version VpnConnection#tunnel_inside_ip_version}.
 
 ---
 
-##### `VpnConcentratorId`<sup>Optional</sup> <a name="VpnConcentratorId" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnConcentratorId"></a>
+##### `VpnConcentratorId`<sup>Optional</sup> <a name="VpnConcentratorId" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnConcentratorId"></a>
 
 ```go
 VpnConcentratorId *string
@@ -3547,11 +3547,11 @@ VpnConcentratorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#vpn_concentrator_id VpnConnection#vpn_concentrator_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#vpn_concentrator_id VpnConnection#vpn_concentrator_id}.
 
 ---
 
-##### `VpnGatewayId`<sup>Optional</sup> <a name="VpnGatewayId" id="@cdktf/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnGatewayId"></a>
+##### `VpnGatewayId`<sup>Optional</sup> <a name="VpnGatewayId" id="@cdktn/provider-aws.vpnConnection.VpnConnectionConfig.property.vpnGatewayId"></a>
 
 ```go
 VpnGatewayId *string
@@ -3559,16 +3559,16 @@ VpnGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#vpn_gateway_id VpnConnection#vpn_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#vpn_gateway_id VpnConnection#vpn_gateway_id}.
 
 ---
 
-### VpnConnectionRoutes <a name="VpnConnectionRoutes" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes"></a>
+### VpnConnectionRoutes <a name="VpnConnectionRoutes" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutes"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionRoutes {
 
@@ -3576,15 +3576,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 ```
 
 
-### VpnConnectionTunnel1LogOptions <a name="VpnConnectionTunnel1LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions"></a>
+### VpnConnectionTunnel1LogOptions <a name="VpnConnectionTunnel1LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel1LogOptions {
-	CloudwatchLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions,
+	CloudwatchLogOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions,
 }
 ```
 
@@ -3592,30 +3592,30 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a></code> | cloudwatch_log_options block. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a></code> | cloudwatch_log_options block. |
 
 ---
 
-##### `CloudwatchLogOptions`<sup>Optional</sup> <a name="CloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.property.cloudwatchLogOptions"></a>
+##### `CloudwatchLogOptions`<sup>Optional</sup> <a name="CloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions.property.cloudwatchLogOptions"></a>
 
 ```go
 CloudwatchLogOptions VpnConnectionTunnel1LogOptionsCloudwatchLogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
 
 cloudwatch_log_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#cloudwatch_log_options VpnConnection#cloudwatch_log_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#cloudwatch_log_options VpnConnection#cloudwatch_log_options}
 
 ---
 
-### VpnConnectionTunnel1LogOptionsCloudwatchLogOptions <a name="VpnConnectionTunnel1LogOptionsCloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions"></a>
+### VpnConnectionTunnel1LogOptionsCloudwatchLogOptions <a name="VpnConnectionTunnel1LogOptionsCloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions {
 	BgpLogEnabled: interface{},
@@ -3631,16 +3631,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}. |
 
 ---
 
-##### `BgpLogEnabled`<sup>Optional</sup> <a name="BgpLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogEnabled"></a>
+##### `BgpLogEnabled`<sup>Optional</sup> <a name="BgpLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogEnabled"></a>
 
 ```go
 BgpLogEnabled interface{}
@@ -3648,11 +3648,11 @@ BgpLogEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}.
 
 ---
 
-##### `BgpLogGroupArn`<sup>Optional</sup> <a name="BgpLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn"></a>
+##### `BgpLogGroupArn`<sup>Optional</sup> <a name="BgpLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn"></a>
 
 ```go
 BgpLogGroupArn *string
@@ -3660,11 +3660,11 @@ BgpLogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}.
 
 ---
 
-##### `BgpLogOutputFormat`<sup>Optional</sup> <a name="BgpLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat"></a>
+##### `BgpLogOutputFormat`<sup>Optional</sup> <a name="BgpLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat"></a>
 
 ```go
 BgpLogOutputFormat *string
@@ -3672,11 +3672,11 @@ BgpLogOutputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}.
 
 ---
 
-##### `LogEnabled`<sup>Optional</sup> <a name="LogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logEnabled"></a>
+##### `LogEnabled`<sup>Optional</sup> <a name="LogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logEnabled"></a>
 
 ```go
 LogEnabled interface{}
@@ -3684,11 +3684,11 @@ LogEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}.
 
 ---
 
-##### `LogGroupArn`<sup>Optional</sup> <a name="LogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logGroupArn"></a>
+##### `LogGroupArn`<sup>Optional</sup> <a name="LogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logGroupArn"></a>
 
 ```go
 LogGroupArn *string
@@ -3696,11 +3696,11 @@ LogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}.
 
 ---
 
-##### `LogOutputFormat`<sup>Optional</sup> <a name="LogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logOutputFormat"></a>
+##### `LogOutputFormat`<sup>Optional</sup> <a name="LogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions.property.logOutputFormat"></a>
 
 ```go
 LogOutputFormat *string
@@ -3708,19 +3708,19 @@ LogOutputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}.
 
 ---
 
-### VpnConnectionTunnel2LogOptions <a name="VpnConnectionTunnel2LogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions"></a>
+### VpnConnectionTunnel2LogOptions <a name="VpnConnectionTunnel2LogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel2LogOptions {
-	CloudwatchLogOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions,
+	CloudwatchLogOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions,
 }
 ```
 
@@ -3728,30 +3728,30 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a></code> | cloudwatch_log_options block. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a></code> | cloudwatch_log_options block. |
 
 ---
 
-##### `CloudwatchLogOptions`<sup>Optional</sup> <a name="CloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.property.cloudwatchLogOptions"></a>
+##### `CloudwatchLogOptions`<sup>Optional</sup> <a name="CloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions.property.cloudwatchLogOptions"></a>
 
 ```go
 CloudwatchLogOptions VpnConnectionTunnel2LogOptionsCloudwatchLogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
 
 cloudwatch_log_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#cloudwatch_log_options VpnConnection#cloudwatch_log_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#cloudwatch_log_options VpnConnection#cloudwatch_log_options}
 
 ---
 
-### VpnConnectionTunnel2LogOptionsCloudwatchLogOptions <a name="VpnConnectionTunnel2LogOptionsCloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions"></a>
+### VpnConnectionTunnel2LogOptionsCloudwatchLogOptions <a name="VpnConnectionTunnel2LogOptionsCloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions {
 	BgpLogEnabled: interface{},
@@ -3767,16 +3767,16 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}. |
 
 ---
 
-##### `BgpLogEnabled`<sup>Optional</sup> <a name="BgpLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogEnabled"></a>
+##### `BgpLogEnabled`<sup>Optional</sup> <a name="BgpLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogEnabled"></a>
 
 ```go
 BgpLogEnabled interface{}
@@ -3784,11 +3784,11 @@ BgpLogEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_enabled VpnConnection#bgp_log_enabled}.
 
 ---
 
-##### `BgpLogGroupArn`<sup>Optional</sup> <a name="BgpLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn"></a>
+##### `BgpLogGroupArn`<sup>Optional</sup> <a name="BgpLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogGroupArn"></a>
 
 ```go
 BgpLogGroupArn *string
@@ -3796,11 +3796,11 @@ BgpLogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_group_arn VpnConnection#bgp_log_group_arn}.
 
 ---
 
-##### `BgpLogOutputFormat`<sup>Optional</sup> <a name="BgpLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat"></a>
+##### `BgpLogOutputFormat`<sup>Optional</sup> <a name="BgpLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.bgpLogOutputFormat"></a>
 
 ```go
 BgpLogOutputFormat *string
@@ -3808,11 +3808,11 @@ BgpLogOutputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#bgp_log_output_format VpnConnection#bgp_log_output_format}.
 
 ---
 
-##### `LogEnabled`<sup>Optional</sup> <a name="LogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logEnabled"></a>
+##### `LogEnabled`<sup>Optional</sup> <a name="LogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logEnabled"></a>
 
 ```go
 LogEnabled interface{}
@@ -3820,11 +3820,11 @@ LogEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_enabled VpnConnection#log_enabled}.
 
 ---
 
-##### `LogGroupArn`<sup>Optional</sup> <a name="LogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logGroupArn"></a>
+##### `LogGroupArn`<sup>Optional</sup> <a name="LogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logGroupArn"></a>
 
 ```go
 LogGroupArn *string
@@ -3832,11 +3832,11 @@ LogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_group_arn VpnConnection#log_group_arn}.
 
 ---
 
-##### `LogOutputFormat`<sup>Optional</sup> <a name="LogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logOutputFormat"></a>
+##### `LogOutputFormat`<sup>Optional</sup> <a name="LogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions.property.logOutputFormat"></a>
 
 ```go
 LogOutputFormat *string
@@ -3844,16 +3844,16 @@ LogOutputFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpn_connection#log_output_format VpnConnection#log_output_format}.
 
 ---
 
-### VpnConnectionVgwTelemetry <a name="VpnConnectionVgwTelemetry" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry"></a>
+### VpnConnectionVgwTelemetry <a name="VpnConnectionVgwTelemetry" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetry"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 &vpnconnection.VpnConnectionVgwTelemetry {
 
@@ -3863,25 +3863,25 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### VpnConnectionRoutesList <a name="VpnConnectionRoutesList" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList"></a>
+### VpnConnectionRoutesList <a name="VpnConnectionRoutesList" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnConnectionRoutesList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -3889,7 +3889,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -3897,7 +3897,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -3909,15 +3909,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -3927,19 +3927,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3947,13 +3947,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.toString"></a>
 
 ```go
 func ToString() *string
@@ -3963,13 +3963,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.get"></a>
 
 ```go
 func Get(index *f64) VpnConnectionRoutesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -3982,12 +3982,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4001,7 +4001,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4012,26 +4012,26 @@ func Fqn() *string
 ---
 
 
-### VpnConnectionRoutesOutputReference <a name="VpnConnectionRoutesOutputReference" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference"></a>
+### VpnConnectionRoutesOutputReference <a name="VpnConnectionRoutesOutputReference" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnConnectionRoutesOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -4039,7 +4039,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4047,7 +4047,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -4055,7 +4055,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -4067,149 +4067,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4217,13 +4217,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -4238,16 +4238,16 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.destinationCidrBlock">DestinationCidrBlock</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.source">Source</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes">VpnConnectionRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.destinationCidrBlock">DestinationCidrBlock</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.source">Source</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutes">VpnConnectionRoutes</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4261,7 +4261,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4271,7 +4271,7 @@ func Fqn() *string
 
 ---
 
-##### `DestinationCidrBlock`<sup>Required</sup> <a name="DestinationCidrBlock" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.destinationCidrBlock"></a>
+##### `DestinationCidrBlock`<sup>Required</sup> <a name="DestinationCidrBlock" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.destinationCidrBlock"></a>
 
 ```go
 func DestinationCidrBlock() *string
@@ -4281,7 +4281,7 @@ func DestinationCidrBlock() *string
 
 ---
 
-##### `Source`<sup>Required</sup> <a name="Source" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.source"></a>
+##### `Source`<sup>Required</sup> <a name="Source" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.source"></a>
 
 ```go
 func Source() *string
@@ -4291,7 +4291,7 @@ func Source() *string
 
 ---
 
-##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.state"></a>
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.state"></a>
 
 ```go
 func State() *string
@@ -4301,35 +4301,35 @@ func State() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() VpnConnectionRoutes
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes">VpnConnectionRoutes</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionRoutes">VpnConnectionRoutes</a>
 
 ---
 
 
-### VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference <a name="VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference"></a>
+### VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference <a name="VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -4337,7 +4337,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4349,155 +4349,155 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled">ResetBgpLogEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn">ResetBgpLogGroupArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat">ResetBgpLogOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled">ResetLogEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn">ResetLogGroupArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat">ResetLogOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled">ResetBgpLogEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn">ResetBgpLogGroupArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat">ResetBgpLogOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled">ResetLogEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn">ResetLogGroupArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat">ResetLogOutputFormat</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4505,13 +4505,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -4521,37 +4521,37 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetBgpLogEnabled` <a name="ResetBgpLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled"></a>
+##### `ResetBgpLogEnabled` <a name="ResetBgpLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled"></a>
 
 ```go
 func ResetBgpLogEnabled()
 ```
 
-##### `ResetBgpLogGroupArn` <a name="ResetBgpLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn"></a>
+##### `ResetBgpLogGroupArn` <a name="ResetBgpLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn"></a>
 
 ```go
 func ResetBgpLogGroupArn()
 ```
 
-##### `ResetBgpLogOutputFormat` <a name="ResetBgpLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat"></a>
+##### `ResetBgpLogOutputFormat` <a name="ResetBgpLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat"></a>
 
 ```go
 func ResetBgpLogOutputFormat()
 ```
 
-##### `ResetLogEnabled` <a name="ResetLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled"></a>
+##### `ResetLogEnabled` <a name="ResetLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled"></a>
 
 ```go
 func ResetLogEnabled()
 ```
 
-##### `ResetLogGroupArn` <a name="ResetLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn"></a>
+##### `ResetLogGroupArn` <a name="ResetLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn"></a>
 
 ```go
 func ResetLogGroupArn()
 ```
 
-##### `ResetLogOutputFormat` <a name="ResetLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat"></a>
+##### `ResetLogOutputFormat` <a name="ResetLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat"></a>
 
 ```go
 func ResetLogOutputFormat()
@@ -4562,25 +4562,25 @@ func ResetLogOutputFormat()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput">BgpLogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput">BgpLogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput">BgpLogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput">LogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput">LogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput">LogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput">BgpLogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput">BgpLogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput">BgpLogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput">LogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput">LogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput">LogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4594,7 +4594,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4604,7 +4604,7 @@ func Fqn() *string
 
 ---
 
-##### `BgpLogEnabledInput`<sup>Optional</sup> <a name="BgpLogEnabledInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput"></a>
+##### `BgpLogEnabledInput`<sup>Optional</sup> <a name="BgpLogEnabledInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput"></a>
 
 ```go
 func BgpLogEnabledInput() interface{}
@@ -4614,7 +4614,7 @@ func BgpLogEnabledInput() interface{}
 
 ---
 
-##### `BgpLogGroupArnInput`<sup>Optional</sup> <a name="BgpLogGroupArnInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput"></a>
+##### `BgpLogGroupArnInput`<sup>Optional</sup> <a name="BgpLogGroupArnInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput"></a>
 
 ```go
 func BgpLogGroupArnInput() *string
@@ -4624,7 +4624,7 @@ func BgpLogGroupArnInput() *string
 
 ---
 
-##### `BgpLogOutputFormatInput`<sup>Optional</sup> <a name="BgpLogOutputFormatInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput"></a>
+##### `BgpLogOutputFormatInput`<sup>Optional</sup> <a name="BgpLogOutputFormatInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput"></a>
 
 ```go
 func BgpLogOutputFormatInput() *string
@@ -4634,7 +4634,7 @@ func BgpLogOutputFormatInput() *string
 
 ---
 
-##### `LogEnabledInput`<sup>Optional</sup> <a name="LogEnabledInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput"></a>
+##### `LogEnabledInput`<sup>Optional</sup> <a name="LogEnabledInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput"></a>
 
 ```go
 func LogEnabledInput() interface{}
@@ -4644,7 +4644,7 @@ func LogEnabledInput() interface{}
 
 ---
 
-##### `LogGroupArnInput`<sup>Optional</sup> <a name="LogGroupArnInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput"></a>
+##### `LogGroupArnInput`<sup>Optional</sup> <a name="LogGroupArnInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput"></a>
 
 ```go
 func LogGroupArnInput() *string
@@ -4654,7 +4654,7 @@ func LogGroupArnInput() *string
 
 ---
 
-##### `LogOutputFormatInput`<sup>Optional</sup> <a name="LogOutputFormatInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput"></a>
+##### `LogOutputFormatInput`<sup>Optional</sup> <a name="LogOutputFormatInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput"></a>
 
 ```go
 func LogOutputFormatInput() *string
@@ -4664,7 +4664,7 @@ func LogOutputFormatInput() *string
 
 ---
 
-##### `BgpLogEnabled`<sup>Required</sup> <a name="BgpLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled"></a>
+##### `BgpLogEnabled`<sup>Required</sup> <a name="BgpLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled"></a>
 
 ```go
 func BgpLogEnabled() interface{}
@@ -4674,7 +4674,7 @@ func BgpLogEnabled() interface{}
 
 ---
 
-##### `BgpLogGroupArn`<sup>Required</sup> <a name="BgpLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn"></a>
+##### `BgpLogGroupArn`<sup>Required</sup> <a name="BgpLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn"></a>
 
 ```go
 func BgpLogGroupArn() *string
@@ -4684,7 +4684,7 @@ func BgpLogGroupArn() *string
 
 ---
 
-##### `BgpLogOutputFormat`<sup>Required</sup> <a name="BgpLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat"></a>
+##### `BgpLogOutputFormat`<sup>Required</sup> <a name="BgpLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat"></a>
 
 ```go
 func BgpLogOutputFormat() *string
@@ -4694,7 +4694,7 @@ func BgpLogOutputFormat() *string
 
 ---
 
-##### `LogEnabled`<sup>Required</sup> <a name="LogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled"></a>
+##### `LogEnabled`<sup>Required</sup> <a name="LogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled"></a>
 
 ```go
 func LogEnabled() interface{}
@@ -4704,7 +4704,7 @@ func LogEnabled() interface{}
 
 ---
 
-##### `LogGroupArn`<sup>Required</sup> <a name="LogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn"></a>
+##### `LogGroupArn`<sup>Required</sup> <a name="LogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn"></a>
 
 ```go
 func LogGroupArn() *string
@@ -4714,7 +4714,7 @@ func LogGroupArn() *string
 
 ---
 
-##### `LogOutputFormat`<sup>Required</sup> <a name="LogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat"></a>
+##### `LogOutputFormat`<sup>Required</sup> <a name="LogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat"></a>
 
 ```go
 func LogOutputFormat() *string
@@ -4724,35 +4724,35 @@ func LogOutputFormat() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() VpnConnectionTunnel1LogOptionsCloudwatchLogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
 
 ---
 
 
-### VpnConnectionTunnel1LogOptionsOutputReference <a name="VpnConnectionTunnel1LogOptionsOutputReference" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference"></a>
+### VpnConnectionTunnel1LogOptionsOutputReference <a name="VpnConnectionTunnel1LogOptionsOutputReference" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel1LogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel1LogOptionsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -4760,7 +4760,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4772,151 +4772,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.putCloudwatchLogOptions">PutCloudwatchLogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resetCloudwatchLogOptions">ResetCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.putCloudwatchLogOptions">PutCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resetCloudwatchLogOptions">ResetCloudwatchLogOptions</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4924,13 +4924,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -4940,19 +4940,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `PutCloudwatchLogOptions` <a name="PutCloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.putCloudwatchLogOptions"></a>
+##### `PutCloudwatchLogOptions` <a name="PutCloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.putCloudwatchLogOptions"></a>
 
 ```go
 func PutCloudwatchLogOptions(value VpnConnectionTunnel1LogOptionsCloudwatchLogOptions)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.putCloudwatchLogOptions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.putCloudwatchLogOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
 
 ---
 
-##### `ResetCloudwatchLogOptions` <a name="ResetCloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resetCloudwatchLogOptions"></a>
+##### `ResetCloudwatchLogOptions` <a name="ResetCloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.resetCloudwatchLogOptions"></a>
 
 ```go
 func ResetCloudwatchLogOptions()
@@ -4963,15 +4963,15 @@ func ResetCloudwatchLogOptions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptionsInput">CloudwatchLogOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptionsInput">CloudwatchLogOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4985,7 +4985,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4995,55 +4995,55 @@ func Fqn() *string
 
 ---
 
-##### `CloudwatchLogOptions`<sup>Required</sup> <a name="CloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptions"></a>
+##### `CloudwatchLogOptions`<sup>Required</sup> <a name="CloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptions"></a>
 
 ```go
 func CloudwatchLogOptions() VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference</a>
 
 ---
 
-##### `CloudwatchLogOptionsInput`<sup>Optional</sup> <a name="CloudwatchLogOptionsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptionsInput"></a>
+##### `CloudwatchLogOptionsInput`<sup>Optional</sup> <a name="CloudwatchLogOptionsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.cloudwatchLogOptionsInput"></a>
 
 ```go
 func CloudwatchLogOptionsInput() VpnConnectionTunnel1LogOptionsCloudwatchLogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions">VpnConnectionTunnel1LogOptionsCloudwatchLogOptions</a>
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() VpnConnectionTunnel1LogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions">VpnConnectionTunnel1LogOptions</a>
 
 ---
 
 
-### VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference <a name="VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference"></a>
+### VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference <a name="VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5051,7 +5051,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5063,155 +5063,155 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled">ResetBgpLogEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn">ResetBgpLogGroupArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat">ResetBgpLogOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled">ResetLogEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn">ResetLogGroupArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat">ResetLogOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled">ResetBgpLogEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn">ResetBgpLogGroupArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat">ResetBgpLogOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled">ResetLogEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn">ResetLogGroupArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat">ResetLogOutputFormat</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5219,13 +5219,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5235,37 +5235,37 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetBgpLogEnabled` <a name="ResetBgpLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled"></a>
+##### `ResetBgpLogEnabled` <a name="ResetBgpLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogEnabled"></a>
 
 ```go
 func ResetBgpLogEnabled()
 ```
 
-##### `ResetBgpLogGroupArn` <a name="ResetBgpLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn"></a>
+##### `ResetBgpLogGroupArn` <a name="ResetBgpLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogGroupArn"></a>
 
 ```go
 func ResetBgpLogGroupArn()
 ```
 
-##### `ResetBgpLogOutputFormat` <a name="ResetBgpLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat"></a>
+##### `ResetBgpLogOutputFormat` <a name="ResetBgpLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetBgpLogOutputFormat"></a>
 
 ```go
 func ResetBgpLogOutputFormat()
 ```
 
-##### `ResetLogEnabled` <a name="ResetLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled"></a>
+##### `ResetLogEnabled` <a name="ResetLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogEnabled"></a>
 
 ```go
 func ResetLogEnabled()
 ```
 
-##### `ResetLogGroupArn` <a name="ResetLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn"></a>
+##### `ResetLogGroupArn` <a name="ResetLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogGroupArn"></a>
 
 ```go
 func ResetLogGroupArn()
 ```
 
-##### `ResetLogOutputFormat` <a name="ResetLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat"></a>
+##### `ResetLogOutputFormat` <a name="ResetLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.resetLogOutputFormat"></a>
 
 ```go
 func ResetLogOutputFormat()
@@ -5276,25 +5276,25 @@ func ResetLogOutputFormat()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput">BgpLogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput">BgpLogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput">BgpLogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput">LogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput">LogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput">LogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput">BgpLogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput">BgpLogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput">BgpLogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput">LogEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput">LogGroupArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput">LogOutputFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled">BgpLogEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn">BgpLogGroupArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat">BgpLogOutputFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled">LogEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat">LogOutputFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5308,7 +5308,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5318,7 +5318,7 @@ func Fqn() *string
 
 ---
 
-##### `BgpLogEnabledInput`<sup>Optional</sup> <a name="BgpLogEnabledInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput"></a>
+##### `BgpLogEnabledInput`<sup>Optional</sup> <a name="BgpLogEnabledInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabledInput"></a>
 
 ```go
 func BgpLogEnabledInput() interface{}
@@ -5328,7 +5328,7 @@ func BgpLogEnabledInput() interface{}
 
 ---
 
-##### `BgpLogGroupArnInput`<sup>Optional</sup> <a name="BgpLogGroupArnInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput"></a>
+##### `BgpLogGroupArnInput`<sup>Optional</sup> <a name="BgpLogGroupArnInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArnInput"></a>
 
 ```go
 func BgpLogGroupArnInput() *string
@@ -5338,7 +5338,7 @@ func BgpLogGroupArnInput() *string
 
 ---
 
-##### `BgpLogOutputFormatInput`<sup>Optional</sup> <a name="BgpLogOutputFormatInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput"></a>
+##### `BgpLogOutputFormatInput`<sup>Optional</sup> <a name="BgpLogOutputFormatInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormatInput"></a>
 
 ```go
 func BgpLogOutputFormatInput() *string
@@ -5348,7 +5348,7 @@ func BgpLogOutputFormatInput() *string
 
 ---
 
-##### `LogEnabledInput`<sup>Optional</sup> <a name="LogEnabledInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput"></a>
+##### `LogEnabledInput`<sup>Optional</sup> <a name="LogEnabledInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabledInput"></a>
 
 ```go
 func LogEnabledInput() interface{}
@@ -5358,7 +5358,7 @@ func LogEnabledInput() interface{}
 
 ---
 
-##### `LogGroupArnInput`<sup>Optional</sup> <a name="LogGroupArnInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput"></a>
+##### `LogGroupArnInput`<sup>Optional</sup> <a name="LogGroupArnInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArnInput"></a>
 
 ```go
 func LogGroupArnInput() *string
@@ -5368,7 +5368,7 @@ func LogGroupArnInput() *string
 
 ---
 
-##### `LogOutputFormatInput`<sup>Optional</sup> <a name="LogOutputFormatInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput"></a>
+##### `LogOutputFormatInput`<sup>Optional</sup> <a name="LogOutputFormatInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormatInput"></a>
 
 ```go
 func LogOutputFormatInput() *string
@@ -5378,7 +5378,7 @@ func LogOutputFormatInput() *string
 
 ---
 
-##### `BgpLogEnabled`<sup>Required</sup> <a name="BgpLogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled"></a>
+##### `BgpLogEnabled`<sup>Required</sup> <a name="BgpLogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogEnabled"></a>
 
 ```go
 func BgpLogEnabled() interface{}
@@ -5388,7 +5388,7 @@ func BgpLogEnabled() interface{}
 
 ---
 
-##### `BgpLogGroupArn`<sup>Required</sup> <a name="BgpLogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn"></a>
+##### `BgpLogGroupArn`<sup>Required</sup> <a name="BgpLogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogGroupArn"></a>
 
 ```go
 func BgpLogGroupArn() *string
@@ -5398,7 +5398,7 @@ func BgpLogGroupArn() *string
 
 ---
 
-##### `BgpLogOutputFormat`<sup>Required</sup> <a name="BgpLogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat"></a>
+##### `BgpLogOutputFormat`<sup>Required</sup> <a name="BgpLogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.bgpLogOutputFormat"></a>
 
 ```go
 func BgpLogOutputFormat() *string
@@ -5408,7 +5408,7 @@ func BgpLogOutputFormat() *string
 
 ---
 
-##### `LogEnabled`<sup>Required</sup> <a name="LogEnabled" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled"></a>
+##### `LogEnabled`<sup>Required</sup> <a name="LogEnabled" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logEnabled"></a>
 
 ```go
 func LogEnabled() interface{}
@@ -5418,7 +5418,7 @@ func LogEnabled() interface{}
 
 ---
 
-##### `LogGroupArn`<sup>Required</sup> <a name="LogGroupArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn"></a>
+##### `LogGroupArn`<sup>Required</sup> <a name="LogGroupArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logGroupArn"></a>
 
 ```go
 func LogGroupArn() *string
@@ -5428,7 +5428,7 @@ func LogGroupArn() *string
 
 ---
 
-##### `LogOutputFormat`<sup>Required</sup> <a name="LogOutputFormat" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat"></a>
+##### `LogOutputFormat`<sup>Required</sup> <a name="LogOutputFormat" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.logOutputFormat"></a>
 
 ```go
 func LogOutputFormat() *string
@@ -5438,35 +5438,35 @@ func LogOutputFormat() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() VpnConnectionTunnel2LogOptionsCloudwatchLogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
 
 ---
 
 
-### VpnConnectionTunnel2LogOptionsOutputReference <a name="VpnConnectionTunnel2LogOptionsOutputReference" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference"></a>
+### VpnConnectionTunnel2LogOptionsOutputReference <a name="VpnConnectionTunnel2LogOptionsOutputReference" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionTunnel2LogOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnConnectionTunnel2LogOptionsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5474,7 +5474,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5486,151 +5486,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.putCloudwatchLogOptions">PutCloudwatchLogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resetCloudwatchLogOptions">ResetCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.putCloudwatchLogOptions">PutCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resetCloudwatchLogOptions">ResetCloudwatchLogOptions</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5638,13 +5638,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5654,19 +5654,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `PutCloudwatchLogOptions` <a name="PutCloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.putCloudwatchLogOptions"></a>
+##### `PutCloudwatchLogOptions` <a name="PutCloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.putCloudwatchLogOptions"></a>
 
 ```go
 func PutCloudwatchLogOptions(value VpnConnectionTunnel2LogOptionsCloudwatchLogOptions)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.putCloudwatchLogOptions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.putCloudwatchLogOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
 
 ---
 
-##### `ResetCloudwatchLogOptions` <a name="ResetCloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resetCloudwatchLogOptions"></a>
+##### `ResetCloudwatchLogOptions` <a name="ResetCloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.resetCloudwatchLogOptions"></a>
 
 ```go
 func ResetCloudwatchLogOptions()
@@ -5677,15 +5677,15 @@ func ResetCloudwatchLogOptions()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptionsInput">CloudwatchLogOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptions">CloudwatchLogOptions</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptionsInput">CloudwatchLogOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5699,7 +5699,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5709,56 +5709,56 @@ func Fqn() *string
 
 ---
 
-##### `CloudwatchLogOptions`<sup>Required</sup> <a name="CloudwatchLogOptions" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptions"></a>
+##### `CloudwatchLogOptions`<sup>Required</sup> <a name="CloudwatchLogOptions" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptions"></a>
 
 ```go
 func CloudwatchLogOptions() VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference">VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference</a>
 
 ---
 
-##### `CloudwatchLogOptionsInput`<sup>Optional</sup> <a name="CloudwatchLogOptionsInput" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptionsInput"></a>
+##### `CloudwatchLogOptionsInput`<sup>Optional</sup> <a name="CloudwatchLogOptionsInput" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.cloudwatchLogOptionsInput"></a>
 
 ```go
 func CloudwatchLogOptionsInput() VpnConnectionTunnel2LogOptionsCloudwatchLogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions">VpnConnectionTunnel2LogOptionsCloudwatchLogOptions</a>
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() VpnConnectionTunnel2LogOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions">VpnConnectionTunnel2LogOptions</a>
 
 ---
 
 
-### VpnConnectionVgwTelemetryList <a name="VpnConnectionVgwTelemetryList" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList"></a>
+### VpnConnectionVgwTelemetryList <a name="VpnConnectionVgwTelemetryList" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionVgwTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnConnectionVgwTelemetryList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5766,7 +5766,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5774,7 +5774,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -5786,15 +5786,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -5804,19 +5804,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5824,13 +5824,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.toString"></a>
 
 ```go
 func ToString() *string
@@ -5840,13 +5840,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.get"></a>
 
 ```go
 func Get(index *f64) VpnConnectionVgwTelemetryOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -5859,12 +5859,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5878,7 +5878,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5889,26 +5889,26 @@ func Fqn() *string
 ---
 
 
-### VpnConnectionVgwTelemetryOutputReference <a name="VpnConnectionVgwTelemetryOutputReference" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference"></a>
+### VpnConnectionVgwTelemetryOutputReference <a name="VpnConnectionVgwTelemetryOutputReference" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpnconnection"
 
 vpnconnection.NewVpnConnectionVgwTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnConnectionVgwTelemetryOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5916,7 +5916,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5924,7 +5924,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -5932,7 +5932,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -5944,149 +5944,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -6094,13 +6094,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -6115,19 +6115,19 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.acceptedRouteCount">AcceptedRouteCount</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.lastStatusChange">LastStatusChange</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.outsideIpAddress">OutsideIpAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.statusMessage">StatusMessage</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry">VpnConnectionVgwTelemetry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.acceptedRouteCount">AcceptedRouteCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.lastStatusChange">LastStatusChange</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.outsideIpAddress">OutsideIpAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.statusMessage">StatusMessage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetry">VpnConnectionVgwTelemetry</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -6141,7 +6141,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -6151,7 +6151,7 @@ func Fqn() *string
 
 ---
 
-##### `AcceptedRouteCount`<sup>Required</sup> <a name="AcceptedRouteCount" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.acceptedRouteCount"></a>
+##### `AcceptedRouteCount`<sup>Required</sup> <a name="AcceptedRouteCount" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.acceptedRouteCount"></a>
 
 ```go
 func AcceptedRouteCount() *f64
@@ -6161,7 +6161,7 @@ func AcceptedRouteCount() *f64
 
 ---
 
-##### `CertificateArn`<sup>Required</sup> <a name="CertificateArn" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.certificateArn"></a>
+##### `CertificateArn`<sup>Required</sup> <a name="CertificateArn" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.certificateArn"></a>
 
 ```go
 func CertificateArn() *string
@@ -6171,7 +6171,7 @@ func CertificateArn() *string
 
 ---
 
-##### `LastStatusChange`<sup>Required</sup> <a name="LastStatusChange" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.lastStatusChange"></a>
+##### `LastStatusChange`<sup>Required</sup> <a name="LastStatusChange" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.lastStatusChange"></a>
 
 ```go
 func LastStatusChange() *string
@@ -6181,7 +6181,7 @@ func LastStatusChange() *string
 
 ---
 
-##### `OutsideIpAddress`<sup>Required</sup> <a name="OutsideIpAddress" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.outsideIpAddress"></a>
+##### `OutsideIpAddress`<sup>Required</sup> <a name="OutsideIpAddress" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.outsideIpAddress"></a>
 
 ```go
 func OutsideIpAddress() *string
@@ -6191,7 +6191,7 @@ func OutsideIpAddress() *string
 
 ---
 
-##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.status"></a>
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.status"></a>
 
 ```go
 func Status() *string
@@ -6201,7 +6201,7 @@ func Status() *string
 
 ---
 
-##### `StatusMessage`<sup>Required</sup> <a name="StatusMessage" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.statusMessage"></a>
+##### `StatusMessage`<sup>Required</sup> <a name="StatusMessage" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.statusMessage"></a>
 
 ```go
 func StatusMessage() *string
@@ -6211,13 +6211,13 @@ func StatusMessage() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() VpnConnectionVgwTelemetry
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry">VpnConnectionVgwTelemetry</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpnConnection.VpnConnectionVgwTelemetry">VpnConnectionVgwTelemetry</a>
 
 ---
 

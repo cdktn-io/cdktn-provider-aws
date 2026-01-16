@@ -1,15 +1,15 @@
-# `route53Zone` Submodule <a name="`route53Zone` Submodule" id="@cdktf/provider-aws.route53Zone"></a>
+# `route53Zone` Submodule <a name="`route53Zone` Submodule" id="@cdktn/provider-aws.route53Zone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Route53Zone <a name="Route53Zone" id="@cdktf/provider-aws.route53Zone.Route53Zone"></a>
+### Route53Zone <a name="Route53Zone" id="@cdktn/provider-aws.route53Zone.Route53Zone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone aws_route53_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone aws_route53_zone}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53Zone(
   scope: Construct,
@@ -36,29 +36,29 @@ route53Zone.Route53Zone(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#name Route53Zone#name}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#comment Route53Zone#comment}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.delegationSetId">delegation_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.enableAcceleratedRecovery">enable_accelerated_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#id Route53Zone#id}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags Route53Zone#tags}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.vpc">vpc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | vpc block. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#name Route53Zone#name}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#comment Route53Zone#comment}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.delegationSetId">delegation_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.enableAcceleratedRecovery">enable_accelerated_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#id Route53Zone#id}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags Route53Zone#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.vpc">vpc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | vpc block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -66,7 +66,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -76,132 +76,132 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#name Route53Zone#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#name Route53Zone#name}.
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.comment"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#comment Route53Zone#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#comment Route53Zone#comment}.
 
 ---
 
-##### `delegation_set_id`<sup>Optional</sup> <a name="delegation_set_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.delegationSetId"></a>
+##### `delegation_set_id`<sup>Optional</sup> <a name="delegation_set_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.delegationSetId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}.
 
 ---
 
-##### `enable_accelerated_recovery`<sup>Optional</sup> <a name="enable_accelerated_recovery" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.enableAcceleratedRecovery"></a>
+##### `enable_accelerated_recovery`<sup>Optional</sup> <a name="enable_accelerated_recovery" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.enableAcceleratedRecovery"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}.
 
 ---
 
-##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forceDestroy"></a>
+##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.forceDestroy"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#id Route53Zone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#id Route53Zone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags Route53Zone#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags Route53Zone#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#timeouts Route53Zone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#timeouts Route53Zone#timeouts}
 
 ---
 
-##### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktf/provider-aws.route53Zone.Route53Zone.Initializer.parameter.vpc"></a>
+##### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktn/provider-aws.route53Zone.Route53Zone.Initializer.parameter.vpc"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
 
 ---
 
@@ -209,44 +209,44 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.putVpc">put_vpc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetComment">reset_comment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetDelegationSetId">reset_delegation_set_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetEnableAcceleratedRecovery">reset_enable_accelerated_recovery</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetTagsAll">reset_tags_all</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.resetVpc">reset_vpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.putVpc">put_vpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetComment">reset_comment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetDelegationSetId">reset_delegation_set_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetEnableAcceleratedRecovery">reset_enable_accelerated_recovery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.resetVpc">reset_vpc</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.route53Zone.Route53Zone.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.route53Zone.Route53Zone.toString"></a>
 
 ```python
 def to_string() -> str
@@ -254,7 +254,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.route53Zone.Route53Zone.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.route53Zone.Route53Zone.addOverride"></a>
 
 ```python
 def add_override(
@@ -263,19 +263,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.route53Zone.Route53Zone.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.route53Zone.Route53Zone.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.route53Zone.Route53Zone.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.route53Zone.Route53Zone.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -285,7 +285,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -293,7 +293,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -301,19 +301,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.route53Zone.Route53Zone.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.route53Zone.Route53Zone.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.route53Zone.Route53Zone.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.route53Zone.Route53Zone.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.route53Zone.Route53Zone.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.route53Zone.Route53Zone.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -321,7 +321,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.route53Zone.Route53Zone.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.route53Zone.Route53Zone.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -331,7 +331,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.route53Zone.Route53Zone.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.route53Zone.Route53Zone.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -339,7 +339,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -347,13 +347,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -361,13 +361,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -375,13 +375,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -389,13 +389,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -403,13 +403,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -417,13 +417,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -431,13 +431,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -445,13 +445,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -459,19 +459,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.route53Zone.Route53Zone.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.route53Zone.Route53Zone.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.route53Zone.Route53Zone.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.route53Zone.Route53Zone.importFrom"></a>
 
 ```python
 def import_from(
@@ -480,19 +480,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53Zone.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53Zone.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.route53Zone.Route53Zone.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.route53Zone.Route53Zone.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -500,13 +500,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53Zone.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53Zone.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -518,7 +518,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -526,7 +526,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveTo"></a>
 
 ```python
 def move_to(
@@ -537,7 +537,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -545,7 +545,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -553,7 +553,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -563,7 +563,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53Zone.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53Zone.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -571,7 +571,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-aws.route53Zone.Route53Zone.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.route53Zone.Route53Zone.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -581,31 +581,31 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.route53Zone.Route53Zone.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.route53Zone.Route53Zone.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#create Route53Zone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#create Route53Zone#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.route53Zone.Route53Zone.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.route53Zone.Route53Zone.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delete Route53Zone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delete Route53Zone#delete}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.route53Zone.Route53Zone.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.route53Zone.Route53Zone.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#update Route53Zone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#update Route53Zone#update}.
 
 ---
 
-##### `put_vpc` <a name="put_vpc" id="@cdktf/provider-aws.route53Zone.Route53Zone.putVpc"></a>
+##### `put_vpc` <a name="put_vpc" id="@cdktn/provider-aws.route53Zone.Route53Zone.putVpc"></a>
 
 ```python
 def put_vpc(
@@ -613,61 +613,61 @@ def put_vpc(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.route53Zone.Route53Zone.putVpc.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.route53Zone.Route53Zone.putVpc.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
 
 ---
 
-##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetComment"></a>
+##### `reset_comment` <a name="reset_comment" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetComment"></a>
 
 ```python
 def reset_comment() -> None
 ```
 
-##### `reset_delegation_set_id` <a name="reset_delegation_set_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetDelegationSetId"></a>
+##### `reset_delegation_set_id` <a name="reset_delegation_set_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetDelegationSetId"></a>
 
 ```python
 def reset_delegation_set_id() -> None
 ```
 
-##### `reset_enable_accelerated_recovery` <a name="reset_enable_accelerated_recovery" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetEnableAcceleratedRecovery"></a>
+##### `reset_enable_accelerated_recovery` <a name="reset_enable_accelerated_recovery" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetEnableAcceleratedRecovery"></a>
 
 ```python
 def reset_enable_accelerated_recovery() -> None
 ```
 
-##### `reset_force_destroy` <a name="reset_force_destroy" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetForceDestroy"></a>
+##### `reset_force_destroy` <a name="reset_force_destroy" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetForceDestroy"></a>
 
 ```python
 def reset_force_destroy() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_vpc` <a name="reset_vpc" id="@cdktf/provider-aws.route53Zone.Route53Zone.resetVpc"></a>
+##### `reset_vpc` <a name="reset_vpc" id="@cdktn/provider-aws.route53Zone.Route53Zone.resetVpc"></a>
 
 ```python
 def reset_vpc() -> None
@@ -677,17 +677,17 @@ def reset_vpc() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Route53Zone resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Route53Zone resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.route53Zone.Route53Zone.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.route53Zone.Route53Zone.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53Zone.is_construct(
   x: typing.Any
@@ -710,7 +710,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.route53Zone.Route53Zone.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.route53Zone.Route53Zone.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -718,42 +718,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.route53Zone.Route53Zone.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.route53Zone.Route53Zone.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53Zone.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.route53Zone.Route53Zone.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.route53Zone.Route53Zone.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.route53Zone.Route53Zone.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.route53Zone.Route53Zone.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53Zone.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.route53Zone.Route53Zone.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.route53Zone.Route53Zone.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.route53Zone.Route53Zone.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.route53Zone.Route53Zone.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53Zone.generate_config_for_import(
   scope: Construct,
@@ -765,7 +765,7 @@ route53Zone.Route53Zone.generate_config_for_import(
 
 Generates CDKTF code for importing a Route53Zone resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -773,7 +773,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -781,17 +781,17 @@ The construct id used in the generated config for the Route53Zone to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Route53Zone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.route53Zone.Route53Zone.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -803,48 +803,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.nameServers">name_servers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.primaryNameServer">primary_name_server</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference">Route53ZoneTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.vpc">vpc</a></code> | <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList">Route53ZoneVpcList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.delegationSetIdInput">delegation_set_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecoveryInput">enable_accelerated_recovery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.forceDestroyInput">force_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.vpcInput">vpc_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.delegationSetId">delegation_set_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecovery">enable_accelerated_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.nameServers">name_servers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.primaryNameServer">primary_name_server</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference">Route53ZoneTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.vpc">vpc</a></code> | <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList">Route53ZoneVpcList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.delegationSetIdInput">delegation_set_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecoveryInput">enable_accelerated_recovery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.forceDestroyInput">force_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.vpcInput">vpc_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.delegationSetId">delegation_set_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecovery">enable_accelerated_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.node"></a>
 
 ```python
 node: Node
@@ -856,7 +856,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -866,7 +866,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.fqn"></a>
 
 ```python
 fqn: str
@@ -876,7 +876,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -886,7 +886,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -896,7 +896,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -906,7 +906,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -916,7 +916,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -926,7 +926,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -936,7 +936,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -946,7 +946,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -956,7 +956,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -966,7 +966,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -976,7 +976,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -986,7 +986,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.arn"></a>
 
 ```python
 arn: str
@@ -996,7 +996,7 @@ arn: str
 
 ---
 
-##### `name_servers`<sup>Required</sup> <a name="name_servers" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.nameServers"></a>
+##### `name_servers`<sup>Required</sup> <a name="name_servers" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.nameServers"></a>
 
 ```python
 name_servers: typing.List[str]
@@ -1006,7 +1006,7 @@ name_servers: typing.List[str]
 
 ---
 
-##### `primary_name_server`<sup>Required</sup> <a name="primary_name_server" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.primaryNameServer"></a>
+##### `primary_name_server`<sup>Required</sup> <a name="primary_name_server" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.primaryNameServer"></a>
 
 ```python
 primary_name_server: str
@@ -1016,27 +1016,27 @@ primary_name_server: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.timeouts"></a>
 
 ```python
 timeouts: Route53ZoneTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference">Route53ZoneTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference">Route53ZoneTimeoutsOutputReference</a>
 
 ---
 
-##### `vpc`<sup>Required</sup> <a name="vpc" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.vpc"></a>
+##### `vpc`<sup>Required</sup> <a name="vpc" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.vpc"></a>
 
 ```python
 vpc: Route53ZoneVpcList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList">Route53ZoneVpcList</a>
+- *Type:* <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList">Route53ZoneVpcList</a>
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.zoneId"></a>
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -1046,7 +1046,7 @@ zone_id: str
 
 ---
 
-##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.commentInput"></a>
+##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.commentInput"></a>
 
 ```python
 comment_input: str
@@ -1056,7 +1056,7 @@ comment_input: str
 
 ---
 
-##### `delegation_set_id_input`<sup>Optional</sup> <a name="delegation_set_id_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.delegationSetIdInput"></a>
+##### `delegation_set_id_input`<sup>Optional</sup> <a name="delegation_set_id_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.delegationSetIdInput"></a>
 
 ```python
 delegation_set_id_input: str
@@ -1066,7 +1066,7 @@ delegation_set_id_input: str
 
 ---
 
-##### `enable_accelerated_recovery_input`<sup>Optional</sup> <a name="enable_accelerated_recovery_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecoveryInput"></a>
+##### `enable_accelerated_recovery_input`<sup>Optional</sup> <a name="enable_accelerated_recovery_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecoveryInput"></a>
 
 ```python
 enable_accelerated_recovery_input: bool | IResolvable
@@ -1076,7 +1076,7 @@ enable_accelerated_recovery_input: bool | IResolvable
 
 ---
 
-##### `force_destroy_input`<sup>Optional</sup> <a name="force_destroy_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.forceDestroyInput"></a>
+##### `force_destroy_input`<sup>Optional</sup> <a name="force_destroy_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.forceDestroyInput"></a>
 
 ```python
 force_destroy_input: bool | IResolvable
@@ -1086,7 +1086,7 @@ force_destroy_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1096,7 +1096,7 @@ id_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1106,7 +1106,7 @@ name_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1116,7 +1116,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1126,27 +1126,27 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | Route53ZoneTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
 
 ---
 
-##### `vpc_input`<sup>Optional</sup> <a name="vpc_input" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.vpcInput"></a>
+##### `vpc_input`<sup>Optional</sup> <a name="vpc_input" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.vpcInput"></a>
 
 ```python
 vpc_input: IResolvable | typing.List[Route53ZoneVpc]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.comment"></a>
 
 ```python
 comment: str
@@ -1156,7 +1156,7 @@ comment: str
 
 ---
 
-##### `delegation_set_id`<sup>Required</sup> <a name="delegation_set_id" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.delegationSetId"></a>
+##### `delegation_set_id`<sup>Required</sup> <a name="delegation_set_id" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.delegationSetId"></a>
 
 ```python
 delegation_set_id: str
@@ -1166,7 +1166,7 @@ delegation_set_id: str
 
 ---
 
-##### `enable_accelerated_recovery`<sup>Required</sup> <a name="enable_accelerated_recovery" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecovery"></a>
+##### `enable_accelerated_recovery`<sup>Required</sup> <a name="enable_accelerated_recovery" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.enableAcceleratedRecovery"></a>
 
 ```python
 enable_accelerated_recovery: bool | IResolvable
@@ -1176,7 +1176,7 @@ enable_accelerated_recovery: bool | IResolvable
 
 ---
 
-##### `force_destroy`<sup>Required</sup> <a name="force_destroy" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.forceDestroy"></a>
+##### `force_destroy`<sup>Required</sup> <a name="force_destroy" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.forceDestroy"></a>
 
 ```python
 force_destroy: bool | IResolvable
@@ -1186,7 +1186,7 @@ force_destroy: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.id"></a>
 
 ```python
 id: str
@@ -1196,7 +1196,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.name"></a>
 
 ```python
 name: str
@@ -1206,7 +1206,7 @@ name: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1216,7 +1216,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1230,11 +1230,11 @@ tags_all: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53Zone.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53Zone.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.route53Zone.Route53Zone.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.route53Zone.Route53Zone.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1246,12 +1246,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### Route53ZoneConfig <a name="Route53ZoneConfig" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig"></a>
+### Route53ZoneConfig <a name="Route53ZoneConfig" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53ZoneConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1278,27 +1278,27 @@ route53Zone.Route53ZoneConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#name Route53Zone#name}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#comment Route53Zone#comment}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.delegationSetId">delegation_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.enableAcceleratedRecovery">enable_accelerated_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#id Route53Zone#id}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags Route53Zone#tags}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.vpc">vpc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | vpc block. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#name Route53Zone#name}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#comment Route53Zone#comment}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.delegationSetId">delegation_set_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.enableAcceleratedRecovery">enable_accelerated_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#id Route53Zone#id}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags Route53Zone#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.vpc">vpc</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | vpc block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1308,7 +1308,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1318,7 +1318,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1328,7 +1328,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1338,7 +1338,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1348,7 +1348,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1358,7 +1358,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1368,7 +1368,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.name"></a>
 
 ```python
 name: str
@@ -1376,11 +1376,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#name Route53Zone#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#name Route53Zone#name}.
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.comment"></a>
 
 ```python
 comment: str
@@ -1388,11 +1388,11 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#comment Route53Zone#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#comment Route53Zone#comment}.
 
 ---
 
-##### `delegation_set_id`<sup>Optional</sup> <a name="delegation_set_id" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.delegationSetId"></a>
+##### `delegation_set_id`<sup>Optional</sup> <a name="delegation_set_id" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.delegationSetId"></a>
 
 ```python
 delegation_set_id: str
@@ -1400,11 +1400,11 @@ delegation_set_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delegation_set_id Route53Zone#delegation_set_id}.
 
 ---
 
-##### `enable_accelerated_recovery`<sup>Optional</sup> <a name="enable_accelerated_recovery" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.enableAcceleratedRecovery"></a>
+##### `enable_accelerated_recovery`<sup>Optional</sup> <a name="enable_accelerated_recovery" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.enableAcceleratedRecovery"></a>
 
 ```python
 enable_accelerated_recovery: bool | IResolvable
@@ -1412,11 +1412,11 @@ enable_accelerated_recovery: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#enable_accelerated_recovery Route53Zone#enable_accelerated_recovery}.
 
 ---
 
-##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.forceDestroy"></a>
+##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.forceDestroy"></a>
 
 ```python
 force_destroy: bool | IResolvable
@@ -1424,11 +1424,11 @@ force_destroy: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#force_destroy Route53Zone#force_destroy}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.id"></a>
 
 ```python
 id: str
@@ -1436,14 +1436,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#id Route53Zone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#id Route53Zone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1451,11 +1451,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags Route53Zone#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags Route53Zone#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1463,44 +1463,44 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#tags_all Route53Zone#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.timeouts"></a>
 
 ```python
 timeouts: Route53ZoneTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#timeouts Route53Zone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#timeouts Route53Zone#timeouts}
 
 ---
 
-##### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktf/provider-aws.route53Zone.Route53ZoneConfig.property.vpc"></a>
+##### `vpc`<sup>Optional</sup> <a name="vpc" id="@cdktn/provider-aws.route53Zone.Route53ZoneConfig.property.vpc"></a>
 
 ```python
 vpc: IResolvable | typing.List[Route53ZoneVpc]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
 
 vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#vpc Route53Zone#vpc}
 
 ---
 
-### Route53ZoneTimeouts <a name="Route53ZoneTimeouts" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts"></a>
+### Route53ZoneTimeouts <a name="Route53ZoneTimeouts" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53ZoneTimeouts(
   create: str = None,
@@ -1513,13 +1513,13 @@ route53Zone.Route53ZoneTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#create Route53Zone#create}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delete Route53Zone#delete}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#update Route53Zone#update}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#create Route53Zone#create}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delete Route53Zone#delete}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#update Route53Zone#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1527,11 +1527,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#create Route53Zone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#create Route53Zone#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1539,11 +1539,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#delete Route53Zone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#delete Route53Zone#delete}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1551,16 +1551,16 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#update Route53Zone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#update Route53Zone#update}.
 
 ---
 
-### Route53ZoneVpc <a name="Route53ZoneVpc" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpc"></a>
+### Route53ZoneVpc <a name="Route53ZoneVpc" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpc"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpc.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpc.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53ZoneVpc(
   vpc_id: str,
@@ -1572,12 +1572,12 @@ route53Zone.Route53ZoneVpc(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#vpc_id Route53Zone#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc.property.vpcRegion">vpc_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#vpc_region Route53Zone#vpc_region}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#vpc_id Route53Zone#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc.property.vpcRegion">vpc_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#vpc_region Route53Zone#vpc_region}. |
 
 ---
 
-##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpc.property.vpcId"></a>
+##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpc.property.vpcId"></a>
 
 ```python
 vpc_id: str
@@ -1585,11 +1585,11 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#vpc_id Route53Zone#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#vpc_id Route53Zone#vpc_id}.
 
 ---
 
-##### `vpc_region`<sup>Optional</sup> <a name="vpc_region" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpc.property.vpcRegion"></a>
+##### `vpc_region`<sup>Optional</sup> <a name="vpc_region" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpc.property.vpcRegion"></a>
 
 ```python
 vpc_region: str
@@ -1597,18 +1597,18 @@ vpc_region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone#vpc_region Route53Zone#vpc_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone#vpc_region Route53Zone#vpc_region}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### Route53ZoneTimeoutsOutputReference <a name="Route53ZoneTimeoutsOutputReference" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference"></a>
+### Route53ZoneTimeoutsOutputReference <a name="Route53ZoneTimeoutsOutputReference" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53ZoneTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1618,12 +1618,12 @@ route53Zone.Route53ZoneTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1631,7 +1631,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1643,32 +1643,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1676,13 +1676,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1690,13 +1690,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1704,13 +1704,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1718,13 +1718,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1732,13 +1732,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1746,13 +1746,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1760,13 +1760,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1774,13 +1774,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1788,13 +1788,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1802,13 +1802,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1818,13 +1818,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1834,19 +1834,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -1857,19 +1857,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1883,7 +1883,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1893,7 +1893,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1903,7 +1903,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1913,7 +1913,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -1923,7 +1923,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1933,7 +1933,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1943,7 +1943,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -1953,23 +1953,23 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.route53Zone.Route53ZoneTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | Route53ZoneTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneTimeouts">Route53ZoneTimeouts</a>
 
 ---
 
 
-### Route53ZoneVpcList <a name="Route53ZoneVpcList" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList"></a>
+### Route53ZoneVpcList <a name="Route53ZoneVpcList" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53ZoneVpcList(
   terraform_resource: IInterpolatingParent,
@@ -1980,13 +1980,13 @@ route53Zone.Route53ZoneVpcList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1994,7 +1994,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2002,7 +2002,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2014,15 +2014,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2034,19 +2034,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.resolve"></a>
 
 ```python
 def resolve(
@@ -2056,13 +2056,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2072,7 +2072,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.get"></a>
 
 ```python
 def get(
@@ -2080,7 +2080,7 @@ def get(
 ) -> Route53ZoneVpcOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2093,13 +2093,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2113,7 +2113,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2123,23 +2123,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[Route53ZoneVpc]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>]
 
 ---
 
 
-### Route53ZoneVpcOutputReference <a name="Route53ZoneVpcOutputReference" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference"></a>
+### Route53ZoneVpcOutputReference <a name="Route53ZoneVpcOutputReference" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import route53_zone
+from cdktn_provider_aws import route53_zone
 
 route53Zone.Route53ZoneVpcOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2151,14 +2151,14 @@ route53Zone.Route53ZoneVpcOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2166,7 +2166,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2174,7 +2174,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2182,7 +2182,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2194,30 +2194,30 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resetVpcRegion">reset_vpc_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resetVpcRegion">reset_vpc_region</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2225,13 +2225,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2239,13 +2239,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2253,13 +2253,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2267,13 +2267,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2281,13 +2281,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2295,13 +2295,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2309,13 +2309,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2323,13 +2323,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2337,13 +2337,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2351,13 +2351,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2367,13 +2367,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2383,7 +2383,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_vpc_region` <a name="reset_vpc_region" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resetVpcRegion"></a>
+##### `reset_vpc_region` <a name="reset_vpc_region" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.resetVpcRegion"></a>
 
 ```python
 def reset_vpc_region() -> None
@@ -2394,17 +2394,17 @@ def reset_vpc_region() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegionInput">vpc_region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcId">vpc_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegion">vpc_region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegionInput">vpc_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcId">vpc_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegion">vpc_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2418,7 +2418,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2428,7 +2428,7 @@ fqn: str
 
 ---
 
-##### `vpc_id_input`<sup>Optional</sup> <a name="vpc_id_input" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcIdInput"></a>
+##### `vpc_id_input`<sup>Optional</sup> <a name="vpc_id_input" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcIdInput"></a>
 
 ```python
 vpc_id_input: str
@@ -2438,7 +2438,7 @@ vpc_id_input: str
 
 ---
 
-##### `vpc_region_input`<sup>Optional</sup> <a name="vpc_region_input" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegionInput"></a>
+##### `vpc_region_input`<sup>Optional</sup> <a name="vpc_region_input" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegionInput"></a>
 
 ```python
 vpc_region_input: str
@@ -2448,7 +2448,7 @@ vpc_region_input: str
 
 ---
 
-##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcId"></a>
+##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcId"></a>
 
 ```python
 vpc_id: str
@@ -2458,7 +2458,7 @@ vpc_id: str
 
 ---
 
-##### `vpc_region`<sup>Required</sup> <a name="vpc_region" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegion"></a>
+##### `vpc_region`<sup>Required</sup> <a name="vpc_region" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.vpcRegion"></a>
 
 ```python
 vpc_region: str
@@ -2468,13 +2468,13 @@ vpc_region: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.route53Zone.Route53ZoneVpcOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | Route53ZoneVpc
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.route53Zone.Route53ZoneVpc">Route53ZoneVpc</a>
 
 ---
 

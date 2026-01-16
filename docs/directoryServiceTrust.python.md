@@ -1,15 +1,15 @@
-# `directoryServiceTrust` Submodule <a name="`directoryServiceTrust` Submodule" id="@cdktf/provider-aws.directoryServiceTrust"></a>
+# `directoryServiceTrust` Submodule <a name="`directoryServiceTrust` Submodule" id="@cdktn/provider-aws.directoryServiceTrust"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DirectoryServiceTrust <a name="DirectoryServiceTrust" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust"></a>
+### DirectoryServiceTrust <a name="DirectoryServiceTrust" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust aws_directory_service_trust}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust aws_directory_service_trust}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import directory_service_trust
+from cdktn_provider_aws import directory_service_trust
 
 directoryServiceTrust.DirectoryServiceTrust(
   scope: Construct,
@@ -35,28 +35,28 @@ directoryServiceTrust.DirectoryServiceTrust(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.directoryId">directory_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.remoteDomainName">remote_domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustDirection">trust_direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustPassword">trust_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.conditionalForwarderIpAddrs">conditional_forwarder_ip_addrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.deleteAssociatedConditionalForwarder">delete_associated_conditional_forwarder</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.selectiveAuth">selective_auth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustType">trust_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.directoryId">directory_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.remoteDomainName">remote_domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustDirection">trust_direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustPassword">trust_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.conditionalForwarderIpAddrs">conditional_forwarder_ip_addrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.deleteAssociatedConditionalForwarder">delete_associated_conditional_forwarder</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.selectiveAuth">selective_auth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustType">trust_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -64,7 +64,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -74,119 +74,119 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `directory_id`<sup>Required</sup> <a name="directory_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.directoryId"></a>
+##### `directory_id`<sup>Required</sup> <a name="directory_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.directoryId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}.
 
 ---
 
-##### `remote_domain_name`<sup>Required</sup> <a name="remote_domain_name" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.remoteDomainName"></a>
+##### `remote_domain_name`<sup>Required</sup> <a name="remote_domain_name" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.remoteDomainName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}.
 
 ---
 
-##### `trust_direction`<sup>Required</sup> <a name="trust_direction" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustDirection"></a>
+##### `trust_direction`<sup>Required</sup> <a name="trust_direction" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustDirection"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}.
 
 ---
 
-##### `trust_password`<sup>Required</sup> <a name="trust_password" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustPassword"></a>
+##### `trust_password`<sup>Required</sup> <a name="trust_password" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustPassword"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}.
 
 ---
 
-##### `conditional_forwarder_ip_addrs`<sup>Optional</sup> <a name="conditional_forwarder_ip_addrs" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.conditionalForwarderIpAddrs"></a>
+##### `conditional_forwarder_ip_addrs`<sup>Optional</sup> <a name="conditional_forwarder_ip_addrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.conditionalForwarderIpAddrs"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}.
 
 ---
 
-##### `delete_associated_conditional_forwarder`<sup>Optional</sup> <a name="delete_associated_conditional_forwarder" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.deleteAssociatedConditionalForwarder"></a>
+##### `delete_associated_conditional_forwarder`<sup>Optional</sup> <a name="delete_associated_conditional_forwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.deleteAssociatedConditionalForwarder"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#region DirectoryServiceTrust#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#region DirectoryServiceTrust#region}
 
 ---
 
-##### `selective_auth`<sup>Optional</sup> <a name="selective_auth" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.selectiveAuth"></a>
+##### `selective_auth`<sup>Optional</sup> <a name="selective_auth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.selectiveAuth"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}.
 
 ---
 
-##### `trust_type`<sup>Optional</sup> <a name="trust_type" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustType"></a>
+##### `trust_type`<sup>Optional</sup> <a name="trust_type" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.Initializer.parameter.trustType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}.
 
 ---
 
@@ -194,38 +194,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetConditionalForwarderIpAddrs">reset_conditional_forwarder_ip_addrs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetDeleteAssociatedConditionalForwarder">reset_delete_associated_conditional_forwarder</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetSelectiveAuth">reset_selective_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetTrustType">reset_trust_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetConditionalForwarderIpAddrs">reset_conditional_forwarder_ip_addrs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetDeleteAssociatedConditionalForwarder">reset_delete_associated_conditional_forwarder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetSelectiveAuth">reset_selective_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetTrustType">reset_trust_type</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toString"></a>
 
 ```python
 def to_string() -> str
@@ -233,7 +233,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride"></a>
 
 ```python
 def add_override(
@@ -242,19 +242,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -264,7 +264,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -272,7 +272,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -280,19 +280,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -300,7 +300,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -310,7 +310,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -318,7 +318,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -326,13 +326,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -340,13 +340,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -354,13 +354,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -368,13 +368,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -382,13 +382,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -396,13 +396,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -410,13 +410,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -424,13 +424,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -438,19 +438,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom"></a>
 
 ```python
 def import_from(
@@ -459,19 +459,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -479,13 +479,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -497,7 +497,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -505,7 +505,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo"></a>
 
 ```python
 def move_to(
@@ -516,7 +516,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -524,7 +524,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -532,7 +532,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -542,7 +542,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -550,31 +550,31 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_conditional_forwarder_ip_addrs` <a name="reset_conditional_forwarder_ip_addrs" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetConditionalForwarderIpAddrs"></a>
+##### `reset_conditional_forwarder_ip_addrs` <a name="reset_conditional_forwarder_ip_addrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetConditionalForwarderIpAddrs"></a>
 
 ```python
 def reset_conditional_forwarder_ip_addrs() -> None
 ```
 
-##### `reset_delete_associated_conditional_forwarder` <a name="reset_delete_associated_conditional_forwarder" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetDeleteAssociatedConditionalForwarder"></a>
+##### `reset_delete_associated_conditional_forwarder` <a name="reset_delete_associated_conditional_forwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetDeleteAssociatedConditionalForwarder"></a>
 
 ```python
 def reset_delete_associated_conditional_forwarder() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_selective_auth` <a name="reset_selective_auth" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetSelectiveAuth"></a>
+##### `reset_selective_auth` <a name="reset_selective_auth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetSelectiveAuth"></a>
 
 ```python
 def reset_selective_auth() -> None
 ```
 
-##### `reset_trust_type` <a name="reset_trust_type" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetTrustType"></a>
+##### `reset_trust_type` <a name="reset_trust_type" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.resetTrustType"></a>
 
 ```python
 def reset_trust_type() -> None
@@ -584,17 +584,17 @@ def reset_trust_type() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DirectoryServiceTrust resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DirectoryServiceTrust resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import directory_service_trust
+from cdktn_provider_aws import directory_service_trust
 
 directoryServiceTrust.DirectoryServiceTrust.is_construct(
   x: typing.Any
@@ -617,7 +617,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -625,42 +625,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import directory_service_trust
+from cdktn_provider_aws import directory_service_trust
 
 directoryServiceTrust.DirectoryServiceTrust.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import directory_service_trust
+from cdktn_provider_aws import directory_service_trust
 
 directoryServiceTrust.DirectoryServiceTrust.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import directory_service_trust
+from cdktn_provider_aws import directory_service_trust
 
 directoryServiceTrust.DirectoryServiceTrust.generate_config_for_import(
   scope: Construct,
@@ -672,7 +672,7 @@ directoryServiceTrust.DirectoryServiceTrust.generate_config_for_import(
 
 Generates CDKTF code for importing a DirectoryServiceTrust resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -680,7 +680,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -688,17 +688,17 @@ The construct id used in the generated config for the DirectoryServiceTrust to i
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DirectoryServiceTrust that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -710,48 +710,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.createdDateTime">created_date_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lastUpdatedDateTime">last_updated_date_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.stateLastUpdatedDateTime">state_last_updated_date_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustState">trust_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustStateReason">trust_state_reason</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrsInput">conditional_forwarder_ip_addrs_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarderInput">delete_associated_conditional_forwarder_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryIdInput">directory_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainNameInput">remote_domain_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuthInput">selective_auth_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirectionInput">trust_direction_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPasswordInput">trust_password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustTypeInput">trust_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrs">conditional_forwarder_ip_addrs</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarder">delete_associated_conditional_forwarder</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryId">directory_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainName">remote_domain_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuth">selective_auth</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirection">trust_direction</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPassword">trust_password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustType">trust_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.createdDateTime">created_date_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lastUpdatedDateTime">last_updated_date_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.stateLastUpdatedDateTime">state_last_updated_date_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustState">trust_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustStateReason">trust_state_reason</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrsInput">conditional_forwarder_ip_addrs_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarderInput">delete_associated_conditional_forwarder_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryIdInput">directory_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainNameInput">remote_domain_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuthInput">selective_auth_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirectionInput">trust_direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPasswordInput">trust_password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustTypeInput">trust_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrs">conditional_forwarder_ip_addrs</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarder">delete_associated_conditional_forwarder</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryId">directory_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainName">remote_domain_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuth">selective_auth</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirection">trust_direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPassword">trust_password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustType">trust_type</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.node"></a>
 
 ```python
 node: Node
@@ -763,7 +763,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -773,7 +773,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.fqn"></a>
 
 ```python
 fqn: str
@@ -783,7 +783,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -793,7 +793,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -803,7 +803,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -813,7 +813,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -823,7 +823,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -833,7 +833,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -843,7 +843,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -853,7 +853,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -863,7 +863,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -873,7 +873,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -883,7 +883,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -893,7 +893,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `created_date_time`<sup>Required</sup> <a name="created_date_time" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.createdDateTime"></a>
+##### `created_date_time`<sup>Required</sup> <a name="created_date_time" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.createdDateTime"></a>
 
 ```python
 created_date_time: str
@@ -903,7 +903,7 @@ created_date_time: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.id"></a>
 
 ```python
 id: str
@@ -913,7 +913,7 @@ id: str
 
 ---
 
-##### `last_updated_date_time`<sup>Required</sup> <a name="last_updated_date_time" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lastUpdatedDateTime"></a>
+##### `last_updated_date_time`<sup>Required</sup> <a name="last_updated_date_time" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.lastUpdatedDateTime"></a>
 
 ```python
 last_updated_date_time: str
@@ -923,7 +923,7 @@ last_updated_date_time: str
 
 ---
 
-##### `state_last_updated_date_time`<sup>Required</sup> <a name="state_last_updated_date_time" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.stateLastUpdatedDateTime"></a>
+##### `state_last_updated_date_time`<sup>Required</sup> <a name="state_last_updated_date_time" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.stateLastUpdatedDateTime"></a>
 
 ```python
 state_last_updated_date_time: str
@@ -933,7 +933,7 @@ state_last_updated_date_time: str
 
 ---
 
-##### `trust_state`<sup>Required</sup> <a name="trust_state" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustState"></a>
+##### `trust_state`<sup>Required</sup> <a name="trust_state" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustState"></a>
 
 ```python
 trust_state: str
@@ -943,7 +943,7 @@ trust_state: str
 
 ---
 
-##### `trust_state_reason`<sup>Required</sup> <a name="trust_state_reason" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustStateReason"></a>
+##### `trust_state_reason`<sup>Required</sup> <a name="trust_state_reason" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustStateReason"></a>
 
 ```python
 trust_state_reason: str
@@ -953,7 +953,7 @@ trust_state_reason: str
 
 ---
 
-##### `conditional_forwarder_ip_addrs_input`<sup>Optional</sup> <a name="conditional_forwarder_ip_addrs_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrsInput"></a>
+##### `conditional_forwarder_ip_addrs_input`<sup>Optional</sup> <a name="conditional_forwarder_ip_addrs_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrsInput"></a>
 
 ```python
 conditional_forwarder_ip_addrs_input: typing.List[str]
@@ -963,7 +963,7 @@ conditional_forwarder_ip_addrs_input: typing.List[str]
 
 ---
 
-##### `delete_associated_conditional_forwarder_input`<sup>Optional</sup> <a name="delete_associated_conditional_forwarder_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarderInput"></a>
+##### `delete_associated_conditional_forwarder_input`<sup>Optional</sup> <a name="delete_associated_conditional_forwarder_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarderInput"></a>
 
 ```python
 delete_associated_conditional_forwarder_input: bool | IResolvable
@@ -973,7 +973,7 @@ delete_associated_conditional_forwarder_input: bool | IResolvable
 
 ---
 
-##### `directory_id_input`<sup>Optional</sup> <a name="directory_id_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryIdInput"></a>
+##### `directory_id_input`<sup>Optional</sup> <a name="directory_id_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryIdInput"></a>
 
 ```python
 directory_id_input: str
@@ -983,7 +983,7 @@ directory_id_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -993,7 +993,7 @@ region_input: str
 
 ---
 
-##### `remote_domain_name_input`<sup>Optional</sup> <a name="remote_domain_name_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainNameInput"></a>
+##### `remote_domain_name_input`<sup>Optional</sup> <a name="remote_domain_name_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainNameInput"></a>
 
 ```python
 remote_domain_name_input: str
@@ -1003,7 +1003,7 @@ remote_domain_name_input: str
 
 ---
 
-##### `selective_auth_input`<sup>Optional</sup> <a name="selective_auth_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuthInput"></a>
+##### `selective_auth_input`<sup>Optional</sup> <a name="selective_auth_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuthInput"></a>
 
 ```python
 selective_auth_input: str
@@ -1013,7 +1013,7 @@ selective_auth_input: str
 
 ---
 
-##### `trust_direction_input`<sup>Optional</sup> <a name="trust_direction_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirectionInput"></a>
+##### `trust_direction_input`<sup>Optional</sup> <a name="trust_direction_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirectionInput"></a>
 
 ```python
 trust_direction_input: str
@@ -1023,7 +1023,7 @@ trust_direction_input: str
 
 ---
 
-##### `trust_password_input`<sup>Optional</sup> <a name="trust_password_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPasswordInput"></a>
+##### `trust_password_input`<sup>Optional</sup> <a name="trust_password_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPasswordInput"></a>
 
 ```python
 trust_password_input: str
@@ -1033,7 +1033,7 @@ trust_password_input: str
 
 ---
 
-##### `trust_type_input`<sup>Optional</sup> <a name="trust_type_input" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustTypeInput"></a>
+##### `trust_type_input`<sup>Optional</sup> <a name="trust_type_input" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustTypeInput"></a>
 
 ```python
 trust_type_input: str
@@ -1043,7 +1043,7 @@ trust_type_input: str
 
 ---
 
-##### `conditional_forwarder_ip_addrs`<sup>Required</sup> <a name="conditional_forwarder_ip_addrs" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrs"></a>
+##### `conditional_forwarder_ip_addrs`<sup>Required</sup> <a name="conditional_forwarder_ip_addrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.conditionalForwarderIpAddrs"></a>
 
 ```python
 conditional_forwarder_ip_addrs: typing.List[str]
@@ -1053,7 +1053,7 @@ conditional_forwarder_ip_addrs: typing.List[str]
 
 ---
 
-##### `delete_associated_conditional_forwarder`<sup>Required</sup> <a name="delete_associated_conditional_forwarder" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarder"></a>
+##### `delete_associated_conditional_forwarder`<sup>Required</sup> <a name="delete_associated_conditional_forwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.deleteAssociatedConditionalForwarder"></a>
 
 ```python
 delete_associated_conditional_forwarder: bool | IResolvable
@@ -1063,7 +1063,7 @@ delete_associated_conditional_forwarder: bool | IResolvable
 
 ---
 
-##### `directory_id`<sup>Required</sup> <a name="directory_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryId"></a>
+##### `directory_id`<sup>Required</sup> <a name="directory_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.directoryId"></a>
 
 ```python
 directory_id: str
@@ -1073,7 +1073,7 @@ directory_id: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.region"></a>
 
 ```python
 region: str
@@ -1083,7 +1083,7 @@ region: str
 
 ---
 
-##### `remote_domain_name`<sup>Required</sup> <a name="remote_domain_name" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainName"></a>
+##### `remote_domain_name`<sup>Required</sup> <a name="remote_domain_name" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.remoteDomainName"></a>
 
 ```python
 remote_domain_name: str
@@ -1093,7 +1093,7 @@ remote_domain_name: str
 
 ---
 
-##### `selective_auth`<sup>Required</sup> <a name="selective_auth" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuth"></a>
+##### `selective_auth`<sup>Required</sup> <a name="selective_auth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.selectiveAuth"></a>
 
 ```python
 selective_auth: str
@@ -1103,7 +1103,7 @@ selective_auth: str
 
 ---
 
-##### `trust_direction`<sup>Required</sup> <a name="trust_direction" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirection"></a>
+##### `trust_direction`<sup>Required</sup> <a name="trust_direction" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustDirection"></a>
 
 ```python
 trust_direction: str
@@ -1113,7 +1113,7 @@ trust_direction: str
 
 ---
 
-##### `trust_password`<sup>Required</sup> <a name="trust_password" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPassword"></a>
+##### `trust_password`<sup>Required</sup> <a name="trust_password" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustPassword"></a>
 
 ```python
 trust_password: str
@@ -1123,7 +1123,7 @@ trust_password: str
 
 ---
 
-##### `trust_type`<sup>Required</sup> <a name="trust_type" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustType"></a>
+##### `trust_type`<sup>Required</sup> <a name="trust_type" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.trustType"></a>
 
 ```python
 trust_type: str
@@ -1137,11 +1137,11 @@ trust_type: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrust.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1153,12 +1153,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DirectoryServiceTrustConfig <a name="DirectoryServiceTrustConfig" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig"></a>
+### DirectoryServiceTrustConfig <a name="DirectoryServiceTrustConfig" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import directory_service_trust
+from cdktn_provider_aws import directory_service_trust
 
 directoryServiceTrust.DirectoryServiceTrustConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1184,26 +1184,26 @@ directoryServiceTrust.DirectoryServiceTrustConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.directoryId">directory_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.remoteDomainName">remote_domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustDirection">trust_direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustPassword">trust_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.conditionalForwarderIpAddrs">conditional_forwarder_ip_addrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.deleteAssociatedConditionalForwarder">delete_associated_conditional_forwarder</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.selectiveAuth">selective_auth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}. |
-| <code><a href="#@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustType">trust_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.directoryId">directory_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.remoteDomainName">remote_domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustDirection">trust_direction</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustPassword">trust_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.conditionalForwarderIpAddrs">conditional_forwarder_ip_addrs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.deleteAssociatedConditionalForwarder">delete_associated_conditional_forwarder</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.selectiveAuth">selective_auth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustType">trust_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1213,7 +1213,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1223,7 +1223,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1233,7 +1233,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1243,7 +1243,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1253,7 +1253,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1263,7 +1263,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1273,7 +1273,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `directory_id`<sup>Required</sup> <a name="directory_id" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.directoryId"></a>
+##### `directory_id`<sup>Required</sup> <a name="directory_id" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.directoryId"></a>
 
 ```python
 directory_id: str
@@ -1281,11 +1281,11 @@ directory_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#directory_id DirectoryServiceTrust#directory_id}.
 
 ---
 
-##### `remote_domain_name`<sup>Required</sup> <a name="remote_domain_name" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.remoteDomainName"></a>
+##### `remote_domain_name`<sup>Required</sup> <a name="remote_domain_name" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.remoteDomainName"></a>
 
 ```python
 remote_domain_name: str
@@ -1293,11 +1293,11 @@ remote_domain_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#remote_domain_name DirectoryServiceTrust#remote_domain_name}.
 
 ---
 
-##### `trust_direction`<sup>Required</sup> <a name="trust_direction" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustDirection"></a>
+##### `trust_direction`<sup>Required</sup> <a name="trust_direction" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustDirection"></a>
 
 ```python
 trust_direction: str
@@ -1305,11 +1305,11 @@ trust_direction: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_direction DirectoryServiceTrust#trust_direction}.
 
 ---
 
-##### `trust_password`<sup>Required</sup> <a name="trust_password" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustPassword"></a>
+##### `trust_password`<sup>Required</sup> <a name="trust_password" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustPassword"></a>
 
 ```python
 trust_password: str
@@ -1317,11 +1317,11 @@ trust_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_password DirectoryServiceTrust#trust_password}.
 
 ---
 
-##### `conditional_forwarder_ip_addrs`<sup>Optional</sup> <a name="conditional_forwarder_ip_addrs" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.conditionalForwarderIpAddrs"></a>
+##### `conditional_forwarder_ip_addrs`<sup>Optional</sup> <a name="conditional_forwarder_ip_addrs" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.conditionalForwarderIpAddrs"></a>
 
 ```python
 conditional_forwarder_ip_addrs: typing.List[str]
@@ -1329,11 +1329,11 @@ conditional_forwarder_ip_addrs: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#conditional_forwarder_ip_addrs DirectoryServiceTrust#conditional_forwarder_ip_addrs}.
 
 ---
 
-##### `delete_associated_conditional_forwarder`<sup>Optional</sup> <a name="delete_associated_conditional_forwarder" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.deleteAssociatedConditionalForwarder"></a>
+##### `delete_associated_conditional_forwarder`<sup>Optional</sup> <a name="delete_associated_conditional_forwarder" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.deleteAssociatedConditionalForwarder"></a>
 
 ```python
 delete_associated_conditional_forwarder: bool | IResolvable
@@ -1341,11 +1341,11 @@ delete_associated_conditional_forwarder: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#delete_associated_conditional_forwarder DirectoryServiceTrust#delete_associated_conditional_forwarder}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.region"></a>
 
 ```python
 region: str
@@ -1355,11 +1355,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#region DirectoryServiceTrust#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#region DirectoryServiceTrust#region}
 
 ---
 
-##### `selective_auth`<sup>Optional</sup> <a name="selective_auth" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.selectiveAuth"></a>
+##### `selective_auth`<sup>Optional</sup> <a name="selective_auth" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.selectiveAuth"></a>
 
 ```python
 selective_auth: str
@@ -1367,11 +1367,11 @@ selective_auth: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#selective_auth DirectoryServiceTrust#selective_auth}.
 
 ---
 
-##### `trust_type`<sup>Optional</sup> <a name="trust_type" id="@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustType"></a>
+##### `trust_type`<sup>Optional</sup> <a name="trust_type" id="@cdktn/provider-aws.directoryServiceTrust.DirectoryServiceTrustConfig.property.trustType"></a>
 
 ```python
 trust_type: str
@@ -1379,7 +1379,7 @@ trust_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_trust#trust_type DirectoryServiceTrust#trust_type}.
 
 ---
 

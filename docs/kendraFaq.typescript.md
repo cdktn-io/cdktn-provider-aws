@@ -1,28 +1,28 @@
-# `kendraFaq` Submodule <a name="`kendraFaq` Submodule" id="@cdktf/provider-aws.kendraFaq"></a>
+# `kendraFaq` Submodule <a name="`kendraFaq` Submodule" id="@cdktn/provider-aws.kendraFaq"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### KendraFaq <a name="KendraFaq" id="@cdktf/provider-aws.kendraFaq.KendraFaq"></a>
+### KendraFaq <a name="KendraFaq" id="@cdktn/provider-aws.kendraFaq.KendraFaq"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq aws_kendra_faq}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq aws_kendra_faq}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 new kendraFaq.KendraFaq(scope: Construct, id: string, config: KendraFaqConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig">KendraFaqConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig">KendraFaqConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.kendraFaq.KendraFaq.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig">KendraFaqConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig">KendraFaqConfig</a>
 
 ---
 
@@ -50,43 +50,43 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.putS3Path">putS3Path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetFileFormat">resetFileFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetLanguageCode">resetLanguageCode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetTagsAll">resetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.putS3Path">putS3Path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetFileFormat">resetFileFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetLanguageCode">resetLanguageCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.kendraFaq.KendraFaq.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.kendraFaq.KendraFaq.toString"></a>
 
 ```typescript
 public toString(): string
@@ -94,25 +94,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.kendraFaq.KendraFaq.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.kendraFaq.KendraFaq.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.kendraFaq.KendraFaq.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -120,7 +120,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -128,7 +128,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -136,19 +136,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.kendraFaq.KendraFaq.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.kendraFaq.KendraFaq.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.kendraFaq.KendraFaq.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.kendraFaq.KendraFaq.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.kendraFaq.KendraFaq.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.kendraFaq.KendraFaq.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -156,7 +156,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.kendraFaq.KendraFaq.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -164,7 +164,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.kendraFaq.KendraFaq.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.kendraFaq.KendraFaq.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -172,151 +172,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.kendraFaq.KendraFaq.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.kendraFaq.KendraFaq.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.kendraFaq.KendraFaq.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.kendraFaq.KendraFaq.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kendraFaq.KendraFaq.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.kendraFaq.KendraFaq.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaq.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -326,7 +326,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -342,7 +342,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -358,7 +358,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -366,7 +366,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaq.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.kendraFaq.KendraFaq.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -374,73 +374,73 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putS3Path` <a name="putS3Path" id="@cdktf/provider-aws.kendraFaq.KendraFaq.putS3Path"></a>
+##### `putS3Path` <a name="putS3Path" id="@cdktn/provider-aws.kendraFaq.KendraFaq.putS3Path"></a>
 
 ```typescript
 public putS3Path(value: KendraFaqS3Path): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.kendraFaq.KendraFaq.putS3Path.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.kendraFaq.KendraFaq.putS3Path.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-aws.kendraFaq.KendraFaq.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-aws.kendraFaq.KendraFaq.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: KendraFaqTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.kendraFaq.KendraFaq.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.kendraFaq.KendraFaq.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
 
 ---
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetFileFormat` <a name="resetFileFormat" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetFileFormat"></a>
+##### `resetFileFormat` <a name="resetFileFormat" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetFileFormat"></a>
 
 ```typescript
 public resetFileFormat(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetLanguageCode` <a name="resetLanguageCode" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetLanguageCode"></a>
+##### `resetLanguageCode` <a name="resetLanguageCode" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetLanguageCode"></a>
 
 ```typescript
 public resetLanguageCode(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-aws.kendraFaq.KendraFaq.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-aws.kendraFaq.KendraFaq.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -450,17 +450,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a KendraFaq resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a KendraFaq resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isConstruct"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 kendraFaq.KendraFaq.isConstruct(x: any)
 ```
@@ -481,7 +481,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -489,45 +489,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformElement"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 kendraFaq.KendraFaq.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformResource"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 kendraFaq.KendraFaq.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.kendraFaq.KendraFaq.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.kendraFaq.KendraFaq.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 kendraFaq.KendraFaq.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a KendraFaq resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -535,7 +535,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -543,17 +543,17 @@ The construct id used in the generated config for the KendraFaq to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing KendraFaq that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.kendraFaq.KendraFaq.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -565,54 +565,54 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.errorMessage">errorMessage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.faqId">faqId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.s3Path">s3Path</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference">KendraFaqS3PathOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference">KendraFaqTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.fileFormatInput">fileFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.indexIdInput">indexIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.languageCodeInput">languageCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.roleArnInput">roleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.s3PathInput">s3PathInput</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.indexId">indexId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.languageCode">languageCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.roleArn">roleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.errorMessage">errorMessage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.faqId">faqId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.s3Path">s3Path</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference">KendraFaqS3PathOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference">KendraFaqTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.fileFormatInput">fileFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.indexIdInput">indexIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.languageCodeInput">languageCodeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.roleArnInput">roleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.s3PathInput">s3PathInput</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.indexId">indexId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.languageCode">languageCode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.roleArn">roleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -624,7 +624,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -634,7 +634,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -644,7 +644,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -654,7 +654,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -664,7 +664,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -674,7 +674,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -684,7 +684,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -694,7 +694,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -704,7 +704,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -714,7 +714,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -724,7 +724,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -734,7 +734,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -744,7 +744,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -754,7 +754,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -764,7 +764,7 @@ public readonly arn: string;
 
 ---
 
-##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.createdAt"></a>
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.createdAt"></a>
 
 ```typescript
 public readonly createdAt: string;
@@ -774,7 +774,7 @@ public readonly createdAt: string;
 
 ---
 
-##### `errorMessage`<sup>Required</sup> <a name="errorMessage" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.errorMessage"></a>
+##### `errorMessage`<sup>Required</sup> <a name="errorMessage" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.errorMessage"></a>
 
 ```typescript
 public readonly errorMessage: string;
@@ -784,7 +784,7 @@ public readonly errorMessage: string;
 
 ---
 
-##### `faqId`<sup>Required</sup> <a name="faqId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.faqId"></a>
+##### `faqId`<sup>Required</sup> <a name="faqId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.faqId"></a>
 
 ```typescript
 public readonly faqId: string;
@@ -794,17 +794,17 @@ public readonly faqId: string;
 
 ---
 
-##### `s3Path`<sup>Required</sup> <a name="s3Path" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.s3Path"></a>
+##### `s3Path`<sup>Required</sup> <a name="s3Path" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.s3Path"></a>
 
 ```typescript
 public readonly s3Path: KendraFaqS3PathOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference">KendraFaqS3PathOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference">KendraFaqS3PathOutputReference</a>
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -814,17 +814,17 @@ public readonly status: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: KendraFaqTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference">KendraFaqTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference">KendraFaqTimeoutsOutputReference</a>
 
 ---
 
-##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.updatedAt"></a>
+##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.updatedAt"></a>
 
 ```typescript
 public readonly updatedAt: string;
@@ -834,7 +834,7 @@ public readonly updatedAt: string;
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -844,7 +844,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `fileFormatInput`<sup>Optional</sup> <a name="fileFormatInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.fileFormatInput"></a>
+##### `fileFormatInput`<sup>Optional</sup> <a name="fileFormatInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.fileFormatInput"></a>
 
 ```typescript
 public readonly fileFormatInput: string;
@@ -854,7 +854,7 @@ public readonly fileFormatInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -864,7 +864,7 @@ public readonly idInput: string;
 
 ---
 
-##### `indexIdInput`<sup>Optional</sup> <a name="indexIdInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.indexIdInput"></a>
+##### `indexIdInput`<sup>Optional</sup> <a name="indexIdInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.indexIdInput"></a>
 
 ```typescript
 public readonly indexIdInput: string;
@@ -874,7 +874,7 @@ public readonly indexIdInput: string;
 
 ---
 
-##### `languageCodeInput`<sup>Optional</sup> <a name="languageCodeInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.languageCodeInput"></a>
+##### `languageCodeInput`<sup>Optional</sup> <a name="languageCodeInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.languageCodeInput"></a>
 
 ```typescript
 public readonly languageCodeInput: string;
@@ -884,7 +884,7 @@ public readonly languageCodeInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -894,7 +894,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -904,7 +904,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `roleArnInput`<sup>Optional</sup> <a name="roleArnInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.roleArnInput"></a>
+##### `roleArnInput`<sup>Optional</sup> <a name="roleArnInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.roleArnInput"></a>
 
 ```typescript
 public readonly roleArnInput: string;
@@ -914,17 +914,17 @@ public readonly roleArnInput: string;
 
 ---
 
-##### `s3PathInput`<sup>Optional</sup> <a name="s3PathInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.s3PathInput"></a>
+##### `s3PathInput`<sup>Optional</sup> <a name="s3PathInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.s3PathInput"></a>
 
 ```typescript
 public readonly s3PathInput: KendraFaqS3Path;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -934,7 +934,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -944,17 +944,17 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | KendraFaqTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -964,7 +964,7 @@ public readonly description: string;
 
 ---
 
-##### `fileFormat`<sup>Required</sup> <a name="fileFormat" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.fileFormat"></a>
+##### `fileFormat`<sup>Required</sup> <a name="fileFormat" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.fileFormat"></a>
 
 ```typescript
 public readonly fileFormat: string;
@@ -974,7 +974,7 @@ public readonly fileFormat: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -984,7 +984,7 @@ public readonly id: string;
 
 ---
 
-##### `indexId`<sup>Required</sup> <a name="indexId" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.indexId"></a>
+##### `indexId`<sup>Required</sup> <a name="indexId" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.indexId"></a>
 
 ```typescript
 public readonly indexId: string;
@@ -994,7 +994,7 @@ public readonly indexId: string;
 
 ---
 
-##### `languageCode`<sup>Required</sup> <a name="languageCode" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.languageCode"></a>
+##### `languageCode`<sup>Required</sup> <a name="languageCode" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.languageCode"></a>
 
 ```typescript
 public readonly languageCode: string;
@@ -1004,7 +1004,7 @@ public readonly languageCode: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1014,7 +1014,7 @@ public readonly name: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1024,7 +1024,7 @@ public readonly region: string;
 
 ---
 
-##### `roleArn`<sup>Required</sup> <a name="roleArn" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.roleArn"></a>
+##### `roleArn`<sup>Required</sup> <a name="roleArn" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.roleArn"></a>
 
 ```typescript
 public readonly roleArn: string;
@@ -1034,7 +1034,7 @@ public readonly roleArn: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1044,7 +1044,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1058,11 +1058,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaq.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaq.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.kendraFaq.KendraFaq.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.kendraFaq.KendraFaq.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1074,12 +1074,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### KendraFaqConfig <a name="KendraFaqConfig" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig"></a>
+### KendraFaqConfig <a name="KendraFaqConfig" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.Initializer"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 const kendraFaqConfig: kendraFaq.KendraFaqConfig = { ... }
 ```
@@ -1088,29 +1088,29 @@ const kendraFaqConfig: kendraFaq.KendraFaqConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#index_id KendraFaq#index_id}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#name KendraFaq#name}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#role_arn KendraFaq#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.s3Path">s3Path</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | s3_path block. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#description KendraFaq#description}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.fileFormat">fileFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#file_format KendraFaq#file_format}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#id KendraFaq#id}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.languageCode">languageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#language_code KendraFaq#language_code}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#tags KendraFaq#tags}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#tags_all KendraFaq#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.indexId">indexId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#index_id KendraFaq#index_id}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#name KendraFaq#name}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#role_arn KendraFaq#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.s3Path">s3Path</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | s3_path block. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#description KendraFaq#description}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.fileFormat">fileFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#file_format KendraFaq#file_format}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#id KendraFaq#id}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.languageCode">languageCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#language_code KendraFaq#language_code}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#tags KendraFaq#tags}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#tags_all KendraFaq#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1120,7 +1120,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1130,7 +1130,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1140,7 +1140,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1150,7 +1150,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1160,7 +1160,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1170,7 +1170,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1180,7 +1180,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `indexId`<sup>Required</sup> <a name="indexId" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.indexId"></a>
+##### `indexId`<sup>Required</sup> <a name="indexId" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.indexId"></a>
 
 ```typescript
 public readonly indexId: string;
@@ -1188,11 +1188,11 @@ public readonly indexId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#index_id KendraFaq#index_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#index_id KendraFaq#index_id}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1200,11 +1200,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#name KendraFaq#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#name KendraFaq#name}.
 
 ---
 
-##### `roleArn`<sup>Required</sup> <a name="roleArn" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.roleArn"></a>
+##### `roleArn`<sup>Required</sup> <a name="roleArn" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.roleArn"></a>
 
 ```typescript
 public readonly roleArn: string;
@@ -1212,25 +1212,25 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#role_arn KendraFaq#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#role_arn KendraFaq#role_arn}.
 
 ---
 
-##### `s3Path`<sup>Required</sup> <a name="s3Path" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.s3Path"></a>
+##### `s3Path`<sup>Required</sup> <a name="s3Path" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.s3Path"></a>
 
 ```typescript
 public readonly s3Path: KendraFaqS3Path;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
 
 s3_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#s3_path KendraFaq#s3_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#s3_path KendraFaq#s3_path}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1238,11 +1238,11 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#description KendraFaq#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#description KendraFaq#description}.
 
 ---
 
-##### `fileFormat`<sup>Optional</sup> <a name="fileFormat" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.fileFormat"></a>
+##### `fileFormat`<sup>Optional</sup> <a name="fileFormat" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.fileFormat"></a>
 
 ```typescript
 public readonly fileFormat: string;
@@ -1250,11 +1250,11 @@ public readonly fileFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#file_format KendraFaq#file_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#file_format KendraFaq#file_format}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1262,14 +1262,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#id KendraFaq#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#id KendraFaq#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `languageCode`<sup>Optional</sup> <a name="languageCode" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.languageCode"></a>
+##### `languageCode`<sup>Optional</sup> <a name="languageCode" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.languageCode"></a>
 
 ```typescript
 public readonly languageCode: string;
@@ -1277,11 +1277,11 @@ public readonly languageCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#language_code KendraFaq#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#language_code KendraFaq#language_code}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1291,11 +1291,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#region KendraFaq#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#region KendraFaq#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1303,11 +1303,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#tags KendraFaq#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#tags KendraFaq#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1315,30 +1315,30 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#tags_all KendraFaq#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#tags_all KendraFaq#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.kendraFaq.KendraFaqConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.kendraFaq.KendraFaqConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: KendraFaqTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#timeouts KendraFaq#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#timeouts KendraFaq#timeouts}
 
 ---
 
-### KendraFaqS3Path <a name="KendraFaqS3Path" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3Path"></a>
+### KendraFaqS3Path <a name="KendraFaqS3Path" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3Path"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3Path.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3Path.Initializer"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 const kendraFaqS3Path: kendraFaq.KendraFaqS3Path = { ... }
 ```
@@ -1347,12 +1347,12 @@ const kendraFaqS3Path: kendraFaq.KendraFaqS3Path = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#bucket KendraFaq#bucket}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#key KendraFaq#key}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#bucket KendraFaq#bucket}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#key KendraFaq#key}. |
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3Path.property.bucket"></a>
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3Path.property.bucket"></a>
 
 ```typescript
 public readonly bucket: string;
@@ -1360,11 +1360,11 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#bucket KendraFaq#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#bucket KendraFaq#bucket}.
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3Path.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3Path.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1372,16 +1372,16 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#key KendraFaq#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#key KendraFaq#key}.
 
 ---
 
-### KendraFaqTimeouts <a name="KendraFaqTimeouts" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts"></a>
+### KendraFaqTimeouts <a name="KendraFaqTimeouts" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts.Initializer"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 const kendraFaqTimeouts: kendraFaq.KendraFaqTimeouts = { ... }
 ```
@@ -1390,12 +1390,12 @@ const kendraFaqTimeouts: kendraFaq.KendraFaqTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#create KendraFaq#create}. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#delete KendraFaq#delete}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#create KendraFaq#create}. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#delete KendraFaq#delete}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1403,11 +1403,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#create KendraFaq#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#create KendraFaq#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1415,30 +1415,30 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/kendra_faq#delete KendraFaq#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kendra_faq#delete KendraFaq#delete}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### KendraFaqS3PathOutputReference <a name="KendraFaqS3PathOutputReference" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference"></a>
+### KendraFaqS3PathOutputReference <a name="KendraFaqS3PathOutputReference" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 new kendraFaq.KendraFaqS3PathOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1446,7 +1446,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1458,149 +1458,149 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1608,13 +1608,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1629,17 +1629,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1653,7 +1653,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1663,7 +1663,7 @@ public readonly fqn: string;
 
 ---
 
-##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucketInput"></a>
+##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucketInput"></a>
 
 ```typescript
 public readonly bucketInput: string;
@@ -1673,7 +1673,7 @@ public readonly bucketInput: string;
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.keyInput"></a>
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.keyInput"></a>
 
 ```typescript
 public readonly keyInput: string;
@@ -1683,7 +1683,7 @@ public readonly keyInput: string;
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucket"></a>
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.bucket"></a>
 
 ```typescript
 public readonly bucket: string;
@@ -1693,7 +1693,7 @@ public readonly bucket: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1703,35 +1703,35 @@ public readonly key: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.kendraFaq.KendraFaqS3PathOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: KendraFaqS3Path;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
+- *Type:* <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqS3Path">KendraFaqS3Path</a>
 
 ---
 
 
-### KendraFaqTimeoutsOutputReference <a name="KendraFaqTimeoutsOutputReference" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference"></a>
+### KendraFaqTimeoutsOutputReference <a name="KendraFaqTimeoutsOutputReference" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { kendraFaq } from '@cdktf/provider-aws'
+import { kendraFaq } from '@cdktn/provider-aws'
 
 new kendraFaq.KendraFaqTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1739,7 +1739,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1751,151 +1751,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1903,13 +1903,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1919,13 +1919,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
@@ -1936,17 +1936,17 @@ public resetDelete(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1960,7 +1960,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1970,7 +1970,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1980,7 +1980,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1990,7 +1990,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -2000,7 +2000,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -2010,13 +2010,13 @@ public readonly delete: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | KendraFaqTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.kendraFaq.KendraFaqTimeouts">KendraFaqTimeouts</a>
 
 ---
 

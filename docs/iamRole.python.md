@@ -1,15 +1,15 @@
-# `iamRole` Submodule <a name="`iamRole` Submodule" id="@cdktf/provider-aws.iamRole"></a>
+# `iamRole` Submodule <a name="`iamRole` Submodule" id="@cdktn/provider-aws.iamRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### IamRole <a name="IamRole" id="@cdktf/provider-aws.iamRole.IamRole"></a>
+### IamRole <a name="IamRole" id="@cdktn/provider-aws.iamRole.IamRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role aws_iam_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role aws_iam_role}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRole.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamRole.IamRole.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRole(
   scope: Construct,
@@ -39,32 +39,32 @@ iamRole.IamRole(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.assumeRolePolicy">assume_role_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#description IamRole#description}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.forceDetachPolicies">force_detach_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#id IamRole#id}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.inlinePolicy">inline_policy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | inline_policy block. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.managedPolicyArns">managed_policy_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.maxSessionDuration">max_session_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name IamRole#name}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#path IamRole#path}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.permissionsBoundary">permissions_boundary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags IamRole#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags_all IamRole#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.assumeRolePolicy">assume_role_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#description IamRole#description}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.forceDetachPolicies">force_detach_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#id IamRole#id}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.inlinePolicy">inline_policy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | inline_policy block. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.managedPolicyArns">managed_policy_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.maxSessionDuration">max_session_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name IamRole#name}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#path IamRole#path}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.permissionsBoundary">permissions_boundary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags IamRole#tags}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags_all IamRole#tags_all}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -72,7 +72,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -82,154 +82,154 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `assume_role_policy`<sup>Required</sup> <a name="assume_role_policy" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.assumeRolePolicy"></a>
+##### `assume_role_policy`<sup>Required</sup> <a name="assume_role_policy" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.assumeRolePolicy"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#description IamRole#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#description IamRole#description}.
 
 ---
 
-##### `force_detach_policies`<sup>Optional</sup> <a name="force_detach_policies" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.forceDetachPolicies"></a>
+##### `force_detach_policies`<sup>Optional</sup> <a name="force_detach_policies" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.forceDetachPolicies"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#id IamRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#id IamRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `inline_policy`<sup>Optional</sup> <a name="inline_policy" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.inlinePolicy"></a>
+##### `inline_policy`<sup>Optional</sup> <a name="inline_policy" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.inlinePolicy"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
 
 inline_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
 
 ---
 
-##### `managed_policy_arns`<sup>Optional</sup> <a name="managed_policy_arns" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.managedPolicyArns"></a>
+##### `managed_policy_arns`<sup>Optional</sup> <a name="managed_policy_arns" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.managedPolicyArns"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}.
 
 ---
 
-##### `max_session_duration`<sup>Optional</sup> <a name="max_session_duration" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.maxSessionDuration"></a>
+##### `max_session_duration`<sup>Optional</sup> <a name="max_session_duration" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.maxSessionDuration"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name IamRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name IamRole#name}.
 
 ---
 
-##### `name_prefix`<sup>Optional</sup> <a name="name_prefix" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.namePrefix"></a>
+##### `name_prefix`<sup>Optional</sup> <a name="name_prefix" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.namePrefix"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}.
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.path"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#path IamRole#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#path IamRole#path}.
 
 ---
 
-##### `permissions_boundary`<sup>Optional</sup> <a name="permissions_boundary" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.permissionsBoundary"></a>
+##### `permissions_boundary`<sup>Optional</sup> <a name="permissions_boundary" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.permissionsBoundary"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags IamRole#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags IamRole#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.iamRole.IamRole.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.iamRole.IamRole.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags_all IamRole#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags_all IamRole#tags_all}.
 
 ---
 
@@ -237,46 +237,46 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.putInlinePolicy">put_inline_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetForceDetachPolicies">reset_force_detach_policies</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetInlinePolicy">reset_inline_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetManagedPolicyArns">reset_managed_policy_arns</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetMaxSessionDuration">reset_max_session_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetNamePrefix">reset_name_prefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetPath">reset_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetPermissionsBoundary">reset_permissions_boundary</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.putInlinePolicy">put_inline_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetForceDetachPolicies">reset_force_detach_policies</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetInlinePolicy">reset_inline_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetManagedPolicyArns">reset_managed_policy_arns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetMaxSessionDuration">reset_max_session_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetNamePrefix">reset_name_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetPermissionsBoundary">reset_permissions_boundary</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.iamRole.IamRole.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.iamRole.IamRole.toString"></a>
 
 ```python
 def to_string() -> str
@@ -284,7 +284,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.iamRole.IamRole.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.iamRole.IamRole.addOverride"></a>
 
 ```python
 def add_override(
@@ -293,19 +293,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.iamRole.IamRole.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.iamRole.IamRole.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.iamRole.IamRole.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iamRole.IamRole.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.iamRole.IamRole.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.iamRole.IamRole.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -315,7 +315,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.iamRole.IamRole.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.iamRole.IamRole.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -323,7 +323,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.iamRole.IamRole.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.iamRole.IamRole.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -331,19 +331,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.iamRole.IamRole.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.iamRole.IamRole.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.iamRole.IamRole.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.iamRole.IamRole.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.iamRole.IamRole.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.iamRole.IamRole.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -351,7 +351,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.iamRole.IamRole.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.iamRole.IamRole.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -361,7 +361,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.iamRole.IamRole.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.iamRole.IamRole.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -369,7 +369,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -377,13 +377,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -391,13 +391,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -405,13 +405,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -419,13 +419,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -433,13 +433,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -447,13 +447,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -461,13 +461,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -475,13 +475,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -489,19 +489,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.iamRole.IamRole.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.iamRole.IamRole.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.iamRole.IamRole.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.iamRole.IamRole.importFrom"></a>
 
 ```python
 def import_from(
@@ -510,19 +510,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRole.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRole.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamRole.IamRole.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iamRole.IamRole.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.iamRole.IamRole.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.iamRole.IamRole.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -530,13 +530,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRole.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRole.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.iamRole.IamRole.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.iamRole.IamRole.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -548,7 +548,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRole.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRole.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -556,7 +556,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.iamRole.IamRole.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.iamRole.IamRole.moveTo"></a>
 
 ```python
 def move_to(
@@ -567,7 +567,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.iamRole.IamRole.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.iamRole.IamRole.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -575,7 +575,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.iamRole.IamRole.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.iamRole.IamRole.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -583,7 +583,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.iamRole.IamRole.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.iamRole.IamRole.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -593,7 +593,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRole.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRole.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -601,7 +601,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_inline_policy` <a name="put_inline_policy" id="@cdktf/provider-aws.iamRole.IamRole.putInlinePolicy"></a>
+##### `put_inline_policy` <a name="put_inline_policy" id="@cdktn/provider-aws.iamRole.IamRole.putInlinePolicy"></a>
 
 ```python
 def put_inline_policy(
@@ -609,79 +609,79 @@ def put_inline_policy(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.iamRole.IamRole.putInlinePolicy.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.iamRole.IamRole.putInlinePolicy.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.iamRole.IamRole.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.iamRole.IamRole.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_force_detach_policies` <a name="reset_force_detach_policies" id="@cdktf/provider-aws.iamRole.IamRole.resetForceDetachPolicies"></a>
+##### `reset_force_detach_policies` <a name="reset_force_detach_policies" id="@cdktn/provider-aws.iamRole.IamRole.resetForceDetachPolicies"></a>
 
 ```python
 def reset_force_detach_policies() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.iamRole.IamRole.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.iamRole.IamRole.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_inline_policy` <a name="reset_inline_policy" id="@cdktf/provider-aws.iamRole.IamRole.resetInlinePolicy"></a>
+##### `reset_inline_policy` <a name="reset_inline_policy" id="@cdktn/provider-aws.iamRole.IamRole.resetInlinePolicy"></a>
 
 ```python
 def reset_inline_policy() -> None
 ```
 
-##### `reset_managed_policy_arns` <a name="reset_managed_policy_arns" id="@cdktf/provider-aws.iamRole.IamRole.resetManagedPolicyArns"></a>
+##### `reset_managed_policy_arns` <a name="reset_managed_policy_arns" id="@cdktn/provider-aws.iamRole.IamRole.resetManagedPolicyArns"></a>
 
 ```python
 def reset_managed_policy_arns() -> None
 ```
 
-##### `reset_max_session_duration` <a name="reset_max_session_duration" id="@cdktf/provider-aws.iamRole.IamRole.resetMaxSessionDuration"></a>
+##### `reset_max_session_duration` <a name="reset_max_session_duration" id="@cdktn/provider-aws.iamRole.IamRole.resetMaxSessionDuration"></a>
 
 ```python
 def reset_max_session_duration() -> None
 ```
 
-##### `reset_name` <a name="reset_name" id="@cdktf/provider-aws.iamRole.IamRole.resetName"></a>
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-aws.iamRole.IamRole.resetName"></a>
 
 ```python
 def reset_name() -> None
 ```
 
-##### `reset_name_prefix` <a name="reset_name_prefix" id="@cdktf/provider-aws.iamRole.IamRole.resetNamePrefix"></a>
+##### `reset_name_prefix` <a name="reset_name_prefix" id="@cdktn/provider-aws.iamRole.IamRole.resetNamePrefix"></a>
 
 ```python
 def reset_name_prefix() -> None
 ```
 
-##### `reset_path` <a name="reset_path" id="@cdktf/provider-aws.iamRole.IamRole.resetPath"></a>
+##### `reset_path` <a name="reset_path" id="@cdktn/provider-aws.iamRole.IamRole.resetPath"></a>
 
 ```python
 def reset_path() -> None
 ```
 
-##### `reset_permissions_boundary` <a name="reset_permissions_boundary" id="@cdktf/provider-aws.iamRole.IamRole.resetPermissionsBoundary"></a>
+##### `reset_permissions_boundary` <a name="reset_permissions_boundary" id="@cdktn/provider-aws.iamRole.IamRole.resetPermissionsBoundary"></a>
 
 ```python
 def reset_permissions_boundary() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.iamRole.IamRole.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.iamRole.IamRole.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.iamRole.IamRole.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.iamRole.IamRole.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
@@ -691,17 +691,17 @@ def reset_tags_all() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a IamRole resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a IamRole resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.iamRole.IamRole.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.iamRole.IamRole.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRole.is_construct(
   x: typing.Any
@@ -724,7 +724,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.iamRole.IamRole.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.iamRole.IamRole.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -732,42 +732,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.iamRole.IamRole.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.iamRole.IamRole.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRole.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.iamRole.IamRole.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.iamRole.IamRole.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.iamRole.IamRole.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.iamRole.IamRole.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRole.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.iamRole.IamRole.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.iamRole.IamRole.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.iamRole.IamRole.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.iamRole.IamRole.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRole.generate_config_for_import(
   scope: Construct,
@@ -779,7 +779,7 @@ iamRole.IamRole.generate_config_for_import(
 
 Generates CDKTF code for importing a IamRole resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -787,7 +787,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -795,17 +795,17 @@ The construct id used in the generated config for the IamRole to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing IamRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iamRole.IamRole.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -817,53 +817,53 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.createDate">create_date</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.inlinePolicy">inline_policy</a></code> | <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList">IamRoleInlinePolicyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.uniqueId">unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.assumeRolePolicyInput">assume_role_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.forceDetachPoliciesInput">force_detach_policies_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.inlinePolicyInput">inline_policy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.managedPolicyArnsInput">managed_policy_arns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.maxSessionDurationInput">max_session_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.namePrefixInput">name_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.permissionsBoundaryInput">permissions_boundary_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.assumeRolePolicy">assume_role_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.forceDetachPolicies">force_detach_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.managedPolicyArns">managed_policy_arns</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.maxSessionDuration">max_session_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.namePrefix">name_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.permissionsBoundary">permissions_boundary</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.createDate">create_date</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.inlinePolicy">inline_policy</a></code> | <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList">IamRoleInlinePolicyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.uniqueId">unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.assumeRolePolicyInput">assume_role_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.forceDetachPoliciesInput">force_detach_policies_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.inlinePolicyInput">inline_policy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.managedPolicyArnsInput">managed_policy_arns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.maxSessionDurationInput">max_session_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.namePrefixInput">name_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.permissionsBoundaryInput">permissions_boundary_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.assumeRolePolicy">assume_role_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.forceDetachPolicies">force_detach_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.managedPolicyArns">managed_policy_arns</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.maxSessionDuration">max_session_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.namePrefix">name_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.permissionsBoundary">permissions_boundary</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.iamRole.IamRole.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.iamRole.IamRole.property.node"></a>
 
 ```python
 node: Node
@@ -875,7 +875,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.iamRole.IamRole.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.iamRole.IamRole.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -885,7 +885,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.iamRole.IamRole.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.iamRole.IamRole.property.fqn"></a>
 
 ```python
 fqn: str
@@ -895,7 +895,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.iamRole.IamRole.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.iamRole.IamRole.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -905,7 +905,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.iamRole.IamRole.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.iamRole.IamRole.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -915,7 +915,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.iamRole.IamRole.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.iamRole.IamRole.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -925,7 +925,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.iamRole.IamRole.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.iamRole.IamRole.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -935,7 +935,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.iamRole.IamRole.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.iamRole.IamRole.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -945,7 +945,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.iamRole.IamRole.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.iamRole.IamRole.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -955,7 +955,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.iamRole.IamRole.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.iamRole.IamRole.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -965,7 +965,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.iamRole.IamRole.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.iamRole.IamRole.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -975,7 +975,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.iamRole.IamRole.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.iamRole.IamRole.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -985,7 +985,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamRole.IamRole.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iamRole.IamRole.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -995,7 +995,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.iamRole.IamRole.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.iamRole.IamRole.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1005,7 +1005,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.iamRole.IamRole.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.iamRole.IamRole.property.arn"></a>
 
 ```python
 arn: str
@@ -1015,7 +1015,7 @@ arn: str
 
 ---
 
-##### `create_date`<sup>Required</sup> <a name="create_date" id="@cdktf/provider-aws.iamRole.IamRole.property.createDate"></a>
+##### `create_date`<sup>Required</sup> <a name="create_date" id="@cdktn/provider-aws.iamRole.IamRole.property.createDate"></a>
 
 ```python
 create_date: str
@@ -1025,17 +1025,17 @@ create_date: str
 
 ---
 
-##### `inline_policy`<sup>Required</sup> <a name="inline_policy" id="@cdktf/provider-aws.iamRole.IamRole.property.inlinePolicy"></a>
+##### `inline_policy`<sup>Required</sup> <a name="inline_policy" id="@cdktn/provider-aws.iamRole.IamRole.property.inlinePolicy"></a>
 
 ```python
 inline_policy: IamRoleInlinePolicyList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList">IamRoleInlinePolicyList</a>
+- *Type:* <a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList">IamRoleInlinePolicyList</a>
 
 ---
 
-##### `unique_id`<sup>Required</sup> <a name="unique_id" id="@cdktf/provider-aws.iamRole.IamRole.property.uniqueId"></a>
+##### `unique_id`<sup>Required</sup> <a name="unique_id" id="@cdktn/provider-aws.iamRole.IamRole.property.uniqueId"></a>
 
 ```python
 unique_id: str
@@ -1045,7 +1045,7 @@ unique_id: str
 
 ---
 
-##### `assume_role_policy_input`<sup>Optional</sup> <a name="assume_role_policy_input" id="@cdktf/provider-aws.iamRole.IamRole.property.assumeRolePolicyInput"></a>
+##### `assume_role_policy_input`<sup>Optional</sup> <a name="assume_role_policy_input" id="@cdktn/provider-aws.iamRole.IamRole.property.assumeRolePolicyInput"></a>
 
 ```python
 assume_role_policy_input: str
@@ -1055,7 +1055,7 @@ assume_role_policy_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.iamRole.IamRole.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.iamRole.IamRole.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1065,7 +1065,7 @@ description_input: str
 
 ---
 
-##### `force_detach_policies_input`<sup>Optional</sup> <a name="force_detach_policies_input" id="@cdktf/provider-aws.iamRole.IamRole.property.forceDetachPoliciesInput"></a>
+##### `force_detach_policies_input`<sup>Optional</sup> <a name="force_detach_policies_input" id="@cdktn/provider-aws.iamRole.IamRole.property.forceDetachPoliciesInput"></a>
 
 ```python
 force_detach_policies_input: bool | IResolvable
@@ -1075,7 +1075,7 @@ force_detach_policies_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.iamRole.IamRole.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.iamRole.IamRole.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1085,17 +1085,17 @@ id_input: str
 
 ---
 
-##### `inline_policy_input`<sup>Optional</sup> <a name="inline_policy_input" id="@cdktf/provider-aws.iamRole.IamRole.property.inlinePolicyInput"></a>
+##### `inline_policy_input`<sup>Optional</sup> <a name="inline_policy_input" id="@cdktn/provider-aws.iamRole.IamRole.property.inlinePolicyInput"></a>
 
 ```python
 inline_policy_input: IResolvable | typing.List[IamRoleInlinePolicy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
 
 ---
 
-##### `managed_policy_arns_input`<sup>Optional</sup> <a name="managed_policy_arns_input" id="@cdktf/provider-aws.iamRole.IamRole.property.managedPolicyArnsInput"></a>
+##### `managed_policy_arns_input`<sup>Optional</sup> <a name="managed_policy_arns_input" id="@cdktn/provider-aws.iamRole.IamRole.property.managedPolicyArnsInput"></a>
 
 ```python
 managed_policy_arns_input: typing.List[str]
@@ -1105,7 +1105,7 @@ managed_policy_arns_input: typing.List[str]
 
 ---
 
-##### `max_session_duration_input`<sup>Optional</sup> <a name="max_session_duration_input" id="@cdktf/provider-aws.iamRole.IamRole.property.maxSessionDurationInput"></a>
+##### `max_session_duration_input`<sup>Optional</sup> <a name="max_session_duration_input" id="@cdktn/provider-aws.iamRole.IamRole.property.maxSessionDurationInput"></a>
 
 ```python
 max_session_duration_input: typing.Union[int, float]
@@ -1115,7 +1115,7 @@ max_session_duration_input: typing.Union[int, float]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.iamRole.IamRole.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.iamRole.IamRole.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1125,7 +1125,7 @@ name_input: str
 
 ---
 
-##### `name_prefix_input`<sup>Optional</sup> <a name="name_prefix_input" id="@cdktf/provider-aws.iamRole.IamRole.property.namePrefixInput"></a>
+##### `name_prefix_input`<sup>Optional</sup> <a name="name_prefix_input" id="@cdktn/provider-aws.iamRole.IamRole.property.namePrefixInput"></a>
 
 ```python
 name_prefix_input: str
@@ -1135,7 +1135,7 @@ name_prefix_input: str
 
 ---
 
-##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-aws.iamRole.IamRole.property.pathInput"></a>
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktn/provider-aws.iamRole.IamRole.property.pathInput"></a>
 
 ```python
 path_input: str
@@ -1145,7 +1145,7 @@ path_input: str
 
 ---
 
-##### `permissions_boundary_input`<sup>Optional</sup> <a name="permissions_boundary_input" id="@cdktf/provider-aws.iamRole.IamRole.property.permissionsBoundaryInput"></a>
+##### `permissions_boundary_input`<sup>Optional</sup> <a name="permissions_boundary_input" id="@cdktn/provider-aws.iamRole.IamRole.property.permissionsBoundaryInput"></a>
 
 ```python
 permissions_boundary_input: str
@@ -1155,7 +1155,7 @@ permissions_boundary_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.iamRole.IamRole.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.iamRole.IamRole.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1165,7 +1165,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.iamRole.IamRole.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.iamRole.IamRole.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1175,7 +1175,7 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `assume_role_policy`<sup>Required</sup> <a name="assume_role_policy" id="@cdktf/provider-aws.iamRole.IamRole.property.assumeRolePolicy"></a>
+##### `assume_role_policy`<sup>Required</sup> <a name="assume_role_policy" id="@cdktn/provider-aws.iamRole.IamRole.property.assumeRolePolicy"></a>
 
 ```python
 assume_role_policy: str
@@ -1185,7 +1185,7 @@ assume_role_policy: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.iamRole.IamRole.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.iamRole.IamRole.property.description"></a>
 
 ```python
 description: str
@@ -1195,7 +1195,7 @@ description: str
 
 ---
 
-##### `force_detach_policies`<sup>Required</sup> <a name="force_detach_policies" id="@cdktf/provider-aws.iamRole.IamRole.property.forceDetachPolicies"></a>
+##### `force_detach_policies`<sup>Required</sup> <a name="force_detach_policies" id="@cdktn/provider-aws.iamRole.IamRole.property.forceDetachPolicies"></a>
 
 ```python
 force_detach_policies: bool | IResolvable
@@ -1205,7 +1205,7 @@ force_detach_policies: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRole.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRole.property.id"></a>
 
 ```python
 id: str
@@ -1215,7 +1215,7 @@ id: str
 
 ---
 
-##### `managed_policy_arns`<sup>Required</sup> <a name="managed_policy_arns" id="@cdktf/provider-aws.iamRole.IamRole.property.managedPolicyArns"></a>
+##### `managed_policy_arns`<sup>Required</sup> <a name="managed_policy_arns" id="@cdktn/provider-aws.iamRole.IamRole.property.managedPolicyArns"></a>
 
 ```python
 managed_policy_arns: typing.List[str]
@@ -1225,7 +1225,7 @@ managed_policy_arns: typing.List[str]
 
 ---
 
-##### `max_session_duration`<sup>Required</sup> <a name="max_session_duration" id="@cdktf/provider-aws.iamRole.IamRole.property.maxSessionDuration"></a>
+##### `max_session_duration`<sup>Required</sup> <a name="max_session_duration" id="@cdktn/provider-aws.iamRole.IamRole.property.maxSessionDuration"></a>
 
 ```python
 max_session_duration: typing.Union[int, float]
@@ -1235,7 +1235,7 @@ max_session_duration: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.iamRole.IamRole.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.iamRole.IamRole.property.name"></a>
 
 ```python
 name: str
@@ -1245,7 +1245,7 @@ name: str
 
 ---
 
-##### `name_prefix`<sup>Required</sup> <a name="name_prefix" id="@cdktf/provider-aws.iamRole.IamRole.property.namePrefix"></a>
+##### `name_prefix`<sup>Required</sup> <a name="name_prefix" id="@cdktn/provider-aws.iamRole.IamRole.property.namePrefix"></a>
 
 ```python
 name_prefix: str
@@ -1255,7 +1255,7 @@ name_prefix: str
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.iamRole.IamRole.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.iamRole.IamRole.property.path"></a>
 
 ```python
 path: str
@@ -1265,7 +1265,7 @@ path: str
 
 ---
 
-##### `permissions_boundary`<sup>Required</sup> <a name="permissions_boundary" id="@cdktf/provider-aws.iamRole.IamRole.property.permissionsBoundary"></a>
+##### `permissions_boundary`<sup>Required</sup> <a name="permissions_boundary" id="@cdktn/provider-aws.iamRole.IamRole.property.permissionsBoundary"></a>
 
 ```python
 permissions_boundary: str
@@ -1275,7 +1275,7 @@ permissions_boundary: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.iamRole.IamRole.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.iamRole.IamRole.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1285,7 +1285,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.iamRole.IamRole.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.iamRole.IamRole.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1299,11 +1299,11 @@ tags_all: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRole.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRole.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.iamRole.IamRole.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.iamRole.IamRole.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1315,12 +1315,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### IamRoleConfig <a name="IamRoleConfig" id="@cdktf/provider-aws.iamRole.IamRoleConfig"></a>
+### IamRoleConfig <a name="IamRoleConfig" id="@cdktn/provider-aws.iamRole.IamRoleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRole.IamRoleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamRole.IamRoleConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRoleConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1350,30 +1350,30 @@ iamRole.IamRoleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.assumeRolePolicy">assume_role_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#description IamRole#description}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.forceDetachPolicies">force_detach_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#id IamRole#id}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.inlinePolicy">inline_policy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | inline_policy block. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.managedPolicyArns">managed_policy_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.maxSessionDuration">max_session_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name IamRole#name}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#path IamRole#path}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.permissionsBoundary">permissions_boundary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags IamRole#tags}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags_all IamRole#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.assumeRolePolicy">assume_role_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#description IamRole#description}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.forceDetachPolicies">force_detach_policies</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#id IamRole#id}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.inlinePolicy">inline_policy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | inline_policy block. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.managedPolicyArns">managed_policy_arns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.maxSessionDuration">max_session_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name IamRole#name}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.namePrefix">name_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#path IamRole#path}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.permissionsBoundary">permissions_boundary</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags IamRole#tags}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags_all IamRole#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1383,7 +1383,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1393,7 +1393,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1403,7 +1403,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1413,7 +1413,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1423,7 +1423,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1433,7 +1433,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1443,7 +1443,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `assume_role_policy`<sup>Required</sup> <a name="assume_role_policy" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.assumeRolePolicy"></a>
+##### `assume_role_policy`<sup>Required</sup> <a name="assume_role_policy" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.assumeRolePolicy"></a>
 
 ```python
 assume_role_policy: str
@@ -1451,11 +1451,11 @@ assume_role_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#assume_role_policy IamRole#assume_role_policy}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.description"></a>
 
 ```python
 description: str
@@ -1463,11 +1463,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#description IamRole#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#description IamRole#description}.
 
 ---
 
-##### `force_detach_policies`<sup>Optional</sup> <a name="force_detach_policies" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.forceDetachPolicies"></a>
+##### `force_detach_policies`<sup>Optional</sup> <a name="force_detach_policies" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.forceDetachPolicies"></a>
 
 ```python
 force_detach_policies: bool | IResolvable
@@ -1475,11 +1475,11 @@ force_detach_policies: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#force_detach_policies IamRole#force_detach_policies}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.id"></a>
 
 ```python
 id: str
@@ -1487,28 +1487,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#id IamRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#id IamRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `inline_policy`<sup>Optional</sup> <a name="inline_policy" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.inlinePolicy"></a>
+##### `inline_policy`<sup>Optional</sup> <a name="inline_policy" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.inlinePolicy"></a>
 
 ```python
 inline_policy: IResolvable | typing.List[IamRoleInlinePolicy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
 
 inline_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#inline_policy IamRole#inline_policy}
 
 ---
 
-##### `managed_policy_arns`<sup>Optional</sup> <a name="managed_policy_arns" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.managedPolicyArns"></a>
+##### `managed_policy_arns`<sup>Optional</sup> <a name="managed_policy_arns" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.managedPolicyArns"></a>
 
 ```python
 managed_policy_arns: typing.List[str]
@@ -1516,11 +1516,11 @@ managed_policy_arns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#managed_policy_arns IamRole#managed_policy_arns}.
 
 ---
 
-##### `max_session_duration`<sup>Optional</sup> <a name="max_session_duration" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.maxSessionDuration"></a>
+##### `max_session_duration`<sup>Optional</sup> <a name="max_session_duration" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.maxSessionDuration"></a>
 
 ```python
 max_session_duration: typing.Union[int, float]
@@ -1528,11 +1528,11 @@ max_session_duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#max_session_duration IamRole#max_session_duration}.
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.name"></a>
 
 ```python
 name: str
@@ -1540,11 +1540,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name IamRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name IamRole#name}.
 
 ---
 
-##### `name_prefix`<sup>Optional</sup> <a name="name_prefix" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.namePrefix"></a>
+##### `name_prefix`<sup>Optional</sup> <a name="name_prefix" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.namePrefix"></a>
 
 ```python
 name_prefix: str
@@ -1552,11 +1552,11 @@ name_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name_prefix IamRole#name_prefix}.
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.path"></a>
 
 ```python
 path: str
@@ -1564,11 +1564,11 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#path IamRole#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#path IamRole#path}.
 
 ---
 
-##### `permissions_boundary`<sup>Optional</sup> <a name="permissions_boundary" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.permissionsBoundary"></a>
+##### `permissions_boundary`<sup>Optional</sup> <a name="permissions_boundary" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.permissionsBoundary"></a>
 
 ```python
 permissions_boundary: str
@@ -1576,11 +1576,11 @@ permissions_boundary: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#permissions_boundary IamRole#permissions_boundary}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1588,11 +1588,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags IamRole#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags IamRole#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.iamRole.IamRoleConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.iamRole.IamRoleConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1600,16 +1600,16 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#tags_all IamRole#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#tags_all IamRole#tags_all}.
 
 ---
 
-### IamRoleInlinePolicy <a name="IamRoleInlinePolicy" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicy"></a>
+### IamRoleInlinePolicy <a name="IamRoleInlinePolicy" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicy"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicy.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRoleInlinePolicy(
   name: str = None,
@@ -1621,12 +1621,12 @@ iamRole.IamRoleInlinePolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name IamRole#name}. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#policy IamRole#policy}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name IamRole#name}. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy.property.policy">policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#policy IamRole#policy}. |
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicy.property.name"></a>
 
 ```python
 name: str
@@ -1634,11 +1634,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#name IamRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#name IamRole#name}.
 
 ---
 
-##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicy.property.policy"></a>
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicy.property.policy"></a>
 
 ```python
 policy: str
@@ -1646,18 +1646,18 @@ policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/iam_role#policy IamRole#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_role#policy IamRole#policy}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### IamRoleInlinePolicyList <a name="IamRoleInlinePolicyList" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList"></a>
+### IamRoleInlinePolicyList <a name="IamRoleInlinePolicyList" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRoleInlinePolicyList(
   terraform_resource: IInterpolatingParent,
@@ -1668,13 +1668,13 @@ iamRole.IamRoleInlinePolicyList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1682,7 +1682,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1690,7 +1690,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1702,15 +1702,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1722,19 +1722,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.resolve"></a>
 
 ```python
 def resolve(
@@ -1744,13 +1744,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1760,7 +1760,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.get"></a>
 
 ```python
 def get(
@@ -1768,7 +1768,7 @@ def get(
 ) -> IamRoleInlinePolicyOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1781,13 +1781,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1801,7 +1801,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1811,23 +1811,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[IamRoleInlinePolicy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>]
 
 ---
 
 
-### IamRoleInlinePolicyOutputReference <a name="IamRoleInlinePolicyOutputReference" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference"></a>
+### IamRoleInlinePolicyOutputReference <a name="IamRoleInlinePolicyOutputReference" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import iam_role
+from cdktn_provider_aws import iam_role
 
 iamRole.IamRoleInlinePolicyOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1839,14 +1839,14 @@ iamRole.IamRoleInlinePolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1854,7 +1854,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1862,7 +1862,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1870,7 +1870,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1882,31 +1882,31 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetPolicy">reset_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetPolicy">reset_policy</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1914,13 +1914,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1928,13 +1928,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1942,13 +1942,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1956,13 +1956,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1970,13 +1970,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1984,13 +1984,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1998,13 +1998,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2012,13 +2012,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2026,13 +2026,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2040,13 +2040,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2056,13 +2056,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2072,13 +2072,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_name` <a name="reset_name" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetName"></a>
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetName"></a>
 
 ```python
 def reset_name() -> None
 ```
 
-##### `reset_policy` <a name="reset_policy" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetPolicy"></a>
+##### `reset_policy` <a name="reset_policy" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.resetPolicy"></a>
 
 ```python
 def reset_policy() -> None
@@ -2089,17 +2089,17 @@ def reset_policy() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policyInput">policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policy">policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policyInput">policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policy">policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2113,7 +2113,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2123,7 +2123,7 @@ fqn: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -2133,7 +2133,7 @@ name_input: str
 
 ---
 
-##### `policy_input`<sup>Optional</sup> <a name="policy_input" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policyInput"></a>
+##### `policy_input`<sup>Optional</sup> <a name="policy_input" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policyInput"></a>
 
 ```python
 policy_input: str
@@ -2143,7 +2143,7 @@ policy_input: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -2153,7 +2153,7 @@ name: str
 
 ---
 
-##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policy"></a>
+##### `policy`<sup>Required</sup> <a name="policy" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.policy"></a>
 
 ```python
 policy: str
@@ -2163,13 +2163,13 @@ policy: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.iamRole.IamRoleInlinePolicyOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | IamRoleInlinePolicy
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.iamRole.IamRoleInlinePolicy">IamRoleInlinePolicy</a>
 
 ---
 

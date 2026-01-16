@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface BedrockagentcoreBrowserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}
   */
   readonly executionRoleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * network_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
   */
   readonly networkConfiguration?: BedrockagentcoreBrowserNetworkConfiguration[] | cdktf.IResolvable;
   /**
   * recording block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
   */
   readonly recording?: BedrockagentcoreBrowserRecording[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
   */
   readonly timeouts?: BedrockagentcoreBrowserTimeouts;
 }
 export interface BedrockagentcoreBrowserNetworkConfigurationVpcConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}
   */
   readonly securityGroups: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}
   */
   readonly subnets: string[];
 }
@@ -198,13 +198,13 @@ export class BedrockagentcoreBrowserNetworkConfigurationVpcConfigList extends cd
 }
 export interface BedrockagentcoreBrowserNetworkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}
   */
   readonly networkMode: string;
   /**
   * vpc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
   */
   readonly vpcConfig?: BedrockagentcoreBrowserNetworkConfigurationVpcConfig[] | cdktf.IResolvable;
 }
@@ -346,11 +346,11 @@ export class BedrockagentcoreBrowserNetworkConfigurationList extends cdktf.Compl
 }
 export interface BedrockagentcoreBrowserRecordingS3Location {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}
   */
   readonly prefix: string;
 }
@@ -489,13 +489,13 @@ export class BedrockagentcoreBrowserRecordingS3LocationList extends cdktf.Comple
 }
 export interface BedrockagentcoreBrowserRecording {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * s3_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
   */
   readonly s3Location?: BedrockagentcoreBrowserRecordingS3Location[] | cdktf.IResolvable;
 }
@@ -642,13 +642,13 @@ export interface BedrockagentcoreBrowserTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
   */
   readonly delete?: string;
 }
@@ -771,7 +771,7 @@ export class BedrockagentcoreBrowserTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}
 */
 export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
 
@@ -787,7 +787,7 @@ export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BedrockagentcoreBrowser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BedrockagentcoreBrowser to import
-  * @param importFromId The id of the existing BedrockagentcoreBrowser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BedrockagentcoreBrowser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BedrockagentcoreBrowser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -799,7 +799,7 @@ export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -810,7 +810,7 @@ export class BedrockagentcoreBrowser extends cdktf.TerraformResource {
       terraformResourceType: 'aws_bedrockagentcore_browser',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

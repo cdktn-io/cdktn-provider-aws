@@ -1,28 +1,28 @@
-# `lambdaInvocation` Submodule <a name="`lambdaInvocation` Submodule" id="@cdktf/provider-aws.lambdaInvocation"></a>
+# `lambdaInvocation` Submodule <a name="`lambdaInvocation` Submodule" id="@cdktn/provider-aws.lambdaInvocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### LambdaInvocation <a name="LambdaInvocation" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation"></a>
+### LambdaInvocation <a name="LambdaInvocation" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation aws_lambda_invocation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation aws_lambda_invocation}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdainvocation"
 
 lambdainvocation.NewLambdaInvocation(scope Construct, id *string, config LambdaInvocationConfig) LambdaInvocation
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig">LambdaInvocationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig">LambdaInvocationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig">LambdaInvocationConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig">LambdaInvocationConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetLifecycleScope">ResetLifecycleScope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetQualifier">ResetQualifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetTenantId">ResetTenantId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetTerraformKey">ResetTerraformKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetTriggers">ResetTriggers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetLifecycleScope">ResetLifecycleScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetQualifier">ResetQualifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetTenantId">ResetTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetTerraformKey">ResetTerraformKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetTriggers">ResetTriggers</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toString"></a>
 
 ```go
 func ToString() *string
@@ -91,25 +91,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -117,7 +117,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -133,19 +133,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -153,7 +153,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -161,7 +161,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -169,151 +169,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -323,7 +323,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -331,7 +331,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -339,7 +339,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -355,7 +355,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -363,7 +363,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -371,43 +371,43 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetLifecycleScope` <a name="ResetLifecycleScope" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetLifecycleScope"></a>
+##### `ResetLifecycleScope` <a name="ResetLifecycleScope" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetLifecycleScope"></a>
 
 ```go
 func ResetLifecycleScope()
 ```
 
-##### `ResetQualifier` <a name="ResetQualifier" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetQualifier"></a>
+##### `ResetQualifier` <a name="ResetQualifier" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetQualifier"></a>
 
 ```go
 func ResetQualifier()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetTenantId` <a name="ResetTenantId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetTenantId"></a>
+##### `ResetTenantId` <a name="ResetTenantId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetTenantId"></a>
 
 ```go
 func ResetTenantId()
 ```
 
-##### `ResetTerraformKey` <a name="ResetTerraformKey" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetTerraformKey"></a>
+##### `ResetTerraformKey` <a name="ResetTerraformKey" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetTerraformKey"></a>
 
 ```go
 func ResetTerraformKey()
 ```
 
-##### `ResetTriggers` <a name="ResetTriggers" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.resetTriggers"></a>
+##### `ResetTriggers` <a name="ResetTriggers" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.resetTriggers"></a>
 
 ```go
 func ResetTriggers()
@@ -417,17 +417,17 @@ func ResetTriggers()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a LambdaInvocation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a LambdaInvocation resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdainvocation"
 
 lambdainvocation.LambdaInvocation_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -456,45 +456,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdainvocation"
 
 lambdainvocation.LambdaInvocation_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdainvocation"
 
 lambdainvocation.LambdaInvocation_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdainvocation"
 
 lambdainvocation.LambdaInvocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a LambdaInvocation resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -502,7 +502,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -510,17 +510,17 @@ The construct id used in the generated config for the LambdaInvocation to import
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing LambdaInvocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -532,43 +532,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.result">Result</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.functionNameInput">FunctionNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.inputInput">InputInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScopeInput">LifecycleScopeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifierInput">QualifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantIdInput">TenantIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKeyInput">TerraformKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.triggersInput">TriggersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.functionName">FunctionName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.input">Input</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScope">LifecycleScope</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifier">Qualifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantId">TenantId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKey">TerraformKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.result">Result</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.functionNameInput">FunctionNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.inputInput">InputInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScopeInput">LifecycleScopeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifierInput">QualifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantIdInput">TenantIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKeyInput">TerraformKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.triggersInput">TriggersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.functionName">FunctionName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.input">Input</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScope">LifecycleScope</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifier">Qualifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantId">TenantId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKey">TerraformKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.node"></a>
 
 ```go
 func Node() Node
@@ -580,7 +580,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -590,7 +590,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -600,7 +600,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -610,7 +610,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -620,7 +620,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -630,7 +630,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -640,7 +640,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -650,7 +650,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -660,7 +660,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -670,7 +670,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -680,7 +680,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -690,7 +690,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -700,7 +700,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -710,7 +710,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Result`<sup>Required</sup> <a name="Result" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.result"></a>
+##### `Result`<sup>Required</sup> <a name="Result" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.result"></a>
 
 ```go
 func Result() *string
@@ -720,7 +720,7 @@ func Result() *string
 
 ---
 
-##### `FunctionNameInput`<sup>Optional</sup> <a name="FunctionNameInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.functionNameInput"></a>
+##### `FunctionNameInput`<sup>Optional</sup> <a name="FunctionNameInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.functionNameInput"></a>
 
 ```go
 func FunctionNameInput() *string
@@ -730,7 +730,7 @@ func FunctionNameInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -740,7 +740,7 @@ func IdInput() *string
 
 ---
 
-##### `InputInput`<sup>Optional</sup> <a name="InputInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.inputInput"></a>
+##### `InputInput`<sup>Optional</sup> <a name="InputInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.inputInput"></a>
 
 ```go
 func InputInput() *string
@@ -750,7 +750,7 @@ func InputInput() *string
 
 ---
 
-##### `LifecycleScopeInput`<sup>Optional</sup> <a name="LifecycleScopeInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScopeInput"></a>
+##### `LifecycleScopeInput`<sup>Optional</sup> <a name="LifecycleScopeInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScopeInput"></a>
 
 ```go
 func LifecycleScopeInput() *string
@@ -760,7 +760,7 @@ func LifecycleScopeInput() *string
 
 ---
 
-##### `QualifierInput`<sup>Optional</sup> <a name="QualifierInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifierInput"></a>
+##### `QualifierInput`<sup>Optional</sup> <a name="QualifierInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifierInput"></a>
 
 ```go
 func QualifierInput() *string
@@ -770,7 +770,7 @@ func QualifierInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -780,7 +780,7 @@ func RegionInput() *string
 
 ---
 
-##### `TenantIdInput`<sup>Optional</sup> <a name="TenantIdInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantIdInput"></a>
+##### `TenantIdInput`<sup>Optional</sup> <a name="TenantIdInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantIdInput"></a>
 
 ```go
 func TenantIdInput() *string
@@ -790,7 +790,7 @@ func TenantIdInput() *string
 
 ---
 
-##### `TerraformKeyInput`<sup>Optional</sup> <a name="TerraformKeyInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKeyInput"></a>
+##### `TerraformKeyInput`<sup>Optional</sup> <a name="TerraformKeyInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKeyInput"></a>
 
 ```go
 func TerraformKeyInput() *string
@@ -800,7 +800,7 @@ func TerraformKeyInput() *string
 
 ---
 
-##### `TriggersInput`<sup>Optional</sup> <a name="TriggersInput" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.triggersInput"></a>
+##### `TriggersInput`<sup>Optional</sup> <a name="TriggersInput" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.triggersInput"></a>
 
 ```go
 func TriggersInput() *map[string]*string
@@ -810,7 +810,7 @@ func TriggersInput() *map[string]*string
 
 ---
 
-##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.functionName"></a>
+##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.functionName"></a>
 
 ```go
 func FunctionName() *string
@@ -820,7 +820,7 @@ func FunctionName() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.id"></a>
 
 ```go
 func Id() *string
@@ -830,7 +830,7 @@ func Id() *string
 
 ---
 
-##### `Input`<sup>Required</sup> <a name="Input" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.input"></a>
+##### `Input`<sup>Required</sup> <a name="Input" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.input"></a>
 
 ```go
 func Input() *string
@@ -840,7 +840,7 @@ func Input() *string
 
 ---
 
-##### `LifecycleScope`<sup>Required</sup> <a name="LifecycleScope" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScope"></a>
+##### `LifecycleScope`<sup>Required</sup> <a name="LifecycleScope" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.lifecycleScope"></a>
 
 ```go
 func LifecycleScope() *string
@@ -850,7 +850,7 @@ func LifecycleScope() *string
 
 ---
 
-##### `Qualifier`<sup>Required</sup> <a name="Qualifier" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifier"></a>
+##### `Qualifier`<sup>Required</sup> <a name="Qualifier" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.qualifier"></a>
 
 ```go
 func Qualifier() *string
@@ -860,7 +860,7 @@ func Qualifier() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.region"></a>
 
 ```go
 func Region() *string
@@ -870,7 +870,7 @@ func Region() *string
 
 ---
 
-##### `TenantId`<sup>Required</sup> <a name="TenantId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantId"></a>
+##### `TenantId`<sup>Required</sup> <a name="TenantId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.tenantId"></a>
 
 ```go
 func TenantId() *string
@@ -880,7 +880,7 @@ func TenantId() *string
 
 ---
 
-##### `TerraformKey`<sup>Required</sup> <a name="TerraformKey" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKey"></a>
+##### `TerraformKey`<sup>Required</sup> <a name="TerraformKey" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.terraformKey"></a>
 
 ```go
 func TerraformKey() *string
@@ -890,7 +890,7 @@ func TerraformKey() *string
 
 ---
 
-##### `Triggers`<sup>Required</sup> <a name="Triggers" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.triggers"></a>
+##### `Triggers`<sup>Required</sup> <a name="Triggers" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.triggers"></a>
 
 ```go
 func Triggers() *map[string]*string
@@ -904,11 +904,11 @@ func Triggers() *map[string]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocation.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocation.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -920,12 +920,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### LambdaInvocationConfig <a name="LambdaInvocationConfig" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig"></a>
+### LambdaInvocationConfig <a name="LambdaInvocationConfig" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdainvocation"
 
 &lambdainvocation.LambdaInvocationConfig {
 	Connection: interface{},
@@ -951,26 +951,26 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/lambdainvocation"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.input">Input</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#input LambdaInvocation#input}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#id LambdaInvocation#id}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycleScope">LifecycleScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.qualifier">Qualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#tenant_id LambdaInvocation#tenant_id}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.terraformKey">TerraformKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}. |
-| <code><a href="#@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.input">Input</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#input LambdaInvocation#input}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#id LambdaInvocation#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycleScope">LifecycleScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.qualifier">Qualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#tenant_id LambdaInvocation#tenant_id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.terraformKey">TerraformKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}. |
+| <code><a href="#@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -980,7 +980,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -990,7 +990,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1000,7 +1000,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1010,7 +1010,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1020,7 +1020,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1030,7 +1030,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1040,7 +1040,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.functionName"></a>
+##### `FunctionName`<sup>Required</sup> <a name="FunctionName" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.functionName"></a>
 
 ```go
 FunctionName *string
@@ -1048,11 +1048,11 @@ FunctionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#function_name LambdaInvocation#function_name}.
 
 ---
 
-##### `Input`<sup>Required</sup> <a name="Input" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.input"></a>
+##### `Input`<sup>Required</sup> <a name="Input" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.input"></a>
 
 ```go
 Input *string
@@ -1060,11 +1060,11 @@ Input *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#input LambdaInvocation#input}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#input LambdaInvocation#input}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1072,14 +1072,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#id LambdaInvocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#id LambdaInvocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `LifecycleScope`<sup>Optional</sup> <a name="LifecycleScope" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycleScope"></a>
+##### `LifecycleScope`<sup>Optional</sup> <a name="LifecycleScope" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.lifecycleScope"></a>
 
 ```go
 LifecycleScope *string
@@ -1087,11 +1087,11 @@ LifecycleScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#lifecycle_scope LambdaInvocation#lifecycle_scope}.
 
 ---
 
-##### `Qualifier`<sup>Optional</sup> <a name="Qualifier" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.qualifier"></a>
+##### `Qualifier`<sup>Optional</sup> <a name="Qualifier" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.qualifier"></a>
 
 ```go
 Qualifier *string
@@ -1099,11 +1099,11 @@ Qualifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#qualifier LambdaInvocation#qualifier}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1113,11 +1113,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#region LambdaInvocation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#region LambdaInvocation#region}
 
 ---
 
-##### `TenantId`<sup>Optional</sup> <a name="TenantId" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.tenantId"></a>
+##### `TenantId`<sup>Optional</sup> <a name="TenantId" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.tenantId"></a>
 
 ```go
 TenantId *string
@@ -1125,11 +1125,11 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#tenant_id LambdaInvocation#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#tenant_id LambdaInvocation#tenant_id}.
 
 ---
 
-##### `TerraformKey`<sup>Optional</sup> <a name="TerraformKey" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.terraformKey"></a>
+##### `TerraformKey`<sup>Optional</sup> <a name="TerraformKey" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.terraformKey"></a>
 
 ```go
 TerraformKey *string
@@ -1137,11 +1137,11 @@ TerraformKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#terraform_key LambdaInvocation#terraform_key}.
 
 ---
 
-##### `Triggers`<sup>Optional</sup> <a name="Triggers" id="@cdktf/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.triggers"></a>
+##### `Triggers`<sup>Optional</sup> <a name="Triggers" id="@cdktn/provider-aws.lambdaInvocation.LambdaInvocationConfig.property.triggers"></a>
 
 ```go
 Triggers *map[string]*string
@@ -1149,7 +1149,7 @@ Triggers *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_invocation#triggers LambdaInvocation#triggers}.
 
 ---
 

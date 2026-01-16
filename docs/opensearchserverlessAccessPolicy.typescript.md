@@ -1,28 +1,28 @@
-# `opensearchserverlessAccessPolicy` Submodule <a name="`opensearchserverlessAccessPolicy` Submodule" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy"></a>
+# `opensearchserverlessAccessPolicy` Submodule <a name="`opensearchserverlessAccessPolicy` Submodule" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### OpensearchserverlessAccessPolicy <a name="OpensearchserverlessAccessPolicy" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy"></a>
+### OpensearchserverlessAccessPolicy <a name="OpensearchserverlessAccessPolicy" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy aws_opensearchserverless_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy aws_opensearchserverless_access_policy}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer"></a>
 
 ```typescript
-import { opensearchserverlessAccessPolicy } from '@cdktf/provider-aws'
+import { opensearchserverlessAccessPolicy } from '@cdktn/provider-aws'
 
 new opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy(scope: Construct, id: string, config: OpensearchserverlessAccessPolicyConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig">OpensearchserverlessAccessPolicyConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig">OpensearchserverlessAccessPolicyConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig">OpensearchserverlessAccessPolicyConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig">OpensearchserverlessAccessPolicyConfig</a>
 
 ---
 
@@ -50,35 +50,35 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toString"></a>
 
 ```typescript
 public toString(): string
@@ -86,25 +86,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -112,7 +112,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -120,7 +120,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -128,19 +128,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -148,7 +148,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -156,7 +156,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -164,151 +164,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -318,7 +318,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -326,7 +326,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -334,7 +334,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -342,7 +342,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -350,7 +350,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -358,7 +358,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -366,13 +366,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
@@ -382,17 +382,17 @@ public resetRegion(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a OpensearchserverlessAccessPolicy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a OpensearchserverlessAccessPolicy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct"></a>
 
 ```typescript
-import { opensearchserverlessAccessPolicy } from '@cdktf/provider-aws'
+import { opensearchserverlessAccessPolicy } from '@cdktn/provider-aws'
 
 opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct(x: any)
 ```
@@ -413,7 +413,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -421,45 +421,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement"></a>
 
 ```typescript
-import { opensearchserverlessAccessPolicy } from '@cdktf/provider-aws'
+import { opensearchserverlessAccessPolicy } from '@cdktn/provider-aws'
 
 opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource"></a>
 
 ```typescript
-import { opensearchserverlessAccessPolicy } from '@cdktf/provider-aws'
+import { opensearchserverlessAccessPolicy } from '@cdktn/provider-aws'
 
 opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport"></a>
 
 ```typescript
-import { opensearchserverlessAccessPolicy } from '@cdktf/provider-aws'
+import { opensearchserverlessAccessPolicy } from '@cdktn/provider-aws'
 
 opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a OpensearchserverlessAccessPolicy resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -467,7 +467,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -475,17 +475,17 @@ The construct id used in the generated config for the OpensearchserverlessAccess
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing OpensearchserverlessAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -497,36 +497,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyVersion">policyVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policy">policy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyVersion">policyVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyInput">policyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policy">policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.type">type</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -538,7 +538,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -548,7 +548,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -558,7 +558,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -568,7 +568,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -578,7 +578,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -588,7 +588,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -598,7 +598,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -608,7 +608,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -618,7 +618,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -628,7 +628,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -638,7 +638,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -648,7 +648,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -658,7 +658,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -668,7 +668,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -678,7 +678,7 @@ public readonly id: string;
 
 ---
 
-##### `policyVersion`<sup>Required</sup> <a name="policyVersion" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyVersion"></a>
+##### `policyVersion`<sup>Required</sup> <a name="policyVersion" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyVersion"></a>
 
 ```typescript
 public readonly policyVersion: string;
@@ -688,7 +688,7 @@ public readonly policyVersion: string;
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -698,7 +698,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -708,7 +708,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyInput"></a>
+##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policyInput"></a>
 
 ```typescript
 public readonly policyInput: string;
@@ -718,7 +718,7 @@ public readonly policyInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -728,7 +728,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: string;
@@ -738,7 +738,7 @@ public readonly typeInput: string;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -748,7 +748,7 @@ public readonly description: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -758,7 +758,7 @@ public readonly name: string;
 
 ---
 
-##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policy"></a>
+##### `policy`<sup>Required</sup> <a name="policy" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.policy"></a>
 
 ```typescript
 public readonly policy: string;
@@ -768,7 +768,7 @@ public readonly policy: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -778,7 +778,7 @@ public readonly region: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -792,11 +792,11 @@ public readonly type: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicy.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -808,12 +808,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### OpensearchserverlessAccessPolicyConfig <a name="OpensearchserverlessAccessPolicyConfig" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig"></a>
+### OpensearchserverlessAccessPolicyConfig <a name="OpensearchserverlessAccessPolicyConfig" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.Initializer"></a>
 
 ```typescript
-import { opensearchserverlessAccessPolicy } from '@cdktf/provider-aws'
+import { opensearchserverlessAccessPolicy } from '@cdktn/provider-aws'
 
 const opensearchserverlessAccessPolicyConfig: opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig = { ... }
 ```
@@ -822,22 +822,22 @@ const opensearchserverlessAccessPolicyConfig: opensearchserverlessAccessPolicy.O
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.name">name</a></code> | <code>string</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.policy">policy</a></code> | <code>string</code> | JSON policy document to use as the content for the new policy. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.type">type</a></code> | <code>string</code> | Type of access policy. Must be `data`. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.description">description</a></code> | <code>string</code> | Description of the policy. Typically used to store information about the permissions defined in the policy. |
-| <code><a href="#@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.name">name</a></code> | <code>string</code> | Name of the policy. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.policy">policy</a></code> | <code>string</code> | JSON policy document to use as the content for the new policy. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.type">type</a></code> | <code>string</code> | Type of access policy. Must be `data`. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.description">description</a></code> | <code>string</code> | Description of the policy. Typically used to store information about the permissions defined in the policy. |
+| <code><a href="#@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -847,7 +847,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -857,7 +857,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -867,7 +867,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -877,7 +877,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -887,7 +887,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -897,7 +897,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -907,7 +907,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -917,11 +917,11 @@ public readonly name: string;
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy#name OpensearchserverlessAccessPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy#name OpensearchserverlessAccessPolicy#name}
 
 ---
 
-##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.policy"></a>
+##### `policy`<sup>Required</sup> <a name="policy" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.policy"></a>
 
 ```typescript
 public readonly policy: string;
@@ -931,11 +931,11 @@ public readonly policy: string;
 
 JSON policy document to use as the content for the new policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy#policy OpensearchserverlessAccessPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy#policy OpensearchserverlessAccessPolicy#policy}
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -945,11 +945,11 @@ public readonly type: string;
 
 Type of access policy. Must be `data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy#type OpensearchserverlessAccessPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy#type OpensearchserverlessAccessPolicy#type}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -959,11 +959,11 @@ public readonly description: string;
 
 Description of the policy. Typically used to store information about the permissions defined in the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy#description OpensearchserverlessAccessPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy#description OpensearchserverlessAccessPolicy#description}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.opensearchserverlessAccessPolicy.OpensearchserverlessAccessPolicyConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -973,7 +973,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/opensearchserverless_access_policy#region OpensearchserverlessAccessPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_access_policy#region OpensearchserverlessAccessPolicy#region}
 
 ---
 

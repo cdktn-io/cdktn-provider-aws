@@ -1,28 +1,28 @@
-# `dbInstance` Submodule <a name="`dbInstance` Submodule" id="@cdktf/provider-aws.dbInstance"></a>
+# `dbInstance` Submodule <a name="`dbInstance` Submodule" id="@cdktn/provider-aws.dbInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DbInstance <a name="DbInstance" id="@cdktf/provider-aws.dbInstance.DbInstance"></a>
+### DbInstance <a name="DbInstance" id="@cdktn/provider-aws.dbInstance.DbInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance aws_db_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance aws_db_instance}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstance.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstance(scope Construct, id *string, config DbInstanceConfig) DbInstance
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig">DbInstanceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig">DbInstanceConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dbInstance.DbInstance.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dbInstance.DbInstance.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbInstance.DbInstance.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbInstance.DbInstance.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.dbInstance.DbInstance.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.dbInstance.DbInstance.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig">DbInstanceConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig">DbInstanceConfig</a>
 
 ---
 
@@ -50,111 +50,111 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate">PutBlueGreenUpdate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime">PutRestoreToPointInTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putS3Import">PutS3Import</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetAllocatedStorage">ResetAllocatedStorage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetAllowMajorVersionUpgrade">ResetAllowMajorVersionUpgrade</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetApplyImmediately">ResetApplyImmediately</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetAutoMinorVersionUpgrade">ResetAutoMinorVersionUpgrade</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetAvailabilityZone">ResetAvailabilityZone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetBackupRetentionPeriod">ResetBackupRetentionPeriod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetBackupTarget">ResetBackupTarget</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetBackupWindow">ResetBackupWindow</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetBlueGreenUpdate">ResetBlueGreenUpdate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetCaCertIdentifier">ResetCaCertIdentifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetCharacterSetName">ResetCharacterSetName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetCopyTagsToSnapshot">ResetCopyTagsToSnapshot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetCustomerOwnedIpEnabled">ResetCustomerOwnedIpEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetCustomIamInstanceProfile">ResetCustomIamInstanceProfile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDatabaseInsightsMode">ResetDatabaseInsightsMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDbName">ResetDbName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDbSubnetGroupName">ResetDbSubnetGroupName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDedicatedLogVolume">ResetDedicatedLogVolume</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDeleteAutomatedBackups">ResetDeleteAutomatedBackups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDeletionProtection">ResetDeletionProtection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDomain">ResetDomain</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDomainAuthSecretArn">ResetDomainAuthSecretArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDomainDnsIps">ResetDomainDnsIps</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDomainFqdn">ResetDomainFqdn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDomainIamRoleName">ResetDomainIamRoleName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetDomainOu">ResetDomainOu</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetEnabledCloudwatchLogsExports">ResetEnabledCloudwatchLogsExports</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetEngine">ResetEngine</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetEngineLifecycleSupport">ResetEngineLifecycleSupport</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetEngineVersion">ResetEngineVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetFinalSnapshotIdentifier">ResetFinalSnapshotIdentifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetIamDatabaseAuthenticationEnabled">ResetIamDatabaseAuthenticationEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetIdentifier">ResetIdentifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetIdentifierPrefix">ResetIdentifierPrefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetIops">ResetIops</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetLicenseModel">ResetLicenseModel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMaintenanceWindow">ResetMaintenanceWindow</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetManageMasterUserPassword">ResetManageMasterUserPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMasterUserSecretKmsKeyId">ResetMasterUserSecretKmsKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMaxAllocatedStorage">ResetMaxAllocatedStorage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMonitoringInterval">ResetMonitoringInterval</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMonitoringRoleArn">ResetMonitoringRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetMultiAz">ResetMultiAz</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetNcharCharacterSetName">ResetNcharCharacterSetName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetNetworkType">ResetNetworkType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetOptionGroupName">ResetOptionGroupName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetParameterGroupName">ResetParameterGroupName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPasswordWo">ResetPasswordWo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPasswordWoVersion">ResetPasswordWoVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsEnabled">ResetPerformanceInsightsEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsKmsKeyId">ResetPerformanceInsightsKmsKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsRetentionPeriod">ResetPerformanceInsightsRetentionPeriod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPort">ResetPort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetPubliclyAccessible">ResetPubliclyAccessible</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetReplicaMode">ResetReplicaMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetReplicateSourceDb">ResetReplicateSourceDb</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetRestoreToPointInTime">ResetRestoreToPointInTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetS3Import">ResetS3Import</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetSkipFinalSnapshot">ResetSkipFinalSnapshot</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetSnapshotIdentifier">ResetSnapshotIdentifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetStorageEncrypted">ResetStorageEncrypted</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetStorageThroughput">ResetStorageThroughput</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetStorageType">ResetStorageType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetTimezone">ResetTimezone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetUpgradeStorageConfig">ResetUpgradeStorageConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetUsername">ResetUsername</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.resetVpcSecurityGroupIds">ResetVpcSecurityGroupIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate">PutBlueGreenUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime">PutRestoreToPointInTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.putS3Import">PutS3Import</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetAllocatedStorage">ResetAllocatedStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetAllowMajorVersionUpgrade">ResetAllowMajorVersionUpgrade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetApplyImmediately">ResetApplyImmediately</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetAutoMinorVersionUpgrade">ResetAutoMinorVersionUpgrade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetAvailabilityZone">ResetAvailabilityZone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetBackupRetentionPeriod">ResetBackupRetentionPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetBackupTarget">ResetBackupTarget</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetBackupWindow">ResetBackupWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetBlueGreenUpdate">ResetBlueGreenUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetCaCertIdentifier">ResetCaCertIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetCharacterSetName">ResetCharacterSetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetCopyTagsToSnapshot">ResetCopyTagsToSnapshot</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetCustomerOwnedIpEnabled">ResetCustomerOwnedIpEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetCustomIamInstanceProfile">ResetCustomIamInstanceProfile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDatabaseInsightsMode">ResetDatabaseInsightsMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDbName">ResetDbName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDbSubnetGroupName">ResetDbSubnetGroupName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDedicatedLogVolume">ResetDedicatedLogVolume</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDeleteAutomatedBackups">ResetDeleteAutomatedBackups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDeletionProtection">ResetDeletionProtection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDomain">ResetDomain</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDomainAuthSecretArn">ResetDomainAuthSecretArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDomainDnsIps">ResetDomainDnsIps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDomainFqdn">ResetDomainFqdn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDomainIamRoleName">ResetDomainIamRoleName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetDomainOu">ResetDomainOu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetEnabledCloudwatchLogsExports">ResetEnabledCloudwatchLogsExports</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetEngine">ResetEngine</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetEngineLifecycleSupport">ResetEngineLifecycleSupport</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetEngineVersion">ResetEngineVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetFinalSnapshotIdentifier">ResetFinalSnapshotIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetIamDatabaseAuthenticationEnabled">ResetIamDatabaseAuthenticationEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetIdentifier">ResetIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetIdentifierPrefix">ResetIdentifierPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetIops">ResetIops</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetLicenseModel">ResetLicenseModel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetMaintenanceWindow">ResetMaintenanceWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetManageMasterUserPassword">ResetManageMasterUserPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetMasterUserSecretKmsKeyId">ResetMasterUserSecretKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetMaxAllocatedStorage">ResetMaxAllocatedStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetMonitoringInterval">ResetMonitoringInterval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetMonitoringRoleArn">ResetMonitoringRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetMultiAz">ResetMultiAz</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetNcharCharacterSetName">ResetNcharCharacterSetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetNetworkType">ResetNetworkType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetOptionGroupName">ResetOptionGroupName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetParameterGroupName">ResetParameterGroupName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPasswordWo">ResetPasswordWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPasswordWoVersion">ResetPasswordWoVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsEnabled">ResetPerformanceInsightsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsKmsKeyId">ResetPerformanceInsightsKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsRetentionPeriod">ResetPerformanceInsightsRetentionPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPort">ResetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetPubliclyAccessible">ResetPubliclyAccessible</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetReplicaMode">ResetReplicaMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetReplicateSourceDb">ResetReplicateSourceDb</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetRestoreToPointInTime">ResetRestoreToPointInTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetS3Import">ResetS3Import</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetSkipFinalSnapshot">ResetSkipFinalSnapshot</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetSnapshotIdentifier">ResetSnapshotIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetStorageEncrypted">ResetStorageEncrypted</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetStorageThroughput">ResetStorageThroughput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetStorageType">ResetStorageType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetTimezone">ResetTimezone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetUpgradeStorageConfig">ResetUpgradeStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetUsername">ResetUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.resetVpcSecurityGroupIds">ResetVpcSecurityGroupIds</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstance.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstance.toString"></a>
 
 ```go
 func ToString() *string
@@ -162,25 +162,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.dbInstance.DbInstance.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.dbInstance.DbInstance.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.dbInstance.DbInstance.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.dbInstance.DbInstance.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbInstance.DbInstance.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbInstance.DbInstance.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.dbInstance.DbInstance.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.dbInstance.DbInstance.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -188,7 +188,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.dbInstance.DbInstance.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.dbInstance.DbInstance.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -196,7 +196,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.dbInstance.DbInstance.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.dbInstance.DbInstance.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -204,19 +204,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dbInstance.DbInstance.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.dbInstance.DbInstance.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dbInstance.DbInstance.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.dbInstance.DbInstance.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.dbInstance.DbInstance.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.dbInstance.DbInstance.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -224,7 +224,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.dbInstance.DbInstance.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -232,7 +232,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.dbInstance.DbInstance.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -240,151 +240,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.dbInstance.DbInstance.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.dbInstance.DbInstance.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.dbInstance.DbInstance.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.dbInstance.DbInstance.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbInstance.DbInstance.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbInstance.DbInstance.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbInstance.DbInstance.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbInstance.DbInstance.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstance.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstance.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.dbInstance.DbInstance.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.dbInstance.DbInstance.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -394,7 +394,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbInstance.DbInstance.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbInstance.DbInstance.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -402,7 +402,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.dbInstance.DbInstance.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.dbInstance.DbInstance.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -410,7 +410,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.dbInstance.DbInstance.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -418,7 +418,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dbInstance.DbInstance.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.dbInstance.DbInstance.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -426,7 +426,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.dbInstance.DbInstance.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.dbInstance.DbInstance.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -434,7 +434,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbInstance.DbInstance.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbInstance.DbInstance.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -442,493 +442,493 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutBlueGreenUpdate` <a name="PutBlueGreenUpdate" id="@cdktf/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate"></a>
+##### `PutBlueGreenUpdate` <a name="PutBlueGreenUpdate" id="@cdktn/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate"></a>
 
 ```go
 func PutBlueGreenUpdate(value DbInstanceBlueGreenUpdate)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbInstance.DbInstance.putBlueGreenUpdate.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
 
 ---
 
-##### `PutRestoreToPointInTime` <a name="PutRestoreToPointInTime" id="@cdktf/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime"></a>
+##### `PutRestoreToPointInTime` <a name="PutRestoreToPointInTime" id="@cdktn/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime"></a>
 
 ```go
 func PutRestoreToPointInTime(value DbInstanceRestoreToPointInTime)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbInstance.DbInstance.putRestoreToPointInTime.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
 
 ---
 
-##### `PutS3Import` <a name="PutS3Import" id="@cdktf/provider-aws.dbInstance.DbInstance.putS3Import"></a>
+##### `PutS3Import` <a name="PutS3Import" id="@cdktn/provider-aws.dbInstance.DbInstance.putS3Import"></a>
 
 ```go
 func PutS3Import(value DbInstanceS3Import)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbInstance.DbInstance.putS3Import.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbInstance.DbInstance.putS3Import.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-aws.dbInstance.DbInstance.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.dbInstance.DbInstance.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value DbInstanceTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbInstance.DbInstance.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbInstance.DbInstance.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a>
 
 ---
 
-##### `ResetAllocatedStorage` <a name="ResetAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstance.resetAllocatedStorage"></a>
+##### `ResetAllocatedStorage` <a name="ResetAllocatedStorage" id="@cdktn/provider-aws.dbInstance.DbInstance.resetAllocatedStorage"></a>
 
 ```go
 func ResetAllocatedStorage()
 ```
 
-##### `ResetAllowMajorVersionUpgrade` <a name="ResetAllowMajorVersionUpgrade" id="@cdktf/provider-aws.dbInstance.DbInstance.resetAllowMajorVersionUpgrade"></a>
+##### `ResetAllowMajorVersionUpgrade` <a name="ResetAllowMajorVersionUpgrade" id="@cdktn/provider-aws.dbInstance.DbInstance.resetAllowMajorVersionUpgrade"></a>
 
 ```go
 func ResetAllowMajorVersionUpgrade()
 ```
 
-##### `ResetApplyImmediately` <a name="ResetApplyImmediately" id="@cdktf/provider-aws.dbInstance.DbInstance.resetApplyImmediately"></a>
+##### `ResetApplyImmediately` <a name="ResetApplyImmediately" id="@cdktn/provider-aws.dbInstance.DbInstance.resetApplyImmediately"></a>
 
 ```go
 func ResetApplyImmediately()
 ```
 
-##### `ResetAutoMinorVersionUpgrade` <a name="ResetAutoMinorVersionUpgrade" id="@cdktf/provider-aws.dbInstance.DbInstance.resetAutoMinorVersionUpgrade"></a>
+##### `ResetAutoMinorVersionUpgrade` <a name="ResetAutoMinorVersionUpgrade" id="@cdktn/provider-aws.dbInstance.DbInstance.resetAutoMinorVersionUpgrade"></a>
 
 ```go
 func ResetAutoMinorVersionUpgrade()
 ```
 
-##### `ResetAvailabilityZone` <a name="ResetAvailabilityZone" id="@cdktf/provider-aws.dbInstance.DbInstance.resetAvailabilityZone"></a>
+##### `ResetAvailabilityZone` <a name="ResetAvailabilityZone" id="@cdktn/provider-aws.dbInstance.DbInstance.resetAvailabilityZone"></a>
 
 ```go
 func ResetAvailabilityZone()
 ```
 
-##### `ResetBackupRetentionPeriod` <a name="ResetBackupRetentionPeriod" id="@cdktf/provider-aws.dbInstance.DbInstance.resetBackupRetentionPeriod"></a>
+##### `ResetBackupRetentionPeriod` <a name="ResetBackupRetentionPeriod" id="@cdktn/provider-aws.dbInstance.DbInstance.resetBackupRetentionPeriod"></a>
 
 ```go
 func ResetBackupRetentionPeriod()
 ```
 
-##### `ResetBackupTarget` <a name="ResetBackupTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.resetBackupTarget"></a>
+##### `ResetBackupTarget` <a name="ResetBackupTarget" id="@cdktn/provider-aws.dbInstance.DbInstance.resetBackupTarget"></a>
 
 ```go
 func ResetBackupTarget()
 ```
 
-##### `ResetBackupWindow` <a name="ResetBackupWindow" id="@cdktf/provider-aws.dbInstance.DbInstance.resetBackupWindow"></a>
+##### `ResetBackupWindow` <a name="ResetBackupWindow" id="@cdktn/provider-aws.dbInstance.DbInstance.resetBackupWindow"></a>
 
 ```go
 func ResetBackupWindow()
 ```
 
-##### `ResetBlueGreenUpdate` <a name="ResetBlueGreenUpdate" id="@cdktf/provider-aws.dbInstance.DbInstance.resetBlueGreenUpdate"></a>
+##### `ResetBlueGreenUpdate` <a name="ResetBlueGreenUpdate" id="@cdktn/provider-aws.dbInstance.DbInstance.resetBlueGreenUpdate"></a>
 
 ```go
 func ResetBlueGreenUpdate()
 ```
 
-##### `ResetCaCertIdentifier` <a name="ResetCaCertIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.resetCaCertIdentifier"></a>
+##### `ResetCaCertIdentifier` <a name="ResetCaCertIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.resetCaCertIdentifier"></a>
 
 ```go
 func ResetCaCertIdentifier()
 ```
 
-##### `ResetCharacterSetName` <a name="ResetCharacterSetName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetCharacterSetName"></a>
+##### `ResetCharacterSetName` <a name="ResetCharacterSetName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetCharacterSetName"></a>
 
 ```go
 func ResetCharacterSetName()
 ```
 
-##### `ResetCopyTagsToSnapshot` <a name="ResetCopyTagsToSnapshot" id="@cdktf/provider-aws.dbInstance.DbInstance.resetCopyTagsToSnapshot"></a>
+##### `ResetCopyTagsToSnapshot` <a name="ResetCopyTagsToSnapshot" id="@cdktn/provider-aws.dbInstance.DbInstance.resetCopyTagsToSnapshot"></a>
 
 ```go
 func ResetCopyTagsToSnapshot()
 ```
 
-##### `ResetCustomerOwnedIpEnabled` <a name="ResetCustomerOwnedIpEnabled" id="@cdktf/provider-aws.dbInstance.DbInstance.resetCustomerOwnedIpEnabled"></a>
+##### `ResetCustomerOwnedIpEnabled` <a name="ResetCustomerOwnedIpEnabled" id="@cdktn/provider-aws.dbInstance.DbInstance.resetCustomerOwnedIpEnabled"></a>
 
 ```go
 func ResetCustomerOwnedIpEnabled()
 ```
 
-##### `ResetCustomIamInstanceProfile` <a name="ResetCustomIamInstanceProfile" id="@cdktf/provider-aws.dbInstance.DbInstance.resetCustomIamInstanceProfile"></a>
+##### `ResetCustomIamInstanceProfile` <a name="ResetCustomIamInstanceProfile" id="@cdktn/provider-aws.dbInstance.DbInstance.resetCustomIamInstanceProfile"></a>
 
 ```go
 func ResetCustomIamInstanceProfile()
 ```
 
-##### `ResetDatabaseInsightsMode` <a name="ResetDatabaseInsightsMode" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDatabaseInsightsMode"></a>
+##### `ResetDatabaseInsightsMode` <a name="ResetDatabaseInsightsMode" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDatabaseInsightsMode"></a>
 
 ```go
 func ResetDatabaseInsightsMode()
 ```
 
-##### `ResetDbName` <a name="ResetDbName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDbName"></a>
+##### `ResetDbName` <a name="ResetDbName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDbName"></a>
 
 ```go
 func ResetDbName()
 ```
 
-##### `ResetDbSubnetGroupName` <a name="ResetDbSubnetGroupName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDbSubnetGroupName"></a>
+##### `ResetDbSubnetGroupName` <a name="ResetDbSubnetGroupName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDbSubnetGroupName"></a>
 
 ```go
 func ResetDbSubnetGroupName()
 ```
 
-##### `ResetDedicatedLogVolume` <a name="ResetDedicatedLogVolume" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDedicatedLogVolume"></a>
+##### `ResetDedicatedLogVolume` <a name="ResetDedicatedLogVolume" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDedicatedLogVolume"></a>
 
 ```go
 func ResetDedicatedLogVolume()
 ```
 
-##### `ResetDeleteAutomatedBackups` <a name="ResetDeleteAutomatedBackups" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDeleteAutomatedBackups"></a>
+##### `ResetDeleteAutomatedBackups` <a name="ResetDeleteAutomatedBackups" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDeleteAutomatedBackups"></a>
 
 ```go
 func ResetDeleteAutomatedBackups()
 ```
 
-##### `ResetDeletionProtection` <a name="ResetDeletionProtection" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDeletionProtection"></a>
+##### `ResetDeletionProtection` <a name="ResetDeletionProtection" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDeletionProtection"></a>
 
 ```go
 func ResetDeletionProtection()
 ```
 
-##### `ResetDomain` <a name="ResetDomain" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDomain"></a>
+##### `ResetDomain` <a name="ResetDomain" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDomain"></a>
 
 ```go
 func ResetDomain()
 ```
 
-##### `ResetDomainAuthSecretArn` <a name="ResetDomainAuthSecretArn" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDomainAuthSecretArn"></a>
+##### `ResetDomainAuthSecretArn` <a name="ResetDomainAuthSecretArn" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDomainAuthSecretArn"></a>
 
 ```go
 func ResetDomainAuthSecretArn()
 ```
 
-##### `ResetDomainDnsIps` <a name="ResetDomainDnsIps" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDomainDnsIps"></a>
+##### `ResetDomainDnsIps` <a name="ResetDomainDnsIps" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDomainDnsIps"></a>
 
 ```go
 func ResetDomainDnsIps()
 ```
 
-##### `ResetDomainFqdn` <a name="ResetDomainFqdn" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDomainFqdn"></a>
+##### `ResetDomainFqdn` <a name="ResetDomainFqdn" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDomainFqdn"></a>
 
 ```go
 func ResetDomainFqdn()
 ```
 
-##### `ResetDomainIamRoleName` <a name="ResetDomainIamRoleName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDomainIamRoleName"></a>
+##### `ResetDomainIamRoleName` <a name="ResetDomainIamRoleName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDomainIamRoleName"></a>
 
 ```go
 func ResetDomainIamRoleName()
 ```
 
-##### `ResetDomainOu` <a name="ResetDomainOu" id="@cdktf/provider-aws.dbInstance.DbInstance.resetDomainOu"></a>
+##### `ResetDomainOu` <a name="ResetDomainOu" id="@cdktn/provider-aws.dbInstance.DbInstance.resetDomainOu"></a>
 
 ```go
 func ResetDomainOu()
 ```
 
-##### `ResetEnabledCloudwatchLogsExports` <a name="ResetEnabledCloudwatchLogsExports" id="@cdktf/provider-aws.dbInstance.DbInstance.resetEnabledCloudwatchLogsExports"></a>
+##### `ResetEnabledCloudwatchLogsExports` <a name="ResetEnabledCloudwatchLogsExports" id="@cdktn/provider-aws.dbInstance.DbInstance.resetEnabledCloudwatchLogsExports"></a>
 
 ```go
 func ResetEnabledCloudwatchLogsExports()
 ```
 
-##### `ResetEngine` <a name="ResetEngine" id="@cdktf/provider-aws.dbInstance.DbInstance.resetEngine"></a>
+##### `ResetEngine` <a name="ResetEngine" id="@cdktn/provider-aws.dbInstance.DbInstance.resetEngine"></a>
 
 ```go
 func ResetEngine()
 ```
 
-##### `ResetEngineLifecycleSupport` <a name="ResetEngineLifecycleSupport" id="@cdktf/provider-aws.dbInstance.DbInstance.resetEngineLifecycleSupport"></a>
+##### `ResetEngineLifecycleSupport` <a name="ResetEngineLifecycleSupport" id="@cdktn/provider-aws.dbInstance.DbInstance.resetEngineLifecycleSupport"></a>
 
 ```go
 func ResetEngineLifecycleSupport()
 ```
 
-##### `ResetEngineVersion` <a name="ResetEngineVersion" id="@cdktf/provider-aws.dbInstance.DbInstance.resetEngineVersion"></a>
+##### `ResetEngineVersion` <a name="ResetEngineVersion" id="@cdktn/provider-aws.dbInstance.DbInstance.resetEngineVersion"></a>
 
 ```go
 func ResetEngineVersion()
 ```
 
-##### `ResetFinalSnapshotIdentifier` <a name="ResetFinalSnapshotIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.resetFinalSnapshotIdentifier"></a>
+##### `ResetFinalSnapshotIdentifier` <a name="ResetFinalSnapshotIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.resetFinalSnapshotIdentifier"></a>
 
 ```go
 func ResetFinalSnapshotIdentifier()
 ```
 
-##### `ResetIamDatabaseAuthenticationEnabled` <a name="ResetIamDatabaseAuthenticationEnabled" id="@cdktf/provider-aws.dbInstance.DbInstance.resetIamDatabaseAuthenticationEnabled"></a>
+##### `ResetIamDatabaseAuthenticationEnabled` <a name="ResetIamDatabaseAuthenticationEnabled" id="@cdktn/provider-aws.dbInstance.DbInstance.resetIamDatabaseAuthenticationEnabled"></a>
 
 ```go
 func ResetIamDatabaseAuthenticationEnabled()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.dbInstance.DbInstance.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.dbInstance.DbInstance.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetIdentifier` <a name="ResetIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.resetIdentifier"></a>
+##### `ResetIdentifier` <a name="ResetIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.resetIdentifier"></a>
 
 ```go
 func ResetIdentifier()
 ```
 
-##### `ResetIdentifierPrefix` <a name="ResetIdentifierPrefix" id="@cdktf/provider-aws.dbInstance.DbInstance.resetIdentifierPrefix"></a>
+##### `ResetIdentifierPrefix` <a name="ResetIdentifierPrefix" id="@cdktn/provider-aws.dbInstance.DbInstance.resetIdentifierPrefix"></a>
 
 ```go
 func ResetIdentifierPrefix()
 ```
 
-##### `ResetIops` <a name="ResetIops" id="@cdktf/provider-aws.dbInstance.DbInstance.resetIops"></a>
+##### `ResetIops` <a name="ResetIops" id="@cdktn/provider-aws.dbInstance.DbInstance.resetIops"></a>
 
 ```go
 func ResetIops()
 ```
 
-##### `ResetKmsKeyId` <a name="ResetKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.resetKmsKeyId"></a>
+##### `ResetKmsKeyId` <a name="ResetKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstance.resetKmsKeyId"></a>
 
 ```go
 func ResetKmsKeyId()
 ```
 
-##### `ResetLicenseModel` <a name="ResetLicenseModel" id="@cdktf/provider-aws.dbInstance.DbInstance.resetLicenseModel"></a>
+##### `ResetLicenseModel` <a name="ResetLicenseModel" id="@cdktn/provider-aws.dbInstance.DbInstance.resetLicenseModel"></a>
 
 ```go
 func ResetLicenseModel()
 ```
 
-##### `ResetMaintenanceWindow` <a name="ResetMaintenanceWindow" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMaintenanceWindow"></a>
+##### `ResetMaintenanceWindow` <a name="ResetMaintenanceWindow" id="@cdktn/provider-aws.dbInstance.DbInstance.resetMaintenanceWindow"></a>
 
 ```go
 func ResetMaintenanceWindow()
 ```
 
-##### `ResetManageMasterUserPassword` <a name="ResetManageMasterUserPassword" id="@cdktf/provider-aws.dbInstance.DbInstance.resetManageMasterUserPassword"></a>
+##### `ResetManageMasterUserPassword` <a name="ResetManageMasterUserPassword" id="@cdktn/provider-aws.dbInstance.DbInstance.resetManageMasterUserPassword"></a>
 
 ```go
 func ResetManageMasterUserPassword()
 ```
 
-##### `ResetMasterUserSecretKmsKeyId` <a name="ResetMasterUserSecretKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMasterUserSecretKmsKeyId"></a>
+##### `ResetMasterUserSecretKmsKeyId` <a name="ResetMasterUserSecretKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstance.resetMasterUserSecretKmsKeyId"></a>
 
 ```go
 func ResetMasterUserSecretKmsKeyId()
 ```
 
-##### `ResetMaxAllocatedStorage` <a name="ResetMaxAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMaxAllocatedStorage"></a>
+##### `ResetMaxAllocatedStorage` <a name="ResetMaxAllocatedStorage" id="@cdktn/provider-aws.dbInstance.DbInstance.resetMaxAllocatedStorage"></a>
 
 ```go
 func ResetMaxAllocatedStorage()
 ```
 
-##### `ResetMonitoringInterval` <a name="ResetMonitoringInterval" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMonitoringInterval"></a>
+##### `ResetMonitoringInterval` <a name="ResetMonitoringInterval" id="@cdktn/provider-aws.dbInstance.DbInstance.resetMonitoringInterval"></a>
 
 ```go
 func ResetMonitoringInterval()
 ```
 
-##### `ResetMonitoringRoleArn` <a name="ResetMonitoringRoleArn" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMonitoringRoleArn"></a>
+##### `ResetMonitoringRoleArn` <a name="ResetMonitoringRoleArn" id="@cdktn/provider-aws.dbInstance.DbInstance.resetMonitoringRoleArn"></a>
 
 ```go
 func ResetMonitoringRoleArn()
 ```
 
-##### `ResetMultiAz` <a name="ResetMultiAz" id="@cdktf/provider-aws.dbInstance.DbInstance.resetMultiAz"></a>
+##### `ResetMultiAz` <a name="ResetMultiAz" id="@cdktn/provider-aws.dbInstance.DbInstance.resetMultiAz"></a>
 
 ```go
 func ResetMultiAz()
 ```
 
-##### `ResetNcharCharacterSetName` <a name="ResetNcharCharacterSetName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetNcharCharacterSetName"></a>
+##### `ResetNcharCharacterSetName` <a name="ResetNcharCharacterSetName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetNcharCharacterSetName"></a>
 
 ```go
 func ResetNcharCharacterSetName()
 ```
 
-##### `ResetNetworkType` <a name="ResetNetworkType" id="@cdktf/provider-aws.dbInstance.DbInstance.resetNetworkType"></a>
+##### `ResetNetworkType` <a name="ResetNetworkType" id="@cdktn/provider-aws.dbInstance.DbInstance.resetNetworkType"></a>
 
 ```go
 func ResetNetworkType()
 ```
 
-##### `ResetOptionGroupName` <a name="ResetOptionGroupName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetOptionGroupName"></a>
+##### `ResetOptionGroupName` <a name="ResetOptionGroupName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetOptionGroupName"></a>
 
 ```go
 func ResetOptionGroupName()
 ```
 
-##### `ResetParameterGroupName` <a name="ResetParameterGroupName" id="@cdktf/provider-aws.dbInstance.DbInstance.resetParameterGroupName"></a>
+##### `ResetParameterGroupName` <a name="ResetParameterGroupName" id="@cdktn/provider-aws.dbInstance.DbInstance.resetParameterGroupName"></a>
 
 ```go
 func ResetParameterGroupName()
 ```
 
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPassword"></a>
+##### `ResetPassword` <a name="ResetPassword" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPassword"></a>
 
 ```go
 func ResetPassword()
 ```
 
-##### `ResetPasswordWo` <a name="ResetPasswordWo" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPasswordWo"></a>
+##### `ResetPasswordWo` <a name="ResetPasswordWo" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPasswordWo"></a>
 
 ```go
 func ResetPasswordWo()
 ```
 
-##### `ResetPasswordWoVersion` <a name="ResetPasswordWoVersion" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPasswordWoVersion"></a>
+##### `ResetPasswordWoVersion` <a name="ResetPasswordWoVersion" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPasswordWoVersion"></a>
 
 ```go
 func ResetPasswordWoVersion()
 ```
 
-##### `ResetPerformanceInsightsEnabled` <a name="ResetPerformanceInsightsEnabled" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsEnabled"></a>
+##### `ResetPerformanceInsightsEnabled` <a name="ResetPerformanceInsightsEnabled" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsEnabled"></a>
 
 ```go
 func ResetPerformanceInsightsEnabled()
 ```
 
-##### `ResetPerformanceInsightsKmsKeyId` <a name="ResetPerformanceInsightsKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsKmsKeyId"></a>
+##### `ResetPerformanceInsightsKmsKeyId` <a name="ResetPerformanceInsightsKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsKmsKeyId"></a>
 
 ```go
 func ResetPerformanceInsightsKmsKeyId()
 ```
 
-##### `ResetPerformanceInsightsRetentionPeriod` <a name="ResetPerformanceInsightsRetentionPeriod" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsRetentionPeriod"></a>
+##### `ResetPerformanceInsightsRetentionPeriod` <a name="ResetPerformanceInsightsRetentionPeriod" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPerformanceInsightsRetentionPeriod"></a>
 
 ```go
 func ResetPerformanceInsightsRetentionPeriod()
 ```
 
-##### `ResetPort` <a name="ResetPort" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPort"></a>
+##### `ResetPort` <a name="ResetPort" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPort"></a>
 
 ```go
 func ResetPort()
 ```
 
-##### `ResetPubliclyAccessible` <a name="ResetPubliclyAccessible" id="@cdktf/provider-aws.dbInstance.DbInstance.resetPubliclyAccessible"></a>
+##### `ResetPubliclyAccessible` <a name="ResetPubliclyAccessible" id="@cdktn/provider-aws.dbInstance.DbInstance.resetPubliclyAccessible"></a>
 
 ```go
 func ResetPubliclyAccessible()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dbInstance.DbInstance.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.dbInstance.DbInstance.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetReplicaMode` <a name="ResetReplicaMode" id="@cdktf/provider-aws.dbInstance.DbInstance.resetReplicaMode"></a>
+##### `ResetReplicaMode` <a name="ResetReplicaMode" id="@cdktn/provider-aws.dbInstance.DbInstance.resetReplicaMode"></a>
 
 ```go
 func ResetReplicaMode()
 ```
 
-##### `ResetReplicateSourceDb` <a name="ResetReplicateSourceDb" id="@cdktf/provider-aws.dbInstance.DbInstance.resetReplicateSourceDb"></a>
+##### `ResetReplicateSourceDb` <a name="ResetReplicateSourceDb" id="@cdktn/provider-aws.dbInstance.DbInstance.resetReplicateSourceDb"></a>
 
 ```go
 func ResetReplicateSourceDb()
 ```
 
-##### `ResetRestoreToPointInTime` <a name="ResetRestoreToPointInTime" id="@cdktf/provider-aws.dbInstance.DbInstance.resetRestoreToPointInTime"></a>
+##### `ResetRestoreToPointInTime` <a name="ResetRestoreToPointInTime" id="@cdktn/provider-aws.dbInstance.DbInstance.resetRestoreToPointInTime"></a>
 
 ```go
 func ResetRestoreToPointInTime()
 ```
 
-##### `ResetS3Import` <a name="ResetS3Import" id="@cdktf/provider-aws.dbInstance.DbInstance.resetS3Import"></a>
+##### `ResetS3Import` <a name="ResetS3Import" id="@cdktn/provider-aws.dbInstance.DbInstance.resetS3Import"></a>
 
 ```go
 func ResetS3Import()
 ```
 
-##### `ResetSkipFinalSnapshot` <a name="ResetSkipFinalSnapshot" id="@cdktf/provider-aws.dbInstance.DbInstance.resetSkipFinalSnapshot"></a>
+##### `ResetSkipFinalSnapshot` <a name="ResetSkipFinalSnapshot" id="@cdktn/provider-aws.dbInstance.DbInstance.resetSkipFinalSnapshot"></a>
 
 ```go
 func ResetSkipFinalSnapshot()
 ```
 
-##### `ResetSnapshotIdentifier` <a name="ResetSnapshotIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.resetSnapshotIdentifier"></a>
+##### `ResetSnapshotIdentifier` <a name="ResetSnapshotIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.resetSnapshotIdentifier"></a>
 
 ```go
 func ResetSnapshotIdentifier()
 ```
 
-##### `ResetStorageEncrypted` <a name="ResetStorageEncrypted" id="@cdktf/provider-aws.dbInstance.DbInstance.resetStorageEncrypted"></a>
+##### `ResetStorageEncrypted` <a name="ResetStorageEncrypted" id="@cdktn/provider-aws.dbInstance.DbInstance.resetStorageEncrypted"></a>
 
 ```go
 func ResetStorageEncrypted()
 ```
 
-##### `ResetStorageThroughput` <a name="ResetStorageThroughput" id="@cdktf/provider-aws.dbInstance.DbInstance.resetStorageThroughput"></a>
+##### `ResetStorageThroughput` <a name="ResetStorageThroughput" id="@cdktn/provider-aws.dbInstance.DbInstance.resetStorageThroughput"></a>
 
 ```go
 func ResetStorageThroughput()
 ```
 
-##### `ResetStorageType` <a name="ResetStorageType" id="@cdktf/provider-aws.dbInstance.DbInstance.resetStorageType"></a>
+##### `ResetStorageType` <a name="ResetStorageType" id="@cdktn/provider-aws.dbInstance.DbInstance.resetStorageType"></a>
 
 ```go
 func ResetStorageType()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dbInstance.DbInstance.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.dbInstance.DbInstance.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.dbInstance.DbInstance.resetTagsAll"></a>
+##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktn/provider-aws.dbInstance.DbInstance.resetTagsAll"></a>
 
 ```go
 func ResetTagsAll()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.dbInstance.DbInstance.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.dbInstance.DbInstance.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
 ```
 
-##### `ResetTimezone` <a name="ResetTimezone" id="@cdktf/provider-aws.dbInstance.DbInstance.resetTimezone"></a>
+##### `ResetTimezone` <a name="ResetTimezone" id="@cdktn/provider-aws.dbInstance.DbInstance.resetTimezone"></a>
 
 ```go
 func ResetTimezone()
 ```
 
-##### `ResetUpgradeStorageConfig` <a name="ResetUpgradeStorageConfig" id="@cdktf/provider-aws.dbInstance.DbInstance.resetUpgradeStorageConfig"></a>
+##### `ResetUpgradeStorageConfig` <a name="ResetUpgradeStorageConfig" id="@cdktn/provider-aws.dbInstance.DbInstance.resetUpgradeStorageConfig"></a>
 
 ```go
 func ResetUpgradeStorageConfig()
 ```
 
-##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-aws.dbInstance.DbInstance.resetUsername"></a>
+##### `ResetUsername` <a name="ResetUsername" id="@cdktn/provider-aws.dbInstance.DbInstance.resetUsername"></a>
 
 ```go
 func ResetUsername()
 ```
 
-##### `ResetVpcSecurityGroupIds` <a name="ResetVpcSecurityGroupIds" id="@cdktf/provider-aws.dbInstance.DbInstance.resetVpcSecurityGroupIds"></a>
+##### `ResetVpcSecurityGroupIds` <a name="ResetVpcSecurityGroupIds" id="@cdktn/provider-aws.dbInstance.DbInstance.resetVpcSecurityGroupIds"></a>
 
 ```go
 func ResetVpcSecurityGroupIds()
@@ -938,17 +938,17 @@ func ResetVpcSecurityGroupIds()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DbInstance resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DbInstance resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dbInstance.DbInstance.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dbInstance.DbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.DbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -969,7 +969,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbInstance.DbInstance.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dbInstance.DbInstance.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -977,45 +977,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dbInstance.DbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.DbInstance_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dbInstance.DbInstance.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dbInstance.DbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.DbInstance_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbInstance.DbInstance.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dbInstance.DbInstance.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dbInstance.DbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.DbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DbInstance resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -1023,7 +1023,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -1031,17 +1031,17 @@ The construct id used in the generated config for the DbInstance to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DbInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbInstance.DbInstance.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -1053,185 +1053,186 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.address">Address</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.blueGreenUpdate">BlueGreenUpdate</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference">DbInstanceBlueGreenUpdateOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engineVersionActual">EngineVersionActual</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.latestRestorableTime">LatestRestorableTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.listenerEndpoint">ListenerEndpoint</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList">DbInstanceListenerEndpointList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecret">MasterUserSecret</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList">DbInstanceMasterUserSecretList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.replicas">Replicas</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.resourceId">ResourceId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.restoreToPointInTime">RestoreToPointInTime</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference">DbInstanceRestoreToPointInTimeOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.s3Import">S3Import</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference">DbInstanceS3ImportOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.status">Status</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference">DbInstanceTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.allocatedStorageInput">AllocatedStorageInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgradeInput">AllowMajorVersionUpgradeInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.applyImmediatelyInput">ApplyImmediatelyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgradeInput">AutoMinorVersionUpgradeInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.availabilityZoneInput">AvailabilityZoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriodInput">BackupRetentionPeriodInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.backupTargetInput">BackupTargetInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.backupWindowInput">BackupWindowInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.blueGreenUpdateInput">BlueGreenUpdateInput</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.caCertIdentifierInput">CaCertIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.characterSetNameInput">CharacterSetNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshotInput">CopyTagsToSnapshotInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabledInput">CustomerOwnedIpEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfileInput">CustomIamInstanceProfileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.databaseInsightsModeInput">DatabaseInsightsModeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dbNameInput">DbNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupNameInput">DbSubnetGroupNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolumeInput">DedicatedLogVolumeInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackupsInput">DeleteAutomatedBackupsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.deletionProtectionInput">DeletionProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArnInput">DomainAuthSecretArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainDnsIpsInput">DomainDnsIpsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainFqdnInput">DomainFqdnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainIamRoleNameInput">DomainIamRoleNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainInput">DomainInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainOuInput">DomainOuInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExportsInput">EnabledCloudwatchLogsExportsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engineInput">EngineInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupportInput">EngineLifecycleSupportInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engineVersionInput">EngineVersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifierInput">FinalSnapshotIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabledInput">IamDatabaseAuthenticationEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.identifierInput">IdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.identifierPrefixInput">IdentifierPrefixInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.instanceClassInput">InstanceClassInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.iopsInput">IopsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.kmsKeyIdInput">KmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.licenseModelInput">LicenseModelInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maintenanceWindowInput">MaintenanceWindowInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPasswordInput">ManageMasterUserPasswordInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyIdInput">MasterUserSecretKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorageInput">MaxAllocatedStorageInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringIntervalInput">MonitoringIntervalInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringRoleArnInput">MonitoringRoleArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.multiAzInput">MultiAzInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetNameInput">NcharCharacterSetNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.networkTypeInput">NetworkTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.optionGroupNameInput">OptionGroupNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.parameterGroupNameInput">ParameterGroupNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWoInput">PasswordWoInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWoVersionInput">PasswordWoVersionInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabledInput">PerformanceInsightsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyIdInput">PerformanceInsightsKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriodInput">PerformanceInsightsRetentionPeriodInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.publiclyAccessibleInput">PubliclyAccessibleInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.replicaModeInput">ReplicaModeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.replicateSourceDbInput">ReplicateSourceDbInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.restoreToPointInTimeInput">RestoreToPointInTimeInput</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.s3ImportInput">S3ImportInput</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshotInput">SkipFinalSnapshotInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.snapshotIdentifierInput">SnapshotIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.storageEncryptedInput">StorageEncryptedInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.storageThroughputInput">StorageThroughputInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.storageTypeInput">StorageTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.timezoneInput">TimezoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfigInput">UpgradeStorageConfigInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIdsInput">VpcSecurityGroupIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.allocatedStorage">AllocatedStorage</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgrade">AllowMajorVersionUpgrade</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriod">BackupRetentionPeriod</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.backupTarget">BackupTarget</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.backupWindow">BackupWindow</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.caCertIdentifier">CaCertIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.characterSetName">CharacterSetName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshot">CopyTagsToSnapshot</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabled">CustomerOwnedIpEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfile">CustomIamInstanceProfile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.databaseInsightsMode">DatabaseInsightsMode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dbName">DbName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupName">DbSubnetGroupName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolume">DedicatedLogVolume</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackups">DeleteAutomatedBackups</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArn">DomainAuthSecretArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainDnsIps">DomainDnsIps</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainFqdn">DomainFqdn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainIamRoleName">DomainIamRoleName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.domainOu">DomainOu</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExports">EnabledCloudwatchLogsExports</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engine">Engine</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupport">EngineLifecycleSupport</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifier">FinalSnapshotIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabled">IamDatabaseAuthenticationEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.identifier">Identifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.identifierPrefix">IdentifierPrefix</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.instanceClass">InstanceClass</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.iops">Iops</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.licenseModel">LicenseModel</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPassword">ManageMasterUserPassword</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyId">MasterUserSecretKmsKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorage">MaxAllocatedStorage</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringInterval">MonitoringInterval</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringRoleArn">MonitoringRoleArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetName">NcharCharacterSetName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.networkType">NetworkType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.optionGroupName">OptionGroupName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.password">Password</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWo">PasswordWo</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabled">PerformanceInsightsEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyId">PerformanceInsightsKmsKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriod">PerformanceInsightsRetentionPeriod</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.replicaMode">ReplicaMode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.replicateSourceDb">ReplicateSourceDb</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshot">SkipFinalSnapshot</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.snapshotIdentifier">SnapshotIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.storageEncrypted">StorageEncrypted</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.storageThroughput">StorageThroughput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.storageType">StorageType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.timezone">Timezone</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfig">UpgradeStorageConfig</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.username">Username</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.address">Address</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.blueGreenUpdate">BlueGreenUpdate</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference">DbInstanceBlueGreenUpdateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engineVersionActual">EngineVersionActual</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.latestRestorableTime">LatestRestorableTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.listenerEndpoint">ListenerEndpoint</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList">DbInstanceListenerEndpointList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.masterUserSecret">MasterUserSecret</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList">DbInstanceMasterUserSecretList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.replicas">Replicas</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.resourceId">ResourceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.restoreToPointInTime">RestoreToPointInTime</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference">DbInstanceRestoreToPointInTimeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.s3Import">S3Import</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference">DbInstanceS3ImportOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference">DbInstanceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.upgradeRolloutOrder">UpgradeRolloutOrder</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.allocatedStorageInput">AllocatedStorageInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgradeInput">AllowMajorVersionUpgradeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.applyImmediatelyInput">ApplyImmediatelyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgradeInput">AutoMinorVersionUpgradeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.availabilityZoneInput">AvailabilityZoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriodInput">BackupRetentionPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.backupTargetInput">BackupTargetInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.backupWindowInput">BackupWindowInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.blueGreenUpdateInput">BlueGreenUpdateInput</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.caCertIdentifierInput">CaCertIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.characterSetNameInput">CharacterSetNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshotInput">CopyTagsToSnapshotInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabledInput">CustomerOwnedIpEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfileInput">CustomIamInstanceProfileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.databaseInsightsModeInput">DatabaseInsightsModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dbNameInput">DbNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupNameInput">DbSubnetGroupNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolumeInput">DedicatedLogVolumeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackupsInput">DeleteAutomatedBackupsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.deletionProtectionInput">DeletionProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArnInput">DomainAuthSecretArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainDnsIpsInput">DomainDnsIpsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainFqdnInput">DomainFqdnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainIamRoleNameInput">DomainIamRoleNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainInput">DomainInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainOuInput">DomainOuInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExportsInput">EnabledCloudwatchLogsExportsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engineInput">EngineInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupportInput">EngineLifecycleSupportInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engineVersionInput">EngineVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifierInput">FinalSnapshotIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabledInput">IamDatabaseAuthenticationEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.identifierInput">IdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.identifierPrefixInput">IdentifierPrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.instanceClassInput">InstanceClassInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.iopsInput">IopsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.kmsKeyIdInput">KmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.licenseModelInput">LicenseModelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.maintenanceWindowInput">MaintenanceWindowInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.manageMasterUserPasswordInput">ManageMasterUserPasswordInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyIdInput">MasterUserSecretKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorageInput">MaxAllocatedStorageInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringIntervalInput">MonitoringIntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringRoleArnInput">MonitoringRoleArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.multiAzInput">MultiAzInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetNameInput">NcharCharacterSetNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.networkTypeInput">NetworkTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.optionGroupNameInput">OptionGroupNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.parameterGroupNameInput">ParameterGroupNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWoInput">PasswordWoInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWoVersionInput">PasswordWoVersionInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabledInput">PerformanceInsightsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyIdInput">PerformanceInsightsKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriodInput">PerformanceInsightsRetentionPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.publiclyAccessibleInput">PubliclyAccessibleInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.replicaModeInput">ReplicaModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.replicateSourceDbInput">ReplicateSourceDbInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.restoreToPointInTimeInput">RestoreToPointInTimeInput</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.s3ImportInput">S3ImportInput</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshotInput">SkipFinalSnapshotInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.snapshotIdentifierInput">SnapshotIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.storageEncryptedInput">StorageEncryptedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.storageThroughputInput">StorageThroughputInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.storageTypeInput">StorageTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.timezoneInput">TimezoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfigInput">UpgradeStorageConfigInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIdsInput">VpcSecurityGroupIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.allocatedStorage">AllocatedStorage</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgrade">AllowMajorVersionUpgrade</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriod">BackupRetentionPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.backupTarget">BackupTarget</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.backupWindow">BackupWindow</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.caCertIdentifier">CaCertIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.characterSetName">CharacterSetName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshot">CopyTagsToSnapshot</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabled">CustomerOwnedIpEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfile">CustomIamInstanceProfile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.databaseInsightsMode">DatabaseInsightsMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dbName">DbName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupName">DbSubnetGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolume">DedicatedLogVolume</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackups">DeleteAutomatedBackups</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArn">DomainAuthSecretArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainDnsIps">DomainDnsIps</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainFqdn">DomainFqdn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainIamRoleName">DomainIamRoleName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.domainOu">DomainOu</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExports">EnabledCloudwatchLogsExports</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engine">Engine</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupport">EngineLifecycleSupport</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifier">FinalSnapshotIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabled">IamDatabaseAuthenticationEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.identifier">Identifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.identifierPrefix">IdentifierPrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.instanceClass">InstanceClass</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.iops">Iops</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.licenseModel">LicenseModel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.manageMasterUserPassword">ManageMasterUserPassword</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyId">MasterUserSecretKmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorage">MaxAllocatedStorage</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringInterval">MonitoringInterval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringRoleArn">MonitoringRoleArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetName">NcharCharacterSetName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.networkType">NetworkType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.optionGroupName">OptionGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWo">PasswordWo</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabled">PerformanceInsightsEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyId">PerformanceInsightsKmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriod">PerformanceInsightsRetentionPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.replicaMode">ReplicaMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.replicateSourceDb">ReplicateSourceDb</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshot">SkipFinalSnapshot</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.snapshotIdentifier">SnapshotIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.storageEncrypted">StorageEncrypted</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.storageThroughput">StorageThroughput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.storageType">StorageType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.timezone">Timezone</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfig">UpgradeStorageConfig</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.username">Username</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.dbInstance.DbInstance.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.dbInstance.DbInstance.property.node"></a>
 
 ```go
 func Node() Node
@@ -1243,7 +1244,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.dbInstance.DbInstance.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.dbInstance.DbInstance.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -1253,7 +1254,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstance.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstance.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1263,7 +1264,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.dbInstance.DbInstance.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -1273,7 +1274,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.dbInstance.DbInstance.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.dbInstance.DbInstance.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -1283,7 +1284,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.dbInstance.DbInstance.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.dbInstance.DbInstance.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -1293,7 +1294,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.dbInstance.DbInstance.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.dbInstance.DbInstance.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -1303,7 +1304,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dbInstance.DbInstance.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.dbInstance.DbInstance.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -1313,7 +1314,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dbInstance.DbInstance.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.dbInstance.DbInstance.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -1323,7 +1324,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -1333,7 +1334,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.dbInstance.DbInstance.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.dbInstance.DbInstance.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -1343,7 +1344,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.dbInstance.DbInstance.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.dbInstance.DbInstance.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -1353,7 +1354,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dbInstance.DbInstance.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.dbInstance.DbInstance.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -1363,7 +1364,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dbInstance.DbInstance.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.dbInstance.DbInstance.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -1373,7 +1374,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-aws.dbInstance.DbInstance.property.address"></a>
+##### `Address`<sup>Required</sup> <a name="Address" id="@cdktn/provider-aws.dbInstance.DbInstance.property.address"></a>
 
 ```go
 func Address() *string
@@ -1383,7 +1384,7 @@ func Address() *string
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.dbInstance.DbInstance.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.dbInstance.DbInstance.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -1393,17 +1394,17 @@ func Arn() *string
 
 ---
 
-##### `BlueGreenUpdate`<sup>Required</sup> <a name="BlueGreenUpdate" id="@cdktf/provider-aws.dbInstance.DbInstance.property.blueGreenUpdate"></a>
+##### `BlueGreenUpdate`<sup>Required</sup> <a name="BlueGreenUpdate" id="@cdktn/provider-aws.dbInstance.DbInstance.property.blueGreenUpdate"></a>
 
 ```go
 func BlueGreenUpdate() DbInstanceBlueGreenUpdateOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference">DbInstanceBlueGreenUpdateOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference">DbInstanceBlueGreenUpdateOutputReference</a>
 
 ---
 
-##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktf/provider-aws.dbInstance.DbInstance.property.endpoint"></a>
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktn/provider-aws.dbInstance.DbInstance.property.endpoint"></a>
 
 ```go
 func Endpoint() *string
@@ -1413,7 +1414,7 @@ func Endpoint() *string
 
 ---
 
-##### `EngineVersionActual`<sup>Required</sup> <a name="EngineVersionActual" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engineVersionActual"></a>
+##### `EngineVersionActual`<sup>Required</sup> <a name="EngineVersionActual" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engineVersionActual"></a>
 
 ```go
 func EngineVersionActual() *string
@@ -1423,7 +1424,7 @@ func EngineVersionActual() *string
 
 ---
 
-##### `HostedZoneId`<sup>Required</sup> <a name="HostedZoneId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.hostedZoneId"></a>
+##### `HostedZoneId`<sup>Required</sup> <a name="HostedZoneId" id="@cdktn/provider-aws.dbInstance.DbInstance.property.hostedZoneId"></a>
 
 ```go
 func HostedZoneId() *string
@@ -1433,7 +1434,7 @@ func HostedZoneId() *string
 
 ---
 
-##### `LatestRestorableTime`<sup>Required</sup> <a name="LatestRestorableTime" id="@cdktf/provider-aws.dbInstance.DbInstance.property.latestRestorableTime"></a>
+##### `LatestRestorableTime`<sup>Required</sup> <a name="LatestRestorableTime" id="@cdktn/provider-aws.dbInstance.DbInstance.property.latestRestorableTime"></a>
 
 ```go
 func LatestRestorableTime() *string
@@ -1443,27 +1444,27 @@ func LatestRestorableTime() *string
 
 ---
 
-##### `ListenerEndpoint`<sup>Required</sup> <a name="ListenerEndpoint" id="@cdktf/provider-aws.dbInstance.DbInstance.property.listenerEndpoint"></a>
+##### `ListenerEndpoint`<sup>Required</sup> <a name="ListenerEndpoint" id="@cdktn/provider-aws.dbInstance.DbInstance.property.listenerEndpoint"></a>
 
 ```go
 func ListenerEndpoint() DbInstanceListenerEndpointList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList">DbInstanceListenerEndpointList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList">DbInstanceListenerEndpointList</a>
 
 ---
 
-##### `MasterUserSecret`<sup>Required</sup> <a name="MasterUserSecret" id="@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecret"></a>
+##### `MasterUserSecret`<sup>Required</sup> <a name="MasterUserSecret" id="@cdktn/provider-aws.dbInstance.DbInstance.property.masterUserSecret"></a>
 
 ```go
 func MasterUserSecret() DbInstanceMasterUserSecretList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList">DbInstanceMasterUserSecretList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList">DbInstanceMasterUserSecretList</a>
 
 ---
 
-##### `Replicas`<sup>Required</sup> <a name="Replicas" id="@cdktf/provider-aws.dbInstance.DbInstance.property.replicas"></a>
+##### `Replicas`<sup>Required</sup> <a name="Replicas" id="@cdktn/provider-aws.dbInstance.DbInstance.property.replicas"></a>
 
 ```go
 func Replicas() *[]*string
@@ -1473,7 +1474,7 @@ func Replicas() *[]*string
 
 ---
 
-##### `ResourceId`<sup>Required</sup> <a name="ResourceId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.resourceId"></a>
+##### `ResourceId`<sup>Required</sup> <a name="ResourceId" id="@cdktn/provider-aws.dbInstance.DbInstance.property.resourceId"></a>
 
 ```go
 func ResourceId() *string
@@ -1483,27 +1484,27 @@ func ResourceId() *string
 
 ---
 
-##### `RestoreToPointInTime`<sup>Required</sup> <a name="RestoreToPointInTime" id="@cdktf/provider-aws.dbInstance.DbInstance.property.restoreToPointInTime"></a>
+##### `RestoreToPointInTime`<sup>Required</sup> <a name="RestoreToPointInTime" id="@cdktn/provider-aws.dbInstance.DbInstance.property.restoreToPointInTime"></a>
 
 ```go
 func RestoreToPointInTime() DbInstanceRestoreToPointInTimeOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference">DbInstanceRestoreToPointInTimeOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference">DbInstanceRestoreToPointInTimeOutputReference</a>
 
 ---
 
-##### `S3Import`<sup>Required</sup> <a name="S3Import" id="@cdktf/provider-aws.dbInstance.DbInstance.property.s3Import"></a>
+##### `S3Import`<sup>Required</sup> <a name="S3Import" id="@cdktn/provider-aws.dbInstance.DbInstance.property.s3Import"></a>
 
 ```go
 func S3Import() DbInstanceS3ImportOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference">DbInstanceS3ImportOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference">DbInstanceS3ImportOutputReference</a>
 
 ---
 
-##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-aws.dbInstance.DbInstance.property.status"></a>
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-aws.dbInstance.DbInstance.property.status"></a>
 
 ```go
 func Status() *string
@@ -1513,17 +1514,27 @@ func Status() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-aws.dbInstance.DbInstance.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.dbInstance.DbInstance.property.timeouts"></a>
 
 ```go
 func Timeouts() DbInstanceTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference">DbInstanceTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference">DbInstanceTimeoutsOutputReference</a>
 
 ---
 
-##### `AllocatedStorageInput`<sup>Optional</sup> <a name="AllocatedStorageInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.allocatedStorageInput"></a>
+##### `UpgradeRolloutOrder`<sup>Required</sup> <a name="UpgradeRolloutOrder" id="@cdktn/provider-aws.dbInstance.DbInstance.property.upgradeRolloutOrder"></a>
+
+```go
+func UpgradeRolloutOrder() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllocatedStorageInput`<sup>Optional</sup> <a name="AllocatedStorageInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.allocatedStorageInput"></a>
 
 ```go
 func AllocatedStorageInput() *f64
@@ -1533,7 +1544,7 @@ func AllocatedStorageInput() *f64
 
 ---
 
-##### `AllowMajorVersionUpgradeInput`<sup>Optional</sup> <a name="AllowMajorVersionUpgradeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgradeInput"></a>
+##### `AllowMajorVersionUpgradeInput`<sup>Optional</sup> <a name="AllowMajorVersionUpgradeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgradeInput"></a>
 
 ```go
 func AllowMajorVersionUpgradeInput() interface{}
@@ -1543,7 +1554,7 @@ func AllowMajorVersionUpgradeInput() interface{}
 
 ---
 
-##### `ApplyImmediatelyInput`<sup>Optional</sup> <a name="ApplyImmediatelyInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.applyImmediatelyInput"></a>
+##### `ApplyImmediatelyInput`<sup>Optional</sup> <a name="ApplyImmediatelyInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.applyImmediatelyInput"></a>
 
 ```go
 func ApplyImmediatelyInput() interface{}
@@ -1553,7 +1564,7 @@ func ApplyImmediatelyInput() interface{}
 
 ---
 
-##### `AutoMinorVersionUpgradeInput`<sup>Optional</sup> <a name="AutoMinorVersionUpgradeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgradeInput"></a>
+##### `AutoMinorVersionUpgradeInput`<sup>Optional</sup> <a name="AutoMinorVersionUpgradeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgradeInput"></a>
 
 ```go
 func AutoMinorVersionUpgradeInput() interface{}
@@ -1563,7 +1574,7 @@ func AutoMinorVersionUpgradeInput() interface{}
 
 ---
 
-##### `AvailabilityZoneInput`<sup>Optional</sup> <a name="AvailabilityZoneInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.availabilityZoneInput"></a>
+##### `AvailabilityZoneInput`<sup>Optional</sup> <a name="AvailabilityZoneInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.availabilityZoneInput"></a>
 
 ```go
 func AvailabilityZoneInput() *string
@@ -1573,7 +1584,7 @@ func AvailabilityZoneInput() *string
 
 ---
 
-##### `BackupRetentionPeriodInput`<sup>Optional</sup> <a name="BackupRetentionPeriodInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriodInput"></a>
+##### `BackupRetentionPeriodInput`<sup>Optional</sup> <a name="BackupRetentionPeriodInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriodInput"></a>
 
 ```go
 func BackupRetentionPeriodInput() *f64
@@ -1583,7 +1594,7 @@ func BackupRetentionPeriodInput() *f64
 
 ---
 
-##### `BackupTargetInput`<sup>Optional</sup> <a name="BackupTargetInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.backupTargetInput"></a>
+##### `BackupTargetInput`<sup>Optional</sup> <a name="BackupTargetInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.backupTargetInput"></a>
 
 ```go
 func BackupTargetInput() *string
@@ -1593,7 +1604,7 @@ func BackupTargetInput() *string
 
 ---
 
-##### `BackupWindowInput`<sup>Optional</sup> <a name="BackupWindowInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.backupWindowInput"></a>
+##### `BackupWindowInput`<sup>Optional</sup> <a name="BackupWindowInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.backupWindowInput"></a>
 
 ```go
 func BackupWindowInput() *string
@@ -1603,17 +1614,17 @@ func BackupWindowInput() *string
 
 ---
 
-##### `BlueGreenUpdateInput`<sup>Optional</sup> <a name="BlueGreenUpdateInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.blueGreenUpdateInput"></a>
+##### `BlueGreenUpdateInput`<sup>Optional</sup> <a name="BlueGreenUpdateInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.blueGreenUpdateInput"></a>
 
 ```go
 func BlueGreenUpdateInput() DbInstanceBlueGreenUpdate
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
 
 ---
 
-##### `CaCertIdentifierInput`<sup>Optional</sup> <a name="CaCertIdentifierInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.caCertIdentifierInput"></a>
+##### `CaCertIdentifierInput`<sup>Optional</sup> <a name="CaCertIdentifierInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.caCertIdentifierInput"></a>
 
 ```go
 func CaCertIdentifierInput() *string
@@ -1623,7 +1634,7 @@ func CaCertIdentifierInput() *string
 
 ---
 
-##### `CharacterSetNameInput`<sup>Optional</sup> <a name="CharacterSetNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.characterSetNameInput"></a>
+##### `CharacterSetNameInput`<sup>Optional</sup> <a name="CharacterSetNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.characterSetNameInput"></a>
 
 ```go
 func CharacterSetNameInput() *string
@@ -1633,7 +1644,7 @@ func CharacterSetNameInput() *string
 
 ---
 
-##### `CopyTagsToSnapshotInput`<sup>Optional</sup> <a name="CopyTagsToSnapshotInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshotInput"></a>
+##### `CopyTagsToSnapshotInput`<sup>Optional</sup> <a name="CopyTagsToSnapshotInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshotInput"></a>
 
 ```go
 func CopyTagsToSnapshotInput() interface{}
@@ -1643,7 +1654,7 @@ func CopyTagsToSnapshotInput() interface{}
 
 ---
 
-##### `CustomerOwnedIpEnabledInput`<sup>Optional</sup> <a name="CustomerOwnedIpEnabledInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabledInput"></a>
+##### `CustomerOwnedIpEnabledInput`<sup>Optional</sup> <a name="CustomerOwnedIpEnabledInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabledInput"></a>
 
 ```go
 func CustomerOwnedIpEnabledInput() interface{}
@@ -1653,7 +1664,7 @@ func CustomerOwnedIpEnabledInput() interface{}
 
 ---
 
-##### `CustomIamInstanceProfileInput`<sup>Optional</sup> <a name="CustomIamInstanceProfileInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfileInput"></a>
+##### `CustomIamInstanceProfileInput`<sup>Optional</sup> <a name="CustomIamInstanceProfileInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfileInput"></a>
 
 ```go
 func CustomIamInstanceProfileInput() *string
@@ -1663,7 +1674,7 @@ func CustomIamInstanceProfileInput() *string
 
 ---
 
-##### `DatabaseInsightsModeInput`<sup>Optional</sup> <a name="DatabaseInsightsModeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.databaseInsightsModeInput"></a>
+##### `DatabaseInsightsModeInput`<sup>Optional</sup> <a name="DatabaseInsightsModeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.databaseInsightsModeInput"></a>
 
 ```go
 func DatabaseInsightsModeInput() *string
@@ -1673,7 +1684,7 @@ func DatabaseInsightsModeInput() *string
 
 ---
 
-##### `DbNameInput`<sup>Optional</sup> <a name="DbNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dbNameInput"></a>
+##### `DbNameInput`<sup>Optional</sup> <a name="DbNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dbNameInput"></a>
 
 ```go
 func DbNameInput() *string
@@ -1683,7 +1694,7 @@ func DbNameInput() *string
 
 ---
 
-##### `DbSubnetGroupNameInput`<sup>Optional</sup> <a name="DbSubnetGroupNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupNameInput"></a>
+##### `DbSubnetGroupNameInput`<sup>Optional</sup> <a name="DbSubnetGroupNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupNameInput"></a>
 
 ```go
 func DbSubnetGroupNameInput() *string
@@ -1693,7 +1704,7 @@ func DbSubnetGroupNameInput() *string
 
 ---
 
-##### `DedicatedLogVolumeInput`<sup>Optional</sup> <a name="DedicatedLogVolumeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolumeInput"></a>
+##### `DedicatedLogVolumeInput`<sup>Optional</sup> <a name="DedicatedLogVolumeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolumeInput"></a>
 
 ```go
 func DedicatedLogVolumeInput() interface{}
@@ -1703,7 +1714,7 @@ func DedicatedLogVolumeInput() interface{}
 
 ---
 
-##### `DeleteAutomatedBackupsInput`<sup>Optional</sup> <a name="DeleteAutomatedBackupsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackupsInput"></a>
+##### `DeleteAutomatedBackupsInput`<sup>Optional</sup> <a name="DeleteAutomatedBackupsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackupsInput"></a>
 
 ```go
 func DeleteAutomatedBackupsInput() interface{}
@@ -1713,7 +1724,7 @@ func DeleteAutomatedBackupsInput() interface{}
 
 ---
 
-##### `DeletionProtectionInput`<sup>Optional</sup> <a name="DeletionProtectionInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.deletionProtectionInput"></a>
+##### `DeletionProtectionInput`<sup>Optional</sup> <a name="DeletionProtectionInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.deletionProtectionInput"></a>
 
 ```go
 func DeletionProtectionInput() interface{}
@@ -1723,7 +1734,7 @@ func DeletionProtectionInput() interface{}
 
 ---
 
-##### `DomainAuthSecretArnInput`<sup>Optional</sup> <a name="DomainAuthSecretArnInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArnInput"></a>
+##### `DomainAuthSecretArnInput`<sup>Optional</sup> <a name="DomainAuthSecretArnInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArnInput"></a>
 
 ```go
 func DomainAuthSecretArnInput() *string
@@ -1733,7 +1744,7 @@ func DomainAuthSecretArnInput() *string
 
 ---
 
-##### `DomainDnsIpsInput`<sup>Optional</sup> <a name="DomainDnsIpsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainDnsIpsInput"></a>
+##### `DomainDnsIpsInput`<sup>Optional</sup> <a name="DomainDnsIpsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainDnsIpsInput"></a>
 
 ```go
 func DomainDnsIpsInput() *[]*string
@@ -1743,7 +1754,7 @@ func DomainDnsIpsInput() *[]*string
 
 ---
 
-##### `DomainFqdnInput`<sup>Optional</sup> <a name="DomainFqdnInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainFqdnInput"></a>
+##### `DomainFqdnInput`<sup>Optional</sup> <a name="DomainFqdnInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainFqdnInput"></a>
 
 ```go
 func DomainFqdnInput() *string
@@ -1753,7 +1764,7 @@ func DomainFqdnInput() *string
 
 ---
 
-##### `DomainIamRoleNameInput`<sup>Optional</sup> <a name="DomainIamRoleNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainIamRoleNameInput"></a>
+##### `DomainIamRoleNameInput`<sup>Optional</sup> <a name="DomainIamRoleNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainIamRoleNameInput"></a>
 
 ```go
 func DomainIamRoleNameInput() *string
@@ -1763,7 +1774,7 @@ func DomainIamRoleNameInput() *string
 
 ---
 
-##### `DomainInput`<sup>Optional</sup> <a name="DomainInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainInput"></a>
+##### `DomainInput`<sup>Optional</sup> <a name="DomainInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainInput"></a>
 
 ```go
 func DomainInput() *string
@@ -1773,7 +1784,7 @@ func DomainInput() *string
 
 ---
 
-##### `DomainOuInput`<sup>Optional</sup> <a name="DomainOuInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainOuInput"></a>
+##### `DomainOuInput`<sup>Optional</sup> <a name="DomainOuInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainOuInput"></a>
 
 ```go
 func DomainOuInput() *string
@@ -1783,7 +1794,7 @@ func DomainOuInput() *string
 
 ---
 
-##### `EnabledCloudwatchLogsExportsInput`<sup>Optional</sup> <a name="EnabledCloudwatchLogsExportsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExportsInput"></a>
+##### `EnabledCloudwatchLogsExportsInput`<sup>Optional</sup> <a name="EnabledCloudwatchLogsExportsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExportsInput"></a>
 
 ```go
 func EnabledCloudwatchLogsExportsInput() *[]*string
@@ -1793,7 +1804,7 @@ func EnabledCloudwatchLogsExportsInput() *[]*string
 
 ---
 
-##### `EngineInput`<sup>Optional</sup> <a name="EngineInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engineInput"></a>
+##### `EngineInput`<sup>Optional</sup> <a name="EngineInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engineInput"></a>
 
 ```go
 func EngineInput() *string
@@ -1803,7 +1814,7 @@ func EngineInput() *string
 
 ---
 
-##### `EngineLifecycleSupportInput`<sup>Optional</sup> <a name="EngineLifecycleSupportInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupportInput"></a>
+##### `EngineLifecycleSupportInput`<sup>Optional</sup> <a name="EngineLifecycleSupportInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupportInput"></a>
 
 ```go
 func EngineLifecycleSupportInput() *string
@@ -1813,7 +1824,7 @@ func EngineLifecycleSupportInput() *string
 
 ---
 
-##### `EngineVersionInput`<sup>Optional</sup> <a name="EngineVersionInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engineVersionInput"></a>
+##### `EngineVersionInput`<sup>Optional</sup> <a name="EngineVersionInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engineVersionInput"></a>
 
 ```go
 func EngineVersionInput() *string
@@ -1823,7 +1834,7 @@ func EngineVersionInput() *string
 
 ---
 
-##### `FinalSnapshotIdentifierInput`<sup>Optional</sup> <a name="FinalSnapshotIdentifierInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifierInput"></a>
+##### `FinalSnapshotIdentifierInput`<sup>Optional</sup> <a name="FinalSnapshotIdentifierInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifierInput"></a>
 
 ```go
 func FinalSnapshotIdentifierInput() *string
@@ -1833,7 +1844,7 @@ func FinalSnapshotIdentifierInput() *string
 
 ---
 
-##### `IamDatabaseAuthenticationEnabledInput`<sup>Optional</sup> <a name="IamDatabaseAuthenticationEnabledInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabledInput"></a>
+##### `IamDatabaseAuthenticationEnabledInput`<sup>Optional</sup> <a name="IamDatabaseAuthenticationEnabledInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabledInput"></a>
 
 ```go
 func IamDatabaseAuthenticationEnabledInput() interface{}
@@ -1843,7 +1854,7 @@ func IamDatabaseAuthenticationEnabledInput() interface{}
 
 ---
 
-##### `IdentifierInput`<sup>Optional</sup> <a name="IdentifierInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.identifierInput"></a>
+##### `IdentifierInput`<sup>Optional</sup> <a name="IdentifierInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.identifierInput"></a>
 
 ```go
 func IdentifierInput() *string
@@ -1853,7 +1864,7 @@ func IdentifierInput() *string
 
 ---
 
-##### `IdentifierPrefixInput`<sup>Optional</sup> <a name="IdentifierPrefixInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.identifierPrefixInput"></a>
+##### `IdentifierPrefixInput`<sup>Optional</sup> <a name="IdentifierPrefixInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.identifierPrefixInput"></a>
 
 ```go
 func IdentifierPrefixInput() *string
@@ -1863,7 +1874,7 @@ func IdentifierPrefixInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -1873,7 +1884,7 @@ func IdInput() *string
 
 ---
 
-##### `InstanceClassInput`<sup>Optional</sup> <a name="InstanceClassInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.instanceClassInput"></a>
+##### `InstanceClassInput`<sup>Optional</sup> <a name="InstanceClassInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.instanceClassInput"></a>
 
 ```go
 func InstanceClassInput() *string
@@ -1883,7 +1894,7 @@ func InstanceClassInput() *string
 
 ---
 
-##### `IopsInput`<sup>Optional</sup> <a name="IopsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.iopsInput"></a>
+##### `IopsInput`<sup>Optional</sup> <a name="IopsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.iopsInput"></a>
 
 ```go
 func IopsInput() *f64
@@ -1893,7 +1904,7 @@ func IopsInput() *f64
 
 ---
 
-##### `KmsKeyIdInput`<sup>Optional</sup> <a name="KmsKeyIdInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.kmsKeyIdInput"></a>
+##### `KmsKeyIdInput`<sup>Optional</sup> <a name="KmsKeyIdInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.kmsKeyIdInput"></a>
 
 ```go
 func KmsKeyIdInput() *string
@@ -1903,7 +1914,7 @@ func KmsKeyIdInput() *string
 
 ---
 
-##### `LicenseModelInput`<sup>Optional</sup> <a name="LicenseModelInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.licenseModelInput"></a>
+##### `LicenseModelInput`<sup>Optional</sup> <a name="LicenseModelInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.licenseModelInput"></a>
 
 ```go
 func LicenseModelInput() *string
@@ -1913,7 +1924,7 @@ func LicenseModelInput() *string
 
 ---
 
-##### `MaintenanceWindowInput`<sup>Optional</sup> <a name="MaintenanceWindowInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.maintenanceWindowInput"></a>
+##### `MaintenanceWindowInput`<sup>Optional</sup> <a name="MaintenanceWindowInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.maintenanceWindowInput"></a>
 
 ```go
 func MaintenanceWindowInput() *string
@@ -1923,7 +1934,7 @@ func MaintenanceWindowInput() *string
 
 ---
 
-##### `ManageMasterUserPasswordInput`<sup>Optional</sup> <a name="ManageMasterUserPasswordInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPasswordInput"></a>
+##### `ManageMasterUserPasswordInput`<sup>Optional</sup> <a name="ManageMasterUserPasswordInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.manageMasterUserPasswordInput"></a>
 
 ```go
 func ManageMasterUserPasswordInput() interface{}
@@ -1933,7 +1944,7 @@ func ManageMasterUserPasswordInput() interface{}
 
 ---
 
-##### `MasterUserSecretKmsKeyIdInput`<sup>Optional</sup> <a name="MasterUserSecretKmsKeyIdInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyIdInput"></a>
+##### `MasterUserSecretKmsKeyIdInput`<sup>Optional</sup> <a name="MasterUserSecretKmsKeyIdInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyIdInput"></a>
 
 ```go
 func MasterUserSecretKmsKeyIdInput() *string
@@ -1943,7 +1954,7 @@ func MasterUserSecretKmsKeyIdInput() *string
 
 ---
 
-##### `MaxAllocatedStorageInput`<sup>Optional</sup> <a name="MaxAllocatedStorageInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorageInput"></a>
+##### `MaxAllocatedStorageInput`<sup>Optional</sup> <a name="MaxAllocatedStorageInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorageInput"></a>
 
 ```go
 func MaxAllocatedStorageInput() *f64
@@ -1953,7 +1964,7 @@ func MaxAllocatedStorageInput() *f64
 
 ---
 
-##### `MonitoringIntervalInput`<sup>Optional</sup> <a name="MonitoringIntervalInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringIntervalInput"></a>
+##### `MonitoringIntervalInput`<sup>Optional</sup> <a name="MonitoringIntervalInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringIntervalInput"></a>
 
 ```go
 func MonitoringIntervalInput() *f64
@@ -1963,7 +1974,7 @@ func MonitoringIntervalInput() *f64
 
 ---
 
-##### `MonitoringRoleArnInput`<sup>Optional</sup> <a name="MonitoringRoleArnInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringRoleArnInput"></a>
+##### `MonitoringRoleArnInput`<sup>Optional</sup> <a name="MonitoringRoleArnInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringRoleArnInput"></a>
 
 ```go
 func MonitoringRoleArnInput() *string
@@ -1973,7 +1984,7 @@ func MonitoringRoleArnInput() *string
 
 ---
 
-##### `MultiAzInput`<sup>Optional</sup> <a name="MultiAzInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.multiAzInput"></a>
+##### `MultiAzInput`<sup>Optional</sup> <a name="MultiAzInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.multiAzInput"></a>
 
 ```go
 func MultiAzInput() interface{}
@@ -1983,7 +1994,7 @@ func MultiAzInput() interface{}
 
 ---
 
-##### `NcharCharacterSetNameInput`<sup>Optional</sup> <a name="NcharCharacterSetNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetNameInput"></a>
+##### `NcharCharacterSetNameInput`<sup>Optional</sup> <a name="NcharCharacterSetNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetNameInput"></a>
 
 ```go
 func NcharCharacterSetNameInput() *string
@@ -1993,7 +2004,7 @@ func NcharCharacterSetNameInput() *string
 
 ---
 
-##### `NetworkTypeInput`<sup>Optional</sup> <a name="NetworkTypeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.networkTypeInput"></a>
+##### `NetworkTypeInput`<sup>Optional</sup> <a name="NetworkTypeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.networkTypeInput"></a>
 
 ```go
 func NetworkTypeInput() *string
@@ -2003,7 +2014,7 @@ func NetworkTypeInput() *string
 
 ---
 
-##### `OptionGroupNameInput`<sup>Optional</sup> <a name="OptionGroupNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.optionGroupNameInput"></a>
+##### `OptionGroupNameInput`<sup>Optional</sup> <a name="OptionGroupNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.optionGroupNameInput"></a>
 
 ```go
 func OptionGroupNameInput() *string
@@ -2013,7 +2024,7 @@ func OptionGroupNameInput() *string
 
 ---
 
-##### `ParameterGroupNameInput`<sup>Optional</sup> <a name="ParameterGroupNameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.parameterGroupNameInput"></a>
+##### `ParameterGroupNameInput`<sup>Optional</sup> <a name="ParameterGroupNameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.parameterGroupNameInput"></a>
 
 ```go
 func ParameterGroupNameInput() *string
@@ -2023,7 +2034,7 @@ func ParameterGroupNameInput() *string
 
 ---
 
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.passwordInput"></a>
+##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.passwordInput"></a>
 
 ```go
 func PasswordInput() *string
@@ -2033,7 +2044,7 @@ func PasswordInput() *string
 
 ---
 
-##### `PasswordWoInput`<sup>Optional</sup> <a name="PasswordWoInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWoInput"></a>
+##### `PasswordWoInput`<sup>Optional</sup> <a name="PasswordWoInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWoInput"></a>
 
 ```go
 func PasswordWoInput() *string
@@ -2043,7 +2054,7 @@ func PasswordWoInput() *string
 
 ---
 
-##### `PasswordWoVersionInput`<sup>Optional</sup> <a name="PasswordWoVersionInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWoVersionInput"></a>
+##### `PasswordWoVersionInput`<sup>Optional</sup> <a name="PasswordWoVersionInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWoVersionInput"></a>
 
 ```go
 func PasswordWoVersionInput() *f64
@@ -2053,7 +2064,7 @@ func PasswordWoVersionInput() *f64
 
 ---
 
-##### `PerformanceInsightsEnabledInput`<sup>Optional</sup> <a name="PerformanceInsightsEnabledInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabledInput"></a>
+##### `PerformanceInsightsEnabledInput`<sup>Optional</sup> <a name="PerformanceInsightsEnabledInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabledInput"></a>
 
 ```go
 func PerformanceInsightsEnabledInput() interface{}
@@ -2063,7 +2074,7 @@ func PerformanceInsightsEnabledInput() interface{}
 
 ---
 
-##### `PerformanceInsightsKmsKeyIdInput`<sup>Optional</sup> <a name="PerformanceInsightsKmsKeyIdInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyIdInput"></a>
+##### `PerformanceInsightsKmsKeyIdInput`<sup>Optional</sup> <a name="PerformanceInsightsKmsKeyIdInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyIdInput"></a>
 
 ```go
 func PerformanceInsightsKmsKeyIdInput() *string
@@ -2073,7 +2084,7 @@ func PerformanceInsightsKmsKeyIdInput() *string
 
 ---
 
-##### `PerformanceInsightsRetentionPeriodInput`<sup>Optional</sup> <a name="PerformanceInsightsRetentionPeriodInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriodInput"></a>
+##### `PerformanceInsightsRetentionPeriodInput`<sup>Optional</sup> <a name="PerformanceInsightsRetentionPeriodInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriodInput"></a>
 
 ```go
 func PerformanceInsightsRetentionPeriodInput() *f64
@@ -2083,7 +2094,7 @@ func PerformanceInsightsRetentionPeriodInput() *f64
 
 ---
 
-##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.portInput"></a>
+##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.portInput"></a>
 
 ```go
 func PortInput() *f64
@@ -2093,7 +2104,7 @@ func PortInput() *f64
 
 ---
 
-##### `PubliclyAccessibleInput`<sup>Optional</sup> <a name="PubliclyAccessibleInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.publiclyAccessibleInput"></a>
+##### `PubliclyAccessibleInput`<sup>Optional</sup> <a name="PubliclyAccessibleInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.publiclyAccessibleInput"></a>
 
 ```go
 func PubliclyAccessibleInput() interface{}
@@ -2103,7 +2114,7 @@ func PubliclyAccessibleInput() interface{}
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -2113,7 +2124,7 @@ func RegionInput() *string
 
 ---
 
-##### `ReplicaModeInput`<sup>Optional</sup> <a name="ReplicaModeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.replicaModeInput"></a>
+##### `ReplicaModeInput`<sup>Optional</sup> <a name="ReplicaModeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.replicaModeInput"></a>
 
 ```go
 func ReplicaModeInput() *string
@@ -2123,7 +2134,7 @@ func ReplicaModeInput() *string
 
 ---
 
-##### `ReplicateSourceDbInput`<sup>Optional</sup> <a name="ReplicateSourceDbInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.replicateSourceDbInput"></a>
+##### `ReplicateSourceDbInput`<sup>Optional</sup> <a name="ReplicateSourceDbInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.replicateSourceDbInput"></a>
 
 ```go
 func ReplicateSourceDbInput() *string
@@ -2133,27 +2144,27 @@ func ReplicateSourceDbInput() *string
 
 ---
 
-##### `RestoreToPointInTimeInput`<sup>Optional</sup> <a name="RestoreToPointInTimeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.restoreToPointInTimeInput"></a>
+##### `RestoreToPointInTimeInput`<sup>Optional</sup> <a name="RestoreToPointInTimeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.restoreToPointInTimeInput"></a>
 
 ```go
 func RestoreToPointInTimeInput() DbInstanceRestoreToPointInTime
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
 
 ---
 
-##### `S3ImportInput`<sup>Optional</sup> <a name="S3ImportInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.s3ImportInput"></a>
+##### `S3ImportInput`<sup>Optional</sup> <a name="S3ImportInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.s3ImportInput"></a>
 
 ```go
 func S3ImportInput() DbInstanceS3Import
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
 
 ---
 
-##### `SkipFinalSnapshotInput`<sup>Optional</sup> <a name="SkipFinalSnapshotInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshotInput"></a>
+##### `SkipFinalSnapshotInput`<sup>Optional</sup> <a name="SkipFinalSnapshotInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshotInput"></a>
 
 ```go
 func SkipFinalSnapshotInput() interface{}
@@ -2163,7 +2174,7 @@ func SkipFinalSnapshotInput() interface{}
 
 ---
 
-##### `SnapshotIdentifierInput`<sup>Optional</sup> <a name="SnapshotIdentifierInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.snapshotIdentifierInput"></a>
+##### `SnapshotIdentifierInput`<sup>Optional</sup> <a name="SnapshotIdentifierInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.snapshotIdentifierInput"></a>
 
 ```go
 func SnapshotIdentifierInput() *string
@@ -2173,7 +2184,7 @@ func SnapshotIdentifierInput() *string
 
 ---
 
-##### `StorageEncryptedInput`<sup>Optional</sup> <a name="StorageEncryptedInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.storageEncryptedInput"></a>
+##### `StorageEncryptedInput`<sup>Optional</sup> <a name="StorageEncryptedInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.storageEncryptedInput"></a>
 
 ```go
 func StorageEncryptedInput() interface{}
@@ -2183,7 +2194,7 @@ func StorageEncryptedInput() interface{}
 
 ---
 
-##### `StorageThroughputInput`<sup>Optional</sup> <a name="StorageThroughputInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.storageThroughputInput"></a>
+##### `StorageThroughputInput`<sup>Optional</sup> <a name="StorageThroughputInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.storageThroughputInput"></a>
 
 ```go
 func StorageThroughputInput() *f64
@@ -2193,7 +2204,7 @@ func StorageThroughputInput() *f64
 
 ---
 
-##### `StorageTypeInput`<sup>Optional</sup> <a name="StorageTypeInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.storageTypeInput"></a>
+##### `StorageTypeInput`<sup>Optional</sup> <a name="StorageTypeInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.storageTypeInput"></a>
 
 ```go
 func StorageTypeInput() *string
@@ -2203,7 +2214,7 @@ func StorageTypeInput() *string
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.tagsAllInput"></a>
+##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.tagsAllInput"></a>
 
 ```go
 func TagsAllInput() *map[string]*string
@@ -2213,7 +2224,7 @@ func TagsAllInput() *map[string]*string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -2223,7 +2234,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -2233,7 +2244,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `TimezoneInput`<sup>Optional</sup> <a name="TimezoneInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.timezoneInput"></a>
+##### `TimezoneInput`<sup>Optional</sup> <a name="TimezoneInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.timezoneInput"></a>
 
 ```go
 func TimezoneInput() *string
@@ -2243,7 +2254,7 @@ func TimezoneInput() *string
 
 ---
 
-##### `UpgradeStorageConfigInput`<sup>Optional</sup> <a name="UpgradeStorageConfigInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfigInput"></a>
+##### `UpgradeStorageConfigInput`<sup>Optional</sup> <a name="UpgradeStorageConfigInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfigInput"></a>
 
 ```go
 func UpgradeStorageConfigInput() interface{}
@@ -2253,7 +2264,7 @@ func UpgradeStorageConfigInput() interface{}
 
 ---
 
-##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.usernameInput"></a>
+##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.usernameInput"></a>
 
 ```go
 func UsernameInput() *string
@@ -2263,7 +2274,7 @@ func UsernameInput() *string
 
 ---
 
-##### `VpcSecurityGroupIdsInput`<sup>Optional</sup> <a name="VpcSecurityGroupIdsInput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIdsInput"></a>
+##### `VpcSecurityGroupIdsInput`<sup>Optional</sup> <a name="VpcSecurityGroupIdsInput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIdsInput"></a>
 
 ```go
 func VpcSecurityGroupIdsInput() *[]*string
@@ -2273,7 +2284,7 @@ func VpcSecurityGroupIdsInput() *[]*string
 
 ---
 
-##### `AllocatedStorage`<sup>Required</sup> <a name="AllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstance.property.allocatedStorage"></a>
+##### `AllocatedStorage`<sup>Required</sup> <a name="AllocatedStorage" id="@cdktn/provider-aws.dbInstance.DbInstance.property.allocatedStorage"></a>
 
 ```go
 func AllocatedStorage() *f64
@@ -2283,7 +2294,7 @@ func AllocatedStorage() *f64
 
 ---
 
-##### `AllowMajorVersionUpgrade`<sup>Required</sup> <a name="AllowMajorVersionUpgrade" id="@cdktf/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgrade"></a>
+##### `AllowMajorVersionUpgrade`<sup>Required</sup> <a name="AllowMajorVersionUpgrade" id="@cdktn/provider-aws.dbInstance.DbInstance.property.allowMajorVersionUpgrade"></a>
 
 ```go
 func AllowMajorVersionUpgrade() interface{}
@@ -2293,7 +2304,7 @@ func AllowMajorVersionUpgrade() interface{}
 
 ---
 
-##### `ApplyImmediately`<sup>Required</sup> <a name="ApplyImmediately" id="@cdktf/provider-aws.dbInstance.DbInstance.property.applyImmediately"></a>
+##### `ApplyImmediately`<sup>Required</sup> <a name="ApplyImmediately" id="@cdktn/provider-aws.dbInstance.DbInstance.property.applyImmediately"></a>
 
 ```go
 func ApplyImmediately() interface{}
@@ -2303,7 +2314,7 @@ func ApplyImmediately() interface{}
 
 ---
 
-##### `AutoMinorVersionUpgrade`<sup>Required</sup> <a name="AutoMinorVersionUpgrade" id="@cdktf/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgrade"></a>
+##### `AutoMinorVersionUpgrade`<sup>Required</sup> <a name="AutoMinorVersionUpgrade" id="@cdktn/provider-aws.dbInstance.DbInstance.property.autoMinorVersionUpgrade"></a>
 
 ```go
 func AutoMinorVersionUpgrade() interface{}
@@ -2313,7 +2324,7 @@ func AutoMinorVersionUpgrade() interface{}
 
 ---
 
-##### `AvailabilityZone`<sup>Required</sup> <a name="AvailabilityZone" id="@cdktf/provider-aws.dbInstance.DbInstance.property.availabilityZone"></a>
+##### `AvailabilityZone`<sup>Required</sup> <a name="AvailabilityZone" id="@cdktn/provider-aws.dbInstance.DbInstance.property.availabilityZone"></a>
 
 ```go
 func AvailabilityZone() *string
@@ -2323,7 +2334,7 @@ func AvailabilityZone() *string
 
 ---
 
-##### `BackupRetentionPeriod`<sup>Required</sup> <a name="BackupRetentionPeriod" id="@cdktf/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriod"></a>
+##### `BackupRetentionPeriod`<sup>Required</sup> <a name="BackupRetentionPeriod" id="@cdktn/provider-aws.dbInstance.DbInstance.property.backupRetentionPeriod"></a>
 
 ```go
 func BackupRetentionPeriod() *f64
@@ -2333,7 +2344,7 @@ func BackupRetentionPeriod() *f64
 
 ---
 
-##### `BackupTarget`<sup>Required</sup> <a name="BackupTarget" id="@cdktf/provider-aws.dbInstance.DbInstance.property.backupTarget"></a>
+##### `BackupTarget`<sup>Required</sup> <a name="BackupTarget" id="@cdktn/provider-aws.dbInstance.DbInstance.property.backupTarget"></a>
 
 ```go
 func BackupTarget() *string
@@ -2343,7 +2354,7 @@ func BackupTarget() *string
 
 ---
 
-##### `BackupWindow`<sup>Required</sup> <a name="BackupWindow" id="@cdktf/provider-aws.dbInstance.DbInstance.property.backupWindow"></a>
+##### `BackupWindow`<sup>Required</sup> <a name="BackupWindow" id="@cdktn/provider-aws.dbInstance.DbInstance.property.backupWindow"></a>
 
 ```go
 func BackupWindow() *string
@@ -2353,7 +2364,7 @@ func BackupWindow() *string
 
 ---
 
-##### `CaCertIdentifier`<sup>Required</sup> <a name="CaCertIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.property.caCertIdentifier"></a>
+##### `CaCertIdentifier`<sup>Required</sup> <a name="CaCertIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.property.caCertIdentifier"></a>
 
 ```go
 func CaCertIdentifier() *string
@@ -2363,7 +2374,7 @@ func CaCertIdentifier() *string
 
 ---
 
-##### `CharacterSetName`<sup>Required</sup> <a name="CharacterSetName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.characterSetName"></a>
+##### `CharacterSetName`<sup>Required</sup> <a name="CharacterSetName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.characterSetName"></a>
 
 ```go
 func CharacterSetName() *string
@@ -2373,7 +2384,7 @@ func CharacterSetName() *string
 
 ---
 
-##### `CopyTagsToSnapshot`<sup>Required</sup> <a name="CopyTagsToSnapshot" id="@cdktf/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshot"></a>
+##### `CopyTagsToSnapshot`<sup>Required</sup> <a name="CopyTagsToSnapshot" id="@cdktn/provider-aws.dbInstance.DbInstance.property.copyTagsToSnapshot"></a>
 
 ```go
 func CopyTagsToSnapshot() interface{}
@@ -2383,7 +2394,7 @@ func CopyTagsToSnapshot() interface{}
 
 ---
 
-##### `CustomerOwnedIpEnabled`<sup>Required</sup> <a name="CustomerOwnedIpEnabled" id="@cdktf/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabled"></a>
+##### `CustomerOwnedIpEnabled`<sup>Required</sup> <a name="CustomerOwnedIpEnabled" id="@cdktn/provider-aws.dbInstance.DbInstance.property.customerOwnedIpEnabled"></a>
 
 ```go
 func CustomerOwnedIpEnabled() interface{}
@@ -2393,7 +2404,7 @@ func CustomerOwnedIpEnabled() interface{}
 
 ---
 
-##### `CustomIamInstanceProfile`<sup>Required</sup> <a name="CustomIamInstanceProfile" id="@cdktf/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfile"></a>
+##### `CustomIamInstanceProfile`<sup>Required</sup> <a name="CustomIamInstanceProfile" id="@cdktn/provider-aws.dbInstance.DbInstance.property.customIamInstanceProfile"></a>
 
 ```go
 func CustomIamInstanceProfile() *string
@@ -2403,7 +2414,7 @@ func CustomIamInstanceProfile() *string
 
 ---
 
-##### `DatabaseInsightsMode`<sup>Required</sup> <a name="DatabaseInsightsMode" id="@cdktf/provider-aws.dbInstance.DbInstance.property.databaseInsightsMode"></a>
+##### `DatabaseInsightsMode`<sup>Required</sup> <a name="DatabaseInsightsMode" id="@cdktn/provider-aws.dbInstance.DbInstance.property.databaseInsightsMode"></a>
 
 ```go
 func DatabaseInsightsMode() *string
@@ -2413,7 +2424,7 @@ func DatabaseInsightsMode() *string
 
 ---
 
-##### `DbName`<sup>Required</sup> <a name="DbName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dbName"></a>
+##### `DbName`<sup>Required</sup> <a name="DbName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dbName"></a>
 
 ```go
 func DbName() *string
@@ -2423,7 +2434,7 @@ func DbName() *string
 
 ---
 
-##### `DbSubnetGroupName`<sup>Required</sup> <a name="DbSubnetGroupName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupName"></a>
+##### `DbSubnetGroupName`<sup>Required</sup> <a name="DbSubnetGroupName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dbSubnetGroupName"></a>
 
 ```go
 func DbSubnetGroupName() *string
@@ -2433,7 +2444,7 @@ func DbSubnetGroupName() *string
 
 ---
 
-##### `DedicatedLogVolume`<sup>Required</sup> <a name="DedicatedLogVolume" id="@cdktf/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolume"></a>
+##### `DedicatedLogVolume`<sup>Required</sup> <a name="DedicatedLogVolume" id="@cdktn/provider-aws.dbInstance.DbInstance.property.dedicatedLogVolume"></a>
 
 ```go
 func DedicatedLogVolume() interface{}
@@ -2443,7 +2454,7 @@ func DedicatedLogVolume() interface{}
 
 ---
 
-##### `DeleteAutomatedBackups`<sup>Required</sup> <a name="DeleteAutomatedBackups" id="@cdktf/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackups"></a>
+##### `DeleteAutomatedBackups`<sup>Required</sup> <a name="DeleteAutomatedBackups" id="@cdktn/provider-aws.dbInstance.DbInstance.property.deleteAutomatedBackups"></a>
 
 ```go
 func DeleteAutomatedBackups() interface{}
@@ -2453,7 +2464,7 @@ func DeleteAutomatedBackups() interface{}
 
 ---
 
-##### `DeletionProtection`<sup>Required</sup> <a name="DeletionProtection" id="@cdktf/provider-aws.dbInstance.DbInstance.property.deletionProtection"></a>
+##### `DeletionProtection`<sup>Required</sup> <a name="DeletionProtection" id="@cdktn/provider-aws.dbInstance.DbInstance.property.deletionProtection"></a>
 
 ```go
 func DeletionProtection() interface{}
@@ -2463,7 +2474,7 @@ func DeletionProtection() interface{}
 
 ---
 
-##### `Domain`<sup>Required</sup> <a name="Domain" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domain"></a>
+##### `Domain`<sup>Required</sup> <a name="Domain" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domain"></a>
 
 ```go
 func Domain() *string
@@ -2473,7 +2484,7 @@ func Domain() *string
 
 ---
 
-##### `DomainAuthSecretArn`<sup>Required</sup> <a name="DomainAuthSecretArn" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArn"></a>
+##### `DomainAuthSecretArn`<sup>Required</sup> <a name="DomainAuthSecretArn" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainAuthSecretArn"></a>
 
 ```go
 func DomainAuthSecretArn() *string
@@ -2483,7 +2494,7 @@ func DomainAuthSecretArn() *string
 
 ---
 
-##### `DomainDnsIps`<sup>Required</sup> <a name="DomainDnsIps" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainDnsIps"></a>
+##### `DomainDnsIps`<sup>Required</sup> <a name="DomainDnsIps" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainDnsIps"></a>
 
 ```go
 func DomainDnsIps() *[]*string
@@ -2493,7 +2504,7 @@ func DomainDnsIps() *[]*string
 
 ---
 
-##### `DomainFqdn`<sup>Required</sup> <a name="DomainFqdn" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainFqdn"></a>
+##### `DomainFqdn`<sup>Required</sup> <a name="DomainFqdn" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainFqdn"></a>
 
 ```go
 func DomainFqdn() *string
@@ -2503,7 +2514,7 @@ func DomainFqdn() *string
 
 ---
 
-##### `DomainIamRoleName`<sup>Required</sup> <a name="DomainIamRoleName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainIamRoleName"></a>
+##### `DomainIamRoleName`<sup>Required</sup> <a name="DomainIamRoleName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainIamRoleName"></a>
 
 ```go
 func DomainIamRoleName() *string
@@ -2513,7 +2524,7 @@ func DomainIamRoleName() *string
 
 ---
 
-##### `DomainOu`<sup>Required</sup> <a name="DomainOu" id="@cdktf/provider-aws.dbInstance.DbInstance.property.domainOu"></a>
+##### `DomainOu`<sup>Required</sup> <a name="DomainOu" id="@cdktn/provider-aws.dbInstance.DbInstance.property.domainOu"></a>
 
 ```go
 func DomainOu() *string
@@ -2523,7 +2534,7 @@ func DomainOu() *string
 
 ---
 
-##### `EnabledCloudwatchLogsExports`<sup>Required</sup> <a name="EnabledCloudwatchLogsExports" id="@cdktf/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExports"></a>
+##### `EnabledCloudwatchLogsExports`<sup>Required</sup> <a name="EnabledCloudwatchLogsExports" id="@cdktn/provider-aws.dbInstance.DbInstance.property.enabledCloudwatchLogsExports"></a>
 
 ```go
 func EnabledCloudwatchLogsExports() *[]*string
@@ -2533,7 +2544,7 @@ func EnabledCloudwatchLogsExports() *[]*string
 
 ---
 
-##### `Engine`<sup>Required</sup> <a name="Engine" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engine"></a>
+##### `Engine`<sup>Required</sup> <a name="Engine" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engine"></a>
 
 ```go
 func Engine() *string
@@ -2543,7 +2554,7 @@ func Engine() *string
 
 ---
 
-##### `EngineLifecycleSupport`<sup>Required</sup> <a name="EngineLifecycleSupport" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupport"></a>
+##### `EngineLifecycleSupport`<sup>Required</sup> <a name="EngineLifecycleSupport" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engineLifecycleSupport"></a>
 
 ```go
 func EngineLifecycleSupport() *string
@@ -2553,7 +2564,7 @@ func EngineLifecycleSupport() *string
 
 ---
 
-##### `EngineVersion`<sup>Required</sup> <a name="EngineVersion" id="@cdktf/provider-aws.dbInstance.DbInstance.property.engineVersion"></a>
+##### `EngineVersion`<sup>Required</sup> <a name="EngineVersion" id="@cdktn/provider-aws.dbInstance.DbInstance.property.engineVersion"></a>
 
 ```go
 func EngineVersion() *string
@@ -2563,7 +2574,7 @@ func EngineVersion() *string
 
 ---
 
-##### `FinalSnapshotIdentifier`<sup>Required</sup> <a name="FinalSnapshotIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifier"></a>
+##### `FinalSnapshotIdentifier`<sup>Required</sup> <a name="FinalSnapshotIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.property.finalSnapshotIdentifier"></a>
 
 ```go
 func FinalSnapshotIdentifier() *string
@@ -2573,7 +2584,7 @@ func FinalSnapshotIdentifier() *string
 
 ---
 
-##### `IamDatabaseAuthenticationEnabled`<sup>Required</sup> <a name="IamDatabaseAuthenticationEnabled" id="@cdktf/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabled"></a>
+##### `IamDatabaseAuthenticationEnabled`<sup>Required</sup> <a name="IamDatabaseAuthenticationEnabled" id="@cdktn/provider-aws.dbInstance.DbInstance.property.iamDatabaseAuthenticationEnabled"></a>
 
 ```go
 func IamDatabaseAuthenticationEnabled() interface{}
@@ -2583,7 +2594,7 @@ func IamDatabaseAuthenticationEnabled() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dbInstance.DbInstance.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.dbInstance.DbInstance.property.id"></a>
 
 ```go
 func Id() *string
@@ -2593,7 +2604,7 @@ func Id() *string
 
 ---
 
-##### `Identifier`<sup>Required</sup> <a name="Identifier" id="@cdktf/provider-aws.dbInstance.DbInstance.property.identifier"></a>
+##### `Identifier`<sup>Required</sup> <a name="Identifier" id="@cdktn/provider-aws.dbInstance.DbInstance.property.identifier"></a>
 
 ```go
 func Identifier() *string
@@ -2603,7 +2614,7 @@ func Identifier() *string
 
 ---
 
-##### `IdentifierPrefix`<sup>Required</sup> <a name="IdentifierPrefix" id="@cdktf/provider-aws.dbInstance.DbInstance.property.identifierPrefix"></a>
+##### `IdentifierPrefix`<sup>Required</sup> <a name="IdentifierPrefix" id="@cdktn/provider-aws.dbInstance.DbInstance.property.identifierPrefix"></a>
 
 ```go
 func IdentifierPrefix() *string
@@ -2613,7 +2624,7 @@ func IdentifierPrefix() *string
 
 ---
 
-##### `InstanceClass`<sup>Required</sup> <a name="InstanceClass" id="@cdktf/provider-aws.dbInstance.DbInstance.property.instanceClass"></a>
+##### `InstanceClass`<sup>Required</sup> <a name="InstanceClass" id="@cdktn/provider-aws.dbInstance.DbInstance.property.instanceClass"></a>
 
 ```go
 func InstanceClass() *string
@@ -2623,7 +2634,7 @@ func InstanceClass() *string
 
 ---
 
-##### `Iops`<sup>Required</sup> <a name="Iops" id="@cdktf/provider-aws.dbInstance.DbInstance.property.iops"></a>
+##### `Iops`<sup>Required</sup> <a name="Iops" id="@cdktn/provider-aws.dbInstance.DbInstance.property.iops"></a>
 
 ```go
 func Iops() *f64
@@ -2633,7 +2644,7 @@ func Iops() *f64
 
 ---
 
-##### `KmsKeyId`<sup>Required</sup> <a name="KmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.kmsKeyId"></a>
+##### `KmsKeyId`<sup>Required</sup> <a name="KmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstance.property.kmsKeyId"></a>
 
 ```go
 func KmsKeyId() *string
@@ -2643,7 +2654,7 @@ func KmsKeyId() *string
 
 ---
 
-##### `LicenseModel`<sup>Required</sup> <a name="LicenseModel" id="@cdktf/provider-aws.dbInstance.DbInstance.property.licenseModel"></a>
+##### `LicenseModel`<sup>Required</sup> <a name="LicenseModel" id="@cdktn/provider-aws.dbInstance.DbInstance.property.licenseModel"></a>
 
 ```go
 func LicenseModel() *string
@@ -2653,7 +2664,7 @@ func LicenseModel() *string
 
 ---
 
-##### `MaintenanceWindow`<sup>Required</sup> <a name="MaintenanceWindow" id="@cdktf/provider-aws.dbInstance.DbInstance.property.maintenanceWindow"></a>
+##### `MaintenanceWindow`<sup>Required</sup> <a name="MaintenanceWindow" id="@cdktn/provider-aws.dbInstance.DbInstance.property.maintenanceWindow"></a>
 
 ```go
 func MaintenanceWindow() *string
@@ -2663,7 +2674,7 @@ func MaintenanceWindow() *string
 
 ---
 
-##### `ManageMasterUserPassword`<sup>Required</sup> <a name="ManageMasterUserPassword" id="@cdktf/provider-aws.dbInstance.DbInstance.property.manageMasterUserPassword"></a>
+##### `ManageMasterUserPassword`<sup>Required</sup> <a name="ManageMasterUserPassword" id="@cdktn/provider-aws.dbInstance.DbInstance.property.manageMasterUserPassword"></a>
 
 ```go
 func ManageMasterUserPassword() interface{}
@@ -2673,7 +2684,7 @@ func ManageMasterUserPassword() interface{}
 
 ---
 
-##### `MasterUserSecretKmsKeyId`<sup>Required</sup> <a name="MasterUserSecretKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyId"></a>
+##### `MasterUserSecretKmsKeyId`<sup>Required</sup> <a name="MasterUserSecretKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstance.property.masterUserSecretKmsKeyId"></a>
 
 ```go
 func MasterUserSecretKmsKeyId() *string
@@ -2683,7 +2694,7 @@ func MasterUserSecretKmsKeyId() *string
 
 ---
 
-##### `MaxAllocatedStorage`<sup>Required</sup> <a name="MaxAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorage"></a>
+##### `MaxAllocatedStorage`<sup>Required</sup> <a name="MaxAllocatedStorage" id="@cdktn/provider-aws.dbInstance.DbInstance.property.maxAllocatedStorage"></a>
 
 ```go
 func MaxAllocatedStorage() *f64
@@ -2693,7 +2704,7 @@ func MaxAllocatedStorage() *f64
 
 ---
 
-##### `MonitoringInterval`<sup>Required</sup> <a name="MonitoringInterval" id="@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringInterval"></a>
+##### `MonitoringInterval`<sup>Required</sup> <a name="MonitoringInterval" id="@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringInterval"></a>
 
 ```go
 func MonitoringInterval() *f64
@@ -2703,7 +2714,7 @@ func MonitoringInterval() *f64
 
 ---
 
-##### `MonitoringRoleArn`<sup>Required</sup> <a name="MonitoringRoleArn" id="@cdktf/provider-aws.dbInstance.DbInstance.property.monitoringRoleArn"></a>
+##### `MonitoringRoleArn`<sup>Required</sup> <a name="MonitoringRoleArn" id="@cdktn/provider-aws.dbInstance.DbInstance.property.monitoringRoleArn"></a>
 
 ```go
 func MonitoringRoleArn() *string
@@ -2713,7 +2724,7 @@ func MonitoringRoleArn() *string
 
 ---
 
-##### `MultiAz`<sup>Required</sup> <a name="MultiAz" id="@cdktf/provider-aws.dbInstance.DbInstance.property.multiAz"></a>
+##### `MultiAz`<sup>Required</sup> <a name="MultiAz" id="@cdktn/provider-aws.dbInstance.DbInstance.property.multiAz"></a>
 
 ```go
 func MultiAz() interface{}
@@ -2723,7 +2734,7 @@ func MultiAz() interface{}
 
 ---
 
-##### `NcharCharacterSetName`<sup>Required</sup> <a name="NcharCharacterSetName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetName"></a>
+##### `NcharCharacterSetName`<sup>Required</sup> <a name="NcharCharacterSetName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.ncharCharacterSetName"></a>
 
 ```go
 func NcharCharacterSetName() *string
@@ -2733,7 +2744,7 @@ func NcharCharacterSetName() *string
 
 ---
 
-##### `NetworkType`<sup>Required</sup> <a name="NetworkType" id="@cdktf/provider-aws.dbInstance.DbInstance.property.networkType"></a>
+##### `NetworkType`<sup>Required</sup> <a name="NetworkType" id="@cdktn/provider-aws.dbInstance.DbInstance.property.networkType"></a>
 
 ```go
 func NetworkType() *string
@@ -2743,7 +2754,7 @@ func NetworkType() *string
 
 ---
 
-##### `OptionGroupName`<sup>Required</sup> <a name="OptionGroupName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.optionGroupName"></a>
+##### `OptionGroupName`<sup>Required</sup> <a name="OptionGroupName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.optionGroupName"></a>
 
 ```go
 func OptionGroupName() *string
@@ -2753,7 +2764,7 @@ func OptionGroupName() *string
 
 ---
 
-##### `ParameterGroupName`<sup>Required</sup> <a name="ParameterGroupName" id="@cdktf/provider-aws.dbInstance.DbInstance.property.parameterGroupName"></a>
+##### `ParameterGroupName`<sup>Required</sup> <a name="ParameterGroupName" id="@cdktn/provider-aws.dbInstance.DbInstance.property.parameterGroupName"></a>
 
 ```go
 func ParameterGroupName() *string
@@ -2763,7 +2774,7 @@ func ParameterGroupName() *string
 
 ---
 
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-aws.dbInstance.DbInstance.property.password"></a>
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktn/provider-aws.dbInstance.DbInstance.property.password"></a>
 
 ```go
 func Password() *string
@@ -2773,7 +2784,7 @@ func Password() *string
 
 ---
 
-##### `PasswordWo`<sup>Required</sup> <a name="PasswordWo" id="@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWo"></a>
+##### `PasswordWo`<sup>Required</sup> <a name="PasswordWo" id="@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWo"></a>
 
 ```go
 func PasswordWo() *string
@@ -2783,7 +2794,7 @@ func PasswordWo() *string
 
 ---
 
-##### `PasswordWoVersion`<sup>Required</sup> <a name="PasswordWoVersion" id="@cdktf/provider-aws.dbInstance.DbInstance.property.passwordWoVersion"></a>
+##### `PasswordWoVersion`<sup>Required</sup> <a name="PasswordWoVersion" id="@cdktn/provider-aws.dbInstance.DbInstance.property.passwordWoVersion"></a>
 
 ```go
 func PasswordWoVersion() *f64
@@ -2793,7 +2804,7 @@ func PasswordWoVersion() *f64
 
 ---
 
-##### `PerformanceInsightsEnabled`<sup>Required</sup> <a name="PerformanceInsightsEnabled" id="@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabled"></a>
+##### `PerformanceInsightsEnabled`<sup>Required</sup> <a name="PerformanceInsightsEnabled" id="@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsEnabled"></a>
 
 ```go
 func PerformanceInsightsEnabled() interface{}
@@ -2803,7 +2814,7 @@ func PerformanceInsightsEnabled() interface{}
 
 ---
 
-##### `PerformanceInsightsKmsKeyId`<sup>Required</sup> <a name="PerformanceInsightsKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyId"></a>
+##### `PerformanceInsightsKmsKeyId`<sup>Required</sup> <a name="PerformanceInsightsKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsKmsKeyId"></a>
 
 ```go
 func PerformanceInsightsKmsKeyId() *string
@@ -2813,7 +2824,7 @@ func PerformanceInsightsKmsKeyId() *string
 
 ---
 
-##### `PerformanceInsightsRetentionPeriod`<sup>Required</sup> <a name="PerformanceInsightsRetentionPeriod" id="@cdktf/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriod"></a>
+##### `PerformanceInsightsRetentionPeriod`<sup>Required</sup> <a name="PerformanceInsightsRetentionPeriod" id="@cdktn/provider-aws.dbInstance.DbInstance.property.performanceInsightsRetentionPeriod"></a>
 
 ```go
 func PerformanceInsightsRetentionPeriod() *f64
@@ -2823,7 +2834,7 @@ func PerformanceInsightsRetentionPeriod() *f64
 
 ---
 
-##### `Port`<sup>Required</sup> <a name="Port" id="@cdktf/provider-aws.dbInstance.DbInstance.property.port"></a>
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-aws.dbInstance.DbInstance.property.port"></a>
 
 ```go
 func Port() *f64
@@ -2833,7 +2844,7 @@ func Port() *f64
 
 ---
 
-##### `PubliclyAccessible`<sup>Required</sup> <a name="PubliclyAccessible" id="@cdktf/provider-aws.dbInstance.DbInstance.property.publiclyAccessible"></a>
+##### `PubliclyAccessible`<sup>Required</sup> <a name="PubliclyAccessible" id="@cdktn/provider-aws.dbInstance.DbInstance.property.publiclyAccessible"></a>
 
 ```go
 func PubliclyAccessible() interface{}
@@ -2843,7 +2854,7 @@ func PubliclyAccessible() interface{}
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dbInstance.DbInstance.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.dbInstance.DbInstance.property.region"></a>
 
 ```go
 func Region() *string
@@ -2853,7 +2864,7 @@ func Region() *string
 
 ---
 
-##### `ReplicaMode`<sup>Required</sup> <a name="ReplicaMode" id="@cdktf/provider-aws.dbInstance.DbInstance.property.replicaMode"></a>
+##### `ReplicaMode`<sup>Required</sup> <a name="ReplicaMode" id="@cdktn/provider-aws.dbInstance.DbInstance.property.replicaMode"></a>
 
 ```go
 func ReplicaMode() *string
@@ -2863,7 +2874,7 @@ func ReplicaMode() *string
 
 ---
 
-##### `ReplicateSourceDb`<sup>Required</sup> <a name="ReplicateSourceDb" id="@cdktf/provider-aws.dbInstance.DbInstance.property.replicateSourceDb"></a>
+##### `ReplicateSourceDb`<sup>Required</sup> <a name="ReplicateSourceDb" id="@cdktn/provider-aws.dbInstance.DbInstance.property.replicateSourceDb"></a>
 
 ```go
 func ReplicateSourceDb() *string
@@ -2873,7 +2884,7 @@ func ReplicateSourceDb() *string
 
 ---
 
-##### `SkipFinalSnapshot`<sup>Required</sup> <a name="SkipFinalSnapshot" id="@cdktf/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshot"></a>
+##### `SkipFinalSnapshot`<sup>Required</sup> <a name="SkipFinalSnapshot" id="@cdktn/provider-aws.dbInstance.DbInstance.property.skipFinalSnapshot"></a>
 
 ```go
 func SkipFinalSnapshot() interface{}
@@ -2883,7 +2894,7 @@ func SkipFinalSnapshot() interface{}
 
 ---
 
-##### `SnapshotIdentifier`<sup>Required</sup> <a name="SnapshotIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstance.property.snapshotIdentifier"></a>
+##### `SnapshotIdentifier`<sup>Required</sup> <a name="SnapshotIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstance.property.snapshotIdentifier"></a>
 
 ```go
 func SnapshotIdentifier() *string
@@ -2893,7 +2904,7 @@ func SnapshotIdentifier() *string
 
 ---
 
-##### `StorageEncrypted`<sup>Required</sup> <a name="StorageEncrypted" id="@cdktf/provider-aws.dbInstance.DbInstance.property.storageEncrypted"></a>
+##### `StorageEncrypted`<sup>Required</sup> <a name="StorageEncrypted" id="@cdktn/provider-aws.dbInstance.DbInstance.property.storageEncrypted"></a>
 
 ```go
 func StorageEncrypted() interface{}
@@ -2903,7 +2914,7 @@ func StorageEncrypted() interface{}
 
 ---
 
-##### `StorageThroughput`<sup>Required</sup> <a name="StorageThroughput" id="@cdktf/provider-aws.dbInstance.DbInstance.property.storageThroughput"></a>
+##### `StorageThroughput`<sup>Required</sup> <a name="StorageThroughput" id="@cdktn/provider-aws.dbInstance.DbInstance.property.storageThroughput"></a>
 
 ```go
 func StorageThroughput() *f64
@@ -2913,7 +2924,7 @@ func StorageThroughput() *f64
 
 ---
 
-##### `StorageType`<sup>Required</sup> <a name="StorageType" id="@cdktf/provider-aws.dbInstance.DbInstance.property.storageType"></a>
+##### `StorageType`<sup>Required</sup> <a name="StorageType" id="@cdktn/provider-aws.dbInstance.DbInstance.property.storageType"></a>
 
 ```go
 func StorageType() *string
@@ -2923,7 +2934,7 @@ func StorageType() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.dbInstance.DbInstance.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.dbInstance.DbInstance.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -2933,7 +2944,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.dbInstance.DbInstance.property.tagsAll"></a>
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.dbInstance.DbInstance.property.tagsAll"></a>
 
 ```go
 func TagsAll() *map[string]*string
@@ -2943,7 +2954,7 @@ func TagsAll() *map[string]*string
 
 ---
 
-##### `Timezone`<sup>Required</sup> <a name="Timezone" id="@cdktf/provider-aws.dbInstance.DbInstance.property.timezone"></a>
+##### `Timezone`<sup>Required</sup> <a name="Timezone" id="@cdktn/provider-aws.dbInstance.DbInstance.property.timezone"></a>
 
 ```go
 func Timezone() *string
@@ -2953,7 +2964,7 @@ func Timezone() *string
 
 ---
 
-##### `UpgradeStorageConfig`<sup>Required</sup> <a name="UpgradeStorageConfig" id="@cdktf/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfig"></a>
+##### `UpgradeStorageConfig`<sup>Required</sup> <a name="UpgradeStorageConfig" id="@cdktn/provider-aws.dbInstance.DbInstance.property.upgradeStorageConfig"></a>
 
 ```go
 func UpgradeStorageConfig() interface{}
@@ -2963,7 +2974,7 @@ func UpgradeStorageConfig() interface{}
 
 ---
 
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-aws.dbInstance.DbInstance.property.username"></a>
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-aws.dbInstance.DbInstance.property.username"></a>
 
 ```go
 func Username() *string
@@ -2973,7 +2984,7 @@ func Username() *string
 
 ---
 
-##### `VpcSecurityGroupIds`<sup>Required</sup> <a name="VpcSecurityGroupIds" id="@cdktf/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIds"></a>
+##### `VpcSecurityGroupIds`<sup>Required</sup> <a name="VpcSecurityGroupIds" id="@cdktn/provider-aws.dbInstance.DbInstance.property.vpcSecurityGroupIds"></a>
 
 ```go
 func VpcSecurityGroupIds() *[]*string
@@ -2987,11 +2998,11 @@ func VpcSecurityGroupIds() *[]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstance.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstance.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.dbInstance.DbInstance.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.dbInstance.DbInstance.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -3003,12 +3014,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DbInstanceBlueGreenUpdate <a name="DbInstanceBlueGreenUpdate" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate"></a>
+### DbInstanceBlueGreenUpdate <a name="DbInstanceBlueGreenUpdate" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceBlueGreenUpdate {
 	Enabled: interface{},
@@ -3019,11 +3030,11 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#enabled DbInstance#enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#enabled DbInstance#enabled}. |
 
 ---
 
-##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.property.enabled"></a>
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate.property.enabled"></a>
 
 ```go
 Enabled interface{}
@@ -3031,16 +3042,16 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#enabled DbInstance#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#enabled DbInstance#enabled}.
 
 ---
 
-### DbInstanceConfig <a name="DbInstanceConfig" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig"></a>
+### DbInstanceConfig <a name="DbInstanceConfig" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceConfig {
 	Connection: interface{},
@@ -3059,7 +3070,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 	BackupRetentionPeriod: *f64,
 	BackupTarget: *string,
 	BackupWindow: *string,
-	BlueGreenUpdate: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dbInstance.DbInstanceBlueGreenUpdate,
+	BlueGreenUpdate: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dbInstance.DbInstanceBlueGreenUpdate,
 	CaCertIdentifier: *string,
 	CharacterSetName: *string,
 	CopyTagsToSnapshot: interface{},
@@ -3111,8 +3122,8 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 	Region: *string,
 	ReplicaMode: *string,
 	ReplicateSourceDb: *string,
-	RestoreToPointInTime: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dbInstance.DbInstanceRestoreToPointInTime,
-	S3Import: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dbInstance.DbInstanceS3Import,
+	RestoreToPointInTime: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dbInstance.DbInstanceRestoreToPointInTime,
+	S3Import: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dbInstance.DbInstanceS3Import,
 	SkipFinalSnapshot: interface{},
 	SnapshotIdentifier: *string,
 	StorageEncrypted: interface{},
@@ -3120,7 +3131,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 	StorageType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dbInstance.DbInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dbInstance.DbInstanceTimeouts,
 	Timezone: *string,
 	UpgradeStorageConfig: interface{},
 	Username: *string,
@@ -3132,92 +3143,92 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.instanceClass">InstanceClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#instance_class DbInstance#instance_class}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.allocatedStorage">AllocatedStorage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.allowMajorVersionUpgrade">AllowMajorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.backupRetentionPeriod">BackupRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.backupTarget">BackupTarget</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#backup_target DbInstance#backup_target}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.backupWindow">BackupWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#backup_window DbInstance#backup_window}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.blueGreenUpdate">BlueGreenUpdate</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | blue_green_update block. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.caCertIdentifier">CaCertIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.characterSetName">CharacterSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.copyTagsToSnapshot">CopyTagsToSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.customerOwnedIpEnabled">CustomerOwnedIpEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.customIamInstanceProfile">CustomIamInstanceProfile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.databaseInsightsMode">DatabaseInsightsMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dbName">DbName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#db_name DbInstance#db_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dbSubnetGroupName">DbSubnetGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dedicatedLogVolume">DedicatedLogVolume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.deleteAutomatedBackups">DeleteAutomatedBackups</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain DbInstance#domain}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainAuthSecretArn">DomainAuthSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainDnsIps">DomainDnsIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainFqdn">DomainFqdn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainIamRoleName">DomainIamRoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainOu">DomainOu</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.enabledCloudwatchLogsExports">EnabledCloudwatchLogsExports</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.engine">Engine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#engine DbInstance#engine}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.engineLifecycleSupport">EngineLifecycleSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#engine_version DbInstance#engine_version}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.finalSnapshotIdentifier">FinalSnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.iamDatabaseAuthenticationEnabled">IamDatabaseAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#id DbInstance#id}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#identifier DbInstance#identifier}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.identifierPrefix">IdentifierPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#iops DbInstance#iops}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel">LicenseModel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#license_model DbInstance#license_model}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword">ManageMasterUserPassword</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId">MasterUserSecretKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage">MaxAllocatedStorage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval">MonitoringInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn">MonitoringRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#multi_az DbInstance#multi_az}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.ncharCharacterSetName">NcharCharacterSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.networkType">NetworkType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#network_type DbInstance#network_type}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.optionGroupName">OptionGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#password DbInstance#password}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.passwordWo">PasswordWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#password_wo DbInstance#password_wo}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsEnabled">PerformanceInsightsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsKmsKeyId">PerformanceInsightsKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsRetentionPeriod">PerformanceInsightsRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#port DbInstance#port}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.replicaMode">ReplicaMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.replicateSourceDb">ReplicateSourceDb</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.restoreToPointInTime">RestoreToPointInTime</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | restore_to_point_in_time block. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.s3Import">S3Import</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | s3_import block. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.skipFinalSnapshot">SkipFinalSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.snapshotIdentifier">SnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.storageEncrypted">StorageEncrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.storageThroughput">StorageThroughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.storageType">StorageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#storage_type DbInstance#storage_type}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#tags DbInstance#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#tags_all DbInstance#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.timezone">Timezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#timezone DbInstance#timezone}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.upgradeStorageConfig">UpgradeStorageConfig</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#username DbInstance#username}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.instanceClass">InstanceClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#instance_class DbInstance#instance_class}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allocatedStorage">AllocatedStorage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allowMajorVersionUpgrade">AllowMajorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.autoMinorVersionUpgrade">AutoMinorVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupRetentionPeriod">BackupRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupTarget">BackupTarget</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#backup_target DbInstance#backup_target}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupWindow">BackupWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#backup_window DbInstance#backup_window}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.blueGreenUpdate">BlueGreenUpdate</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | blue_green_update block. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.caCertIdentifier">CaCertIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.characterSetName">CharacterSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.copyTagsToSnapshot">CopyTagsToSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customerOwnedIpEnabled">CustomerOwnedIpEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customIamInstanceProfile">CustomIamInstanceProfile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.databaseInsightsMode">DatabaseInsightsMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbName">DbName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#db_name DbInstance#db_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbSubnetGroupName">DbSubnetGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dedicatedLogVolume">DedicatedLogVolume</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deleteAutomatedBackups">DeleteAutomatedBackups</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain DbInstance#domain}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainAuthSecretArn">DomainAuthSecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainDnsIps">DomainDnsIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainFqdn">DomainFqdn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainIamRoleName">DomainIamRoleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainOu">DomainOu</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.enabledCloudwatchLogsExports">EnabledCloudwatchLogsExports</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engine">Engine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#engine DbInstance#engine}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineLifecycleSupport">EngineLifecycleSupport</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineVersion">EngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#engine_version DbInstance#engine_version}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.finalSnapshotIdentifier">FinalSnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iamDatabaseAuthenticationEnabled">IamDatabaseAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#id DbInstance#id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#identifier DbInstance#identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifierPrefix">IdentifierPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iops">Iops</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#iops DbInstance#iops}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel">LicenseModel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#license_model DbInstance#license_model}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword">ManageMasterUserPassword</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId">MasterUserSecretKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage">MaxAllocatedStorage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval">MonitoringInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn">MonitoringRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#multi_az DbInstance#multi_az}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.ncharCharacterSetName">NcharCharacterSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.networkType">NetworkType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#network_type DbInstance#network_type}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.optionGroupName">OptionGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#password DbInstance#password}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWo">PasswordWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#password_wo DbInstance#password_wo}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsEnabled">PerformanceInsightsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsKmsKeyId">PerformanceInsightsKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsRetentionPeriod">PerformanceInsightsRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#port DbInstance#port}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicaMode">ReplicaMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicateSourceDb">ReplicateSourceDb</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.restoreToPointInTime">RestoreToPointInTime</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | restore_to_point_in_time block. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.s3Import">S3Import</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | s3_import block. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.skipFinalSnapshot">SkipFinalSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.snapshotIdentifier">SnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageEncrypted">StorageEncrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageThroughput">StorageThroughput</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageType">StorageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#storage_type DbInstance#storage_type}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#tags DbInstance#tags}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#tags_all DbInstance#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timezone">Timezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#timezone DbInstance#timezone}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.upgradeStorageConfig">UpgradeStorageConfig</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#username DbInstance#username}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -3227,7 +3238,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -3237,7 +3248,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -3247,7 +3258,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -3257,7 +3268,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -3267,7 +3278,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -3277,7 +3288,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -3287,7 +3298,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `InstanceClass`<sup>Required</sup> <a name="InstanceClass" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.instanceClass"></a>
+##### `InstanceClass`<sup>Required</sup> <a name="InstanceClass" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.instanceClass"></a>
 
 ```go
 InstanceClass *string
@@ -3295,11 +3306,11 @@ InstanceClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#instance_class DbInstance#instance_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#instance_class DbInstance#instance_class}.
 
 ---
 
-##### `AllocatedStorage`<sup>Optional</sup> <a name="AllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.allocatedStorage"></a>
+##### `AllocatedStorage`<sup>Optional</sup> <a name="AllocatedStorage" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allocatedStorage"></a>
 
 ```go
 AllocatedStorage *f64
@@ -3307,11 +3318,11 @@ AllocatedStorage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#allocated_storage DbInstance#allocated_storage}.
 
 ---
 
-##### `AllowMajorVersionUpgrade`<sup>Optional</sup> <a name="AllowMajorVersionUpgrade" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.allowMajorVersionUpgrade"></a>
+##### `AllowMajorVersionUpgrade`<sup>Optional</sup> <a name="AllowMajorVersionUpgrade" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.allowMajorVersionUpgrade"></a>
 
 ```go
 AllowMajorVersionUpgrade interface{}
@@ -3319,11 +3330,11 @@ AllowMajorVersionUpgrade interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}.
 
 ---
 
-##### `ApplyImmediately`<sup>Optional</sup> <a name="ApplyImmediately" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.applyImmediately"></a>
+##### `ApplyImmediately`<sup>Optional</sup> <a name="ApplyImmediately" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.applyImmediately"></a>
 
 ```go
 ApplyImmediately interface{}
@@ -3331,11 +3342,11 @@ ApplyImmediately interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#apply_immediately DbInstance#apply_immediately}.
 
 ---
 
-##### `AutoMinorVersionUpgrade`<sup>Optional</sup> <a name="AutoMinorVersionUpgrade" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.autoMinorVersionUpgrade"></a>
+##### `AutoMinorVersionUpgrade`<sup>Optional</sup> <a name="AutoMinorVersionUpgrade" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.autoMinorVersionUpgrade"></a>
 
 ```go
 AutoMinorVersionUpgrade interface{}
@@ -3343,11 +3354,11 @@ AutoMinorVersionUpgrade interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}.
 
 ---
 
-##### `AvailabilityZone`<sup>Optional</sup> <a name="AvailabilityZone" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.availabilityZone"></a>
+##### `AvailabilityZone`<sup>Optional</sup> <a name="AvailabilityZone" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.availabilityZone"></a>
 
 ```go
 AvailabilityZone *string
@@ -3355,11 +3366,11 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#availability_zone DbInstance#availability_zone}.
 
 ---
 
-##### `BackupRetentionPeriod`<sup>Optional</sup> <a name="BackupRetentionPeriod" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.backupRetentionPeriod"></a>
+##### `BackupRetentionPeriod`<sup>Optional</sup> <a name="BackupRetentionPeriod" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupRetentionPeriod"></a>
 
 ```go
 BackupRetentionPeriod *f64
@@ -3367,11 +3378,11 @@ BackupRetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#backup_retention_period DbInstance#backup_retention_period}.
 
 ---
 
-##### `BackupTarget`<sup>Optional</sup> <a name="BackupTarget" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.backupTarget"></a>
+##### `BackupTarget`<sup>Optional</sup> <a name="BackupTarget" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupTarget"></a>
 
 ```go
 BackupTarget *string
@@ -3379,11 +3390,11 @@ BackupTarget *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#backup_target DbInstance#backup_target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#backup_target DbInstance#backup_target}.
 
 ---
 
-##### `BackupWindow`<sup>Optional</sup> <a name="BackupWindow" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.backupWindow"></a>
+##### `BackupWindow`<sup>Optional</sup> <a name="BackupWindow" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.backupWindow"></a>
 
 ```go
 BackupWindow *string
@@ -3391,25 +3402,25 @@ BackupWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#backup_window DbInstance#backup_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#backup_window DbInstance#backup_window}.
 
 ---
 
-##### `BlueGreenUpdate`<sup>Optional</sup> <a name="BlueGreenUpdate" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.blueGreenUpdate"></a>
+##### `BlueGreenUpdate`<sup>Optional</sup> <a name="BlueGreenUpdate" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.blueGreenUpdate"></a>
 
 ```go
 BlueGreenUpdate DbInstanceBlueGreenUpdate
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
 
 blue_green_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#blue_green_update DbInstance#blue_green_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#blue_green_update DbInstance#blue_green_update}
 
 ---
 
-##### `CaCertIdentifier`<sup>Optional</sup> <a name="CaCertIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.caCertIdentifier"></a>
+##### `CaCertIdentifier`<sup>Optional</sup> <a name="CaCertIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.caCertIdentifier"></a>
 
 ```go
 CaCertIdentifier *string
@@ -3417,11 +3428,11 @@ CaCertIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}.
 
 ---
 
-##### `CharacterSetName`<sup>Optional</sup> <a name="CharacterSetName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.characterSetName"></a>
+##### `CharacterSetName`<sup>Optional</sup> <a name="CharacterSetName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.characterSetName"></a>
 
 ```go
 CharacterSetName *string
@@ -3429,11 +3440,11 @@ CharacterSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#character_set_name DbInstance#character_set_name}.
 
 ---
 
-##### `CopyTagsToSnapshot`<sup>Optional</sup> <a name="CopyTagsToSnapshot" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.copyTagsToSnapshot"></a>
+##### `CopyTagsToSnapshot`<sup>Optional</sup> <a name="CopyTagsToSnapshot" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.copyTagsToSnapshot"></a>
 
 ```go
 CopyTagsToSnapshot interface{}
@@ -3441,11 +3452,11 @@ CopyTagsToSnapshot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}.
 
 ---
 
-##### `CustomerOwnedIpEnabled`<sup>Optional</sup> <a name="CustomerOwnedIpEnabled" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.customerOwnedIpEnabled"></a>
+##### `CustomerOwnedIpEnabled`<sup>Optional</sup> <a name="CustomerOwnedIpEnabled" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customerOwnedIpEnabled"></a>
 
 ```go
 CustomerOwnedIpEnabled interface{}
@@ -3453,11 +3464,11 @@ CustomerOwnedIpEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}.
 
 ---
 
-##### `CustomIamInstanceProfile`<sup>Optional</sup> <a name="CustomIamInstanceProfile" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.customIamInstanceProfile"></a>
+##### `CustomIamInstanceProfile`<sup>Optional</sup> <a name="CustomIamInstanceProfile" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.customIamInstanceProfile"></a>
 
 ```go
 CustomIamInstanceProfile *string
@@ -3465,11 +3476,11 @@ CustomIamInstanceProfile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#custom_iam_instance_profile DbInstance#custom_iam_instance_profile}.
 
 ---
 
-##### `DatabaseInsightsMode`<sup>Optional</sup> <a name="DatabaseInsightsMode" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.databaseInsightsMode"></a>
+##### `DatabaseInsightsMode`<sup>Optional</sup> <a name="DatabaseInsightsMode" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.databaseInsightsMode"></a>
 
 ```go
 DatabaseInsightsMode *string
@@ -3477,11 +3488,11 @@ DatabaseInsightsMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#database_insights_mode DbInstance#database_insights_mode}.
 
 ---
 
-##### `DbName`<sup>Optional</sup> <a name="DbName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dbName"></a>
+##### `DbName`<sup>Optional</sup> <a name="DbName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbName"></a>
 
 ```go
 DbName *string
@@ -3489,11 +3500,11 @@ DbName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#db_name DbInstance#db_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#db_name DbInstance#db_name}.
 
 ---
 
-##### `DbSubnetGroupName`<sup>Optional</sup> <a name="DbSubnetGroupName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dbSubnetGroupName"></a>
+##### `DbSubnetGroupName`<sup>Optional</sup> <a name="DbSubnetGroupName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dbSubnetGroupName"></a>
 
 ```go
 DbSubnetGroupName *string
@@ -3501,11 +3512,11 @@ DbSubnetGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#db_subnet_group_name DbInstance#db_subnet_group_name}.
 
 ---
 
-##### `DedicatedLogVolume`<sup>Optional</sup> <a name="DedicatedLogVolume" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.dedicatedLogVolume"></a>
+##### `DedicatedLogVolume`<sup>Optional</sup> <a name="DedicatedLogVolume" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.dedicatedLogVolume"></a>
 
 ```go
 DedicatedLogVolume interface{}
@@ -3513,11 +3524,11 @@ DedicatedLogVolume interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#dedicated_log_volume DbInstance#dedicated_log_volume}.
 
 ---
 
-##### `DeleteAutomatedBackups`<sup>Optional</sup> <a name="DeleteAutomatedBackups" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.deleteAutomatedBackups"></a>
+##### `DeleteAutomatedBackups`<sup>Optional</sup> <a name="DeleteAutomatedBackups" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deleteAutomatedBackups"></a>
 
 ```go
 DeleteAutomatedBackups interface{}
@@ -3525,11 +3536,11 @@ DeleteAutomatedBackups interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#delete_automated_backups DbInstance#delete_automated_backups}.
 
 ---
 
-##### `DeletionProtection`<sup>Optional</sup> <a name="DeletionProtection" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.deletionProtection"></a>
+##### `DeletionProtection`<sup>Optional</sup> <a name="DeletionProtection" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.deletionProtection"></a>
 
 ```go
 DeletionProtection interface{}
@@ -3537,11 +3548,11 @@ DeletionProtection interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#deletion_protection DbInstance#deletion_protection}.
 
 ---
 
-##### `Domain`<sup>Optional</sup> <a name="Domain" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domain"></a>
+##### `Domain`<sup>Optional</sup> <a name="Domain" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domain"></a>
 
 ```go
 Domain *string
@@ -3549,11 +3560,11 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain DbInstance#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain DbInstance#domain}.
 
 ---
 
-##### `DomainAuthSecretArn`<sup>Optional</sup> <a name="DomainAuthSecretArn" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainAuthSecretArn"></a>
+##### `DomainAuthSecretArn`<sup>Optional</sup> <a name="DomainAuthSecretArn" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainAuthSecretArn"></a>
 
 ```go
 DomainAuthSecretArn *string
@@ -3561,11 +3572,11 @@ DomainAuthSecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_auth_secret_arn DbInstance#domain_auth_secret_arn}.
 
 ---
 
-##### `DomainDnsIps`<sup>Optional</sup> <a name="DomainDnsIps" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainDnsIps"></a>
+##### `DomainDnsIps`<sup>Optional</sup> <a name="DomainDnsIps" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainDnsIps"></a>
 
 ```go
 DomainDnsIps *[]*string
@@ -3573,11 +3584,11 @@ DomainDnsIps *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_dns_ips DbInstance#domain_dns_ips}.
 
 ---
 
-##### `DomainFqdn`<sup>Optional</sup> <a name="DomainFqdn" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainFqdn"></a>
+##### `DomainFqdn`<sup>Optional</sup> <a name="DomainFqdn" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainFqdn"></a>
 
 ```go
 DomainFqdn *string
@@ -3585,11 +3596,11 @@ DomainFqdn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_fqdn DbInstance#domain_fqdn}.
 
 ---
 
-##### `DomainIamRoleName`<sup>Optional</sup> <a name="DomainIamRoleName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainIamRoleName"></a>
+##### `DomainIamRoleName`<sup>Optional</sup> <a name="DomainIamRoleName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainIamRoleName"></a>
 
 ```go
 DomainIamRoleName *string
@@ -3597,11 +3608,11 @@ DomainIamRoleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_iam_role_name DbInstance#domain_iam_role_name}.
 
 ---
 
-##### `DomainOu`<sup>Optional</sup> <a name="DomainOu" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.domainOu"></a>
+##### `DomainOu`<sup>Optional</sup> <a name="DomainOu" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.domainOu"></a>
 
 ```go
 DomainOu *string
@@ -3609,11 +3620,11 @@ DomainOu *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#domain_ou DbInstance#domain_ou}.
 
 ---
 
-##### `EnabledCloudwatchLogsExports`<sup>Optional</sup> <a name="EnabledCloudwatchLogsExports" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.enabledCloudwatchLogsExports"></a>
+##### `EnabledCloudwatchLogsExports`<sup>Optional</sup> <a name="EnabledCloudwatchLogsExports" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.enabledCloudwatchLogsExports"></a>
 
 ```go
 EnabledCloudwatchLogsExports *[]*string
@@ -3621,11 +3632,11 @@ EnabledCloudwatchLogsExports *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#enabled_cloudwatch_logs_exports DbInstance#enabled_cloudwatch_logs_exports}.
 
 ---
 
-##### `Engine`<sup>Optional</sup> <a name="Engine" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.engine"></a>
+##### `Engine`<sup>Optional</sup> <a name="Engine" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engine"></a>
 
 ```go
 Engine *string
@@ -3633,11 +3644,11 @@ Engine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#engine DbInstance#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#engine DbInstance#engine}.
 
 ---
 
-##### `EngineLifecycleSupport`<sup>Optional</sup> <a name="EngineLifecycleSupport" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.engineLifecycleSupport"></a>
+##### `EngineLifecycleSupport`<sup>Optional</sup> <a name="EngineLifecycleSupport" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineLifecycleSupport"></a>
 
 ```go
 EngineLifecycleSupport *string
@@ -3645,11 +3656,11 @@ EngineLifecycleSupport *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#engine_lifecycle_support DbInstance#engine_lifecycle_support}.
 
 ---
 
-##### `EngineVersion`<sup>Optional</sup> <a name="EngineVersion" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.engineVersion"></a>
+##### `EngineVersion`<sup>Optional</sup> <a name="EngineVersion" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.engineVersion"></a>
 
 ```go
 EngineVersion *string
@@ -3657,11 +3668,11 @@ EngineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#engine_version DbInstance#engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#engine_version DbInstance#engine_version}.
 
 ---
 
-##### `FinalSnapshotIdentifier`<sup>Optional</sup> <a name="FinalSnapshotIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.finalSnapshotIdentifier"></a>
+##### `FinalSnapshotIdentifier`<sup>Optional</sup> <a name="FinalSnapshotIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.finalSnapshotIdentifier"></a>
 
 ```go
 FinalSnapshotIdentifier *string
@@ -3669,11 +3680,11 @@ FinalSnapshotIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#final_snapshot_identifier DbInstance#final_snapshot_identifier}.
 
 ---
 
-##### `IamDatabaseAuthenticationEnabled`<sup>Optional</sup> <a name="IamDatabaseAuthenticationEnabled" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.iamDatabaseAuthenticationEnabled"></a>
+##### `IamDatabaseAuthenticationEnabled`<sup>Optional</sup> <a name="IamDatabaseAuthenticationEnabled" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iamDatabaseAuthenticationEnabled"></a>
 
 ```go
 IamDatabaseAuthenticationEnabled interface{}
@@ -3681,11 +3692,11 @@ IamDatabaseAuthenticationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.id"></a>
 
 ```go
 Id *string
@@ -3693,14 +3704,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#id DbInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#id DbInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Identifier`<sup>Optional</sup> <a name="Identifier" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.identifier"></a>
+##### `Identifier`<sup>Optional</sup> <a name="Identifier" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifier"></a>
 
 ```go
 Identifier *string
@@ -3708,11 +3719,11 @@ Identifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#identifier DbInstance#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#identifier DbInstance#identifier}.
 
 ---
 
-##### `IdentifierPrefix`<sup>Optional</sup> <a name="IdentifierPrefix" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.identifierPrefix"></a>
+##### `IdentifierPrefix`<sup>Optional</sup> <a name="IdentifierPrefix" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.identifierPrefix"></a>
 
 ```go
 IdentifierPrefix *string
@@ -3720,11 +3731,11 @@ IdentifierPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#identifier_prefix DbInstance#identifier_prefix}.
 
 ---
 
-##### `Iops`<sup>Optional</sup> <a name="Iops" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.iops"></a>
+##### `Iops`<sup>Optional</sup> <a name="Iops" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.iops"></a>
 
 ```go
 Iops *f64
@@ -3732,11 +3743,11 @@ Iops *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#iops DbInstance#iops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#iops DbInstance#iops}.
 
 ---
 
-##### `KmsKeyId`<sup>Optional</sup> <a name="KmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId"></a>
+##### `KmsKeyId`<sup>Optional</sup> <a name="KmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.kmsKeyId"></a>
 
 ```go
 KmsKeyId *string
@@ -3744,11 +3755,11 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#kms_key_id DbInstance#kms_key_id}.
 
 ---
 
-##### `LicenseModel`<sup>Optional</sup> <a name="LicenseModel" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel"></a>
+##### `LicenseModel`<sup>Optional</sup> <a name="LicenseModel" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.licenseModel"></a>
 
 ```go
 LicenseModel *string
@@ -3756,11 +3767,11 @@ LicenseModel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#license_model DbInstance#license_model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#license_model DbInstance#license_model}.
 
 ---
 
-##### `MaintenanceWindow`<sup>Optional</sup> <a name="MaintenanceWindow" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow"></a>
+##### `MaintenanceWindow`<sup>Optional</sup> <a name="MaintenanceWindow" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maintenanceWindow"></a>
 
 ```go
 MaintenanceWindow *string
@@ -3768,11 +3779,11 @@ MaintenanceWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#maintenance_window DbInstance#maintenance_window}.
 
 ---
 
-##### `ManageMasterUserPassword`<sup>Optional</sup> <a name="ManageMasterUserPassword" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword"></a>
+##### `ManageMasterUserPassword`<sup>Optional</sup> <a name="ManageMasterUserPassword" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.manageMasterUserPassword"></a>
 
 ```go
 ManageMasterUserPassword interface{}
@@ -3780,11 +3791,11 @@ ManageMasterUserPassword interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#manage_master_user_password DbInstance#manage_master_user_password}.
 
 ---
 
-##### `MasterUserSecretKmsKeyId`<sup>Optional</sup> <a name="MasterUserSecretKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId"></a>
+##### `MasterUserSecretKmsKeyId`<sup>Optional</sup> <a name="MasterUserSecretKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.masterUserSecretKmsKeyId"></a>
 
 ```go
 MasterUserSecretKmsKeyId *string
@@ -3792,11 +3803,11 @@ MasterUserSecretKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}.
 
 ---
 
-##### `MaxAllocatedStorage`<sup>Optional</sup> <a name="MaxAllocatedStorage" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage"></a>
+##### `MaxAllocatedStorage`<sup>Optional</sup> <a name="MaxAllocatedStorage" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.maxAllocatedStorage"></a>
 
 ```go
 MaxAllocatedStorage *f64
@@ -3804,11 +3815,11 @@ MaxAllocatedStorage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#max_allocated_storage DbInstance#max_allocated_storage}.
 
 ---
 
-##### `MonitoringInterval`<sup>Optional</sup> <a name="MonitoringInterval" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval"></a>
+##### `MonitoringInterval`<sup>Optional</sup> <a name="MonitoringInterval" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringInterval"></a>
 
 ```go
 MonitoringInterval *f64
@@ -3816,11 +3827,11 @@ MonitoringInterval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#monitoring_interval DbInstance#monitoring_interval}.
 
 ---
 
-##### `MonitoringRoleArn`<sup>Optional</sup> <a name="MonitoringRoleArn" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn"></a>
+##### `MonitoringRoleArn`<sup>Optional</sup> <a name="MonitoringRoleArn" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.monitoringRoleArn"></a>
 
 ```go
 MonitoringRoleArn *string
@@ -3828,11 +3839,11 @@ MonitoringRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#monitoring_role_arn DbInstance#monitoring_role_arn}.
 
 ---
 
-##### `MultiAz`<sup>Optional</sup> <a name="MultiAz" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.multiAz"></a>
+##### `MultiAz`<sup>Optional</sup> <a name="MultiAz" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.multiAz"></a>
 
 ```go
 MultiAz interface{}
@@ -3840,11 +3851,11 @@ MultiAz interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#multi_az DbInstance#multi_az}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#multi_az DbInstance#multi_az}.
 
 ---
 
-##### `NcharCharacterSetName`<sup>Optional</sup> <a name="NcharCharacterSetName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.ncharCharacterSetName"></a>
+##### `NcharCharacterSetName`<sup>Optional</sup> <a name="NcharCharacterSetName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.ncharCharacterSetName"></a>
 
 ```go
 NcharCharacterSetName *string
@@ -3852,11 +3863,11 @@ NcharCharacterSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}.
 
 ---
 
-##### `NetworkType`<sup>Optional</sup> <a name="NetworkType" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.networkType"></a>
+##### `NetworkType`<sup>Optional</sup> <a name="NetworkType" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.networkType"></a>
 
 ```go
 NetworkType *string
@@ -3864,11 +3875,11 @@ NetworkType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#network_type DbInstance#network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#network_type DbInstance#network_type}.
 
 ---
 
-##### `OptionGroupName`<sup>Optional</sup> <a name="OptionGroupName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.optionGroupName"></a>
+##### `OptionGroupName`<sup>Optional</sup> <a name="OptionGroupName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.optionGroupName"></a>
 
 ```go
 OptionGroupName *string
@@ -3876,11 +3887,11 @@ OptionGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#option_group_name DbInstance#option_group_name}.
 
 ---
 
-##### `ParameterGroupName`<sup>Optional</sup> <a name="ParameterGroupName" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.parameterGroupName"></a>
+##### `ParameterGroupName`<sup>Optional</sup> <a name="ParameterGroupName" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.parameterGroupName"></a>
 
 ```go
 ParameterGroupName *string
@@ -3888,11 +3899,11 @@ ParameterGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#parameter_group_name DbInstance#parameter_group_name}.
 
 ---
 
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.password"></a>
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.password"></a>
 
 ```go
 Password *string
@@ -3900,11 +3911,11 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#password DbInstance#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#password DbInstance#password}.
 
 ---
 
-##### `PasswordWo`<sup>Optional</sup> <a name="PasswordWo" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.passwordWo"></a>
+##### `PasswordWo`<sup>Optional</sup> <a name="PasswordWo" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWo"></a>
 
 ```go
 PasswordWo *string
@@ -3912,11 +3923,11 @@ PasswordWo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#password_wo DbInstance#password_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#password_wo DbInstance#password_wo}.
 
 ---
 
-##### `PasswordWoVersion`<sup>Optional</sup> <a name="PasswordWoVersion" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.passwordWoVersion"></a>
+##### `PasswordWoVersion`<sup>Optional</sup> <a name="PasswordWoVersion" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.passwordWoVersion"></a>
 
 ```go
 PasswordWoVersion *f64
@@ -3924,11 +3935,11 @@ PasswordWoVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#password_wo_version DbInstance#password_wo_version}.
 
 ---
 
-##### `PerformanceInsightsEnabled`<sup>Optional</sup> <a name="PerformanceInsightsEnabled" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsEnabled"></a>
+##### `PerformanceInsightsEnabled`<sup>Optional</sup> <a name="PerformanceInsightsEnabled" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsEnabled"></a>
 
 ```go
 PerformanceInsightsEnabled interface{}
@@ -3936,11 +3947,11 @@ PerformanceInsightsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#performance_insights_enabled DbInstance#performance_insights_enabled}.
 
 ---
 
-##### `PerformanceInsightsKmsKeyId`<sup>Optional</sup> <a name="PerformanceInsightsKmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsKmsKeyId"></a>
+##### `PerformanceInsightsKmsKeyId`<sup>Optional</sup> <a name="PerformanceInsightsKmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsKmsKeyId"></a>
 
 ```go
 PerformanceInsightsKmsKeyId *string
@@ -3948,11 +3959,11 @@ PerformanceInsightsKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}.
 
 ---
 
-##### `PerformanceInsightsRetentionPeriod`<sup>Optional</sup> <a name="PerformanceInsightsRetentionPeriod" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsRetentionPeriod"></a>
+##### `PerformanceInsightsRetentionPeriod`<sup>Optional</sup> <a name="PerformanceInsightsRetentionPeriod" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.performanceInsightsRetentionPeriod"></a>
 
 ```go
 PerformanceInsightsRetentionPeriod *f64
@@ -3960,11 +3971,11 @@ PerformanceInsightsRetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#performance_insights_retention_period DbInstance#performance_insights_retention_period}.
 
 ---
 
-##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.port"></a>
+##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.port"></a>
 
 ```go
 Port *f64
@@ -3972,11 +3983,11 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#port DbInstance#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#port DbInstance#port}.
 
 ---
 
-##### `PubliclyAccessible`<sup>Optional</sup> <a name="PubliclyAccessible" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.publiclyAccessible"></a>
+##### `PubliclyAccessible`<sup>Optional</sup> <a name="PubliclyAccessible" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.publiclyAccessible"></a>
 
 ```go
 PubliclyAccessible interface{}
@@ -3984,11 +3995,11 @@ PubliclyAccessible interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#publicly_accessible DbInstance#publicly_accessible}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.region"></a>
 
 ```go
 Region *string
@@ -3998,11 +4009,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#region DbInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#region DbInstance#region}
 
 ---
 
-##### `ReplicaMode`<sup>Optional</sup> <a name="ReplicaMode" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.replicaMode"></a>
+##### `ReplicaMode`<sup>Optional</sup> <a name="ReplicaMode" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicaMode"></a>
 
 ```go
 ReplicaMode *string
@@ -4010,11 +4021,11 @@ ReplicaMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#replica_mode DbInstance#replica_mode}.
 
 ---
 
-##### `ReplicateSourceDb`<sup>Optional</sup> <a name="ReplicateSourceDb" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.replicateSourceDb"></a>
+##### `ReplicateSourceDb`<sup>Optional</sup> <a name="ReplicateSourceDb" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.replicateSourceDb"></a>
 
 ```go
 ReplicateSourceDb *string
@@ -4022,39 +4033,39 @@ ReplicateSourceDb *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#replicate_source_db DbInstance#replicate_source_db}.
 
 ---
 
-##### `RestoreToPointInTime`<sup>Optional</sup> <a name="RestoreToPointInTime" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.restoreToPointInTime"></a>
+##### `RestoreToPointInTime`<sup>Optional</sup> <a name="RestoreToPointInTime" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.restoreToPointInTime"></a>
 
 ```go
 RestoreToPointInTime DbInstanceRestoreToPointInTime
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
 
 restore_to_point_in_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#restore_to_point_in_time DbInstance#restore_to_point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#restore_to_point_in_time DbInstance#restore_to_point_in_time}
 
 ---
 
-##### `S3Import`<sup>Optional</sup> <a name="S3Import" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.s3Import"></a>
+##### `S3Import`<sup>Optional</sup> <a name="S3Import" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.s3Import"></a>
 
 ```go
 S3Import DbInstanceS3Import
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
 
 s3_import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#s3_import DbInstance#s3_import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#s3_import DbInstance#s3_import}
 
 ---
 
-##### `SkipFinalSnapshot`<sup>Optional</sup> <a name="SkipFinalSnapshot" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.skipFinalSnapshot"></a>
+##### `SkipFinalSnapshot`<sup>Optional</sup> <a name="SkipFinalSnapshot" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.skipFinalSnapshot"></a>
 
 ```go
 SkipFinalSnapshot interface{}
@@ -4062,11 +4073,11 @@ SkipFinalSnapshot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#skip_final_snapshot DbInstance#skip_final_snapshot}.
 
 ---
 
-##### `SnapshotIdentifier`<sup>Optional</sup> <a name="SnapshotIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.snapshotIdentifier"></a>
+##### `SnapshotIdentifier`<sup>Optional</sup> <a name="SnapshotIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.snapshotIdentifier"></a>
 
 ```go
 SnapshotIdentifier *string
@@ -4074,11 +4085,11 @@ SnapshotIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#snapshot_identifier DbInstance#snapshot_identifier}.
 
 ---
 
-##### `StorageEncrypted`<sup>Optional</sup> <a name="StorageEncrypted" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.storageEncrypted"></a>
+##### `StorageEncrypted`<sup>Optional</sup> <a name="StorageEncrypted" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageEncrypted"></a>
 
 ```go
 StorageEncrypted interface{}
@@ -4086,11 +4097,11 @@ StorageEncrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#storage_encrypted DbInstance#storage_encrypted}.
 
 ---
 
-##### `StorageThroughput`<sup>Optional</sup> <a name="StorageThroughput" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.storageThroughput"></a>
+##### `StorageThroughput`<sup>Optional</sup> <a name="StorageThroughput" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageThroughput"></a>
 
 ```go
 StorageThroughput *f64
@@ -4098,11 +4109,11 @@ StorageThroughput *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#storage_throughput DbInstance#storage_throughput}.
 
 ---
 
-##### `StorageType`<sup>Optional</sup> <a name="StorageType" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.storageType"></a>
+##### `StorageType`<sup>Optional</sup> <a name="StorageType" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.storageType"></a>
 
 ```go
 StorageType *string
@@ -4110,11 +4121,11 @@ StorageType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#storage_type DbInstance#storage_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#storage_type DbInstance#storage_type}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -4122,11 +4133,11 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#tags DbInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#tags DbInstance#tags}.
 
 ---
 
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.tagsAll"></a>
+##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.tagsAll"></a>
 
 ```go
 TagsAll *map[string]*string
@@ -4134,25 +4145,25 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#tags_all DbInstance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#tags_all DbInstance#tags_all}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timeouts"></a>
 
 ```go
 Timeouts DbInstanceTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts">DbInstanceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#timeouts DbInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#timeouts DbInstance#timeouts}
 
 ---
 
-##### `Timezone`<sup>Optional</sup> <a name="Timezone" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.timezone"></a>
+##### `Timezone`<sup>Optional</sup> <a name="Timezone" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.timezone"></a>
 
 ```go
 Timezone *string
@@ -4160,11 +4171,11 @@ Timezone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#timezone DbInstance#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#timezone DbInstance#timezone}.
 
 ---
 
-##### `UpgradeStorageConfig`<sup>Optional</sup> <a name="UpgradeStorageConfig" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.upgradeStorageConfig"></a>
+##### `UpgradeStorageConfig`<sup>Optional</sup> <a name="UpgradeStorageConfig" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.upgradeStorageConfig"></a>
 
 ```go
 UpgradeStorageConfig interface{}
@@ -4172,11 +4183,11 @@ UpgradeStorageConfig interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#upgrade_storage_config DbInstance#upgrade_storage_config}.
 
 ---
 
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.username"></a>
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.username"></a>
 
 ```go
 Username *string
@@ -4184,11 +4195,11 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#username DbInstance#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#username DbInstance#username}.
 
 ---
 
-##### `VpcSecurityGroupIds`<sup>Optional</sup> <a name="VpcSecurityGroupIds" id="@cdktf/provider-aws.dbInstance.DbInstanceConfig.property.vpcSecurityGroupIds"></a>
+##### `VpcSecurityGroupIds`<sup>Optional</sup> <a name="VpcSecurityGroupIds" id="@cdktn/provider-aws.dbInstance.DbInstanceConfig.property.vpcSecurityGroupIds"></a>
 
 ```go
 VpcSecurityGroupIds *[]*string
@@ -4196,16 +4207,16 @@ VpcSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#vpc_security_group_ids DbInstance#vpc_security_group_ids}.
 
 ---
 
-### DbInstanceListenerEndpoint <a name="DbInstanceListenerEndpoint" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint"></a>
+### DbInstanceListenerEndpoint <a name="DbInstanceListenerEndpoint" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpoint"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceListenerEndpoint {
 
@@ -4213,12 +4224,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 ```
 
 
-### DbInstanceMasterUserSecret <a name="DbInstanceMasterUserSecret" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret"></a>
+### DbInstanceMasterUserSecret <a name="DbInstanceMasterUserSecret" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecret"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceMasterUserSecret {
 
@@ -4226,12 +4237,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 ```
 
 
-### DbInstanceRestoreToPointInTime <a name="DbInstanceRestoreToPointInTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime"></a>
+### DbInstanceRestoreToPointInTime <a name="DbInstanceRestoreToPointInTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceRestoreToPointInTime {
 	RestoreTime: *string,
@@ -4246,15 +4257,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.restoreTime">RestoreTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#restore_time DbInstance#restore_time}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceAutomatedBackupsArn">SourceDbInstanceAutomatedBackupsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceIdentifier">SourceDbInstanceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbiResourceId">SourceDbiResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.useLatestRestorableTime">UseLatestRestorableTime</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.restoreTime">RestoreTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#restore_time DbInstance#restore_time}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceAutomatedBackupsArn">SourceDbInstanceAutomatedBackupsArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceIdentifier">SourceDbInstanceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbiResourceId">SourceDbiResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.useLatestRestorableTime">UseLatestRestorableTime</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}. |
 
 ---
 
-##### `RestoreTime`<sup>Optional</sup> <a name="RestoreTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.restoreTime"></a>
+##### `RestoreTime`<sup>Optional</sup> <a name="RestoreTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.restoreTime"></a>
 
 ```go
 RestoreTime *string
@@ -4262,11 +4273,11 @@ RestoreTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#restore_time DbInstance#restore_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#restore_time DbInstance#restore_time}.
 
 ---
 
-##### `SourceDbInstanceAutomatedBackupsArn`<sup>Optional</sup> <a name="SourceDbInstanceAutomatedBackupsArn" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceAutomatedBackupsArn"></a>
+##### `SourceDbInstanceAutomatedBackupsArn`<sup>Optional</sup> <a name="SourceDbInstanceAutomatedBackupsArn" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceAutomatedBackupsArn"></a>
 
 ```go
 SourceDbInstanceAutomatedBackupsArn *string
@@ -4274,11 +4285,11 @@ SourceDbInstanceAutomatedBackupsArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_db_instance_automated_backups_arn DbInstance#source_db_instance_automated_backups_arn}.
 
 ---
 
-##### `SourceDbInstanceIdentifier`<sup>Optional</sup> <a name="SourceDbInstanceIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceIdentifier"></a>
+##### `SourceDbInstanceIdentifier`<sup>Optional</sup> <a name="SourceDbInstanceIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbInstanceIdentifier"></a>
 
 ```go
 SourceDbInstanceIdentifier *string
@@ -4286,11 +4297,11 @@ SourceDbInstanceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_db_instance_identifier DbInstance#source_db_instance_identifier}.
 
 ---
 
-##### `SourceDbiResourceId`<sup>Optional</sup> <a name="SourceDbiResourceId" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbiResourceId"></a>
+##### `SourceDbiResourceId`<sup>Optional</sup> <a name="SourceDbiResourceId" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.sourceDbiResourceId"></a>
 
 ```go
 SourceDbiResourceId *string
@@ -4298,11 +4309,11 @@ SourceDbiResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_dbi_resource_id DbInstance#source_dbi_resource_id}.
 
 ---
 
-##### `UseLatestRestorableTime`<sup>Optional</sup> <a name="UseLatestRestorableTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.useLatestRestorableTime"></a>
+##### `UseLatestRestorableTime`<sup>Optional</sup> <a name="UseLatestRestorableTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime.property.useLatestRestorableTime"></a>
 
 ```go
 UseLatestRestorableTime interface{}
@@ -4310,16 +4321,16 @@ UseLatestRestorableTime interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#use_latest_restorable_time DbInstance#use_latest_restorable_time}.
 
 ---
 
-### DbInstanceS3Import <a name="DbInstanceS3Import" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import"></a>
+### DbInstanceS3Import <a name="DbInstanceS3Import" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceS3Import {
 	BucketName: *string,
@@ -4334,15 +4345,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.ingestionRole">IngestionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngine">SourceEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_engine DbInstance#source_engine}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngineVersion">SourceEngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.ingestionRole">IngestionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngine">SourceEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_engine DbInstance#source_engine}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngineVersion">SourceEngineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}. |
 
 ---
 
-##### `BucketName`<sup>Required</sup> <a name="BucketName" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.bucketName"></a>
+##### `BucketName`<sup>Required</sup> <a name="BucketName" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketName"></a>
 
 ```go
 BucketName *string
@@ -4350,11 +4361,11 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#bucket_name DbInstance#bucket_name}.
 
 ---
 
-##### `IngestionRole`<sup>Required</sup> <a name="IngestionRole" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.ingestionRole"></a>
+##### `IngestionRole`<sup>Required</sup> <a name="IngestionRole" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.ingestionRole"></a>
 
 ```go
 IngestionRole *string
@@ -4362,11 +4373,11 @@ IngestionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#ingestion_role DbInstance#ingestion_role}.
 
 ---
 
-##### `SourceEngine`<sup>Required</sup> <a name="SourceEngine" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngine"></a>
+##### `SourceEngine`<sup>Required</sup> <a name="SourceEngine" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngine"></a>
 
 ```go
 SourceEngine *string
@@ -4374,11 +4385,11 @@ SourceEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_engine DbInstance#source_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_engine DbInstance#source_engine}.
 
 ---
 
-##### `SourceEngineVersion`<sup>Required</sup> <a name="SourceEngineVersion" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngineVersion"></a>
+##### `SourceEngineVersion`<sup>Required</sup> <a name="SourceEngineVersion" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.sourceEngineVersion"></a>
 
 ```go
 SourceEngineVersion *string
@@ -4386,11 +4397,11 @@ SourceEngineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#source_engine_version DbInstance#source_engine_version}.
 
 ---
 
-##### `BucketPrefix`<sup>Optional</sup> <a name="BucketPrefix" id="@cdktf/provider-aws.dbInstance.DbInstanceS3Import.property.bucketPrefix"></a>
+##### `BucketPrefix`<sup>Optional</sup> <a name="BucketPrefix" id="@cdktn/provider-aws.dbInstance.DbInstanceS3Import.property.bucketPrefix"></a>
 
 ```go
 BucketPrefix *string
@@ -4398,16 +4409,16 @@ BucketPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#bucket_prefix DbInstance#bucket_prefix}.
 
 ---
 
-### DbInstanceTimeouts <a name="DbInstanceTimeouts" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts"></a>
+### DbInstanceTimeouts <a name="DbInstanceTimeouts" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 &dbinstance.DbInstanceTimeouts {
 	Create: *string,
@@ -4420,13 +4431,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#create DbInstance#create}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#delete DbInstance#delete}. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#update DbInstance#update}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#create DbInstance#create}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#delete DbInstance#delete}. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#update DbInstance#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -4434,11 +4445,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#create DbInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#create DbInstance#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -4446,11 +4457,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#delete DbInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#delete DbInstance#delete}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -4458,30 +4469,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_instance#update DbInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_instance#update DbInstance#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DbInstanceBlueGreenUpdateOutputReference <a name="DbInstanceBlueGreenUpdateOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference"></a>
+### DbInstanceBlueGreenUpdateOutputReference <a name="DbInstanceBlueGreenUpdateOutputReference" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceBlueGreenUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceBlueGreenUpdateOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -4489,7 +4500,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4501,150 +4512,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4652,13 +4663,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -4668,7 +4679,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resetEnabled"></a>
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.resetEnabled"></a>
 
 ```go
 func ResetEnabled()
@@ -4679,15 +4690,15 @@ func ResetEnabled()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4701,7 +4712,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4711,7 +4722,7 @@ func Fqn() *string
 
 ---
 
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabledInput"></a>
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabledInput"></a>
 
 ```go
 func EnabledInput() interface{}
@@ -4721,7 +4732,7 @@ func EnabledInput() interface{}
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.enabled"></a>
 
 ```go
 func Enabled() interface{}
@@ -4731,36 +4742,36 @@ func Enabled() interface{}
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DbInstanceBlueGreenUpdate
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate">DbInstanceBlueGreenUpdate</a>
 
 ---
 
 
-### DbInstanceListenerEndpointList <a name="DbInstanceListenerEndpointList" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList"></a>
+### DbInstanceListenerEndpointList <a name="DbInstanceListenerEndpointList" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceListenerEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbInstanceListenerEndpointList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -4768,7 +4779,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4776,7 +4787,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -4788,15 +4799,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -4806,19 +4817,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -4826,13 +4837,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.toString"></a>
 
 ```go
 func ToString() *string
@@ -4842,13 +4853,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.get"></a>
 
 ```go
 func Get(index *f64) DbInstanceListenerEndpointOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -4861,12 +4872,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -4880,7 +4891,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -4891,26 +4902,26 @@ func Fqn() *string
 ---
 
 
-### DbInstanceListenerEndpointOutputReference <a name="DbInstanceListenerEndpointOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference"></a>
+### DbInstanceListenerEndpointOutputReference <a name="DbInstanceListenerEndpointOutputReference" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceListenerEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbInstanceListenerEndpointOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -4918,7 +4929,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -4926,7 +4937,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -4934,7 +4945,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -4946,149 +4957,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5096,13 +5107,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5117,16 +5128,16 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.address">Address</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint">DbInstanceListenerEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.address">Address</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.hostedZoneId">HostedZoneId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpoint">DbInstanceListenerEndpoint</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5140,7 +5151,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5150,7 +5161,7 @@ func Fqn() *string
 
 ---
 
-##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.address"></a>
+##### `Address`<sup>Required</sup> <a name="Address" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.address"></a>
 
 ```go
 func Address() *string
@@ -5160,7 +5171,7 @@ func Address() *string
 
 ---
 
-##### `HostedZoneId`<sup>Required</sup> <a name="HostedZoneId" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.hostedZoneId"></a>
+##### `HostedZoneId`<sup>Required</sup> <a name="HostedZoneId" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.hostedZoneId"></a>
 
 ```go
 func HostedZoneId() *string
@@ -5170,7 +5181,7 @@ func HostedZoneId() *string
 
 ---
 
-##### `Port`<sup>Required</sup> <a name="Port" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.port"></a>
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.port"></a>
 
 ```go
 func Port() *f64
@@ -5180,36 +5191,36 @@ func Port() *f64
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpointOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DbInstanceListenerEndpoint
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceListenerEndpoint">DbInstanceListenerEndpoint</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceListenerEndpoint">DbInstanceListenerEndpoint</a>
 
 ---
 
 
-### DbInstanceMasterUserSecretList <a name="DbInstanceMasterUserSecretList" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList"></a>
+### DbInstanceMasterUserSecretList <a name="DbInstanceMasterUserSecretList" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceMasterUserSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DbInstanceMasterUserSecretList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5217,7 +5228,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5225,7 +5236,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -5237,15 +5248,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -5255,19 +5266,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5275,13 +5286,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.toString"></a>
 
 ```go
 func ToString() *string
@@ -5291,13 +5302,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get"></a>
 
 ```go
 func Get(index *f64) DbInstanceMasterUserSecretOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -5310,12 +5321,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5329,7 +5340,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5340,26 +5351,26 @@ func Fqn() *string
 ---
 
 
-### DbInstanceMasterUserSecretOutputReference <a name="DbInstanceMasterUserSecretOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference"></a>
+### DbInstanceMasterUserSecretOutputReference <a name="DbInstanceMasterUserSecretOutputReference" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceMasterUserSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DbInstanceMasterUserSecretOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5367,7 +5378,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5375,7 +5386,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -5383,7 +5394,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -5395,149 +5406,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5545,13 +5556,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5566,16 +5577,16 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretArn">SecretArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretStatus">SecretStatus</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret">DbInstanceMasterUserSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretArn">SecretArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretStatus">SecretStatus</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecret">DbInstanceMasterUserSecret</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5589,7 +5600,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5599,7 +5610,7 @@ func Fqn() *string
 
 ---
 
-##### `KmsKeyId`<sup>Required</sup> <a name="KmsKeyId" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.kmsKeyId"></a>
+##### `KmsKeyId`<sup>Required</sup> <a name="KmsKeyId" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.kmsKeyId"></a>
 
 ```go
 func KmsKeyId() *string
@@ -5609,7 +5620,7 @@ func KmsKeyId() *string
 
 ---
 
-##### `SecretArn`<sup>Required</sup> <a name="SecretArn" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretArn"></a>
+##### `SecretArn`<sup>Required</sup> <a name="SecretArn" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretArn"></a>
 
 ```go
 func SecretArn() *string
@@ -5619,7 +5630,7 @@ func SecretArn() *string
 
 ---
 
-##### `SecretStatus`<sup>Required</sup> <a name="SecretStatus" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretStatus"></a>
+##### `SecretStatus`<sup>Required</sup> <a name="SecretStatus" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.secretStatus"></a>
 
 ```go
 func SecretStatus() *string
@@ -5629,35 +5640,35 @@ func SecretStatus() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DbInstanceMasterUserSecret
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret">DbInstanceMasterUserSecret</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceMasterUserSecret">DbInstanceMasterUserSecret</a>
 
 ---
 
 
-### DbInstanceRestoreToPointInTimeOutputReference <a name="DbInstanceRestoreToPointInTimeOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference"></a>
+### DbInstanceRestoreToPointInTimeOutputReference <a name="DbInstanceRestoreToPointInTimeOutputReference" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceRestoreToPointInTimeOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -5665,7 +5676,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -5677,154 +5688,154 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetRestoreTime">ResetRestoreTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceAutomatedBackupsArn">ResetSourceDbInstanceAutomatedBackupsArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceIdentifier">ResetSourceDbInstanceIdentifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbiResourceId">ResetSourceDbiResourceId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetUseLatestRestorableTime">ResetUseLatestRestorableTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetRestoreTime">ResetRestoreTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceAutomatedBackupsArn">ResetSourceDbInstanceAutomatedBackupsArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceIdentifier">ResetSourceDbInstanceIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbiResourceId">ResetSourceDbiResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetUseLatestRestorableTime">ResetUseLatestRestorableTime</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -5832,13 +5843,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -5848,31 +5859,31 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetRestoreTime` <a name="ResetRestoreTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetRestoreTime"></a>
+##### `ResetRestoreTime` <a name="ResetRestoreTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetRestoreTime"></a>
 
 ```go
 func ResetRestoreTime()
 ```
 
-##### `ResetSourceDbInstanceAutomatedBackupsArn` <a name="ResetSourceDbInstanceAutomatedBackupsArn" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceAutomatedBackupsArn"></a>
+##### `ResetSourceDbInstanceAutomatedBackupsArn` <a name="ResetSourceDbInstanceAutomatedBackupsArn" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceAutomatedBackupsArn"></a>
 
 ```go
 func ResetSourceDbInstanceAutomatedBackupsArn()
 ```
 
-##### `ResetSourceDbInstanceIdentifier` <a name="ResetSourceDbInstanceIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceIdentifier"></a>
+##### `ResetSourceDbInstanceIdentifier` <a name="ResetSourceDbInstanceIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbInstanceIdentifier"></a>
 
 ```go
 func ResetSourceDbInstanceIdentifier()
 ```
 
-##### `ResetSourceDbiResourceId` <a name="ResetSourceDbiResourceId" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbiResourceId"></a>
+##### `ResetSourceDbiResourceId` <a name="ResetSourceDbiResourceId" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetSourceDbiResourceId"></a>
 
 ```go
 func ResetSourceDbiResourceId()
 ```
 
-##### `ResetUseLatestRestorableTime` <a name="ResetUseLatestRestorableTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetUseLatestRestorableTime"></a>
+##### `ResetUseLatestRestorableTime` <a name="ResetUseLatestRestorableTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.resetUseLatestRestorableTime"></a>
 
 ```go
 func ResetUseLatestRestorableTime()
@@ -5883,23 +5894,23 @@ func ResetUseLatestRestorableTime()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTimeInput">RestoreTimeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArnInput">SourceDbInstanceAutomatedBackupsArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifierInput">SourceDbInstanceIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceIdInput">SourceDbiResourceIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTimeInput">UseLatestRestorableTimeInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTime">RestoreTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArn">SourceDbInstanceAutomatedBackupsArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifier">SourceDbInstanceIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceId">SourceDbiResourceId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTime">UseLatestRestorableTime</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTimeInput">RestoreTimeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArnInput">SourceDbInstanceAutomatedBackupsArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifierInput">SourceDbInstanceIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceIdInput">SourceDbiResourceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTimeInput">UseLatestRestorableTimeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTime">RestoreTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArn">SourceDbInstanceAutomatedBackupsArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifier">SourceDbInstanceIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceId">SourceDbiResourceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTime">UseLatestRestorableTime</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -5913,7 +5924,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -5923,7 +5934,7 @@ func Fqn() *string
 
 ---
 
-##### `RestoreTimeInput`<sup>Optional</sup> <a name="RestoreTimeInput" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTimeInput"></a>
+##### `RestoreTimeInput`<sup>Optional</sup> <a name="RestoreTimeInput" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTimeInput"></a>
 
 ```go
 func RestoreTimeInput() *string
@@ -5933,7 +5944,7 @@ func RestoreTimeInput() *string
 
 ---
 
-##### `SourceDbInstanceAutomatedBackupsArnInput`<sup>Optional</sup> <a name="SourceDbInstanceAutomatedBackupsArnInput" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArnInput"></a>
+##### `SourceDbInstanceAutomatedBackupsArnInput`<sup>Optional</sup> <a name="SourceDbInstanceAutomatedBackupsArnInput" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArnInput"></a>
 
 ```go
 func SourceDbInstanceAutomatedBackupsArnInput() *string
@@ -5943,7 +5954,7 @@ func SourceDbInstanceAutomatedBackupsArnInput() *string
 
 ---
 
-##### `SourceDbInstanceIdentifierInput`<sup>Optional</sup> <a name="SourceDbInstanceIdentifierInput" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifierInput"></a>
+##### `SourceDbInstanceIdentifierInput`<sup>Optional</sup> <a name="SourceDbInstanceIdentifierInput" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifierInput"></a>
 
 ```go
 func SourceDbInstanceIdentifierInput() *string
@@ -5953,7 +5964,7 @@ func SourceDbInstanceIdentifierInput() *string
 
 ---
 
-##### `SourceDbiResourceIdInput`<sup>Optional</sup> <a name="SourceDbiResourceIdInput" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceIdInput"></a>
+##### `SourceDbiResourceIdInput`<sup>Optional</sup> <a name="SourceDbiResourceIdInput" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceIdInput"></a>
 
 ```go
 func SourceDbiResourceIdInput() *string
@@ -5963,7 +5974,7 @@ func SourceDbiResourceIdInput() *string
 
 ---
 
-##### `UseLatestRestorableTimeInput`<sup>Optional</sup> <a name="UseLatestRestorableTimeInput" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTimeInput"></a>
+##### `UseLatestRestorableTimeInput`<sup>Optional</sup> <a name="UseLatestRestorableTimeInput" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTimeInput"></a>
 
 ```go
 func UseLatestRestorableTimeInput() interface{}
@@ -5973,7 +5984,7 @@ func UseLatestRestorableTimeInput() interface{}
 
 ---
 
-##### `RestoreTime`<sup>Required</sup> <a name="RestoreTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTime"></a>
+##### `RestoreTime`<sup>Required</sup> <a name="RestoreTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.restoreTime"></a>
 
 ```go
 func RestoreTime() *string
@@ -5983,7 +5994,7 @@ func RestoreTime() *string
 
 ---
 
-##### `SourceDbInstanceAutomatedBackupsArn`<sup>Required</sup> <a name="SourceDbInstanceAutomatedBackupsArn" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArn"></a>
+##### `SourceDbInstanceAutomatedBackupsArn`<sup>Required</sup> <a name="SourceDbInstanceAutomatedBackupsArn" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceAutomatedBackupsArn"></a>
 
 ```go
 func SourceDbInstanceAutomatedBackupsArn() *string
@@ -5993,7 +6004,7 @@ func SourceDbInstanceAutomatedBackupsArn() *string
 
 ---
 
-##### `SourceDbInstanceIdentifier`<sup>Required</sup> <a name="SourceDbInstanceIdentifier" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifier"></a>
+##### `SourceDbInstanceIdentifier`<sup>Required</sup> <a name="SourceDbInstanceIdentifier" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbInstanceIdentifier"></a>
 
 ```go
 func SourceDbInstanceIdentifier() *string
@@ -6003,7 +6014,7 @@ func SourceDbInstanceIdentifier() *string
 
 ---
 
-##### `SourceDbiResourceId`<sup>Required</sup> <a name="SourceDbiResourceId" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceId"></a>
+##### `SourceDbiResourceId`<sup>Required</sup> <a name="SourceDbiResourceId" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.sourceDbiResourceId"></a>
 
 ```go
 func SourceDbiResourceId() *string
@@ -6013,7 +6024,7 @@ func SourceDbiResourceId() *string
 
 ---
 
-##### `UseLatestRestorableTime`<sup>Required</sup> <a name="UseLatestRestorableTime" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTime"></a>
+##### `UseLatestRestorableTime`<sup>Required</sup> <a name="UseLatestRestorableTime" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.useLatestRestorableTime"></a>
 
 ```go
 func UseLatestRestorableTime() interface{}
@@ -6023,35 +6034,35 @@ func UseLatestRestorableTime() interface{}
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DbInstanceRestoreToPointInTime
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime">DbInstanceRestoreToPointInTime</a>
 
 ---
 
 
-### DbInstanceS3ImportOutputReference <a name="DbInstanceS3ImportOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference"></a>
+### DbInstanceS3ImportOutputReference <a name="DbInstanceS3ImportOutputReference" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceS3ImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceS3ImportOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -6059,7 +6070,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -6071,150 +6082,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resetBucketPrefix">ResetBucketPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resetBucketPrefix">ResetBucketPrefix</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -6222,13 +6233,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -6238,7 +6249,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetBucketPrefix` <a name="ResetBucketPrefix" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resetBucketPrefix"></a>
+##### `ResetBucketPrefix` <a name="ResetBucketPrefix" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.resetBucketPrefix"></a>
 
 ```go
 func ResetBucketPrefix()
@@ -6249,23 +6260,23 @@ func ResetBucketPrefix()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRoleInput">IngestionRoleInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineInput">SourceEngineInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersionInput">SourceEngineVersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketName">BucketName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRole">IngestionRole</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngine">SourceEngine</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersion">SourceEngineVersion</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketNameInput">BucketNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRoleInput">IngestionRoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineInput">SourceEngineInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersionInput">SourceEngineVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketName">BucketName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRole">IngestionRole</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngine">SourceEngine</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersion">SourceEngineVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -6279,7 +6290,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -6289,7 +6300,7 @@ func Fqn() *string
 
 ---
 
-##### `BucketNameInput`<sup>Optional</sup> <a name="BucketNameInput" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketNameInput"></a>
+##### `BucketNameInput`<sup>Optional</sup> <a name="BucketNameInput" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketNameInput"></a>
 
 ```go
 func BucketNameInput() *string
@@ -6299,7 +6310,7 @@ func BucketNameInput() *string
 
 ---
 
-##### `BucketPrefixInput`<sup>Optional</sup> <a name="BucketPrefixInput" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefixInput"></a>
+##### `BucketPrefixInput`<sup>Optional</sup> <a name="BucketPrefixInput" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefixInput"></a>
 
 ```go
 func BucketPrefixInput() *string
@@ -6309,7 +6320,7 @@ func BucketPrefixInput() *string
 
 ---
 
-##### `IngestionRoleInput`<sup>Optional</sup> <a name="IngestionRoleInput" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRoleInput"></a>
+##### `IngestionRoleInput`<sup>Optional</sup> <a name="IngestionRoleInput" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRoleInput"></a>
 
 ```go
 func IngestionRoleInput() *string
@@ -6319,7 +6330,7 @@ func IngestionRoleInput() *string
 
 ---
 
-##### `SourceEngineInput`<sup>Optional</sup> <a name="SourceEngineInput" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineInput"></a>
+##### `SourceEngineInput`<sup>Optional</sup> <a name="SourceEngineInput" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineInput"></a>
 
 ```go
 func SourceEngineInput() *string
@@ -6329,7 +6340,7 @@ func SourceEngineInput() *string
 
 ---
 
-##### `SourceEngineVersionInput`<sup>Optional</sup> <a name="SourceEngineVersionInput" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersionInput"></a>
+##### `SourceEngineVersionInput`<sup>Optional</sup> <a name="SourceEngineVersionInput" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersionInput"></a>
 
 ```go
 func SourceEngineVersionInput() *string
@@ -6339,7 +6350,7 @@ func SourceEngineVersionInput() *string
 
 ---
 
-##### `BucketName`<sup>Required</sup> <a name="BucketName" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketName"></a>
+##### `BucketName`<sup>Required</sup> <a name="BucketName" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketName"></a>
 
 ```go
 func BucketName() *string
@@ -6349,7 +6360,7 @@ func BucketName() *string
 
 ---
 
-##### `BucketPrefix`<sup>Required</sup> <a name="BucketPrefix" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefix"></a>
+##### `BucketPrefix`<sup>Required</sup> <a name="BucketPrefix" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.bucketPrefix"></a>
 
 ```go
 func BucketPrefix() *string
@@ -6359,7 +6370,7 @@ func BucketPrefix() *string
 
 ---
 
-##### `IngestionRole`<sup>Required</sup> <a name="IngestionRole" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRole"></a>
+##### `IngestionRole`<sup>Required</sup> <a name="IngestionRole" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.ingestionRole"></a>
 
 ```go
 func IngestionRole() *string
@@ -6369,7 +6380,7 @@ func IngestionRole() *string
 
 ---
 
-##### `SourceEngine`<sup>Required</sup> <a name="SourceEngine" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngine"></a>
+##### `SourceEngine`<sup>Required</sup> <a name="SourceEngine" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngine"></a>
 
 ```go
 func SourceEngine() *string
@@ -6379,7 +6390,7 @@ func SourceEngine() *string
 
 ---
 
-##### `SourceEngineVersion`<sup>Required</sup> <a name="SourceEngineVersion" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersion"></a>
+##### `SourceEngineVersion`<sup>Required</sup> <a name="SourceEngineVersion" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.sourceEngineVersion"></a>
 
 ```go
 func SourceEngineVersion() *string
@@ -6389,35 +6400,35 @@ func SourceEngineVersion() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DbInstanceS3Import
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbInstance.DbInstanceS3Import">DbInstanceS3Import</a>
 
 ---
 
 
-### DbInstanceTimeoutsOutputReference <a name="DbInstanceTimeoutsOutputReference" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference"></a>
+### DbInstanceTimeoutsOutputReference <a name="DbInstanceTimeoutsOutputReference" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dbinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dbinstance"
 
 dbinstance.NewDbInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DbInstanceTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -6425,7 +6436,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -6437,152 +6448,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -6590,13 +6601,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -6606,19 +6617,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -6629,19 +6640,19 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -6655,7 +6666,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -6665,7 +6676,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -6675,7 +6686,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -6685,7 +6696,7 @@ func DeleteInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -6695,7 +6706,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -6705,7 +6716,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -6715,7 +6726,7 @@ func Delete() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -6725,7 +6736,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

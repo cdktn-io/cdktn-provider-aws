@@ -1,28 +1,28 @@
-# `dynamodbTableExport` Submodule <a name="`dynamodbTableExport` Submodule" id="@cdktf/provider-aws.dynamodbTableExport"></a>
+# `dynamodbTableExport` Submodule <a name="`dynamodbTableExport` Submodule" id="@cdktn/provider-aws.dynamodbTableExport"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DynamodbTableExport <a name="DynamodbTableExport" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport"></a>
+### DynamodbTableExport <a name="DynamodbTableExport" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export aws_dynamodb_table_export}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.NewDynamodbTableExport(scope Construct, id *string, config DynamodbTableExportConfig) DynamodbTableExport
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig">DynamodbTableExportConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig">DynamodbTableExportConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig">DynamodbTableExportConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig">DynamodbTableExportConfig</a>
 
 ---
 
@@ -50,46 +50,46 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.putIncrementalExportSpecification">PutIncrementalExportSpecification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportFormat">ResetExportFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportTime">ResetExportTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportType">ResetExportType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetIncrementalExportSpecification">ResetIncrementalExportSpecification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3BucketOwner">ResetS3BucketOwner</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3Prefix">ResetS3Prefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseAlgorithm">ResetS3SseAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseKmsKeyId">ResetS3SseKmsKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.putIncrementalExportSpecification">PutIncrementalExportSpecification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportFormat">ResetExportFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportTime">ResetExportTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportType">ResetExportType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetIncrementalExportSpecification">ResetIncrementalExportSpecification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3BucketOwner">ResetS3BucketOwner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3Prefix">ResetS3Prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseAlgorithm">ResetS3SseAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseKmsKeyId">ResetS3SseKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toString"></a>
 
 ```go
 func ToString() *string
@@ -97,25 +97,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -123,7 +123,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -131,7 +131,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -139,19 +139,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -159,7 +159,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -167,7 +167,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -175,151 +175,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -329,7 +329,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -337,7 +337,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -345,7 +345,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -361,7 +361,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -369,7 +369,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -377,91 +377,91 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutIncrementalExportSpecification` <a name="PutIncrementalExportSpecification" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.putIncrementalExportSpecification"></a>
+##### `PutIncrementalExportSpecification` <a name="PutIncrementalExportSpecification" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.putIncrementalExportSpecification"></a>
 
 ```go
 func PutIncrementalExportSpecification(value DynamodbTableExportIncrementalExportSpecification)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.putIncrementalExportSpecification.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.putIncrementalExportSpecification.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value DynamodbTableExportTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts">DynamodbTableExportTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts">DynamodbTableExportTimeouts</a>
 
 ---
 
-##### `ResetExportFormat` <a name="ResetExportFormat" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportFormat"></a>
+##### `ResetExportFormat` <a name="ResetExportFormat" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportFormat"></a>
 
 ```go
 func ResetExportFormat()
 ```
 
-##### `ResetExportTime` <a name="ResetExportTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportTime"></a>
+##### `ResetExportTime` <a name="ResetExportTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportTime"></a>
 
 ```go
 func ResetExportTime()
 ```
 
-##### `ResetExportType` <a name="ResetExportType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportType"></a>
+##### `ResetExportType` <a name="ResetExportType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetExportType"></a>
 
 ```go
 func ResetExportType()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetIncrementalExportSpecification` <a name="ResetIncrementalExportSpecification" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetIncrementalExportSpecification"></a>
+##### `ResetIncrementalExportSpecification` <a name="ResetIncrementalExportSpecification" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetIncrementalExportSpecification"></a>
 
 ```go
 func ResetIncrementalExportSpecification()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetS3BucketOwner` <a name="ResetS3BucketOwner" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3BucketOwner"></a>
+##### `ResetS3BucketOwner` <a name="ResetS3BucketOwner" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3BucketOwner"></a>
 
 ```go
 func ResetS3BucketOwner()
 ```
 
-##### `ResetS3Prefix` <a name="ResetS3Prefix" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3Prefix"></a>
+##### `ResetS3Prefix` <a name="ResetS3Prefix" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3Prefix"></a>
 
 ```go
 func ResetS3Prefix()
 ```
 
-##### `ResetS3SseAlgorithm` <a name="ResetS3SseAlgorithm" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseAlgorithm"></a>
+##### `ResetS3SseAlgorithm` <a name="ResetS3SseAlgorithm" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseAlgorithm"></a>
 
 ```go
 func ResetS3SseAlgorithm()
 ```
 
-##### `ResetS3SseKmsKeyId` <a name="ResetS3SseKmsKeyId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseKmsKeyId"></a>
+##### `ResetS3SseKmsKeyId` <a name="ResetS3SseKmsKeyId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetS3SseKmsKeyId"></a>
 
 ```go
 func ResetS3SseKmsKeyId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -471,17 +471,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DynamodbTableExport resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DynamodbTableExport resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -510,45 +510,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.DynamodbTableExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DynamodbTableExport resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -556,7 +556,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -564,17 +564,17 @@ The construct id used in the generated config for the DynamodbTableExport to imp
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DynamodbTableExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -586,57 +586,57 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.billedSizeInBytes">BilledSizeInBytes</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.endTime">EndTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportStatus">ExportStatus</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecification">IncrementalExportSpecification</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference">DynamodbTableExportIncrementalExportSpecificationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.itemCount">ItemCount</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.manifestFilesS3Key">ManifestFilesS3Key</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.startTime">StartTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference">DynamodbTableExportTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormatInput">ExportFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTimeInput">ExportTimeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTypeInput">ExportTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecificationInput">IncrementalExportSpecificationInput</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketInput">S3BucketInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwnerInput">S3BucketOwnerInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3PrefixInput">S3PrefixInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithmInput">S3SseAlgorithmInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyIdInput">S3SseKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArnInput">TableArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormat">ExportFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTime">ExportTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportType">ExportType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwner">S3BucketOwner</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithm">S3SseAlgorithm</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyId">S3SseKmsKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArn">TableArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.billedSizeInBytes">BilledSizeInBytes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.endTime">EndTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportStatus">ExportStatus</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecification">IncrementalExportSpecification</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference">DynamodbTableExportIncrementalExportSpecificationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.itemCount">ItemCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.manifestFilesS3Key">ManifestFilesS3Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.startTime">StartTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference">DynamodbTableExportTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormatInput">ExportFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTimeInput">ExportTimeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTypeInput">ExportTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecificationInput">IncrementalExportSpecificationInput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketInput">S3BucketInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwnerInput">S3BucketOwnerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3PrefixInput">S3PrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithmInput">S3SseAlgorithmInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyIdInput">S3SseKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArnInput">TableArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormat">ExportFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTime">ExportTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportType">ExportType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwner">S3BucketOwner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithm">S3SseAlgorithm</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyId">S3SseKmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArn">TableArn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.node"></a>
 
 ```go
 func Node() Node
@@ -648,7 +648,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -658,7 +658,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -668,7 +668,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -678,7 +678,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -688,7 +688,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -698,7 +698,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -708,7 +708,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -718,7 +718,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -728,7 +728,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -738,7 +738,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -748,7 +748,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -758,7 +758,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -768,7 +768,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -778,7 +778,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -788,7 +788,7 @@ func Arn() *string
 
 ---
 
-##### `BilledSizeInBytes`<sup>Required</sup> <a name="BilledSizeInBytes" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.billedSizeInBytes"></a>
+##### `BilledSizeInBytes`<sup>Required</sup> <a name="BilledSizeInBytes" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.billedSizeInBytes"></a>
 
 ```go
 func BilledSizeInBytes() *f64
@@ -798,7 +798,7 @@ func BilledSizeInBytes() *f64
 
 ---
 
-##### `EndTime`<sup>Required</sup> <a name="EndTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.endTime"></a>
+##### `EndTime`<sup>Required</sup> <a name="EndTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.endTime"></a>
 
 ```go
 func EndTime() *string
@@ -808,7 +808,7 @@ func EndTime() *string
 
 ---
 
-##### `ExportStatus`<sup>Required</sup> <a name="ExportStatus" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportStatus"></a>
+##### `ExportStatus`<sup>Required</sup> <a name="ExportStatus" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportStatus"></a>
 
 ```go
 func ExportStatus() *string
@@ -818,17 +818,17 @@ func ExportStatus() *string
 
 ---
 
-##### `IncrementalExportSpecification`<sup>Required</sup> <a name="IncrementalExportSpecification" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecification"></a>
+##### `IncrementalExportSpecification`<sup>Required</sup> <a name="IncrementalExportSpecification" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecification"></a>
 
 ```go
 func IncrementalExportSpecification() DynamodbTableExportIncrementalExportSpecificationOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference">DynamodbTableExportIncrementalExportSpecificationOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference">DynamodbTableExportIncrementalExportSpecificationOutputReference</a>
 
 ---
 
-##### `ItemCount`<sup>Required</sup> <a name="ItemCount" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.itemCount"></a>
+##### `ItemCount`<sup>Required</sup> <a name="ItemCount" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.itemCount"></a>
 
 ```go
 func ItemCount() *f64
@@ -838,7 +838,7 @@ func ItemCount() *f64
 
 ---
 
-##### `ManifestFilesS3Key`<sup>Required</sup> <a name="ManifestFilesS3Key" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.manifestFilesS3Key"></a>
+##### `ManifestFilesS3Key`<sup>Required</sup> <a name="ManifestFilesS3Key" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.manifestFilesS3Key"></a>
 
 ```go
 func ManifestFilesS3Key() *string
@@ -848,7 +848,7 @@ func ManifestFilesS3Key() *string
 
 ---
 
-##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.startTime"></a>
+##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.startTime"></a>
 
 ```go
 func StartTime() *string
@@ -858,17 +858,17 @@ func StartTime() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeouts"></a>
 
 ```go
 func Timeouts() DynamodbTableExportTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference">DynamodbTableExportTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference">DynamodbTableExportTimeoutsOutputReference</a>
 
 ---
 
-##### `ExportFormatInput`<sup>Optional</sup> <a name="ExportFormatInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormatInput"></a>
+##### `ExportFormatInput`<sup>Optional</sup> <a name="ExportFormatInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormatInput"></a>
 
 ```go
 func ExportFormatInput() *string
@@ -878,7 +878,7 @@ func ExportFormatInput() *string
 
 ---
 
-##### `ExportTimeInput`<sup>Optional</sup> <a name="ExportTimeInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTimeInput"></a>
+##### `ExportTimeInput`<sup>Optional</sup> <a name="ExportTimeInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTimeInput"></a>
 
 ```go
 func ExportTimeInput() *string
@@ -888,7 +888,7 @@ func ExportTimeInput() *string
 
 ---
 
-##### `ExportTypeInput`<sup>Optional</sup> <a name="ExportTypeInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTypeInput"></a>
+##### `ExportTypeInput`<sup>Optional</sup> <a name="ExportTypeInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTypeInput"></a>
 
 ```go
 func ExportTypeInput() *string
@@ -898,7 +898,7 @@ func ExportTypeInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -908,17 +908,17 @@ func IdInput() *string
 
 ---
 
-##### `IncrementalExportSpecificationInput`<sup>Optional</sup> <a name="IncrementalExportSpecificationInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecificationInput"></a>
+##### `IncrementalExportSpecificationInput`<sup>Optional</sup> <a name="IncrementalExportSpecificationInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.incrementalExportSpecificationInput"></a>
 
 ```go
 func IncrementalExportSpecificationInput() DynamodbTableExportIncrementalExportSpecification
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -928,7 +928,7 @@ func RegionInput() *string
 
 ---
 
-##### `S3BucketInput`<sup>Optional</sup> <a name="S3BucketInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketInput"></a>
+##### `S3BucketInput`<sup>Optional</sup> <a name="S3BucketInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketInput"></a>
 
 ```go
 func S3BucketInput() *string
@@ -938,7 +938,7 @@ func S3BucketInput() *string
 
 ---
 
-##### `S3BucketOwnerInput`<sup>Optional</sup> <a name="S3BucketOwnerInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwnerInput"></a>
+##### `S3BucketOwnerInput`<sup>Optional</sup> <a name="S3BucketOwnerInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwnerInput"></a>
 
 ```go
 func S3BucketOwnerInput() *string
@@ -948,7 +948,7 @@ func S3BucketOwnerInput() *string
 
 ---
 
-##### `S3PrefixInput`<sup>Optional</sup> <a name="S3PrefixInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3PrefixInput"></a>
+##### `S3PrefixInput`<sup>Optional</sup> <a name="S3PrefixInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3PrefixInput"></a>
 
 ```go
 func S3PrefixInput() *string
@@ -958,7 +958,7 @@ func S3PrefixInput() *string
 
 ---
 
-##### `S3SseAlgorithmInput`<sup>Optional</sup> <a name="S3SseAlgorithmInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithmInput"></a>
+##### `S3SseAlgorithmInput`<sup>Optional</sup> <a name="S3SseAlgorithmInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithmInput"></a>
 
 ```go
 func S3SseAlgorithmInput() *string
@@ -968,7 +968,7 @@ func S3SseAlgorithmInput() *string
 
 ---
 
-##### `S3SseKmsKeyIdInput`<sup>Optional</sup> <a name="S3SseKmsKeyIdInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyIdInput"></a>
+##### `S3SseKmsKeyIdInput`<sup>Optional</sup> <a name="S3SseKmsKeyIdInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyIdInput"></a>
 
 ```go
 func S3SseKmsKeyIdInput() *string
@@ -978,7 +978,7 @@ func S3SseKmsKeyIdInput() *string
 
 ---
 
-##### `TableArnInput`<sup>Optional</sup> <a name="TableArnInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArnInput"></a>
+##### `TableArnInput`<sup>Optional</sup> <a name="TableArnInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArnInput"></a>
 
 ```go
 func TableArnInput() *string
@@ -988,7 +988,7 @@ func TableArnInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -998,7 +998,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `ExportFormat`<sup>Required</sup> <a name="ExportFormat" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormat"></a>
+##### `ExportFormat`<sup>Required</sup> <a name="ExportFormat" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportFormat"></a>
 
 ```go
 func ExportFormat() *string
@@ -1008,7 +1008,7 @@ func ExportFormat() *string
 
 ---
 
-##### `ExportTime`<sup>Required</sup> <a name="ExportTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTime"></a>
+##### `ExportTime`<sup>Required</sup> <a name="ExportTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportTime"></a>
 
 ```go
 func ExportTime() *string
@@ -1018,7 +1018,7 @@ func ExportTime() *string
 
 ---
 
-##### `ExportType`<sup>Required</sup> <a name="ExportType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportType"></a>
+##### `ExportType`<sup>Required</sup> <a name="ExportType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.exportType"></a>
 
 ```go
 func ExportType() *string
@@ -1028,7 +1028,7 @@ func ExportType() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.id"></a>
 
 ```go
 func Id() *string
@@ -1038,7 +1038,7 @@ func Id() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.region"></a>
 
 ```go
 func Region() *string
@@ -1048,7 +1048,7 @@ func Region() *string
 
 ---
 
-##### `S3Bucket`<sup>Required</sup> <a name="S3Bucket" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Bucket"></a>
+##### `S3Bucket`<sup>Required</sup> <a name="S3Bucket" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Bucket"></a>
 
 ```go
 func S3Bucket() *string
@@ -1058,7 +1058,7 @@ func S3Bucket() *string
 
 ---
 
-##### `S3BucketOwner`<sup>Required</sup> <a name="S3BucketOwner" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwner"></a>
+##### `S3BucketOwner`<sup>Required</sup> <a name="S3BucketOwner" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3BucketOwner"></a>
 
 ```go
 func S3BucketOwner() *string
@@ -1068,7 +1068,7 @@ func S3BucketOwner() *string
 
 ---
 
-##### `S3Prefix`<sup>Required</sup> <a name="S3Prefix" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Prefix"></a>
+##### `S3Prefix`<sup>Required</sup> <a name="S3Prefix" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3Prefix"></a>
 
 ```go
 func S3Prefix() *string
@@ -1078,7 +1078,7 @@ func S3Prefix() *string
 
 ---
 
-##### `S3SseAlgorithm`<sup>Required</sup> <a name="S3SseAlgorithm" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithm"></a>
+##### `S3SseAlgorithm`<sup>Required</sup> <a name="S3SseAlgorithm" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseAlgorithm"></a>
 
 ```go
 func S3SseAlgorithm() *string
@@ -1088,7 +1088,7 @@ func S3SseAlgorithm() *string
 
 ---
 
-##### `S3SseKmsKeyId`<sup>Required</sup> <a name="S3SseKmsKeyId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyId"></a>
+##### `S3SseKmsKeyId`<sup>Required</sup> <a name="S3SseKmsKeyId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.s3SseKmsKeyId"></a>
 
 ```go
 func S3SseKmsKeyId() *string
@@ -1098,7 +1098,7 @@ func S3SseKmsKeyId() *string
 
 ---
 
-##### `TableArn`<sup>Required</sup> <a name="TableArn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArn"></a>
+##### `TableArn`<sup>Required</sup> <a name="TableArn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tableArn"></a>
 
 ```go
 func TableArn() *string
@@ -1112,11 +1112,11 @@ func TableArn() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExport.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1128,12 +1128,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DynamodbTableExportConfig <a name="DynamodbTableExportConfig" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig"></a>
+### DynamodbTableExportConfig <a name="DynamodbTableExportConfig" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 &dynamodbtableexport.DynamodbTableExportConfig {
 	Connection: interface{},
@@ -1149,13 +1149,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
 	ExportTime: *string,
 	ExportType: *string,
 	Id: *string,
-	IncrementalExportSpecification: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification,
+	IncrementalExportSpecification: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification,
 	Region: *string,
 	S3BucketOwner: *string,
 	S3Prefix: *string,
 	S3SseAlgorithm: *string,
 	S3SseKmsKeyId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.dynamodbTableExport.DynamodbTableExportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dynamodbTableExport.DynamodbTableExportTimeouts,
 }
 ```
 
@@ -1163,30 +1163,30 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_bucket DynamodbTableExport#s3_bucket}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.tableArn">TableArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#table_arn DynamodbTableExport#table_arn}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportFormat">ExportFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportTime">ExportTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_time DynamodbTableExport#export_time}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportType">ExportType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_type DynamodbTableExport#export_type}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#id DynamodbTableExport#id}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.incrementalExportSpecification">IncrementalExportSpecification</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a></code> | incremental_export_specification block. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3BucketOwner">S3BucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_bucket_owner DynamodbTableExport#s3_bucket_owner}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_prefix DynamodbTableExport#s3_prefix}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseAlgorithm">S3SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_sse_algorithm DynamodbTableExport#s3_sse_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseKmsKeyId">S3SseKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_sse_kms_key_id DynamodbTableExport#s3_sse_kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts">DynamodbTableExportTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_bucket DynamodbTableExport#s3_bucket}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.tableArn">TableArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#table_arn DynamodbTableExport#table_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportFormat">ExportFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportTime">ExportTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_time DynamodbTableExport#export_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportType">ExportType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_type DynamodbTableExport#export_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#id DynamodbTableExport#id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.incrementalExportSpecification">IncrementalExportSpecification</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a></code> | incremental_export_specification block. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3BucketOwner">S3BucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_bucket_owner DynamodbTableExport#s3_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Prefix">S3Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_prefix DynamodbTableExport#s3_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseAlgorithm">S3SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_sse_algorithm DynamodbTableExport#s3_sse_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseKmsKeyId">S3SseKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_sse_kms_key_id DynamodbTableExport#s3_sse_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts">DynamodbTableExportTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1196,7 +1196,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1206,7 +1206,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1216,7 +1216,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1226,7 +1226,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1236,7 +1236,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1246,7 +1246,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1256,7 +1256,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `S3Bucket`<sup>Required</sup> <a name="S3Bucket" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Bucket"></a>
+##### `S3Bucket`<sup>Required</sup> <a name="S3Bucket" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Bucket"></a>
 
 ```go
 S3Bucket *string
@@ -1264,11 +1264,11 @@ S3Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_bucket DynamodbTableExport#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_bucket DynamodbTableExport#s3_bucket}.
 
 ---
 
-##### `TableArn`<sup>Required</sup> <a name="TableArn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.tableArn"></a>
+##### `TableArn`<sup>Required</sup> <a name="TableArn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.tableArn"></a>
 
 ```go
 TableArn *string
@@ -1276,11 +1276,11 @@ TableArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#table_arn DynamodbTableExport#table_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#table_arn DynamodbTableExport#table_arn}.
 
 ---
 
-##### `ExportFormat`<sup>Optional</sup> <a name="ExportFormat" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportFormat"></a>
+##### `ExportFormat`<sup>Optional</sup> <a name="ExportFormat" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportFormat"></a>
 
 ```go
 ExportFormat *string
@@ -1288,11 +1288,11 @@ ExportFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_format DynamodbTableExport#export_format}.
 
 ---
 
-##### `ExportTime`<sup>Optional</sup> <a name="ExportTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportTime"></a>
+##### `ExportTime`<sup>Optional</sup> <a name="ExportTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportTime"></a>
 
 ```go
 ExportTime *string
@@ -1300,11 +1300,11 @@ ExportTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_time DynamodbTableExport#export_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_time DynamodbTableExport#export_time}.
 
 ---
 
-##### `ExportType`<sup>Optional</sup> <a name="ExportType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportType"></a>
+##### `ExportType`<sup>Optional</sup> <a name="ExportType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.exportType"></a>
 
 ```go
 ExportType *string
@@ -1312,11 +1312,11 @@ ExportType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_type DynamodbTableExport#export_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_type DynamodbTableExport#export_type}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1324,28 +1324,28 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#id DynamodbTableExport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#id DynamodbTableExport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `IncrementalExportSpecification`<sup>Optional</sup> <a name="IncrementalExportSpecification" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.incrementalExportSpecification"></a>
+##### `IncrementalExportSpecification`<sup>Optional</sup> <a name="IncrementalExportSpecification" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.incrementalExportSpecification"></a>
 
 ```go
 IncrementalExportSpecification DynamodbTableExportIncrementalExportSpecification
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
 
 incremental_export_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#incremental_export_specification DynamodbTableExport#incremental_export_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#incremental_export_specification DynamodbTableExport#incremental_export_specification}
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1355,11 +1355,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#region DynamodbTableExport#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#region DynamodbTableExport#region}
 
 ---
 
-##### `S3BucketOwner`<sup>Optional</sup> <a name="S3BucketOwner" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3BucketOwner"></a>
+##### `S3BucketOwner`<sup>Optional</sup> <a name="S3BucketOwner" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3BucketOwner"></a>
 
 ```go
 S3BucketOwner *string
@@ -1367,11 +1367,11 @@ S3BucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_bucket_owner DynamodbTableExport#s3_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_bucket_owner DynamodbTableExport#s3_bucket_owner}.
 
 ---
 
-##### `S3Prefix`<sup>Optional</sup> <a name="S3Prefix" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Prefix"></a>
+##### `S3Prefix`<sup>Optional</sup> <a name="S3Prefix" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3Prefix"></a>
 
 ```go
 S3Prefix *string
@@ -1379,11 +1379,11 @@ S3Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_prefix DynamodbTableExport#s3_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_prefix DynamodbTableExport#s3_prefix}.
 
 ---
 
-##### `S3SseAlgorithm`<sup>Optional</sup> <a name="S3SseAlgorithm" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseAlgorithm"></a>
+##### `S3SseAlgorithm`<sup>Optional</sup> <a name="S3SseAlgorithm" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseAlgorithm"></a>
 
 ```go
 S3SseAlgorithm *string
@@ -1391,11 +1391,11 @@ S3SseAlgorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_sse_algorithm DynamodbTableExport#s3_sse_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_sse_algorithm DynamodbTableExport#s3_sse_algorithm}.
 
 ---
 
-##### `S3SseKmsKeyId`<sup>Optional</sup> <a name="S3SseKmsKeyId" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseKmsKeyId"></a>
+##### `S3SseKmsKeyId`<sup>Optional</sup> <a name="S3SseKmsKeyId" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.s3SseKmsKeyId"></a>
 
 ```go
 S3SseKmsKeyId *string
@@ -1403,30 +1403,30 @@ S3SseKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#s3_sse_kms_key_id DynamodbTableExport#s3_sse_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#s3_sse_kms_key_id DynamodbTableExport#s3_sse_kms_key_id}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportConfig.property.timeouts"></a>
 
 ```go
 Timeouts DynamodbTableExportTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts">DynamodbTableExportTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts">DynamodbTableExportTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#timeouts DynamodbTableExport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#timeouts DynamodbTableExport#timeouts}
 
 ---
 
-### DynamodbTableExportIncrementalExportSpecification <a name="DynamodbTableExportIncrementalExportSpecification" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification"></a>
+### DynamodbTableExportIncrementalExportSpecification <a name="DynamodbTableExportIncrementalExportSpecification" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 &dynamodbtableexport.DynamodbTableExportIncrementalExportSpecification {
 	ExportFromTime: *string,
@@ -1439,13 +1439,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportFromTime">ExportFromTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_from_time DynamodbTableExport#export_from_time}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportToTime">ExportToTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_to_time DynamodbTableExport#export_to_time}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportViewType">ExportViewType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_view_type DynamodbTableExport#export_view_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportFromTime">ExportFromTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_from_time DynamodbTableExport#export_from_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportToTime">ExportToTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_to_time DynamodbTableExport#export_to_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportViewType">ExportViewType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_view_type DynamodbTableExport#export_view_type}. |
 
 ---
 
-##### `ExportFromTime`<sup>Optional</sup> <a name="ExportFromTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportFromTime"></a>
+##### `ExportFromTime`<sup>Optional</sup> <a name="ExportFromTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportFromTime"></a>
 
 ```go
 ExportFromTime *string
@@ -1453,11 +1453,11 @@ ExportFromTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_from_time DynamodbTableExport#export_from_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_from_time DynamodbTableExport#export_from_time}.
 
 ---
 
-##### `ExportToTime`<sup>Optional</sup> <a name="ExportToTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportToTime"></a>
+##### `ExportToTime`<sup>Optional</sup> <a name="ExportToTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportToTime"></a>
 
 ```go
 ExportToTime *string
@@ -1465,11 +1465,11 @@ ExportToTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_to_time DynamodbTableExport#export_to_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_to_time DynamodbTableExport#export_to_time}.
 
 ---
 
-##### `ExportViewType`<sup>Optional</sup> <a name="ExportViewType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportViewType"></a>
+##### `ExportViewType`<sup>Optional</sup> <a name="ExportViewType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification.property.exportViewType"></a>
 
 ```go
 ExportViewType *string
@@ -1477,16 +1477,16 @@ ExportViewType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#export_view_type DynamodbTableExport#export_view_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#export_view_type DynamodbTableExport#export_view_type}.
 
 ---
 
-### DynamodbTableExportTimeouts <a name="DynamodbTableExportTimeouts" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts"></a>
+### DynamodbTableExportTimeouts <a name="DynamodbTableExportTimeouts" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 &dynamodbtableexport.DynamodbTableExportTimeouts {
 	Create: *string,
@@ -1498,12 +1498,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1511,11 +1511,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#create DynamodbTableExport#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1523,30 +1523,30 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table_export#delete DynamodbTableExport#delete}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DynamodbTableExportIncrementalExportSpecificationOutputReference <a name="DynamodbTableExportIncrementalExportSpecificationOutputReference" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference"></a>
+### DynamodbTableExportIncrementalExportSpecificationOutputReference <a name="DynamodbTableExportIncrementalExportSpecificationOutputReference" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.NewDynamodbTableExportIncrementalExportSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableExportIncrementalExportSpecificationOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1554,7 +1554,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1566,152 +1566,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportFromTime">ResetExportFromTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportToTime">ResetExportToTime</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportViewType">ResetExportViewType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportFromTime">ResetExportFromTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportToTime">ResetExportToTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportViewType">ResetExportViewType</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1719,13 +1719,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1735,19 +1735,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetExportFromTime` <a name="ResetExportFromTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportFromTime"></a>
+##### `ResetExportFromTime` <a name="ResetExportFromTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportFromTime"></a>
 
 ```go
 func ResetExportFromTime()
 ```
 
-##### `ResetExportToTime` <a name="ResetExportToTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportToTime"></a>
+##### `ResetExportToTime` <a name="ResetExportToTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportToTime"></a>
 
 ```go
 func ResetExportToTime()
 ```
 
-##### `ResetExportViewType` <a name="ResetExportViewType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportViewType"></a>
+##### `ResetExportViewType` <a name="ResetExportViewType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.resetExportViewType"></a>
 
 ```go
 func ResetExportViewType()
@@ -1758,19 +1758,19 @@ func ResetExportViewType()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTimeInput">ExportFromTimeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTimeInput">ExportToTimeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewTypeInput">ExportViewTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTime">ExportFromTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTime">ExportToTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewType">ExportViewType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTimeInput">ExportFromTimeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTimeInput">ExportToTimeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewTypeInput">ExportViewTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTime">ExportFromTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTime">ExportToTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewType">ExportViewType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1784,7 +1784,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1794,7 +1794,7 @@ func Fqn() *string
 
 ---
 
-##### `ExportFromTimeInput`<sup>Optional</sup> <a name="ExportFromTimeInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTimeInput"></a>
+##### `ExportFromTimeInput`<sup>Optional</sup> <a name="ExportFromTimeInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTimeInput"></a>
 
 ```go
 func ExportFromTimeInput() *string
@@ -1804,7 +1804,7 @@ func ExportFromTimeInput() *string
 
 ---
 
-##### `ExportToTimeInput`<sup>Optional</sup> <a name="ExportToTimeInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTimeInput"></a>
+##### `ExportToTimeInput`<sup>Optional</sup> <a name="ExportToTimeInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTimeInput"></a>
 
 ```go
 func ExportToTimeInput() *string
@@ -1814,7 +1814,7 @@ func ExportToTimeInput() *string
 
 ---
 
-##### `ExportViewTypeInput`<sup>Optional</sup> <a name="ExportViewTypeInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewTypeInput"></a>
+##### `ExportViewTypeInput`<sup>Optional</sup> <a name="ExportViewTypeInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewTypeInput"></a>
 
 ```go
 func ExportViewTypeInput() *string
@@ -1824,7 +1824,7 @@ func ExportViewTypeInput() *string
 
 ---
 
-##### `ExportFromTime`<sup>Required</sup> <a name="ExportFromTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTime"></a>
+##### `ExportFromTime`<sup>Required</sup> <a name="ExportFromTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportFromTime"></a>
 
 ```go
 func ExportFromTime() *string
@@ -1834,7 +1834,7 @@ func ExportFromTime() *string
 
 ---
 
-##### `ExportToTime`<sup>Required</sup> <a name="ExportToTime" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTime"></a>
+##### `ExportToTime`<sup>Required</sup> <a name="ExportToTime" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportToTime"></a>
 
 ```go
 func ExportToTime() *string
@@ -1844,7 +1844,7 @@ func ExportToTime() *string
 
 ---
 
-##### `ExportViewType`<sup>Required</sup> <a name="ExportViewType" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewType"></a>
+##### `ExportViewType`<sup>Required</sup> <a name="ExportViewType" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.exportViewType"></a>
 
 ```go
 func ExportViewType() *string
@@ -1854,35 +1854,35 @@ func ExportViewType() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecificationOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DynamodbTableExportIncrementalExportSpecification
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportIncrementalExportSpecification">DynamodbTableExportIncrementalExportSpecification</a>
 
 ---
 
 
-### DynamodbTableExportTimeoutsOutputReference <a name="DynamodbTableExportTimeoutsOutputReference" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference"></a>
+### DynamodbTableExportTimeoutsOutputReference <a name="DynamodbTableExportTimeoutsOutputReference" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dynamodbtableexport"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbtableexport"
 
 dynamodbtableexport.NewDynamodbTableExportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamodbTableExportTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1890,7 +1890,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1902,151 +1902,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2054,13 +2054,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2070,13 +2070,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
@@ -2087,17 +2087,17 @@ func ResetDelete()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2111,7 +2111,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2121,7 +2121,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -2131,7 +2131,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -2141,7 +2141,7 @@ func DeleteInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -2151,7 +2151,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -2161,7 +2161,7 @@ func Delete() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dynamodbTableExport.DynamodbTableExportTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

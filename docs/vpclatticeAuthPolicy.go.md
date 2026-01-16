@@ -1,28 +1,28 @@
-# `vpclatticeAuthPolicy` Submodule <a name="`vpclatticeAuthPolicy` Submodule" id="@cdktf/provider-aws.vpclatticeAuthPolicy"></a>
+# `vpclatticeAuthPolicy` Submodule <a name="`vpclatticeAuthPolicy` Submodule" id="@cdktn/provider-aws.vpclatticeAuthPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### VpclatticeAuthPolicy <a name="VpclatticeAuthPolicy" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy"></a>
+### VpclatticeAuthPolicy <a name="VpclatticeAuthPolicy" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.NewVpclatticeAuthPolicy(scope Construct, id *string, config VpclatticeAuthPolicyConfig) VpclatticeAuthPolicy
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig">VpclatticeAuthPolicyConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig">VpclatticeAuthPolicyConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig">VpclatticeAuthPolicyConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig">VpclatticeAuthPolicyConfig</a>
 
 ---
 
@@ -50,38 +50,38 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetState">ResetState</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetState">ResetState</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toString"></a>
 
 ```go
 func ToString() *string
@@ -89,25 +89,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -115,7 +115,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -123,7 +123,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -131,19 +131,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -151,7 +151,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -159,7 +159,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -167,151 +167,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -321,7 +321,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -329,7 +329,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -337,7 +337,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -353,7 +353,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -361,7 +361,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -369,37 +369,37 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value VpclatticeAuthPolicyTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetState` <a name="ResetState" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetState"></a>
+##### `ResetState` <a name="ResetState" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetState"></a>
 
 ```go
 func ResetState()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -409,17 +409,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VpclatticeAuthPolicy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VpclatticeAuthPolicy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -448,45 +448,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.VpclatticeAuthPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a VpclatticeAuthPolicy resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -494,7 +494,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -502,17 +502,17 @@ The construct id used in the generated config for the VpclatticeAuthPolicy to im
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing VpclatticeAuthPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -524,36 +524,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference">VpclatticeAuthPolicyTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policyInput">PolicyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifierInput">ResourceIdentifierInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.stateInput">StateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policy">Policy</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference">VpclatticeAuthPolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policyInput">PolicyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifierInput">ResourceIdentifierInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.stateInput">StateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policy">Policy</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.state">State</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.node"></a>
 
 ```go
 func Node() Node
@@ -565,7 +565,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -575,7 +575,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -585,7 +585,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -595,7 +595,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -605,7 +605,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -615,7 +615,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -625,7 +625,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -635,7 +635,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -645,7 +645,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -655,7 +655,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -665,7 +665,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -675,7 +675,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -685,7 +685,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -695,17 +695,17 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeouts"></a>
 
 ```go
 func Timeouts() VpclatticeAuthPolicyTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference">VpclatticeAuthPolicyTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference">VpclatticeAuthPolicyTimeoutsOutputReference</a>
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -715,7 +715,7 @@ func IdInput() *string
 
 ---
 
-##### `PolicyInput`<sup>Optional</sup> <a name="PolicyInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policyInput"></a>
+##### `PolicyInput`<sup>Optional</sup> <a name="PolicyInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policyInput"></a>
 
 ```go
 func PolicyInput() *string
@@ -725,7 +725,7 @@ func PolicyInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -735,7 +735,7 @@ func RegionInput() *string
 
 ---
 
-##### `ResourceIdentifierInput`<sup>Optional</sup> <a name="ResourceIdentifierInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifierInput"></a>
+##### `ResourceIdentifierInput`<sup>Optional</sup> <a name="ResourceIdentifierInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifierInput"></a>
 
 ```go
 func ResourceIdentifierInput() *string
@@ -745,7 +745,7 @@ func ResourceIdentifierInput() *string
 
 ---
 
-##### `StateInput`<sup>Optional</sup> <a name="StateInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.stateInput"></a>
+##### `StateInput`<sup>Optional</sup> <a name="StateInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.stateInput"></a>
 
 ```go
 func StateInput() *string
@@ -755,7 +755,7 @@ func StateInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -765,7 +765,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.id"></a>
 
 ```go
 func Id() *string
@@ -775,7 +775,7 @@ func Id() *string
 
 ---
 
-##### `Policy`<sup>Required</sup> <a name="Policy" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policy"></a>
+##### `Policy`<sup>Required</sup> <a name="Policy" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.policy"></a>
 
 ```go
 func Policy() *string
@@ -785,7 +785,7 @@ func Policy() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.region"></a>
 
 ```go
 func Region() *string
@@ -795,7 +795,7 @@ func Region() *string
 
 ---
 
-##### `ResourceIdentifier`<sup>Required</sup> <a name="ResourceIdentifier" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifier"></a>
+##### `ResourceIdentifier`<sup>Required</sup> <a name="ResourceIdentifier" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.resourceIdentifier"></a>
 
 ```go
 func ResourceIdentifier() *string
@@ -805,7 +805,7 @@ func ResourceIdentifier() *string
 
 ---
 
-##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.state"></a>
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.state"></a>
 
 ```go
 func State() *string
@@ -819,11 +819,11 @@ func State() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicy.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -835,12 +835,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### VpclatticeAuthPolicyConfig <a name="VpclatticeAuthPolicyConfig" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig"></a>
+### VpclatticeAuthPolicyConfig <a name="VpclatticeAuthPolicyConfig" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 &vpclatticeauthpolicy.VpclatticeAuthPolicyConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 	Id: *string,
 	Region: *string,
 	State: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts,
 }
 ```
 
@@ -863,23 +863,23 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.resourceIdentifier">ResourceIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -889,7 +889,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -899,7 +899,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -909,7 +909,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -919,7 +919,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -929,7 +929,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -939,7 +939,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -949,7 +949,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Policy`<sup>Required</sup> <a name="Policy" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.policy"></a>
+##### `Policy`<sup>Required</sup> <a name="Policy" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.policy"></a>
 
 ```go
 Policy *string
@@ -957,11 +957,11 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#policy VpclatticeAuthPolicy#policy}.
 
 ---
 
-##### `ResourceIdentifier`<sup>Required</sup> <a name="ResourceIdentifier" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.resourceIdentifier"></a>
+##### `ResourceIdentifier`<sup>Required</sup> <a name="ResourceIdentifier" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.resourceIdentifier"></a>
 
 ```go
 ResourceIdentifier *string
@@ -969,11 +969,11 @@ ResourceIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#resource_identifier VpclatticeAuthPolicy#resource_identifier}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.id"></a>
 
 ```go
 Id *string
@@ -981,14 +981,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#id VpclatticeAuthPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.region"></a>
 
 ```go
 Region *string
@@ -998,11 +998,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#region VpclatticeAuthPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#region VpclatticeAuthPolicy#region}
 
 ---
 
-##### `State`<sup>Optional</sup> <a name="State" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.state"></a>
+##### `State`<sup>Optional</sup> <a name="State" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.state"></a>
 
 ```go
 State *string
@@ -1010,30 +1010,30 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#state VpclatticeAuthPolicy#state}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyConfig.property.timeouts"></a>
 
 ```go
 Timeouts VpclatticeAuthPolicyTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts">VpclatticeAuthPolicyTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#timeouts VpclatticeAuthPolicy#timeouts}
 
 ---
 
-### VpclatticeAuthPolicyTimeouts <a name="VpclatticeAuthPolicyTimeouts" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts"></a>
+### VpclatticeAuthPolicyTimeouts <a name="VpclatticeAuthPolicyTimeouts" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 &vpclatticeauthpolicy.VpclatticeAuthPolicyTimeouts {
 	Create: *string,
@@ -1046,13 +1046,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1060,11 +1060,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#create VpclatticeAuthPolicy#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1072,11 +1072,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#delete VpclatticeAuthPolicy#delete}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1084,30 +1084,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_auth_policy#update VpclatticeAuthPolicy#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### VpclatticeAuthPolicyTimeoutsOutputReference <a name="VpclatticeAuthPolicyTimeoutsOutputReference" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference"></a>
+### VpclatticeAuthPolicyTimeoutsOutputReference <a name="VpclatticeAuthPolicyTimeoutsOutputReference" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/vpclatticeauthpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/vpclatticeauthpolicy"
 
 vpclatticeauthpolicy.NewVpclatticeAuthPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpclatticeAuthPolicyTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1115,7 +1115,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1127,152 +1127,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1280,13 +1280,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1296,19 +1296,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1319,19 +1319,19 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1345,7 +1345,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1355,7 +1355,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1365,7 +1365,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1375,7 +1375,7 @@ func DeleteInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -1385,7 +1385,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1395,7 +1395,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1405,7 +1405,7 @@ func Delete() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -1415,7 +1415,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.vpclatticeAuthPolicy.VpclatticeAuthPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

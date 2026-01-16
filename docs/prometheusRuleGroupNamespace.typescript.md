@@ -1,28 +1,28 @@
-# `prometheusRuleGroupNamespace` Submodule <a name="`prometheusRuleGroupNamespace` Submodule" id="@cdktf/provider-aws.prometheusRuleGroupNamespace"></a>
+# `prometheusRuleGroupNamespace` Submodule <a name="`prometheusRuleGroupNamespace` Submodule" id="@cdktn/provider-aws.prometheusRuleGroupNamespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### PrometheusRuleGroupNamespace <a name="PrometheusRuleGroupNamespace" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace"></a>
+### PrometheusRuleGroupNamespace <a name="PrometheusRuleGroupNamespace" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace aws_prometheus_rule_group_namespace}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer"></a>
 
 ```typescript
-import { prometheusRuleGroupNamespace } from '@cdktf/provider-aws'
+import { prometheusRuleGroupNamespace } from '@cdktn/provider-aws'
 
 new prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace(scope: Construct, id: string, config: PrometheusRuleGroupNamespaceConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig">PrometheusRuleGroupNamespaceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig">PrometheusRuleGroupNamespaceConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig">PrometheusRuleGroupNamespaceConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig">PrometheusRuleGroupNamespaceConfig</a>
 
 ---
 
@@ -50,37 +50,37 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toString"></a>
 
 ```typescript
 public toString(): string
@@ -88,25 +88,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -114,7 +114,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -122,7 +122,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -130,19 +130,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -150,7 +150,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -158,7 +158,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -166,151 +166,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -320,7 +320,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -328,7 +328,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -336,7 +336,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -344,7 +344,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -352,7 +352,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -360,7 +360,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -368,25 +368,25 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
@@ -396,17 +396,17 @@ public resetTagsAll(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a PrometheusRuleGroupNamespace resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a PrometheusRuleGroupNamespace resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct"></a>
 
 ```typescript
-import { prometheusRuleGroupNamespace } from '@cdktf/provider-aws'
+import { prometheusRuleGroupNamespace } from '@cdktn/provider-aws'
 
 prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct(x: any)
 ```
@@ -427,7 +427,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -435,45 +435,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement"></a>
 
 ```typescript
-import { prometheusRuleGroupNamespace } from '@cdktf/provider-aws'
+import { prometheusRuleGroupNamespace } from '@cdktn/provider-aws'
 
 prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource"></a>
 
 ```typescript
-import { prometheusRuleGroupNamespace } from '@cdktf/provider-aws'
+import { prometheusRuleGroupNamespace } from '@cdktn/provider-aws'
 
 prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport"></a>
 
 ```typescript
-import { prometheusRuleGroupNamespace } from '@cdktf/provider-aws'
+import { prometheusRuleGroupNamespace } from '@cdktn/provider-aws'
 
 prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a PrometheusRuleGroupNamespace resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -481,7 +481,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -489,17 +489,17 @@ The construct id used in the generated config for the PrometheusRuleGroupNamespa
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing PrometheusRuleGroupNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -511,39 +511,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dataInput">dataInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceIdInput">workspaceIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.data">data</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceId">workspaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dataInput">dataInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceIdInput">workspaceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.data">data</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceId">workspaceId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -555,7 +555,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -565,7 +565,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -575,7 +575,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -585,7 +585,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -595,7 +595,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -605,7 +605,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -615,7 +615,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -625,7 +625,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -635,7 +635,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -645,7 +645,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -655,7 +655,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -665,7 +665,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -675,7 +675,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -685,7 +685,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -695,7 +695,7 @@ public readonly arn: string;
 
 ---
 
-##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dataInput"></a>
+##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.dataInput"></a>
 
 ```typescript
 public readonly dataInput: string;
@@ -705,7 +705,7 @@ public readonly dataInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -715,7 +715,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -725,7 +725,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -735,7 +735,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -745,7 +745,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -755,7 +755,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `workspaceIdInput`<sup>Optional</sup> <a name="workspaceIdInput" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceIdInput"></a>
+##### `workspaceIdInput`<sup>Optional</sup> <a name="workspaceIdInput" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceIdInput"></a>
 
 ```typescript
 public readonly workspaceIdInput: string;
@@ -765,7 +765,7 @@ public readonly workspaceIdInput: string;
 
 ---
 
-##### `data`<sup>Required</sup> <a name="data" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.data"></a>
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.data"></a>
 
 ```typescript
 public readonly data: string;
@@ -775,7 +775,7 @@ public readonly data: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -785,7 +785,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -795,7 +795,7 @@ public readonly name: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -805,7 +805,7 @@ public readonly region: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -815,7 +815,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -825,7 +825,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceId"></a>
+##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -839,11 +839,11 @@ public readonly workspaceId: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -855,12 +855,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### PrometheusRuleGroupNamespaceConfig <a name="PrometheusRuleGroupNamespaceConfig" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig"></a>
+### PrometheusRuleGroupNamespaceConfig <a name="PrometheusRuleGroupNamespaceConfig" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.Initializer"></a>
 
 ```typescript
-import { prometheusRuleGroupNamespace } from '@cdktf/provider-aws'
+import { prometheusRuleGroupNamespace } from '@cdktn/provider-aws'
 
 const prometheusRuleGroupNamespaceConfig: prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig = { ... }
 ```
@@ -869,24 +869,24 @@ const prometheusRuleGroupNamespaceConfig: prometheusRuleGroupNamespace.Prometheu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.data">data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#id PrometheusRuleGroupNamespace#id}. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#tags PrometheusRuleGroupNamespace#tags}. |
-| <code><a href="#@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#tags_all PrometheusRuleGroupNamespace#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.data">data</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#id PrometheusRuleGroupNamespace#id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#tags PrometheusRuleGroupNamespace#tags}. |
+| <code><a href="#@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#tags_all PrometheusRuleGroupNamespace#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -896,7 +896,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -906,7 +906,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -916,7 +916,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -926,7 +926,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -936,7 +936,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -946,7 +946,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -956,7 +956,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `data`<sup>Required</sup> <a name="data" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.data"></a>
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.data"></a>
 
 ```typescript
 public readonly data: string;
@@ -964,11 +964,11 @@ public readonly data: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#data PrometheusRuleGroupNamespace#data}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -976,11 +976,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#name PrometheusRuleGroupNamespace#name}.
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -988,11 +988,11 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#workspace_id PrometheusRuleGroupNamespace#workspace_id}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1000,14 +1000,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#id PrometheusRuleGroupNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#id PrometheusRuleGroupNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1017,11 +1017,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#region PrometheusRuleGroupNamespace#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#region PrometheusRuleGroupNamespace#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1029,11 +1029,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#tags PrometheusRuleGroupNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#tags PrometheusRuleGroupNamespace#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespaceConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1041,7 +1041,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/prometheus_rule_group_namespace#tags_all PrometheusRuleGroupNamespace#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_rule_group_namespace#tags_all PrometheusRuleGroupNamespace#tags_all}.
 
 ---
 

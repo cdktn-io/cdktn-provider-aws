@@ -1,28 +1,28 @@
-# `eip` Submodule <a name="`eip` Submodule" id="@cdktf/provider-aws.eip"></a>
+# `eip` Submodule <a name="`eip` Submodule" id="@cdktn/provider-aws.eip"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Eip <a name="Eip" id="@cdktf/provider-aws.eip.Eip"></a>
+### Eip <a name="Eip" id="@cdktn/provider-aws.eip.Eip"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip aws_eip}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip aws_eip}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.eip.Eip.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eip.Eip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.NewEip(scope Construct, id *string, config EipConfig) Eip
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.eip.EipConfig">EipConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.eip.EipConfig">EipConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.eip.Eip.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.eip.Eip.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.eip.Eip.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.eip.Eip.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-aws.eip.Eip.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.eip.Eip.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.eip.EipConfig">EipConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.eip.EipConfig">EipConfig</a>
 
 ---
 
@@ -50,48 +50,48 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetAddress">ResetAddress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetAssociateWithPrivateIp">ResetAssociateWithPrivateIp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetCustomerOwnedIpv4Pool">ResetCustomerOwnedIpv4Pool</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetDomain">ResetDomain</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetInstance">ResetInstance</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetIpamPoolId">ResetIpamPoolId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetNetworkBorderGroup">ResetNetworkBorderGroup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetNetworkInterface">ResetNetworkInterface</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetPublicIpv4Pool">ResetPublicIpv4Pool</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetAddress">ResetAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetAssociateWithPrivateIp">ResetAssociateWithPrivateIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetCustomerOwnedIpv4Pool">ResetCustomerOwnedIpv4Pool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetDomain">ResetDomain</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetInstance">ResetInstance</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetIpamPoolId">ResetIpamPoolId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetNetworkBorderGroup">ResetNetworkBorderGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetNetworkInterface">ResetNetworkInterface</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetPublicIpv4Pool">ResetPublicIpv4Pool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.eip.Eip.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.eip.Eip.toString"></a>
 
 ```go
 func ToString() *string
@@ -99,25 +99,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.eip.Eip.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.eip.Eip.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.eip.Eip.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.eip.Eip.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.eip.Eip.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.eip.Eip.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.eip.Eip.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.eip.Eip.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -125,7 +125,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.eip.Eip.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.eip.Eip.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -133,7 +133,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.eip.Eip.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.eip.Eip.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -141,19 +141,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.eip.Eip.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.eip.Eip.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.eip.Eip.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.eip.Eip.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.eip.Eip.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.eip.Eip.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -161,7 +161,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.eip.Eip.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.eip.Eip.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -169,7 +169,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.eip.Eip.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.eip.Eip.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -177,151 +177,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.eip.Eip.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.eip.Eip.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.eip.Eip.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.eip.Eip.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.eip.Eip.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.eip.Eip.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.eip.Eip.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.eip.Eip.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.eip.Eip.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.eip.Eip.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.eip.Eip.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.eip.Eip.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.eip.Eip.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.eip.Eip.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.eip.Eip.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.eip.Eip.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.eip.Eip.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.eip.Eip.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.eip.Eip.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.eip.Eip.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.eip.Eip.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.eip.Eip.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.eip.Eip.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.eip.Eip.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.eip.Eip.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.eip.Eip.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.eip.Eip.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.eip.Eip.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.Eip.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.Eip.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.eip.Eip.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.eip.Eip.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -331,7 +331,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.eip.Eip.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.eip.Eip.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.eip.Eip.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.eip.Eip.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -347,7 +347,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.eip.Eip.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.eip.Eip.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -355,7 +355,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.eip.Eip.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.eip.Eip.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -363,7 +363,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.eip.Eip.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.eip.Eip.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -371,7 +371,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.eip.Eip.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.eip.Eip.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -379,97 +379,97 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-aws.eip.Eip.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.eip.Eip.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value EipTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.eip.Eip.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.eip.Eip.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.eip.EipTimeouts">EipTimeouts</a>
 
 ---
 
-##### `ResetAddress` <a name="ResetAddress" id="@cdktf/provider-aws.eip.Eip.resetAddress"></a>
+##### `ResetAddress` <a name="ResetAddress" id="@cdktn/provider-aws.eip.Eip.resetAddress"></a>
 
 ```go
 func ResetAddress()
 ```
 
-##### `ResetAssociateWithPrivateIp` <a name="ResetAssociateWithPrivateIp" id="@cdktf/provider-aws.eip.Eip.resetAssociateWithPrivateIp"></a>
+##### `ResetAssociateWithPrivateIp` <a name="ResetAssociateWithPrivateIp" id="@cdktn/provider-aws.eip.Eip.resetAssociateWithPrivateIp"></a>
 
 ```go
 func ResetAssociateWithPrivateIp()
 ```
 
-##### `ResetCustomerOwnedIpv4Pool` <a name="ResetCustomerOwnedIpv4Pool" id="@cdktf/provider-aws.eip.Eip.resetCustomerOwnedIpv4Pool"></a>
+##### `ResetCustomerOwnedIpv4Pool` <a name="ResetCustomerOwnedIpv4Pool" id="@cdktn/provider-aws.eip.Eip.resetCustomerOwnedIpv4Pool"></a>
 
 ```go
 func ResetCustomerOwnedIpv4Pool()
 ```
 
-##### `ResetDomain` <a name="ResetDomain" id="@cdktf/provider-aws.eip.Eip.resetDomain"></a>
+##### `ResetDomain` <a name="ResetDomain" id="@cdktn/provider-aws.eip.Eip.resetDomain"></a>
 
 ```go
 func ResetDomain()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.eip.Eip.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.eip.Eip.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetInstance` <a name="ResetInstance" id="@cdktf/provider-aws.eip.Eip.resetInstance"></a>
+##### `ResetInstance` <a name="ResetInstance" id="@cdktn/provider-aws.eip.Eip.resetInstance"></a>
 
 ```go
 func ResetInstance()
 ```
 
-##### `ResetIpamPoolId` <a name="ResetIpamPoolId" id="@cdktf/provider-aws.eip.Eip.resetIpamPoolId"></a>
+##### `ResetIpamPoolId` <a name="ResetIpamPoolId" id="@cdktn/provider-aws.eip.Eip.resetIpamPoolId"></a>
 
 ```go
 func ResetIpamPoolId()
 ```
 
-##### `ResetNetworkBorderGroup` <a name="ResetNetworkBorderGroup" id="@cdktf/provider-aws.eip.Eip.resetNetworkBorderGroup"></a>
+##### `ResetNetworkBorderGroup` <a name="ResetNetworkBorderGroup" id="@cdktn/provider-aws.eip.Eip.resetNetworkBorderGroup"></a>
 
 ```go
 func ResetNetworkBorderGroup()
 ```
 
-##### `ResetNetworkInterface` <a name="ResetNetworkInterface" id="@cdktf/provider-aws.eip.Eip.resetNetworkInterface"></a>
+##### `ResetNetworkInterface` <a name="ResetNetworkInterface" id="@cdktn/provider-aws.eip.Eip.resetNetworkInterface"></a>
 
 ```go
 func ResetNetworkInterface()
 ```
 
-##### `ResetPublicIpv4Pool` <a name="ResetPublicIpv4Pool" id="@cdktf/provider-aws.eip.Eip.resetPublicIpv4Pool"></a>
+##### `ResetPublicIpv4Pool` <a name="ResetPublicIpv4Pool" id="@cdktn/provider-aws.eip.Eip.resetPublicIpv4Pool"></a>
 
 ```go
 func ResetPublicIpv4Pool()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.eip.Eip.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.eip.Eip.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.eip.Eip.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.eip.Eip.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.eip.Eip.resetTagsAll"></a>
+##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktn/provider-aws.eip.Eip.resetTagsAll"></a>
 
 ```go
 func ResetTagsAll()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.eip.Eip.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.eip.Eip.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -479,17 +479,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Eip resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Eip resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.eip.Eip.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.eip.Eip.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_IsConstruct(x interface{}) *bool
 ```
@@ -510,7 +510,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.eip.Eip.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.eip.Eip.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -518,45 +518,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.eip.Eip.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.eip.Eip.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.eip.Eip.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.eip.Eip.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.eip.Eip.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.eip.Eip.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.eip.Eip.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.eip.Eip.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.eip.Eip.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.eip.Eip.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.Eip_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a Eip resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.eip.Eip.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.eip.Eip.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -564,7 +564,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.eip.Eip.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.eip.Eip.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -572,17 +572,17 @@ The construct id used in the generated config for the Eip to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.eip.Eip.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.eip.Eip.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing Eip that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.eip.Eip.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.eip.Eip.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -594,62 +594,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.allocationId">AllocationId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.associationId">AssociationId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.carrierIp">CarrierIp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.customerOwnedIp">CustomerOwnedIp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.privateDns">PrivateDns</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.privateIp">PrivateIp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.ptrRecord">PtrRecord</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicDns">PublicDns</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicIp">PublicIp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference">EipTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.addressInput">AddressInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIpInput">AssociateWithPrivateIpInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.customerOwnedIpv4PoolInput">CustomerOwnedIpv4PoolInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.domainInput">DomainInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.instanceInput">InstanceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.ipamPoolIdInput">IpamPoolIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.networkBorderGroupInput">NetworkBorderGroupInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.networkInterfaceInput">NetworkInterfaceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicIpv4PoolInput">PublicIpv4PoolInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.address">Address</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.instance">Instance</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.ipamPoolId">IpamPoolId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.networkInterface">NetworkInterface</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.publicIpv4Pool">PublicIpv4Pool</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.allocationId">AllocationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.associationId">AssociationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.carrierIp">CarrierIp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.customerOwnedIp">CustomerOwnedIp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.privateDns">PrivateDns</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.privateIp">PrivateIp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.ptrRecord">PtrRecord</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.publicDns">PublicDns</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.publicIp">PublicIp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference">EipTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.addressInput">AddressInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.associateWithPrivateIpInput">AssociateWithPrivateIpInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.customerOwnedIpv4PoolInput">CustomerOwnedIpv4PoolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.domainInput">DomainInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.instanceInput">InstanceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.ipamPoolIdInput">IpamPoolIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.networkBorderGroupInput">NetworkBorderGroupInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.networkInterfaceInput">NetworkInterfaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.publicIpv4PoolInput">PublicIpv4PoolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.address">Address</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.domain">Domain</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.instance">Instance</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.ipamPoolId">IpamPoolId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.networkInterface">NetworkInterface</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.publicIpv4Pool">PublicIpv4Pool</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.eip.Eip.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.eip.Eip.property.node"></a>
 
 ```go
 func Node() Node
@@ -661,7 +661,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.eip.Eip.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.eip.Eip.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -671,7 +671,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.eip.Eip.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.eip.Eip.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -681,7 +681,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.eip.Eip.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.eip.Eip.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -691,7 +691,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.eip.Eip.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.eip.Eip.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -701,7 +701,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.eip.Eip.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.eip.Eip.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -711,7 +711,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.eip.Eip.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.eip.Eip.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -721,7 +721,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.eip.Eip.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.eip.Eip.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -731,7 +731,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.eip.Eip.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.eip.Eip.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -741,7 +741,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.eip.Eip.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.eip.Eip.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -751,7 +751,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.eip.Eip.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.eip.Eip.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -761,7 +761,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.eip.Eip.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.eip.Eip.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -771,7 +771,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.eip.Eip.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.eip.Eip.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -781,7 +781,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.eip.Eip.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.eip.Eip.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -791,7 +791,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `AllocationId`<sup>Required</sup> <a name="AllocationId" id="@cdktf/provider-aws.eip.Eip.property.allocationId"></a>
+##### `AllocationId`<sup>Required</sup> <a name="AllocationId" id="@cdktn/provider-aws.eip.Eip.property.allocationId"></a>
 
 ```go
 func AllocationId() *string
@@ -801,7 +801,7 @@ func AllocationId() *string
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.eip.Eip.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.eip.Eip.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -811,7 +811,7 @@ func Arn() *string
 
 ---
 
-##### `AssociationId`<sup>Required</sup> <a name="AssociationId" id="@cdktf/provider-aws.eip.Eip.property.associationId"></a>
+##### `AssociationId`<sup>Required</sup> <a name="AssociationId" id="@cdktn/provider-aws.eip.Eip.property.associationId"></a>
 
 ```go
 func AssociationId() *string
@@ -821,7 +821,7 @@ func AssociationId() *string
 
 ---
 
-##### `CarrierIp`<sup>Required</sup> <a name="CarrierIp" id="@cdktf/provider-aws.eip.Eip.property.carrierIp"></a>
+##### `CarrierIp`<sup>Required</sup> <a name="CarrierIp" id="@cdktn/provider-aws.eip.Eip.property.carrierIp"></a>
 
 ```go
 func CarrierIp() *string
@@ -831,7 +831,7 @@ func CarrierIp() *string
 
 ---
 
-##### `CustomerOwnedIp`<sup>Required</sup> <a name="CustomerOwnedIp" id="@cdktf/provider-aws.eip.Eip.property.customerOwnedIp"></a>
+##### `CustomerOwnedIp`<sup>Required</sup> <a name="CustomerOwnedIp" id="@cdktn/provider-aws.eip.Eip.property.customerOwnedIp"></a>
 
 ```go
 func CustomerOwnedIp() *string
@@ -841,7 +841,7 @@ func CustomerOwnedIp() *string
 
 ---
 
-##### `PrivateDns`<sup>Required</sup> <a name="PrivateDns" id="@cdktf/provider-aws.eip.Eip.property.privateDns"></a>
+##### `PrivateDns`<sup>Required</sup> <a name="PrivateDns" id="@cdktn/provider-aws.eip.Eip.property.privateDns"></a>
 
 ```go
 func PrivateDns() *string
@@ -851,7 +851,7 @@ func PrivateDns() *string
 
 ---
 
-##### `PrivateIp`<sup>Required</sup> <a name="PrivateIp" id="@cdktf/provider-aws.eip.Eip.property.privateIp"></a>
+##### `PrivateIp`<sup>Required</sup> <a name="PrivateIp" id="@cdktn/provider-aws.eip.Eip.property.privateIp"></a>
 
 ```go
 func PrivateIp() *string
@@ -861,7 +861,7 @@ func PrivateIp() *string
 
 ---
 
-##### `PtrRecord`<sup>Required</sup> <a name="PtrRecord" id="@cdktf/provider-aws.eip.Eip.property.ptrRecord"></a>
+##### `PtrRecord`<sup>Required</sup> <a name="PtrRecord" id="@cdktn/provider-aws.eip.Eip.property.ptrRecord"></a>
 
 ```go
 func PtrRecord() *string
@@ -871,7 +871,7 @@ func PtrRecord() *string
 
 ---
 
-##### `PublicDns`<sup>Required</sup> <a name="PublicDns" id="@cdktf/provider-aws.eip.Eip.property.publicDns"></a>
+##### `PublicDns`<sup>Required</sup> <a name="PublicDns" id="@cdktn/provider-aws.eip.Eip.property.publicDns"></a>
 
 ```go
 func PublicDns() *string
@@ -881,7 +881,7 @@ func PublicDns() *string
 
 ---
 
-##### `PublicIp`<sup>Required</sup> <a name="PublicIp" id="@cdktf/provider-aws.eip.Eip.property.publicIp"></a>
+##### `PublicIp`<sup>Required</sup> <a name="PublicIp" id="@cdktn/provider-aws.eip.Eip.property.publicIp"></a>
 
 ```go
 func PublicIp() *string
@@ -891,17 +891,17 @@ func PublicIp() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-aws.eip.Eip.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.eip.Eip.property.timeouts"></a>
 
 ```go
 func Timeouts() EipTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference">EipTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference">EipTimeoutsOutputReference</a>
 
 ---
 
-##### `AddressInput`<sup>Optional</sup> <a name="AddressInput" id="@cdktf/provider-aws.eip.Eip.property.addressInput"></a>
+##### `AddressInput`<sup>Optional</sup> <a name="AddressInput" id="@cdktn/provider-aws.eip.Eip.property.addressInput"></a>
 
 ```go
 func AddressInput() *string
@@ -911,7 +911,7 @@ func AddressInput() *string
 
 ---
 
-##### `AssociateWithPrivateIpInput`<sup>Optional</sup> <a name="AssociateWithPrivateIpInput" id="@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIpInput"></a>
+##### `AssociateWithPrivateIpInput`<sup>Optional</sup> <a name="AssociateWithPrivateIpInput" id="@cdktn/provider-aws.eip.Eip.property.associateWithPrivateIpInput"></a>
 
 ```go
 func AssociateWithPrivateIpInput() *string
@@ -921,7 +921,7 @@ func AssociateWithPrivateIpInput() *string
 
 ---
 
-##### `CustomerOwnedIpv4PoolInput`<sup>Optional</sup> <a name="CustomerOwnedIpv4PoolInput" id="@cdktf/provider-aws.eip.Eip.property.customerOwnedIpv4PoolInput"></a>
+##### `CustomerOwnedIpv4PoolInput`<sup>Optional</sup> <a name="CustomerOwnedIpv4PoolInput" id="@cdktn/provider-aws.eip.Eip.property.customerOwnedIpv4PoolInput"></a>
 
 ```go
 func CustomerOwnedIpv4PoolInput() *string
@@ -931,7 +931,7 @@ func CustomerOwnedIpv4PoolInput() *string
 
 ---
 
-##### `DomainInput`<sup>Optional</sup> <a name="DomainInput" id="@cdktf/provider-aws.eip.Eip.property.domainInput"></a>
+##### `DomainInput`<sup>Optional</sup> <a name="DomainInput" id="@cdktn/provider-aws.eip.Eip.property.domainInput"></a>
 
 ```go
 func DomainInput() *string
@@ -941,7 +941,7 @@ func DomainInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.eip.Eip.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.eip.Eip.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -951,7 +951,7 @@ func IdInput() *string
 
 ---
 
-##### `InstanceInput`<sup>Optional</sup> <a name="InstanceInput" id="@cdktf/provider-aws.eip.Eip.property.instanceInput"></a>
+##### `InstanceInput`<sup>Optional</sup> <a name="InstanceInput" id="@cdktn/provider-aws.eip.Eip.property.instanceInput"></a>
 
 ```go
 func InstanceInput() *string
@@ -961,7 +961,7 @@ func InstanceInput() *string
 
 ---
 
-##### `IpamPoolIdInput`<sup>Optional</sup> <a name="IpamPoolIdInput" id="@cdktf/provider-aws.eip.Eip.property.ipamPoolIdInput"></a>
+##### `IpamPoolIdInput`<sup>Optional</sup> <a name="IpamPoolIdInput" id="@cdktn/provider-aws.eip.Eip.property.ipamPoolIdInput"></a>
 
 ```go
 func IpamPoolIdInput() *string
@@ -971,7 +971,7 @@ func IpamPoolIdInput() *string
 
 ---
 
-##### `NetworkBorderGroupInput`<sup>Optional</sup> <a name="NetworkBorderGroupInput" id="@cdktf/provider-aws.eip.Eip.property.networkBorderGroupInput"></a>
+##### `NetworkBorderGroupInput`<sup>Optional</sup> <a name="NetworkBorderGroupInput" id="@cdktn/provider-aws.eip.Eip.property.networkBorderGroupInput"></a>
 
 ```go
 func NetworkBorderGroupInput() *string
@@ -981,7 +981,7 @@ func NetworkBorderGroupInput() *string
 
 ---
 
-##### `NetworkInterfaceInput`<sup>Optional</sup> <a name="NetworkInterfaceInput" id="@cdktf/provider-aws.eip.Eip.property.networkInterfaceInput"></a>
+##### `NetworkInterfaceInput`<sup>Optional</sup> <a name="NetworkInterfaceInput" id="@cdktn/provider-aws.eip.Eip.property.networkInterfaceInput"></a>
 
 ```go
 func NetworkInterfaceInput() *string
@@ -991,7 +991,7 @@ func NetworkInterfaceInput() *string
 
 ---
 
-##### `PublicIpv4PoolInput`<sup>Optional</sup> <a name="PublicIpv4PoolInput" id="@cdktf/provider-aws.eip.Eip.property.publicIpv4PoolInput"></a>
+##### `PublicIpv4PoolInput`<sup>Optional</sup> <a name="PublicIpv4PoolInput" id="@cdktn/provider-aws.eip.Eip.property.publicIpv4PoolInput"></a>
 
 ```go
 func PublicIpv4PoolInput() *string
@@ -1001,7 +1001,7 @@ func PublicIpv4PoolInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.eip.Eip.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.eip.Eip.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -1011,7 +1011,7 @@ func RegionInput() *string
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.eip.Eip.property.tagsAllInput"></a>
+##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktn/provider-aws.eip.Eip.property.tagsAllInput"></a>
 
 ```go
 func TagsAllInput() *map[string]*string
@@ -1021,7 +1021,7 @@ func TagsAllInput() *map[string]*string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.eip.Eip.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.eip.Eip.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -1031,7 +1031,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.eip.Eip.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.eip.Eip.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -1041,7 +1041,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-aws.eip.Eip.property.address"></a>
+##### `Address`<sup>Required</sup> <a name="Address" id="@cdktn/provider-aws.eip.Eip.property.address"></a>
 
 ```go
 func Address() *string
@@ -1051,7 +1051,7 @@ func Address() *string
 
 ---
 
-##### `AssociateWithPrivateIp`<sup>Required</sup> <a name="AssociateWithPrivateIp" id="@cdktf/provider-aws.eip.Eip.property.associateWithPrivateIp"></a>
+##### `AssociateWithPrivateIp`<sup>Required</sup> <a name="AssociateWithPrivateIp" id="@cdktn/provider-aws.eip.Eip.property.associateWithPrivateIp"></a>
 
 ```go
 func AssociateWithPrivateIp() *string
@@ -1061,7 +1061,7 @@ func AssociateWithPrivateIp() *string
 
 ---
 
-##### `CustomerOwnedIpv4Pool`<sup>Required</sup> <a name="CustomerOwnedIpv4Pool" id="@cdktf/provider-aws.eip.Eip.property.customerOwnedIpv4Pool"></a>
+##### `CustomerOwnedIpv4Pool`<sup>Required</sup> <a name="CustomerOwnedIpv4Pool" id="@cdktn/provider-aws.eip.Eip.property.customerOwnedIpv4Pool"></a>
 
 ```go
 func CustomerOwnedIpv4Pool() *string
@@ -1071,7 +1071,7 @@ func CustomerOwnedIpv4Pool() *string
 
 ---
 
-##### `Domain`<sup>Required</sup> <a name="Domain" id="@cdktf/provider-aws.eip.Eip.property.domain"></a>
+##### `Domain`<sup>Required</sup> <a name="Domain" id="@cdktn/provider-aws.eip.Eip.property.domain"></a>
 
 ```go
 func Domain() *string
@@ -1081,7 +1081,7 @@ func Domain() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.eip.Eip.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.eip.Eip.property.id"></a>
 
 ```go
 func Id() *string
@@ -1091,7 +1091,7 @@ func Id() *string
 
 ---
 
-##### `Instance`<sup>Required</sup> <a name="Instance" id="@cdktf/provider-aws.eip.Eip.property.instance"></a>
+##### `Instance`<sup>Required</sup> <a name="Instance" id="@cdktn/provider-aws.eip.Eip.property.instance"></a>
 
 ```go
 func Instance() *string
@@ -1101,7 +1101,7 @@ func Instance() *string
 
 ---
 
-##### `IpamPoolId`<sup>Required</sup> <a name="IpamPoolId" id="@cdktf/provider-aws.eip.Eip.property.ipamPoolId"></a>
+##### `IpamPoolId`<sup>Required</sup> <a name="IpamPoolId" id="@cdktn/provider-aws.eip.Eip.property.ipamPoolId"></a>
 
 ```go
 func IpamPoolId() *string
@@ -1111,7 +1111,7 @@ func IpamPoolId() *string
 
 ---
 
-##### `NetworkBorderGroup`<sup>Required</sup> <a name="NetworkBorderGroup" id="@cdktf/provider-aws.eip.Eip.property.networkBorderGroup"></a>
+##### `NetworkBorderGroup`<sup>Required</sup> <a name="NetworkBorderGroup" id="@cdktn/provider-aws.eip.Eip.property.networkBorderGroup"></a>
 
 ```go
 func NetworkBorderGroup() *string
@@ -1121,7 +1121,7 @@ func NetworkBorderGroup() *string
 
 ---
 
-##### `NetworkInterface`<sup>Required</sup> <a name="NetworkInterface" id="@cdktf/provider-aws.eip.Eip.property.networkInterface"></a>
+##### `NetworkInterface`<sup>Required</sup> <a name="NetworkInterface" id="@cdktn/provider-aws.eip.Eip.property.networkInterface"></a>
 
 ```go
 func NetworkInterface() *string
@@ -1131,7 +1131,7 @@ func NetworkInterface() *string
 
 ---
 
-##### `PublicIpv4Pool`<sup>Required</sup> <a name="PublicIpv4Pool" id="@cdktf/provider-aws.eip.Eip.property.publicIpv4Pool"></a>
+##### `PublicIpv4Pool`<sup>Required</sup> <a name="PublicIpv4Pool" id="@cdktn/provider-aws.eip.Eip.property.publicIpv4Pool"></a>
 
 ```go
 func PublicIpv4Pool() *string
@@ -1141,7 +1141,7 @@ func PublicIpv4Pool() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.eip.Eip.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.eip.Eip.property.region"></a>
 
 ```go
 func Region() *string
@@ -1151,7 +1151,7 @@ func Region() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.eip.Eip.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.eip.Eip.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -1161,7 +1161,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.eip.Eip.property.tagsAll"></a>
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.eip.Eip.property.tagsAll"></a>
 
 ```go
 func TagsAll() *map[string]*string
@@ -1175,11 +1175,11 @@ func TagsAll() *map[string]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.Eip.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.Eip.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.eip.Eip.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.eip.Eip.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1191,12 +1191,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### EipConfig <a name="EipConfig" id="@cdktf/provider-aws.eip.EipConfig"></a>
+### EipConfig <a name="EipConfig" id="@cdktn/provider-aws.eip.EipConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.eip.EipConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eip.EipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 &eip.EipConfig {
 	Connection: interface{},
@@ -1219,7 +1219,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.eip.EipTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.eip.EipTimeouts,
 }
 ```
 
@@ -1227,31 +1227,31 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#address Eip#address}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#domain Eip#domain}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#id Eip#id}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#instance Eip#instance}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.ipamPoolId">IpamPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#ipam_pool_id Eip#ipam_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#network_border_group Eip#network_border_group}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.networkInterface">NetworkInterface</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#network_interface Eip#network_interface}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.publicIpv4Pool">PublicIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#tags Eip#tags}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#tags_all Eip#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#address Eip#address}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.associateWithPrivateIp">AssociateWithPrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.customerOwnedIpv4Pool">CustomerOwnedIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#domain Eip#domain}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#id Eip#id}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#instance Eip#instance}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.ipamPoolId">IpamPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#ipam_pool_id Eip#ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.networkBorderGroup">NetworkBorderGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#network_border_group Eip#network_border_group}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.networkInterface">NetworkInterface</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#network_interface Eip#network_interface}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.publicIpv4Pool">PublicIpv4Pool</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#tags Eip#tags}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#tags_all Eip#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eip.EipTimeouts">EipTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.eip.EipConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.eip.EipConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1261,7 +1261,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.eip.EipConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.eip.EipConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1271,7 +1271,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.eip.EipConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.eip.EipConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1281,7 +1281,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.eip.EipConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.eip.EipConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1291,7 +1291,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.eip.EipConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.eip.EipConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1301,7 +1301,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.eip.EipConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.eip.EipConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1311,7 +1311,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.eip.EipConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.eip.EipConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1321,7 +1321,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Address`<sup>Optional</sup> <a name="Address" id="@cdktf/provider-aws.eip.EipConfig.property.address"></a>
+##### `Address`<sup>Optional</sup> <a name="Address" id="@cdktn/provider-aws.eip.EipConfig.property.address"></a>
 
 ```go
 Address *string
@@ -1329,11 +1329,11 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#address Eip#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#address Eip#address}.
 
 ---
 
-##### `AssociateWithPrivateIp`<sup>Optional</sup> <a name="AssociateWithPrivateIp" id="@cdktf/provider-aws.eip.EipConfig.property.associateWithPrivateIp"></a>
+##### `AssociateWithPrivateIp`<sup>Optional</sup> <a name="AssociateWithPrivateIp" id="@cdktn/provider-aws.eip.EipConfig.property.associateWithPrivateIp"></a>
 
 ```go
 AssociateWithPrivateIp *string
@@ -1341,11 +1341,11 @@ AssociateWithPrivateIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#associate_with_private_ip Eip#associate_with_private_ip}.
 
 ---
 
-##### `CustomerOwnedIpv4Pool`<sup>Optional</sup> <a name="CustomerOwnedIpv4Pool" id="@cdktf/provider-aws.eip.EipConfig.property.customerOwnedIpv4Pool"></a>
+##### `CustomerOwnedIpv4Pool`<sup>Optional</sup> <a name="CustomerOwnedIpv4Pool" id="@cdktn/provider-aws.eip.EipConfig.property.customerOwnedIpv4Pool"></a>
 
 ```go
 CustomerOwnedIpv4Pool *string
@@ -1353,11 +1353,11 @@ CustomerOwnedIpv4Pool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#customer_owned_ipv4_pool Eip#customer_owned_ipv4_pool}.
 
 ---
 
-##### `Domain`<sup>Optional</sup> <a name="Domain" id="@cdktf/provider-aws.eip.EipConfig.property.domain"></a>
+##### `Domain`<sup>Optional</sup> <a name="Domain" id="@cdktn/provider-aws.eip.EipConfig.property.domain"></a>
 
 ```go
 Domain *string
@@ -1365,11 +1365,11 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#domain Eip#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#domain Eip#domain}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.eip.EipConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.eip.EipConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1377,14 +1377,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#id Eip#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#id Eip#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Instance`<sup>Optional</sup> <a name="Instance" id="@cdktf/provider-aws.eip.EipConfig.property.instance"></a>
+##### `Instance`<sup>Optional</sup> <a name="Instance" id="@cdktn/provider-aws.eip.EipConfig.property.instance"></a>
 
 ```go
 Instance *string
@@ -1392,11 +1392,11 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#instance Eip#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#instance Eip#instance}.
 
 ---
 
-##### `IpamPoolId`<sup>Optional</sup> <a name="IpamPoolId" id="@cdktf/provider-aws.eip.EipConfig.property.ipamPoolId"></a>
+##### `IpamPoolId`<sup>Optional</sup> <a name="IpamPoolId" id="@cdktn/provider-aws.eip.EipConfig.property.ipamPoolId"></a>
 
 ```go
 IpamPoolId *string
@@ -1404,11 +1404,11 @@ IpamPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#ipam_pool_id Eip#ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#ipam_pool_id Eip#ipam_pool_id}.
 
 ---
 
-##### `NetworkBorderGroup`<sup>Optional</sup> <a name="NetworkBorderGroup" id="@cdktf/provider-aws.eip.EipConfig.property.networkBorderGroup"></a>
+##### `NetworkBorderGroup`<sup>Optional</sup> <a name="NetworkBorderGroup" id="@cdktn/provider-aws.eip.EipConfig.property.networkBorderGroup"></a>
 
 ```go
 NetworkBorderGroup *string
@@ -1416,11 +1416,11 @@ NetworkBorderGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#network_border_group Eip#network_border_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#network_border_group Eip#network_border_group}.
 
 ---
 
-##### `NetworkInterface`<sup>Optional</sup> <a name="NetworkInterface" id="@cdktf/provider-aws.eip.EipConfig.property.networkInterface"></a>
+##### `NetworkInterface`<sup>Optional</sup> <a name="NetworkInterface" id="@cdktn/provider-aws.eip.EipConfig.property.networkInterface"></a>
 
 ```go
 NetworkInterface *string
@@ -1428,11 +1428,11 @@ NetworkInterface *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#network_interface Eip#network_interface}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#network_interface Eip#network_interface}.
 
 ---
 
-##### `PublicIpv4Pool`<sup>Optional</sup> <a name="PublicIpv4Pool" id="@cdktf/provider-aws.eip.EipConfig.property.publicIpv4Pool"></a>
+##### `PublicIpv4Pool`<sup>Optional</sup> <a name="PublicIpv4Pool" id="@cdktn/provider-aws.eip.EipConfig.property.publicIpv4Pool"></a>
 
 ```go
 PublicIpv4Pool *string
@@ -1440,11 +1440,11 @@ PublicIpv4Pool *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#public_ipv4_pool Eip#public_ipv4_pool}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.eip.EipConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.eip.EipConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1454,11 +1454,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#region Eip#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#region Eip#region}
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.eip.EipConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.eip.EipConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1466,11 +1466,11 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#tags Eip#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#tags Eip#tags}.
 
 ---
 
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.eip.EipConfig.property.tagsAll"></a>
+##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktn/provider-aws.eip.EipConfig.property.tagsAll"></a>
 
 ```go
 TagsAll *map[string]*string
@@ -1478,30 +1478,30 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#tags_all Eip#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#tags_all Eip#tags_all}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-aws.eip.EipConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-aws.eip.EipConfig.property.timeouts"></a>
 
 ```go
 Timeouts EipTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.eip.EipTimeouts">EipTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.eip.EipTimeouts">EipTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#timeouts Eip#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#timeouts Eip#timeouts}
 
 ---
 
-### EipTimeouts <a name="EipTimeouts" id="@cdktf/provider-aws.eip.EipTimeouts"></a>
+### EipTimeouts <a name="EipTimeouts" id="@cdktn/provider-aws.eip.EipTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.eip.EipTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.eip.EipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 &eip.EipTimeouts {
 	Delete: *string,
@@ -1514,13 +1514,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#delete Eip#delete}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#read Eip#read}. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#update Eip#update}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#delete Eip#delete}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#read Eip#read}. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#update Eip#update}. |
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-aws.eip.EipTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-aws.eip.EipTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1528,11 +1528,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#delete Eip#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#delete Eip#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-aws.eip.EipTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-aws.eip.EipTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1540,11 +1540,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#read Eip#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#read Eip#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-aws.eip.EipTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-aws.eip.EipTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1552,30 +1552,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/eip#update Eip#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eip#update Eip#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### EipTimeoutsOutputReference <a name="EipTimeoutsOutputReference" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference"></a>
+### EipTimeoutsOutputReference <a name="EipTimeoutsOutputReference" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/eip"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/eip"
 
 eip.NewEipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EipTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1583,7 +1583,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1595,152 +1595,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1748,13 +1748,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1764,19 +1764,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1787,19 +1787,19 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1813,7 +1813,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1823,7 +1823,7 @@ func Fqn() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1833,7 +1833,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1843,7 +1843,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -1853,7 +1853,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1863,7 +1863,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -1873,7 +1873,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -1883,7 +1883,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.eip.EipTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

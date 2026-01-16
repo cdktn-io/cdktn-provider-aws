@@ -1,28 +1,28 @@
-# `dataAwsBackupFramework` Submodule <a name="`dataAwsBackupFramework` Submodule" id="@cdktf/provider-aws.dataAwsBackupFramework"></a>
+# `dataAwsBackupFramework` Submodule <a name="`dataAwsBackupFramework` Submodule" id="@cdktn/provider-aws.dataAwsBackupFramework"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAwsBackupFramework <a name="DataAwsBackupFramework" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework"></a>
+### DataAwsBackupFramework <a name="DataAwsBackupFramework" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework aws_backup_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework aws_backup_framework}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFramework(scope Construct, id *string, config DataAwsBackupFrameworkConfig) DataAwsBackupFramework
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig">DataAwsBackupFrameworkConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig">DataAwsBackupFrameworkConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig">DataAwsBackupFrameworkConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig">DataAwsBackupFrameworkConfig</a>
 
 ---
 
@@ -50,30 +50,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toString"></a>
 
 ```go
 func ToString() *string
@@ -81,25 +81,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -107,7 +107,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -115,7 +115,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -123,7 +123,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -131,13 +131,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -145,139 +145,139 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.resetTags"></a>
 
 ```go
 func ResetTags()
@@ -287,17 +287,17 @@ func ResetTags()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsBackupFramework resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAwsBackupFramework resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -326,45 +326,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataAwsBackupFramework resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -372,7 +372,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -380,17 +380,17 @@ The construct id used in the generated config for the DataAwsBackupFramework to 
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DataAwsBackupFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -402,36 +402,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.control">Control</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList">DataAwsBackupFrameworkControlList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.creationTime">CreationTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.deploymentStatus">DeploymentStatus</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.status">Status</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.control">Control</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList">DataAwsBackupFrameworkControlList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.creationTime">CreationTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.deploymentStatus">DeploymentStatus</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.node"></a>
 
 ```go
 func Node() Node
@@ -443,7 +443,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -453,7 +453,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -463,7 +463,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -473,7 +473,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -483,7 +483,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -493,7 +493,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -503,7 +503,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -513,7 +513,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -523,7 +523,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -533,7 +533,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -543,7 +543,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -553,7 +553,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -563,17 +563,17 @@ func Arn() *string
 
 ---
 
-##### `Control`<sup>Required</sup> <a name="Control" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.control"></a>
+##### `Control`<sup>Required</sup> <a name="Control" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.control"></a>
 
 ```go
 func Control() DataAwsBackupFrameworkControlList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList">DataAwsBackupFrameworkControlList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList">DataAwsBackupFrameworkControlList</a>
 
 ---
 
-##### `CreationTime`<sup>Required</sup> <a name="CreationTime" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.creationTime"></a>
+##### `CreationTime`<sup>Required</sup> <a name="CreationTime" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.creationTime"></a>
 
 ```go
 func CreationTime() *string
@@ -583,7 +583,7 @@ func CreationTime() *string
 
 ---
 
-##### `DeploymentStatus`<sup>Required</sup> <a name="DeploymentStatus" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.deploymentStatus"></a>
+##### `DeploymentStatus`<sup>Required</sup> <a name="DeploymentStatus" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.deploymentStatus"></a>
 
 ```go
 func DeploymentStatus() *string
@@ -593,7 +593,7 @@ func DeploymentStatus() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.description"></a>
 
 ```go
 func Description() *string
@@ -603,7 +603,7 @@ func Description() *string
 
 ---
 
-##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.status"></a>
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.status"></a>
 
 ```go
 func Status() *string
@@ -613,7 +613,7 @@ func Status() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -623,7 +623,7 @@ func IdInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -633,7 +633,7 @@ func NameInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -643,7 +643,7 @@ func RegionInput() *string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -653,7 +653,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.id"></a>
 
 ```go
 func Id() *string
@@ -663,7 +663,7 @@ func Id() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.name"></a>
 
 ```go
 func Name() *string
@@ -673,7 +673,7 @@ func Name() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.region"></a>
 
 ```go
 func Region() *string
@@ -683,7 +683,7 @@ func Region() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -697,11 +697,11 @@ func Tags() *map[string]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -713,12 +713,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAwsBackupFrameworkConfig <a name="DataAwsBackupFrameworkConfig" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig"></a>
+### DataAwsBackupFrameworkConfig <a name="DataAwsBackupFrameworkConfig" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkConfig {
 	Connection: interface{},
@@ -739,21 +739,21 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -763,7 +763,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -773,7 +773,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -783,7 +783,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -793,7 +793,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -803,7 +803,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -813,7 +813,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -823,7 +823,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name"></a>
 
 ```go
 Name *string
@@ -831,11 +831,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id"></a>
 
 ```go
 Id *string
@@ -843,14 +843,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.region"></a>
 
 ```go
 Region *string
@@ -860,11 +860,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#region DataAwsBackupFramework#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#region DataAwsBackupFramework#region}
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -872,16 +872,16 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}.
 
 ---
 
-### DataAwsBackupFrameworkControl <a name="DataAwsBackupFrameworkControl" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl"></a>
+### DataAwsBackupFrameworkControl <a name="DataAwsBackupFrameworkControl" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControl {
 
@@ -889,12 +889,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
 ```
 
 
-### DataAwsBackupFrameworkControlInputParameter <a name="DataAwsBackupFrameworkControlInputParameter" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter"></a>
+### DataAwsBackupFrameworkControlInputParameter <a name="DataAwsBackupFrameworkControlInputParameter" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlInputParameter {
 
@@ -902,12 +902,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
 ```
 
 
-### DataAwsBackupFrameworkControlScope <a name="DataAwsBackupFrameworkControlScope" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope"></a>
+### DataAwsBackupFrameworkControlScope <a name="DataAwsBackupFrameworkControlScope" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlScope {
 
@@ -917,25 +917,25 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAwsBackupFrameworkControlInputParameterList <a name="DataAwsBackupFrameworkControlInputParameterList" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList"></a>
+### DataAwsBackupFrameworkControlInputParameterList <a name="DataAwsBackupFrameworkControlInputParameterList" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlInputParameterList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -943,7 +943,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -951,7 +951,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -963,15 +963,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -981,19 +981,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1001,13 +1001,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1017,13 +1017,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get"></a>
 
 ```go
 func Get(index *f64) DataAwsBackupFrameworkControlInputParameterOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1036,12 +1036,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1055,7 +1055,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1066,26 +1066,26 @@ func Fqn() *string
 ---
 
 
-### DataAwsBackupFrameworkControlInputParameterOutputReference <a name="DataAwsBackupFrameworkControlInputParameterOutputReference" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference"></a>
+### DataAwsBackupFrameworkControlInputParameterOutputReference <a name="DataAwsBackupFrameworkControlInputParameterOutputReference" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlInputParameterOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1093,7 +1093,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1101,7 +1101,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1109,7 +1109,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1121,149 +1121,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1271,13 +1271,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1292,15 +1292,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter">DataAwsBackupFrameworkControlInputParameter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter">DataAwsBackupFrameworkControlInputParameter</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1314,7 +1314,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1324,7 +1324,7 @@ func Fqn() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -1334,7 +1334,7 @@ func Name() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.value"></a>
 
 ```go
 func Value() *string
@@ -1344,36 +1344,36 @@ func Value() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DataAwsBackupFrameworkControlInputParameter
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter">DataAwsBackupFrameworkControlInputParameter</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter">DataAwsBackupFrameworkControlInputParameter</a>
 
 ---
 
 
-### DataAwsBackupFrameworkControlList <a name="DataAwsBackupFrameworkControlList" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList"></a>
+### DataAwsBackupFrameworkControlList <a name="DataAwsBackupFrameworkControlList" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1381,7 +1381,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1389,7 +1389,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1401,15 +1401,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1419,19 +1419,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1439,13 +1439,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1455,13 +1455,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get"></a>
 
 ```go
 func Get(index *f64) DataAwsBackupFrameworkControlOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1474,12 +1474,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1493,7 +1493,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1504,26 +1504,26 @@ func Fqn() *string
 ---
 
 
-### DataAwsBackupFrameworkControlOutputReference <a name="DataAwsBackupFrameworkControlOutputReference" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference"></a>
+### DataAwsBackupFrameworkControlOutputReference <a name="DataAwsBackupFrameworkControlOutputReference" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1531,7 +1531,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1539,7 +1539,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1547,7 +1547,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1559,149 +1559,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1709,13 +1709,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1730,16 +1730,16 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.inputParameter">InputParameter</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList">DataAwsBackupFrameworkControlInputParameterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList">DataAwsBackupFrameworkControlScopeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl">DataAwsBackupFrameworkControl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.inputParameter">InputParameter</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList">DataAwsBackupFrameworkControlInputParameterList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.scope">Scope</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList">DataAwsBackupFrameworkControlScopeList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl">DataAwsBackupFrameworkControl</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1753,7 +1753,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1763,17 +1763,17 @@ func Fqn() *string
 
 ---
 
-##### `InputParameter`<sup>Required</sup> <a name="InputParameter" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.inputParameter"></a>
+##### `InputParameter`<sup>Required</sup> <a name="InputParameter" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.inputParameter"></a>
 
 ```go
 func InputParameter() DataAwsBackupFrameworkControlInputParameterList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList">DataAwsBackupFrameworkControlInputParameterList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList">DataAwsBackupFrameworkControlInputParameterList</a>
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -1783,46 +1783,46 @@ func Name() *string
 
 ---
 
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.scope"></a>
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.scope"></a>
 
 ```go
 func Scope() DataAwsBackupFrameworkControlScopeList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList">DataAwsBackupFrameworkControlScopeList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList">DataAwsBackupFrameworkControlScopeList</a>
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DataAwsBackupFrameworkControl
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl">DataAwsBackupFrameworkControl</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl">DataAwsBackupFrameworkControl</a>
 
 ---
 
 
-### DataAwsBackupFrameworkControlScopeList <a name="DataAwsBackupFrameworkControlScopeList" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList"></a>
+### DataAwsBackupFrameworkControlScopeList <a name="DataAwsBackupFrameworkControlScopeList" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlScopeList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1830,7 +1830,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1838,7 +1838,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1850,15 +1850,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1868,19 +1868,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1888,13 +1888,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1904,13 +1904,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get"></a>
 
 ```go
 func Get(index *f64) DataAwsBackupFrameworkControlScopeOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1923,12 +1923,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1942,7 +1942,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1953,26 +1953,26 @@ func Fqn() *string
 ---
 
 
-### DataAwsBackupFrameworkControlScopeOutputReference <a name="DataAwsBackupFrameworkControlScopeOutputReference" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference"></a>
+### DataAwsBackupFrameworkControlScopeOutputReference <a name="DataAwsBackupFrameworkControlScopeOutputReference" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlScopeOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1980,7 +1980,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1988,7 +1988,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1996,7 +1996,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -2008,149 +2008,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2158,13 +2158,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2179,16 +2179,16 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceIds">ComplianceResourceIds</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceTypes">ComplianceResourceTypes</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.tags">Tags</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope">DataAwsBackupFrameworkControlScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceIds">ComplianceResourceIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceTypes">ComplianceResourceTypes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.tags">Tags</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope">DataAwsBackupFrameworkControlScope</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2202,7 +2202,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2212,7 +2212,7 @@ func Fqn() *string
 
 ---
 
-##### `ComplianceResourceIds`<sup>Required</sup> <a name="ComplianceResourceIds" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceIds"></a>
+##### `ComplianceResourceIds`<sup>Required</sup> <a name="ComplianceResourceIds" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceIds"></a>
 
 ```go
 func ComplianceResourceIds() *[]*string
@@ -2222,7 +2222,7 @@ func ComplianceResourceIds() *[]*string
 
 ---
 
-##### `ComplianceResourceTypes`<sup>Required</sup> <a name="ComplianceResourceTypes" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceTypes"></a>
+##### `ComplianceResourceTypes`<sup>Required</sup> <a name="ComplianceResourceTypes" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.complianceResourceTypes"></a>
 
 ```go
 func ComplianceResourceTypes() *[]*string
@@ -2232,7 +2232,7 @@ func ComplianceResourceTypes() *[]*string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.tags"></a>
 
 ```go
 func Tags() StringMap
@@ -2242,13 +2242,13 @@ func Tags() StringMap
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DataAwsBackupFrameworkControlScope
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope">DataAwsBackupFrameworkControlScope</a>
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope">DataAwsBackupFrameworkControlScope</a>
 
 ---
 

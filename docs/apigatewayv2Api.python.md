@@ -1,15 +1,15 @@
-# `apigatewayv2Api` Submodule <a name="`apigatewayv2Api` Submodule" id="@cdktf/provider-aws.apigatewayv2Api"></a>
+# `apigatewayv2Api` Submodule <a name="`apigatewayv2Api` Submodule" id="@cdktn/provider-aws.apigatewayv2Api"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Apigatewayv2Api <a name="Apigatewayv2Api" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api"></a>
+### Apigatewayv2Api <a name="Apigatewayv2Api" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api aws_apigatewayv2_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api aws_apigatewayv2_api}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2Api(
   scope: Construct,
@@ -44,37 +44,37 @@ apigatewayv2Api.Apigatewayv2Api(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.apiKeySelectionExpression">api_key_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.body">body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.corsConfiguration">cors_configuration</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | cors_configuration block. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.credentialsArn">credentials_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.disableExecuteApiEndpoint">disable_execute_api_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.ipAddressType">ip_address_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeKey">route_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeSelectionExpression">route_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.apiKeySelectionExpression">api_key_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.body">body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.corsConfiguration">cors_configuration</a></code> | <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | cors_configuration block. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.credentialsArn">credentials_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.disableExecuteApiEndpoint">disable_execute_api_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.ipAddressType">ip_address_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeKey">route_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeSelectionExpression">route_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -82,7 +82,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -92,196 +92,196 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}.
 
 ---
 
-##### `protocol_type`<sup>Required</sup> <a name="protocol_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.protocolType"></a>
+##### `protocol_type`<sup>Required</sup> <a name="protocol_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.protocolType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}.
 
 ---
 
-##### `api_key_selection_expression`<sup>Optional</sup> <a name="api_key_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.apiKeySelectionExpression"></a>
+##### `api_key_selection_expression`<sup>Optional</sup> <a name="api_key_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.apiKeySelectionExpression"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}.
 
 ---
 
-##### `body`<sup>Optional</sup> <a name="body" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.body"></a>
+##### `body`<sup>Optional</sup> <a name="body" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.body"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}.
 
 ---
 
-##### `cors_configuration`<sup>Optional</sup> <a name="cors_configuration" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.corsConfiguration"></a>
+##### `cors_configuration`<sup>Optional</sup> <a name="cors_configuration" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.corsConfiguration"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
 
 cors_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
 
 ---
 
-##### `credentials_arn`<sup>Optional</sup> <a name="credentials_arn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.credentialsArn"></a>
+##### `credentials_arn`<sup>Optional</sup> <a name="credentials_arn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.credentialsArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}.
 
 ---
 
-##### `disable_execute_api_endpoint`<sup>Optional</sup> <a name="disable_execute_api_endpoint" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.disableExecuteApiEndpoint"></a>
+##### `disable_execute_api_endpoint`<sup>Optional</sup> <a name="disable_execute_api_endpoint" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.disableExecuteApiEndpoint"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}.
 
 ---
 
-##### `fail_on_warnings`<sup>Optional</sup> <a name="fail_on_warnings" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.failOnWarnings"></a>
+##### `fail_on_warnings`<sup>Optional</sup> <a name="fail_on_warnings" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.failOnWarnings"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `ip_address_type`<sup>Optional</sup> <a name="ip_address_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.ipAddressType"></a>
+##### `ip_address_type`<sup>Optional</sup> <a name="ip_address_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.ipAddressType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#region Apigatewayv2Api#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#region Apigatewayv2Api#region}
 
 ---
 
-##### `route_key`<sup>Optional</sup> <a name="route_key" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeKey"></a>
+##### `route_key`<sup>Optional</sup> <a name="route_key" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeKey"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}.
 
 ---
 
-##### `route_selection_expression`<sup>Optional</sup> <a name="route_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeSelectionExpression"></a>
+##### `route_selection_expression`<sup>Optional</sup> <a name="route_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.routeSelectionExpression"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}.
 
 ---
 
-##### `target`<sup>Optional</sup> <a name="target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.target"></a>
+##### `target`<sup>Optional</sup> <a name="target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.target"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.version"></a>
+##### `version`<sup>Optional</sup> <a name="version" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.Initializer.parameter.version"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}.
 
 ---
 
@@ -289,50 +289,50 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration">put_cors_configuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetApiKeySelectionExpression">reset_api_key_selection_expression</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetBody">reset_body</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCorsConfiguration">reset_cors_configuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCredentialsArn">reset_credentials_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDisableExecuteApiEndpoint">reset_disable_execute_api_endpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetFailOnWarnings">reset_fail_on_warnings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetIpAddressType">reset_ip_address_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteKey">reset_route_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteSelectionExpression">reset_route_selection_expression</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTagsAll">reset_tags_all</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTarget">reset_target</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetVersion">reset_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration">put_cors_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetApiKeySelectionExpression">reset_api_key_selection_expression</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetBody">reset_body</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCorsConfiguration">reset_cors_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCredentialsArn">reset_credentials_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDisableExecuteApiEndpoint">reset_disable_execute_api_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetFailOnWarnings">reset_fail_on_warnings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetIpAddressType">reset_ip_address_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteKey">reset_route_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteSelectionExpression">reset_route_selection_expression</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTarget">reset_target</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetVersion">reset_version</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toString"></a>
 
 ```python
 def to_string() -> str
@@ -340,7 +340,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride"></a>
 
 ```python
 def add_override(
@@ -349,19 +349,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -371,7 +371,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -379,7 +379,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -387,19 +387,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -407,7 +407,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -417,7 +417,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -425,7 +425,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -433,13 +433,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -447,13 +447,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -461,13 +461,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -475,13 +475,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -489,13 +489,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -503,13 +503,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -517,13 +517,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -531,13 +531,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -545,19 +545,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom"></a>
 
 ```python
 def import_from(
@@ -566,19 +566,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -586,13 +586,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -604,7 +604,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -612,7 +612,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo"></a>
 
 ```python
 def move_to(
@@ -623,7 +623,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -631,7 +631,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -639,7 +639,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -649,7 +649,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -657,7 +657,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_cors_configuration` <a name="put_cors_configuration" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration"></a>
+##### `put_cors_configuration` <a name="put_cors_configuration" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration"></a>
 
 ```python
 def put_cors_configuration(
@@ -670,145 +670,145 @@ def put_cors_configuration(
 ) -> None
 ```
 
-###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowCredentials"></a>
+###### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowCredentials"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}.
 
 ---
 
-###### `allow_headers`<sup>Optional</sup> <a name="allow_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowHeaders"></a>
+###### `allow_headers`<sup>Optional</sup> <a name="allow_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowHeaders"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}.
 
 ---
 
-###### `allow_methods`<sup>Optional</sup> <a name="allow_methods" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowMethods"></a>
+###### `allow_methods`<sup>Optional</sup> <a name="allow_methods" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowMethods"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}.
 
 ---
 
-###### `allow_origins`<sup>Optional</sup> <a name="allow_origins" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowOrigins"></a>
+###### `allow_origins`<sup>Optional</sup> <a name="allow_origins" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.allowOrigins"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}.
 
 ---
 
-###### `expose_headers`<sup>Optional</sup> <a name="expose_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.exposeHeaders"></a>
+###### `expose_headers`<sup>Optional</sup> <a name="expose_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.exposeHeaders"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}.
 
 ---
 
-###### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.maxAge"></a>
+###### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.putCorsConfiguration.parameter.maxAge"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}.
 
 ---
 
-##### `reset_api_key_selection_expression` <a name="reset_api_key_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetApiKeySelectionExpression"></a>
+##### `reset_api_key_selection_expression` <a name="reset_api_key_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetApiKeySelectionExpression"></a>
 
 ```python
 def reset_api_key_selection_expression() -> None
 ```
 
-##### `reset_body` <a name="reset_body" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetBody"></a>
+##### `reset_body` <a name="reset_body" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetBody"></a>
 
 ```python
 def reset_body() -> None
 ```
 
-##### `reset_cors_configuration` <a name="reset_cors_configuration" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCorsConfiguration"></a>
+##### `reset_cors_configuration` <a name="reset_cors_configuration" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCorsConfiguration"></a>
 
 ```python
 def reset_cors_configuration() -> None
 ```
 
-##### `reset_credentials_arn` <a name="reset_credentials_arn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCredentialsArn"></a>
+##### `reset_credentials_arn` <a name="reset_credentials_arn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetCredentialsArn"></a>
 
 ```python
 def reset_credentials_arn() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_disable_execute_api_endpoint` <a name="reset_disable_execute_api_endpoint" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDisableExecuteApiEndpoint"></a>
+##### `reset_disable_execute_api_endpoint` <a name="reset_disable_execute_api_endpoint" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetDisableExecuteApiEndpoint"></a>
 
 ```python
 def reset_disable_execute_api_endpoint() -> None
 ```
 
-##### `reset_fail_on_warnings` <a name="reset_fail_on_warnings" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetFailOnWarnings"></a>
+##### `reset_fail_on_warnings` <a name="reset_fail_on_warnings" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetFailOnWarnings"></a>
 
 ```python
 def reset_fail_on_warnings() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_ip_address_type` <a name="reset_ip_address_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetIpAddressType"></a>
+##### `reset_ip_address_type` <a name="reset_ip_address_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetIpAddressType"></a>
 
 ```python
 def reset_ip_address_type() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_route_key` <a name="reset_route_key" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteKey"></a>
+##### `reset_route_key` <a name="reset_route_key" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteKey"></a>
 
 ```python
 def reset_route_key() -> None
 ```
 
-##### `reset_route_selection_expression` <a name="reset_route_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteSelectionExpression"></a>
+##### `reset_route_selection_expression` <a name="reset_route_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetRouteSelectionExpression"></a>
 
 ```python
 def reset_route_selection_expression() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
 ```
 
-##### `reset_target` <a name="reset_target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTarget"></a>
+##### `reset_target` <a name="reset_target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetTarget"></a>
 
 ```python
 def reset_target() -> None
 ```
 
-##### `reset_version` <a name="reset_version" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetVersion"></a>
+##### `reset_version` <a name="reset_version" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.resetVersion"></a>
 
 ```python
 def reset_version() -> None
@@ -818,17 +818,17 @@ def reset_version() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Apigatewayv2Api resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Apigatewayv2Api resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2Api.is_construct(
   x: typing.Any
@@ -851,7 +851,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -859,42 +859,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2Api.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2Api.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2Api.generate_config_for_import(
   scope: Construct,
@@ -906,7 +906,7 @@ apigatewayv2Api.Apigatewayv2Api.generate_config_for_import(
 
 Generates CDKTF code for importing a Apigatewayv2Api resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -914,7 +914,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -922,17 +922,17 @@ The construct id used in the generated config for the Apigatewayv2Api to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Apigatewayv2Api that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -944,63 +944,63 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiEndpoint">api_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfiguration">cors_configuration</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference">Apigatewayv2ApiCorsConfigurationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.executionArn">execution_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpressionInput">api_key_selection_expression_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfigurationInput">cors_configuration_input</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArnInput">credentials_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpointInput">disable_execute_api_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarningsInput">fail_on_warnings_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressTypeInput">ip_address_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolTypeInput">protocol_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKeyInput">route_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpressionInput">route_selection_expression_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpression">api_key_selection_expression</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.body">body</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArn">credentials_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpoint">disable_execute_api_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressType">ip_address_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolType">protocol_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKey">route_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpression">route_selection_expression</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.target">target</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.version">version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiEndpoint">api_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfiguration">cors_configuration</a></code> | <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference">Apigatewayv2ApiCorsConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.executionArn">execution_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpressionInput">api_key_selection_expression_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.bodyInput">body_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfigurationInput">cors_configuration_input</a></code> | <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArnInput">credentials_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpointInput">disable_execute_api_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarningsInput">fail_on_warnings_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressTypeInput">ip_address_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolTypeInput">protocol_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKeyInput">route_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpressionInput">route_selection_expression_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpression">api_key_selection_expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.body">body</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArn">credentials_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpoint">disable_execute_api_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressType">ip_address_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolType">protocol_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKey">route_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpression">route_selection_expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.version">version</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.node"></a>
 
 ```python
 node: Node
@@ -1012,7 +1012,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1022,7 +1022,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1032,7 +1032,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1042,7 +1042,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1052,7 +1052,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1062,7 +1062,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1072,7 +1072,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1082,7 +1082,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1092,7 +1092,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1102,7 +1102,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1112,7 +1112,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1122,7 +1122,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1132,7 +1132,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1142,7 +1142,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `api_endpoint`<sup>Required</sup> <a name="api_endpoint" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiEndpoint"></a>
+##### `api_endpoint`<sup>Required</sup> <a name="api_endpoint" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiEndpoint"></a>
 
 ```python
 api_endpoint: str
@@ -1152,7 +1152,7 @@ api_endpoint: str
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.arn"></a>
 
 ```python
 arn: str
@@ -1162,17 +1162,17 @@ arn: str
 
 ---
 
-##### `cors_configuration`<sup>Required</sup> <a name="cors_configuration" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfiguration"></a>
+##### `cors_configuration`<sup>Required</sup> <a name="cors_configuration" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfiguration"></a>
 
 ```python
 cors_configuration: Apigatewayv2ApiCorsConfigurationOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference">Apigatewayv2ApiCorsConfigurationOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference">Apigatewayv2ApiCorsConfigurationOutputReference</a>
 
 ---
 
-##### `execution_arn`<sup>Required</sup> <a name="execution_arn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.executionArn"></a>
+##### `execution_arn`<sup>Required</sup> <a name="execution_arn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.executionArn"></a>
 
 ```python
 execution_arn: str
@@ -1182,7 +1182,7 @@ execution_arn: str
 
 ---
 
-##### `api_key_selection_expression_input`<sup>Optional</sup> <a name="api_key_selection_expression_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpressionInput"></a>
+##### `api_key_selection_expression_input`<sup>Optional</sup> <a name="api_key_selection_expression_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpressionInput"></a>
 
 ```python
 api_key_selection_expression_input: str
@@ -1192,7 +1192,7 @@ api_key_selection_expression_input: str
 
 ---
 
-##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.bodyInput"></a>
+##### `body_input`<sup>Optional</sup> <a name="body_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.bodyInput"></a>
 
 ```python
 body_input: str
@@ -1202,17 +1202,17 @@ body_input: str
 
 ---
 
-##### `cors_configuration_input`<sup>Optional</sup> <a name="cors_configuration_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfigurationInput"></a>
+##### `cors_configuration_input`<sup>Optional</sup> <a name="cors_configuration_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.corsConfigurationInput"></a>
 
 ```python
 cors_configuration_input: Apigatewayv2ApiCorsConfiguration
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
 
 ---
 
-##### `credentials_arn_input`<sup>Optional</sup> <a name="credentials_arn_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArnInput"></a>
+##### `credentials_arn_input`<sup>Optional</sup> <a name="credentials_arn_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArnInput"></a>
 
 ```python
 credentials_arn_input: str
@@ -1222,7 +1222,7 @@ credentials_arn_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1232,7 +1232,7 @@ description_input: str
 
 ---
 
-##### `disable_execute_api_endpoint_input`<sup>Optional</sup> <a name="disable_execute_api_endpoint_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpointInput"></a>
+##### `disable_execute_api_endpoint_input`<sup>Optional</sup> <a name="disable_execute_api_endpoint_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpointInput"></a>
 
 ```python
 disable_execute_api_endpoint_input: bool | IResolvable
@@ -1242,7 +1242,7 @@ disable_execute_api_endpoint_input: bool | IResolvable
 
 ---
 
-##### `fail_on_warnings_input`<sup>Optional</sup> <a name="fail_on_warnings_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarningsInput"></a>
+##### `fail_on_warnings_input`<sup>Optional</sup> <a name="fail_on_warnings_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarningsInput"></a>
 
 ```python
 fail_on_warnings_input: bool | IResolvable
@@ -1252,7 +1252,7 @@ fail_on_warnings_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1262,7 +1262,7 @@ id_input: str
 
 ---
 
-##### `ip_address_type_input`<sup>Optional</sup> <a name="ip_address_type_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressTypeInput"></a>
+##### `ip_address_type_input`<sup>Optional</sup> <a name="ip_address_type_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressTypeInput"></a>
 
 ```python
 ip_address_type_input: str
@@ -1272,7 +1272,7 @@ ip_address_type_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1282,7 +1282,7 @@ name_input: str
 
 ---
 
-##### `protocol_type_input`<sup>Optional</sup> <a name="protocol_type_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolTypeInput"></a>
+##### `protocol_type_input`<sup>Optional</sup> <a name="protocol_type_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolTypeInput"></a>
 
 ```python
 protocol_type_input: str
@@ -1292,7 +1292,7 @@ protocol_type_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1302,7 +1302,7 @@ region_input: str
 
 ---
 
-##### `route_key_input`<sup>Optional</sup> <a name="route_key_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKeyInput"></a>
+##### `route_key_input`<sup>Optional</sup> <a name="route_key_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKeyInput"></a>
 
 ```python
 route_key_input: str
@@ -1312,7 +1312,7 @@ route_key_input: str
 
 ---
 
-##### `route_selection_expression_input`<sup>Optional</sup> <a name="route_selection_expression_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpressionInput"></a>
+##### `route_selection_expression_input`<sup>Optional</sup> <a name="route_selection_expression_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpressionInput"></a>
 
 ```python
 route_selection_expression_input: str
@@ -1322,7 +1322,7 @@ route_selection_expression_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1332,7 +1332,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1342,7 +1342,7 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.targetInput"></a>
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.targetInput"></a>
 
 ```python
 target_input: str
@@ -1352,7 +1352,7 @@ target_input: str
 
 ---
 
-##### `version_input`<sup>Optional</sup> <a name="version_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.versionInput"></a>
+##### `version_input`<sup>Optional</sup> <a name="version_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.versionInput"></a>
 
 ```python
 version_input: str
@@ -1362,7 +1362,7 @@ version_input: str
 
 ---
 
-##### `api_key_selection_expression`<sup>Required</sup> <a name="api_key_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpression"></a>
+##### `api_key_selection_expression`<sup>Required</sup> <a name="api_key_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.apiKeySelectionExpression"></a>
 
 ```python
 api_key_selection_expression: str
@@ -1372,7 +1372,7 @@ api_key_selection_expression: str
 
 ---
 
-##### `body`<sup>Required</sup> <a name="body" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.body"></a>
+##### `body`<sup>Required</sup> <a name="body" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.body"></a>
 
 ```python
 body: str
@@ -1382,7 +1382,7 @@ body: str
 
 ---
 
-##### `credentials_arn`<sup>Required</sup> <a name="credentials_arn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArn"></a>
+##### `credentials_arn`<sup>Required</sup> <a name="credentials_arn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.credentialsArn"></a>
 
 ```python
 credentials_arn: str
@@ -1392,7 +1392,7 @@ credentials_arn: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.description"></a>
 
 ```python
 description: str
@@ -1402,7 +1402,7 @@ description: str
 
 ---
 
-##### `disable_execute_api_endpoint`<sup>Required</sup> <a name="disable_execute_api_endpoint" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpoint"></a>
+##### `disable_execute_api_endpoint`<sup>Required</sup> <a name="disable_execute_api_endpoint" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.disableExecuteApiEndpoint"></a>
 
 ```python
 disable_execute_api_endpoint: bool | IResolvable
@@ -1412,7 +1412,7 @@ disable_execute_api_endpoint: bool | IResolvable
 
 ---
 
-##### `fail_on_warnings`<sup>Required</sup> <a name="fail_on_warnings" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarnings"></a>
+##### `fail_on_warnings`<sup>Required</sup> <a name="fail_on_warnings" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.failOnWarnings"></a>
 
 ```python
 fail_on_warnings: bool | IResolvable
@@ -1422,7 +1422,7 @@ fail_on_warnings: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.id"></a>
 
 ```python
 id: str
@@ -1432,7 +1432,7 @@ id: str
 
 ---
 
-##### `ip_address_type`<sup>Required</sup> <a name="ip_address_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressType"></a>
+##### `ip_address_type`<sup>Required</sup> <a name="ip_address_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.ipAddressType"></a>
 
 ```python
 ip_address_type: str
@@ -1442,7 +1442,7 @@ ip_address_type: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.name"></a>
 
 ```python
 name: str
@@ -1452,7 +1452,7 @@ name: str
 
 ---
 
-##### `protocol_type`<sup>Required</sup> <a name="protocol_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolType"></a>
+##### `protocol_type`<sup>Required</sup> <a name="protocol_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.protocolType"></a>
 
 ```python
 protocol_type: str
@@ -1462,7 +1462,7 @@ protocol_type: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.region"></a>
 
 ```python
 region: str
@@ -1472,7 +1472,7 @@ region: str
 
 ---
 
-##### `route_key`<sup>Required</sup> <a name="route_key" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKey"></a>
+##### `route_key`<sup>Required</sup> <a name="route_key" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeKey"></a>
 
 ```python
 route_key: str
@@ -1482,7 +1482,7 @@ route_key: str
 
 ---
 
-##### `route_selection_expression`<sup>Required</sup> <a name="route_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpression"></a>
+##### `route_selection_expression`<sup>Required</sup> <a name="route_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.routeSelectionExpression"></a>
 
 ```python
 route_selection_expression: str
@@ -1492,7 +1492,7 @@ route_selection_expression: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1502,7 +1502,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1512,7 +1512,7 @@ tags_all: typing.Mapping[str]
 
 ---
 
-##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.target"></a>
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.target"></a>
 
 ```python
 target: str
@@ -1522,7 +1522,7 @@ target: str
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.version"></a>
+##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.version"></a>
 
 ```python
 version: str
@@ -1536,11 +1536,11 @@ version: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2Api.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1552,12 +1552,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### Apigatewayv2ApiConfig <a name="Apigatewayv2ApiConfig" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig"></a>
+### Apigatewayv2ApiConfig <a name="Apigatewayv2ApiConfig" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2ApiConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1592,35 +1592,35 @@ apigatewayv2Api.Apigatewayv2ApiConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.apiKeySelectionExpression">api_key_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.body">body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.corsConfiguration">cors_configuration</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | cors_configuration block. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.credentialsArn">credentials_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.disableExecuteApiEndpoint">disable_execute_api_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.ipAddressType">ip_address_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeKey">route_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeSelectionExpression">route_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.apiKeySelectionExpression">api_key_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.body">body</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.corsConfiguration">cors_configuration</a></code> | <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | cors_configuration block. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.credentialsArn">credentials_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.disableExecuteApiEndpoint">disable_execute_api_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.failOnWarnings">fail_on_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.ipAddressType">ip_address_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeKey">route_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeSelectionExpression">route_selection_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1630,7 +1630,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1640,7 +1640,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1650,7 +1650,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1660,7 +1660,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1670,7 +1670,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1680,7 +1680,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1690,7 +1690,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.name"></a>
 
 ```python
 name: str
@@ -1698,11 +1698,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#name Apigatewayv2Api#name}.
 
 ---
 
-##### `protocol_type`<sup>Required</sup> <a name="protocol_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.protocolType"></a>
+##### `protocol_type`<sup>Required</sup> <a name="protocol_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.protocolType"></a>
 
 ```python
 protocol_type: str
@@ -1710,11 +1710,11 @@ protocol_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#protocol_type Apigatewayv2Api#protocol_type}.
 
 ---
 
-##### `api_key_selection_expression`<sup>Optional</sup> <a name="api_key_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.apiKeySelectionExpression"></a>
+##### `api_key_selection_expression`<sup>Optional</sup> <a name="api_key_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.apiKeySelectionExpression"></a>
 
 ```python
 api_key_selection_expression: str
@@ -1722,11 +1722,11 @@ api_key_selection_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#api_key_selection_expression Apigatewayv2Api#api_key_selection_expression}.
 
 ---
 
-##### `body`<sup>Optional</sup> <a name="body" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.body"></a>
+##### `body`<sup>Optional</sup> <a name="body" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.body"></a>
 
 ```python
 body: str
@@ -1734,25 +1734,25 @@ body: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#body Apigatewayv2Api#body}.
 
 ---
 
-##### `cors_configuration`<sup>Optional</sup> <a name="cors_configuration" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.corsConfiguration"></a>
+##### `cors_configuration`<sup>Optional</sup> <a name="cors_configuration" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.corsConfiguration"></a>
 
 ```python
 cors_configuration: Apigatewayv2ApiCorsConfiguration
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
 
 cors_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#cors_configuration Apigatewayv2Api#cors_configuration}
 
 ---
 
-##### `credentials_arn`<sup>Optional</sup> <a name="credentials_arn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.credentialsArn"></a>
+##### `credentials_arn`<sup>Optional</sup> <a name="credentials_arn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.credentialsArn"></a>
 
 ```python
 credentials_arn: str
@@ -1760,11 +1760,11 @@ credentials_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#credentials_arn Apigatewayv2Api#credentials_arn}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.description"></a>
 
 ```python
 description: str
@@ -1772,11 +1772,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#description Apigatewayv2Api#description}.
 
 ---
 
-##### `disable_execute_api_endpoint`<sup>Optional</sup> <a name="disable_execute_api_endpoint" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.disableExecuteApiEndpoint"></a>
+##### `disable_execute_api_endpoint`<sup>Optional</sup> <a name="disable_execute_api_endpoint" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.disableExecuteApiEndpoint"></a>
 
 ```python
 disable_execute_api_endpoint: bool | IResolvable
@@ -1784,11 +1784,11 @@ disable_execute_api_endpoint: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}.
 
 ---
 
-##### `fail_on_warnings`<sup>Optional</sup> <a name="fail_on_warnings" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.failOnWarnings"></a>
+##### `fail_on_warnings`<sup>Optional</sup> <a name="fail_on_warnings" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.failOnWarnings"></a>
 
 ```python
 fail_on_warnings: bool | IResolvable
@@ -1796,11 +1796,11 @@ fail_on_warnings: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#fail_on_warnings Apigatewayv2Api#fail_on_warnings}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.id"></a>
 
 ```python
 id: str
@@ -1808,14 +1808,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#id Apigatewayv2Api#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `ip_address_type`<sup>Optional</sup> <a name="ip_address_type" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.ipAddressType"></a>
+##### `ip_address_type`<sup>Optional</sup> <a name="ip_address_type" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.ipAddressType"></a>
 
 ```python
 ip_address_type: str
@@ -1823,11 +1823,11 @@ ip_address_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#ip_address_type Apigatewayv2Api#ip_address_type}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.region"></a>
 
 ```python
 region: str
@@ -1837,11 +1837,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#region Apigatewayv2Api#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#region Apigatewayv2Api#region}
 
 ---
 
-##### `route_key`<sup>Optional</sup> <a name="route_key" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeKey"></a>
+##### `route_key`<sup>Optional</sup> <a name="route_key" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeKey"></a>
 
 ```python
 route_key: str
@@ -1849,11 +1849,11 @@ route_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_key Apigatewayv2Api#route_key}.
 
 ---
 
-##### `route_selection_expression`<sup>Optional</sup> <a name="route_selection_expression" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeSelectionExpression"></a>
+##### `route_selection_expression`<sup>Optional</sup> <a name="route_selection_expression" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.routeSelectionExpression"></a>
 
 ```python
 route_selection_expression: str
@@ -1861,11 +1861,11 @@ route_selection_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#route_selection_expression Apigatewayv2Api#route_selection_expression}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1873,11 +1873,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags Apigatewayv2Api#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1885,11 +1885,11 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#tags_all Apigatewayv2Api#tags_all}.
 
 ---
 
-##### `target`<sup>Optional</sup> <a name="target" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.target"></a>
+##### `target`<sup>Optional</sup> <a name="target" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.target"></a>
 
 ```python
 target: str
@@ -1897,11 +1897,11 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#target Apigatewayv2Api#target}.
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.version"></a>
+##### `version`<sup>Optional</sup> <a name="version" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiConfig.property.version"></a>
 
 ```python
 version: str
@@ -1909,16 +1909,16 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#version Apigatewayv2Api#version}.
 
 ---
 
-### Apigatewayv2ApiCorsConfiguration <a name="Apigatewayv2ApiCorsConfiguration" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration"></a>
+### Apigatewayv2ApiCorsConfiguration <a name="Apigatewayv2ApiCorsConfiguration" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2ApiCorsConfiguration(
   allow_credentials: bool | IResolvable = None,
@@ -1934,16 +1934,16 @@ apigatewayv2Api.Apigatewayv2ApiCorsConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowOrigins">allow_origins</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.maxAge">max_age</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowOrigins">allow_origins</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.maxAge">max_age</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}. |
 
 ---
 
-##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowCredentials"></a>
+##### `allow_credentials`<sup>Optional</sup> <a name="allow_credentials" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowCredentials"></a>
 
 ```python
 allow_credentials: bool | IResolvable
@@ -1951,11 +1951,11 @@ allow_credentials: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_credentials Apigatewayv2Api#allow_credentials}.
 
 ---
 
-##### `allow_headers`<sup>Optional</sup> <a name="allow_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowHeaders"></a>
+##### `allow_headers`<sup>Optional</sup> <a name="allow_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowHeaders"></a>
 
 ```python
 allow_headers: typing.List[str]
@@ -1963,11 +1963,11 @@ allow_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_headers Apigatewayv2Api#allow_headers}.
 
 ---
 
-##### `allow_methods`<sup>Optional</sup> <a name="allow_methods" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowMethods"></a>
+##### `allow_methods`<sup>Optional</sup> <a name="allow_methods" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowMethods"></a>
 
 ```python
 allow_methods: typing.List[str]
@@ -1975,11 +1975,11 @@ allow_methods: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_methods Apigatewayv2Api#allow_methods}.
 
 ---
 
-##### `allow_origins`<sup>Optional</sup> <a name="allow_origins" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowOrigins"></a>
+##### `allow_origins`<sup>Optional</sup> <a name="allow_origins" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.allowOrigins"></a>
 
 ```python
 allow_origins: typing.List[str]
@@ -1987,11 +1987,11 @@ allow_origins: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#allow_origins Apigatewayv2Api#allow_origins}.
 
 ---
 
-##### `expose_headers`<sup>Optional</sup> <a name="expose_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.exposeHeaders"></a>
+##### `expose_headers`<sup>Optional</sup> <a name="expose_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.exposeHeaders"></a>
 
 ```python
 expose_headers: typing.List[str]
@@ -1999,11 +1999,11 @@ expose_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#expose_headers Apigatewayv2Api#expose_headers}.
 
 ---
 
-##### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.maxAge"></a>
+##### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration.property.maxAge"></a>
 
 ```python
 max_age: typing.Union[int, float]
@@ -2011,18 +2011,18 @@ max_age: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apigatewayv2_api#max_age Apigatewayv2Api#max_age}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### Apigatewayv2ApiCorsConfigurationOutputReference <a name="Apigatewayv2ApiCorsConfigurationOutputReference" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference"></a>
+### Apigatewayv2ApiCorsConfigurationOutputReference <a name="Apigatewayv2ApiCorsConfigurationOutputReference" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import apigatewayv2_api
+from cdktn_provider_aws import apigatewayv2_api
 
 apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2032,12 +2032,12 @@ apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2045,7 +2045,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2057,35 +2057,35 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowCredentials">reset_allow_credentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowHeaders">reset_allow_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowMethods">reset_allow_methods</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowOrigins">reset_allow_origins</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetExposeHeaders">reset_expose_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetMaxAge">reset_max_age</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowCredentials">reset_allow_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowHeaders">reset_allow_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowMethods">reset_allow_methods</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowOrigins">reset_allow_origins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetExposeHeaders">reset_expose_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetMaxAge">reset_max_age</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2093,13 +2093,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2107,13 +2107,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2121,13 +2121,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2135,13 +2135,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2149,13 +2149,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2163,13 +2163,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2177,13 +2177,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2191,13 +2191,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2205,13 +2205,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2219,13 +2219,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2235,13 +2235,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2251,37 +2251,37 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_allow_credentials` <a name="reset_allow_credentials" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowCredentials"></a>
+##### `reset_allow_credentials` <a name="reset_allow_credentials" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowCredentials"></a>
 
 ```python
 def reset_allow_credentials() -> None
 ```
 
-##### `reset_allow_headers` <a name="reset_allow_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowHeaders"></a>
+##### `reset_allow_headers` <a name="reset_allow_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowHeaders"></a>
 
 ```python
 def reset_allow_headers() -> None
 ```
 
-##### `reset_allow_methods` <a name="reset_allow_methods" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowMethods"></a>
+##### `reset_allow_methods` <a name="reset_allow_methods" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowMethods"></a>
 
 ```python
 def reset_allow_methods() -> None
 ```
 
-##### `reset_allow_origins` <a name="reset_allow_origins" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowOrigins"></a>
+##### `reset_allow_origins` <a name="reset_allow_origins" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetAllowOrigins"></a>
 
 ```python
 def reset_allow_origins() -> None
 ```
 
-##### `reset_expose_headers` <a name="reset_expose_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetExposeHeaders"></a>
+##### `reset_expose_headers` <a name="reset_expose_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetExposeHeaders"></a>
 
 ```python
 def reset_expose_headers() -> None
 ```
 
-##### `reset_max_age` <a name="reset_max_age" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetMaxAge"></a>
+##### `reset_max_age` <a name="reset_max_age" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.resetMaxAge"></a>
 
 ```python
 def reset_max_age() -> None
@@ -2292,25 +2292,25 @@ def reset_max_age() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOrigins">allow_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAge">max_age</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentialsInput">allow_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeadersInput">allow_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethodsInput">allow_methods_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOriginsInput">allow_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeadersInput">expose_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentials">allow_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeaders">allow_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethods">allow_methods</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOrigins">allow_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeaders">expose_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAge">max_age</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2324,7 +2324,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2334,7 +2334,7 @@ fqn: str
 
 ---
 
-##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentialsInput"></a>
+##### `allow_credentials_input`<sup>Optional</sup> <a name="allow_credentials_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentialsInput"></a>
 
 ```python
 allow_credentials_input: bool | IResolvable
@@ -2344,7 +2344,7 @@ allow_credentials_input: bool | IResolvable
 
 ---
 
-##### `allow_headers_input`<sup>Optional</sup> <a name="allow_headers_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeadersInput"></a>
+##### `allow_headers_input`<sup>Optional</sup> <a name="allow_headers_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeadersInput"></a>
 
 ```python
 allow_headers_input: typing.List[str]
@@ -2354,7 +2354,7 @@ allow_headers_input: typing.List[str]
 
 ---
 
-##### `allow_methods_input`<sup>Optional</sup> <a name="allow_methods_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethodsInput"></a>
+##### `allow_methods_input`<sup>Optional</sup> <a name="allow_methods_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethodsInput"></a>
 
 ```python
 allow_methods_input: typing.List[str]
@@ -2364,7 +2364,7 @@ allow_methods_input: typing.List[str]
 
 ---
 
-##### `allow_origins_input`<sup>Optional</sup> <a name="allow_origins_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOriginsInput"></a>
+##### `allow_origins_input`<sup>Optional</sup> <a name="allow_origins_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOriginsInput"></a>
 
 ```python
 allow_origins_input: typing.List[str]
@@ -2374,7 +2374,7 @@ allow_origins_input: typing.List[str]
 
 ---
 
-##### `expose_headers_input`<sup>Optional</sup> <a name="expose_headers_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeadersInput"></a>
+##### `expose_headers_input`<sup>Optional</sup> <a name="expose_headers_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeadersInput"></a>
 
 ```python
 expose_headers_input: typing.List[str]
@@ -2384,7 +2384,7 @@ expose_headers_input: typing.List[str]
 
 ---
 
-##### `max_age_input`<sup>Optional</sup> <a name="max_age_input" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAgeInput"></a>
+##### `max_age_input`<sup>Optional</sup> <a name="max_age_input" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAgeInput"></a>
 
 ```python
 max_age_input: typing.Union[int, float]
@@ -2394,7 +2394,7 @@ max_age_input: typing.Union[int, float]
 
 ---
 
-##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentials"></a>
+##### `allow_credentials`<sup>Required</sup> <a name="allow_credentials" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowCredentials"></a>
 
 ```python
 allow_credentials: bool | IResolvable
@@ -2404,7 +2404,7 @@ allow_credentials: bool | IResolvable
 
 ---
 
-##### `allow_headers`<sup>Required</sup> <a name="allow_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeaders"></a>
+##### `allow_headers`<sup>Required</sup> <a name="allow_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowHeaders"></a>
 
 ```python
 allow_headers: typing.List[str]
@@ -2414,7 +2414,7 @@ allow_headers: typing.List[str]
 
 ---
 
-##### `allow_methods`<sup>Required</sup> <a name="allow_methods" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethods"></a>
+##### `allow_methods`<sup>Required</sup> <a name="allow_methods" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowMethods"></a>
 
 ```python
 allow_methods: typing.List[str]
@@ -2424,7 +2424,7 @@ allow_methods: typing.List[str]
 
 ---
 
-##### `allow_origins`<sup>Required</sup> <a name="allow_origins" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOrigins"></a>
+##### `allow_origins`<sup>Required</sup> <a name="allow_origins" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.allowOrigins"></a>
 
 ```python
 allow_origins: typing.List[str]
@@ -2434,7 +2434,7 @@ allow_origins: typing.List[str]
 
 ---
 
-##### `expose_headers`<sup>Required</sup> <a name="expose_headers" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeaders"></a>
+##### `expose_headers`<sup>Required</sup> <a name="expose_headers" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.exposeHeaders"></a>
 
 ```python
 expose_headers: typing.List[str]
@@ -2444,7 +2444,7 @@ expose_headers: typing.List[str]
 
 ---
 
-##### `max_age`<sup>Required</sup> <a name="max_age" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAge"></a>
+##### `max_age`<sup>Required</sup> <a name="max_age" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.maxAge"></a>
 
 ```python
 max_age: typing.Union[int, float]
@@ -2454,13 +2454,13 @@ max_age: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfigurationOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: Apigatewayv2ApiCorsConfiguration
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
+- *Type:* <a href="#@cdktn/provider-aws.apigatewayv2Api.Apigatewayv2ApiCorsConfiguration">Apigatewayv2ApiCorsConfiguration</a>
 
 ---
 

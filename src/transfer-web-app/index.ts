@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,37 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface TransferWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#access_endpoint TransferWebApp#access_endpoint}
   */
   readonly accessEndpoint?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#region TransferWebApp#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#region TransferWebApp#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#tags TransferWebApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#web_app_endpoint_policy TransferWebApp#web_app_endpoint_policy}
   */
   readonly webAppEndpointPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#web_app_units TransferWebApp#web_app_units}
   */
   readonly webAppUnits?: TransferWebAppWebAppUnits[] | cdktf.IResolvable;
   /**
+  * endpoint_details block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#endpoint_details TransferWebApp#endpoint_details}
+  */
+  readonly endpointDetails?: TransferWebAppEndpointDetails[] | cdktf.IResolvable;
+  /**
   * identity_provider_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#identity_provider_details TransferWebApp#identity_provider_details}
   */
   readonly identityProviderDetails?: TransferWebAppIdentityProviderDetails[] | cdktf.IResolvable;
 }
 export interface TransferWebAppWebAppUnits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#provisioned TransferWebApp#provisioned}
   */
   readonly provisioned?: number;
 }
@@ -157,13 +163,312 @@ export class TransferWebAppWebAppUnitsList extends cdktf.ComplexList {
     return new TransferWebAppWebAppUnitsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface TransferWebAppEndpointDetailsVpc {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#security_group_ids TransferWebApp#security_group_ids}
+  */
+  readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#subnet_ids TransferWebApp#subnet_ids}
+  */
+  readonly subnetIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#vpc_id TransferWebApp#vpc_id}
+  */
+  readonly vpcId: string;
+}
+
+export function transferWebAppEndpointDetailsVpcToTerraform(struct?: TransferWebAppEndpointDetailsVpc | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
+
+export function transferWebAppEndpointDetailsVpcToHclTerraform(struct?: TransferWebAppEndpointDetailsVpc | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    security_group_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroupIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    subnet_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnetIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TransferWebAppEndpointDetailsVpcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TransferWebAppEndpointDetailsVpc | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._securityGroupIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupIds = this._securityGroupIds;
+    }
+    if (this._subnetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetIds = this._subnetIds;
+    }
+    if (this._vpcId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWebAppEndpointDetailsVpc | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._securityGroupIds = undefined;
+      this._subnetIds = undefined;
+      this._vpcId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._securityGroupIds = value.securityGroupIds;
+      this._subnetIds = value.subnetIds;
+      this._vpcId = value.vpcId;
+    }
+  }
+
+  // security_group_ids - computed: true, optional: true, required: false
+  private _securityGroupIds?: string[]; 
+  public get securityGroupIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+  }
+  public set securityGroupIds(value: string[]) {
+    this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds;
+  }
+
+  // subnet_ids - computed: false, optional: false, required: true
+  private _subnetIds?: string[]; 
+  public get subnetIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+  }
+  public set subnetIds(value: string[]) {
+    this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds;
+  }
+
+  // vpc_endpoint_id - computed: true, optional: false, required: false
+  public get vpcEndpointId() {
+    return this.getStringAttribute('vpc_endpoint_id');
+  }
+
+  // vpc_id - computed: false, optional: false, required: true
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
+}
+
+export class TransferWebAppEndpointDetailsVpcList extends cdktf.ComplexList {
+  public internalValue? : TransferWebAppEndpointDetailsVpc[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TransferWebAppEndpointDetailsVpcOutputReference {
+    return new TransferWebAppEndpointDetailsVpcOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface TransferWebAppEndpointDetails {
+  /**
+  * vpc block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#vpc TransferWebApp#vpc}
+  */
+  readonly vpc?: TransferWebAppEndpointDetailsVpc[] | cdktf.IResolvable;
+}
+
+export function transferWebAppEndpointDetailsToTerraform(struct?: TransferWebAppEndpointDetails | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    vpc: cdktf.listMapper(transferWebAppEndpointDetailsVpcToTerraform, true)(struct!.vpc),
+  }
+}
+
+
+export function transferWebAppEndpointDetailsToHclTerraform(struct?: TransferWebAppEndpointDetails | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vpc: {
+      value: cdktf.listMapperHcl(transferWebAppEndpointDetailsVpcToHclTerraform, true)(struct!.vpc),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TransferWebAppEndpointDetailsVpcList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TransferWebAppEndpointDetailsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TransferWebAppEndpointDetails | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._vpc?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpc = this._vpc?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TransferWebAppEndpointDetails | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._vpc.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._vpc.internalValue = value.vpc;
+    }
+  }
+
+  // vpc - computed: false, optional: true, required: false
+  private _vpc = new TransferWebAppEndpointDetailsVpcList(this, "vpc", false);
+  public get vpc() {
+    return this._vpc;
+  }
+  public putVpc(value: TransferWebAppEndpointDetailsVpc[] | cdktf.IResolvable) {
+    this._vpc.internalValue = value;
+  }
+  public resetVpc() {
+    this._vpc.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcInput() {
+    return this._vpc.internalValue;
+  }
+}
+
+export class TransferWebAppEndpointDetailsList extends cdktf.ComplexList {
+  public internalValue? : TransferWebAppEndpointDetails[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TransferWebAppEndpointDetailsOutputReference {
+    return new TransferWebAppEndpointDetailsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface TransferWebAppIdentityProviderDetailsIdentityCenterConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#instance_arn TransferWebApp#instance_arn}
   */
   readonly instanceArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#role TransferWebApp#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#role TransferWebApp#role}
   */
   readonly role?: string;
 }
@@ -315,7 +620,7 @@ export interface TransferWebAppIdentityProviderDetails {
   /**
   * identity_center_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#identity_center_config TransferWebApp#identity_center_config}
   */
   readonly identityCenterConfig?: TransferWebAppIdentityProviderDetailsIdentityCenterConfig[] | cdktf.IResolvable;
 }
@@ -431,7 +736,7 @@ export class TransferWebAppIdentityProviderDetailsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app aws_transfer_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app aws_transfer_web_app}
 */
 export class TransferWebApp extends cdktf.TerraformResource {
 
@@ -447,7 +752,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TransferWebApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransferWebApp to import
-  * @param importFromId The id of the existing TransferWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransferWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransferWebApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -459,7 +764,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_web_app aws_transfer_web_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -470,7 +775,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
       terraformResourceType: 'aws_transfer_web_app',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -486,6 +791,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._webAppEndpointPolicy = config.webAppEndpointPolicy;
     this._webAppUnits.internalValue = config.webAppUnits;
+    this._endpointDetails.internalValue = config.endpointDetails;
     this._identityProviderDetails.internalValue = config.identityProviderDetails;
   }
 
@@ -589,6 +895,22 @@ export class TransferWebApp extends cdktf.TerraformResource {
     return this._webAppUnits.internalValue;
   }
 
+  // endpoint_details - computed: false, optional: true, required: false
+  private _endpointDetails = new TransferWebAppEndpointDetailsList(this, "endpoint_details", false);
+  public get endpointDetails() {
+    return this._endpointDetails;
+  }
+  public putEndpointDetails(value: TransferWebAppEndpointDetails[] | cdktf.IResolvable) {
+    this._endpointDetails.internalValue = value;
+  }
+  public resetEndpointDetails() {
+    this._endpointDetails.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointDetailsInput() {
+    return this._endpointDetails.internalValue;
+  }
+
   // identity_provider_details - computed: false, optional: true, required: false
   private _identityProviderDetails = new TransferWebAppIdentityProviderDetailsList(this, "identity_provider_details", false);
   public get identityProviderDetails() {
@@ -616,6 +938,7 @@ export class TransferWebApp extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       web_app_endpoint_policy: cdktf.stringToTerraform(this._webAppEndpointPolicy),
       web_app_units: cdktf.listMapper(transferWebAppWebAppUnitsToTerraform, false)(this._webAppUnits.internalValue),
+      endpoint_details: cdktf.listMapper(transferWebAppEndpointDetailsToTerraform, true)(this._endpointDetails.internalValue),
       identity_provider_details: cdktf.listMapper(transferWebAppIdentityProviderDetailsToTerraform, true)(this._identityProviderDetails.internalValue),
     };
   }
@@ -651,6 +974,12 @@ export class TransferWebApp extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "TransferWebAppWebAppUnitsList",
+      },
+      endpoint_details: {
+        value: cdktf.listMapperHcl(transferWebAppEndpointDetailsToHclTerraform, true)(this._endpointDetails.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TransferWebAppEndpointDetailsList",
       },
       identity_provider_details: {
         value: cdktf.listMapperHcl(transferWebAppIdentityProviderDetailsToHclTerraform, true)(this._identityProviderDetails.internalValue),

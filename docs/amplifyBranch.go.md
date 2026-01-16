@@ -1,28 +1,28 @@
-# `amplifyBranch` Submodule <a name="`amplifyBranch` Submodule" id="@cdktf/provider-aws.amplifyBranch"></a>
+# `amplifyBranch` Submodule <a name="`amplifyBranch` Submodule" id="@cdktn/provider-aws.amplifyBranch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AmplifyBranch <a name="AmplifyBranch" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch"></a>
+### AmplifyBranch <a name="AmplifyBranch" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch aws_amplify_branch}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch aws_amplify_branch}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/amplifybranch"
 
 amplifybranch.NewAmplifyBranch(scope Construct, id *string, config AmplifyBranchConfig) AmplifyBranch
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig">AmplifyBranchConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig">AmplifyBranchConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig">AmplifyBranchConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig">AmplifyBranchConfig</a>
 
 ---
 
@@ -50,52 +50,52 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetBackendEnvironmentArn">ResetBackendEnvironmentArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetBasicAuthCredentials">ResetBasicAuthCredentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableAutoBuild">ResetEnableAutoBuild</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableBasicAuth">ResetEnableBasicAuth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableNotification">ResetEnableNotification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePerformanceMode">ResetEnablePerformanceMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePullRequestPreview">ResetEnablePullRequestPreview</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableSkewProtection">ResetEnableSkewProtection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnvironmentVariables">ResetEnvironmentVariables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetFramework">ResetFramework</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetPullRequestEnvironmentName">ResetPullRequestEnvironmentName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetStage">ResetStage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetTtl">ResetTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetBackendEnvironmentArn">ResetBackendEnvironmentArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetBasicAuthCredentials">ResetBasicAuthCredentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableAutoBuild">ResetEnableAutoBuild</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableBasicAuth">ResetEnableBasicAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableNotification">ResetEnableNotification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePerformanceMode">ResetEnablePerformanceMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePullRequestPreview">ResetEnablePullRequestPreview</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableSkewProtection">ResetEnableSkewProtection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnvironmentVariables">ResetEnvironmentVariables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetFramework">ResetFramework</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetPullRequestEnvironmentName">ResetPullRequestEnvironmentName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetStage">ResetStage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetTtl">ResetTtl</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toString"></a>
 
 ```go
 func ToString() *string
@@ -103,25 +103,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -129,7 +129,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -137,7 +137,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -145,19 +145,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -165,7 +165,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -173,7 +173,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -181,151 +181,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -335,7 +335,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -343,7 +343,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -351,7 +351,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -359,7 +359,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -367,7 +367,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -375,7 +375,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -383,115 +383,115 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetBackendEnvironmentArn` <a name="ResetBackendEnvironmentArn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetBackendEnvironmentArn"></a>
+##### `ResetBackendEnvironmentArn` <a name="ResetBackendEnvironmentArn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetBackendEnvironmentArn"></a>
 
 ```go
 func ResetBackendEnvironmentArn()
 ```
 
-##### `ResetBasicAuthCredentials` <a name="ResetBasicAuthCredentials" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetBasicAuthCredentials"></a>
+##### `ResetBasicAuthCredentials` <a name="ResetBasicAuthCredentials" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetBasicAuthCredentials"></a>
 
 ```go
 func ResetBasicAuthCredentials()
 ```
 
-##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetDescription"></a>
+##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetDescription"></a>
 
 ```go
 func ResetDescription()
 ```
 
-##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetDisplayName"></a>
+##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetDisplayName"></a>
 
 ```go
 func ResetDisplayName()
 ```
 
-##### `ResetEnableAutoBuild` <a name="ResetEnableAutoBuild" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableAutoBuild"></a>
+##### `ResetEnableAutoBuild` <a name="ResetEnableAutoBuild" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableAutoBuild"></a>
 
 ```go
 func ResetEnableAutoBuild()
 ```
 
-##### `ResetEnableBasicAuth` <a name="ResetEnableBasicAuth" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableBasicAuth"></a>
+##### `ResetEnableBasicAuth` <a name="ResetEnableBasicAuth" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableBasicAuth"></a>
 
 ```go
 func ResetEnableBasicAuth()
 ```
 
-##### `ResetEnableNotification` <a name="ResetEnableNotification" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableNotification"></a>
+##### `ResetEnableNotification` <a name="ResetEnableNotification" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableNotification"></a>
 
 ```go
 func ResetEnableNotification()
 ```
 
-##### `ResetEnablePerformanceMode` <a name="ResetEnablePerformanceMode" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePerformanceMode"></a>
+##### `ResetEnablePerformanceMode` <a name="ResetEnablePerformanceMode" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePerformanceMode"></a>
 
 ```go
 func ResetEnablePerformanceMode()
 ```
 
-##### `ResetEnablePullRequestPreview` <a name="ResetEnablePullRequestPreview" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePullRequestPreview"></a>
+##### `ResetEnablePullRequestPreview` <a name="ResetEnablePullRequestPreview" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnablePullRequestPreview"></a>
 
 ```go
 func ResetEnablePullRequestPreview()
 ```
 
-##### `ResetEnableSkewProtection` <a name="ResetEnableSkewProtection" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnableSkewProtection"></a>
+##### `ResetEnableSkewProtection` <a name="ResetEnableSkewProtection" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnableSkewProtection"></a>
 
 ```go
 func ResetEnableSkewProtection()
 ```
 
-##### `ResetEnvironmentVariables` <a name="ResetEnvironmentVariables" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetEnvironmentVariables"></a>
+##### `ResetEnvironmentVariables` <a name="ResetEnvironmentVariables" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetEnvironmentVariables"></a>
 
 ```go
 func ResetEnvironmentVariables()
 ```
 
-##### `ResetFramework` <a name="ResetFramework" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetFramework"></a>
+##### `ResetFramework` <a name="ResetFramework" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetFramework"></a>
 
 ```go
 func ResetFramework()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetPullRequestEnvironmentName` <a name="ResetPullRequestEnvironmentName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetPullRequestEnvironmentName"></a>
+##### `ResetPullRequestEnvironmentName` <a name="ResetPullRequestEnvironmentName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetPullRequestEnvironmentName"></a>
 
 ```go
 func ResetPullRequestEnvironmentName()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetStage` <a name="ResetStage" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetStage"></a>
+##### `ResetStage` <a name="ResetStage" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetStage"></a>
 
 ```go
 func ResetStage()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetTagsAll"></a>
+##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetTagsAll"></a>
 
 ```go
 func ResetTagsAll()
 ```
 
-##### `ResetTtl` <a name="ResetTtl" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.resetTtl"></a>
+##### `ResetTtl` <a name="ResetTtl" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.resetTtl"></a>
 
 ```go
 func ResetTtl()
@@ -501,17 +501,17 @@ func ResetTtl()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AmplifyBranch resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AmplifyBranch resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsConstruct(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -540,45 +540,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/amplifybranch"
 
 amplifybranch.AmplifyBranch_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/amplifybranch"
 
 amplifybranch.AmplifyBranch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a AmplifyBranch resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -586,7 +586,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -594,17 +594,17 @@ The construct id used in the generated config for the AmplifyBranch to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing AmplifyBranch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -616,71 +616,71 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.associatedResources">AssociatedResources</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.customDomains">CustomDomains</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.destinationBranch">DestinationBranch</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.sourceBranch">SourceBranch</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.appIdInput">AppIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArnInput">BackendEnvironmentArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentialsInput">BasicAuthCredentialsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.branchNameInput">BranchNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuildInput">EnableAutoBuildInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuthInput">EnableBasicAuthInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotificationInput">EnableNotificationInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceModeInput">EnablePerformanceModeInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreviewInput">EnablePullRequestPreviewInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtectionInput">EnableSkewProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariablesInput">EnvironmentVariablesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.frameworkInput">FrameworkInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentNameInput">PullRequestEnvironmentNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.stageInput">StageInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.ttlInput">TtlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.appId">AppId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArn">BackendEnvironmentArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentials">BasicAuthCredentials</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.branchName">BranchName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuild">EnableAutoBuild</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuth">EnableBasicAuth</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotification">EnableNotification</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceMode">EnablePerformanceMode</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreview">EnablePullRequestPreview</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtection">EnableSkewProtection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariables">EnvironmentVariables</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.framework">Framework</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentName">PullRequestEnvironmentName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.stage">Stage</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.ttl">Ttl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.associatedResources">AssociatedResources</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.customDomains">CustomDomains</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.destinationBranch">DestinationBranch</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.sourceBranch">SourceBranch</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.appIdInput">AppIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArnInput">BackendEnvironmentArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentialsInput">BasicAuthCredentialsInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.branchNameInput">BranchNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuildInput">EnableAutoBuildInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuthInput">EnableBasicAuthInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotificationInput">EnableNotificationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceModeInput">EnablePerformanceModeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreviewInput">EnablePullRequestPreviewInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtectionInput">EnableSkewProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariablesInput">EnvironmentVariablesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.frameworkInput">FrameworkInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentNameInput">PullRequestEnvironmentNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.stageInput">StageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.ttlInput">TtlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.appId">AppId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArn">BackendEnvironmentArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentials">BasicAuthCredentials</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.branchName">BranchName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuild">EnableAutoBuild</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuth">EnableBasicAuth</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotification">EnableNotification</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceMode">EnablePerformanceMode</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreview">EnablePullRequestPreview</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtection">EnableSkewProtection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariables">EnvironmentVariables</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.framework">Framework</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentName">PullRequestEnvironmentName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.stage">Stage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.ttl">Ttl</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.node"></a>
 
 ```go
 func Node() Node
@@ -692,7 +692,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -702,7 +702,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -712,7 +712,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -722,7 +722,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -732,7 +732,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -742,7 +742,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -752,7 +752,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -762,7 +762,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -772,7 +772,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -782,7 +782,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -792,7 +792,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -802,7 +802,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -812,7 +812,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -822,7 +822,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -832,7 +832,7 @@ func Arn() *string
 
 ---
 
-##### `AssociatedResources`<sup>Required</sup> <a name="AssociatedResources" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.associatedResources"></a>
+##### `AssociatedResources`<sup>Required</sup> <a name="AssociatedResources" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.associatedResources"></a>
 
 ```go
 func AssociatedResources() *[]*string
@@ -842,7 +842,7 @@ func AssociatedResources() *[]*string
 
 ---
 
-##### `CustomDomains`<sup>Required</sup> <a name="CustomDomains" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.customDomains"></a>
+##### `CustomDomains`<sup>Required</sup> <a name="CustomDomains" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.customDomains"></a>
 
 ```go
 func CustomDomains() *[]*string
@@ -852,7 +852,7 @@ func CustomDomains() *[]*string
 
 ---
 
-##### `DestinationBranch`<sup>Required</sup> <a name="DestinationBranch" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.destinationBranch"></a>
+##### `DestinationBranch`<sup>Required</sup> <a name="DestinationBranch" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.destinationBranch"></a>
 
 ```go
 func DestinationBranch() *string
@@ -862,7 +862,7 @@ func DestinationBranch() *string
 
 ---
 
-##### `SourceBranch`<sup>Required</sup> <a name="SourceBranch" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.sourceBranch"></a>
+##### `SourceBranch`<sup>Required</sup> <a name="SourceBranch" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.sourceBranch"></a>
 
 ```go
 func SourceBranch() *string
@@ -872,7 +872,7 @@ func SourceBranch() *string
 
 ---
 
-##### `AppIdInput`<sup>Optional</sup> <a name="AppIdInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.appIdInput"></a>
+##### `AppIdInput`<sup>Optional</sup> <a name="AppIdInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.appIdInput"></a>
 
 ```go
 func AppIdInput() *string
@@ -882,7 +882,7 @@ func AppIdInput() *string
 
 ---
 
-##### `BackendEnvironmentArnInput`<sup>Optional</sup> <a name="BackendEnvironmentArnInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArnInput"></a>
+##### `BackendEnvironmentArnInput`<sup>Optional</sup> <a name="BackendEnvironmentArnInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArnInput"></a>
 
 ```go
 func BackendEnvironmentArnInput() *string
@@ -892,7 +892,7 @@ func BackendEnvironmentArnInput() *string
 
 ---
 
-##### `BasicAuthCredentialsInput`<sup>Optional</sup> <a name="BasicAuthCredentialsInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentialsInput"></a>
+##### `BasicAuthCredentialsInput`<sup>Optional</sup> <a name="BasicAuthCredentialsInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentialsInput"></a>
 
 ```go
 func BasicAuthCredentialsInput() *string
@@ -902,7 +902,7 @@ func BasicAuthCredentialsInput() *string
 
 ---
 
-##### `BranchNameInput`<sup>Optional</sup> <a name="BranchNameInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.branchNameInput"></a>
+##### `BranchNameInput`<sup>Optional</sup> <a name="BranchNameInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.branchNameInput"></a>
 
 ```go
 func BranchNameInput() *string
@@ -912,7 +912,7 @@ func BranchNameInput() *string
 
 ---
 
-##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.descriptionInput"></a>
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.descriptionInput"></a>
 
 ```go
 func DescriptionInput() *string
@@ -922,7 +922,7 @@ func DescriptionInput() *string
 
 ---
 
-##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.displayNameInput"></a>
+##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.displayNameInput"></a>
 
 ```go
 func DisplayNameInput() *string
@@ -932,7 +932,7 @@ func DisplayNameInput() *string
 
 ---
 
-##### `EnableAutoBuildInput`<sup>Optional</sup> <a name="EnableAutoBuildInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuildInput"></a>
+##### `EnableAutoBuildInput`<sup>Optional</sup> <a name="EnableAutoBuildInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuildInput"></a>
 
 ```go
 func EnableAutoBuildInput() interface{}
@@ -942,7 +942,7 @@ func EnableAutoBuildInput() interface{}
 
 ---
 
-##### `EnableBasicAuthInput`<sup>Optional</sup> <a name="EnableBasicAuthInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuthInput"></a>
+##### `EnableBasicAuthInput`<sup>Optional</sup> <a name="EnableBasicAuthInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuthInput"></a>
 
 ```go
 func EnableBasicAuthInput() interface{}
@@ -952,7 +952,7 @@ func EnableBasicAuthInput() interface{}
 
 ---
 
-##### `EnableNotificationInput`<sup>Optional</sup> <a name="EnableNotificationInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotificationInput"></a>
+##### `EnableNotificationInput`<sup>Optional</sup> <a name="EnableNotificationInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotificationInput"></a>
 
 ```go
 func EnableNotificationInput() interface{}
@@ -962,7 +962,7 @@ func EnableNotificationInput() interface{}
 
 ---
 
-##### `EnablePerformanceModeInput`<sup>Optional</sup> <a name="EnablePerformanceModeInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceModeInput"></a>
+##### `EnablePerformanceModeInput`<sup>Optional</sup> <a name="EnablePerformanceModeInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceModeInput"></a>
 
 ```go
 func EnablePerformanceModeInput() interface{}
@@ -972,7 +972,7 @@ func EnablePerformanceModeInput() interface{}
 
 ---
 
-##### `EnablePullRequestPreviewInput`<sup>Optional</sup> <a name="EnablePullRequestPreviewInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreviewInput"></a>
+##### `EnablePullRequestPreviewInput`<sup>Optional</sup> <a name="EnablePullRequestPreviewInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreviewInput"></a>
 
 ```go
 func EnablePullRequestPreviewInput() interface{}
@@ -982,7 +982,7 @@ func EnablePullRequestPreviewInput() interface{}
 
 ---
 
-##### `EnableSkewProtectionInput`<sup>Optional</sup> <a name="EnableSkewProtectionInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtectionInput"></a>
+##### `EnableSkewProtectionInput`<sup>Optional</sup> <a name="EnableSkewProtectionInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtectionInput"></a>
 
 ```go
 func EnableSkewProtectionInput() interface{}
@@ -992,7 +992,7 @@ func EnableSkewProtectionInput() interface{}
 
 ---
 
-##### `EnvironmentVariablesInput`<sup>Optional</sup> <a name="EnvironmentVariablesInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariablesInput"></a>
+##### `EnvironmentVariablesInput`<sup>Optional</sup> <a name="EnvironmentVariablesInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariablesInput"></a>
 
 ```go
 func EnvironmentVariablesInput() *map[string]*string
@@ -1002,7 +1002,7 @@ func EnvironmentVariablesInput() *map[string]*string
 
 ---
 
-##### `FrameworkInput`<sup>Optional</sup> <a name="FrameworkInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.frameworkInput"></a>
+##### `FrameworkInput`<sup>Optional</sup> <a name="FrameworkInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.frameworkInput"></a>
 
 ```go
 func FrameworkInput() *string
@@ -1012,7 +1012,7 @@ func FrameworkInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -1022,7 +1022,7 @@ func IdInput() *string
 
 ---
 
-##### `PullRequestEnvironmentNameInput`<sup>Optional</sup> <a name="PullRequestEnvironmentNameInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentNameInput"></a>
+##### `PullRequestEnvironmentNameInput`<sup>Optional</sup> <a name="PullRequestEnvironmentNameInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentNameInput"></a>
 
 ```go
 func PullRequestEnvironmentNameInput() *string
@@ -1032,7 +1032,7 @@ func PullRequestEnvironmentNameInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -1042,7 +1042,7 @@ func RegionInput() *string
 
 ---
 
-##### `StageInput`<sup>Optional</sup> <a name="StageInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.stageInput"></a>
+##### `StageInput`<sup>Optional</sup> <a name="StageInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.stageInput"></a>
 
 ```go
 func StageInput() *string
@@ -1052,7 +1052,7 @@ func StageInput() *string
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAllInput"></a>
+##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAllInput"></a>
 
 ```go
 func TagsAllInput() *map[string]*string
@@ -1062,7 +1062,7 @@ func TagsAllInput() *map[string]*string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -1072,7 +1072,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TtlInput`<sup>Optional</sup> <a name="TtlInput" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.ttlInput"></a>
+##### `TtlInput`<sup>Optional</sup> <a name="TtlInput" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.ttlInput"></a>
 
 ```go
 func TtlInput() *string
@@ -1082,7 +1082,7 @@ func TtlInput() *string
 
 ---
 
-##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.appId"></a>
+##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.appId"></a>
 
 ```go
 func AppId() *string
@@ -1092,7 +1092,7 @@ func AppId() *string
 
 ---
 
-##### `BackendEnvironmentArn`<sup>Required</sup> <a name="BackendEnvironmentArn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArn"></a>
+##### `BackendEnvironmentArn`<sup>Required</sup> <a name="BackendEnvironmentArn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.backendEnvironmentArn"></a>
 
 ```go
 func BackendEnvironmentArn() *string
@@ -1102,7 +1102,7 @@ func BackendEnvironmentArn() *string
 
 ---
 
-##### `BasicAuthCredentials`<sup>Required</sup> <a name="BasicAuthCredentials" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentials"></a>
+##### `BasicAuthCredentials`<sup>Required</sup> <a name="BasicAuthCredentials" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.basicAuthCredentials"></a>
 
 ```go
 func BasicAuthCredentials() *string
@@ -1112,7 +1112,7 @@ func BasicAuthCredentials() *string
 
 ---
 
-##### `BranchName`<sup>Required</sup> <a name="BranchName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.branchName"></a>
+##### `BranchName`<sup>Required</sup> <a name="BranchName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.branchName"></a>
 
 ```go
 func BranchName() *string
@@ -1122,7 +1122,7 @@ func BranchName() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.description"></a>
 
 ```go
 func Description() *string
@@ -1132,7 +1132,7 @@ func Description() *string
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -1142,7 +1142,7 @@ func DisplayName() *string
 
 ---
 
-##### `EnableAutoBuild`<sup>Required</sup> <a name="EnableAutoBuild" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuild"></a>
+##### `EnableAutoBuild`<sup>Required</sup> <a name="EnableAutoBuild" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableAutoBuild"></a>
 
 ```go
 func EnableAutoBuild() interface{}
@@ -1152,7 +1152,7 @@ func EnableAutoBuild() interface{}
 
 ---
 
-##### `EnableBasicAuth`<sup>Required</sup> <a name="EnableBasicAuth" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuth"></a>
+##### `EnableBasicAuth`<sup>Required</sup> <a name="EnableBasicAuth" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableBasicAuth"></a>
 
 ```go
 func EnableBasicAuth() interface{}
@@ -1162,7 +1162,7 @@ func EnableBasicAuth() interface{}
 
 ---
 
-##### `EnableNotification`<sup>Required</sup> <a name="EnableNotification" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotification"></a>
+##### `EnableNotification`<sup>Required</sup> <a name="EnableNotification" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableNotification"></a>
 
 ```go
 func EnableNotification() interface{}
@@ -1172,7 +1172,7 @@ func EnableNotification() interface{}
 
 ---
 
-##### `EnablePerformanceMode`<sup>Required</sup> <a name="EnablePerformanceMode" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceMode"></a>
+##### `EnablePerformanceMode`<sup>Required</sup> <a name="EnablePerformanceMode" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePerformanceMode"></a>
 
 ```go
 func EnablePerformanceMode() interface{}
@@ -1182,7 +1182,7 @@ func EnablePerformanceMode() interface{}
 
 ---
 
-##### `EnablePullRequestPreview`<sup>Required</sup> <a name="EnablePullRequestPreview" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreview"></a>
+##### `EnablePullRequestPreview`<sup>Required</sup> <a name="EnablePullRequestPreview" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enablePullRequestPreview"></a>
 
 ```go
 func EnablePullRequestPreview() interface{}
@@ -1192,7 +1192,7 @@ func EnablePullRequestPreview() interface{}
 
 ---
 
-##### `EnableSkewProtection`<sup>Required</sup> <a name="EnableSkewProtection" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtection"></a>
+##### `EnableSkewProtection`<sup>Required</sup> <a name="EnableSkewProtection" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.enableSkewProtection"></a>
 
 ```go
 func EnableSkewProtection() interface{}
@@ -1202,7 +1202,7 @@ func EnableSkewProtection() interface{}
 
 ---
 
-##### `EnvironmentVariables`<sup>Required</sup> <a name="EnvironmentVariables" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariables"></a>
+##### `EnvironmentVariables`<sup>Required</sup> <a name="EnvironmentVariables" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.environmentVariables"></a>
 
 ```go
 func EnvironmentVariables() *map[string]*string
@@ -1212,7 +1212,7 @@ func EnvironmentVariables() *map[string]*string
 
 ---
 
-##### `Framework`<sup>Required</sup> <a name="Framework" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.framework"></a>
+##### `Framework`<sup>Required</sup> <a name="Framework" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.framework"></a>
 
 ```go
 func Framework() *string
@@ -1222,7 +1222,7 @@ func Framework() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.id"></a>
 
 ```go
 func Id() *string
@@ -1232,7 +1232,7 @@ func Id() *string
 
 ---
 
-##### `PullRequestEnvironmentName`<sup>Required</sup> <a name="PullRequestEnvironmentName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentName"></a>
+##### `PullRequestEnvironmentName`<sup>Required</sup> <a name="PullRequestEnvironmentName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.pullRequestEnvironmentName"></a>
 
 ```go
 func PullRequestEnvironmentName() *string
@@ -1242,7 +1242,7 @@ func PullRequestEnvironmentName() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.region"></a>
 
 ```go
 func Region() *string
@@ -1252,7 +1252,7 @@ func Region() *string
 
 ---
 
-##### `Stage`<sup>Required</sup> <a name="Stage" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.stage"></a>
+##### `Stage`<sup>Required</sup> <a name="Stage" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.stage"></a>
 
 ```go
 func Stage() *string
@@ -1262,7 +1262,7 @@ func Stage() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -1272,7 +1272,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAll"></a>
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tagsAll"></a>
 
 ```go
 func TagsAll() *map[string]*string
@@ -1282,7 +1282,7 @@ func TagsAll() *map[string]*string
 
 ---
 
-##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.ttl"></a>
+##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.ttl"></a>
 
 ```go
 func Ttl() *string
@@ -1296,11 +1296,11 @@ func Ttl() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranch.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranch.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1312,12 +1312,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AmplifyBranchConfig <a name="AmplifyBranchConfig" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig"></a>
+### AmplifyBranchConfig <a name="AmplifyBranchConfig" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/amplifybranch"
 
 &amplifybranch.AmplifyBranchConfig {
 	Connection: interface{},
@@ -1355,38 +1355,38 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/amplifybranch"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#app_id AmplifyBranch#app_id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.branchName">BranchName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#branch_name AmplifyBranch#branch_name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.backendEnvironmentArn">BackendEnvironmentArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#backend_environment_arn AmplifyBranch#backend_environment_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.basicAuthCredentials">BasicAuthCredentials</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#basic_auth_credentials AmplifyBranch#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#description AmplifyBranch#description}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#display_name AmplifyBranch#display_name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableAutoBuild">EnableAutoBuild</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_auto_build AmplifyBranch#enable_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableBasicAuth">EnableBasicAuth</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_basic_auth AmplifyBranch#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableNotification">EnableNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_notification AmplifyBranch#enable_notification}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePerformanceMode">EnablePerformanceMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_performance_mode AmplifyBranch#enable_performance_mode}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePullRequestPreview">EnablePullRequestPreview</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableSkewProtection">EnableSkewProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_skew_protection AmplifyBranch#enable_skew_protection}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.environmentVariables">EnvironmentVariables</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#environment_variables AmplifyBranch#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.framework">Framework</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#framework AmplifyBranch#framework}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#id AmplifyBranch#id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.pullRequestEnvironmentName">PullRequestEnvironmentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#pull_request_environment_name AmplifyBranch#pull_request_environment_name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.stage">Stage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#stage AmplifyBranch#stage}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#tags AmplifyBranch#tags}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#tags_all AmplifyBranch#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.ttl">Ttl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#ttl AmplifyBranch#ttl}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#app_id AmplifyBranch#app_id}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.branchName">BranchName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#branch_name AmplifyBranch#branch_name}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.backendEnvironmentArn">BackendEnvironmentArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#backend_environment_arn AmplifyBranch#backend_environment_arn}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.basicAuthCredentials">BasicAuthCredentials</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#basic_auth_credentials AmplifyBranch#basic_auth_credentials}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#description AmplifyBranch#description}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#display_name AmplifyBranch#display_name}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableAutoBuild">EnableAutoBuild</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_auto_build AmplifyBranch#enable_auto_build}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableBasicAuth">EnableBasicAuth</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_basic_auth AmplifyBranch#enable_basic_auth}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableNotification">EnableNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_notification AmplifyBranch#enable_notification}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePerformanceMode">EnablePerformanceMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_performance_mode AmplifyBranch#enable_performance_mode}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePullRequestPreview">EnablePullRequestPreview</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableSkewProtection">EnableSkewProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_skew_protection AmplifyBranch#enable_skew_protection}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.environmentVariables">EnvironmentVariables</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#environment_variables AmplifyBranch#environment_variables}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.framework">Framework</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#framework AmplifyBranch#framework}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#id AmplifyBranch#id}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.pullRequestEnvironmentName">PullRequestEnvironmentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#pull_request_environment_name AmplifyBranch#pull_request_environment_name}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.stage">Stage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#stage AmplifyBranch#stage}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#tags AmplifyBranch#tags}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#tags_all AmplifyBranch#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.ttl">Ttl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#ttl AmplifyBranch#ttl}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1396,7 +1396,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1406,7 +1406,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1416,7 +1416,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1426,7 +1426,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1436,7 +1436,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1446,7 +1446,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1456,7 +1456,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.appId"></a>
+##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.appId"></a>
 
 ```go
 AppId *string
@@ -1464,11 +1464,11 @@ AppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#app_id AmplifyBranch#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#app_id AmplifyBranch#app_id}.
 
 ---
 
-##### `BranchName`<sup>Required</sup> <a name="BranchName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.branchName"></a>
+##### `BranchName`<sup>Required</sup> <a name="BranchName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.branchName"></a>
 
 ```go
 BranchName *string
@@ -1476,11 +1476,11 @@ BranchName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#branch_name AmplifyBranch#branch_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#branch_name AmplifyBranch#branch_name}.
 
 ---
 
-##### `BackendEnvironmentArn`<sup>Optional</sup> <a name="BackendEnvironmentArn" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.backendEnvironmentArn"></a>
+##### `BackendEnvironmentArn`<sup>Optional</sup> <a name="BackendEnvironmentArn" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.backendEnvironmentArn"></a>
 
 ```go
 BackendEnvironmentArn *string
@@ -1488,11 +1488,11 @@ BackendEnvironmentArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#backend_environment_arn AmplifyBranch#backend_environment_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#backend_environment_arn AmplifyBranch#backend_environment_arn}.
 
 ---
 
-##### `BasicAuthCredentials`<sup>Optional</sup> <a name="BasicAuthCredentials" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.basicAuthCredentials"></a>
+##### `BasicAuthCredentials`<sup>Optional</sup> <a name="BasicAuthCredentials" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.basicAuthCredentials"></a>
 
 ```go
 BasicAuthCredentials *string
@@ -1500,11 +1500,11 @@ BasicAuthCredentials *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#basic_auth_credentials AmplifyBranch#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#basic_auth_credentials AmplifyBranch#basic_auth_credentials}.
 
 ---
 
-##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.description"></a>
 
 ```go
 Description *string
@@ -1512,11 +1512,11 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#description AmplifyBranch#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#description AmplifyBranch#description}.
 
 ---
 
-##### `DisplayName`<sup>Optional</sup> <a name="DisplayName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.displayName"></a>
+##### `DisplayName`<sup>Optional</sup> <a name="DisplayName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.displayName"></a>
 
 ```go
 DisplayName *string
@@ -1524,11 +1524,11 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#display_name AmplifyBranch#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#display_name AmplifyBranch#display_name}.
 
 ---
 
-##### `EnableAutoBuild`<sup>Optional</sup> <a name="EnableAutoBuild" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableAutoBuild"></a>
+##### `EnableAutoBuild`<sup>Optional</sup> <a name="EnableAutoBuild" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableAutoBuild"></a>
 
 ```go
 EnableAutoBuild interface{}
@@ -1536,11 +1536,11 @@ EnableAutoBuild interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_auto_build AmplifyBranch#enable_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_auto_build AmplifyBranch#enable_auto_build}.
 
 ---
 
-##### `EnableBasicAuth`<sup>Optional</sup> <a name="EnableBasicAuth" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableBasicAuth"></a>
+##### `EnableBasicAuth`<sup>Optional</sup> <a name="EnableBasicAuth" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableBasicAuth"></a>
 
 ```go
 EnableBasicAuth interface{}
@@ -1548,11 +1548,11 @@ EnableBasicAuth interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_basic_auth AmplifyBranch#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_basic_auth AmplifyBranch#enable_basic_auth}.
 
 ---
 
-##### `EnableNotification`<sup>Optional</sup> <a name="EnableNotification" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableNotification"></a>
+##### `EnableNotification`<sup>Optional</sup> <a name="EnableNotification" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableNotification"></a>
 
 ```go
 EnableNotification interface{}
@@ -1560,11 +1560,11 @@ EnableNotification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_notification AmplifyBranch#enable_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_notification AmplifyBranch#enable_notification}.
 
 ---
 
-##### `EnablePerformanceMode`<sup>Optional</sup> <a name="EnablePerformanceMode" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePerformanceMode"></a>
+##### `EnablePerformanceMode`<sup>Optional</sup> <a name="EnablePerformanceMode" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePerformanceMode"></a>
 
 ```go
 EnablePerformanceMode interface{}
@@ -1572,11 +1572,11 @@ EnablePerformanceMode interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_performance_mode AmplifyBranch#enable_performance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_performance_mode AmplifyBranch#enable_performance_mode}.
 
 ---
 
-##### `EnablePullRequestPreview`<sup>Optional</sup> <a name="EnablePullRequestPreview" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePullRequestPreview"></a>
+##### `EnablePullRequestPreview`<sup>Optional</sup> <a name="EnablePullRequestPreview" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enablePullRequestPreview"></a>
 
 ```go
 EnablePullRequestPreview interface{}
@@ -1584,11 +1584,11 @@ EnablePullRequestPreview interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}.
 
 ---
 
-##### `EnableSkewProtection`<sup>Optional</sup> <a name="EnableSkewProtection" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableSkewProtection"></a>
+##### `EnableSkewProtection`<sup>Optional</sup> <a name="EnableSkewProtection" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.enableSkewProtection"></a>
 
 ```go
 EnableSkewProtection interface{}
@@ -1596,11 +1596,11 @@ EnableSkewProtection interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#enable_skew_protection AmplifyBranch#enable_skew_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#enable_skew_protection AmplifyBranch#enable_skew_protection}.
 
 ---
 
-##### `EnvironmentVariables`<sup>Optional</sup> <a name="EnvironmentVariables" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.environmentVariables"></a>
+##### `EnvironmentVariables`<sup>Optional</sup> <a name="EnvironmentVariables" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.environmentVariables"></a>
 
 ```go
 EnvironmentVariables *map[string]*string
@@ -1608,11 +1608,11 @@ EnvironmentVariables *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#environment_variables AmplifyBranch#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#environment_variables AmplifyBranch#environment_variables}.
 
 ---
 
-##### `Framework`<sup>Optional</sup> <a name="Framework" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.framework"></a>
+##### `Framework`<sup>Optional</sup> <a name="Framework" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.framework"></a>
 
 ```go
 Framework *string
@@ -1620,11 +1620,11 @@ Framework *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#framework AmplifyBranch#framework}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#framework AmplifyBranch#framework}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1632,14 +1632,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#id AmplifyBranch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#id AmplifyBranch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `PullRequestEnvironmentName`<sup>Optional</sup> <a name="PullRequestEnvironmentName" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.pullRequestEnvironmentName"></a>
+##### `PullRequestEnvironmentName`<sup>Optional</sup> <a name="PullRequestEnvironmentName" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.pullRequestEnvironmentName"></a>
 
 ```go
 PullRequestEnvironmentName *string
@@ -1647,11 +1647,11 @@ PullRequestEnvironmentName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#pull_request_environment_name AmplifyBranch#pull_request_environment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#pull_request_environment_name AmplifyBranch#pull_request_environment_name}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1661,11 +1661,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#region AmplifyBranch#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#region AmplifyBranch#region}
 
 ---
 
-##### `Stage`<sup>Optional</sup> <a name="Stage" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.stage"></a>
+##### `Stage`<sup>Optional</sup> <a name="Stage" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.stage"></a>
 
 ```go
 Stage *string
@@ -1673,11 +1673,11 @@ Stage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#stage AmplifyBranch#stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#stage AmplifyBranch#stage}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1685,11 +1685,11 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#tags AmplifyBranch#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#tags AmplifyBranch#tags}.
 
 ---
 
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tagsAll"></a>
+##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.tagsAll"></a>
 
 ```go
 TagsAll *map[string]*string
@@ -1697,11 +1697,11 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#tags_all AmplifyBranch#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#tags_all AmplifyBranch#tags_all}.
 
 ---
 
-##### `Ttl`<sup>Optional</sup> <a name="Ttl" id="@cdktf/provider-aws.amplifyBranch.AmplifyBranchConfig.property.ttl"></a>
+##### `Ttl`<sup>Optional</sup> <a name="Ttl" id="@cdktn/provider-aws.amplifyBranch.AmplifyBranchConfig.property.ttl"></a>
 
 ```go
 Ttl *string
@@ -1709,7 +1709,7 @@ Ttl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_branch#ttl AmplifyBranch#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_branch#ttl AmplifyBranch#ttl}.
 
 ---
 

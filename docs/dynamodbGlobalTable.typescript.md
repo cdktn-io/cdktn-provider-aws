@@ -1,28 +1,28 @@
-# `dynamodbGlobalTable` Submodule <a name="`dynamodbGlobalTable` Submodule" id="@cdktf/provider-aws.dynamodbGlobalTable"></a>
+# `dynamodbGlobalTable` Submodule <a name="`dynamodbGlobalTable` Submodule" id="@cdktn/provider-aws.dynamodbGlobalTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DynamodbGlobalTable <a name="DynamodbGlobalTable" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable"></a>
+### DynamodbGlobalTable <a name="DynamodbGlobalTable" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 new dynamodbGlobalTable.DynamodbGlobalTable(scope: Construct, id: string, config: DynamodbGlobalTableConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig">DynamodbGlobalTableConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig">DynamodbGlobalTableConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig">DynamodbGlobalTableConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig">DynamodbGlobalTableConfig</a>
 
 ---
 
@@ -50,38 +50,38 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putReplica">putReplica</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putReplica">putReplica</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toString"></a>
 
 ```typescript
 public toString(): string
@@ -89,25 +89,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -115,7 +115,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -123,7 +123,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -131,19 +131,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -151,7 +151,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -159,7 +159,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -167,151 +167,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -321,7 +321,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -329,7 +329,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -337,7 +337,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -353,7 +353,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -361,7 +361,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -369,43 +369,43 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putReplica` <a name="putReplica" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putReplica"></a>
+##### `putReplica` <a name="putReplica" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putReplica"></a>
 
 ```typescript
 public putReplica(value: IResolvable | DynamodbGlobalTableReplica[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putReplica.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putReplica.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: DynamodbGlobalTableTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -415,17 +415,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DynamodbGlobalTable resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DynamodbGlobalTable resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 dynamodbGlobalTable.DynamodbGlobalTable.isConstruct(x: any)
 ```
@@ -446,7 +446,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -454,45 +454,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a DynamodbGlobalTable resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -500,7 +500,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -508,17 +508,17 @@ The construct id used in the generated config for the DynamodbGlobalTable to imp
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing DynamodbGlobalTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -530,35 +530,35 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replica">replica</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList">DynamodbGlobalTableReplicaList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference">DynamodbGlobalTableTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replicaInput">replicaInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replica">replica</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList">DynamodbGlobalTableReplicaList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference">DynamodbGlobalTableTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replicaInput">replicaInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.region">region</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -570,7 +570,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -580,7 +580,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -590,7 +590,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -600,7 +600,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -610,7 +610,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -620,7 +620,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -630,7 +630,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -640,7 +640,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -650,7 +650,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -660,7 +660,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -670,7 +670,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -680,7 +680,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -690,7 +690,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -700,7 +700,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -710,27 +710,27 @@ public readonly arn: string;
 
 ---
 
-##### `replica`<sup>Required</sup> <a name="replica" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replica"></a>
+##### `replica`<sup>Required</sup> <a name="replica" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replica"></a>
 
 ```typescript
 public readonly replica: DynamodbGlobalTableReplicaList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList">DynamodbGlobalTableReplicaList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList">DynamodbGlobalTableReplicaList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: DynamodbGlobalTableTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference">DynamodbGlobalTableTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference">DynamodbGlobalTableTimeoutsOutputReference</a>
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -740,7 +740,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -750,7 +750,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -760,27 +760,27 @@ public readonly regionInput: string;
 
 ---
 
-##### `replicaInput`<sup>Optional</sup> <a name="replicaInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replicaInput"></a>
+##### `replicaInput`<sup>Optional</sup> <a name="replicaInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.replicaInput"></a>
 
 ```typescript
 public readonly replicaInput: IResolvable | DynamodbGlobalTableReplica[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | DynamodbGlobalTableTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -790,7 +790,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -800,7 +800,7 @@ public readonly name: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -814,11 +814,11 @@ public readonly region: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -830,12 +830,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DynamodbGlobalTableConfig <a name="DynamodbGlobalTableConfig" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig"></a>
+### DynamodbGlobalTableConfig <a name="DynamodbGlobalTableConfig" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 const dynamodbGlobalTableConfig: dynamodbGlobalTable.DynamodbGlobalTableConfig = { ... }
 ```
@@ -844,22 +844,22 @@ const dynamodbGlobalTableConfig: dynamodbGlobalTable.DynamodbGlobalTableConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.replica">replica</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]</code> | replica block. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.replica">replica</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]</code> | replica block. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -869,7 +869,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -879,7 +879,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -889,7 +889,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -899,7 +899,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -909,7 +909,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -919,7 +919,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -929,7 +929,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -937,25 +937,25 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#name DynamodbGlobalTable#name}.
 
 ---
 
-##### `replica`<sup>Required</sup> <a name="replica" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.replica"></a>
+##### `replica`<sup>Required</sup> <a name="replica" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.replica"></a>
 
 ```typescript
 public readonly replica: IResolvable | DynamodbGlobalTableReplica[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#replica DynamodbGlobalTable#replica}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -963,14 +963,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#id DynamodbGlobalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -980,30 +980,30 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#region DynamodbGlobalTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#region DynamodbGlobalTable#region}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: DynamodbGlobalTableTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#timeouts DynamodbGlobalTable#timeouts}
 
 ---
 
-### DynamodbGlobalTableReplica <a name="DynamodbGlobalTableReplica" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica"></a>
+### DynamodbGlobalTableReplica <a name="DynamodbGlobalTableReplica" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 const dynamodbGlobalTableReplica: dynamodbGlobalTable.DynamodbGlobalTableReplica = { ... }
 ```
@@ -1012,11 +1012,11 @@ const dynamodbGlobalTableReplica: dynamodbGlobalTable.DynamodbGlobalTableReplica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.property.regionName">regionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.property.regionName">regionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}. |
 
 ---
 
-##### `regionName`<sup>Required</sup> <a name="regionName" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.property.regionName"></a>
+##### `regionName`<sup>Required</sup> <a name="regionName" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica.property.regionName"></a>
 
 ```typescript
 public readonly regionName: string;
@@ -1024,16 +1024,16 @@ public readonly regionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#region_name DynamodbGlobalTable#region_name}.
 
 ---
 
-### DynamodbGlobalTableTimeouts <a name="DynamodbGlobalTableTimeouts" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts"></a>
+### DynamodbGlobalTableTimeouts <a name="DynamodbGlobalTableTimeouts" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 const dynamodbGlobalTableTimeouts: dynamodbGlobalTable.DynamodbGlobalTableTimeouts = { ... }
 ```
@@ -1042,13 +1042,13 @@ const dynamodbGlobalTableTimeouts: dynamodbGlobalTable.DynamodbGlobalTableTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1056,11 +1056,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#create DynamodbGlobalTable#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1068,11 +1068,11 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#delete DynamodbGlobalTable#delete}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1080,31 +1080,31 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_global_table#update DynamodbGlobalTable#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DynamodbGlobalTableReplicaList <a name="DynamodbGlobalTableReplicaList" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList"></a>
+### DynamodbGlobalTableReplicaList <a name="DynamodbGlobalTableReplicaList" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 new dynamodbGlobalTable.DynamodbGlobalTableReplicaList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1112,7 +1112,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1120,7 +1120,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1132,15 +1132,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1150,19 +1150,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1170,13 +1170,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1186,13 +1186,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.get"></a>
 
 ```typescript
 public get(index: number): DynamodbGlobalTableReplicaOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1205,13 +1205,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1225,7 +1225,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1235,37 +1235,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DynamodbGlobalTableReplica[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>[]
 
 ---
 
 
-### DynamodbGlobalTableReplicaOutputReference <a name="DynamodbGlobalTableReplicaOutputReference" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference"></a>
+### DynamodbGlobalTableReplicaOutputReference <a name="DynamodbGlobalTableReplicaOutputReference" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 new dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1273,7 +1273,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1281,7 +1281,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1289,7 +1289,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1301,149 +1301,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1451,13 +1451,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1472,15 +1472,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionNameInput">regionNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionName">regionName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionNameInput">regionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionName">regionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1494,7 +1494,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1504,7 +1504,7 @@ public readonly fqn: string;
 
 ---
 
-##### `regionNameInput`<sup>Optional</sup> <a name="regionNameInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionNameInput"></a>
+##### `regionNameInput`<sup>Optional</sup> <a name="regionNameInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionNameInput"></a>
 
 ```typescript
 public readonly regionNameInput: string;
@@ -1514,7 +1514,7 @@ public readonly regionNameInput: string;
 
 ---
 
-##### `regionName`<sup>Required</sup> <a name="regionName" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionName"></a>
+##### `regionName`<sup>Required</sup> <a name="regionName" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.regionName"></a>
 
 ```typescript
 public readonly regionName: string;
@@ -1524,35 +1524,35 @@ public readonly regionName: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DynamodbGlobalTableReplica;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplica">DynamodbGlobalTableReplica</a>
 
 ---
 
 
-### DynamodbGlobalTableTimeoutsOutputReference <a name="DynamodbGlobalTableTimeoutsOutputReference" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference"></a>
+### DynamodbGlobalTableTimeoutsOutputReference <a name="DynamodbGlobalTableTimeoutsOutputReference" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { dynamodbGlobalTable } from '@cdktf/provider-aws'
+import { dynamodbGlobalTable } from '@cdktn/provider-aws'
 
 new dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1560,7 +1560,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1572,152 +1572,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1725,13 +1725,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1741,19 +1741,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1764,19 +1764,19 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1790,7 +1790,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1800,7 +1800,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1810,7 +1810,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1820,7 +1820,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1830,7 +1830,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1840,7 +1840,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1850,7 +1850,7 @@ public readonly delete: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1860,13 +1860,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DynamodbGlobalTableTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeouts">DynamodbGlobalTableTimeouts</a>
 
 ---
 

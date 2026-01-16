@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,54 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchLogSubscriptionFilterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#destination_arn CloudwatchLogSubscriptionFilter#destination_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#apply_on_transformed_logs CloudwatchLogSubscriptionFilter#apply_on_transformed_logs}
+  */
+  readonly applyOnTransformedLogs?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#destination_arn CloudwatchLogSubscriptionFilter#destination_arn}
   */
   readonly destinationArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#distribution CloudwatchLogSubscriptionFilter#distribution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#distribution CloudwatchLogSubscriptionFilter#distribution}
   */
   readonly distribution?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#filter_pattern CloudwatchLogSubscriptionFilter#filter_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#emit_system_fields CloudwatchLogSubscriptionFilter#emit_system_fields}
+  */
+  readonly emitSystemFields?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#filter_pattern CloudwatchLogSubscriptionFilter#filter_pattern}
   */
   readonly filterPattern: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#id CloudwatchLogSubscriptionFilter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#id CloudwatchLogSubscriptionFilter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#log_group_name CloudwatchLogSubscriptionFilter#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#log_group_name CloudwatchLogSubscriptionFilter#log_group_name}
   */
   readonly logGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#name CloudwatchLogSubscriptionFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#name CloudwatchLogSubscriptionFilter#name}
   */
   readonly name: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#region CloudwatchLogSubscriptionFilter#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#region CloudwatchLogSubscriptionFilter#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#role_arn CloudwatchLogSubscriptionFilter#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#role_arn CloudwatchLogSubscriptionFilter#role_arn}
   */
   readonly roleArn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter aws_cloudwatch_log_subscription_filter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter aws_cloudwatch_log_subscription_filter}
 */
 export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
@@ -68,7 +76,7 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CloudwatchLogSubscriptionFilter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudwatchLogSubscriptionFilter to import
-  * @param importFromId The id of the existing CloudwatchLogSubscriptionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudwatchLogSubscriptionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudwatchLogSubscriptionFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +88,7 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cloudwatch_log_subscription_filter aws_cloudwatch_log_subscription_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_subscription_filter aws_cloudwatch_log_subscription_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +99,7 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
       terraformResourceType: 'aws_cloudwatch_log_subscription_filter',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -102,8 +110,10 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._applyOnTransformedLogs = config.applyOnTransformedLogs;
     this._destinationArn = config.destinationArn;
     this._distribution = config.distribution;
+    this._emitSystemFields = config.emitSystemFields;
     this._filterPattern = config.filterPattern;
     this._id = config.id;
     this._logGroupName = config.logGroupName;
@@ -115,6 +125,22 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // apply_on_transformed_logs - computed: true, optional: true, required: false
+  private _applyOnTransformedLogs?: boolean | cdktf.IResolvable; 
+  public get applyOnTransformedLogs() {
+    return this.getBooleanAttribute('apply_on_transformed_logs');
+  }
+  public set applyOnTransformedLogs(value: boolean | cdktf.IResolvable) {
+    this._applyOnTransformedLogs = value;
+  }
+  public resetApplyOnTransformedLogs() {
+    this._applyOnTransformedLogs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyOnTransformedLogsInput() {
+    return this._applyOnTransformedLogs;
+  }
 
   // destination_arn - computed: false, optional: false, required: true
   private _destinationArn?: string; 
@@ -143,6 +169,22 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get distributionInput() {
     return this._distribution;
+  }
+
+  // emit_system_fields - computed: false, optional: true, required: false
+  private _emitSystemFields?: string[]; 
+  public get emitSystemFields() {
+    return cdktf.Fn.tolist(this.getListAttribute('emit_system_fields'));
+  }
+  public set emitSystemFields(value: string[]) {
+    this._emitSystemFields = value;
+  }
+  public resetEmitSystemFields() {
+    this._emitSystemFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emitSystemFieldsInput() {
+    return this._emitSystemFields;
   }
 
   // filter_pattern - computed: false, optional: false, required: true
@@ -238,8 +280,10 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      apply_on_transformed_logs: cdktf.booleanToTerraform(this._applyOnTransformedLogs),
       destination_arn: cdktf.stringToTerraform(this._destinationArn),
       distribution: cdktf.stringToTerraform(this._distribution),
+      emit_system_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emitSystemFields),
       filter_pattern: cdktf.stringToTerraform(this._filterPattern),
       id: cdktf.stringToTerraform(this._id),
       log_group_name: cdktf.stringToTerraform(this._logGroupName),
@@ -251,6 +295,12 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      apply_on_transformed_logs: {
+        value: cdktf.booleanToHclTerraform(this._applyOnTransformedLogs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       destination_arn: {
         value: cdktf.stringToHclTerraform(this._destinationArn),
         isBlock: false,
@@ -262,6 +312,12 @@ export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      emit_system_fields: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._emitSystemFields),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       filter_pattern: {
         value: cdktf.stringToHclTerraform(this._filterPattern),

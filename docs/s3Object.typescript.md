@@ -1,28 +1,28 @@
-# `s3Object` Submodule <a name="`s3Object` Submodule" id="@cdktf/provider-aws.s3Object"></a>
+# `s3Object` Submodule <a name="`s3Object` Submodule" id="@cdktn/provider-aws.s3Object"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### S3Object <a name="S3Object" id="@cdktf/provider-aws.s3Object.S3Object"></a>
+### S3Object <a name="S3Object" id="@cdktn/provider-aws.s3Object.S3Object"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object aws_s3_object}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object aws_s3_object}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3Object.S3Object.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3Object.S3Object.Initializer"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 new s3Object.S3Object(scope: Construct, id: string, config: S3ObjectConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig">S3ObjectConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig">S3ObjectConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.s3Object.S3Object.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.s3Object.S3Object.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3Object.S3Object.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3Object.S3Object.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.s3Object.S3Object.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.s3Object.S3Object.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig">S3ObjectConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig">S3ObjectConfig</a>
 
 ---
 
@@ -50,61 +50,61 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.putOverrideProvider">putOverrideProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetAcl">resetAcl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetBucketKeyEnabled">resetBucketKeyEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetCacheControl">resetCacheControl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetChecksumAlgorithm">resetChecksumAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetContent">resetContent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetContentBase64">resetContentBase64</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetContentDisposition">resetContentDisposition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetContentEncoding">resetContentEncoding</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetContentLanguage">resetContentLanguage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetContentType">resetContentType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetEtag">resetEtag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetMetadata">resetMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetObjectLockLegalHoldStatus">resetObjectLockLegalHoldStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetObjectLockMode">resetObjectLockMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetObjectLockRetainUntilDate">resetObjectLockRetainUntilDate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetOverrideProvider">resetOverrideProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetServerSideEncryption">resetServerSideEncryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetSource">resetSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetSourceHash">resetSourceHash</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetStorageClass">resetStorageClass</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetTagsAll">resetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.resetWebsiteRedirect">resetWebsiteRedirect</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.putOverrideProvider">putOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetAcl">resetAcl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetBucketKeyEnabled">resetBucketKeyEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetCacheControl">resetCacheControl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetChecksumAlgorithm">resetChecksumAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetContent">resetContent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetContentBase64">resetContentBase64</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetContentDisposition">resetContentDisposition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetContentEncoding">resetContentEncoding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetContentLanguage">resetContentLanguage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetContentType">resetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetEtag">resetEtag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetKmsKeyId">resetKmsKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetMetadata">resetMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetObjectLockLegalHoldStatus">resetObjectLockLegalHoldStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetObjectLockMode">resetObjectLockMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetObjectLockRetainUntilDate">resetObjectLockRetainUntilDate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetOverrideProvider">resetOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetServerSideEncryption">resetServerSideEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetSource">resetSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetSourceHash">resetSourceHash</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetStorageClass">resetStorageClass</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.resetWebsiteRedirect">resetWebsiteRedirect</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3Object.S3Object.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3Object.S3Object.toString"></a>
 
 ```typescript
 public toString(): string
@@ -112,25 +112,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.s3Object.S3Object.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.s3Object.S3Object.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.s3Object.S3Object.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.s3Object.S3Object.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3Object.S3Object.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3Object.S3Object.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.s3Object.S3Object.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.s3Object.S3Object.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -138,7 +138,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.s3Object.S3Object.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.s3Object.S3Object.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -146,7 +146,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.s3Object.S3Object.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.s3Object.S3Object.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -154,19 +154,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.s3Object.S3Object.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.s3Object.S3Object.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.s3Object.S3Object.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.s3Object.S3Object.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.s3Object.S3Object.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.s3Object.S3Object.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -174,7 +174,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.s3Object.S3Object.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.s3Object.S3Object.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -182,7 +182,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3Object.S3Object.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.s3Object.S3Object.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -190,151 +190,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.s3Object.S3Object.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.s3Object.S3Object.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.s3Object.S3Object.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.s3Object.S3Object.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3Object.S3Object.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3Object.S3Object.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3Object.S3Object.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3Object.S3Object.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3Object.S3Object.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3Object.S3Object.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3Object.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3Object.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.s3Object.S3Object.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.s3Object.S3Object.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -344,7 +344,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3Object.S3Object.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3Object.S3Object.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -352,7 +352,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.s3Object.S3Object.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.s3Object.S3Object.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -360,7 +360,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.s3Object.S3Object.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.s3Object.S3Object.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -368,7 +368,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.s3Object.S3Object.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.s3Object.S3Object.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -376,7 +376,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.s3Object.S3Object.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.s3Object.S3Object.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -384,7 +384,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3Object.S3Object.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3Object.S3Object.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -392,175 +392,175 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putOverrideProvider` <a name="putOverrideProvider" id="@cdktf/provider-aws.s3Object.S3Object.putOverrideProvider"></a>
+##### `putOverrideProvider` <a name="putOverrideProvider" id="@cdktn/provider-aws.s3Object.S3Object.putOverrideProvider"></a>
 
 ```typescript
 public putOverrideProvider(value: S3ObjectOverrideProvider): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3Object.S3Object.putOverrideProvider.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3Object.S3Object.putOverrideProvider.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
 
 ---
 
-##### `resetAcl` <a name="resetAcl" id="@cdktf/provider-aws.s3Object.S3Object.resetAcl"></a>
+##### `resetAcl` <a name="resetAcl" id="@cdktn/provider-aws.s3Object.S3Object.resetAcl"></a>
 
 ```typescript
 public resetAcl(): void
 ```
 
-##### `resetBucketKeyEnabled` <a name="resetBucketKeyEnabled" id="@cdktf/provider-aws.s3Object.S3Object.resetBucketKeyEnabled"></a>
+##### `resetBucketKeyEnabled` <a name="resetBucketKeyEnabled" id="@cdktn/provider-aws.s3Object.S3Object.resetBucketKeyEnabled"></a>
 
 ```typescript
 public resetBucketKeyEnabled(): void
 ```
 
-##### `resetCacheControl` <a name="resetCacheControl" id="@cdktf/provider-aws.s3Object.S3Object.resetCacheControl"></a>
+##### `resetCacheControl` <a name="resetCacheControl" id="@cdktn/provider-aws.s3Object.S3Object.resetCacheControl"></a>
 
 ```typescript
 public resetCacheControl(): void
 ```
 
-##### `resetChecksumAlgorithm` <a name="resetChecksumAlgorithm" id="@cdktf/provider-aws.s3Object.S3Object.resetChecksumAlgorithm"></a>
+##### `resetChecksumAlgorithm` <a name="resetChecksumAlgorithm" id="@cdktn/provider-aws.s3Object.S3Object.resetChecksumAlgorithm"></a>
 
 ```typescript
 public resetChecksumAlgorithm(): void
 ```
 
-##### `resetContent` <a name="resetContent" id="@cdktf/provider-aws.s3Object.S3Object.resetContent"></a>
+##### `resetContent` <a name="resetContent" id="@cdktn/provider-aws.s3Object.S3Object.resetContent"></a>
 
 ```typescript
 public resetContent(): void
 ```
 
-##### `resetContentBase64` <a name="resetContentBase64" id="@cdktf/provider-aws.s3Object.S3Object.resetContentBase64"></a>
+##### `resetContentBase64` <a name="resetContentBase64" id="@cdktn/provider-aws.s3Object.S3Object.resetContentBase64"></a>
 
 ```typescript
 public resetContentBase64(): void
 ```
 
-##### `resetContentDisposition` <a name="resetContentDisposition" id="@cdktf/provider-aws.s3Object.S3Object.resetContentDisposition"></a>
+##### `resetContentDisposition` <a name="resetContentDisposition" id="@cdktn/provider-aws.s3Object.S3Object.resetContentDisposition"></a>
 
 ```typescript
 public resetContentDisposition(): void
 ```
 
-##### `resetContentEncoding` <a name="resetContentEncoding" id="@cdktf/provider-aws.s3Object.S3Object.resetContentEncoding"></a>
+##### `resetContentEncoding` <a name="resetContentEncoding" id="@cdktn/provider-aws.s3Object.S3Object.resetContentEncoding"></a>
 
 ```typescript
 public resetContentEncoding(): void
 ```
 
-##### `resetContentLanguage` <a name="resetContentLanguage" id="@cdktf/provider-aws.s3Object.S3Object.resetContentLanguage"></a>
+##### `resetContentLanguage` <a name="resetContentLanguage" id="@cdktn/provider-aws.s3Object.S3Object.resetContentLanguage"></a>
 
 ```typescript
 public resetContentLanguage(): void
 ```
 
-##### `resetContentType` <a name="resetContentType" id="@cdktf/provider-aws.s3Object.S3Object.resetContentType"></a>
+##### `resetContentType` <a name="resetContentType" id="@cdktn/provider-aws.s3Object.S3Object.resetContentType"></a>
 
 ```typescript
 public resetContentType(): void
 ```
 
-##### `resetEtag` <a name="resetEtag" id="@cdktf/provider-aws.s3Object.S3Object.resetEtag"></a>
+##### `resetEtag` <a name="resetEtag" id="@cdktn/provider-aws.s3Object.S3Object.resetEtag"></a>
 
 ```typescript
 public resetEtag(): void
 ```
 
-##### `resetForceDestroy` <a name="resetForceDestroy" id="@cdktf/provider-aws.s3Object.S3Object.resetForceDestroy"></a>
+##### `resetForceDestroy` <a name="resetForceDestroy" id="@cdktn/provider-aws.s3Object.S3Object.resetForceDestroy"></a>
 
 ```typescript
 public resetForceDestroy(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.s3Object.S3Object.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.s3Object.S3Object.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetKmsKeyId` <a name="resetKmsKeyId" id="@cdktf/provider-aws.s3Object.S3Object.resetKmsKeyId"></a>
+##### `resetKmsKeyId` <a name="resetKmsKeyId" id="@cdktn/provider-aws.s3Object.S3Object.resetKmsKeyId"></a>
 
 ```typescript
 public resetKmsKeyId(): void
 ```
 
-##### `resetMetadata` <a name="resetMetadata" id="@cdktf/provider-aws.s3Object.S3Object.resetMetadata"></a>
+##### `resetMetadata` <a name="resetMetadata" id="@cdktn/provider-aws.s3Object.S3Object.resetMetadata"></a>
 
 ```typescript
 public resetMetadata(): void
 ```
 
-##### `resetObjectLockLegalHoldStatus` <a name="resetObjectLockLegalHoldStatus" id="@cdktf/provider-aws.s3Object.S3Object.resetObjectLockLegalHoldStatus"></a>
+##### `resetObjectLockLegalHoldStatus` <a name="resetObjectLockLegalHoldStatus" id="@cdktn/provider-aws.s3Object.S3Object.resetObjectLockLegalHoldStatus"></a>
 
 ```typescript
 public resetObjectLockLegalHoldStatus(): void
 ```
 
-##### `resetObjectLockMode` <a name="resetObjectLockMode" id="@cdktf/provider-aws.s3Object.S3Object.resetObjectLockMode"></a>
+##### `resetObjectLockMode` <a name="resetObjectLockMode" id="@cdktn/provider-aws.s3Object.S3Object.resetObjectLockMode"></a>
 
 ```typescript
 public resetObjectLockMode(): void
 ```
 
-##### `resetObjectLockRetainUntilDate` <a name="resetObjectLockRetainUntilDate" id="@cdktf/provider-aws.s3Object.S3Object.resetObjectLockRetainUntilDate"></a>
+##### `resetObjectLockRetainUntilDate` <a name="resetObjectLockRetainUntilDate" id="@cdktn/provider-aws.s3Object.S3Object.resetObjectLockRetainUntilDate"></a>
 
 ```typescript
 public resetObjectLockRetainUntilDate(): void
 ```
 
-##### `resetOverrideProvider` <a name="resetOverrideProvider" id="@cdktf/provider-aws.s3Object.S3Object.resetOverrideProvider"></a>
+##### `resetOverrideProvider` <a name="resetOverrideProvider" id="@cdktn/provider-aws.s3Object.S3Object.resetOverrideProvider"></a>
 
 ```typescript
 public resetOverrideProvider(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.s3Object.S3Object.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.s3Object.S3Object.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetServerSideEncryption` <a name="resetServerSideEncryption" id="@cdktf/provider-aws.s3Object.S3Object.resetServerSideEncryption"></a>
+##### `resetServerSideEncryption` <a name="resetServerSideEncryption" id="@cdktn/provider-aws.s3Object.S3Object.resetServerSideEncryption"></a>
 
 ```typescript
 public resetServerSideEncryption(): void
 ```
 
-##### `resetSource` <a name="resetSource" id="@cdktf/provider-aws.s3Object.S3Object.resetSource"></a>
+##### `resetSource` <a name="resetSource" id="@cdktn/provider-aws.s3Object.S3Object.resetSource"></a>
 
 ```typescript
 public resetSource(): void
 ```
 
-##### `resetSourceHash` <a name="resetSourceHash" id="@cdktf/provider-aws.s3Object.S3Object.resetSourceHash"></a>
+##### `resetSourceHash` <a name="resetSourceHash" id="@cdktn/provider-aws.s3Object.S3Object.resetSourceHash"></a>
 
 ```typescript
 public resetSourceHash(): void
 ```
 
-##### `resetStorageClass` <a name="resetStorageClass" id="@cdktf/provider-aws.s3Object.S3Object.resetStorageClass"></a>
+##### `resetStorageClass` <a name="resetStorageClass" id="@cdktn/provider-aws.s3Object.S3Object.resetStorageClass"></a>
 
 ```typescript
 public resetStorageClass(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.s3Object.S3Object.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.s3Object.S3Object.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.s3Object.S3Object.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.s3Object.S3Object.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
 ```
 
-##### `resetWebsiteRedirect` <a name="resetWebsiteRedirect" id="@cdktf/provider-aws.s3Object.S3Object.resetWebsiteRedirect"></a>
+##### `resetWebsiteRedirect` <a name="resetWebsiteRedirect" id="@cdktn/provider-aws.s3Object.S3Object.resetWebsiteRedirect"></a>
 
 ```typescript
 public resetWebsiteRedirect(): void
@@ -570,17 +570,17 @@ public resetWebsiteRedirect(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a S3Object resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a S3Object resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.s3Object.S3Object.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.s3Object.S3Object.isConstruct"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 s3Object.S3Object.isConstruct(x: any)
 ```
@@ -601,7 +601,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3Object.S3Object.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.s3Object.S3Object.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -609,45 +609,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.s3Object.S3Object.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.s3Object.S3Object.isTerraformElement"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 s3Object.S3Object.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3Object.S3Object.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.s3Object.S3Object.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.s3Object.S3Object.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.s3Object.S3Object.isTerraformResource"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 s3Object.S3Object.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.s3Object.S3Object.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.s3Object.S3Object.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.s3Object.S3Object.generateConfigForImport"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 s3Object.S3Object.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a S3Object resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -655,7 +655,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -663,17 +663,17 @@ The construct id used in the generated config for the S3Object to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing S3Object that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3Object.S3Object.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -685,89 +685,89 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumCrc32">checksumCrc32</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumCrc32C">checksumCrc32C</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumCrc64Nvme">checksumCrc64Nvme</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumSha1">checksumSha1</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumSha256">checksumSha256</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference">S3ObjectOverrideProviderOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.aclInput">aclInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.bucketKeyEnabledInput">bucketKeyEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.cacheControlInput">cacheControlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumAlgorithmInput">checksumAlgorithmInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentBase64Input">contentBase64Input</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentDispositionInput">contentDispositionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentEncodingInput">contentEncodingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentLanguageInput">contentLanguageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.etagInput">etagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatusInput">objectLockLegalHoldStatusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.objectLockModeInput">objectLockModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDateInput">objectLockRetainUntilDateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.overrideProviderInput">overrideProviderInput</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.serverSideEncryptionInput">serverSideEncryptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.sourceHashInput">sourceHashInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.storageClassInput">storageClassInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.websiteRedirectInput">websiteRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.acl">acl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.cacheControl">cacheControl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.content">content</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentBase64">contentBase64</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.etag">etag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.sourceHash">sourceHash</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.storageClass">storageClass</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumCrc32">checksumCrc32</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumCrc32C">checksumCrc32C</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumCrc64Nvme">checksumCrc64Nvme</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumSha1">checksumSha1</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumSha256">checksumSha256</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference">S3ObjectOverrideProviderOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.aclInput">aclInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.bucketKeyEnabledInput">bucketKeyEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.cacheControlInput">cacheControlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumAlgorithmInput">checksumAlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentBase64Input">contentBase64Input</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentDispositionInput">contentDispositionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentEncodingInput">contentEncodingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentLanguageInput">contentLanguageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.etagInput">etagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.kmsKeyIdInput">kmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatusInput">objectLockLegalHoldStatusInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.objectLockModeInput">objectLockModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDateInput">objectLockRetainUntilDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.overrideProviderInput">overrideProviderInput</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.serverSideEncryptionInput">serverSideEncryptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.sourceHashInput">sourceHashInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.storageClassInput">storageClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.websiteRedirectInput">websiteRedirectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.acl">acl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.cacheControl">cacheControl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.content">content</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentBase64">contentBase64</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.etag">etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.source">source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.sourceHash">sourceHash</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.storageClass">storageClass</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.s3Object.S3Object.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.s3Object.S3Object.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -779,7 +779,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.s3Object.S3Object.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.s3Object.S3Object.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -789,7 +789,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3Object.S3Object.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3Object.S3Object.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -799,7 +799,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.s3Object.S3Object.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.s3Object.S3Object.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -809,7 +809,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.s3Object.S3Object.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.s3Object.S3Object.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -819,7 +819,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.s3Object.S3Object.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.s3Object.S3Object.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -829,7 +829,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.s3Object.S3Object.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.s3Object.S3Object.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -839,7 +839,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.s3Object.S3Object.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.s3Object.S3Object.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -849,7 +849,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.s3Object.S3Object.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.s3Object.S3Object.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -859,7 +859,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.s3Object.S3Object.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.s3Object.S3Object.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -869,7 +869,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.s3Object.S3Object.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.s3Object.S3Object.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -879,7 +879,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.s3Object.S3Object.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.s3Object.S3Object.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -889,7 +889,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3Object.S3Object.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3Object.S3Object.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -899,7 +899,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.s3Object.S3Object.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.s3Object.S3Object.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -909,7 +909,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.s3Object.S3Object.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.s3Object.S3Object.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -919,7 +919,7 @@ public readonly arn: string;
 
 ---
 
-##### `checksumCrc32`<sup>Required</sup> <a name="checksumCrc32" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumCrc32"></a>
+##### `checksumCrc32`<sup>Required</sup> <a name="checksumCrc32" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumCrc32"></a>
 
 ```typescript
 public readonly checksumCrc32: string;
@@ -929,7 +929,7 @@ public readonly checksumCrc32: string;
 
 ---
 
-##### `checksumCrc32C`<sup>Required</sup> <a name="checksumCrc32C" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumCrc32C"></a>
+##### `checksumCrc32C`<sup>Required</sup> <a name="checksumCrc32C" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumCrc32C"></a>
 
 ```typescript
 public readonly checksumCrc32C: string;
@@ -939,7 +939,7 @@ public readonly checksumCrc32C: string;
 
 ---
 
-##### `checksumCrc64Nvme`<sup>Required</sup> <a name="checksumCrc64Nvme" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumCrc64Nvme"></a>
+##### `checksumCrc64Nvme`<sup>Required</sup> <a name="checksumCrc64Nvme" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumCrc64Nvme"></a>
 
 ```typescript
 public readonly checksumCrc64Nvme: string;
@@ -949,7 +949,7 @@ public readonly checksumCrc64Nvme: string;
 
 ---
 
-##### `checksumSha1`<sup>Required</sup> <a name="checksumSha1" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumSha1"></a>
+##### `checksumSha1`<sup>Required</sup> <a name="checksumSha1" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumSha1"></a>
 
 ```typescript
 public readonly checksumSha1: string;
@@ -959,7 +959,7 @@ public readonly checksumSha1: string;
 
 ---
 
-##### `checksumSha256`<sup>Required</sup> <a name="checksumSha256" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumSha256"></a>
+##### `checksumSha256`<sup>Required</sup> <a name="checksumSha256" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumSha256"></a>
 
 ```typescript
 public readonly checksumSha256: string;
@@ -969,17 +969,17 @@ public readonly checksumSha256: string;
 
 ---
 
-##### `overrideProvider`<sup>Required</sup> <a name="overrideProvider" id="@cdktf/provider-aws.s3Object.S3Object.property.overrideProvider"></a>
+##### `overrideProvider`<sup>Required</sup> <a name="overrideProvider" id="@cdktn/provider-aws.s3Object.S3Object.property.overrideProvider"></a>
 
 ```typescript
 public readonly overrideProvider: S3ObjectOverrideProviderOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference">S3ObjectOverrideProviderOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference">S3ObjectOverrideProviderOutputReference</a>
 
 ---
 
-##### `versionId`<sup>Required</sup> <a name="versionId" id="@cdktf/provider-aws.s3Object.S3Object.property.versionId"></a>
+##### `versionId`<sup>Required</sup> <a name="versionId" id="@cdktn/provider-aws.s3Object.S3Object.property.versionId"></a>
 
 ```typescript
 public readonly versionId: string;
@@ -989,7 +989,7 @@ public readonly versionId: string;
 
 ---
 
-##### `aclInput`<sup>Optional</sup> <a name="aclInput" id="@cdktf/provider-aws.s3Object.S3Object.property.aclInput"></a>
+##### `aclInput`<sup>Optional</sup> <a name="aclInput" id="@cdktn/provider-aws.s3Object.S3Object.property.aclInput"></a>
 
 ```typescript
 public readonly aclInput: string;
@@ -999,7 +999,7 @@ public readonly aclInput: string;
 
 ---
 
-##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktf/provider-aws.s3Object.S3Object.property.bucketInput"></a>
+##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktn/provider-aws.s3Object.S3Object.property.bucketInput"></a>
 
 ```typescript
 public readonly bucketInput: string;
@@ -1009,7 +1009,7 @@ public readonly bucketInput: string;
 
 ---
 
-##### `bucketKeyEnabledInput`<sup>Optional</sup> <a name="bucketKeyEnabledInput" id="@cdktf/provider-aws.s3Object.S3Object.property.bucketKeyEnabledInput"></a>
+##### `bucketKeyEnabledInput`<sup>Optional</sup> <a name="bucketKeyEnabledInput" id="@cdktn/provider-aws.s3Object.S3Object.property.bucketKeyEnabledInput"></a>
 
 ```typescript
 public readonly bucketKeyEnabledInput: boolean | IResolvable;
@@ -1019,7 +1019,7 @@ public readonly bucketKeyEnabledInput: boolean | IResolvable;
 
 ---
 
-##### `cacheControlInput`<sup>Optional</sup> <a name="cacheControlInput" id="@cdktf/provider-aws.s3Object.S3Object.property.cacheControlInput"></a>
+##### `cacheControlInput`<sup>Optional</sup> <a name="cacheControlInput" id="@cdktn/provider-aws.s3Object.S3Object.property.cacheControlInput"></a>
 
 ```typescript
 public readonly cacheControlInput: string;
@@ -1029,7 +1029,7 @@ public readonly cacheControlInput: string;
 
 ---
 
-##### `checksumAlgorithmInput`<sup>Optional</sup> <a name="checksumAlgorithmInput" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumAlgorithmInput"></a>
+##### `checksumAlgorithmInput`<sup>Optional</sup> <a name="checksumAlgorithmInput" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumAlgorithmInput"></a>
 
 ```typescript
 public readonly checksumAlgorithmInput: string;
@@ -1039,7 +1039,7 @@ public readonly checksumAlgorithmInput: string;
 
 ---
 
-##### `contentBase64Input`<sup>Optional</sup> <a name="contentBase64Input" id="@cdktf/provider-aws.s3Object.S3Object.property.contentBase64Input"></a>
+##### `contentBase64Input`<sup>Optional</sup> <a name="contentBase64Input" id="@cdktn/provider-aws.s3Object.S3Object.property.contentBase64Input"></a>
 
 ```typescript
 public readonly contentBase64Input: string;
@@ -1049,7 +1049,7 @@ public readonly contentBase64Input: string;
 
 ---
 
-##### `contentDispositionInput`<sup>Optional</sup> <a name="contentDispositionInput" id="@cdktf/provider-aws.s3Object.S3Object.property.contentDispositionInput"></a>
+##### `contentDispositionInput`<sup>Optional</sup> <a name="contentDispositionInput" id="@cdktn/provider-aws.s3Object.S3Object.property.contentDispositionInput"></a>
 
 ```typescript
 public readonly contentDispositionInput: string;
@@ -1059,7 +1059,7 @@ public readonly contentDispositionInput: string;
 
 ---
 
-##### `contentEncodingInput`<sup>Optional</sup> <a name="contentEncodingInput" id="@cdktf/provider-aws.s3Object.S3Object.property.contentEncodingInput"></a>
+##### `contentEncodingInput`<sup>Optional</sup> <a name="contentEncodingInput" id="@cdktn/provider-aws.s3Object.S3Object.property.contentEncodingInput"></a>
 
 ```typescript
 public readonly contentEncodingInput: string;
@@ -1069,7 +1069,7 @@ public readonly contentEncodingInput: string;
 
 ---
 
-##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktf/provider-aws.s3Object.S3Object.property.contentInput"></a>
+##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktn/provider-aws.s3Object.S3Object.property.contentInput"></a>
 
 ```typescript
 public readonly contentInput: string;
@@ -1079,7 +1079,7 @@ public readonly contentInput: string;
 
 ---
 
-##### `contentLanguageInput`<sup>Optional</sup> <a name="contentLanguageInput" id="@cdktf/provider-aws.s3Object.S3Object.property.contentLanguageInput"></a>
+##### `contentLanguageInput`<sup>Optional</sup> <a name="contentLanguageInput" id="@cdktn/provider-aws.s3Object.S3Object.property.contentLanguageInput"></a>
 
 ```typescript
 public readonly contentLanguageInput: string;
@@ -1089,7 +1089,7 @@ public readonly contentLanguageInput: string;
 
 ---
 
-##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktf/provider-aws.s3Object.S3Object.property.contentTypeInput"></a>
+##### `contentTypeInput`<sup>Optional</sup> <a name="contentTypeInput" id="@cdktn/provider-aws.s3Object.S3Object.property.contentTypeInput"></a>
 
 ```typescript
 public readonly contentTypeInput: string;
@@ -1099,7 +1099,7 @@ public readonly contentTypeInput: string;
 
 ---
 
-##### `etagInput`<sup>Optional</sup> <a name="etagInput" id="@cdktf/provider-aws.s3Object.S3Object.property.etagInput"></a>
+##### `etagInput`<sup>Optional</sup> <a name="etagInput" id="@cdktn/provider-aws.s3Object.S3Object.property.etagInput"></a>
 
 ```typescript
 public readonly etagInput: string;
@@ -1109,7 +1109,7 @@ public readonly etagInput: string;
 
 ---
 
-##### `forceDestroyInput`<sup>Optional</sup> <a name="forceDestroyInput" id="@cdktf/provider-aws.s3Object.S3Object.property.forceDestroyInput"></a>
+##### `forceDestroyInput`<sup>Optional</sup> <a name="forceDestroyInput" id="@cdktn/provider-aws.s3Object.S3Object.property.forceDestroyInput"></a>
 
 ```typescript
 public readonly forceDestroyInput: boolean | IResolvable;
@@ -1119,7 +1119,7 @@ public readonly forceDestroyInput: boolean | IResolvable;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.s3Object.S3Object.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.s3Object.S3Object.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -1129,7 +1129,7 @@ public readonly idInput: string;
 
 ---
 
-##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-aws.s3Object.S3Object.property.keyInput"></a>
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-aws.s3Object.S3Object.property.keyInput"></a>
 
 ```typescript
 public readonly keyInput: string;
@@ -1139,7 +1139,7 @@ public readonly keyInput: string;
 
 ---
 
-##### `kmsKeyIdInput`<sup>Optional</sup> <a name="kmsKeyIdInput" id="@cdktf/provider-aws.s3Object.S3Object.property.kmsKeyIdInput"></a>
+##### `kmsKeyIdInput`<sup>Optional</sup> <a name="kmsKeyIdInput" id="@cdktn/provider-aws.s3Object.S3Object.property.kmsKeyIdInput"></a>
 
 ```typescript
 public readonly kmsKeyIdInput: string;
@@ -1149,7 +1149,7 @@ public readonly kmsKeyIdInput: string;
 
 ---
 
-##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-aws.s3Object.S3Object.property.metadataInput"></a>
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktn/provider-aws.s3Object.S3Object.property.metadataInput"></a>
 
 ```typescript
 public readonly metadataInput: {[ key: string ]: string};
@@ -1159,7 +1159,7 @@ public readonly metadataInput: {[ key: string ]: string};
 
 ---
 
-##### `objectLockLegalHoldStatusInput`<sup>Optional</sup> <a name="objectLockLegalHoldStatusInput" id="@cdktf/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatusInput"></a>
+##### `objectLockLegalHoldStatusInput`<sup>Optional</sup> <a name="objectLockLegalHoldStatusInput" id="@cdktn/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatusInput"></a>
 
 ```typescript
 public readonly objectLockLegalHoldStatusInput: string;
@@ -1169,7 +1169,7 @@ public readonly objectLockLegalHoldStatusInput: string;
 
 ---
 
-##### `objectLockModeInput`<sup>Optional</sup> <a name="objectLockModeInput" id="@cdktf/provider-aws.s3Object.S3Object.property.objectLockModeInput"></a>
+##### `objectLockModeInput`<sup>Optional</sup> <a name="objectLockModeInput" id="@cdktn/provider-aws.s3Object.S3Object.property.objectLockModeInput"></a>
 
 ```typescript
 public readonly objectLockModeInput: string;
@@ -1179,7 +1179,7 @@ public readonly objectLockModeInput: string;
 
 ---
 
-##### `objectLockRetainUntilDateInput`<sup>Optional</sup> <a name="objectLockRetainUntilDateInput" id="@cdktf/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDateInput"></a>
+##### `objectLockRetainUntilDateInput`<sup>Optional</sup> <a name="objectLockRetainUntilDateInput" id="@cdktn/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDateInput"></a>
 
 ```typescript
 public readonly objectLockRetainUntilDateInput: string;
@@ -1189,17 +1189,17 @@ public readonly objectLockRetainUntilDateInput: string;
 
 ---
 
-##### `overrideProviderInput`<sup>Optional</sup> <a name="overrideProviderInput" id="@cdktf/provider-aws.s3Object.S3Object.property.overrideProviderInput"></a>
+##### `overrideProviderInput`<sup>Optional</sup> <a name="overrideProviderInput" id="@cdktn/provider-aws.s3Object.S3Object.property.overrideProviderInput"></a>
 
 ```typescript
 public readonly overrideProviderInput: S3ObjectOverrideProvider;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.s3Object.S3Object.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.s3Object.S3Object.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -1209,7 +1209,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `serverSideEncryptionInput`<sup>Optional</sup> <a name="serverSideEncryptionInput" id="@cdktf/provider-aws.s3Object.S3Object.property.serverSideEncryptionInput"></a>
+##### `serverSideEncryptionInput`<sup>Optional</sup> <a name="serverSideEncryptionInput" id="@cdktn/provider-aws.s3Object.S3Object.property.serverSideEncryptionInput"></a>
 
 ```typescript
 public readonly serverSideEncryptionInput: string;
@@ -1219,7 +1219,7 @@ public readonly serverSideEncryptionInput: string;
 
 ---
 
-##### `sourceHashInput`<sup>Optional</sup> <a name="sourceHashInput" id="@cdktf/provider-aws.s3Object.S3Object.property.sourceHashInput"></a>
+##### `sourceHashInput`<sup>Optional</sup> <a name="sourceHashInput" id="@cdktn/provider-aws.s3Object.S3Object.property.sourceHashInput"></a>
 
 ```typescript
 public readonly sourceHashInput: string;
@@ -1229,7 +1229,7 @@ public readonly sourceHashInput: string;
 
 ---
 
-##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-aws.s3Object.S3Object.property.sourceInput"></a>
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-aws.s3Object.S3Object.property.sourceInput"></a>
 
 ```typescript
 public readonly sourceInput: string;
@@ -1239,7 +1239,7 @@ public readonly sourceInput: string;
 
 ---
 
-##### `storageClassInput`<sup>Optional</sup> <a name="storageClassInput" id="@cdktf/provider-aws.s3Object.S3Object.property.storageClassInput"></a>
+##### `storageClassInput`<sup>Optional</sup> <a name="storageClassInput" id="@cdktn/provider-aws.s3Object.S3Object.property.storageClassInput"></a>
 
 ```typescript
 public readonly storageClassInput: string;
@@ -1249,7 +1249,7 @@ public readonly storageClassInput: string;
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.s3Object.S3Object.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.s3Object.S3Object.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -1259,7 +1259,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.s3Object.S3Object.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.s3Object.S3Object.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -1269,7 +1269,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `websiteRedirectInput`<sup>Optional</sup> <a name="websiteRedirectInput" id="@cdktf/provider-aws.s3Object.S3Object.property.websiteRedirectInput"></a>
+##### `websiteRedirectInput`<sup>Optional</sup> <a name="websiteRedirectInput" id="@cdktn/provider-aws.s3Object.S3Object.property.websiteRedirectInput"></a>
 
 ```typescript
 public readonly websiteRedirectInput: string;
@@ -1279,7 +1279,7 @@ public readonly websiteRedirectInput: string;
 
 ---
 
-##### `acl`<sup>Required</sup> <a name="acl" id="@cdktf/provider-aws.s3Object.S3Object.property.acl"></a>
+##### `acl`<sup>Required</sup> <a name="acl" id="@cdktn/provider-aws.s3Object.S3Object.property.acl"></a>
 
 ```typescript
 public readonly acl: string;
@@ -1289,7 +1289,7 @@ public readonly acl: string;
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-aws.s3Object.S3Object.property.bucket"></a>
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-aws.s3Object.S3Object.property.bucket"></a>
 
 ```typescript
 public readonly bucket: string;
@@ -1299,7 +1299,7 @@ public readonly bucket: string;
 
 ---
 
-##### `bucketKeyEnabled`<sup>Required</sup> <a name="bucketKeyEnabled" id="@cdktf/provider-aws.s3Object.S3Object.property.bucketKeyEnabled"></a>
+##### `bucketKeyEnabled`<sup>Required</sup> <a name="bucketKeyEnabled" id="@cdktn/provider-aws.s3Object.S3Object.property.bucketKeyEnabled"></a>
 
 ```typescript
 public readonly bucketKeyEnabled: boolean | IResolvable;
@@ -1309,7 +1309,7 @@ public readonly bucketKeyEnabled: boolean | IResolvable;
 
 ---
 
-##### `cacheControl`<sup>Required</sup> <a name="cacheControl" id="@cdktf/provider-aws.s3Object.S3Object.property.cacheControl"></a>
+##### `cacheControl`<sup>Required</sup> <a name="cacheControl" id="@cdktn/provider-aws.s3Object.S3Object.property.cacheControl"></a>
 
 ```typescript
 public readonly cacheControl: string;
@@ -1319,7 +1319,7 @@ public readonly cacheControl: string;
 
 ---
 
-##### `checksumAlgorithm`<sup>Required</sup> <a name="checksumAlgorithm" id="@cdktf/provider-aws.s3Object.S3Object.property.checksumAlgorithm"></a>
+##### `checksumAlgorithm`<sup>Required</sup> <a name="checksumAlgorithm" id="@cdktn/provider-aws.s3Object.S3Object.property.checksumAlgorithm"></a>
 
 ```typescript
 public readonly checksumAlgorithm: string;
@@ -1329,7 +1329,7 @@ public readonly checksumAlgorithm: string;
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-aws.s3Object.S3Object.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktn/provider-aws.s3Object.S3Object.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -1339,7 +1339,7 @@ public readonly content: string;
 
 ---
 
-##### `contentBase64`<sup>Required</sup> <a name="contentBase64" id="@cdktf/provider-aws.s3Object.S3Object.property.contentBase64"></a>
+##### `contentBase64`<sup>Required</sup> <a name="contentBase64" id="@cdktn/provider-aws.s3Object.S3Object.property.contentBase64"></a>
 
 ```typescript
 public readonly contentBase64: string;
@@ -1349,7 +1349,7 @@ public readonly contentBase64: string;
 
 ---
 
-##### `contentDisposition`<sup>Required</sup> <a name="contentDisposition" id="@cdktf/provider-aws.s3Object.S3Object.property.contentDisposition"></a>
+##### `contentDisposition`<sup>Required</sup> <a name="contentDisposition" id="@cdktn/provider-aws.s3Object.S3Object.property.contentDisposition"></a>
 
 ```typescript
 public readonly contentDisposition: string;
@@ -1359,7 +1359,7 @@ public readonly contentDisposition: string;
 
 ---
 
-##### `contentEncoding`<sup>Required</sup> <a name="contentEncoding" id="@cdktf/provider-aws.s3Object.S3Object.property.contentEncoding"></a>
+##### `contentEncoding`<sup>Required</sup> <a name="contentEncoding" id="@cdktn/provider-aws.s3Object.S3Object.property.contentEncoding"></a>
 
 ```typescript
 public readonly contentEncoding: string;
@@ -1369,7 +1369,7 @@ public readonly contentEncoding: string;
 
 ---
 
-##### `contentLanguage`<sup>Required</sup> <a name="contentLanguage" id="@cdktf/provider-aws.s3Object.S3Object.property.contentLanguage"></a>
+##### `contentLanguage`<sup>Required</sup> <a name="contentLanguage" id="@cdktn/provider-aws.s3Object.S3Object.property.contentLanguage"></a>
 
 ```typescript
 public readonly contentLanguage: string;
@@ -1379,7 +1379,7 @@ public readonly contentLanguage: string;
 
 ---
 
-##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktf/provider-aws.s3Object.S3Object.property.contentType"></a>
+##### `contentType`<sup>Required</sup> <a name="contentType" id="@cdktn/provider-aws.s3Object.S3Object.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -1389,7 +1389,7 @@ public readonly contentType: string;
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-aws.s3Object.S3Object.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-aws.s3Object.S3Object.property.etag"></a>
 
 ```typescript
 public readonly etag: string;
@@ -1399,7 +1399,7 @@ public readonly etag: string;
 
 ---
 
-##### `forceDestroy`<sup>Required</sup> <a name="forceDestroy" id="@cdktf/provider-aws.s3Object.S3Object.property.forceDestroy"></a>
+##### `forceDestroy`<sup>Required</sup> <a name="forceDestroy" id="@cdktn/provider-aws.s3Object.S3Object.property.forceDestroy"></a>
 
 ```typescript
 public readonly forceDestroy: boolean | IResolvable;
@@ -1409,7 +1409,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.s3Object.S3Object.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.s3Object.S3Object.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1419,7 +1419,7 @@ public readonly id: string;
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.s3Object.S3Object.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.s3Object.S3Object.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1429,7 +1429,7 @@ public readonly key: string;
 
 ---
 
-##### `kmsKeyId`<sup>Required</sup> <a name="kmsKeyId" id="@cdktf/provider-aws.s3Object.S3Object.property.kmsKeyId"></a>
+##### `kmsKeyId`<sup>Required</sup> <a name="kmsKeyId" id="@cdktn/provider-aws.s3Object.S3Object.property.kmsKeyId"></a>
 
 ```typescript
 public readonly kmsKeyId: string;
@@ -1439,7 +1439,7 @@ public readonly kmsKeyId: string;
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-aws.s3Object.S3Object.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-aws.s3Object.S3Object.property.metadata"></a>
 
 ```typescript
 public readonly metadata: {[ key: string ]: string};
@@ -1449,7 +1449,7 @@ public readonly metadata: {[ key: string ]: string};
 
 ---
 
-##### `objectLockLegalHoldStatus`<sup>Required</sup> <a name="objectLockLegalHoldStatus" id="@cdktf/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatus"></a>
+##### `objectLockLegalHoldStatus`<sup>Required</sup> <a name="objectLockLegalHoldStatus" id="@cdktn/provider-aws.s3Object.S3Object.property.objectLockLegalHoldStatus"></a>
 
 ```typescript
 public readonly objectLockLegalHoldStatus: string;
@@ -1459,7 +1459,7 @@ public readonly objectLockLegalHoldStatus: string;
 
 ---
 
-##### `objectLockMode`<sup>Required</sup> <a name="objectLockMode" id="@cdktf/provider-aws.s3Object.S3Object.property.objectLockMode"></a>
+##### `objectLockMode`<sup>Required</sup> <a name="objectLockMode" id="@cdktn/provider-aws.s3Object.S3Object.property.objectLockMode"></a>
 
 ```typescript
 public readonly objectLockMode: string;
@@ -1469,7 +1469,7 @@ public readonly objectLockMode: string;
 
 ---
 
-##### `objectLockRetainUntilDate`<sup>Required</sup> <a name="objectLockRetainUntilDate" id="@cdktf/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDate"></a>
+##### `objectLockRetainUntilDate`<sup>Required</sup> <a name="objectLockRetainUntilDate" id="@cdktn/provider-aws.s3Object.S3Object.property.objectLockRetainUntilDate"></a>
 
 ```typescript
 public readonly objectLockRetainUntilDate: string;
@@ -1479,7 +1479,7 @@ public readonly objectLockRetainUntilDate: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.s3Object.S3Object.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.s3Object.S3Object.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1489,7 +1489,7 @@ public readonly region: string;
 
 ---
 
-##### `serverSideEncryption`<sup>Required</sup> <a name="serverSideEncryption" id="@cdktf/provider-aws.s3Object.S3Object.property.serverSideEncryption"></a>
+##### `serverSideEncryption`<sup>Required</sup> <a name="serverSideEncryption" id="@cdktn/provider-aws.s3Object.S3Object.property.serverSideEncryption"></a>
 
 ```typescript
 public readonly serverSideEncryption: string;
@@ -1499,7 +1499,7 @@ public readonly serverSideEncryption: string;
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.s3Object.S3Object.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.s3Object.S3Object.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -1509,7 +1509,7 @@ public readonly source: string;
 
 ---
 
-##### `sourceHash`<sup>Required</sup> <a name="sourceHash" id="@cdktf/provider-aws.s3Object.S3Object.property.sourceHash"></a>
+##### `sourceHash`<sup>Required</sup> <a name="sourceHash" id="@cdktn/provider-aws.s3Object.S3Object.property.sourceHash"></a>
 
 ```typescript
 public readonly sourceHash: string;
@@ -1519,7 +1519,7 @@ public readonly sourceHash: string;
 
 ---
 
-##### `storageClass`<sup>Required</sup> <a name="storageClass" id="@cdktf/provider-aws.s3Object.S3Object.property.storageClass"></a>
+##### `storageClass`<sup>Required</sup> <a name="storageClass" id="@cdktn/provider-aws.s3Object.S3Object.property.storageClass"></a>
 
 ```typescript
 public readonly storageClass: string;
@@ -1529,7 +1529,7 @@ public readonly storageClass: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.s3Object.S3Object.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.s3Object.S3Object.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1539,7 +1539,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3Object.S3Object.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.s3Object.S3Object.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1549,7 +1549,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 ---
 
-##### `websiteRedirect`<sup>Required</sup> <a name="websiteRedirect" id="@cdktf/provider-aws.s3Object.S3Object.property.websiteRedirect"></a>
+##### `websiteRedirect`<sup>Required</sup> <a name="websiteRedirect" id="@cdktn/provider-aws.s3Object.S3Object.property.websiteRedirect"></a>
 
 ```typescript
 public readonly websiteRedirect: string;
@@ -1563,11 +1563,11 @@ public readonly websiteRedirect: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3Object.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3Object.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.s3Object.S3Object.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.s3Object.S3Object.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1579,12 +1579,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### S3ObjectConfig <a name="S3ObjectConfig" id="@cdktf/provider-aws.s3Object.S3ObjectConfig"></a>
+### S3ObjectConfig <a name="S3ObjectConfig" id="@cdktn/provider-aws.s3Object.S3ObjectConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.Initializer"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 const s3ObjectConfig: s3Object.S3ObjectConfig = { ... }
 ```
@@ -1593,46 +1593,46 @@ const s3ObjectConfig: s3Object.S3ObjectConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#bucket S3Object#bucket}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#key S3Object#key}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.acl">acl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#acl S3Object#acl}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.cacheControl">cacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#cache_control S3Object#cache_control}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#checksum_algorithm S3Object#checksum_algorithm}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content S3Object#content}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentBase64">contentBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_base64 S3Object#content_base64}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_disposition S3Object#content_disposition}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_encoding S3Object#content_encoding}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_language S3Object#content_language}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_type S3Object#content_type}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#etag S3Object#etag}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#id S3Object#id}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#kms_key_id S3Object#kms_key_id}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#metadata S3Object#metadata}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#object_lock_legal_hold_status S3Object#object_lock_legal_hold_status}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a></code> | override_provider block. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#source S3Object#source}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.sourceHash">sourceHash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#source_hash S3Object#source_hash}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#storage_class S3Object#storage_class}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#tags S3Object#tags}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#tags_all S3Object#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectConfig.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#bucket S3Object#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#key S3Object#key}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.acl">acl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#acl S3Object#acl}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.bucketKeyEnabled">bucketKeyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.cacheControl">cacheControl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#cache_control S3Object#cache_control}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.checksumAlgorithm">checksumAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#checksum_algorithm S3Object#checksum_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content S3Object#content}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentBase64">contentBase64</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_base64 S3Object#content_base64}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_disposition S3Object#content_disposition}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_encoding S3Object#content_encoding}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_language S3Object#content_language}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_type S3Object#content_type}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#etag S3Object#etag}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#id S3Object#id}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.kmsKeyId">kmsKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#kms_key_id S3Object#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#metadata S3Object#metadata}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.objectLockLegalHoldStatus">objectLockLegalHoldStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#object_lock_legal_hold_status S3Object#object_lock_legal_hold_status}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.objectLockMode">objectLockMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.overrideProvider">overrideProvider</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a></code> | override_provider block. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#source S3Object#source}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.sourceHash">sourceHash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#source_hash S3Object#source_hash}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.storageClass">storageClass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#storage_class S3Object#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#tags S3Object#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#tags_all S3Object#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectConfig.property.websiteRedirect">websiteRedirect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1642,7 +1642,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1652,7 +1652,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1662,7 +1662,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1672,7 +1672,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1682,7 +1682,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1692,7 +1692,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1702,7 +1702,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.bucket"></a>
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.bucket"></a>
 
 ```typescript
 public readonly bucket: string;
@@ -1710,11 +1710,11 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#bucket S3Object#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#bucket S3Object#bucket}.
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1722,11 +1722,11 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#key S3Object#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#key S3Object#key}.
 
 ---
 
-##### `acl`<sup>Optional</sup> <a name="acl" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.acl"></a>
+##### `acl`<sup>Optional</sup> <a name="acl" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.acl"></a>
 
 ```typescript
 public readonly acl: string;
@@ -1734,11 +1734,11 @@ public readonly acl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#acl S3Object#acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#acl S3Object#acl}.
 
 ---
 
-##### `bucketKeyEnabled`<sup>Optional</sup> <a name="bucketKeyEnabled" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.bucketKeyEnabled"></a>
+##### `bucketKeyEnabled`<sup>Optional</sup> <a name="bucketKeyEnabled" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.bucketKeyEnabled"></a>
 
 ```typescript
 public readonly bucketKeyEnabled: boolean | IResolvable;
@@ -1746,11 +1746,11 @@ public readonly bucketKeyEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#bucket_key_enabled S3Object#bucket_key_enabled}.
 
 ---
 
-##### `cacheControl`<sup>Optional</sup> <a name="cacheControl" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.cacheControl"></a>
+##### `cacheControl`<sup>Optional</sup> <a name="cacheControl" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.cacheControl"></a>
 
 ```typescript
 public readonly cacheControl: string;
@@ -1758,11 +1758,11 @@ public readonly cacheControl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#cache_control S3Object#cache_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#cache_control S3Object#cache_control}.
 
 ---
 
-##### `checksumAlgorithm`<sup>Optional</sup> <a name="checksumAlgorithm" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.checksumAlgorithm"></a>
+##### `checksumAlgorithm`<sup>Optional</sup> <a name="checksumAlgorithm" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.checksumAlgorithm"></a>
 
 ```typescript
 public readonly checksumAlgorithm: string;
@@ -1770,11 +1770,11 @@ public readonly checksumAlgorithm: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#checksum_algorithm S3Object#checksum_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#checksum_algorithm S3Object#checksum_algorithm}.
 
 ---
 
-##### `content`<sup>Optional</sup> <a name="content" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.content"></a>
+##### `content`<sup>Optional</sup> <a name="content" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -1782,11 +1782,11 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content S3Object#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content S3Object#content}.
 
 ---
 
-##### `contentBase64`<sup>Optional</sup> <a name="contentBase64" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentBase64"></a>
+##### `contentBase64`<sup>Optional</sup> <a name="contentBase64" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentBase64"></a>
 
 ```typescript
 public readonly contentBase64: string;
@@ -1794,11 +1794,11 @@ public readonly contentBase64: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_base64 S3Object#content_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_base64 S3Object#content_base64}.
 
 ---
 
-##### `contentDisposition`<sup>Optional</sup> <a name="contentDisposition" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentDisposition"></a>
+##### `contentDisposition`<sup>Optional</sup> <a name="contentDisposition" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentDisposition"></a>
 
 ```typescript
 public readonly contentDisposition: string;
@@ -1806,11 +1806,11 @@ public readonly contentDisposition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_disposition S3Object#content_disposition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_disposition S3Object#content_disposition}.
 
 ---
 
-##### `contentEncoding`<sup>Optional</sup> <a name="contentEncoding" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentEncoding"></a>
+##### `contentEncoding`<sup>Optional</sup> <a name="contentEncoding" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentEncoding"></a>
 
 ```typescript
 public readonly contentEncoding: string;
@@ -1818,11 +1818,11 @@ public readonly contentEncoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_encoding S3Object#content_encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_encoding S3Object#content_encoding}.
 
 ---
 
-##### `contentLanguage`<sup>Optional</sup> <a name="contentLanguage" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentLanguage"></a>
+##### `contentLanguage`<sup>Optional</sup> <a name="contentLanguage" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentLanguage"></a>
 
 ```typescript
 public readonly contentLanguage: string;
@@ -1830,11 +1830,11 @@ public readonly contentLanguage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_language S3Object#content_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_language S3Object#content_language}.
 
 ---
 
-##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.contentType"></a>
+##### `contentType`<sup>Optional</sup> <a name="contentType" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.contentType"></a>
 
 ```typescript
 public readonly contentType: string;
@@ -1842,11 +1842,11 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#content_type S3Object#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#content_type S3Object#content_type}.
 
 ---
 
-##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.etag"></a>
+##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.etag"></a>
 
 ```typescript
 public readonly etag: string;
@@ -1854,11 +1854,11 @@ public readonly etag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#etag S3Object#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#etag S3Object#etag}.
 
 ---
 
-##### `forceDestroy`<sup>Optional</sup> <a name="forceDestroy" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.forceDestroy"></a>
+##### `forceDestroy`<sup>Optional</sup> <a name="forceDestroy" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.forceDestroy"></a>
 
 ```typescript
 public readonly forceDestroy: boolean | IResolvable;
@@ -1866,11 +1866,11 @@ public readonly forceDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#force_destroy S3Object#force_destroy}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1878,14 +1878,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#id S3Object#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#id S3Object#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `kmsKeyId`<sup>Optional</sup> <a name="kmsKeyId" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.kmsKeyId"></a>
+##### `kmsKeyId`<sup>Optional</sup> <a name="kmsKeyId" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.kmsKeyId"></a>
 
 ```typescript
 public readonly kmsKeyId: string;
@@ -1893,11 +1893,11 @@ public readonly kmsKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#kms_key_id S3Object#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#kms_key_id S3Object#kms_key_id}.
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.metadata"></a>
 
 ```typescript
 public readonly metadata: {[ key: string ]: string};
@@ -1905,11 +1905,11 @@ public readonly metadata: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#metadata S3Object#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#metadata S3Object#metadata}.
 
 ---
 
-##### `objectLockLegalHoldStatus`<sup>Optional</sup> <a name="objectLockLegalHoldStatus" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.objectLockLegalHoldStatus"></a>
+##### `objectLockLegalHoldStatus`<sup>Optional</sup> <a name="objectLockLegalHoldStatus" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.objectLockLegalHoldStatus"></a>
 
 ```typescript
 public readonly objectLockLegalHoldStatus: string;
@@ -1917,11 +1917,11 @@ public readonly objectLockLegalHoldStatus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#object_lock_legal_hold_status S3Object#object_lock_legal_hold_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#object_lock_legal_hold_status S3Object#object_lock_legal_hold_status}.
 
 ---
 
-##### `objectLockMode`<sup>Optional</sup> <a name="objectLockMode" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.objectLockMode"></a>
+##### `objectLockMode`<sup>Optional</sup> <a name="objectLockMode" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.objectLockMode"></a>
 
 ```typescript
 public readonly objectLockMode: string;
@@ -1929,11 +1929,11 @@ public readonly objectLockMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}.
 
 ---
 
-##### `objectLockRetainUntilDate`<sup>Optional</sup> <a name="objectLockRetainUntilDate" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.objectLockRetainUntilDate"></a>
+##### `objectLockRetainUntilDate`<sup>Optional</sup> <a name="objectLockRetainUntilDate" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.objectLockRetainUntilDate"></a>
 
 ```typescript
 public readonly objectLockRetainUntilDate: string;
@@ -1941,25 +1941,25 @@ public readonly objectLockRetainUntilDate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}.
 
 ---
 
-##### `overrideProvider`<sup>Optional</sup> <a name="overrideProvider" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.overrideProvider"></a>
+##### `overrideProvider`<sup>Optional</sup> <a name="overrideProvider" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.overrideProvider"></a>
 
 ```typescript
 public readonly overrideProvider: S3ObjectOverrideProvider;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
 
 override_provider block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#override_provider S3Object#override_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#override_provider S3Object#override_provider}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1969,11 +1969,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#region S3Object#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#region S3Object#region}
 
 ---
 
-##### `serverSideEncryption`<sup>Optional</sup> <a name="serverSideEncryption" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.serverSideEncryption"></a>
+##### `serverSideEncryption`<sup>Optional</sup> <a name="serverSideEncryption" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.serverSideEncryption"></a>
 
 ```typescript
 public readonly serverSideEncryption: string;
@@ -1981,11 +1981,11 @@ public readonly serverSideEncryption: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}.
 
 ---
 
-##### `source`<sup>Optional</sup> <a name="source" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.source"></a>
+##### `source`<sup>Optional</sup> <a name="source" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -1993,11 +1993,11 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#source S3Object#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#source S3Object#source}.
 
 ---
 
-##### `sourceHash`<sup>Optional</sup> <a name="sourceHash" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.sourceHash"></a>
+##### `sourceHash`<sup>Optional</sup> <a name="sourceHash" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.sourceHash"></a>
 
 ```typescript
 public readonly sourceHash: string;
@@ -2005,11 +2005,11 @@ public readonly sourceHash: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#source_hash S3Object#source_hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#source_hash S3Object#source_hash}.
 
 ---
 
-##### `storageClass`<sup>Optional</sup> <a name="storageClass" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.storageClass"></a>
+##### `storageClass`<sup>Optional</sup> <a name="storageClass" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.storageClass"></a>
 
 ```typescript
 public readonly storageClass: string;
@@ -2017,11 +2017,11 @@ public readonly storageClass: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#storage_class S3Object#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#storage_class S3Object#storage_class}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2029,11 +2029,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#tags S3Object#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#tags S3Object#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -2041,11 +2041,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#tags_all S3Object#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#tags_all S3Object#tags_all}.
 
 ---
 
-##### `websiteRedirect`<sup>Optional</sup> <a name="websiteRedirect" id="@cdktf/provider-aws.s3Object.S3ObjectConfig.property.websiteRedirect"></a>
+##### `websiteRedirect`<sup>Optional</sup> <a name="websiteRedirect" id="@cdktn/provider-aws.s3Object.S3ObjectConfig.property.websiteRedirect"></a>
 
 ```typescript
 public readonly websiteRedirect: string;
@@ -2053,16 +2053,16 @@ public readonly websiteRedirect: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#website_redirect S3Object#website_redirect}.
 
 ---
 
-### S3ObjectOverrideProvider <a name="S3ObjectOverrideProvider" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider"></a>
+### S3ObjectOverrideProvider <a name="S3ObjectOverrideProvider" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider.Initializer"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 const s3ObjectOverrideProvider: s3Object.S3ObjectOverrideProvider = { ... }
 ```
@@ -2071,30 +2071,30 @@ const s3ObjectOverrideProvider: s3Object.S3ObjectOverrideProvider = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a></code> | default_tags block. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a></code> | default_tags block. |
 
 ---
 
-##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider.property.defaultTags"></a>
+##### `defaultTags`<sup>Optional</sup> <a name="defaultTags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider.property.defaultTags"></a>
 
 ```typescript
 public readonly defaultTags: S3ObjectOverrideProviderDefaultTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#default_tags S3Object#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#default_tags S3Object#default_tags}
 
 ---
 
-### S3ObjectOverrideProviderDefaultTags <a name="S3ObjectOverrideProviderDefaultTags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags"></a>
+### S3ObjectOverrideProviderDefaultTags <a name="S3ObjectOverrideProviderDefaultTags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.Initializer"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 const s3ObjectOverrideProviderDefaultTags: s3Object.S3ObjectOverrideProviderDefaultTags = { ... }
 ```
@@ -2103,11 +2103,11 @@ const s3ObjectOverrideProviderDefaultTags: s3Object.S3ObjectOverrideProviderDefa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#tags S3Object#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#tags S3Object#tags}. |
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2115,30 +2115,30 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3_object#tags S3Object#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_object#tags S3Object#tags}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### S3ObjectOverrideProviderDefaultTagsOutputReference <a name="S3ObjectOverrideProviderDefaultTagsOutputReference" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference"></a>
+### S3ObjectOverrideProviderDefaultTagsOutputReference <a name="S3ObjectOverrideProviderDefaultTagsOutputReference" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 new s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2146,7 +2146,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2158,150 +2158,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2309,13 +2309,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2325,7 +2325,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.resetTags"></a>
 
 ```typescript
 public resetTags(): void
@@ -2336,15 +2336,15 @@ public resetTags(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2358,7 +2358,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2368,7 +2368,7 @@ public readonly fqn: string;
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -2378,7 +2378,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -2388,35 +2388,35 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: S3ObjectOverrideProviderDefaultTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
 
 ---
 
 
-### S3ObjectOverrideProviderOutputReference <a name="S3ObjectOverrideProviderOutputReference" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference"></a>
+### S3ObjectOverrideProviderOutputReference <a name="S3ObjectOverrideProviderOutputReference" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer"></a>
 
 ```typescript
-import { s3Object } from '@cdktf/provider-aws'
+import { s3Object } from '@cdktn/provider-aws'
 
 new s3Object.S3ObjectOverrideProviderOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2424,7 +2424,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2436,151 +2436,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.putDefaultTags">putDefaultTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resetDefaultTags">resetDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.putDefaultTags">putDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resetDefaultTags">resetDefaultTags</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2588,13 +2588,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2604,19 +2604,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `putDefaultTags` <a name="putDefaultTags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.putDefaultTags"></a>
+##### `putDefaultTags` <a name="putDefaultTags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.putDefaultTags"></a>
 
 ```typescript
 public putDefaultTags(value: S3ObjectOverrideProviderDefaultTags): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.putDefaultTags.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.putDefaultTags.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
 
 ---
 
-##### `resetDefaultTags` <a name="resetDefaultTags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resetDefaultTags"></a>
+##### `resetDefaultTags` <a name="resetDefaultTags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.resetDefaultTags"></a>
 
 ```typescript
 public resetDefaultTags(): void
@@ -2627,15 +2627,15 @@ public resetDefaultTags(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference">S3ObjectOverrideProviderDefaultTagsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTagsInput">defaultTagsInput</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTags">defaultTags</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference">S3ObjectOverrideProviderDefaultTagsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTagsInput">defaultTagsInput</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2649,7 +2649,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2659,33 +2659,33 @@ public readonly fqn: string;
 
 ---
 
-##### `defaultTags`<sup>Required</sup> <a name="defaultTags" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTags"></a>
+##### `defaultTags`<sup>Required</sup> <a name="defaultTags" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTags"></a>
 
 ```typescript
 public readonly defaultTags: S3ObjectOverrideProviderDefaultTagsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference">S3ObjectOverrideProviderDefaultTagsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTagsOutputReference">S3ObjectOverrideProviderDefaultTagsOutputReference</a>
 
 ---
 
-##### `defaultTagsInput`<sup>Optional</sup> <a name="defaultTagsInput" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTagsInput"></a>
+##### `defaultTagsInput`<sup>Optional</sup> <a name="defaultTagsInput" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.defaultTagsInput"></a>
 
 ```typescript
 public readonly defaultTagsInput: S3ObjectOverrideProviderDefaultTags;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderDefaultTags">S3ObjectOverrideProviderDefaultTags</a>
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.s3Object.S3ObjectOverrideProviderOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: S3ObjectOverrideProvider;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
+- *Type:* <a href="#@cdktn/provider-aws.s3Object.S3ObjectOverrideProvider">S3ObjectOverrideProvider</a>
 
 ---
 

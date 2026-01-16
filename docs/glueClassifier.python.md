@@ -1,15 +1,15 @@
-# `glueClassifier` Submodule <a name="`glueClassifier` Submodule" id="@cdktf/provider-aws.glueClassifier"></a>
+# `glueClassifier` Submodule <a name="`glueClassifier` Submodule" id="@cdktn/provider-aws.glueClassifier"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### GlueClassifier <a name="GlueClassifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier"></a>
+### GlueClassifier <a name="GlueClassifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier aws_glue_classifier}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier aws_glue_classifier}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifier(
   scope: Construct,
@@ -33,26 +33,26 @@ glueClassifier.GlueClassifier(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#name GlueClassifier#name}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.csvClassifier">csv_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | csv_classifier block. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.grokClassifier">grok_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | grok_classifier block. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#id GlueClassifier#id}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.jsonClassifier">json_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | json_classifier block. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.xmlClassifier">xml_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | xml_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#name GlueClassifier#name}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.csvClassifier">csv_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | csv_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.grokClassifier">grok_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | grok_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#id GlueClassifier#id}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.jsonClassifier">json_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | json_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.xmlClassifier">xml_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | xml_classifier block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -60,7 +60,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -70,114 +70,114 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#name GlueClassifier#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#name GlueClassifier#name}.
 
 ---
 
-##### `csv_classifier`<sup>Optional</sup> <a name="csv_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.csvClassifier"></a>
+##### `csv_classifier`<sup>Optional</sup> <a name="csv_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.csvClassifier"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
 
 csv_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
 
 ---
 
-##### `grok_classifier`<sup>Optional</sup> <a name="grok_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.grokClassifier"></a>
+##### `grok_classifier`<sup>Optional</sup> <a name="grok_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.grokClassifier"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
 
 grok_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#id GlueClassifier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#id GlueClassifier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `json_classifier`<sup>Optional</sup> <a name="json_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.jsonClassifier"></a>
+##### `json_classifier`<sup>Optional</sup> <a name="json_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.jsonClassifier"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
 
 json_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#region GlueClassifier#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#region GlueClassifier#region}
 
 ---
 
-##### `xml_classifier`<sup>Optional</sup> <a name="xml_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.xmlClassifier"></a>
+##### `xml_classifier`<sup>Optional</sup> <a name="xml_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer.parameter.xmlClassifier"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
 
 xml_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
 
 ---
 
@@ -185,43 +185,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier">put_csv_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier">put_grok_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.putJsonClassifier">put_json_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier">put_xml_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetCsvClassifier">reset_csv_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetGrokClassifier">reset_grok_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetJsonClassifier">reset_json_classifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.resetXmlClassifier">reset_xml_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier">put_csv_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier">put_grok_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.putJsonClassifier">put_json_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier">put_xml_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetCsvClassifier">reset_csv_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetGrokClassifier">reset_grok_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetJsonClassifier">reset_json_classifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.resetXmlClassifier">reset_xml_classifier</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.toString"></a>
 
 ```python
 def to_string() -> str
@@ -229,7 +229,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.addOverride"></a>
 
 ```python
 def add_override(
@@ -238,19 +238,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -260,7 +260,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -268,7 +268,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -276,19 +276,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -296,7 +296,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -306,7 +306,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -314,7 +314,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -322,13 +322,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -336,13 +336,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -350,13 +350,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -364,13 +364,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -378,13 +378,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -392,13 +392,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -406,13 +406,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -420,13 +420,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -434,19 +434,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.importFrom"></a>
 
 ```python
 def import_from(
@@ -455,19 +455,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -475,13 +475,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -493,7 +493,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -501,7 +501,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveTo"></a>
 
 ```python
 def move_to(
@@ -512,7 +512,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -520,7 +520,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -528,7 +528,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -538,7 +538,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -546,7 +546,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_csv_classifier` <a name="put_csv_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier"></a>
+##### `put_csv_classifier` <a name="put_csv_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier"></a>
 
 ```python
 def put_csv_classifier(
@@ -562,79 +562,79 @@ def put_csv_classifier(
 ) -> None
 ```
 
-###### `allow_single_column`<sup>Optional</sup> <a name="allow_single_column" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.allowSingleColumn"></a>
+###### `allow_single_column`<sup>Optional</sup> <a name="allow_single_column" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.allowSingleColumn"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}.
 
 ---
 
-###### `contains_header`<sup>Optional</sup> <a name="contains_header" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.containsHeader"></a>
+###### `contains_header`<sup>Optional</sup> <a name="contains_header" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.containsHeader"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}.
 
 ---
 
-###### `custom_datatype_configured`<sup>Optional</sup> <a name="custom_datatype_configured" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.customDatatypeConfigured"></a>
+###### `custom_datatype_configured`<sup>Optional</sup> <a name="custom_datatype_configured" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.customDatatypeConfigured"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}.
 
 ---
 
-###### `custom_datatypes`<sup>Optional</sup> <a name="custom_datatypes" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.customDatatypes"></a>
+###### `custom_datatypes`<sup>Optional</sup> <a name="custom_datatypes" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.customDatatypes"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}.
 
 ---
 
-###### `delimiter`<sup>Optional</sup> <a name="delimiter" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.delimiter"></a>
+###### `delimiter`<sup>Optional</sup> <a name="delimiter" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.delimiter"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}.
 
 ---
 
-###### `disable_value_trimming`<sup>Optional</sup> <a name="disable_value_trimming" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.disableValueTrimming"></a>
+###### `disable_value_trimming`<sup>Optional</sup> <a name="disable_value_trimming" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.disableValueTrimming"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}.
 
 ---
 
-###### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.header"></a>
+###### `header`<sup>Optional</sup> <a name="header" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.header"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#header GlueClassifier#header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#header GlueClassifier#header}.
 
 ---
 
-###### `quote_symbol`<sup>Optional</sup> <a name="quote_symbol" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.quoteSymbol"></a>
+###### `quote_symbol`<sup>Optional</sup> <a name="quote_symbol" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.quoteSymbol"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}.
 
 ---
 
-###### `serde`<sup>Optional</sup> <a name="serde" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.serde"></a>
+###### `serde`<sup>Optional</sup> <a name="serde" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putCsvClassifier.parameter.serde"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#serde GlueClassifier#serde}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#serde GlueClassifier#serde}.
 
 ---
 
-##### `put_grok_classifier` <a name="put_grok_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier"></a>
+##### `put_grok_classifier` <a name="put_grok_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier"></a>
 
 ```python
 def put_grok_classifier(
@@ -644,31 +644,31 @@ def put_grok_classifier(
 ) -> None
 ```
 
-###### `classification`<sup>Required</sup> <a name="classification" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier.parameter.classification"></a>
+###### `classification`<sup>Required</sup> <a name="classification" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier.parameter.classification"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
 
 ---
 
-###### `grok_pattern`<sup>Required</sup> <a name="grok_pattern" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier.parameter.grokPattern"></a>
+###### `grok_pattern`<sup>Required</sup> <a name="grok_pattern" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier.parameter.grokPattern"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}.
 
 ---
 
-###### `custom_patterns`<sup>Optional</sup> <a name="custom_patterns" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier.parameter.customPatterns"></a>
+###### `custom_patterns`<sup>Optional</sup> <a name="custom_patterns" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putGrokClassifier.parameter.customPatterns"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}.
 
 ---
 
-##### `put_json_classifier` <a name="put_json_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putJsonClassifier"></a>
+##### `put_json_classifier` <a name="put_json_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putJsonClassifier"></a>
 
 ```python
 def put_json_classifier(
@@ -676,15 +676,15 @@ def put_json_classifier(
 ) -> None
 ```
 
-###### `json_path`<sup>Required</sup> <a name="json_path" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putJsonClassifier.parameter.jsonPath"></a>
+###### `json_path`<sup>Required</sup> <a name="json_path" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putJsonClassifier.parameter.jsonPath"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
 
 ---
 
-##### `put_xml_classifier` <a name="put_xml_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier"></a>
+##### `put_xml_classifier` <a name="put_xml_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier"></a>
 
 ```python
 def put_xml_classifier(
@@ -693,53 +693,53 @@ def put_xml_classifier(
 ) -> None
 ```
 
-###### `classification`<sup>Required</sup> <a name="classification" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier.parameter.classification"></a>
+###### `classification`<sup>Required</sup> <a name="classification" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier.parameter.classification"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
 
 ---
 
-###### `row_tag`<sup>Required</sup> <a name="row_tag" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier.parameter.rowTag"></a>
+###### `row_tag`<sup>Required</sup> <a name="row_tag" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.putXmlClassifier.parameter.rowTag"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}.
 
 ---
 
-##### `reset_csv_classifier` <a name="reset_csv_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetCsvClassifier"></a>
+##### `reset_csv_classifier` <a name="reset_csv_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetCsvClassifier"></a>
 
 ```python
 def reset_csv_classifier() -> None
 ```
 
-##### `reset_grok_classifier` <a name="reset_grok_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetGrokClassifier"></a>
+##### `reset_grok_classifier` <a name="reset_grok_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetGrokClassifier"></a>
 
 ```python
 def reset_grok_classifier() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_json_classifier` <a name="reset_json_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetJsonClassifier"></a>
+##### `reset_json_classifier` <a name="reset_json_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetJsonClassifier"></a>
 
 ```python
 def reset_json_classifier() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_xml_classifier` <a name="reset_xml_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.resetXmlClassifier"></a>
+##### `reset_xml_classifier` <a name="reset_xml_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.resetXmlClassifier"></a>
 
 ```python
 def reset_xml_classifier() -> None
@@ -749,17 +749,17 @@ def reset_xml_classifier() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a GlueClassifier resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a GlueClassifier resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifier.is_construct(
   x: typing.Any
@@ -782,7 +782,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -790,42 +790,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifier.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifier.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifier.generate_config_for_import(
   scope: Construct,
@@ -837,7 +837,7 @@ glueClassifier.GlueClassifier.generate_config_for_import(
 
 Generates CDKTF code for importing a GlueClassifier resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -845,7 +845,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -853,17 +853,17 @@ The construct id used in the generated config for the GlueClassifier to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing GlueClassifier that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -875,38 +875,38 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.csvClassifier">csv_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference">GlueClassifierCsvClassifierOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.grokClassifier">grok_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference">GlueClassifierGrokClassifierOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifier">json_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference">GlueClassifierJsonClassifierOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifier">xml_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference">GlueClassifierXmlClassifierOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.csvClassifierInput">csv_classifier_input</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.grokClassifierInput">grok_classifier_input</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifierInput">json_classifier_input</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifierInput">xml_classifier_input</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.csvClassifier">csv_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference">GlueClassifierCsvClassifierOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.grokClassifier">grok_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference">GlueClassifierGrokClassifierOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifier">json_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference">GlueClassifierJsonClassifierOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifier">xml_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference">GlueClassifierXmlClassifierOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.csvClassifierInput">csv_classifier_input</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.grokClassifierInput">grok_classifier_input</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifierInput">json_classifier_input</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifierInput">xml_classifier_input</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.node"></a>
 
 ```python
 node: Node
@@ -918,7 +918,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -928,7 +928,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.fqn"></a>
 
 ```python
 fqn: str
@@ -938,7 +938,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -948,7 +948,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -958,7 +958,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -968,7 +968,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -978,7 +978,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -988,7 +988,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -998,7 +998,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1008,7 +1008,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1018,7 +1018,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1028,7 +1028,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1038,7 +1038,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1048,67 +1048,67 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `csv_classifier`<sup>Required</sup> <a name="csv_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.csvClassifier"></a>
+##### `csv_classifier`<sup>Required</sup> <a name="csv_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.csvClassifier"></a>
 
 ```python
 csv_classifier: GlueClassifierCsvClassifierOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference">GlueClassifierCsvClassifierOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference">GlueClassifierCsvClassifierOutputReference</a>
 
 ---
 
-##### `grok_classifier`<sup>Required</sup> <a name="grok_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.grokClassifier"></a>
+##### `grok_classifier`<sup>Required</sup> <a name="grok_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.grokClassifier"></a>
 
 ```python
 grok_classifier: GlueClassifierGrokClassifierOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference">GlueClassifierGrokClassifierOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference">GlueClassifierGrokClassifierOutputReference</a>
 
 ---
 
-##### `json_classifier`<sup>Required</sup> <a name="json_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifier"></a>
+##### `json_classifier`<sup>Required</sup> <a name="json_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifier"></a>
 
 ```python
 json_classifier: GlueClassifierJsonClassifierOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference">GlueClassifierJsonClassifierOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference">GlueClassifierJsonClassifierOutputReference</a>
 
 ---
 
-##### `xml_classifier`<sup>Required</sup> <a name="xml_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifier"></a>
+##### `xml_classifier`<sup>Required</sup> <a name="xml_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifier"></a>
 
 ```python
 xml_classifier: GlueClassifierXmlClassifierOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference">GlueClassifierXmlClassifierOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference">GlueClassifierXmlClassifierOutputReference</a>
 
 ---
 
-##### `csv_classifier_input`<sup>Optional</sup> <a name="csv_classifier_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.csvClassifierInput"></a>
+##### `csv_classifier_input`<sup>Optional</sup> <a name="csv_classifier_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.csvClassifierInput"></a>
 
 ```python
 csv_classifier_input: GlueClassifierCsvClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
 
 ---
 
-##### `grok_classifier_input`<sup>Optional</sup> <a name="grok_classifier_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.grokClassifierInput"></a>
+##### `grok_classifier_input`<sup>Optional</sup> <a name="grok_classifier_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.grokClassifierInput"></a>
 
 ```python
 grok_classifier_input: GlueClassifierGrokClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1118,17 +1118,17 @@ id_input: str
 
 ---
 
-##### `json_classifier_input`<sup>Optional</sup> <a name="json_classifier_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifierInput"></a>
+##### `json_classifier_input`<sup>Optional</sup> <a name="json_classifier_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.jsonClassifierInput"></a>
 
 ```python
 json_classifier_input: GlueClassifierJsonClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1138,7 +1138,7 @@ name_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1148,17 +1148,17 @@ region_input: str
 
 ---
 
-##### `xml_classifier_input`<sup>Optional</sup> <a name="xml_classifier_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifierInput"></a>
+##### `xml_classifier_input`<sup>Optional</sup> <a name="xml_classifier_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.xmlClassifierInput"></a>
 
 ```python
 xml_classifier_input: GlueClassifierXmlClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.id"></a>
 
 ```python
 id: str
@@ -1168,7 +1168,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.name"></a>
 
 ```python
 name: str
@@ -1178,7 +1178,7 @@ name: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.region"></a>
 
 ```python
 region: str
@@ -1192,11 +1192,11 @@ region: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifier.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifier.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.glueClassifier.GlueClassifier.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1208,12 +1208,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### GlueClassifierConfig <a name="GlueClassifierConfig" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig"></a>
+### GlueClassifierConfig <a name="GlueClassifierConfig" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1237,24 +1237,24 @@ glueClassifier.GlueClassifierConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#name GlueClassifier#name}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.csvClassifier">csv_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | csv_classifier block. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.grokClassifier">grok_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | grok_classifier block. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#id GlueClassifier#id}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.jsonClassifier">json_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | json_classifier block. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.xmlClassifier">xml_classifier</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | xml_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#name GlueClassifier#name}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.csvClassifier">csv_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | csv_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.grokClassifier">grok_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | grok_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#id GlueClassifier#id}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.jsonClassifier">json_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | json_classifier block. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.xmlClassifier">xml_classifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | xml_classifier block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1264,7 +1264,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1274,7 +1274,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1284,7 +1284,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1294,7 +1294,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1304,7 +1304,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1314,7 +1314,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1324,7 +1324,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.name"></a>
 
 ```python
 name: str
@@ -1332,39 +1332,39 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#name GlueClassifier#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#name GlueClassifier#name}.
 
 ---
 
-##### `csv_classifier`<sup>Optional</sup> <a name="csv_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.csvClassifier"></a>
+##### `csv_classifier`<sup>Optional</sup> <a name="csv_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.csvClassifier"></a>
 
 ```python
 csv_classifier: GlueClassifierCsvClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
 
 csv_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
 
 ---
 
-##### `grok_classifier`<sup>Optional</sup> <a name="grok_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.grokClassifier"></a>
+##### `grok_classifier`<sup>Optional</sup> <a name="grok_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.grokClassifier"></a>
 
 ```python
 grok_classifier: GlueClassifierGrokClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
 
 grok_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.id"></a>
 
 ```python
 id: str
@@ -1372,28 +1372,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#id GlueClassifier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#id GlueClassifier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `json_classifier`<sup>Optional</sup> <a name="json_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.jsonClassifier"></a>
+##### `json_classifier`<sup>Optional</sup> <a name="json_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.jsonClassifier"></a>
 
 ```python
 json_classifier: GlueClassifierJsonClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
 
 json_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.region"></a>
 
 ```python
 region: str
@@ -1403,30 +1403,30 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#region GlueClassifier#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#region GlueClassifier#region}
 
 ---
 
-##### `xml_classifier`<sup>Optional</sup> <a name="xml_classifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierConfig.property.xmlClassifier"></a>
+##### `xml_classifier`<sup>Optional</sup> <a name="xml_classifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.xmlClassifier"></a>
 
 ```python
 xml_classifier: GlueClassifierXmlClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
 
 xml_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
 
 ---
 
-### GlueClassifierCsvClassifier <a name="GlueClassifierCsvClassifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier"></a>
+### GlueClassifierCsvClassifier <a name="GlueClassifierCsvClassifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierCsvClassifier(
   allow_single_column: bool | IResolvable = None,
@@ -1445,19 +1445,19 @@ glueClassifier.GlueClassifierCsvClassifier(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.allowSingleColumn">allow_single_column</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.containsHeader">contains_header</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypeConfigured">custom_datatype_configured</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypes">custom_datatypes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.delimiter">delimiter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.disableValueTrimming">disable_value_trimming</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.header">header</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#header GlueClassifier#header}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.quoteSymbol">quote_symbol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.serde">serde</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#serde GlueClassifier#serde}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.allowSingleColumn">allow_single_column</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.containsHeader">contains_header</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypeConfigured">custom_datatype_configured</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypes">custom_datatypes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.delimiter">delimiter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.disableValueTrimming">disable_value_trimming</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.header">header</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#header GlueClassifier#header}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.quoteSymbol">quote_symbol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.serde">serde</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#serde GlueClassifier#serde}. |
 
 ---
 
-##### `allow_single_column`<sup>Optional</sup> <a name="allow_single_column" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.allowSingleColumn"></a>
+##### `allow_single_column`<sup>Optional</sup> <a name="allow_single_column" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.allowSingleColumn"></a>
 
 ```python
 allow_single_column: bool | IResolvable
@@ -1465,11 +1465,11 @@ allow_single_column: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}.
 
 ---
 
-##### `contains_header`<sup>Optional</sup> <a name="contains_header" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.containsHeader"></a>
+##### `contains_header`<sup>Optional</sup> <a name="contains_header" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.containsHeader"></a>
 
 ```python
 contains_header: str
@@ -1477,11 +1477,11 @@ contains_header: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}.
 
 ---
 
-##### `custom_datatype_configured`<sup>Optional</sup> <a name="custom_datatype_configured" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypeConfigured"></a>
+##### `custom_datatype_configured`<sup>Optional</sup> <a name="custom_datatype_configured" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypeConfigured"></a>
 
 ```python
 custom_datatype_configured: bool | IResolvable
@@ -1489,11 +1489,11 @@ custom_datatype_configured: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}.
 
 ---
 
-##### `custom_datatypes`<sup>Optional</sup> <a name="custom_datatypes" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypes"></a>
+##### `custom_datatypes`<sup>Optional</sup> <a name="custom_datatypes" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypes"></a>
 
 ```python
 custom_datatypes: typing.List[str]
@@ -1501,11 +1501,11 @@ custom_datatypes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}.
 
 ---
 
-##### `delimiter`<sup>Optional</sup> <a name="delimiter" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.delimiter"></a>
+##### `delimiter`<sup>Optional</sup> <a name="delimiter" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.delimiter"></a>
 
 ```python
 delimiter: str
@@ -1513,11 +1513,11 @@ delimiter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}.
 
 ---
 
-##### `disable_value_trimming`<sup>Optional</sup> <a name="disable_value_trimming" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.disableValueTrimming"></a>
+##### `disable_value_trimming`<sup>Optional</sup> <a name="disable_value_trimming" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.disableValueTrimming"></a>
 
 ```python
 disable_value_trimming: bool | IResolvable
@@ -1525,11 +1525,11 @@ disable_value_trimming: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}.
 
 ---
 
-##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.header"></a>
+##### `header`<sup>Optional</sup> <a name="header" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.header"></a>
 
 ```python
 header: typing.List[str]
@@ -1537,11 +1537,11 @@ header: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#header GlueClassifier#header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#header GlueClassifier#header}.
 
 ---
 
-##### `quote_symbol`<sup>Optional</sup> <a name="quote_symbol" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.quoteSymbol"></a>
+##### `quote_symbol`<sup>Optional</sup> <a name="quote_symbol" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.quoteSymbol"></a>
 
 ```python
 quote_symbol: str
@@ -1549,11 +1549,11 @@ quote_symbol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}.
 
 ---
 
-##### `serde`<sup>Optional</sup> <a name="serde" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.serde"></a>
+##### `serde`<sup>Optional</sup> <a name="serde" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.serde"></a>
 
 ```python
 serde: str
@@ -1561,16 +1561,16 @@ serde: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#serde GlueClassifier#serde}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#serde GlueClassifier#serde}.
 
 ---
 
-### GlueClassifierGrokClassifier <a name="GlueClassifierGrokClassifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier"></a>
+### GlueClassifierGrokClassifier <a name="GlueClassifierGrokClassifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierGrokClassifier(
   classification: str,
@@ -1583,13 +1583,13 @@ glueClassifier.GlueClassifierGrokClassifier(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.classification">classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.grokPattern">grok_pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.customPatterns">custom_patterns</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.classification">classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.grokPattern">grok_pattern</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.customPatterns">custom_patterns</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}. |
 
 ---
 
-##### `classification`<sup>Required</sup> <a name="classification" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.classification"></a>
+##### `classification`<sup>Required</sup> <a name="classification" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.classification"></a>
 
 ```python
 classification: str
@@ -1597,11 +1597,11 @@ classification: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
 
 ---
 
-##### `grok_pattern`<sup>Required</sup> <a name="grok_pattern" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.grokPattern"></a>
+##### `grok_pattern`<sup>Required</sup> <a name="grok_pattern" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.grokPattern"></a>
 
 ```python
 grok_pattern: str
@@ -1609,11 +1609,11 @@ grok_pattern: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}.
 
 ---
 
-##### `custom_patterns`<sup>Optional</sup> <a name="custom_patterns" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.customPatterns"></a>
+##### `custom_patterns`<sup>Optional</sup> <a name="custom_patterns" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.customPatterns"></a>
 
 ```python
 custom_patterns: str
@@ -1621,16 +1621,16 @@ custom_patterns: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}.
 
 ---
 
-### GlueClassifierJsonClassifier <a name="GlueClassifierJsonClassifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier"></a>
+### GlueClassifierJsonClassifier <a name="GlueClassifierJsonClassifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierJsonClassifier(
   json_path: str
@@ -1641,11 +1641,11 @@ glueClassifier.GlueClassifierJsonClassifier(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier.property.jsonPath">json_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier.property.jsonPath">json_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}. |
 
 ---
 
-##### `json_path`<sup>Required</sup> <a name="json_path" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier.property.jsonPath"></a>
+##### `json_path`<sup>Required</sup> <a name="json_path" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier.property.jsonPath"></a>
 
 ```python
 json_path: str
@@ -1653,16 +1653,16 @@ json_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
 
 ---
 
-### GlueClassifierXmlClassifier <a name="GlueClassifierXmlClassifier" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier"></a>
+### GlueClassifierXmlClassifier <a name="GlueClassifierXmlClassifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierXmlClassifier(
   classification: str,
@@ -1674,12 +1674,12 @@ glueClassifier.GlueClassifierXmlClassifier(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.classification">classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.rowTag">row_tag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.classification">classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.rowTag">row_tag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}. |
 
 ---
 
-##### `classification`<sup>Required</sup> <a name="classification" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.classification"></a>
+##### `classification`<sup>Required</sup> <a name="classification" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.classification"></a>
 
 ```python
 classification: str
@@ -1687,11 +1687,11 @@ classification: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
 
 ---
 
-##### `row_tag`<sup>Required</sup> <a name="row_tag" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.rowTag"></a>
+##### `row_tag`<sup>Required</sup> <a name="row_tag" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.rowTag"></a>
 
 ```python
 row_tag: str
@@ -1699,18 +1699,18 @@ row_tag: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### GlueClassifierCsvClassifierOutputReference <a name="GlueClassifierCsvClassifierOutputReference" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference"></a>
+### GlueClassifierCsvClassifierOutputReference <a name="GlueClassifierCsvClassifierOutputReference" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierCsvClassifierOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1720,12 +1720,12 @@ glueClassifier.GlueClassifierCsvClassifierOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1733,7 +1733,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1745,38 +1745,38 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetAllowSingleColumn">reset_allow_single_column</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetContainsHeader">reset_contains_header</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypeConfigured">reset_custom_datatype_configured</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypes">reset_custom_datatypes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDelimiter">reset_delimiter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDisableValueTrimming">reset_disable_value_trimming</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetHeader">reset_header</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetQuoteSymbol">reset_quote_symbol</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetSerde">reset_serde</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetAllowSingleColumn">reset_allow_single_column</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetContainsHeader">reset_contains_header</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypeConfigured">reset_custom_datatype_configured</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypes">reset_custom_datatypes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDelimiter">reset_delimiter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDisableValueTrimming">reset_disable_value_trimming</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetHeader">reset_header</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetQuoteSymbol">reset_quote_symbol</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetSerde">reset_serde</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1784,13 +1784,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1798,13 +1798,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1812,13 +1812,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1826,13 +1826,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1840,13 +1840,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1854,13 +1854,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1868,13 +1868,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1882,13 +1882,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1896,13 +1896,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1910,13 +1910,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1926,13 +1926,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1942,55 +1942,55 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_allow_single_column` <a name="reset_allow_single_column" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetAllowSingleColumn"></a>
+##### `reset_allow_single_column` <a name="reset_allow_single_column" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetAllowSingleColumn"></a>
 
 ```python
 def reset_allow_single_column() -> None
 ```
 
-##### `reset_contains_header` <a name="reset_contains_header" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetContainsHeader"></a>
+##### `reset_contains_header` <a name="reset_contains_header" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetContainsHeader"></a>
 
 ```python
 def reset_contains_header() -> None
 ```
 
-##### `reset_custom_datatype_configured` <a name="reset_custom_datatype_configured" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypeConfigured"></a>
+##### `reset_custom_datatype_configured` <a name="reset_custom_datatype_configured" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypeConfigured"></a>
 
 ```python
 def reset_custom_datatype_configured() -> None
 ```
 
-##### `reset_custom_datatypes` <a name="reset_custom_datatypes" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypes"></a>
+##### `reset_custom_datatypes` <a name="reset_custom_datatypes" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetCustomDatatypes"></a>
 
 ```python
 def reset_custom_datatypes() -> None
 ```
 
-##### `reset_delimiter` <a name="reset_delimiter" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDelimiter"></a>
+##### `reset_delimiter` <a name="reset_delimiter" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDelimiter"></a>
 
 ```python
 def reset_delimiter() -> None
 ```
 
-##### `reset_disable_value_trimming` <a name="reset_disable_value_trimming" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDisableValueTrimming"></a>
+##### `reset_disable_value_trimming` <a name="reset_disable_value_trimming" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetDisableValueTrimming"></a>
 
 ```python
 def reset_disable_value_trimming() -> None
 ```
 
-##### `reset_header` <a name="reset_header" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetHeader"></a>
+##### `reset_header` <a name="reset_header" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetHeader"></a>
 
 ```python
 def reset_header() -> None
 ```
 
-##### `reset_quote_symbol` <a name="reset_quote_symbol" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetQuoteSymbol"></a>
+##### `reset_quote_symbol` <a name="reset_quote_symbol" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetQuoteSymbol"></a>
 
 ```python
 def reset_quote_symbol() -> None
 ```
 
-##### `reset_serde` <a name="reset_serde" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetSerde"></a>
+##### `reset_serde` <a name="reset_serde" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.resetSerde"></a>
 
 ```python
 def reset_serde() -> None
@@ -2001,31 +2001,31 @@ def reset_serde() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumnInput">allow_single_column_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeaderInput">contains_header_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfiguredInput">custom_datatype_configured_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypesInput">custom_datatypes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiterInput">delimiter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimmingInput">disable_value_trimming_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.headerInput">header_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbolInput">quote_symbol_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serdeInput">serde_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumn">allow_single_column</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeader">contains_header</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfigured">custom_datatype_configured</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypes">custom_datatypes</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiter">delimiter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimming">disable_value_trimming</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.header">header</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbol">quote_symbol</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serde">serde</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumnInput">allow_single_column_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeaderInput">contains_header_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfiguredInput">custom_datatype_configured_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypesInput">custom_datatypes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiterInput">delimiter_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimmingInput">disable_value_trimming_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.headerInput">header_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbolInput">quote_symbol_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serdeInput">serde_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumn">allow_single_column</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeader">contains_header</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfigured">custom_datatype_configured</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypes">custom_datatypes</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiter">delimiter</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimming">disable_value_trimming</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.header">header</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbol">quote_symbol</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serde">serde</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2039,7 +2039,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2049,7 +2049,7 @@ fqn: str
 
 ---
 
-##### `allow_single_column_input`<sup>Optional</sup> <a name="allow_single_column_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumnInput"></a>
+##### `allow_single_column_input`<sup>Optional</sup> <a name="allow_single_column_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumnInput"></a>
 
 ```python
 allow_single_column_input: bool | IResolvable
@@ -2059,7 +2059,7 @@ allow_single_column_input: bool | IResolvable
 
 ---
 
-##### `contains_header_input`<sup>Optional</sup> <a name="contains_header_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeaderInput"></a>
+##### `contains_header_input`<sup>Optional</sup> <a name="contains_header_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeaderInput"></a>
 
 ```python
 contains_header_input: str
@@ -2069,7 +2069,7 @@ contains_header_input: str
 
 ---
 
-##### `custom_datatype_configured_input`<sup>Optional</sup> <a name="custom_datatype_configured_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfiguredInput"></a>
+##### `custom_datatype_configured_input`<sup>Optional</sup> <a name="custom_datatype_configured_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfiguredInput"></a>
 
 ```python
 custom_datatype_configured_input: bool | IResolvable
@@ -2079,7 +2079,7 @@ custom_datatype_configured_input: bool | IResolvable
 
 ---
 
-##### `custom_datatypes_input`<sup>Optional</sup> <a name="custom_datatypes_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypesInput"></a>
+##### `custom_datatypes_input`<sup>Optional</sup> <a name="custom_datatypes_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypesInput"></a>
 
 ```python
 custom_datatypes_input: typing.List[str]
@@ -2089,7 +2089,7 @@ custom_datatypes_input: typing.List[str]
 
 ---
 
-##### `delimiter_input`<sup>Optional</sup> <a name="delimiter_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiterInput"></a>
+##### `delimiter_input`<sup>Optional</sup> <a name="delimiter_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiterInput"></a>
 
 ```python
 delimiter_input: str
@@ -2099,7 +2099,7 @@ delimiter_input: str
 
 ---
 
-##### `disable_value_trimming_input`<sup>Optional</sup> <a name="disable_value_trimming_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimmingInput"></a>
+##### `disable_value_trimming_input`<sup>Optional</sup> <a name="disable_value_trimming_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimmingInput"></a>
 
 ```python
 disable_value_trimming_input: bool | IResolvable
@@ -2109,7 +2109,7 @@ disable_value_trimming_input: bool | IResolvable
 
 ---
 
-##### `header_input`<sup>Optional</sup> <a name="header_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.headerInput"></a>
+##### `header_input`<sup>Optional</sup> <a name="header_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.headerInput"></a>
 
 ```python
 header_input: typing.List[str]
@@ -2119,7 +2119,7 @@ header_input: typing.List[str]
 
 ---
 
-##### `quote_symbol_input`<sup>Optional</sup> <a name="quote_symbol_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbolInput"></a>
+##### `quote_symbol_input`<sup>Optional</sup> <a name="quote_symbol_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbolInput"></a>
 
 ```python
 quote_symbol_input: str
@@ -2129,7 +2129,7 @@ quote_symbol_input: str
 
 ---
 
-##### `serde_input`<sup>Optional</sup> <a name="serde_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serdeInput"></a>
+##### `serde_input`<sup>Optional</sup> <a name="serde_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serdeInput"></a>
 
 ```python
 serde_input: str
@@ -2139,7 +2139,7 @@ serde_input: str
 
 ---
 
-##### `allow_single_column`<sup>Required</sup> <a name="allow_single_column" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumn"></a>
+##### `allow_single_column`<sup>Required</sup> <a name="allow_single_column" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.allowSingleColumn"></a>
 
 ```python
 allow_single_column: bool | IResolvable
@@ -2149,7 +2149,7 @@ allow_single_column: bool | IResolvable
 
 ---
 
-##### `contains_header`<sup>Required</sup> <a name="contains_header" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeader"></a>
+##### `contains_header`<sup>Required</sup> <a name="contains_header" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.containsHeader"></a>
 
 ```python
 contains_header: str
@@ -2159,7 +2159,7 @@ contains_header: str
 
 ---
 
-##### `custom_datatype_configured`<sup>Required</sup> <a name="custom_datatype_configured" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfigured"></a>
+##### `custom_datatype_configured`<sup>Required</sup> <a name="custom_datatype_configured" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypeConfigured"></a>
 
 ```python
 custom_datatype_configured: bool | IResolvable
@@ -2169,7 +2169,7 @@ custom_datatype_configured: bool | IResolvable
 
 ---
 
-##### `custom_datatypes`<sup>Required</sup> <a name="custom_datatypes" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypes"></a>
+##### `custom_datatypes`<sup>Required</sup> <a name="custom_datatypes" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.customDatatypes"></a>
 
 ```python
 custom_datatypes: typing.List[str]
@@ -2179,7 +2179,7 @@ custom_datatypes: typing.List[str]
 
 ---
 
-##### `delimiter`<sup>Required</sup> <a name="delimiter" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiter"></a>
+##### `delimiter`<sup>Required</sup> <a name="delimiter" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.delimiter"></a>
 
 ```python
 delimiter: str
@@ -2189,7 +2189,7 @@ delimiter: str
 
 ---
 
-##### `disable_value_trimming`<sup>Required</sup> <a name="disable_value_trimming" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimming"></a>
+##### `disable_value_trimming`<sup>Required</sup> <a name="disable_value_trimming" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.disableValueTrimming"></a>
 
 ```python
 disable_value_trimming: bool | IResolvable
@@ -2199,7 +2199,7 @@ disable_value_trimming: bool | IResolvable
 
 ---
 
-##### `header`<sup>Required</sup> <a name="header" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.header"></a>
+##### `header`<sup>Required</sup> <a name="header" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.header"></a>
 
 ```python
 header: typing.List[str]
@@ -2209,7 +2209,7 @@ header: typing.List[str]
 
 ---
 
-##### `quote_symbol`<sup>Required</sup> <a name="quote_symbol" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbol"></a>
+##### `quote_symbol`<sup>Required</sup> <a name="quote_symbol" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.quoteSymbol"></a>
 
 ```python
 quote_symbol: str
@@ -2219,7 +2219,7 @@ quote_symbol: str
 
 ---
 
-##### `serde`<sup>Required</sup> <a name="serde" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serde"></a>
+##### `serde`<sup>Required</sup> <a name="serde" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.serde"></a>
 
 ```python
 serde: str
@@ -2229,23 +2229,23 @@ serde: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: GlueClassifierCsvClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a>
 
 ---
 
 
-### GlueClassifierGrokClassifierOutputReference <a name="GlueClassifierGrokClassifierOutputReference" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference"></a>
+### GlueClassifierGrokClassifierOutputReference <a name="GlueClassifierGrokClassifierOutputReference" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierGrokClassifierOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2255,12 +2255,12 @@ glueClassifier.GlueClassifierGrokClassifierOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2268,7 +2268,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2280,30 +2280,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resetCustomPatterns">reset_custom_patterns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resetCustomPatterns">reset_custom_patterns</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2311,13 +2311,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2325,13 +2325,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2339,13 +2339,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2353,13 +2353,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2367,13 +2367,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2381,13 +2381,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2395,13 +2395,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2409,13 +2409,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2423,13 +2423,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2437,13 +2437,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2453,13 +2453,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2469,7 +2469,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_custom_patterns` <a name="reset_custom_patterns" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resetCustomPatterns"></a>
+##### `reset_custom_patterns` <a name="reset_custom_patterns" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.resetCustomPatterns"></a>
 
 ```python
 def reset_custom_patterns() -> None
@@ -2480,19 +2480,19 @@ def reset_custom_patterns() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classificationInput">classification_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatternsInput">custom_patterns_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPatternInput">grok_pattern_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classification">classification</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatterns">custom_patterns</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPattern">grok_pattern</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classificationInput">classification_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatternsInput">custom_patterns_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPatternInput">grok_pattern_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classification">classification</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatterns">custom_patterns</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPattern">grok_pattern</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2506,7 +2506,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2516,7 +2516,7 @@ fqn: str
 
 ---
 
-##### `classification_input`<sup>Optional</sup> <a name="classification_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classificationInput"></a>
+##### `classification_input`<sup>Optional</sup> <a name="classification_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classificationInput"></a>
 
 ```python
 classification_input: str
@@ -2526,7 +2526,7 @@ classification_input: str
 
 ---
 
-##### `custom_patterns_input`<sup>Optional</sup> <a name="custom_patterns_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatternsInput"></a>
+##### `custom_patterns_input`<sup>Optional</sup> <a name="custom_patterns_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatternsInput"></a>
 
 ```python
 custom_patterns_input: str
@@ -2536,7 +2536,7 @@ custom_patterns_input: str
 
 ---
 
-##### `grok_pattern_input`<sup>Optional</sup> <a name="grok_pattern_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPatternInput"></a>
+##### `grok_pattern_input`<sup>Optional</sup> <a name="grok_pattern_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPatternInput"></a>
 
 ```python
 grok_pattern_input: str
@@ -2546,7 +2546,7 @@ grok_pattern_input: str
 
 ---
 
-##### `classification`<sup>Required</sup> <a name="classification" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classification"></a>
+##### `classification`<sup>Required</sup> <a name="classification" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.classification"></a>
 
 ```python
 classification: str
@@ -2556,7 +2556,7 @@ classification: str
 
 ---
 
-##### `custom_patterns`<sup>Required</sup> <a name="custom_patterns" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatterns"></a>
+##### `custom_patterns`<sup>Required</sup> <a name="custom_patterns" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.customPatterns"></a>
 
 ```python
 custom_patterns: str
@@ -2566,7 +2566,7 @@ custom_patterns: str
 
 ---
 
-##### `grok_pattern`<sup>Required</sup> <a name="grok_pattern" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPattern"></a>
+##### `grok_pattern`<sup>Required</sup> <a name="grok_pattern" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.grokPattern"></a>
 
 ```python
 grok_pattern: str
@@ -2576,23 +2576,23 @@ grok_pattern: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: GlueClassifierGrokClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a>
 
 ---
 
 
-### GlueClassifierJsonClassifierOutputReference <a name="GlueClassifierJsonClassifierOutputReference" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference"></a>
+### GlueClassifierJsonClassifierOutputReference <a name="GlueClassifierJsonClassifierOutputReference" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierJsonClassifierOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2602,12 +2602,12 @@ glueClassifier.GlueClassifierJsonClassifierOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2615,7 +2615,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2627,29 +2627,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2657,13 +2657,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2671,13 +2671,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2685,13 +2685,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2699,13 +2699,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2713,13 +2713,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2727,13 +2727,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2741,13 +2741,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2755,13 +2755,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2769,13 +2769,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2783,13 +2783,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2799,13 +2799,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2820,15 +2820,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPathInput">json_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPath">json_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPathInput">json_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPath">json_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2842,7 +2842,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2852,7 +2852,7 @@ fqn: str
 
 ---
 
-##### `json_path_input`<sup>Optional</sup> <a name="json_path_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPathInput"></a>
+##### `json_path_input`<sup>Optional</sup> <a name="json_path_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPathInput"></a>
 
 ```python
 json_path_input: str
@@ -2862,7 +2862,7 @@ json_path_input: str
 
 ---
 
-##### `json_path`<sup>Required</sup> <a name="json_path" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPath"></a>
+##### `json_path`<sup>Required</sup> <a name="json_path" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.jsonPath"></a>
 
 ```python
 json_path: str
@@ -2872,23 +2872,23 @@ json_path: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: GlueClassifierJsonClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a>
 
 ---
 
 
-### GlueClassifierXmlClassifierOutputReference <a name="GlueClassifierXmlClassifierOutputReference" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference"></a>
+### GlueClassifierXmlClassifierOutputReference <a name="GlueClassifierXmlClassifierOutputReference" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import glue_classifier
+from cdktn_provider_aws import glue_classifier
 
 glueClassifier.GlueClassifierXmlClassifierOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2898,12 +2898,12 @@ glueClassifier.GlueClassifierXmlClassifierOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2911,7 +2911,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2923,29 +2923,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2953,13 +2953,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2967,13 +2967,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2981,13 +2981,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2995,13 +2995,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3009,13 +3009,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3023,13 +3023,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3037,13 +3037,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3051,13 +3051,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3065,13 +3065,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3079,13 +3079,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3095,13 +3095,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3116,17 +3116,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classificationInput">classification_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTagInput">row_tag_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classification">classification</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTag">row_tag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classificationInput">classification_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTagInput">row_tag_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classification">classification</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTag">row_tag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3140,7 +3140,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3150,7 +3150,7 @@ fqn: str
 
 ---
 
-##### `classification_input`<sup>Optional</sup> <a name="classification_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classificationInput"></a>
+##### `classification_input`<sup>Optional</sup> <a name="classification_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classificationInput"></a>
 
 ```python
 classification_input: str
@@ -3160,7 +3160,7 @@ classification_input: str
 
 ---
 
-##### `row_tag_input`<sup>Optional</sup> <a name="row_tag_input" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTagInput"></a>
+##### `row_tag_input`<sup>Optional</sup> <a name="row_tag_input" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTagInput"></a>
 
 ```python
 row_tag_input: str
@@ -3170,7 +3170,7 @@ row_tag_input: str
 
 ---
 
-##### `classification`<sup>Required</sup> <a name="classification" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classification"></a>
+##### `classification`<sup>Required</sup> <a name="classification" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.classification"></a>
 
 ```python
 classification: str
@@ -3180,7 +3180,7 @@ classification: str
 
 ---
 
-##### `row_tag`<sup>Required</sup> <a name="row_tag" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTag"></a>
+##### `row_tag`<sup>Required</sup> <a name="row_tag" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.rowTag"></a>
 
 ```python
 row_tag: str
@@ -3190,13 +3190,13 @@ row_tag: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: GlueClassifierXmlClassifier
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
+- *Type:* <a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a>
 
 ---
 

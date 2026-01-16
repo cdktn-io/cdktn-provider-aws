@@ -1,28 +1,28 @@
-# `backupPlan` Submodule <a name="`backupPlan` Submodule" id="@cdktf/provider-aws.backupPlan"></a>
+# `backupPlan` Submodule <a name="`backupPlan` Submodule" id="@cdktn/provider-aws.backupPlan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### BackupPlan <a name="BackupPlan" id="@cdktf/provider-aws.backupPlan.BackupPlan"></a>
+### BackupPlan <a name="BackupPlan" id="@cdktn/provider-aws.backupPlan.BackupPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan aws_backup_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan aws_backup_plan}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlan.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlan.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlan(scope: Construct, id: string, config: BackupPlanConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig">BackupPlanConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig">BackupPlanConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.backupPlan.BackupPlan.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.backupPlan.BackupPlan.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.backupPlan.BackupPlan.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.backupPlan.BackupPlan.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.backupPlan.BackupPlan.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.backupPlan.BackupPlan.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig">BackupPlanConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig">BackupPlanConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.putAdvancedBackupSetting">putAdvancedBackupSetting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.putRule">putRule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.putScanSetting">putScanSetting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetAdvancedBackupSetting">resetAdvancedBackupSetting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetScanSetting">resetScanSetting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.putAdvancedBackupSetting">putAdvancedBackupSetting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.putRule">putRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.putScanSetting">putScanSetting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetAdvancedBackupSetting">resetAdvancedBackupSetting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetScanSetting">resetScanSetting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlan.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlan.toString"></a>
 
 ```typescript
 public toString(): string
@@ -93,25 +93,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.backupPlan.BackupPlan.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.backupPlan.BackupPlan.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.backupPlan.BackupPlan.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.backupPlan.BackupPlan.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlan.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlan.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.backupPlan.BackupPlan.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.backupPlan.BackupPlan.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -119,7 +119,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.backupPlan.BackupPlan.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.backupPlan.BackupPlan.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -135,19 +135,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.backupPlan.BackupPlan.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.backupPlan.BackupPlan.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.backupPlan.BackupPlan.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.backupPlan.BackupPlan.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.backupPlan.BackupPlan.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.backupPlan.BackupPlan.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -155,7 +155,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.backupPlan.BackupPlan.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.backupPlan.BackupPlan.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -163,7 +163,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.backupPlan.BackupPlan.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.backupPlan.BackupPlan.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.backupPlan.BackupPlan.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.backupPlan.BackupPlan.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.backupPlan.BackupPlan.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.backupPlan.BackupPlan.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.backupPlan.BackupPlan.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.backupPlan.BackupPlan.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.backupPlan.BackupPlan.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.backupPlan.BackupPlan.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlan.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlan.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -341,7 +341,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -365,7 +365,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.backupPlan.BackupPlan.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.backupPlan.BackupPlan.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -373,73 +373,73 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putAdvancedBackupSetting` <a name="putAdvancedBackupSetting" id="@cdktf/provider-aws.backupPlan.BackupPlan.putAdvancedBackupSetting"></a>
+##### `putAdvancedBackupSetting` <a name="putAdvancedBackupSetting" id="@cdktn/provider-aws.backupPlan.BackupPlan.putAdvancedBackupSetting"></a>
 
 ```typescript
 public putAdvancedBackupSetting(value: IResolvable | BackupPlanAdvancedBackupSetting[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlan.putAdvancedBackupSetting.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlan.putAdvancedBackupSetting.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
 
 ---
 
-##### `putRule` <a name="putRule" id="@cdktf/provider-aws.backupPlan.BackupPlan.putRule"></a>
+##### `putRule` <a name="putRule" id="@cdktn/provider-aws.backupPlan.BackupPlan.putRule"></a>
 
 ```typescript
 public putRule(value: IResolvable | BackupPlanRule[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlan.putRule.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlan.putRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
 
 ---
 
-##### `putScanSetting` <a name="putScanSetting" id="@cdktf/provider-aws.backupPlan.BackupPlan.putScanSetting"></a>
+##### `putScanSetting` <a name="putScanSetting" id="@cdktn/provider-aws.backupPlan.BackupPlan.putScanSetting"></a>
 
 ```typescript
 public putScanSetting(value: IResolvable | BackupPlanScanSetting[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlan.putScanSetting.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlan.putScanSetting.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
 
 ---
 
-##### `resetAdvancedBackupSetting` <a name="resetAdvancedBackupSetting" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetAdvancedBackupSetting"></a>
+##### `resetAdvancedBackupSetting` <a name="resetAdvancedBackupSetting" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetAdvancedBackupSetting"></a>
 
 ```typescript
 public resetAdvancedBackupSetting(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetScanSetting` <a name="resetScanSetting" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetScanSetting"></a>
+##### `resetScanSetting` <a name="resetScanSetting" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetScanSetting"></a>
 
 ```typescript
 public resetScanSetting(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.backupPlan.BackupPlan.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.backupPlan.BackupPlan.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
@@ -449,17 +449,17 @@ public resetTagsAll(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BackupPlan resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BackupPlan resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.backupPlan.BackupPlan.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.backupPlan.BackupPlan.isConstruct"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 backupPlan.BackupPlan.isConstruct(x: any)
 ```
@@ -480,7 +480,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.backupPlan.BackupPlan.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.backupPlan.BackupPlan.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -488,45 +488,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.backupPlan.BackupPlan.isTerraformElement"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 backupPlan.BackupPlan.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.backupPlan.BackupPlan.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlan.isTerraformResource"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 backupPlan.BackupPlan.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.backupPlan.BackupPlan.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.backupPlan.BackupPlan.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.backupPlan.BackupPlan.generateConfigForImport"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 backupPlan.BackupPlan.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a BackupPlan resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -534,7 +534,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -542,17 +542,17 @@ The construct id used in the generated config for the BackupPlan to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing BackupPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.backupPlan.BackupPlan.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -564,42 +564,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.advancedBackupSetting">advancedBackupSetting</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList">BackupPlanAdvancedBackupSettingList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList">BackupPlanRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.scanSetting">scanSetting</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList">BackupPlanScanSettingList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.version">version</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.advancedBackupSettingInput">advancedBackupSettingInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.ruleInput">ruleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.scanSettingInput">scanSettingInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.advancedBackupSetting">advancedBackupSetting</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList">BackupPlanAdvancedBackupSettingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.rule">rule</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList">BackupPlanRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.scanSetting">scanSetting</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList">BackupPlanScanSettingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.version">version</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.advancedBackupSettingInput">advancedBackupSettingInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.ruleInput">ruleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.scanSettingInput">scanSettingInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -611,7 +611,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -621,7 +621,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -631,7 +631,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -641,7 +641,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -651,7 +651,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -661,7 +661,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -671,7 +671,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -681,7 +681,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -691,7 +691,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -701,7 +701,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -711,7 +711,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -721,7 +721,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -731,7 +731,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -741,17 +741,17 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `advancedBackupSetting`<sup>Required</sup> <a name="advancedBackupSetting" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.advancedBackupSetting"></a>
+##### `advancedBackupSetting`<sup>Required</sup> <a name="advancedBackupSetting" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.advancedBackupSetting"></a>
 
 ```typescript
 public readonly advancedBackupSetting: BackupPlanAdvancedBackupSettingList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList">BackupPlanAdvancedBackupSettingList</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList">BackupPlanAdvancedBackupSettingList</a>
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -761,27 +761,27 @@ public readonly arn: string;
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.rule"></a>
+##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.rule"></a>
 
 ```typescript
 public readonly rule: BackupPlanRuleList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList">BackupPlanRuleList</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList">BackupPlanRuleList</a>
 
 ---
 
-##### `scanSetting`<sup>Required</sup> <a name="scanSetting" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.scanSetting"></a>
+##### `scanSetting`<sup>Required</sup> <a name="scanSetting" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.scanSetting"></a>
 
 ```typescript
 public readonly scanSetting: BackupPlanScanSettingList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList">BackupPlanScanSettingList</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList">BackupPlanScanSettingList</a>
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.version"></a>
+##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.version"></a>
 
 ```typescript
 public readonly version: string;
@@ -791,17 +791,17 @@ public readonly version: string;
 
 ---
 
-##### `advancedBackupSettingInput`<sup>Optional</sup> <a name="advancedBackupSettingInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.advancedBackupSettingInput"></a>
+##### `advancedBackupSettingInput`<sup>Optional</sup> <a name="advancedBackupSettingInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.advancedBackupSettingInput"></a>
 
 ```typescript
 public readonly advancedBackupSettingInput: IResolvable | BackupPlanAdvancedBackupSetting[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -811,7 +811,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -821,7 +821,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -831,27 +831,27 @@ public readonly regionInput: string;
 
 ---
 
-##### `ruleInput`<sup>Optional</sup> <a name="ruleInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.ruleInput"></a>
+##### `ruleInput`<sup>Optional</sup> <a name="ruleInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.ruleInput"></a>
 
 ```typescript
 public readonly ruleInput: IResolvable | BackupPlanRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
 
 ---
 
-##### `scanSettingInput`<sup>Optional</sup> <a name="scanSettingInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.scanSettingInput"></a>
+##### `scanSettingInput`<sup>Optional</sup> <a name="scanSettingInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.scanSettingInput"></a>
 
 ```typescript
 public readonly scanSettingInput: IResolvable | BackupPlanScanSetting[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -861,7 +861,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -871,7 +871,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -881,7 +881,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -891,7 +891,7 @@ public readonly name: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -901,7 +901,7 @@ public readonly region: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -911,7 +911,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -925,11 +925,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlan.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlan.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.backupPlan.BackupPlan.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.backupPlan.BackupPlan.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -941,12 +941,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### BackupPlanAdvancedBackupSetting <a name="BackupPlanAdvancedBackupSetting" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting"></a>
+### BackupPlanAdvancedBackupSetting <a name="BackupPlanAdvancedBackupSetting" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanAdvancedBackupSetting: backupPlan.BackupPlanAdvancedBackupSetting = { ... }
 ```
@@ -955,12 +955,12 @@ const backupPlanAdvancedBackupSetting: backupPlan.BackupPlanAdvancedBackupSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions">backupOptions</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions">backupOptions</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}. |
 
 ---
 
-##### `backupOptions`<sup>Required</sup> <a name="backupOptions" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions"></a>
+##### `backupOptions`<sup>Required</sup> <a name="backupOptions" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.backupOptions"></a>
 
 ```typescript
 public readonly backupOptions: {[ key: string ]: string};
@@ -968,11 +968,11 @@ public readonly backupOptions: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#backup_options BackupPlan#backup_options}.
 
 ---
 
-##### `resourceType`<sup>Required</sup> <a name="resourceType" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType"></a>
+##### `resourceType`<sup>Required</sup> <a name="resourceType" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting.property.resourceType"></a>
 
 ```typescript
 public readonly resourceType: string;
@@ -980,16 +980,16 @@ public readonly resourceType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#resource_type BackupPlan#resource_type}.
 
 ---
 
-### BackupPlanConfig <a name="BackupPlanConfig" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig"></a>
+### BackupPlanConfig <a name="BackupPlanConfig" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanConfig: backupPlan.BackupPlanConfig = { ... }
 ```
@@ -998,25 +998,25 @@ const backupPlanConfig: backupPlan.BackupPlanConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#name BackupPlan#name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | rule block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.advancedBackupSetting">advancedBackupSetting</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | advanced_backup_setting block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#id BackupPlan#id}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.scanSetting">scanSetting</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]</code> | scan_setting block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#tags BackupPlan#tags}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#name BackupPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | rule block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.advancedBackupSetting">advancedBackupSetting</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | advanced_backup_setting block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#id BackupPlan#id}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.scanSetting">scanSetting</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]</code> | scan_setting block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#tags BackupPlan#tags}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1026,7 +1026,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1036,7 +1036,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1046,7 +1046,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1056,7 +1056,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1066,7 +1066,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1076,7 +1076,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1086,7 +1086,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1094,39 +1094,39 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#name BackupPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#name BackupPlan#name}.
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.rule"></a>
+##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.rule"></a>
 
 ```typescript
 public readonly rule: IResolvable | BackupPlanRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#rule BackupPlan#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#rule BackupPlan#rule}
 
 ---
 
-##### `advancedBackupSetting`<sup>Optional</sup> <a name="advancedBackupSetting" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.advancedBackupSetting"></a>
+##### `advancedBackupSetting`<sup>Optional</sup> <a name="advancedBackupSetting" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.advancedBackupSetting"></a>
 
 ```typescript
 public readonly advancedBackupSetting: IResolvable | BackupPlanAdvancedBackupSetting[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
 
 advanced_backup_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#advanced_backup_setting BackupPlan#advanced_backup_setting}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1134,14 +1134,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#id BackupPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#id BackupPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1151,25 +1151,25 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#region BackupPlan#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#region BackupPlan#region}
 
 ---
 
-##### `scanSetting`<sup>Optional</sup> <a name="scanSetting" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.scanSetting"></a>
+##### `scanSetting`<sup>Optional</sup> <a name="scanSetting" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.scanSetting"></a>
 
 ```typescript
 public readonly scanSetting: IResolvable | BackupPlanScanSetting[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
 
 scan_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_setting BackupPlan#scan_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#scan_setting BackupPlan#scan_setting}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1177,11 +1177,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#tags BackupPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#tags BackupPlan#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.backupPlan.BackupPlanConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1189,16 +1189,16 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#tags_all BackupPlan#tags_all}.
 
 ---
 
-### BackupPlanRule <a name="BackupPlanRule" id="@cdktf/provider-aws.backupPlan.BackupPlanRule"></a>
+### BackupPlanRule <a name="BackupPlanRule" id="@cdktn/provider-aws.backupPlan.BackupPlanRule"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanRule: backupPlan.BackupPlanRule = { ... }
 ```
@@ -1207,22 +1207,22 @@ const backupPlanRule: backupPlan.BackupPlanRule = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.ruleName">ruleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName">targetVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.completionWindow">completionWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.copyAction">copyAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | copy_action block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup">enableContinuousBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | lifecycle block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags">recoveryPointTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.scanAction">scanAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]</code> | scan_action block. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.schedule">schedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#schedule BackupPlan#schedule}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.scheduleExpressionTimezone">scheduleExpressionTimezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.startWindow">startWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#start_window BackupPlan#start_window}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetLogicallyAirGappedBackupVaultArn">targetLogicallyAirGappedBackupVaultArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#target_logically_air_gapped_backup_vault_arn BackupPlan#target_logically_air_gapped_backup_vault_arn}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.ruleName">ruleName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName">targetVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.completionWindow">completionWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.copyAction">copyAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | copy_action block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup">enableContinuousBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | lifecycle block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags">recoveryPointTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.scanAction">scanAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]</code> | scan_action block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.schedule">schedule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#schedule BackupPlan#schedule}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.scheduleExpressionTimezone">scheduleExpressionTimezone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.startWindow">startWindow</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#start_window BackupPlan#start_window}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule.property.targetLogicallyAirGappedBackupVaultArn">targetLogicallyAirGappedBackupVaultArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#target_logically_air_gapped_backup_vault_arn BackupPlan#target_logically_air_gapped_backup_vault_arn}. |
 
 ---
 
-##### `ruleName`<sup>Required</sup> <a name="ruleName" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.ruleName"></a>
+##### `ruleName`<sup>Required</sup> <a name="ruleName" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.ruleName"></a>
 
 ```typescript
 public readonly ruleName: string;
@@ -1230,11 +1230,11 @@ public readonly ruleName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#rule_name BackupPlan#rule_name}.
 
 ---
 
-##### `targetVaultName`<sup>Required</sup> <a name="targetVaultName" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName"></a>
+##### `targetVaultName`<sup>Required</sup> <a name="targetVaultName" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.targetVaultName"></a>
 
 ```typescript
 public readonly targetVaultName: string;
@@ -1242,11 +1242,11 @@ public readonly targetVaultName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#target_vault_name BackupPlan#target_vault_name}.
 
 ---
 
-##### `completionWindow`<sup>Optional</sup> <a name="completionWindow" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.completionWindow"></a>
+##### `completionWindow`<sup>Optional</sup> <a name="completionWindow" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.completionWindow"></a>
 
 ```typescript
 public readonly completionWindow: number;
@@ -1254,25 +1254,25 @@ public readonly completionWindow: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#completion_window BackupPlan#completion_window}.
 
 ---
 
-##### `copyAction`<sup>Optional</sup> <a name="copyAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.copyAction"></a>
+##### `copyAction`<sup>Optional</sup> <a name="copyAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.copyAction"></a>
 
 ```typescript
 public readonly copyAction: IResolvable | BackupPlanRuleCopyAction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
 
 copy_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#copy_action BackupPlan#copy_action}
 
 ---
 
-##### `enableContinuousBackup`<sup>Optional</sup> <a name="enableContinuousBackup" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup"></a>
+##### `enableContinuousBackup`<sup>Optional</sup> <a name="enableContinuousBackup" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.enableContinuousBackup"></a>
 
 ```typescript
 public readonly enableContinuousBackup: boolean | IResolvable;
@@ -1280,25 +1280,25 @@ public readonly enableContinuousBackup: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#enable_continuous_backup BackupPlan#enable_continuous_backup}.
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: BackupPlanRuleLifecycle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
 
 ---
 
-##### `recoveryPointTags`<sup>Optional</sup> <a name="recoveryPointTags" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags"></a>
+##### `recoveryPointTags`<sup>Optional</sup> <a name="recoveryPointTags" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.recoveryPointTags"></a>
 
 ```typescript
 public readonly recoveryPointTags: {[ key: string ]: string};
@@ -1306,25 +1306,25 @@ public readonly recoveryPointTags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#recovery_point_tags BackupPlan#recovery_point_tags}.
 
 ---
 
-##### `scanAction`<sup>Optional</sup> <a name="scanAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.scanAction"></a>
+##### `scanAction`<sup>Optional</sup> <a name="scanAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.scanAction"></a>
 
 ```typescript
 public readonly scanAction: IResolvable | BackupPlanRuleScanAction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
 
 scan_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_action BackupPlan#scan_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#scan_action BackupPlan#scan_action}
 
 ---
 
-##### `schedule`<sup>Optional</sup> <a name="schedule" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.schedule"></a>
+##### `schedule`<sup>Optional</sup> <a name="schedule" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.schedule"></a>
 
 ```typescript
 public readonly schedule: string;
@@ -1332,11 +1332,11 @@ public readonly schedule: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#schedule BackupPlan#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#schedule BackupPlan#schedule}.
 
 ---
 
-##### `scheduleExpressionTimezone`<sup>Optional</sup> <a name="scheduleExpressionTimezone" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.scheduleExpressionTimezone"></a>
+##### `scheduleExpressionTimezone`<sup>Optional</sup> <a name="scheduleExpressionTimezone" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.scheduleExpressionTimezone"></a>
 
 ```typescript
 public readonly scheduleExpressionTimezone: string;
@@ -1344,11 +1344,11 @@ public readonly scheduleExpressionTimezone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#schedule_expression_timezone BackupPlan#schedule_expression_timezone}.
 
 ---
 
-##### `startWindow`<sup>Optional</sup> <a name="startWindow" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.startWindow"></a>
+##### `startWindow`<sup>Optional</sup> <a name="startWindow" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.startWindow"></a>
 
 ```typescript
 public readonly startWindow: number;
@@ -1356,11 +1356,11 @@ public readonly startWindow: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#start_window BackupPlan#start_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#start_window BackupPlan#start_window}.
 
 ---
 
-##### `targetLogicallyAirGappedBackupVaultArn`<sup>Optional</sup> <a name="targetLogicallyAirGappedBackupVaultArn" id="@cdktf/provider-aws.backupPlan.BackupPlanRule.property.targetLogicallyAirGappedBackupVaultArn"></a>
+##### `targetLogicallyAirGappedBackupVaultArn`<sup>Optional</sup> <a name="targetLogicallyAirGappedBackupVaultArn" id="@cdktn/provider-aws.backupPlan.BackupPlanRule.property.targetLogicallyAirGappedBackupVaultArn"></a>
 
 ```typescript
 public readonly targetLogicallyAirGappedBackupVaultArn: string;
@@ -1368,16 +1368,16 @@ public readonly targetLogicallyAirGappedBackupVaultArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#target_logically_air_gapped_backup_vault_arn BackupPlan#target_logically_air_gapped_backup_vault_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#target_logically_air_gapped_backup_vault_arn BackupPlan#target_logically_air_gapped_backup_vault_arn}.
 
 ---
 
-### BackupPlanRuleCopyAction <a name="BackupPlanRuleCopyAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction"></a>
+### BackupPlanRuleCopyAction <a name="BackupPlanRuleCopyAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanRuleCopyAction: backupPlan.BackupPlanRuleCopyAction = { ... }
 ```
@@ -1386,12 +1386,12 @@ const backupPlanRuleCopyAction: backupPlan.BackupPlanRuleCopyAction = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn">destinationVaultArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | lifecycle block. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn">destinationVaultArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | lifecycle block. |
 
 ---
 
-##### `destinationVaultArn`<sup>Required</sup> <a name="destinationVaultArn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn"></a>
+##### `destinationVaultArn`<sup>Required</sup> <a name="destinationVaultArn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.destinationVaultArn"></a>
 
 ```typescript
 public readonly destinationVaultArn: string;
@@ -1399,30 +1399,30 @@ public readonly destinationVaultArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#destination_vault_arn BackupPlan#destination_vault_arn}.
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: BackupPlanRuleCopyActionLifecycle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
 
 lifecycle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#lifecycle BackupPlan#lifecycle}
 
 ---
 
-### BackupPlanRuleCopyActionLifecycle <a name="BackupPlanRuleCopyActionLifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle"></a>
+### BackupPlanRuleCopyActionLifecycle <a name="BackupPlanRuleCopyActionLifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanRuleCopyActionLifecycle: backupPlan.BackupPlanRuleCopyActionLifecycle = { ... }
 ```
@@ -1431,13 +1431,13 @@ const backupPlanRuleCopyActionLifecycle: backupPlan.BackupPlanRuleCopyActionLife
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}. |
 
 ---
 
-##### `coldStorageAfter`<sup>Optional</sup> <a name="coldStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter"></a>
+##### `coldStorageAfter`<sup>Optional</sup> <a name="coldStorageAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.coldStorageAfter"></a>
 
 ```typescript
 public readonly coldStorageAfter: number;
@@ -1445,11 +1445,11 @@ public readonly coldStorageAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
 
 ---
 
-##### `deleteAfter`<sup>Optional</sup> <a name="deleteAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter"></a>
+##### `deleteAfter`<sup>Optional</sup> <a name="deleteAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.deleteAfter"></a>
 
 ```typescript
 public readonly deleteAfter: number;
@@ -1457,11 +1457,11 @@ public readonly deleteAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
 
 ---
 
-##### `optInToArchiveForSupportedResources`<sup>Optional</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.optInToArchiveForSupportedResources"></a>
+##### `optInToArchiveForSupportedResources`<sup>Optional</sup> <a name="optInToArchiveForSupportedResources" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle.property.optInToArchiveForSupportedResources"></a>
 
 ```typescript
 public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
@@ -1469,16 +1469,16 @@ public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}.
 
 ---
 
-### BackupPlanRuleLifecycle <a name="BackupPlanRuleLifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle"></a>
+### BackupPlanRuleLifecycle <a name="BackupPlanRuleLifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanRuleLifecycle: backupPlan.BackupPlanRuleLifecycle = { ... }
 ```
@@ -1487,13 +1487,13 @@ const backupPlanRuleLifecycle: backupPlan.BackupPlanRuleLifecycle = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}. |
 
 ---
 
-##### `coldStorageAfter`<sup>Optional</sup> <a name="coldStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter"></a>
+##### `coldStorageAfter`<sup>Optional</sup> <a name="coldStorageAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.coldStorageAfter"></a>
 
 ```typescript
 public readonly coldStorageAfter: number;
@@ -1501,11 +1501,11 @@ public readonly coldStorageAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#cold_storage_after BackupPlan#cold_storage_after}.
 
 ---
 
-##### `deleteAfter`<sup>Optional</sup> <a name="deleteAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter"></a>
+##### `deleteAfter`<sup>Optional</sup> <a name="deleteAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.deleteAfter"></a>
 
 ```typescript
 public readonly deleteAfter: number;
@@ -1513,11 +1513,11 @@ public readonly deleteAfter: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#delete_after BackupPlan#delete_after}.
 
 ---
 
-##### `optInToArchiveForSupportedResources`<sup>Optional</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.optInToArchiveForSupportedResources"></a>
+##### `optInToArchiveForSupportedResources`<sup>Optional</sup> <a name="optInToArchiveForSupportedResources" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle.property.optInToArchiveForSupportedResources"></a>
 
 ```typescript
 public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
@@ -1525,16 +1525,16 @@ public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#opt_in_to_archive_for_supported_resources BackupPlan#opt_in_to_archive_for_supported_resources}.
 
 ---
 
-### BackupPlanRuleScanAction <a name="BackupPlanRuleScanAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction"></a>
+### BackupPlanRuleScanAction <a name="BackupPlanRuleScanAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanRuleScanAction: backupPlan.BackupPlanRuleScanAction = { ... }
 ```
@@ -1543,12 +1543,12 @@ const backupPlanRuleScanAction: backupPlan.BackupPlanRuleScanAction = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction.property.scanMode">scanMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_mode BackupPlan#scan_mode}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction.property.scanMode">scanMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#scan_mode BackupPlan#scan_mode}. |
 
 ---
 
-##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction.property.malwareScanner"></a>
+##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction.property.malwareScanner"></a>
 
 ```typescript
 public readonly malwareScanner: string;
@@ -1556,11 +1556,11 @@ public readonly malwareScanner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}.
 
 ---
 
-##### `scanMode`<sup>Required</sup> <a name="scanMode" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction.property.scanMode"></a>
+##### `scanMode`<sup>Required</sup> <a name="scanMode" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction.property.scanMode"></a>
 
 ```typescript
 public readonly scanMode: string;
@@ -1568,16 +1568,16 @@ public readonly scanMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scan_mode BackupPlan#scan_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#scan_mode BackupPlan#scan_mode}.
 
 ---
 
-### BackupPlanScanSetting <a name="BackupPlanScanSetting" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSetting"></a>
+### BackupPlanScanSetting <a name="BackupPlanScanSetting" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSetting"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 const backupPlanScanSetting: backupPlan.BackupPlanScanSetting = { ... }
 ```
@@ -1586,13 +1586,13 @@ const backupPlanScanSetting: backupPlan.BackupPlanScanSetting = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.property.resourceTypes">resourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#resource_types BackupPlan#resource_types}. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.property.scannerRoleArn">scannerRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scanner_role_arn BackupPlan#scanner_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.property.resourceTypes">resourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#resource_types BackupPlan#resource_types}. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.property.scannerRoleArn">scannerRoleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#scanner_role_arn BackupPlan#scanner_role_arn}. |
 
 ---
 
-##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.property.malwareScanner"></a>
+##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.property.malwareScanner"></a>
 
 ```typescript
 public readonly malwareScanner: string;
@@ -1600,11 +1600,11 @@ public readonly malwareScanner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#malware_scanner BackupPlan#malware_scanner}.
 
 ---
 
-##### `resourceTypes`<sup>Required</sup> <a name="resourceTypes" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.property.resourceTypes"></a>
+##### `resourceTypes`<sup>Required</sup> <a name="resourceTypes" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.property.resourceTypes"></a>
 
 ```typescript
 public readonly resourceTypes: string[];
@@ -1612,11 +1612,11 @@ public readonly resourceTypes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#resource_types BackupPlan#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#resource_types BackupPlan#resource_types}.
 
 ---
 
-##### `scannerRoleArn`<sup>Required</sup> <a name="scannerRoleArn" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSetting.property.scannerRoleArn"></a>
+##### `scannerRoleArn`<sup>Required</sup> <a name="scannerRoleArn" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSetting.property.scannerRoleArn"></a>
 
 ```typescript
 public readonly scannerRoleArn: string;
@@ -1624,31 +1624,31 @@ public readonly scannerRoleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/backup_plan#scanner_role_arn BackupPlan#scanner_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_plan#scanner_role_arn BackupPlan#scanner_role_arn}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### BackupPlanAdvancedBackupSettingList <a name="BackupPlanAdvancedBackupSettingList" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList"></a>
+### BackupPlanAdvancedBackupSettingList <a name="BackupPlanAdvancedBackupSettingList" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanAdvancedBackupSettingList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1656,7 +1656,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1664,7 +1664,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1676,15 +1676,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1694,19 +1694,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1714,13 +1714,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1730,13 +1730,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.get"></a>
 
 ```typescript
 public get(index: number): BackupPlanAdvancedBackupSettingOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1749,13 +1749,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1769,7 +1769,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1779,37 +1779,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanAdvancedBackupSetting[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>[]
 
 ---
 
 
-### BackupPlanAdvancedBackupSettingOutputReference <a name="BackupPlanAdvancedBackupSettingOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference"></a>
+### BackupPlanAdvancedBackupSettingOutputReference <a name="BackupPlanAdvancedBackupSettingOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanAdvancedBackupSettingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1817,7 +1817,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1825,7 +1825,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1833,7 +1833,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1845,149 +1845,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1995,13 +1995,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2016,17 +2016,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptionsInput">backupOptionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptions">backupOptions</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceType">resourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptionsInput">backupOptionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceTypeInput">resourceTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptions">backupOptions</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceType">resourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2040,7 +2040,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2050,7 +2050,7 @@ public readonly fqn: string;
 
 ---
 
-##### `backupOptionsInput`<sup>Optional</sup> <a name="backupOptionsInput" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptionsInput"></a>
+##### `backupOptionsInput`<sup>Optional</sup> <a name="backupOptionsInput" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptionsInput"></a>
 
 ```typescript
 public readonly backupOptionsInput: {[ key: string ]: string};
@@ -2060,7 +2060,7 @@ public readonly backupOptionsInput: {[ key: string ]: string};
 
 ---
 
-##### `resourceTypeInput`<sup>Optional</sup> <a name="resourceTypeInput" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceTypeInput"></a>
+##### `resourceTypeInput`<sup>Optional</sup> <a name="resourceTypeInput" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceTypeInput"></a>
 
 ```typescript
 public readonly resourceTypeInput: string;
@@ -2070,7 +2070,7 @@ public readonly resourceTypeInput: string;
 
 ---
 
-##### `backupOptions`<sup>Required</sup> <a name="backupOptions" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptions"></a>
+##### `backupOptions`<sup>Required</sup> <a name="backupOptions" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.backupOptions"></a>
 
 ```typescript
 public readonly backupOptions: {[ key: string ]: string};
@@ -2080,7 +2080,7 @@ public readonly backupOptions: {[ key: string ]: string};
 
 ---
 
-##### `resourceType`<sup>Required</sup> <a name="resourceType" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceType"></a>
+##### `resourceType`<sup>Required</sup> <a name="resourceType" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.resourceType"></a>
 
 ```typescript
 public readonly resourceType: string;
@@ -2090,35 +2090,35 @@ public readonly resourceType: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanAdvancedBackupSetting;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanAdvancedBackupSetting">BackupPlanAdvancedBackupSetting</a>
 
 ---
 
 
-### BackupPlanRuleCopyActionLifecycleOutputReference <a name="BackupPlanRuleCopyActionLifecycleOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference"></a>
+### BackupPlanRuleCopyActionLifecycleOutputReference <a name="BackupPlanRuleCopyActionLifecycleOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2126,7 +2126,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2138,152 +2138,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetColdStorageAfter">resetColdStorageAfter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetDeleteAfter">resetDeleteAfter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetOptInToArchiveForSupportedResources">resetOptInToArchiveForSupportedResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetColdStorageAfter">resetColdStorageAfter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetDeleteAfter">resetDeleteAfter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetOptInToArchiveForSupportedResources">resetOptInToArchiveForSupportedResources</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2291,13 +2291,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2307,19 +2307,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetColdStorageAfter` <a name="resetColdStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetColdStorageAfter"></a>
+##### `resetColdStorageAfter` <a name="resetColdStorageAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetColdStorageAfter"></a>
 
 ```typescript
 public resetColdStorageAfter(): void
 ```
 
-##### `resetDeleteAfter` <a name="resetDeleteAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetDeleteAfter"></a>
+##### `resetDeleteAfter` <a name="resetDeleteAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetDeleteAfter"></a>
 
 ```typescript
 public resetDeleteAfter(): void
 ```
 
-##### `resetOptInToArchiveForSupportedResources` <a name="resetOptInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetOptInToArchiveForSupportedResources"></a>
+##### `resetOptInToArchiveForSupportedResources` <a name="resetOptInToArchiveForSupportedResources" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.resetOptInToArchiveForSupportedResources"></a>
 
 ```typescript
 public resetOptInToArchiveForSupportedResources(): void
@@ -2330,19 +2330,19 @@ public resetOptInToArchiveForSupportedResources(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfterInput">coldStorageAfterInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfterInput">deleteAfterInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput">optInToArchiveForSupportedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfterInput">coldStorageAfterInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfterInput">deleteAfterInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput">optInToArchiveForSupportedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2356,7 +2356,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2366,7 +2366,7 @@ public readonly fqn: string;
 
 ---
 
-##### `coldStorageAfterInput`<sup>Optional</sup> <a name="coldStorageAfterInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfterInput"></a>
+##### `coldStorageAfterInput`<sup>Optional</sup> <a name="coldStorageAfterInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfterInput"></a>
 
 ```typescript
 public readonly coldStorageAfterInput: number;
@@ -2376,7 +2376,7 @@ public readonly coldStorageAfterInput: number;
 
 ---
 
-##### `deleteAfterInput`<sup>Optional</sup> <a name="deleteAfterInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfterInput"></a>
+##### `deleteAfterInput`<sup>Optional</sup> <a name="deleteAfterInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfterInput"></a>
 
 ```typescript
 public readonly deleteAfterInput: number;
@@ -2386,7 +2386,7 @@ public readonly deleteAfterInput: number;
 
 ---
 
-##### `optInToArchiveForSupportedResourcesInput`<sup>Optional</sup> <a name="optInToArchiveForSupportedResourcesInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput"></a>
+##### `optInToArchiveForSupportedResourcesInput`<sup>Optional</sup> <a name="optInToArchiveForSupportedResourcesInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput"></a>
 
 ```typescript
 public readonly optInToArchiveForSupportedResourcesInput: boolean | IResolvable;
@@ -2396,7 +2396,7 @@ public readonly optInToArchiveForSupportedResourcesInput: boolean | IResolvable;
 
 ---
 
-##### `coldStorageAfter`<sup>Required</sup> <a name="coldStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfter"></a>
+##### `coldStorageAfter`<sup>Required</sup> <a name="coldStorageAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.coldStorageAfter"></a>
 
 ```typescript
 public readonly coldStorageAfter: number;
@@ -2406,7 +2406,7 @@ public readonly coldStorageAfter: number;
 
 ---
 
-##### `deleteAfter`<sup>Required</sup> <a name="deleteAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfter"></a>
+##### `deleteAfter`<sup>Required</sup> <a name="deleteAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.deleteAfter"></a>
 
 ```typescript
 public readonly deleteAfter: number;
@@ -2416,7 +2416,7 @@ public readonly deleteAfter: number;
 
 ---
 
-##### `optInToArchiveForSupportedResources`<sup>Required</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResources"></a>
+##### `optInToArchiveForSupportedResources`<sup>Required</sup> <a name="optInToArchiveForSupportedResources" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.optInToArchiveForSupportedResources"></a>
 
 ```typescript
 public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
@@ -2426,36 +2426,36 @@ public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: BackupPlanRuleCopyActionLifecycle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
 
 ---
 
 
-### BackupPlanRuleCopyActionList <a name="BackupPlanRuleCopyActionList" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList"></a>
+### BackupPlanRuleCopyActionList <a name="BackupPlanRuleCopyActionList" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleCopyActionList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2463,7 +2463,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2471,7 +2471,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -2483,15 +2483,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -2501,19 +2501,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2521,13 +2521,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2537,13 +2537,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.get"></a>
 
 ```typescript
 public get(index: number): BackupPlanRuleCopyActionOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -2556,13 +2556,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2576,7 +2576,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2586,37 +2586,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanRuleCopyAction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
 
 ---
 
 
-### BackupPlanRuleCopyActionOutputReference <a name="BackupPlanRuleCopyActionOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference"></a>
+### BackupPlanRuleCopyActionOutputReference <a name="BackupPlanRuleCopyActionOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleCopyActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2624,7 +2624,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2632,7 +2632,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -2640,7 +2640,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -2652,151 +2652,151 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.putLifecycle">putLifecycle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resetLifecycle">resetLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.putLifecycle">putLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resetLifecycle">resetLifecycle</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2804,13 +2804,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2820,19 +2820,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `putLifecycle` <a name="putLifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.putLifecycle"></a>
+##### `putLifecycle` <a name="putLifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.putLifecycle"></a>
 
 ```typescript
 public putLifecycle(value: BackupPlanRuleCopyActionLifecycle): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.putLifecycle.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.putLifecycle.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
 
 ---
 
-##### `resetLifecycle` <a name="resetLifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resetLifecycle"></a>
+##### `resetLifecycle` <a name="resetLifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.resetLifecycle"></a>
 
 ```typescript
 public resetLifecycle(): void
@@ -2843,17 +2843,17 @@ public resetLifecycle(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference">BackupPlanRuleCopyActionLifecycleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArnInput">destinationVaultArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycleInput">lifecycleInput</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArn">destinationVaultArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference">BackupPlanRuleCopyActionLifecycleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArnInput">destinationVaultArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycleInput">lifecycleInput</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArn">destinationVaultArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2867,7 +2867,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2877,17 +2877,17 @@ public readonly fqn: string;
 
 ---
 
-##### `lifecycle`<sup>Required</sup> <a name="lifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycle"></a>
+##### `lifecycle`<sup>Required</sup> <a name="lifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: BackupPlanRuleCopyActionLifecycleOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference">BackupPlanRuleCopyActionLifecycleOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference">BackupPlanRuleCopyActionLifecycleOutputReference</a>
 
 ---
 
-##### `destinationVaultArnInput`<sup>Optional</sup> <a name="destinationVaultArnInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArnInput"></a>
+##### `destinationVaultArnInput`<sup>Optional</sup> <a name="destinationVaultArnInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArnInput"></a>
 
 ```typescript
 public readonly destinationVaultArnInput: string;
@@ -2897,17 +2897,17 @@ public readonly destinationVaultArnInput: string;
 
 ---
 
-##### `lifecycleInput`<sup>Optional</sup> <a name="lifecycleInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycleInput"></a>
+##### `lifecycleInput`<sup>Optional</sup> <a name="lifecycleInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.lifecycleInput"></a>
 
 ```typescript
 public readonly lifecycleInput: BackupPlanRuleCopyActionLifecycle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycle">BackupPlanRuleCopyActionLifecycle</a>
 
 ---
 
-##### `destinationVaultArn`<sup>Required</sup> <a name="destinationVaultArn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArn"></a>
+##### `destinationVaultArn`<sup>Required</sup> <a name="destinationVaultArn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.destinationVaultArn"></a>
 
 ```typescript
 public readonly destinationVaultArn: string;
@@ -2917,35 +2917,35 @@ public readonly destinationVaultArn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanRuleCopyAction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>
 
 ---
 
 
-### BackupPlanRuleLifecycleOutputReference <a name="BackupPlanRuleLifecycleOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference"></a>
+### BackupPlanRuleLifecycleOutputReference <a name="BackupPlanRuleLifecycleOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleLifecycleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2953,7 +2953,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2965,152 +2965,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetColdStorageAfter">resetColdStorageAfter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetDeleteAfter">resetDeleteAfter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetOptInToArchiveForSupportedResources">resetOptInToArchiveForSupportedResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetColdStorageAfter">resetColdStorageAfter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetDeleteAfter">resetDeleteAfter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetOptInToArchiveForSupportedResources">resetOptInToArchiveForSupportedResources</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3118,13 +3118,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3134,19 +3134,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetColdStorageAfter` <a name="resetColdStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetColdStorageAfter"></a>
+##### `resetColdStorageAfter` <a name="resetColdStorageAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetColdStorageAfter"></a>
 
 ```typescript
 public resetColdStorageAfter(): void
 ```
 
-##### `resetDeleteAfter` <a name="resetDeleteAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetDeleteAfter"></a>
+##### `resetDeleteAfter` <a name="resetDeleteAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetDeleteAfter"></a>
 
 ```typescript
 public resetDeleteAfter(): void
 ```
 
-##### `resetOptInToArchiveForSupportedResources` <a name="resetOptInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetOptInToArchiveForSupportedResources"></a>
+##### `resetOptInToArchiveForSupportedResources` <a name="resetOptInToArchiveForSupportedResources" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.resetOptInToArchiveForSupportedResources"></a>
 
 ```typescript
 public resetOptInToArchiveForSupportedResources(): void
@@ -3157,19 +3157,19 @@ public resetOptInToArchiveForSupportedResources(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfterInput">coldStorageAfterInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfterInput">deleteAfterInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput">optInToArchiveForSupportedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfterInput">coldStorageAfterInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfterInput">deleteAfterInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput">optInToArchiveForSupportedResourcesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfter">coldStorageAfter</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfter">deleteAfter</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResources">optInToArchiveForSupportedResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3183,7 +3183,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3193,7 +3193,7 @@ public readonly fqn: string;
 
 ---
 
-##### `coldStorageAfterInput`<sup>Optional</sup> <a name="coldStorageAfterInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfterInput"></a>
+##### `coldStorageAfterInput`<sup>Optional</sup> <a name="coldStorageAfterInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfterInput"></a>
 
 ```typescript
 public readonly coldStorageAfterInput: number;
@@ -3203,7 +3203,7 @@ public readonly coldStorageAfterInput: number;
 
 ---
 
-##### `deleteAfterInput`<sup>Optional</sup> <a name="deleteAfterInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfterInput"></a>
+##### `deleteAfterInput`<sup>Optional</sup> <a name="deleteAfterInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfterInput"></a>
 
 ```typescript
 public readonly deleteAfterInput: number;
@@ -3213,7 +3213,7 @@ public readonly deleteAfterInput: number;
 
 ---
 
-##### `optInToArchiveForSupportedResourcesInput`<sup>Optional</sup> <a name="optInToArchiveForSupportedResourcesInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput"></a>
+##### `optInToArchiveForSupportedResourcesInput`<sup>Optional</sup> <a name="optInToArchiveForSupportedResourcesInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResourcesInput"></a>
 
 ```typescript
 public readonly optInToArchiveForSupportedResourcesInput: boolean | IResolvable;
@@ -3223,7 +3223,7 @@ public readonly optInToArchiveForSupportedResourcesInput: boolean | IResolvable;
 
 ---
 
-##### `coldStorageAfter`<sup>Required</sup> <a name="coldStorageAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfter"></a>
+##### `coldStorageAfter`<sup>Required</sup> <a name="coldStorageAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.coldStorageAfter"></a>
 
 ```typescript
 public readonly coldStorageAfter: number;
@@ -3233,7 +3233,7 @@ public readonly coldStorageAfter: number;
 
 ---
 
-##### `deleteAfter`<sup>Required</sup> <a name="deleteAfter" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfter"></a>
+##### `deleteAfter`<sup>Required</sup> <a name="deleteAfter" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.deleteAfter"></a>
 
 ```typescript
 public readonly deleteAfter: number;
@@ -3243,7 +3243,7 @@ public readonly deleteAfter: number;
 
 ---
 
-##### `optInToArchiveForSupportedResources`<sup>Required</sup> <a name="optInToArchiveForSupportedResources" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResources"></a>
+##### `optInToArchiveForSupportedResources`<sup>Required</sup> <a name="optInToArchiveForSupportedResources" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.optInToArchiveForSupportedResources"></a>
 
 ```typescript
 public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
@@ -3253,36 +3253,36 @@ public readonly optInToArchiveForSupportedResources: boolean | IResolvable;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: BackupPlanRuleLifecycle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
 
 ---
 
 
-### BackupPlanRuleList <a name="BackupPlanRuleList" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList"></a>
+### BackupPlanRuleList <a name="BackupPlanRuleList" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3290,7 +3290,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -3298,7 +3298,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -3310,15 +3310,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -3328,19 +3328,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3348,13 +3348,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3364,13 +3364,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.get"></a>
 
 ```typescript
 public get(index: number): BackupPlanRuleOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -3383,13 +3383,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3403,7 +3403,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3413,37 +3413,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>[]
 
 ---
 
 
-### BackupPlanRuleOutputReference <a name="BackupPlanRuleOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference"></a>
+### BackupPlanRuleOutputReference <a name="BackupPlanRuleOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3451,7 +3451,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -3459,7 +3459,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -3467,7 +3467,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -3479,162 +3479,162 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putCopyAction">putCopyAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putLifecycle">putLifecycle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putScanAction">putScanAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCompletionWindow">resetCompletionWindow</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCopyAction">resetCopyAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetEnableContinuousBackup">resetEnableContinuousBackup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetLifecycle">resetLifecycle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetRecoveryPointTags">resetRecoveryPointTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScanAction">resetScanAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetSchedule">resetSchedule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScheduleExpressionTimezone">resetScheduleExpressionTimezone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetStartWindow">resetStartWindow</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetTargetLogicallyAirGappedBackupVaultArn">resetTargetLogicallyAirGappedBackupVaultArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putCopyAction">putCopyAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putLifecycle">putLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putScanAction">putScanAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCompletionWindow">resetCompletionWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCopyAction">resetCopyAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetEnableContinuousBackup">resetEnableContinuousBackup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetLifecycle">resetLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetRecoveryPointTags">resetRecoveryPointTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScanAction">resetScanAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetSchedule">resetSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScheduleExpressionTimezone">resetScheduleExpressionTimezone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetStartWindow">resetStartWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetTargetLogicallyAirGappedBackupVaultArn">resetTargetLogicallyAirGappedBackupVaultArn</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3642,13 +3642,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3658,97 +3658,97 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `putCopyAction` <a name="putCopyAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putCopyAction"></a>
+##### `putCopyAction` <a name="putCopyAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putCopyAction"></a>
 
 ```typescript
 public putCopyAction(value: IResolvable | BackupPlanRuleCopyAction[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putCopyAction.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putCopyAction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
 
 ---
 
-##### `putLifecycle` <a name="putLifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putLifecycle"></a>
+##### `putLifecycle` <a name="putLifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putLifecycle"></a>
 
 ```typescript
 public putLifecycle(value: BackupPlanRuleLifecycle): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putLifecycle.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putLifecycle.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
 
 ---
 
-##### `putScanAction` <a name="putScanAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putScanAction"></a>
+##### `putScanAction` <a name="putScanAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putScanAction"></a>
 
 ```typescript
 public putScanAction(value: IResolvable | BackupPlanRuleScanAction[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.putScanAction.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.putScanAction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
 
 ---
 
-##### `resetCompletionWindow` <a name="resetCompletionWindow" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCompletionWindow"></a>
+##### `resetCompletionWindow` <a name="resetCompletionWindow" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCompletionWindow"></a>
 
 ```typescript
 public resetCompletionWindow(): void
 ```
 
-##### `resetCopyAction` <a name="resetCopyAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCopyAction"></a>
+##### `resetCopyAction` <a name="resetCopyAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetCopyAction"></a>
 
 ```typescript
 public resetCopyAction(): void
 ```
 
-##### `resetEnableContinuousBackup` <a name="resetEnableContinuousBackup" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetEnableContinuousBackup"></a>
+##### `resetEnableContinuousBackup` <a name="resetEnableContinuousBackup" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetEnableContinuousBackup"></a>
 
 ```typescript
 public resetEnableContinuousBackup(): void
 ```
 
-##### `resetLifecycle` <a name="resetLifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetLifecycle"></a>
+##### `resetLifecycle` <a name="resetLifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetLifecycle"></a>
 
 ```typescript
 public resetLifecycle(): void
 ```
 
-##### `resetRecoveryPointTags` <a name="resetRecoveryPointTags" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetRecoveryPointTags"></a>
+##### `resetRecoveryPointTags` <a name="resetRecoveryPointTags" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetRecoveryPointTags"></a>
 
 ```typescript
 public resetRecoveryPointTags(): void
 ```
 
-##### `resetScanAction` <a name="resetScanAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScanAction"></a>
+##### `resetScanAction` <a name="resetScanAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScanAction"></a>
 
 ```typescript
 public resetScanAction(): void
 ```
 
-##### `resetSchedule` <a name="resetSchedule" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetSchedule"></a>
+##### `resetSchedule` <a name="resetSchedule" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetSchedule"></a>
 
 ```typescript
 public resetSchedule(): void
 ```
 
-##### `resetScheduleExpressionTimezone` <a name="resetScheduleExpressionTimezone" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScheduleExpressionTimezone"></a>
+##### `resetScheduleExpressionTimezone` <a name="resetScheduleExpressionTimezone" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetScheduleExpressionTimezone"></a>
 
 ```typescript
 public resetScheduleExpressionTimezone(): void
 ```
 
-##### `resetStartWindow` <a name="resetStartWindow" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetStartWindow"></a>
+##### `resetStartWindow` <a name="resetStartWindow" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetStartWindow"></a>
 
 ```typescript
 public resetStartWindow(): void
 ```
 
-##### `resetTargetLogicallyAirGappedBackupVaultArn` <a name="resetTargetLogicallyAirGappedBackupVaultArn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetTargetLogicallyAirGappedBackupVaultArn"></a>
+##### `resetTargetLogicallyAirGappedBackupVaultArn` <a name="resetTargetLogicallyAirGappedBackupVaultArn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.resetTargetLogicallyAirGappedBackupVaultArn"></a>
 
 ```typescript
 public resetTargetLogicallyAirGappedBackupVaultArn(): void
@@ -3759,37 +3759,37 @@ public resetTargetLogicallyAirGappedBackupVaultArn(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyAction">copyAction</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList">BackupPlanRuleCopyActionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference">BackupPlanRuleLifecycleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanAction">scanAction</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList">BackupPlanRuleScanActionList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindowInput">completionWindowInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyActionInput">copyActionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackupInput">enableContinuousBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycleInput">lifecycleInput</a></code> | <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTagsInput">recoveryPointTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleNameInput">ruleNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanActionInput">scanActionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezoneInput">scheduleExpressionTimezoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleInput">scheduleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindowInput">startWindowInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArnInput">targetLogicallyAirGappedBackupVaultArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultNameInput">targetVaultNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindow">completionWindow</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackup">enableContinuousBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTags">recoveryPointTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleName">ruleName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.schedule">schedule</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezone">scheduleExpressionTimezone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindow">startWindow</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArn">targetLogicallyAirGappedBackupVaultArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultName">targetVaultName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyAction">copyAction</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList">BackupPlanRuleCopyActionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycle">lifecycle</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference">BackupPlanRuleLifecycleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanAction">scanAction</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList">BackupPlanRuleScanActionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindowInput">completionWindowInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyActionInput">copyActionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackupInput">enableContinuousBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycleInput">lifecycleInput</a></code> | <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTagsInput">recoveryPointTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleNameInput">ruleNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanActionInput">scanActionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezoneInput">scheduleExpressionTimezoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleInput">scheduleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindowInput">startWindowInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArnInput">targetLogicallyAirGappedBackupVaultArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultNameInput">targetVaultNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindow">completionWindow</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackup">enableContinuousBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTags">recoveryPointTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleName">ruleName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.schedule">schedule</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezone">scheduleExpressionTimezone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindow">startWindow</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArn">targetLogicallyAirGappedBackupVaultArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultName">targetVaultName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3803,7 +3803,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3813,37 +3813,37 @@ public readonly fqn: string;
 
 ---
 
-##### `copyAction`<sup>Required</sup> <a name="copyAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyAction"></a>
+##### `copyAction`<sup>Required</sup> <a name="copyAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyAction"></a>
 
 ```typescript
 public readonly copyAction: BackupPlanRuleCopyActionList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionList">BackupPlanRuleCopyActionList</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyActionList">BackupPlanRuleCopyActionList</a>
 
 ---
 
-##### `lifecycle`<sup>Required</sup> <a name="lifecycle" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycle"></a>
+##### `lifecycle`<sup>Required</sup> <a name="lifecycle" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: BackupPlanRuleLifecycleOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference">BackupPlanRuleLifecycleOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycleOutputReference">BackupPlanRuleLifecycleOutputReference</a>
 
 ---
 
-##### `scanAction`<sup>Required</sup> <a name="scanAction" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanAction"></a>
+##### `scanAction`<sup>Required</sup> <a name="scanAction" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanAction"></a>
 
 ```typescript
 public readonly scanAction: BackupPlanRuleScanActionList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList">BackupPlanRuleScanActionList</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList">BackupPlanRuleScanActionList</a>
 
 ---
 
-##### `completionWindowInput`<sup>Optional</sup> <a name="completionWindowInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindowInput"></a>
+##### `completionWindowInput`<sup>Optional</sup> <a name="completionWindowInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindowInput"></a>
 
 ```typescript
 public readonly completionWindowInput: number;
@@ -3853,17 +3853,17 @@ public readonly completionWindowInput: number;
 
 ---
 
-##### `copyActionInput`<sup>Optional</sup> <a name="copyActionInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyActionInput"></a>
+##### `copyActionInput`<sup>Optional</sup> <a name="copyActionInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.copyActionInput"></a>
 
 ```typescript
 public readonly copyActionInput: IResolvable | BackupPlanRuleCopyAction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleCopyAction">BackupPlanRuleCopyAction</a>[]
 
 ---
 
-##### `enableContinuousBackupInput`<sup>Optional</sup> <a name="enableContinuousBackupInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackupInput"></a>
+##### `enableContinuousBackupInput`<sup>Optional</sup> <a name="enableContinuousBackupInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackupInput"></a>
 
 ```typescript
 public readonly enableContinuousBackupInput: boolean | IResolvable;
@@ -3873,17 +3873,17 @@ public readonly enableContinuousBackupInput: boolean | IResolvable;
 
 ---
 
-##### `lifecycleInput`<sup>Optional</sup> <a name="lifecycleInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycleInput"></a>
+##### `lifecycleInput`<sup>Optional</sup> <a name="lifecycleInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.lifecycleInput"></a>
 
 ```typescript
 public readonly lifecycleInput: BackupPlanRuleLifecycle;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
+- *Type:* <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleLifecycle">BackupPlanRuleLifecycle</a>
 
 ---
 
-##### `recoveryPointTagsInput`<sup>Optional</sup> <a name="recoveryPointTagsInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTagsInput"></a>
+##### `recoveryPointTagsInput`<sup>Optional</sup> <a name="recoveryPointTagsInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTagsInput"></a>
 
 ```typescript
 public readonly recoveryPointTagsInput: {[ key: string ]: string};
@@ -3893,7 +3893,7 @@ public readonly recoveryPointTagsInput: {[ key: string ]: string};
 
 ---
 
-##### `ruleNameInput`<sup>Optional</sup> <a name="ruleNameInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleNameInput"></a>
+##### `ruleNameInput`<sup>Optional</sup> <a name="ruleNameInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleNameInput"></a>
 
 ```typescript
 public readonly ruleNameInput: string;
@@ -3903,17 +3903,17 @@ public readonly ruleNameInput: string;
 
 ---
 
-##### `scanActionInput`<sup>Optional</sup> <a name="scanActionInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanActionInput"></a>
+##### `scanActionInput`<sup>Optional</sup> <a name="scanActionInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scanActionInput"></a>
 
 ```typescript
 public readonly scanActionInput: IResolvable | BackupPlanRuleScanAction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
 
 ---
 
-##### `scheduleExpressionTimezoneInput`<sup>Optional</sup> <a name="scheduleExpressionTimezoneInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezoneInput"></a>
+##### `scheduleExpressionTimezoneInput`<sup>Optional</sup> <a name="scheduleExpressionTimezoneInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezoneInput"></a>
 
 ```typescript
 public readonly scheduleExpressionTimezoneInput: string;
@@ -3923,7 +3923,7 @@ public readonly scheduleExpressionTimezoneInput: string;
 
 ---
 
-##### `scheduleInput`<sup>Optional</sup> <a name="scheduleInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleInput"></a>
+##### `scheduleInput`<sup>Optional</sup> <a name="scheduleInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleInput"></a>
 
 ```typescript
 public readonly scheduleInput: string;
@@ -3933,7 +3933,7 @@ public readonly scheduleInput: string;
 
 ---
 
-##### `startWindowInput`<sup>Optional</sup> <a name="startWindowInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindowInput"></a>
+##### `startWindowInput`<sup>Optional</sup> <a name="startWindowInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindowInput"></a>
 
 ```typescript
 public readonly startWindowInput: number;
@@ -3943,7 +3943,7 @@ public readonly startWindowInput: number;
 
 ---
 
-##### `targetLogicallyAirGappedBackupVaultArnInput`<sup>Optional</sup> <a name="targetLogicallyAirGappedBackupVaultArnInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArnInput"></a>
+##### `targetLogicallyAirGappedBackupVaultArnInput`<sup>Optional</sup> <a name="targetLogicallyAirGappedBackupVaultArnInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArnInput"></a>
 
 ```typescript
 public readonly targetLogicallyAirGappedBackupVaultArnInput: string;
@@ -3953,7 +3953,7 @@ public readonly targetLogicallyAirGappedBackupVaultArnInput: string;
 
 ---
 
-##### `targetVaultNameInput`<sup>Optional</sup> <a name="targetVaultNameInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultNameInput"></a>
+##### `targetVaultNameInput`<sup>Optional</sup> <a name="targetVaultNameInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultNameInput"></a>
 
 ```typescript
 public readonly targetVaultNameInput: string;
@@ -3963,7 +3963,7 @@ public readonly targetVaultNameInput: string;
 
 ---
 
-##### `completionWindow`<sup>Required</sup> <a name="completionWindow" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindow"></a>
+##### `completionWindow`<sup>Required</sup> <a name="completionWindow" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.completionWindow"></a>
 
 ```typescript
 public readonly completionWindow: number;
@@ -3973,7 +3973,7 @@ public readonly completionWindow: number;
 
 ---
 
-##### `enableContinuousBackup`<sup>Required</sup> <a name="enableContinuousBackup" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackup"></a>
+##### `enableContinuousBackup`<sup>Required</sup> <a name="enableContinuousBackup" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.enableContinuousBackup"></a>
 
 ```typescript
 public readonly enableContinuousBackup: boolean | IResolvable;
@@ -3983,7 +3983,7 @@ public readonly enableContinuousBackup: boolean | IResolvable;
 
 ---
 
-##### `recoveryPointTags`<sup>Required</sup> <a name="recoveryPointTags" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTags"></a>
+##### `recoveryPointTags`<sup>Required</sup> <a name="recoveryPointTags" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.recoveryPointTags"></a>
 
 ```typescript
 public readonly recoveryPointTags: {[ key: string ]: string};
@@ -3993,7 +3993,7 @@ public readonly recoveryPointTags: {[ key: string ]: string};
 
 ---
 
-##### `ruleName`<sup>Required</sup> <a name="ruleName" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleName"></a>
+##### `ruleName`<sup>Required</sup> <a name="ruleName" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.ruleName"></a>
 
 ```typescript
 public readonly ruleName: string;
@@ -4003,7 +4003,7 @@ public readonly ruleName: string;
 
 ---
 
-##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.schedule"></a>
+##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.schedule"></a>
 
 ```typescript
 public readonly schedule: string;
@@ -4013,7 +4013,7 @@ public readonly schedule: string;
 
 ---
 
-##### `scheduleExpressionTimezone`<sup>Required</sup> <a name="scheduleExpressionTimezone" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezone"></a>
+##### `scheduleExpressionTimezone`<sup>Required</sup> <a name="scheduleExpressionTimezone" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.scheduleExpressionTimezone"></a>
 
 ```typescript
 public readonly scheduleExpressionTimezone: string;
@@ -4023,7 +4023,7 @@ public readonly scheduleExpressionTimezone: string;
 
 ---
 
-##### `startWindow`<sup>Required</sup> <a name="startWindow" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindow"></a>
+##### `startWindow`<sup>Required</sup> <a name="startWindow" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.startWindow"></a>
 
 ```typescript
 public readonly startWindow: number;
@@ -4033,7 +4033,7 @@ public readonly startWindow: number;
 
 ---
 
-##### `targetLogicallyAirGappedBackupVaultArn`<sup>Required</sup> <a name="targetLogicallyAirGappedBackupVaultArn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArn"></a>
+##### `targetLogicallyAirGappedBackupVaultArn`<sup>Required</sup> <a name="targetLogicallyAirGappedBackupVaultArn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetLogicallyAirGappedBackupVaultArn"></a>
 
 ```typescript
 public readonly targetLogicallyAirGappedBackupVaultArn: string;
@@ -4043,7 +4043,7 @@ public readonly targetLogicallyAirGappedBackupVaultArn: string;
 
 ---
 
-##### `targetVaultName`<sup>Required</sup> <a name="targetVaultName" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultName"></a>
+##### `targetVaultName`<sup>Required</sup> <a name="targetVaultName" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.targetVaultName"></a>
 
 ```typescript
 public readonly targetVaultName: string;
@@ -4053,36 +4053,36 @@ public readonly targetVaultName: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRule">BackupPlanRule</a>
 
 ---
 
 
-### BackupPlanRuleScanActionList <a name="BackupPlanRuleScanActionList" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList"></a>
+### BackupPlanRuleScanActionList <a name="BackupPlanRuleScanActionList" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleScanActionList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4090,7 +4090,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4098,7 +4098,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -4110,15 +4110,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -4128,19 +4128,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4148,13 +4148,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4164,13 +4164,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.get"></a>
 
 ```typescript
 public get(index: number): BackupPlanRuleScanActionOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -4183,13 +4183,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4203,7 +4203,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4213,37 +4213,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanRuleScanAction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>[]
 
 ---
 
 
-### BackupPlanRuleScanActionOutputReference <a name="BackupPlanRuleScanActionOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference"></a>
+### BackupPlanRuleScanActionOutputReference <a name="BackupPlanRuleScanActionOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanRuleScanActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4251,7 +4251,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4259,7 +4259,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -4267,7 +4267,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -4279,149 +4279,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4429,13 +4429,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4450,17 +4450,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScannerInput">malwareScannerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanModeInput">scanModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanMode">scanMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScannerInput">malwareScannerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanModeInput">scanModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanMode">scanMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4474,7 +4474,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4484,7 +4484,7 @@ public readonly fqn: string;
 
 ---
 
-##### `malwareScannerInput`<sup>Optional</sup> <a name="malwareScannerInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScannerInput"></a>
+##### `malwareScannerInput`<sup>Optional</sup> <a name="malwareScannerInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScannerInput"></a>
 
 ```typescript
 public readonly malwareScannerInput: string;
@@ -4494,7 +4494,7 @@ public readonly malwareScannerInput: string;
 
 ---
 
-##### `scanModeInput`<sup>Optional</sup> <a name="scanModeInput" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanModeInput"></a>
+##### `scanModeInput`<sup>Optional</sup> <a name="scanModeInput" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanModeInput"></a>
 
 ```typescript
 public readonly scanModeInput: string;
@@ -4504,7 +4504,7 @@ public readonly scanModeInput: string;
 
 ---
 
-##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScanner"></a>
+##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.malwareScanner"></a>
 
 ```typescript
 public readonly malwareScanner: string;
@@ -4514,7 +4514,7 @@ public readonly malwareScanner: string;
 
 ---
 
-##### `scanMode`<sup>Required</sup> <a name="scanMode" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanMode"></a>
+##### `scanMode`<sup>Required</sup> <a name="scanMode" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.scanMode"></a>
 
 ```typescript
 public readonly scanMode: string;
@@ -4524,36 +4524,36 @@ public readonly scanMode: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanRuleScanActionOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanRuleScanAction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanRuleScanAction">BackupPlanRuleScanAction</a>
 
 ---
 
 
-### BackupPlanScanSettingList <a name="BackupPlanScanSettingList" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList"></a>
+### BackupPlanScanSettingList <a name="BackupPlanScanSettingList" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanScanSettingList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4561,7 +4561,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4569,7 +4569,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -4581,15 +4581,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -4599,19 +4599,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4619,13 +4619,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4635,13 +4635,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.get"></a>
 
 ```typescript
 public get(index: number): BackupPlanScanSettingOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -4654,13 +4654,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4674,7 +4674,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4684,37 +4684,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanScanSetting[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>[]
 
 ---
 
 
-### BackupPlanScanSettingOutputReference <a name="BackupPlanScanSettingOutputReference" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference"></a>
+### BackupPlanScanSettingOutputReference <a name="BackupPlanScanSettingOutputReference" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer"></a>
 
 ```typescript
-import { backupPlan } from '@cdktf/provider-aws'
+import { backupPlan } from '@cdktn/provider-aws'
 
 new backupPlan.BackupPlanScanSettingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4722,7 +4722,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -4730,7 +4730,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -4738,7 +4738,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -4750,149 +4750,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -4900,13 +4900,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -4921,19 +4921,19 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScannerInput">malwareScannerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypesInput">resourceTypesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArnInput">scannerRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypes">resourceTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArn">scannerRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScannerInput">malwareScannerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypesInput">resourceTypesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArnInput">scannerRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScanner">malwareScanner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypes">resourceTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArn">scannerRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -4947,7 +4947,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -4957,7 +4957,7 @@ public readonly fqn: string;
 
 ---
 
-##### `malwareScannerInput`<sup>Optional</sup> <a name="malwareScannerInput" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScannerInput"></a>
+##### `malwareScannerInput`<sup>Optional</sup> <a name="malwareScannerInput" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScannerInput"></a>
 
 ```typescript
 public readonly malwareScannerInput: string;
@@ -4967,7 +4967,7 @@ public readonly malwareScannerInput: string;
 
 ---
 
-##### `resourceTypesInput`<sup>Optional</sup> <a name="resourceTypesInput" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypesInput"></a>
+##### `resourceTypesInput`<sup>Optional</sup> <a name="resourceTypesInput" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypesInput"></a>
 
 ```typescript
 public readonly resourceTypesInput: string[];
@@ -4977,7 +4977,7 @@ public readonly resourceTypesInput: string[];
 
 ---
 
-##### `scannerRoleArnInput`<sup>Optional</sup> <a name="scannerRoleArnInput" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArnInput"></a>
+##### `scannerRoleArnInput`<sup>Optional</sup> <a name="scannerRoleArnInput" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArnInput"></a>
 
 ```typescript
 public readonly scannerRoleArnInput: string;
@@ -4987,7 +4987,7 @@ public readonly scannerRoleArnInput: string;
 
 ---
 
-##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScanner"></a>
+##### `malwareScanner`<sup>Required</sup> <a name="malwareScanner" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.malwareScanner"></a>
 
 ```typescript
 public readonly malwareScanner: string;
@@ -4997,7 +4997,7 @@ public readonly malwareScanner: string;
 
 ---
 
-##### `resourceTypes`<sup>Required</sup> <a name="resourceTypes" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypes"></a>
+##### `resourceTypes`<sup>Required</sup> <a name="resourceTypes" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.resourceTypes"></a>
 
 ```typescript
 public readonly resourceTypes: string[];
@@ -5007,7 +5007,7 @@ public readonly resourceTypes: string[];
 
 ---
 
-##### `scannerRoleArn`<sup>Required</sup> <a name="scannerRoleArn" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArn"></a>
+##### `scannerRoleArn`<sup>Required</sup> <a name="scannerRoleArn" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.scannerRoleArn"></a>
 
 ```typescript
 public readonly scannerRoleArn: string;
@@ -5017,13 +5017,13 @@ public readonly scannerRoleArn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.backupPlan.BackupPlanScanSettingOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BackupPlanScanSetting;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.backupPlan.BackupPlanScanSetting">BackupPlanScanSetting</a>
 
 ---
 

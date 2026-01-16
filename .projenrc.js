@@ -3,9 +3,9 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-const { CdktfProviderProject } = require("@cdktf/provider-project");
+const { CdktnProviderProject } = require("@cdktn/provider-project");
 
-const project = new CdktfProviderProject({
+const project = new CdktnProviderProject({
   useCustomGithubRunner: true,
   terraformProvider: "aws@~> 6.0",
   cdktfVersion: "^0.21.0",
@@ -13,8 +13,8 @@ const project = new CdktfProviderProject({
   minNodeVersion: "20.9.0",
   typescriptVersion: "~5.8.0", // JSII and TS should always use the same major/minor version range
   jsiiVersion: "~5.8.0", // JSII and TS should always use the same major/minor version range
-  devDeps: ["@cdktf/provider-project@^0.7.0"],
-  isDeprecated: true,
+  devDeps: ["@cdktn/provider-project@^0.7.0"],
+  isDeprecated: false,
 });
 
 project.synth();

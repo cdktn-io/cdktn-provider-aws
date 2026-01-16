@@ -1,15 +1,15 @@
-# `codeartifactDomain` Submodule <a name="`codeartifactDomain` Submodule" id="@cdktf/provider-aws.codeartifactDomain"></a>
+# `codeartifactDomain` Submodule <a name="`codeartifactDomain` Submodule" id="@cdktn/provider-aws.codeartifactDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### CodeartifactDomain <a name="CodeartifactDomain" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain"></a>
+### CodeartifactDomain <a name="CodeartifactDomain" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import codeartifact_domain
+from cdktn_provider_aws import codeartifact_domain
 
 codeartifactDomain.CodeartifactDomain(
   scope: Construct,
@@ -32,25 +32,25 @@ codeartifactDomain.CodeartifactDomain(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.encryptionKey">encryption_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.encryptionKey">encryption_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -58,7 +58,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -68,98 +68,98 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.domain"></a>
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.domain"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}.
 
 ---
 
-##### `encryption_key`<sup>Optional</sup> <a name="encryption_key" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.encryptionKey"></a>
+##### `encryption_key`<sup>Optional</sup> <a name="encryption_key" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.encryptionKey"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#region CodeartifactDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#region CodeartifactDomain#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}.
 
 ---
 
@@ -167,38 +167,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetEncryptionKey">reset_encryption_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetEncryptionKey">reset_encryption_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toString"></a>
 
 ```python
 def to_string() -> str
@@ -206,7 +206,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride"></a>
 
 ```python
 def add_override(
@@ -215,19 +215,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -237,7 +237,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -245,7 +245,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -253,19 +253,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -273,7 +273,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -283,7 +283,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -291,7 +291,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -299,13 +299,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -313,13 +313,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -327,13 +327,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -341,13 +341,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -355,13 +355,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -369,13 +369,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -383,13 +383,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -397,13 +397,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -411,19 +411,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom"></a>
 
 ```python
 def import_from(
@@ -432,19 +432,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -452,13 +452,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -470,7 +470,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -478,7 +478,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo"></a>
 
 ```python
 def move_to(
@@ -489,7 +489,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -497,7 +497,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -505,7 +505,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -515,7 +515,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -523,31 +523,31 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_encryption_key` <a name="reset_encryption_key" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetEncryptionKey"></a>
+##### `reset_encryption_key` <a name="reset_encryption_key" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetEncryptionKey"></a>
 
 ```python
 def reset_encryption_key() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
@@ -557,17 +557,17 @@ def reset_tags_all() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a CodeartifactDomain resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a CodeartifactDomain resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import codeartifact_domain
+from cdktn_provider_aws import codeartifact_domain
 
 codeartifactDomain.CodeartifactDomain.is_construct(
   x: typing.Any
@@ -590,7 +590,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -598,42 +598,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import codeartifact_domain
+from cdktn_provider_aws import codeartifact_domain
 
 codeartifactDomain.CodeartifactDomain.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import codeartifact_domain
+from cdktn_provider_aws import codeartifact_domain
 
 codeartifactDomain.CodeartifactDomain.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import codeartifact_domain
+from cdktn_provider_aws import codeartifact_domain
 
 codeartifactDomain.CodeartifactDomain.generate_config_for_import(
   scope: Construct,
@@ -645,7 +645,7 @@ codeartifactDomain.CodeartifactDomain.generate_config_for_import(
 
 Generates CDKTF code for importing a CodeartifactDomain resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -653,7 +653,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -661,17 +661,17 @@ The construct id used in the generated config for the CodeartifactDomain to impo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing CodeartifactDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -683,42 +683,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.assetSizeBytes">asset_size_bytes</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.createdTime">created_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.repositoryCount">repository_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.s3BucketArn">s3_bucket_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKeyInput">encryption_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.domain">domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKey">encryption_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.assetSizeBytes">asset_size_bytes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.createdTime">created_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.owner">owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.repositoryCount">repository_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.s3BucketArn">s3_bucket_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKeyInput">encryption_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.domain">domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKey">encryption_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.node"></a>
 
 ```python
 node: Node
@@ -730,7 +730,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -740,7 +740,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.fqn"></a>
 
 ```python
 fqn: str
@@ -750,7 +750,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -760,7 +760,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -770,7 +770,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -780,7 +780,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -790,7 +790,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -800,7 +800,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -810,7 +810,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -820,7 +820,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -830,7 +830,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -840,7 +840,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -850,7 +850,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -860,7 +860,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.arn"></a>
 
 ```python
 arn: str
@@ -870,7 +870,7 @@ arn: str
 
 ---
 
-##### `asset_size_bytes`<sup>Required</sup> <a name="asset_size_bytes" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.assetSizeBytes"></a>
+##### `asset_size_bytes`<sup>Required</sup> <a name="asset_size_bytes" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.assetSizeBytes"></a>
 
 ```python
 asset_size_bytes: str
@@ -880,7 +880,7 @@ asset_size_bytes: str
 
 ---
 
-##### `created_time`<sup>Required</sup> <a name="created_time" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.createdTime"></a>
+##### `created_time`<sup>Required</sup> <a name="created_time" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.createdTime"></a>
 
 ```python
 created_time: str
@@ -890,7 +890,7 @@ created_time: str
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.owner"></a>
 
 ```python
 owner: str
@@ -900,7 +900,7 @@ owner: str
 
 ---
 
-##### `repository_count`<sup>Required</sup> <a name="repository_count" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.repositoryCount"></a>
+##### `repository_count`<sup>Required</sup> <a name="repository_count" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.repositoryCount"></a>
 
 ```python
 repository_count: typing.Union[int, float]
@@ -910,7 +910,7 @@ repository_count: typing.Union[int, float]
 
 ---
 
-##### `s3_bucket_arn`<sup>Required</sup> <a name="s3_bucket_arn" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.s3BucketArn"></a>
+##### `s3_bucket_arn`<sup>Required</sup> <a name="s3_bucket_arn" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.s3BucketArn"></a>
 
 ```python
 s3_bucket_arn: str
@@ -920,7 +920,7 @@ s3_bucket_arn: str
 
 ---
 
-##### `domain_input`<sup>Optional</sup> <a name="domain_input" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.domainInput"></a>
+##### `domain_input`<sup>Optional</sup> <a name="domain_input" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.domainInput"></a>
 
 ```python
 domain_input: str
@@ -930,7 +930,7 @@ domain_input: str
 
 ---
 
-##### `encryption_key_input`<sup>Optional</sup> <a name="encryption_key_input" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKeyInput"></a>
+##### `encryption_key_input`<sup>Optional</sup> <a name="encryption_key_input" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKeyInput"></a>
 
 ```python
 encryption_key_input: str
@@ -940,7 +940,7 @@ encryption_key_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.idInput"></a>
 
 ```python
 id_input: str
@@ -950,7 +950,7 @@ id_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -960,7 +960,7 @@ region_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -970,7 +970,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -980,7 +980,7 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.domain"></a>
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.domain"></a>
 
 ```python
 domain: str
@@ -990,7 +990,7 @@ domain: str
 
 ---
 
-##### `encryption_key`<sup>Required</sup> <a name="encryption_key" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKey"></a>
+##### `encryption_key`<sup>Required</sup> <a name="encryption_key" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.encryptionKey"></a>
 
 ```python
 encryption_key: str
@@ -1000,7 +1000,7 @@ encryption_key: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.id"></a>
 
 ```python
 id: str
@@ -1010,7 +1010,7 @@ id: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.region"></a>
 
 ```python
 region: str
@@ -1020,7 +1020,7 @@ region: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1030,7 +1030,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1044,11 +1044,11 @@ tags_all: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomain.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomain.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1060,12 +1060,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### CodeartifactDomainConfig <a name="CodeartifactDomainConfig" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig"></a>
+### CodeartifactDomainConfig <a name="CodeartifactDomainConfig" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import codeartifact_domain
+from cdktn_provider_aws import codeartifact_domain
 
 codeartifactDomain.CodeartifactDomainConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1088,23 +1088,23 @@ codeartifactDomain.CodeartifactDomainConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.encryptionKey">encryption_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}. |
-| <code><a href="#@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.encryptionKey">encryption_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}. |
+| <code><a href="#@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1114,7 +1114,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1124,7 +1124,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1134,7 +1134,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1144,7 +1144,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1154,7 +1154,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1164,7 +1164,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1174,7 +1174,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.domain"></a>
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.domain"></a>
 
 ```python
 domain: str
@@ -1182,11 +1182,11 @@ domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#domain CodeartifactDomain#domain}.
 
 ---
 
-##### `encryption_key`<sup>Optional</sup> <a name="encryption_key" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.encryptionKey"></a>
+##### `encryption_key`<sup>Optional</sup> <a name="encryption_key" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.encryptionKey"></a>
 
 ```python
 encryption_key: str
@@ -1194,11 +1194,11 @@ encryption_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#encryption_key CodeartifactDomain#encryption_key}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.id"></a>
 
 ```python
 id: str
@@ -1206,14 +1206,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#id CodeartifactDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.region"></a>
 
 ```python
 region: str
@@ -1223,11 +1223,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#region CodeartifactDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#region CodeartifactDomain#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1235,11 +1235,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags CodeartifactDomain#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.codeartifactDomain.CodeartifactDomainConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1247,7 +1247,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeartifact_domain#tags_all CodeartifactDomain#tags_all}.
 
 ---
 

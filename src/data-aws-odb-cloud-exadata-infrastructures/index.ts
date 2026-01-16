@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/odb_cloud_exadata_infrastructures
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_exadata_infrastructures
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataAwsOdbCloudExadataInfrastructuresConfig extends cdktf.Terra
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/odb_cloud_exadata_infrastructures#region DataAwsOdbCloudExadataInfrastructures#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_exadata_infrastructures#region DataAwsOdbCloudExadataInfrastructures#region}
   */
   readonly region?: string;
 }
@@ -121,7 +121,7 @@ export class DataAwsOdbCloudExadataInfrastructuresCloudExadataInfrastructuresLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/odb_cloud_exadata_infrastructures aws_odb_cloud_exadata_infrastructures}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_exadata_infrastructures aws_odb_cloud_exadata_infrastructures}
 */
 export class DataAwsOdbCloudExadataInfrastructures extends cdktf.TerraformDataSource {
 
@@ -137,7 +137,7 @@ export class DataAwsOdbCloudExadataInfrastructures extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataAwsOdbCloudExadataInfrastructures resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbCloudExadataInfrastructures to import
-  * @param importFromId The id of the existing DataAwsOdbCloudExadataInfrastructures that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/odb_cloud_exadata_infrastructures#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbCloudExadataInfrastructures that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_exadata_infrastructures#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbCloudExadataInfrastructures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -149,7 +149,7 @@ export class DataAwsOdbCloudExadataInfrastructures extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/data-sources/odb_cloud_exadata_infrastructures aws_odb_cloud_exadata_infrastructures} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_exadata_infrastructures aws_odb_cloud_exadata_infrastructures} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -160,7 +160,7 @@ export class DataAwsOdbCloudExadataInfrastructures extends cdktf.TerraformDataSo
       terraformResourceType: 'aws_odb_cloud_exadata_infrastructures',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

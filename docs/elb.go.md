@@ -1,28 +1,28 @@
-# `elb` Submodule <a name="`elb` Submodule" id="@cdktf/provider-aws.elb"></a>
+# `elb` Submodule <a name="`elb` Submodule" id="@cdktn/provider-aws.elb"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Elb <a name="Elb" id="@cdktf/provider-aws.elb.Elb"></a>
+### Elb <a name="Elb" id="@cdktn/provider-aws.elb.Elb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb aws_elb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb aws_elb}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.Elb.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.elb.Elb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.NewElb(scope Construct, id *string, config ElbConfig) Elb
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbConfig">ElbConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbConfig">ElbConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.elb.Elb.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.elb.Elb.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.elb.Elb.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.elb.Elb.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.elb.Elb.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.elb.Elb.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbConfig">ElbConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbConfig">ElbConfig</a>
 
 ---
 
@@ -50,57 +50,57 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.putAccessLogs">PutAccessLogs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.putHealthCheck">PutHealthCheck</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.putListener">PutListener</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetAccessLogs">ResetAccessLogs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetAvailabilityZones">ResetAvailabilityZones</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetConnectionDraining">ResetConnectionDraining</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetConnectionDrainingTimeout">ResetConnectionDrainingTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetCrossZoneLoadBalancing">ResetCrossZoneLoadBalancing</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetDesyncMitigationMode">ResetDesyncMitigationMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetHealthCheck">ResetHealthCheck</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetIdleTimeout">ResetIdleTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetInstances">ResetInstances</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetInternal">ResetInternal</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetName">ResetName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetNamePrefix">ResetNamePrefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetSecurityGroups">ResetSecurityGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetSourceSecurityGroup">ResetSourceSecurityGroup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetSubnets">ResetSubnets</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.putAccessLogs">PutAccessLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.putHealthCheck">PutHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.putListener">PutListener</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetAccessLogs">ResetAccessLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetAvailabilityZones">ResetAvailabilityZones</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetConnectionDraining">ResetConnectionDraining</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetConnectionDrainingTimeout">ResetConnectionDrainingTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetCrossZoneLoadBalancing">ResetCrossZoneLoadBalancing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetDesyncMitigationMode">ResetDesyncMitigationMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetHealthCheck">ResetHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetIdleTimeout">ResetIdleTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetInstances">ResetInstances</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetInternal">ResetInternal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetName">ResetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetNamePrefix">ResetNamePrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetSecurityGroups">ResetSecurityGroups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetSourceSecurityGroup">ResetSourceSecurityGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetSubnets">ResetSubnets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.Elb.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.elb.Elb.toString"></a>
 
 ```go
 func ToString() *string
@@ -108,25 +108,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.elb.Elb.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.elb.Elb.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.elb.Elb.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.elb.Elb.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.elb.Elb.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.elb.Elb.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.elb.Elb.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.elb.Elb.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -134,7 +134,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.elb.Elb.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.elb.Elb.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -142,7 +142,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.elb.Elb.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.elb.Elb.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -150,19 +150,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.elb.Elb.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.elb.Elb.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.elb.Elb.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.elb.Elb.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.elb.Elb.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.elb.Elb.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -170,7 +170,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.elb.Elb.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.elb.Elb.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -178,7 +178,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.elb.Elb.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.elb.Elb.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -186,151 +186,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.elb.Elb.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.elb.Elb.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.elb.Elb.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.elb.Elb.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.elb.Elb.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.elb.Elb.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.elb.Elb.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.elb.Elb.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.elb.Elb.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.elb.Elb.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.elb.Elb.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.elb.Elb.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.elb.Elb.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.elb.Elb.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.elb.Elb.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.elb.Elb.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.elb.Elb.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.elb.Elb.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.elb.Elb.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.elb.Elb.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.elb.Elb.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.elb.Elb.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.elb.Elb.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.elb.Elb.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.elb.Elb.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.elb.Elb.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.elb.Elb.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.elb.Elb.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.Elb.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.Elb.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.elb.Elb.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.elb.Elb.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -340,7 +340,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.elb.Elb.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.elb.Elb.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -348,7 +348,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.elb.Elb.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.elb.Elb.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -356,7 +356,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.elb.Elb.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.elb.Elb.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -364,7 +364,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.elb.Elb.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.elb.Elb.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -372,7 +372,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.elb.Elb.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.elb.Elb.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -380,7 +380,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.elb.Elb.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.elb.Elb.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -388,169 +388,169 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutAccessLogs` <a name="PutAccessLogs" id="@cdktf/provider-aws.elb.Elb.putAccessLogs"></a>
+##### `PutAccessLogs` <a name="PutAccessLogs" id="@cdktn/provider-aws.elb.Elb.putAccessLogs"></a>
 
 ```go
 func PutAccessLogs(value ElbAccessLogs)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.elb.Elb.putAccessLogs.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.elb.Elb.putAccessLogs.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
 
 ---
 
-##### `PutHealthCheck` <a name="PutHealthCheck" id="@cdktf/provider-aws.elb.Elb.putHealthCheck"></a>
+##### `PutHealthCheck` <a name="PutHealthCheck" id="@cdktn/provider-aws.elb.Elb.putHealthCheck"></a>
 
 ```go
 func PutHealthCheck(value ElbHealthCheck)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.elb.Elb.putHealthCheck.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.elb.Elb.putHealthCheck.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
 
 ---
 
-##### `PutListener` <a name="PutListener" id="@cdktf/provider-aws.elb.Elb.putListener"></a>
+##### `PutListener` <a name="PutListener" id="@cdktn/provider-aws.elb.Elb.putListener"></a>
 
 ```go
 func PutListener(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.elb.Elb.putListener.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.elb.Elb.putListener.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-aws.elb.Elb.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-aws.elb.Elb.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value ElbTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.elb.Elb.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.elb.Elb.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbTimeouts">ElbTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbTimeouts">ElbTimeouts</a>
 
 ---
 
-##### `ResetAccessLogs` <a name="ResetAccessLogs" id="@cdktf/provider-aws.elb.Elb.resetAccessLogs"></a>
+##### `ResetAccessLogs` <a name="ResetAccessLogs" id="@cdktn/provider-aws.elb.Elb.resetAccessLogs"></a>
 
 ```go
 func ResetAccessLogs()
 ```
 
-##### `ResetAvailabilityZones` <a name="ResetAvailabilityZones" id="@cdktf/provider-aws.elb.Elb.resetAvailabilityZones"></a>
+##### `ResetAvailabilityZones` <a name="ResetAvailabilityZones" id="@cdktn/provider-aws.elb.Elb.resetAvailabilityZones"></a>
 
 ```go
 func ResetAvailabilityZones()
 ```
 
-##### `ResetConnectionDraining` <a name="ResetConnectionDraining" id="@cdktf/provider-aws.elb.Elb.resetConnectionDraining"></a>
+##### `ResetConnectionDraining` <a name="ResetConnectionDraining" id="@cdktn/provider-aws.elb.Elb.resetConnectionDraining"></a>
 
 ```go
 func ResetConnectionDraining()
 ```
 
-##### `ResetConnectionDrainingTimeout` <a name="ResetConnectionDrainingTimeout" id="@cdktf/provider-aws.elb.Elb.resetConnectionDrainingTimeout"></a>
+##### `ResetConnectionDrainingTimeout` <a name="ResetConnectionDrainingTimeout" id="@cdktn/provider-aws.elb.Elb.resetConnectionDrainingTimeout"></a>
 
 ```go
 func ResetConnectionDrainingTimeout()
 ```
 
-##### `ResetCrossZoneLoadBalancing` <a name="ResetCrossZoneLoadBalancing" id="@cdktf/provider-aws.elb.Elb.resetCrossZoneLoadBalancing"></a>
+##### `ResetCrossZoneLoadBalancing` <a name="ResetCrossZoneLoadBalancing" id="@cdktn/provider-aws.elb.Elb.resetCrossZoneLoadBalancing"></a>
 
 ```go
 func ResetCrossZoneLoadBalancing()
 ```
 
-##### `ResetDesyncMitigationMode` <a name="ResetDesyncMitigationMode" id="@cdktf/provider-aws.elb.Elb.resetDesyncMitigationMode"></a>
+##### `ResetDesyncMitigationMode` <a name="ResetDesyncMitigationMode" id="@cdktn/provider-aws.elb.Elb.resetDesyncMitigationMode"></a>
 
 ```go
 func ResetDesyncMitigationMode()
 ```
 
-##### `ResetHealthCheck` <a name="ResetHealthCheck" id="@cdktf/provider-aws.elb.Elb.resetHealthCheck"></a>
+##### `ResetHealthCheck` <a name="ResetHealthCheck" id="@cdktn/provider-aws.elb.Elb.resetHealthCheck"></a>
 
 ```go
 func ResetHealthCheck()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.elb.Elb.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.elb.Elb.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetIdleTimeout` <a name="ResetIdleTimeout" id="@cdktf/provider-aws.elb.Elb.resetIdleTimeout"></a>
+##### `ResetIdleTimeout` <a name="ResetIdleTimeout" id="@cdktn/provider-aws.elb.Elb.resetIdleTimeout"></a>
 
 ```go
 func ResetIdleTimeout()
 ```
 
-##### `ResetInstances` <a name="ResetInstances" id="@cdktf/provider-aws.elb.Elb.resetInstances"></a>
+##### `ResetInstances` <a name="ResetInstances" id="@cdktn/provider-aws.elb.Elb.resetInstances"></a>
 
 ```go
 func ResetInstances()
 ```
 
-##### `ResetInternal` <a name="ResetInternal" id="@cdktf/provider-aws.elb.Elb.resetInternal"></a>
+##### `ResetInternal` <a name="ResetInternal" id="@cdktn/provider-aws.elb.Elb.resetInternal"></a>
 
 ```go
 func ResetInternal()
 ```
 
-##### `ResetName` <a name="ResetName" id="@cdktf/provider-aws.elb.Elb.resetName"></a>
+##### `ResetName` <a name="ResetName" id="@cdktn/provider-aws.elb.Elb.resetName"></a>
 
 ```go
 func ResetName()
 ```
 
-##### `ResetNamePrefix` <a name="ResetNamePrefix" id="@cdktf/provider-aws.elb.Elb.resetNamePrefix"></a>
+##### `ResetNamePrefix` <a name="ResetNamePrefix" id="@cdktn/provider-aws.elb.Elb.resetNamePrefix"></a>
 
 ```go
 func ResetNamePrefix()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.elb.Elb.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.elb.Elb.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetSecurityGroups` <a name="ResetSecurityGroups" id="@cdktf/provider-aws.elb.Elb.resetSecurityGroups"></a>
+##### `ResetSecurityGroups` <a name="ResetSecurityGroups" id="@cdktn/provider-aws.elb.Elb.resetSecurityGroups"></a>
 
 ```go
 func ResetSecurityGroups()
 ```
 
-##### `ResetSourceSecurityGroup` <a name="ResetSourceSecurityGroup" id="@cdktf/provider-aws.elb.Elb.resetSourceSecurityGroup"></a>
+##### `ResetSourceSecurityGroup` <a name="ResetSourceSecurityGroup" id="@cdktn/provider-aws.elb.Elb.resetSourceSecurityGroup"></a>
 
 ```go
 func ResetSourceSecurityGroup()
 ```
 
-##### `ResetSubnets` <a name="ResetSubnets" id="@cdktf/provider-aws.elb.Elb.resetSubnets"></a>
+##### `ResetSubnets` <a name="ResetSubnets" id="@cdktn/provider-aws.elb.Elb.resetSubnets"></a>
 
 ```go
 func ResetSubnets()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.elb.Elb.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.elb.Elb.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.elb.Elb.resetTagsAll"></a>
+##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktn/provider-aws.elb.Elb.resetTagsAll"></a>
 
 ```go
 func ResetTagsAll()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-aws.elb.Elb.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-aws.elb.Elb.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -560,17 +560,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Elb resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a Elb resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.elb.Elb.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.elb.Elb.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.Elb_IsConstruct(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.elb.Elb.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.elb.Elb.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -599,45 +599,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.elb.Elb.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.elb.Elb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.Elb_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.elb.Elb.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.elb.Elb.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.elb.Elb.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.elb.Elb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.Elb_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.elb.Elb.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.elb.Elb.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.elb.Elb.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.elb.Elb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.Elb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a Elb resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.elb.Elb.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.elb.Elb.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -645,7 +645,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.elb.Elb.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.elb.Elb.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -653,17 +653,17 @@ The construct id used in the generated config for the Elb to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.elb.Elb.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.elb.Elb.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing Elb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.elb.Elb.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.elb.Elb.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -675,70 +675,70 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference">ElbAccessLogsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.dnsName">DnsName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference">ElbHealthCheckOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.listener">Listener</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbListenerList">ElbListenerList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroupId">SourceSecurityGroupId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference">ElbTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.accessLogsInput">AccessLogsInput</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.availabilityZonesInput">AvailabilityZonesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.connectionDrainingInput">ConnectionDrainingInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.connectionDrainingTimeoutInput">ConnectionDrainingTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.crossZoneLoadBalancingInput">CrossZoneLoadBalancingInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.desyncMitigationModeInput">DesyncMitigationModeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.healthCheckInput">HealthCheckInput</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.idleTimeoutInput">IdleTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.instancesInput">InstancesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.internalInput">InternalInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.listenerInput">ListenerInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.namePrefixInput">NamePrefixInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.securityGroupsInput">SecurityGroupsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroupInput">SourceSecurityGroupInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.subnetsInput">SubnetsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.crossZoneLoadBalancing">CrossZoneLoadBalancing</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.instances">Instances</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.internal">Internal</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroup">SourceSecurityGroup</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.subnets">Subnets</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference">ElbAccessLogsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.dnsName">DnsName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference">ElbHealthCheckOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.listener">Listener</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbListenerList">ElbListenerList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.sourceSecurityGroupId">SourceSecurityGroupId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference">ElbTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.accessLogsInput">AccessLogsInput</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.availabilityZonesInput">AvailabilityZonesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.connectionDrainingInput">ConnectionDrainingInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.connectionDrainingTimeoutInput">ConnectionDrainingTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.crossZoneLoadBalancingInput">CrossZoneLoadBalancingInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.desyncMitigationModeInput">DesyncMitigationModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.healthCheckInput">HealthCheckInput</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.idleTimeoutInput">IdleTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.instancesInput">InstancesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.internalInput">InternalInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.listenerInput">ListenerInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.namePrefixInput">NamePrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.securityGroupsInput">SecurityGroupsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.sourceSecurityGroupInput">SourceSecurityGroupInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.subnetsInput">SubnetsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.crossZoneLoadBalancing">CrossZoneLoadBalancing</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.instances">Instances</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.internal">Internal</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.sourceSecurityGroup">SourceSecurityGroup</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.subnets">Subnets</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.elb.Elb.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.elb.Elb.property.node"></a>
 
 ```go
 func Node() Node
@@ -750,7 +750,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.elb.Elb.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.elb.Elb.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -760,7 +760,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.Elb.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.elb.Elb.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -770,7 +770,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.elb.Elb.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.elb.Elb.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -780,7 +780,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.elb.Elb.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.elb.Elb.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -790,7 +790,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.elb.Elb.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.elb.Elb.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -800,7 +800,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.elb.Elb.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.elb.Elb.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -810,7 +810,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.elb.Elb.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.elb.Elb.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -820,7 +820,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.elb.Elb.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.elb.Elb.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -830,7 +830,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.elb.Elb.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.elb.Elb.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -840,7 +840,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.elb.Elb.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.elb.Elb.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -850,7 +850,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.elb.Elb.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.elb.Elb.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -860,7 +860,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.elb.Elb.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.elb.Elb.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -870,7 +870,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.elb.Elb.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.elb.Elb.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -880,17 +880,17 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `AccessLogs`<sup>Required</sup> <a name="AccessLogs" id="@cdktf/provider-aws.elb.Elb.property.accessLogs"></a>
+##### `AccessLogs`<sup>Required</sup> <a name="AccessLogs" id="@cdktn/provider-aws.elb.Elb.property.accessLogs"></a>
 
 ```go
 func AccessLogs() ElbAccessLogsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference">ElbAccessLogsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference">ElbAccessLogsOutputReference</a>
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.elb.Elb.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.elb.Elb.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -900,7 +900,7 @@ func Arn() *string
 
 ---
 
-##### `DnsName`<sup>Required</sup> <a name="DnsName" id="@cdktf/provider-aws.elb.Elb.property.dnsName"></a>
+##### `DnsName`<sup>Required</sup> <a name="DnsName" id="@cdktn/provider-aws.elb.Elb.property.dnsName"></a>
 
 ```go
 func DnsName() *string
@@ -910,27 +910,27 @@ func DnsName() *string
 
 ---
 
-##### `HealthCheck`<sup>Required</sup> <a name="HealthCheck" id="@cdktf/provider-aws.elb.Elb.property.healthCheck"></a>
+##### `HealthCheck`<sup>Required</sup> <a name="HealthCheck" id="@cdktn/provider-aws.elb.Elb.property.healthCheck"></a>
 
 ```go
 func HealthCheck() ElbHealthCheckOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference">ElbHealthCheckOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference">ElbHealthCheckOutputReference</a>
 
 ---
 
-##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktf/provider-aws.elb.Elb.property.listener"></a>
+##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktn/provider-aws.elb.Elb.property.listener"></a>
 
 ```go
 func Listener() ElbListenerList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbListenerList">ElbListenerList</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbListenerList">ElbListenerList</a>
 
 ---
 
-##### `SourceSecurityGroupId`<sup>Required</sup> <a name="SourceSecurityGroupId" id="@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroupId"></a>
+##### `SourceSecurityGroupId`<sup>Required</sup> <a name="SourceSecurityGroupId" id="@cdktn/provider-aws.elb.Elb.property.sourceSecurityGroupId"></a>
 
 ```go
 func SourceSecurityGroupId() *string
@@ -940,17 +940,17 @@ func SourceSecurityGroupId() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-aws.elb.Elb.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-aws.elb.Elb.property.timeouts"></a>
 
 ```go
 func Timeouts() ElbTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference">ElbTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference">ElbTimeoutsOutputReference</a>
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-aws.elb.Elb.property.zoneId"></a>
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-aws.elb.Elb.property.zoneId"></a>
 
 ```go
 func ZoneId() *string
@@ -960,17 +960,17 @@ func ZoneId() *string
 
 ---
 
-##### `AccessLogsInput`<sup>Optional</sup> <a name="AccessLogsInput" id="@cdktf/provider-aws.elb.Elb.property.accessLogsInput"></a>
+##### `AccessLogsInput`<sup>Optional</sup> <a name="AccessLogsInput" id="@cdktn/provider-aws.elb.Elb.property.accessLogsInput"></a>
 
 ```go
 func AccessLogsInput() ElbAccessLogs
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
 
 ---
 
-##### `AvailabilityZonesInput`<sup>Optional</sup> <a name="AvailabilityZonesInput" id="@cdktf/provider-aws.elb.Elb.property.availabilityZonesInput"></a>
+##### `AvailabilityZonesInput`<sup>Optional</sup> <a name="AvailabilityZonesInput" id="@cdktn/provider-aws.elb.Elb.property.availabilityZonesInput"></a>
 
 ```go
 func AvailabilityZonesInput() *[]*string
@@ -980,7 +980,7 @@ func AvailabilityZonesInput() *[]*string
 
 ---
 
-##### `ConnectionDrainingInput`<sup>Optional</sup> <a name="ConnectionDrainingInput" id="@cdktf/provider-aws.elb.Elb.property.connectionDrainingInput"></a>
+##### `ConnectionDrainingInput`<sup>Optional</sup> <a name="ConnectionDrainingInput" id="@cdktn/provider-aws.elb.Elb.property.connectionDrainingInput"></a>
 
 ```go
 func ConnectionDrainingInput() interface{}
@@ -990,7 +990,7 @@ func ConnectionDrainingInput() interface{}
 
 ---
 
-##### `ConnectionDrainingTimeoutInput`<sup>Optional</sup> <a name="ConnectionDrainingTimeoutInput" id="@cdktf/provider-aws.elb.Elb.property.connectionDrainingTimeoutInput"></a>
+##### `ConnectionDrainingTimeoutInput`<sup>Optional</sup> <a name="ConnectionDrainingTimeoutInput" id="@cdktn/provider-aws.elb.Elb.property.connectionDrainingTimeoutInput"></a>
 
 ```go
 func ConnectionDrainingTimeoutInput() *f64
@@ -1000,7 +1000,7 @@ func ConnectionDrainingTimeoutInput() *f64
 
 ---
 
-##### `CrossZoneLoadBalancingInput`<sup>Optional</sup> <a name="CrossZoneLoadBalancingInput" id="@cdktf/provider-aws.elb.Elb.property.crossZoneLoadBalancingInput"></a>
+##### `CrossZoneLoadBalancingInput`<sup>Optional</sup> <a name="CrossZoneLoadBalancingInput" id="@cdktn/provider-aws.elb.Elb.property.crossZoneLoadBalancingInput"></a>
 
 ```go
 func CrossZoneLoadBalancingInput() interface{}
@@ -1010,7 +1010,7 @@ func CrossZoneLoadBalancingInput() interface{}
 
 ---
 
-##### `DesyncMitigationModeInput`<sup>Optional</sup> <a name="DesyncMitigationModeInput" id="@cdktf/provider-aws.elb.Elb.property.desyncMitigationModeInput"></a>
+##### `DesyncMitigationModeInput`<sup>Optional</sup> <a name="DesyncMitigationModeInput" id="@cdktn/provider-aws.elb.Elb.property.desyncMitigationModeInput"></a>
 
 ```go
 func DesyncMitigationModeInput() *string
@@ -1020,17 +1020,17 @@ func DesyncMitigationModeInput() *string
 
 ---
 
-##### `HealthCheckInput`<sup>Optional</sup> <a name="HealthCheckInput" id="@cdktf/provider-aws.elb.Elb.property.healthCheckInput"></a>
+##### `HealthCheckInput`<sup>Optional</sup> <a name="HealthCheckInput" id="@cdktn/provider-aws.elb.Elb.property.healthCheckInput"></a>
 
 ```go
 func HealthCheckInput() ElbHealthCheck
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.elb.Elb.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.elb.Elb.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -1040,7 +1040,7 @@ func IdInput() *string
 
 ---
 
-##### `IdleTimeoutInput`<sup>Optional</sup> <a name="IdleTimeoutInput" id="@cdktf/provider-aws.elb.Elb.property.idleTimeoutInput"></a>
+##### `IdleTimeoutInput`<sup>Optional</sup> <a name="IdleTimeoutInput" id="@cdktn/provider-aws.elb.Elb.property.idleTimeoutInput"></a>
 
 ```go
 func IdleTimeoutInput() *f64
@@ -1050,7 +1050,7 @@ func IdleTimeoutInput() *f64
 
 ---
 
-##### `InstancesInput`<sup>Optional</sup> <a name="InstancesInput" id="@cdktf/provider-aws.elb.Elb.property.instancesInput"></a>
+##### `InstancesInput`<sup>Optional</sup> <a name="InstancesInput" id="@cdktn/provider-aws.elb.Elb.property.instancesInput"></a>
 
 ```go
 func InstancesInput() *[]*string
@@ -1060,7 +1060,7 @@ func InstancesInput() *[]*string
 
 ---
 
-##### `InternalInput`<sup>Optional</sup> <a name="InternalInput" id="@cdktf/provider-aws.elb.Elb.property.internalInput"></a>
+##### `InternalInput`<sup>Optional</sup> <a name="InternalInput" id="@cdktn/provider-aws.elb.Elb.property.internalInput"></a>
 
 ```go
 func InternalInput() interface{}
@@ -1070,7 +1070,7 @@ func InternalInput() interface{}
 
 ---
 
-##### `ListenerInput`<sup>Optional</sup> <a name="ListenerInput" id="@cdktf/provider-aws.elb.Elb.property.listenerInput"></a>
+##### `ListenerInput`<sup>Optional</sup> <a name="ListenerInput" id="@cdktn/provider-aws.elb.Elb.property.listenerInput"></a>
 
 ```go
 func ListenerInput() interface{}
@@ -1080,7 +1080,7 @@ func ListenerInput() interface{}
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-aws.elb.Elb.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-aws.elb.Elb.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -1090,7 +1090,7 @@ func NameInput() *string
 
 ---
 
-##### `NamePrefixInput`<sup>Optional</sup> <a name="NamePrefixInput" id="@cdktf/provider-aws.elb.Elb.property.namePrefixInput"></a>
+##### `NamePrefixInput`<sup>Optional</sup> <a name="NamePrefixInput" id="@cdktn/provider-aws.elb.Elb.property.namePrefixInput"></a>
 
 ```go
 func NamePrefixInput() *string
@@ -1100,7 +1100,7 @@ func NamePrefixInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.elb.Elb.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.elb.Elb.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -1110,7 +1110,7 @@ func RegionInput() *string
 
 ---
 
-##### `SecurityGroupsInput`<sup>Optional</sup> <a name="SecurityGroupsInput" id="@cdktf/provider-aws.elb.Elb.property.securityGroupsInput"></a>
+##### `SecurityGroupsInput`<sup>Optional</sup> <a name="SecurityGroupsInput" id="@cdktn/provider-aws.elb.Elb.property.securityGroupsInput"></a>
 
 ```go
 func SecurityGroupsInput() *[]*string
@@ -1120,7 +1120,7 @@ func SecurityGroupsInput() *[]*string
 
 ---
 
-##### `SourceSecurityGroupInput`<sup>Optional</sup> <a name="SourceSecurityGroupInput" id="@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroupInput"></a>
+##### `SourceSecurityGroupInput`<sup>Optional</sup> <a name="SourceSecurityGroupInput" id="@cdktn/provider-aws.elb.Elb.property.sourceSecurityGroupInput"></a>
 
 ```go
 func SourceSecurityGroupInput() *string
@@ -1130,7 +1130,7 @@ func SourceSecurityGroupInput() *string
 
 ---
 
-##### `SubnetsInput`<sup>Optional</sup> <a name="SubnetsInput" id="@cdktf/provider-aws.elb.Elb.property.subnetsInput"></a>
+##### `SubnetsInput`<sup>Optional</sup> <a name="SubnetsInput" id="@cdktn/provider-aws.elb.Elb.property.subnetsInput"></a>
 
 ```go
 func SubnetsInput() *[]*string
@@ -1140,7 +1140,7 @@ func SubnetsInput() *[]*string
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.elb.Elb.property.tagsAllInput"></a>
+##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktn/provider-aws.elb.Elb.property.tagsAllInput"></a>
 
 ```go
 func TagsAllInput() *map[string]*string
@@ -1150,7 +1150,7 @@ func TagsAllInput() *map[string]*string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.elb.Elb.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.elb.Elb.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -1160,7 +1160,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-aws.elb.Elb.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-aws.elb.Elb.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -1170,7 +1170,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `AvailabilityZones`<sup>Required</sup> <a name="AvailabilityZones" id="@cdktf/provider-aws.elb.Elb.property.availabilityZones"></a>
+##### `AvailabilityZones`<sup>Required</sup> <a name="AvailabilityZones" id="@cdktn/provider-aws.elb.Elb.property.availabilityZones"></a>
 
 ```go
 func AvailabilityZones() *[]*string
@@ -1180,7 +1180,7 @@ func AvailabilityZones() *[]*string
 
 ---
 
-##### `ConnectionDraining`<sup>Required</sup> <a name="ConnectionDraining" id="@cdktf/provider-aws.elb.Elb.property.connectionDraining"></a>
+##### `ConnectionDraining`<sup>Required</sup> <a name="ConnectionDraining" id="@cdktn/provider-aws.elb.Elb.property.connectionDraining"></a>
 
 ```go
 func ConnectionDraining() interface{}
@@ -1190,7 +1190,7 @@ func ConnectionDraining() interface{}
 
 ---
 
-##### `ConnectionDrainingTimeout`<sup>Required</sup> <a name="ConnectionDrainingTimeout" id="@cdktf/provider-aws.elb.Elb.property.connectionDrainingTimeout"></a>
+##### `ConnectionDrainingTimeout`<sup>Required</sup> <a name="ConnectionDrainingTimeout" id="@cdktn/provider-aws.elb.Elb.property.connectionDrainingTimeout"></a>
 
 ```go
 func ConnectionDrainingTimeout() *f64
@@ -1200,7 +1200,7 @@ func ConnectionDrainingTimeout() *f64
 
 ---
 
-##### `CrossZoneLoadBalancing`<sup>Required</sup> <a name="CrossZoneLoadBalancing" id="@cdktf/provider-aws.elb.Elb.property.crossZoneLoadBalancing"></a>
+##### `CrossZoneLoadBalancing`<sup>Required</sup> <a name="CrossZoneLoadBalancing" id="@cdktn/provider-aws.elb.Elb.property.crossZoneLoadBalancing"></a>
 
 ```go
 func CrossZoneLoadBalancing() interface{}
@@ -1210,7 +1210,7 @@ func CrossZoneLoadBalancing() interface{}
 
 ---
 
-##### `DesyncMitigationMode`<sup>Required</sup> <a name="DesyncMitigationMode" id="@cdktf/provider-aws.elb.Elb.property.desyncMitigationMode"></a>
+##### `DesyncMitigationMode`<sup>Required</sup> <a name="DesyncMitigationMode" id="@cdktn/provider-aws.elb.Elb.property.desyncMitigationMode"></a>
 
 ```go
 func DesyncMitigationMode() *string
@@ -1220,7 +1220,7 @@ func DesyncMitigationMode() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.elb.Elb.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.elb.Elb.property.id"></a>
 
 ```go
 func Id() *string
@@ -1230,7 +1230,7 @@ func Id() *string
 
 ---
 
-##### `IdleTimeout`<sup>Required</sup> <a name="IdleTimeout" id="@cdktf/provider-aws.elb.Elb.property.idleTimeout"></a>
+##### `IdleTimeout`<sup>Required</sup> <a name="IdleTimeout" id="@cdktn/provider-aws.elb.Elb.property.idleTimeout"></a>
 
 ```go
 func IdleTimeout() *f64
@@ -1240,7 +1240,7 @@ func IdleTimeout() *f64
 
 ---
 
-##### `Instances`<sup>Required</sup> <a name="Instances" id="@cdktf/provider-aws.elb.Elb.property.instances"></a>
+##### `Instances`<sup>Required</sup> <a name="Instances" id="@cdktn/provider-aws.elb.Elb.property.instances"></a>
 
 ```go
 func Instances() *[]*string
@@ -1250,7 +1250,7 @@ func Instances() *[]*string
 
 ---
 
-##### `Internal`<sup>Required</sup> <a name="Internal" id="@cdktf/provider-aws.elb.Elb.property.internal"></a>
+##### `Internal`<sup>Required</sup> <a name="Internal" id="@cdktn/provider-aws.elb.Elb.property.internal"></a>
 
 ```go
 func Internal() interface{}
@@ -1260,7 +1260,7 @@ func Internal() interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-aws.elb.Elb.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-aws.elb.Elb.property.name"></a>
 
 ```go
 func Name() *string
@@ -1270,7 +1270,7 @@ func Name() *string
 
 ---
 
-##### `NamePrefix`<sup>Required</sup> <a name="NamePrefix" id="@cdktf/provider-aws.elb.Elb.property.namePrefix"></a>
+##### `NamePrefix`<sup>Required</sup> <a name="NamePrefix" id="@cdktn/provider-aws.elb.Elb.property.namePrefix"></a>
 
 ```go
 func NamePrefix() *string
@@ -1280,7 +1280,7 @@ func NamePrefix() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.elb.Elb.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.elb.Elb.property.region"></a>
 
 ```go
 func Region() *string
@@ -1290,7 +1290,7 @@ func Region() *string
 
 ---
 
-##### `SecurityGroups`<sup>Required</sup> <a name="SecurityGroups" id="@cdktf/provider-aws.elb.Elb.property.securityGroups"></a>
+##### `SecurityGroups`<sup>Required</sup> <a name="SecurityGroups" id="@cdktn/provider-aws.elb.Elb.property.securityGroups"></a>
 
 ```go
 func SecurityGroups() *[]*string
@@ -1300,7 +1300,7 @@ func SecurityGroups() *[]*string
 
 ---
 
-##### `SourceSecurityGroup`<sup>Required</sup> <a name="SourceSecurityGroup" id="@cdktf/provider-aws.elb.Elb.property.sourceSecurityGroup"></a>
+##### `SourceSecurityGroup`<sup>Required</sup> <a name="SourceSecurityGroup" id="@cdktn/provider-aws.elb.Elb.property.sourceSecurityGroup"></a>
 
 ```go
 func SourceSecurityGroup() *string
@@ -1310,7 +1310,7 @@ func SourceSecurityGroup() *string
 
 ---
 
-##### `Subnets`<sup>Required</sup> <a name="Subnets" id="@cdktf/provider-aws.elb.Elb.property.subnets"></a>
+##### `Subnets`<sup>Required</sup> <a name="Subnets" id="@cdktn/provider-aws.elb.Elb.property.subnets"></a>
 
 ```go
 func Subnets() *[]*string
@@ -1320,7 +1320,7 @@ func Subnets() *[]*string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.elb.Elb.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.elb.Elb.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -1330,7 +1330,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.elb.Elb.property.tagsAll"></a>
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.elb.Elb.property.tagsAll"></a>
 
 ```go
 func TagsAll() *map[string]*string
@@ -1344,11 +1344,11 @@ func TagsAll() *map[string]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.Elb.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.Elb.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.elb.Elb.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.elb.Elb.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1360,12 +1360,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ElbAccessLogs <a name="ElbAccessLogs" id="@cdktf/provider-aws.elb.ElbAccessLogs"></a>
+### ElbAccessLogs <a name="ElbAccessLogs" id="@cdktn/provider-aws.elb.ElbAccessLogs"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbAccessLogs.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.elb.ElbAccessLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 &elb.ElbAccessLogs {
 	Bucket: *string,
@@ -1379,14 +1379,14 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#bucket Elb#bucket}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#enabled Elb#enabled}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#interval Elb#interval}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#bucket Elb#bucket}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#enabled Elb#enabled}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#interval Elb#interval}. |
 
 ---
 
-##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-aws.elb.ElbAccessLogs.property.bucket"></a>
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktn/provider-aws.elb.ElbAccessLogs.property.bucket"></a>
 
 ```go
 Bucket *string
@@ -1394,11 +1394,11 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#bucket Elb#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#bucket Elb#bucket}.
 
 ---
 
-##### `BucketPrefix`<sup>Optional</sup> <a name="BucketPrefix" id="@cdktf/provider-aws.elb.ElbAccessLogs.property.bucketPrefix"></a>
+##### `BucketPrefix`<sup>Optional</sup> <a name="BucketPrefix" id="@cdktn/provider-aws.elb.ElbAccessLogs.property.bucketPrefix"></a>
 
 ```go
 BucketPrefix *string
@@ -1406,11 +1406,11 @@ BucketPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#bucket_prefix Elb#bucket_prefix}.
 
 ---
 
-##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-aws.elb.ElbAccessLogs.property.enabled"></a>
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-aws.elb.ElbAccessLogs.property.enabled"></a>
 
 ```go
 Enabled interface{}
@@ -1418,11 +1418,11 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#enabled Elb#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#enabled Elb#enabled}.
 
 ---
 
-##### `Interval`<sup>Optional</sup> <a name="Interval" id="@cdktf/provider-aws.elb.ElbAccessLogs.property.interval"></a>
+##### `Interval`<sup>Optional</sup> <a name="Interval" id="@cdktn/provider-aws.elb.ElbAccessLogs.property.interval"></a>
 
 ```go
 Interval *f64
@@ -1430,16 +1430,16 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#interval Elb#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#interval Elb#interval}.
 
 ---
 
-### ElbConfig <a name="ElbConfig" id="@cdktf/provider-aws.elb.ElbConfig"></a>
+### ElbConfig <a name="ElbConfig" id="@cdktn/provider-aws.elb.ElbConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.elb.ElbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 &elb.ElbConfig {
 	Connection: interface{},
@@ -1450,13 +1450,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Listener: interface{},
-	AccessLogs: github.com/cdktf/cdktf-provider-aws-go/aws/v21.elb.ElbAccessLogs,
+	AccessLogs: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.elb.ElbAccessLogs,
 	AvailabilityZones: *[]*string,
 	ConnectionDraining: interface{},
 	ConnectionDrainingTimeout: *f64,
 	CrossZoneLoadBalancing: interface{},
 	DesyncMitigationMode: *string,
-	HealthCheck: github.com/cdktf/cdktf-provider-aws-go/aws/v21.elb.ElbHealthCheck,
+	HealthCheck: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.elb.ElbHealthCheck,
 	Id: *string,
 	IdleTimeout: *f64,
 	Instances: *[]*string,
@@ -1469,7 +1469,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 	Subnets: *[]*string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-aws-go/aws/v21.elb.ElbTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.elb.ElbTimeouts,
 }
 ```
 
@@ -1477,38 +1477,38 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.listener">Listener</a></code> | <code>interface{}</code> | listener block. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | access_logs block. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#availability_zones Elb#availability_zones}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#connection_draining Elb#connection_draining}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.crossZoneLoadBalancing">CrossZoneLoadBalancing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | health_check block. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#id Elb#id}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#idle_timeout Elb#idle_timeout}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.instances">Instances</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#instances Elb#instances}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.internal">Internal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#internal Elb#internal}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#name Elb#name}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#name_prefix Elb#name_prefix}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#security_groups Elb#security_groups}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.sourceSecurityGroup">SourceSecurityGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#source_security_group Elb#source_security_group}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#subnets Elb#subnets}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#tags Elb#tags}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#tags_all Elb#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbTimeouts">ElbTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.listener">Listener</a></code> | <code>interface{}</code> | listener block. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.accessLogs">AccessLogs</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | access_logs block. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.availabilityZones">AvailabilityZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#availability_zones Elb#availability_zones}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.connectionDraining">ConnectionDraining</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#connection_draining Elb#connection_draining}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.connectionDrainingTimeout">ConnectionDrainingTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.crossZoneLoadBalancing">CrossZoneLoadBalancing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.desyncMitigationMode">DesyncMitigationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | health_check block. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#id Elb#id}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.idleTimeout">IdleTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#idle_timeout Elb#idle_timeout}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.instances">Instances</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#instances Elb#instances}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.internal">Internal</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#internal Elb#internal}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#name Elb#name}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#name_prefix Elb#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#security_groups Elb#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.sourceSecurityGroup">SourceSecurityGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#source_security_group Elb#source_security_group}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#subnets Elb#subnets}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#tags Elb#tags}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#tags_all Elb#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbTimeouts">ElbTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.elb.ElbConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.elb.ElbConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1518,7 +1518,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.elb.ElbConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.elb.ElbConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1528,7 +1528,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.elb.ElbConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.elb.ElbConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1538,7 +1538,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.elb.ElbConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.elb.ElbConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1548,7 +1548,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.elb.ElbConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.elb.ElbConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1558,7 +1558,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.elb.ElbConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.elb.ElbConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1568,7 +1568,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.elb.ElbConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.elb.ElbConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1578,7 +1578,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktf/provider-aws.elb.ElbConfig.property.listener"></a>
+##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktn/provider-aws.elb.ElbConfig.property.listener"></a>
 
 ```go
 Listener interface{}
@@ -1588,25 +1588,25 @@ Listener interface{}
 
 listener block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#listener Elb#listener}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#listener Elb#listener}
 
 ---
 
-##### `AccessLogs`<sup>Optional</sup> <a name="AccessLogs" id="@cdktf/provider-aws.elb.ElbConfig.property.accessLogs"></a>
+##### `AccessLogs`<sup>Optional</sup> <a name="AccessLogs" id="@cdktn/provider-aws.elb.ElbConfig.property.accessLogs"></a>
 
 ```go
 AccessLogs ElbAccessLogs
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
 
 access_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#access_logs Elb#access_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#access_logs Elb#access_logs}
 
 ---
 
-##### `AvailabilityZones`<sup>Optional</sup> <a name="AvailabilityZones" id="@cdktf/provider-aws.elb.ElbConfig.property.availabilityZones"></a>
+##### `AvailabilityZones`<sup>Optional</sup> <a name="AvailabilityZones" id="@cdktn/provider-aws.elb.ElbConfig.property.availabilityZones"></a>
 
 ```go
 AvailabilityZones *[]*string
@@ -1614,11 +1614,11 @@ AvailabilityZones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#availability_zones Elb#availability_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#availability_zones Elb#availability_zones}.
 
 ---
 
-##### `ConnectionDraining`<sup>Optional</sup> <a name="ConnectionDraining" id="@cdktf/provider-aws.elb.ElbConfig.property.connectionDraining"></a>
+##### `ConnectionDraining`<sup>Optional</sup> <a name="ConnectionDraining" id="@cdktn/provider-aws.elb.ElbConfig.property.connectionDraining"></a>
 
 ```go
 ConnectionDraining interface{}
@@ -1626,11 +1626,11 @@ ConnectionDraining interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#connection_draining Elb#connection_draining}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#connection_draining Elb#connection_draining}.
 
 ---
 
-##### `ConnectionDrainingTimeout`<sup>Optional</sup> <a name="ConnectionDrainingTimeout" id="@cdktf/provider-aws.elb.ElbConfig.property.connectionDrainingTimeout"></a>
+##### `ConnectionDrainingTimeout`<sup>Optional</sup> <a name="ConnectionDrainingTimeout" id="@cdktn/provider-aws.elb.ElbConfig.property.connectionDrainingTimeout"></a>
 
 ```go
 ConnectionDrainingTimeout *f64
@@ -1638,11 +1638,11 @@ ConnectionDrainingTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#connection_draining_timeout Elb#connection_draining_timeout}.
 
 ---
 
-##### `CrossZoneLoadBalancing`<sup>Optional</sup> <a name="CrossZoneLoadBalancing" id="@cdktf/provider-aws.elb.ElbConfig.property.crossZoneLoadBalancing"></a>
+##### `CrossZoneLoadBalancing`<sup>Optional</sup> <a name="CrossZoneLoadBalancing" id="@cdktn/provider-aws.elb.ElbConfig.property.crossZoneLoadBalancing"></a>
 
 ```go
 CrossZoneLoadBalancing interface{}
@@ -1650,11 +1650,11 @@ CrossZoneLoadBalancing interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#cross_zone_load_balancing Elb#cross_zone_load_balancing}.
 
 ---
 
-##### `DesyncMitigationMode`<sup>Optional</sup> <a name="DesyncMitigationMode" id="@cdktf/provider-aws.elb.ElbConfig.property.desyncMitigationMode"></a>
+##### `DesyncMitigationMode`<sup>Optional</sup> <a name="DesyncMitigationMode" id="@cdktn/provider-aws.elb.ElbConfig.property.desyncMitigationMode"></a>
 
 ```go
 DesyncMitigationMode *string
@@ -1662,25 +1662,25 @@ DesyncMitigationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#desync_mitigation_mode Elb#desync_mitigation_mode}.
 
 ---
 
-##### `HealthCheck`<sup>Optional</sup> <a name="HealthCheck" id="@cdktf/provider-aws.elb.ElbConfig.property.healthCheck"></a>
+##### `HealthCheck`<sup>Optional</sup> <a name="HealthCheck" id="@cdktn/provider-aws.elb.ElbConfig.property.healthCheck"></a>
 
 ```go
 HealthCheck ElbHealthCheck
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#health_check Elb#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#health_check Elb#health_check}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.elb.ElbConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.elb.ElbConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1688,14 +1688,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#id Elb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#id Elb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `IdleTimeout`<sup>Optional</sup> <a name="IdleTimeout" id="@cdktf/provider-aws.elb.ElbConfig.property.idleTimeout"></a>
+##### `IdleTimeout`<sup>Optional</sup> <a name="IdleTimeout" id="@cdktn/provider-aws.elb.ElbConfig.property.idleTimeout"></a>
 
 ```go
 IdleTimeout *f64
@@ -1703,11 +1703,11 @@ IdleTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#idle_timeout Elb#idle_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#idle_timeout Elb#idle_timeout}.
 
 ---
 
-##### `Instances`<sup>Optional</sup> <a name="Instances" id="@cdktf/provider-aws.elb.ElbConfig.property.instances"></a>
+##### `Instances`<sup>Optional</sup> <a name="Instances" id="@cdktn/provider-aws.elb.ElbConfig.property.instances"></a>
 
 ```go
 Instances *[]*string
@@ -1715,11 +1715,11 @@ Instances *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#instances Elb#instances}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#instances Elb#instances}.
 
 ---
 
-##### `Internal`<sup>Optional</sup> <a name="Internal" id="@cdktf/provider-aws.elb.ElbConfig.property.internal"></a>
+##### `Internal`<sup>Optional</sup> <a name="Internal" id="@cdktn/provider-aws.elb.ElbConfig.property.internal"></a>
 
 ```go
 Internal interface{}
@@ -1727,11 +1727,11 @@ Internal interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#internal Elb#internal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#internal Elb#internal}.
 
 ---
 
-##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-aws.elb.ElbConfig.property.name"></a>
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktn/provider-aws.elb.ElbConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1739,11 +1739,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#name Elb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#name Elb#name}.
 
 ---
 
-##### `NamePrefix`<sup>Optional</sup> <a name="NamePrefix" id="@cdktf/provider-aws.elb.ElbConfig.property.namePrefix"></a>
+##### `NamePrefix`<sup>Optional</sup> <a name="NamePrefix" id="@cdktn/provider-aws.elb.ElbConfig.property.namePrefix"></a>
 
 ```go
 NamePrefix *string
@@ -1751,11 +1751,11 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#name_prefix Elb#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#name_prefix Elb#name_prefix}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.elb.ElbConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.elb.ElbConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1765,11 +1765,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#region Elb#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#region Elb#region}
 
 ---
 
-##### `SecurityGroups`<sup>Optional</sup> <a name="SecurityGroups" id="@cdktf/provider-aws.elb.ElbConfig.property.securityGroups"></a>
+##### `SecurityGroups`<sup>Optional</sup> <a name="SecurityGroups" id="@cdktn/provider-aws.elb.ElbConfig.property.securityGroups"></a>
 
 ```go
 SecurityGroups *[]*string
@@ -1777,11 +1777,11 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#security_groups Elb#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#security_groups Elb#security_groups}.
 
 ---
 
-##### `SourceSecurityGroup`<sup>Optional</sup> <a name="SourceSecurityGroup" id="@cdktf/provider-aws.elb.ElbConfig.property.sourceSecurityGroup"></a>
+##### `SourceSecurityGroup`<sup>Optional</sup> <a name="SourceSecurityGroup" id="@cdktn/provider-aws.elb.ElbConfig.property.sourceSecurityGroup"></a>
 
 ```go
 SourceSecurityGroup *string
@@ -1789,11 +1789,11 @@ SourceSecurityGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#source_security_group Elb#source_security_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#source_security_group Elb#source_security_group}.
 
 ---
 
-##### `Subnets`<sup>Optional</sup> <a name="Subnets" id="@cdktf/provider-aws.elb.ElbConfig.property.subnets"></a>
+##### `Subnets`<sup>Optional</sup> <a name="Subnets" id="@cdktn/provider-aws.elb.ElbConfig.property.subnets"></a>
 
 ```go
 Subnets *[]*string
@@ -1801,11 +1801,11 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#subnets Elb#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#subnets Elb#subnets}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.elb.ElbConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.elb.ElbConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1813,11 +1813,11 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#tags Elb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#tags Elb#tags}.
 
 ---
 
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.elb.ElbConfig.property.tagsAll"></a>
+##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktn/provider-aws.elb.ElbConfig.property.tagsAll"></a>
 
 ```go
 TagsAll *map[string]*string
@@ -1825,30 +1825,30 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#tags_all Elb#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#tags_all Elb#tags_all}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-aws.elb.ElbConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-aws.elb.ElbConfig.property.timeouts"></a>
 
 ```go
 Timeouts ElbTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbTimeouts">ElbTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbTimeouts">ElbTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#timeouts Elb#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#timeouts Elb#timeouts}
 
 ---
 
-### ElbHealthCheck <a name="ElbHealthCheck" id="@cdktf/provider-aws.elb.ElbHealthCheck"></a>
+### ElbHealthCheck <a name="ElbHealthCheck" id="@cdktn/provider-aws.elb.ElbHealthCheck"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbHealthCheck.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.elb.ElbHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 &elb.ElbHealthCheck {
 	HealthyThreshold: *f64,
@@ -1863,15 +1863,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#interval Elb#interval}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#target Elb#target}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#timeout Elb#timeout}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#interval Elb#interval}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#target Elb#target}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#timeout Elb#timeout}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}. |
 
 ---
 
-##### `HealthyThreshold`<sup>Required</sup> <a name="HealthyThreshold" id="@cdktf/provider-aws.elb.ElbHealthCheck.property.healthyThreshold"></a>
+##### `HealthyThreshold`<sup>Required</sup> <a name="HealthyThreshold" id="@cdktn/provider-aws.elb.ElbHealthCheck.property.healthyThreshold"></a>
 
 ```go
 HealthyThreshold *f64
@@ -1879,11 +1879,11 @@ HealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#healthy_threshold Elb#healthy_threshold}.
 
 ---
 
-##### `Interval`<sup>Required</sup> <a name="Interval" id="@cdktf/provider-aws.elb.ElbHealthCheck.property.interval"></a>
+##### `Interval`<sup>Required</sup> <a name="Interval" id="@cdktn/provider-aws.elb.ElbHealthCheck.property.interval"></a>
 
 ```go
 Interval *f64
@@ -1891,11 +1891,11 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#interval Elb#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#interval Elb#interval}.
 
 ---
 
-##### `Target`<sup>Required</sup> <a name="Target" id="@cdktf/provider-aws.elb.ElbHealthCheck.property.target"></a>
+##### `Target`<sup>Required</sup> <a name="Target" id="@cdktn/provider-aws.elb.ElbHealthCheck.property.target"></a>
 
 ```go
 Target *string
@@ -1903,11 +1903,11 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#target Elb#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#target Elb#target}.
 
 ---
 
-##### `Timeout`<sup>Required</sup> <a name="Timeout" id="@cdktf/provider-aws.elb.ElbHealthCheck.property.timeout"></a>
+##### `Timeout`<sup>Required</sup> <a name="Timeout" id="@cdktn/provider-aws.elb.ElbHealthCheck.property.timeout"></a>
 
 ```go
 Timeout *f64
@@ -1915,11 +1915,11 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#timeout Elb#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#timeout Elb#timeout}.
 
 ---
 
-##### `UnhealthyThreshold`<sup>Required</sup> <a name="UnhealthyThreshold" id="@cdktf/provider-aws.elb.ElbHealthCheck.property.unhealthyThreshold"></a>
+##### `UnhealthyThreshold`<sup>Required</sup> <a name="UnhealthyThreshold" id="@cdktn/provider-aws.elb.ElbHealthCheck.property.unhealthyThreshold"></a>
 
 ```go
 UnhealthyThreshold *f64
@@ -1927,16 +1927,16 @@ UnhealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#unhealthy_threshold Elb#unhealthy_threshold}.
 
 ---
 
-### ElbListener <a name="ElbListener" id="@cdktf/provider-aws.elb.ElbListener"></a>
+### ElbListener <a name="ElbListener" id="@cdktn/provider-aws.elb.ElbListener"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbListener.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.elb.ElbListener.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 &elb.ElbListener {
 	InstancePort: *f64,
@@ -1951,15 +1951,15 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.instancePort">InstancePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#instance_port Elb#instance_port}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.instanceProtocol">InstanceProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#instance_protocol Elb#instance_protocol}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#lb_port Elb#lb_port}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.lbProtocol">LbProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#lb_protocol Elb#lb_protocol}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListener.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListener.property.instancePort">InstancePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#instance_port Elb#instance_port}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListener.property.instanceProtocol">InstanceProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#instance_protocol Elb#instance_protocol}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListener.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#lb_port Elb#lb_port}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListener.property.lbProtocol">LbProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#lb_protocol Elb#lb_protocol}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListener.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}. |
 
 ---
 
-##### `InstancePort`<sup>Required</sup> <a name="InstancePort" id="@cdktf/provider-aws.elb.ElbListener.property.instancePort"></a>
+##### `InstancePort`<sup>Required</sup> <a name="InstancePort" id="@cdktn/provider-aws.elb.ElbListener.property.instancePort"></a>
 
 ```go
 InstancePort *f64
@@ -1967,11 +1967,11 @@ InstancePort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#instance_port Elb#instance_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#instance_port Elb#instance_port}.
 
 ---
 
-##### `InstanceProtocol`<sup>Required</sup> <a name="InstanceProtocol" id="@cdktf/provider-aws.elb.ElbListener.property.instanceProtocol"></a>
+##### `InstanceProtocol`<sup>Required</sup> <a name="InstanceProtocol" id="@cdktn/provider-aws.elb.ElbListener.property.instanceProtocol"></a>
 
 ```go
 InstanceProtocol *string
@@ -1979,11 +1979,11 @@ InstanceProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#instance_protocol Elb#instance_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#instance_protocol Elb#instance_protocol}.
 
 ---
 
-##### `LbPort`<sup>Required</sup> <a name="LbPort" id="@cdktf/provider-aws.elb.ElbListener.property.lbPort"></a>
+##### `LbPort`<sup>Required</sup> <a name="LbPort" id="@cdktn/provider-aws.elb.ElbListener.property.lbPort"></a>
 
 ```go
 LbPort *f64
@@ -1991,11 +1991,11 @@ LbPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#lb_port Elb#lb_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#lb_port Elb#lb_port}.
 
 ---
 
-##### `LbProtocol`<sup>Required</sup> <a name="LbProtocol" id="@cdktf/provider-aws.elb.ElbListener.property.lbProtocol"></a>
+##### `LbProtocol`<sup>Required</sup> <a name="LbProtocol" id="@cdktn/provider-aws.elb.ElbListener.property.lbProtocol"></a>
 
 ```go
 LbProtocol *string
@@ -2003,11 +2003,11 @@ LbProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#lb_protocol Elb#lb_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#lb_protocol Elb#lb_protocol}.
 
 ---
 
-##### `SslCertificateId`<sup>Optional</sup> <a name="SslCertificateId" id="@cdktf/provider-aws.elb.ElbListener.property.sslCertificateId"></a>
+##### `SslCertificateId`<sup>Optional</sup> <a name="SslCertificateId" id="@cdktn/provider-aws.elb.ElbListener.property.sslCertificateId"></a>
 
 ```go
 SslCertificateId *string
@@ -2015,16 +2015,16 @@ SslCertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#ssl_certificate_id Elb#ssl_certificate_id}.
 
 ---
 
-### ElbTimeouts <a name="ElbTimeouts" id="@cdktf/provider-aws.elb.ElbTimeouts"></a>
+### ElbTimeouts <a name="ElbTimeouts" id="@cdktn/provider-aws.elb.ElbTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.elb.ElbTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.elb.ElbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 &elb.ElbTimeouts {
 	Create: *string,
@@ -2036,12 +2036,12 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#create Elb#create}. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#update Elb#update}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#create Elb#create}. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#update Elb#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-aws.elb.ElbTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-aws.elb.ElbTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -2049,11 +2049,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#create Elb#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#create Elb#create}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-aws.elb.ElbTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-aws.elb.ElbTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -2061,30 +2061,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/elb#update Elb#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/elb#update Elb#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ElbAccessLogsOutputReference <a name="ElbAccessLogsOutputReference" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference"></a>
+### ElbAccessLogsOutputReference <a name="ElbAccessLogsOutputReference" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.NewElbAccessLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbAccessLogsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -2092,7 +2092,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2104,152 +2104,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resetBucketPrefix">ResetBucketPrefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resetInterval">ResetInterval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resetBucketPrefix">ResetBucketPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resetEnabled">ResetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resetInterval">ResetInterval</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2257,13 +2257,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2273,19 +2273,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetBucketPrefix` <a name="ResetBucketPrefix" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resetBucketPrefix"></a>
+##### `ResetBucketPrefix` <a name="ResetBucketPrefix" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resetBucketPrefix"></a>
 
 ```go
 func ResetBucketPrefix()
 ```
 
-##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resetEnabled"></a>
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resetEnabled"></a>
 
 ```go
 func ResetEnabled()
 ```
 
-##### `ResetInterval` <a name="ResetInterval" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.resetInterval"></a>
+##### `ResetInterval` <a name="ResetInterval" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.resetInterval"></a>
 
 ```go
 func ResetInterval()
@@ -2296,21 +2296,21 @@ func ResetInterval()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketInput">BucketInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.intervalInput">IntervalInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.interval">Interval</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketInput">BucketInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefixInput">BucketPrefixInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.intervalInput">IntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.interval">Interval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2324,7 +2324,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2334,7 +2334,7 @@ func Fqn() *string
 
 ---
 
-##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketInput"></a>
+##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketInput"></a>
 
 ```go
 func BucketInput() *string
@@ -2344,7 +2344,7 @@ func BucketInput() *string
 
 ---
 
-##### `BucketPrefixInput`<sup>Optional</sup> <a name="BucketPrefixInput" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefixInput"></a>
+##### `BucketPrefixInput`<sup>Optional</sup> <a name="BucketPrefixInput" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefixInput"></a>
 
 ```go
 func BucketPrefixInput() *string
@@ -2354,7 +2354,7 @@ func BucketPrefixInput() *string
 
 ---
 
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.enabledInput"></a>
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.enabledInput"></a>
 
 ```go
 func EnabledInput() interface{}
@@ -2364,7 +2364,7 @@ func EnabledInput() interface{}
 
 ---
 
-##### `IntervalInput`<sup>Optional</sup> <a name="IntervalInput" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.intervalInput"></a>
+##### `IntervalInput`<sup>Optional</sup> <a name="IntervalInput" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.intervalInput"></a>
 
 ```go
 func IntervalInput() *f64
@@ -2374,7 +2374,7 @@ func IntervalInput() *f64
 
 ---
 
-##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucket"></a>
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucket"></a>
 
 ```go
 func Bucket() *string
@@ -2384,7 +2384,7 @@ func Bucket() *string
 
 ---
 
-##### `BucketPrefix`<sup>Required</sup> <a name="BucketPrefix" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefix"></a>
+##### `BucketPrefix`<sup>Required</sup> <a name="BucketPrefix" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.bucketPrefix"></a>
 
 ```go
 func BucketPrefix() *string
@@ -2394,7 +2394,7 @@ func BucketPrefix() *string
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.enabled"></a>
 
 ```go
 func Enabled() interface{}
@@ -2404,7 +2404,7 @@ func Enabled() interface{}
 
 ---
 
-##### `Interval`<sup>Required</sup> <a name="Interval" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.interval"></a>
+##### `Interval`<sup>Required</sup> <a name="Interval" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.interval"></a>
 
 ```go
 func Interval() *f64
@@ -2414,35 +2414,35 @@ func Interval() *f64
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbAccessLogsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.elb.ElbAccessLogsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() ElbAccessLogs
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbAccessLogs">ElbAccessLogs</a>
 
 ---
 
 
-### ElbHealthCheckOutputReference <a name="ElbHealthCheckOutputReference" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference"></a>
+### ElbHealthCheckOutputReference <a name="ElbHealthCheckOutputReference" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.NewElbHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbHealthCheckOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -2450,7 +2450,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2462,149 +2462,149 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2612,13 +2612,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2633,23 +2633,23 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThresholdInput">HealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.intervalInput">IntervalInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.targetInput">TargetInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThresholdInput">UnhealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.interval">Interval</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.target">Target</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThresholdInput">HealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.intervalInput">IntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.targetInput">TargetInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThresholdInput">UnhealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.interval">Interval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.target">Target</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2663,7 +2663,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2673,7 +2673,7 @@ func Fqn() *string
 
 ---
 
-##### `HealthyThresholdInput`<sup>Optional</sup> <a name="HealthyThresholdInput" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThresholdInput"></a>
+##### `HealthyThresholdInput`<sup>Optional</sup> <a name="HealthyThresholdInput" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThresholdInput"></a>
 
 ```go
 func HealthyThresholdInput() *f64
@@ -2683,7 +2683,7 @@ func HealthyThresholdInput() *f64
 
 ---
 
-##### `IntervalInput`<sup>Optional</sup> <a name="IntervalInput" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.intervalInput"></a>
+##### `IntervalInput`<sup>Optional</sup> <a name="IntervalInput" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.intervalInput"></a>
 
 ```go
 func IntervalInput() *f64
@@ -2693,7 +2693,7 @@ func IntervalInput() *f64
 
 ---
 
-##### `TargetInput`<sup>Optional</sup> <a name="TargetInput" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.targetInput"></a>
+##### `TargetInput`<sup>Optional</sup> <a name="TargetInput" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.targetInput"></a>
 
 ```go
 func TargetInput() *string
@@ -2703,7 +2703,7 @@ func TargetInput() *string
 
 ---
 
-##### `TimeoutInput`<sup>Optional</sup> <a name="TimeoutInput" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.timeoutInput"></a>
+##### `TimeoutInput`<sup>Optional</sup> <a name="TimeoutInput" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.timeoutInput"></a>
 
 ```go
 func TimeoutInput() *f64
@@ -2713,7 +2713,7 @@ func TimeoutInput() *f64
 
 ---
 
-##### `UnhealthyThresholdInput`<sup>Optional</sup> <a name="UnhealthyThresholdInput" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThresholdInput"></a>
+##### `UnhealthyThresholdInput`<sup>Optional</sup> <a name="UnhealthyThresholdInput" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThresholdInput"></a>
 
 ```go
 func UnhealthyThresholdInput() *f64
@@ -2723,7 +2723,7 @@ func UnhealthyThresholdInput() *f64
 
 ---
 
-##### `HealthyThreshold`<sup>Required</sup> <a name="HealthyThreshold" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThreshold"></a>
+##### `HealthyThreshold`<sup>Required</sup> <a name="HealthyThreshold" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.healthyThreshold"></a>
 
 ```go
 func HealthyThreshold() *f64
@@ -2733,7 +2733,7 @@ func HealthyThreshold() *f64
 
 ---
 
-##### `Interval`<sup>Required</sup> <a name="Interval" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.interval"></a>
+##### `Interval`<sup>Required</sup> <a name="Interval" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.interval"></a>
 
 ```go
 func Interval() *f64
@@ -2743,7 +2743,7 @@ func Interval() *f64
 
 ---
 
-##### `Target`<sup>Required</sup> <a name="Target" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.target"></a>
+##### `Target`<sup>Required</sup> <a name="Target" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.target"></a>
 
 ```go
 func Target() *string
@@ -2753,7 +2753,7 @@ func Target() *string
 
 ---
 
-##### `Timeout`<sup>Required</sup> <a name="Timeout" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.timeout"></a>
+##### `Timeout`<sup>Required</sup> <a name="Timeout" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.timeout"></a>
 
 ```go
 func Timeout() *f64
@@ -2763,7 +2763,7 @@ func Timeout() *f64
 
 ---
 
-##### `UnhealthyThreshold`<sup>Required</sup> <a name="UnhealthyThreshold" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThreshold"></a>
+##### `UnhealthyThreshold`<sup>Required</sup> <a name="UnhealthyThreshold" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.unhealthyThreshold"></a>
 
 ```go
 func UnhealthyThreshold() *f64
@@ -2773,36 +2773,36 @@ func UnhealthyThreshold() *f64
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbHealthCheckOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.elb.ElbHealthCheckOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() ElbHealthCheck
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
+- *Type:* <a href="#@cdktn/provider-aws.elb.ElbHealthCheck">ElbHealthCheck</a>
 
 ---
 
 
-### ElbListenerList <a name="ElbListenerList" id="@cdktf/provider-aws.elb.ElbListenerList"></a>
+### ElbListenerList <a name="ElbListenerList" id="@cdktn/provider-aws.elb.ElbListenerList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbListenerList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.elb.ElbListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.NewElbListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElbListenerList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -2810,7 +2810,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2818,7 +2818,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.elb.ElbListenerList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.elb.ElbListenerList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -2830,15 +2830,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-aws.elb.ElbListenerList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.elb.ElbListenerList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -2848,19 +2848,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.elb.ElbListenerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.elb.ElbListenerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.elb.ElbListenerList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.elb.ElbListenerList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.elb.ElbListenerList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.elb.ElbListenerList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2868,13 +2868,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.elb.ElbListenerList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.elb.ElbListenerList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.ElbListenerList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.elb.ElbListenerList.toString"></a>
 
 ```go
 func ToString() *string
@@ -2884,13 +2884,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-aws.elb.ElbListenerList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-aws.elb.ElbListenerList.get"></a>
 
 ```go
 func Get(index *f64) ElbListenerOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.elb.ElbListenerList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.elb.ElbListenerList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -2903,13 +2903,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.elb.ElbListenerList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.elb.ElbListenerList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2923,7 +2923,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.ElbListenerList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.elb.ElbListenerList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2933,7 +2933,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbListenerList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.elb.ElbListenerList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -2944,26 +2944,26 @@ func InternalValue() interface{}
 ---
 
 
-### ElbListenerOutputReference <a name="ElbListenerOutputReference" id="@cdktf/provider-aws.elb.ElbListenerOutputReference"></a>
+### ElbListenerOutputReference <a name="ElbListenerOutputReference" id="@cdktn/provider-aws.elb.ElbListenerOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.NewElbListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElbListenerOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -2971,7 +2971,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2979,7 +2979,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -2987,7 +2987,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -2999,150 +2999,150 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.resetSslCertificateId">ResetSslCertificateId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.resetSslCertificateId">ResetSslCertificateId</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3150,13 +3150,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -3166,7 +3166,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetSslCertificateId` <a name="ResetSslCertificateId" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.resetSslCertificateId"></a>
+##### `ResetSslCertificateId` <a name="ResetSslCertificateId" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.resetSslCertificateId"></a>
 
 ```go
 func ResetSslCertificateId()
@@ -3177,23 +3177,23 @@ func ResetSslCertificateId()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instancePortInput">InstancePortInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocolInput">InstanceProtocolInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbPortInput">LbPortInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbProtocolInput">LbProtocolInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateIdInput">SslCertificateIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instancePort">InstancePort</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocol">InstanceProtocol</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbPort">LbPort</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbProtocol">LbProtocol</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instancePortInput">InstancePortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocolInput">InstanceProtocolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbPortInput">LbPortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbProtocolInput">LbProtocolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateIdInput">SslCertificateIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instancePort">InstancePort</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocol">InstanceProtocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbPort">LbPort</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbProtocol">LbProtocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbListenerOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -3207,7 +3207,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -3217,7 +3217,7 @@ func Fqn() *string
 
 ---
 
-##### `InstancePortInput`<sup>Optional</sup> <a name="InstancePortInput" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instancePortInput"></a>
+##### `InstancePortInput`<sup>Optional</sup> <a name="InstancePortInput" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instancePortInput"></a>
 
 ```go
 func InstancePortInput() *f64
@@ -3227,7 +3227,7 @@ func InstancePortInput() *f64
 
 ---
 
-##### `InstanceProtocolInput`<sup>Optional</sup> <a name="InstanceProtocolInput" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocolInput"></a>
+##### `InstanceProtocolInput`<sup>Optional</sup> <a name="InstanceProtocolInput" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocolInput"></a>
 
 ```go
 func InstanceProtocolInput() *string
@@ -3237,7 +3237,7 @@ func InstanceProtocolInput() *string
 
 ---
 
-##### `LbPortInput`<sup>Optional</sup> <a name="LbPortInput" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbPortInput"></a>
+##### `LbPortInput`<sup>Optional</sup> <a name="LbPortInput" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbPortInput"></a>
 
 ```go
 func LbPortInput() *f64
@@ -3247,7 +3247,7 @@ func LbPortInput() *f64
 
 ---
 
-##### `LbProtocolInput`<sup>Optional</sup> <a name="LbProtocolInput" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbProtocolInput"></a>
+##### `LbProtocolInput`<sup>Optional</sup> <a name="LbProtocolInput" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbProtocolInput"></a>
 
 ```go
 func LbProtocolInput() *string
@@ -3257,7 +3257,7 @@ func LbProtocolInput() *string
 
 ---
 
-##### `SslCertificateIdInput`<sup>Optional</sup> <a name="SslCertificateIdInput" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateIdInput"></a>
+##### `SslCertificateIdInput`<sup>Optional</sup> <a name="SslCertificateIdInput" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateIdInput"></a>
 
 ```go
 func SslCertificateIdInput() *string
@@ -3267,7 +3267,7 @@ func SslCertificateIdInput() *string
 
 ---
 
-##### `InstancePort`<sup>Required</sup> <a name="InstancePort" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instancePort"></a>
+##### `InstancePort`<sup>Required</sup> <a name="InstancePort" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instancePort"></a>
 
 ```go
 func InstancePort() *f64
@@ -3277,7 +3277,7 @@ func InstancePort() *f64
 
 ---
 
-##### `InstanceProtocol`<sup>Required</sup> <a name="InstanceProtocol" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocol"></a>
+##### `InstanceProtocol`<sup>Required</sup> <a name="InstanceProtocol" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.instanceProtocol"></a>
 
 ```go
 func InstanceProtocol() *string
@@ -3287,7 +3287,7 @@ func InstanceProtocol() *string
 
 ---
 
-##### `LbPort`<sup>Required</sup> <a name="LbPort" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbPort"></a>
+##### `LbPort`<sup>Required</sup> <a name="LbPort" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbPort"></a>
 
 ```go
 func LbPort() *f64
@@ -3297,7 +3297,7 @@ func LbPort() *f64
 
 ---
 
-##### `LbProtocol`<sup>Required</sup> <a name="LbProtocol" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.lbProtocol"></a>
+##### `LbProtocol`<sup>Required</sup> <a name="LbProtocol" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.lbProtocol"></a>
 
 ```go
 func LbProtocol() *string
@@ -3307,7 +3307,7 @@ func LbProtocol() *string
 
 ---
 
-##### `SslCertificateId`<sup>Required</sup> <a name="SslCertificateId" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateId"></a>
+##### `SslCertificateId`<sup>Required</sup> <a name="SslCertificateId" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.sslCertificateId"></a>
 
 ```go
 func SslCertificateId() *string
@@ -3317,7 +3317,7 @@ func SslCertificateId() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbListenerOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.elb.ElbListenerOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -3328,24 +3328,24 @@ func InternalValue() interface{}
 ---
 
 
-### ElbTimeoutsOutputReference <a name="ElbTimeoutsOutputReference" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference"></a>
+### ElbTimeoutsOutputReference <a name="ElbTimeoutsOutputReference" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/elb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/elb"
 
 elb.NewElbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElbTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -3353,7 +3353,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -3365,151 +3365,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3517,13 +3517,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -3533,13 +3533,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -3550,17 +3550,17 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -3574,7 +3574,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -3584,7 +3584,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -3594,7 +3594,7 @@ func CreateInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -3604,7 +3604,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -3614,7 +3614,7 @@ func Create() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -3624,7 +3624,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.elb.ElbTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.elb.ElbTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

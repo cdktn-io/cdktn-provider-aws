@@ -1,15 +1,15 @@
-# `dbProxy` Submodule <a name="`dbProxy` Submodule" id="@cdktf/provider-aws.dbProxy"></a>
+# `dbProxy` Submodule <a name="`dbProxy` Submodule" id="@cdktn/provider-aws.dbProxy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DbProxy <a name="DbProxy" id="@cdktf/provider-aws.dbProxy.DbProxy"></a>
+### DbProxy <a name="DbProxy" id="@cdktn/provider-aws.dbProxy.DbProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy aws_db_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy aws_db_proxy}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxy(
   scope: Construct,
@@ -28,12 +28,14 @@ dbProxy.DbProxy(
   auth: IResolvable | typing.List[DbProxyAuth] = None,
   debug_logging: bool | IResolvable = None,
   default_auth_scheme: str = None,
+  endpoint_network_type: str = None,
   id: str = None,
   idle_client_timeout: typing.Union[int, float] = None,
   region: str = None,
   require_tls: bool | IResolvable = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
+  target_connection_network_type: str = None,
   timeouts: DbProxyTimeouts = None,
   vpc_security_group_ids: typing.List[str] = None
 )
@@ -41,34 +43,36 @@ dbProxy.DbProxy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily">engine_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#name DbProxy#name}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSubnetIds">vpc_subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth">auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | auth block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.debugLogging">debug_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.defaultAuthScheme">default_auth_scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#id DbProxy#id}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.idleClientTimeout">idle_client_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.requireTls">require_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags DbProxy#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSecurityGroupIds">vpc_security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily">engine_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#name DbProxy#name}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSubnetIds">vpc_subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth">auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | auth block. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.debugLogging">debug_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.defaultAuthScheme">default_auth_scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.endpointNetworkType">endpoint_network_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#endpoint_network_type DbProxy#endpoint_network_type}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#id DbProxy#id}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.idleClientTimeout">idle_client_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.requireTls">require_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags DbProxy#tags}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.targetConnectionNetworkType">target_connection_network_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#target_connection_network_type DbProxy#target_connection_network_type}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSecurityGroupIds">vpc_security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -76,7 +80,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -86,174 +90,190 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `engine_family`<sup>Required</sup> <a name="engine_family" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily"></a>
+##### `engine_family`<sup>Required</sup> <a name="engine_family" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.engineFamily"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#name DbProxy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#name DbProxy#name}.
 
 ---
 
-##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.roleArn"></a>
+##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.roleArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
 
 ---
 
-##### `vpc_subnet_ids`<sup>Required</sup> <a name="vpc_subnet_ids" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSubnetIds"></a>
+##### `vpc_subnet_ids`<sup>Required</sup> <a name="vpc_subnet_ids" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSubnetIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
 
 ---
 
-##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth"></a>
+##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.auth"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#auth DbProxy#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#auth DbProxy#auth}
 
 ---
 
-##### `debug_logging`<sup>Optional</sup> <a name="debug_logging" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.debugLogging"></a>
+##### `debug_logging`<sup>Optional</sup> <a name="debug_logging" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.debugLogging"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
 
 ---
 
-##### `default_auth_scheme`<sup>Optional</sup> <a name="default_auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.defaultAuthScheme"></a>
+##### `default_auth_scheme`<sup>Optional</sup> <a name="default_auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.defaultAuthScheme"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.id"></a>
+##### `endpoint_network_type`<sup>Optional</sup> <a name="endpoint_network_type" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.endpointNetworkType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#id DbProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#endpoint_network_type DbProxy#endpoint_network_type}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#id DbProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `idle_client_timeout`<sup>Optional</sup> <a name="idle_client_timeout" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.idleClientTimeout"></a>
+##### `idle_client_timeout`<sup>Optional</sup> <a name="idle_client_timeout" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.idleClientTimeout"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#region DbProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#region DbProxy#region}
 
 ---
 
-##### `require_tls`<sup>Optional</sup> <a name="require_tls" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.requireTls"></a>
+##### `require_tls`<sup>Optional</sup> <a name="require_tls" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.requireTls"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags DbProxy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags DbProxy#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.timeouts"></a>
+##### `target_connection_network_type`<sup>Optional</sup> <a name="target_connection_network_type" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.targetConnectionNetworkType"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#target_connection_network_type DbProxy#target_connection_network_type}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
 
 ---
 
-##### `vpc_security_group_ids`<sup>Optional</sup> <a name="vpc_security_group_ids" id="@cdktf/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSecurityGroupIds"></a>
+##### `vpc_security_group_ids`<sup>Optional</sup> <a name="vpc_security_group_ids" id="@cdktn/provider-aws.dbProxy.DbProxy.Initializer.parameter.vpcSecurityGroupIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
 
 ---
 
@@ -261,46 +281,48 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.putAuth">put_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetAuth">reset_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetDebugLogging">reset_debug_logging</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetDefaultAuthScheme">reset_default_auth_scheme</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetIdleClientTimeout">reset_idle_client_timeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetRequireTls">reset_require_tls</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetTagsAll">reset_tags_all</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.resetVpcSecurityGroupIds">reset_vpc_security_group_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.putAuth">put_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetAuth">reset_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetDebugLogging">reset_debug_logging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetDefaultAuthScheme">reset_default_auth_scheme</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetEndpointNetworkType">reset_endpoint_network_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetIdleClientTimeout">reset_idle_client_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetRequireTls">reset_require_tls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetTargetConnectionNetworkType">reset_target_connection_network_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.resetVpcSecurityGroupIds">reset_vpc_security_group_ids</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.dbProxy.DbProxy.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dbProxy.DbProxy.toString"></a>
 
 ```python
 def to_string() -> str
@@ -308,7 +330,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.dbProxy.DbProxy.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.dbProxy.DbProxy.addOverride"></a>
 
 ```python
 def add_override(
@@ -317,19 +339,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.dbProxy.DbProxy.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.dbProxy.DbProxy.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbProxy.DbProxy.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbProxy.DbProxy.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.dbProxy.DbProxy.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.dbProxy.DbProxy.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -339,7 +361,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.dbProxy.DbProxy.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.dbProxy.DbProxy.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -347,7 +369,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.dbProxy.DbProxy.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.dbProxy.DbProxy.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -355,19 +377,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.dbProxy.DbProxy.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.dbProxy.DbProxy.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.dbProxy.DbProxy.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.dbProxy.DbProxy.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.dbProxy.DbProxy.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.dbProxy.DbProxy.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -375,7 +397,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.dbProxy.DbProxy.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.dbProxy.DbProxy.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -385,7 +407,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.dbProxy.DbProxy.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.dbProxy.DbProxy.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -393,7 +415,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -401,13 +423,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -415,13 +437,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -429,13 +451,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -443,13 +465,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -457,13 +479,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -471,13 +493,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -485,13 +507,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -499,13 +521,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -513,19 +535,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.dbProxy.DbProxy.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.dbProxy.DbProxy.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.dbProxy.DbProxy.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.dbProxy.DbProxy.importFrom"></a>
 
 ```python
 def import_from(
@@ -534,19 +556,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxy.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxy.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbProxy.DbProxy.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbProxy.DbProxy.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -554,13 +576,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxy.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxy.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.dbProxy.DbProxy.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.dbProxy.DbProxy.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -572,7 +594,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxy.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxy.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -580,7 +602,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.dbProxy.DbProxy.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.dbProxy.DbProxy.moveTo"></a>
 
 ```python
 def move_to(
@@ -591,7 +613,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.dbProxy.DbProxy.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.dbProxy.DbProxy.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -599,7 +621,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.dbProxy.DbProxy.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.dbProxy.DbProxy.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -607,7 +629,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.dbProxy.DbProxy.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.dbProxy.DbProxy.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -617,7 +639,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxy.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxy.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -625,7 +647,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_auth` <a name="put_auth" id="@cdktf/provider-aws.dbProxy.DbProxy.putAuth"></a>
+##### `put_auth` <a name="put_auth" id="@cdktn/provider-aws.dbProxy.DbProxy.putAuth"></a>
 
 ```python
 def put_auth(
@@ -633,13 +655,13 @@ def put_auth(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.dbProxy.DbProxy.putAuth.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dbProxy.DbProxy.putAuth.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-aws.dbProxy.DbProxy.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.dbProxy.DbProxy.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -649,91 +671,103 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.dbProxy.DbProxy.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.dbProxy.DbProxy.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#create DbProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#create DbProxy#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.dbProxy.DbProxy.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.dbProxy.DbProxy.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#delete DbProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#delete DbProxy#delete}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.dbProxy.DbProxy.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.dbProxy.DbProxy.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#update DbProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#update DbProxy#update}.
 
 ---
 
-##### `reset_auth` <a name="reset_auth" id="@cdktf/provider-aws.dbProxy.DbProxy.resetAuth"></a>
+##### `reset_auth` <a name="reset_auth" id="@cdktn/provider-aws.dbProxy.DbProxy.resetAuth"></a>
 
 ```python
 def reset_auth() -> None
 ```
 
-##### `reset_debug_logging` <a name="reset_debug_logging" id="@cdktf/provider-aws.dbProxy.DbProxy.resetDebugLogging"></a>
+##### `reset_debug_logging` <a name="reset_debug_logging" id="@cdktn/provider-aws.dbProxy.DbProxy.resetDebugLogging"></a>
 
 ```python
 def reset_debug_logging() -> None
 ```
 
-##### `reset_default_auth_scheme` <a name="reset_default_auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxy.resetDefaultAuthScheme"></a>
+##### `reset_default_auth_scheme` <a name="reset_default_auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxy.resetDefaultAuthScheme"></a>
 
 ```python
 def reset_default_auth_scheme() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.dbProxy.DbProxy.resetId"></a>
+##### `reset_endpoint_network_type` <a name="reset_endpoint_network_type" id="@cdktn/provider-aws.dbProxy.DbProxy.resetEndpointNetworkType"></a>
+
+```python
+def reset_endpoint_network_type() -> None
+```
+
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.dbProxy.DbProxy.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_idle_client_timeout` <a name="reset_idle_client_timeout" id="@cdktf/provider-aws.dbProxy.DbProxy.resetIdleClientTimeout"></a>
+##### `reset_idle_client_timeout` <a name="reset_idle_client_timeout" id="@cdktn/provider-aws.dbProxy.DbProxy.resetIdleClientTimeout"></a>
 
 ```python
 def reset_idle_client_timeout() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.dbProxy.DbProxy.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.dbProxy.DbProxy.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_require_tls` <a name="reset_require_tls" id="@cdktf/provider-aws.dbProxy.DbProxy.resetRequireTls"></a>
+##### `reset_require_tls` <a name="reset_require_tls" id="@cdktn/provider-aws.dbProxy.DbProxy.resetRequireTls"></a>
 
 ```python
 def reset_require_tls() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.dbProxy.DbProxy.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.dbProxy.DbProxy.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.dbProxy.DbProxy.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.dbProxy.DbProxy.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.dbProxy.DbProxy.resetTimeouts"></a>
+##### `reset_target_connection_network_type` <a name="reset_target_connection_network_type" id="@cdktn/provider-aws.dbProxy.DbProxy.resetTargetConnectionNetworkType"></a>
+
+```python
+def reset_target_connection_network_type() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.dbProxy.DbProxy.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_vpc_security_group_ids` <a name="reset_vpc_security_group_ids" id="@cdktf/provider-aws.dbProxy.DbProxy.resetVpcSecurityGroupIds"></a>
+##### `reset_vpc_security_group_ids` <a name="reset_vpc_security_group_ids" id="@cdktn/provider-aws.dbProxy.DbProxy.resetVpcSecurityGroupIds"></a>
 
 ```python
 def reset_vpc_security_group_ids() -> None
@@ -743,17 +777,17 @@ def reset_vpc_security_group_ids() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DbProxy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DbProxy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.dbProxy.DbProxy.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.dbProxy.DbProxy.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxy.is_construct(
   x: typing.Any
@@ -776,7 +810,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbProxy.DbProxy.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dbProxy.DbProxy.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -784,42 +818,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.dbProxy.DbProxy.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxy.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dbProxy.DbProxy.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.dbProxy.DbProxy.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxy.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.dbProxy.DbProxy.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.dbProxy.DbProxy.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.dbProxy.DbProxy.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxy.generate_config_for_import(
   scope: Construct,
@@ -831,7 +865,7 @@ dbProxy.DbProxy.generate_config_for_import(
 
 Generates CDKTF code for importing a DbProxy resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -839,7 +873,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -847,17 +881,17 @@ The construct id used in the generated config for the DbProxy to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DbProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbProxy.DbProxy.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -869,56 +903,60 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.auth">auth</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList">DbProxyAuthList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference">DbProxyTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.authInput">auth_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.debugLoggingInput">debug_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthSchemeInput">default_auth_scheme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamilyInput">engine_family_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.idleClientTimeoutInput">idle_client_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.requireTlsInput">require_tls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIdsInput">vpc_security_group_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSubnetIdsInput">vpc_subnet_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.debugLogging">debug_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthScheme">default_auth_scheme</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamily">engine_family</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.idleClientTimeout">idle_client_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.requireTls">require_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIds">vpc_security_group_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSubnetIds">vpc_subnet_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.auth">auth</a></code> | <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList">DbProxyAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference">DbProxyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.authInput">auth_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.debugLoggingInput">debug_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.defaultAuthSchemeInput">default_auth_scheme_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.endpointNetworkTypeInput">endpoint_network_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.engineFamilyInput">engine_family_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.idleClientTimeoutInput">idle_client_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.requireTlsInput">require_tls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.targetConnectionNetworkTypeInput">target_connection_network_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIdsInput">vpc_security_group_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSubnetIdsInput">vpc_subnet_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.debugLogging">debug_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.defaultAuthScheme">default_auth_scheme</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.endpointNetworkType">endpoint_network_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.engineFamily">engine_family</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.idleClientTimeout">idle_client_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.requireTls">require_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.targetConnectionNetworkType">target_connection_network_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIds">vpc_security_group_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSubnetIds">vpc_subnet_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.dbProxy.DbProxy.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.dbProxy.DbProxy.property.node"></a>
 
 ```python
 node: Node
@@ -930,7 +968,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.dbProxy.DbProxy.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.dbProxy.DbProxy.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -940,7 +978,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dbProxy.DbProxy.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dbProxy.DbProxy.property.fqn"></a>
 
 ```python
 fqn: str
@@ -950,7 +988,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.dbProxy.DbProxy.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.dbProxy.DbProxy.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -960,7 +998,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.dbProxy.DbProxy.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.dbProxy.DbProxy.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -970,7 +1008,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.dbProxy.DbProxy.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.dbProxy.DbProxy.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -980,7 +1018,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.dbProxy.DbProxy.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.dbProxy.DbProxy.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -990,7 +1028,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dbProxy.DbProxy.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.dbProxy.DbProxy.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1000,7 +1038,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dbProxy.DbProxy.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.dbProxy.DbProxy.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1010,7 +1048,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.dbProxy.DbProxy.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.dbProxy.DbProxy.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1020,7 +1058,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.dbProxy.DbProxy.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.dbProxy.DbProxy.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1030,7 +1068,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.dbProxy.DbProxy.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.dbProxy.DbProxy.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1040,7 +1078,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbProxy.DbProxy.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbProxy.DbProxy.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1050,7 +1088,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dbProxy.DbProxy.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.dbProxy.DbProxy.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1060,7 +1098,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.dbProxy.DbProxy.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.dbProxy.DbProxy.property.arn"></a>
 
 ```python
 arn: str
@@ -1070,17 +1108,17 @@ arn: str
 
 ---
 
-##### `auth`<sup>Required</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxy.property.auth"></a>
+##### `auth`<sup>Required</sup> <a name="auth" id="@cdktn/provider-aws.dbProxy.DbProxy.property.auth"></a>
 
 ```python
 auth: DbProxyAuthList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList">DbProxyAuthList</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList">DbProxyAuthList</a>
 
 ---
 
-##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktf/provider-aws.dbProxy.DbProxy.property.endpoint"></a>
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-aws.dbProxy.DbProxy.property.endpoint"></a>
 
 ```python
 endpoint: str
@@ -1090,27 +1128,27 @@ endpoint: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.dbProxy.DbProxy.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.dbProxy.DbProxy.property.timeouts"></a>
 
 ```python
 timeouts: DbProxyTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference">DbProxyTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference">DbProxyTimeoutsOutputReference</a>
 
 ---
 
-##### `auth_input`<sup>Optional</sup> <a name="auth_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.authInput"></a>
+##### `auth_input`<sup>Optional</sup> <a name="auth_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.authInput"></a>
 
 ```python
 auth_input: IResolvable | typing.List[DbProxyAuth]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
 
 ---
 
-##### `debug_logging_input`<sup>Optional</sup> <a name="debug_logging_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.debugLoggingInput"></a>
+##### `debug_logging_input`<sup>Optional</sup> <a name="debug_logging_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.debugLoggingInput"></a>
 
 ```python
 debug_logging_input: bool | IResolvable
@@ -1120,7 +1158,7 @@ debug_logging_input: bool | IResolvable
 
 ---
 
-##### `default_auth_scheme_input`<sup>Optional</sup> <a name="default_auth_scheme_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthSchemeInput"></a>
+##### `default_auth_scheme_input`<sup>Optional</sup> <a name="default_auth_scheme_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.defaultAuthSchemeInput"></a>
 
 ```python
 default_auth_scheme_input: str
@@ -1130,7 +1168,17 @@ default_auth_scheme_input: str
 
 ---
 
-##### `engine_family_input`<sup>Optional</sup> <a name="engine_family_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamilyInput"></a>
+##### `endpoint_network_type_input`<sup>Optional</sup> <a name="endpoint_network_type_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.endpointNetworkTypeInput"></a>
+
+```python
+endpoint_network_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `engine_family_input`<sup>Optional</sup> <a name="engine_family_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.engineFamilyInput"></a>
 
 ```python
 engine_family_input: str
@@ -1140,7 +1188,7 @@ engine_family_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1150,7 +1198,7 @@ id_input: str
 
 ---
 
-##### `idle_client_timeout_input`<sup>Optional</sup> <a name="idle_client_timeout_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.idleClientTimeoutInput"></a>
+##### `idle_client_timeout_input`<sup>Optional</sup> <a name="idle_client_timeout_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.idleClientTimeoutInput"></a>
 
 ```python
 idle_client_timeout_input: typing.Union[int, float]
@@ -1160,7 +1208,7 @@ idle_client_timeout_input: typing.Union[int, float]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1170,7 +1218,7 @@ name_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1180,7 +1228,7 @@ region_input: str
 
 ---
 
-##### `require_tls_input`<sup>Optional</sup> <a name="require_tls_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.requireTlsInput"></a>
+##### `require_tls_input`<sup>Optional</sup> <a name="require_tls_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.requireTlsInput"></a>
 
 ```python
 require_tls_input: bool | IResolvable
@@ -1190,7 +1238,7 @@ require_tls_input: bool | IResolvable
 
 ---
 
-##### `role_arn_input`<sup>Optional</sup> <a name="role_arn_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.roleArnInput"></a>
+##### `role_arn_input`<sup>Optional</sup> <a name="role_arn_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.roleArnInput"></a>
 
 ```python
 role_arn_input: str
@@ -1200,7 +1248,7 @@ role_arn_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1210,7 +1258,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1220,17 +1268,27 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.timeoutsInput"></a>
+##### `target_connection_network_type_input`<sup>Optional</sup> <a name="target_connection_network_type_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.targetConnectionNetworkTypeInput"></a>
+
+```python
+target_connection_network_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DbProxyTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
 
 ---
 
-##### `vpc_security_group_ids_input`<sup>Optional</sup> <a name="vpc_security_group_ids_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIdsInput"></a>
+##### `vpc_security_group_ids_input`<sup>Optional</sup> <a name="vpc_security_group_ids_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIdsInput"></a>
 
 ```python
 vpc_security_group_ids_input: typing.List[str]
@@ -1240,7 +1298,7 @@ vpc_security_group_ids_input: typing.List[str]
 
 ---
 
-##### `vpc_subnet_ids_input`<sup>Optional</sup> <a name="vpc_subnet_ids_input" id="@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSubnetIdsInput"></a>
+##### `vpc_subnet_ids_input`<sup>Optional</sup> <a name="vpc_subnet_ids_input" id="@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSubnetIdsInput"></a>
 
 ```python
 vpc_subnet_ids_input: typing.List[str]
@@ -1250,7 +1308,7 @@ vpc_subnet_ids_input: typing.List[str]
 
 ---
 
-##### `debug_logging`<sup>Required</sup> <a name="debug_logging" id="@cdktf/provider-aws.dbProxy.DbProxy.property.debugLogging"></a>
+##### `debug_logging`<sup>Required</sup> <a name="debug_logging" id="@cdktn/provider-aws.dbProxy.DbProxy.property.debugLogging"></a>
 
 ```python
 debug_logging: bool | IResolvable
@@ -1260,7 +1318,7 @@ debug_logging: bool | IResolvable
 
 ---
 
-##### `default_auth_scheme`<sup>Required</sup> <a name="default_auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxy.property.defaultAuthScheme"></a>
+##### `default_auth_scheme`<sup>Required</sup> <a name="default_auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxy.property.defaultAuthScheme"></a>
 
 ```python
 default_auth_scheme: str
@@ -1270,7 +1328,17 @@ default_auth_scheme: str
 
 ---
 
-##### `engine_family`<sup>Required</sup> <a name="engine_family" id="@cdktf/provider-aws.dbProxy.DbProxy.property.engineFamily"></a>
+##### `endpoint_network_type`<sup>Required</sup> <a name="endpoint_network_type" id="@cdktn/provider-aws.dbProxy.DbProxy.property.endpointNetworkType"></a>
+
+```python
+endpoint_network_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `engine_family`<sup>Required</sup> <a name="engine_family" id="@cdktn/provider-aws.dbProxy.DbProxy.property.engineFamily"></a>
 
 ```python
 engine_family: str
@@ -1280,7 +1348,7 @@ engine_family: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxy.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxy.property.id"></a>
 
 ```python
 id: str
@@ -1290,7 +1358,7 @@ id: str
 
 ---
 
-##### `idle_client_timeout`<sup>Required</sup> <a name="idle_client_timeout" id="@cdktf/provider-aws.dbProxy.DbProxy.property.idleClientTimeout"></a>
+##### `idle_client_timeout`<sup>Required</sup> <a name="idle_client_timeout" id="@cdktn/provider-aws.dbProxy.DbProxy.property.idleClientTimeout"></a>
 
 ```python
 idle_client_timeout: typing.Union[int, float]
@@ -1300,7 +1368,7 @@ idle_client_timeout: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.dbProxy.DbProxy.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.dbProxy.DbProxy.property.name"></a>
 
 ```python
 name: str
@@ -1310,7 +1378,7 @@ name: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.dbProxy.DbProxy.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.dbProxy.DbProxy.property.region"></a>
 
 ```python
 region: str
@@ -1320,7 +1388,7 @@ region: str
 
 ---
 
-##### `require_tls`<sup>Required</sup> <a name="require_tls" id="@cdktf/provider-aws.dbProxy.DbProxy.property.requireTls"></a>
+##### `require_tls`<sup>Required</sup> <a name="require_tls" id="@cdktn/provider-aws.dbProxy.DbProxy.property.requireTls"></a>
 
 ```python
 require_tls: bool | IResolvable
@@ -1330,7 +1398,7 @@ require_tls: bool | IResolvable
 
 ---
 
-##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktf/provider-aws.dbProxy.DbProxy.property.roleArn"></a>
+##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktn/provider-aws.dbProxy.DbProxy.property.roleArn"></a>
 
 ```python
 role_arn: str
@@ -1340,7 +1408,7 @@ role_arn: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.dbProxy.DbProxy.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.dbProxy.DbProxy.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1350,7 +1418,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.dbProxy.DbProxy.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.dbProxy.DbProxy.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1360,7 +1428,17 @@ tags_all: typing.Mapping[str]
 
 ---
 
-##### `vpc_security_group_ids`<sup>Required</sup> <a name="vpc_security_group_ids" id="@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIds"></a>
+##### `target_connection_network_type`<sup>Required</sup> <a name="target_connection_network_type" id="@cdktn/provider-aws.dbProxy.DbProxy.property.targetConnectionNetworkType"></a>
+
+```python
+target_connection_network_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `vpc_security_group_ids`<sup>Required</sup> <a name="vpc_security_group_ids" id="@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSecurityGroupIds"></a>
 
 ```python
 vpc_security_group_ids: typing.List[str]
@@ -1370,7 +1448,7 @@ vpc_security_group_ids: typing.List[str]
 
 ---
 
-##### `vpc_subnet_ids`<sup>Required</sup> <a name="vpc_subnet_ids" id="@cdktf/provider-aws.dbProxy.DbProxy.property.vpcSubnetIds"></a>
+##### `vpc_subnet_ids`<sup>Required</sup> <a name="vpc_subnet_ids" id="@cdktn/provider-aws.dbProxy.DbProxy.property.vpcSubnetIds"></a>
 
 ```python
 vpc_subnet_ids: typing.List[str]
@@ -1384,11 +1462,11 @@ vpc_subnet_ids: typing.List[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxy.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxy.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.dbProxy.DbProxy.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.dbProxy.DbProxy.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1400,12 +1478,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DbProxyAuth <a name="DbProxyAuth" id="@cdktf/provider-aws.dbProxy.DbProxyAuth"></a>
+### DbProxyAuth <a name="DbProxyAuth" id="@cdktn/provider-aws.dbProxy.DbProxyAuth"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxyAuth(
   auth_scheme: str = None,
@@ -1421,16 +1499,16 @@ dbProxy.DbProxyAuth(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.authScheme">auth_scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType">client_password_auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#description DbProxy#description}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.iamAuth">iam_auth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.secretArn">secret_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#username DbProxy#username}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth.property.authScheme">auth_scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType">client_password_auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#description DbProxy#description}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth.property.iamAuth">iam_auth</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth.property.secretArn">secret_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#username DbProxy#username}. |
 
 ---
 
-##### `auth_scheme`<sup>Optional</sup> <a name="auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.property.authScheme"></a>
+##### `auth_scheme`<sup>Optional</sup> <a name="auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.property.authScheme"></a>
 
 ```python
 auth_scheme: str
@@ -1438,11 +1516,11 @@ auth_scheme: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#auth_scheme DbProxy#auth_scheme}.
 
 ---
 
-##### `client_password_auth_type`<sup>Optional</sup> <a name="client_password_auth_type" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType"></a>
+##### `client_password_auth_type`<sup>Optional</sup> <a name="client_password_auth_type" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.property.clientPasswordAuthType"></a>
 
 ```python
 client_password_auth_type: str
@@ -1450,11 +1528,11 @@ client_password_auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#client_password_auth_type DbProxy#client_password_auth_type}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.property.description"></a>
 
 ```python
 description: str
@@ -1462,11 +1540,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#description DbProxy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#description DbProxy#description}.
 
 ---
 
-##### `iam_auth`<sup>Optional</sup> <a name="iam_auth" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.property.iamAuth"></a>
+##### `iam_auth`<sup>Optional</sup> <a name="iam_auth" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.property.iamAuth"></a>
 
 ```python
 iam_auth: str
@@ -1474,11 +1552,11 @@ iam_auth: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#iam_auth DbProxy#iam_auth}.
 
 ---
 
-##### `secret_arn`<sup>Optional</sup> <a name="secret_arn" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.property.secretArn"></a>
+##### `secret_arn`<sup>Optional</sup> <a name="secret_arn" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.property.secretArn"></a>
 
 ```python
 secret_arn: str
@@ -1486,11 +1564,11 @@ secret_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#secret_arn DbProxy#secret_arn}.
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-aws.dbProxy.DbProxyAuth.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-aws.dbProxy.DbProxyAuth.property.username"></a>
 
 ```python
 username: str
@@ -1498,16 +1576,16 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#username DbProxy#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#username DbProxy#username}.
 
 ---
 
-### DbProxyConfig <a name="DbProxyConfig" id="@cdktf/provider-aws.dbProxy.DbProxyConfig"></a>
+### DbProxyConfig <a name="DbProxyConfig" id="@cdktn/provider-aws.dbProxy.DbProxyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxyConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1524,12 +1602,14 @@ dbProxy.DbProxyConfig(
   auth: IResolvable | typing.List[DbProxyAuth] = None,
   debug_logging: bool | IResolvable = None,
   default_auth_scheme: str = None,
+  endpoint_network_type: str = None,
   id: str = None,
   idle_client_timeout: typing.Union[int, float] = None,
   region: str = None,
   require_tls: bool | IResolvable = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
+  target_connection_network_type: str = None,
   timeouts: DbProxyTimeouts = None,
   vpc_security_group_ids: typing.List[str] = None
 )
@@ -1539,32 +1619,34 @@ dbProxy.DbProxyConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily">engine_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#name DbProxy#name}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds">vpc_subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.auth">auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | auth block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.debugLogging">debug_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.defaultAuthScheme">default_auth_scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#id DbProxy#id}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout">idle_client_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.requireTls">require_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags DbProxy#tags}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds">vpc_security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.engineFamily">engine_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#name DbProxy#name}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds">vpc_subnet_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.auth">auth</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | auth block. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.debugLogging">debug_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.defaultAuthScheme">default_auth_scheme</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.endpointNetworkType">endpoint_network_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#endpoint_network_type DbProxy#endpoint_network_type}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#id DbProxy#id}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout">idle_client_timeout</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.requireTls">require_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags DbProxy#tags}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.targetConnectionNetworkType">target_connection_network_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#target_connection_network_type DbProxy#target_connection_network_type}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds">vpc_security_group_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1574,7 +1656,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1584,7 +1666,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1594,7 +1676,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1604,7 +1686,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1614,7 +1696,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1624,7 +1706,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1634,7 +1716,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `engine_family`<sup>Required</sup> <a name="engine_family" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.engineFamily"></a>
+##### `engine_family`<sup>Required</sup> <a name="engine_family" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.engineFamily"></a>
 
 ```python
 engine_family: str
@@ -1642,11 +1724,11 @@ engine_family: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#engine_family DbProxy#engine_family}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.name"></a>
 
 ```python
 name: str
@@ -1654,11 +1736,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#name DbProxy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#name DbProxy#name}.
 
 ---
 
-##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.roleArn"></a>
+##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.roleArn"></a>
 
 ```python
 role_arn: str
@@ -1666,11 +1748,11 @@ role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#role_arn DbProxy#role_arn}.
 
 ---
 
-##### `vpc_subnet_ids`<sup>Required</sup> <a name="vpc_subnet_ids" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds"></a>
+##### `vpc_subnet_ids`<sup>Required</sup> <a name="vpc_subnet_ids" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.vpcSubnetIds"></a>
 
 ```python
 vpc_subnet_ids: typing.List[str]
@@ -1678,25 +1760,25 @@ vpc_subnet_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_subnet_ids DbProxy#vpc_subnet_ids}.
 
 ---
 
-##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.auth"></a>
+##### `auth`<sup>Optional</sup> <a name="auth" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.auth"></a>
 
 ```python
 auth: IResolvable | typing.List[DbProxyAuth]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#auth DbProxy#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#auth DbProxy#auth}
 
 ---
 
-##### `debug_logging`<sup>Optional</sup> <a name="debug_logging" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.debugLogging"></a>
+##### `debug_logging`<sup>Optional</sup> <a name="debug_logging" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.debugLogging"></a>
 
 ```python
 debug_logging: bool | IResolvable
@@ -1704,11 +1786,11 @@ debug_logging: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#debug_logging DbProxy#debug_logging}.
 
 ---
 
-##### `default_auth_scheme`<sup>Optional</sup> <a name="default_auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.defaultAuthScheme"></a>
+##### `default_auth_scheme`<sup>Optional</sup> <a name="default_auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.defaultAuthScheme"></a>
 
 ```python
 default_auth_scheme: str
@@ -1716,11 +1798,23 @@ default_auth_scheme: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#default_auth_scheme DbProxy#default_auth_scheme}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.id"></a>
+##### `endpoint_network_type`<sup>Optional</sup> <a name="endpoint_network_type" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.endpointNetworkType"></a>
+
+```python
+endpoint_network_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#endpoint_network_type DbProxy#endpoint_network_type}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.id"></a>
 
 ```python
 id: str
@@ -1728,14 +1822,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#id DbProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#id DbProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `idle_client_timeout`<sup>Optional</sup> <a name="idle_client_timeout" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout"></a>
+##### `idle_client_timeout`<sup>Optional</sup> <a name="idle_client_timeout" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.idleClientTimeout"></a>
 
 ```python
 idle_client_timeout: typing.Union[int, float]
@@ -1743,11 +1837,11 @@ idle_client_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#idle_client_timeout DbProxy#idle_client_timeout}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.region"></a>
 
 ```python
 region: str
@@ -1757,11 +1851,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#region DbProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#region DbProxy#region}
 
 ---
 
-##### `require_tls`<sup>Optional</sup> <a name="require_tls" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.requireTls"></a>
+##### `require_tls`<sup>Optional</sup> <a name="require_tls" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.requireTls"></a>
 
 ```python
 require_tls: bool | IResolvable
@@ -1769,11 +1863,11 @@ require_tls: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#require_tls DbProxy#require_tls}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1781,11 +1875,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags DbProxy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags DbProxy#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1793,25 +1887,37 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#tags_all DbProxy#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.timeouts"></a>
+##### `target_connection_network_type`<sup>Optional</sup> <a name="target_connection_network_type" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.targetConnectionNetworkType"></a>
+
+```python
+target_connection_network_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#target_connection_network_type DbProxy#target_connection_network_type}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.timeouts"></a>
 
 ```python
 timeouts: DbProxyTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#timeouts DbProxy#timeouts}
 
 ---
 
-##### `vpc_security_group_ids`<sup>Optional</sup> <a name="vpc_security_group_ids" id="@cdktf/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds"></a>
+##### `vpc_security_group_ids`<sup>Optional</sup> <a name="vpc_security_group_ids" id="@cdktn/provider-aws.dbProxy.DbProxyConfig.property.vpcSecurityGroupIds"></a>
 
 ```python
 vpc_security_group_ids: typing.List[str]
@@ -1819,16 +1925,16 @@ vpc_security_group_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#vpc_security_group_ids DbProxy#vpc_security_group_ids}.
 
 ---
 
-### DbProxyTimeouts <a name="DbProxyTimeouts" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts"></a>
+### DbProxyTimeouts <a name="DbProxyTimeouts" id="@cdktn/provider-aws.dbProxy.DbProxyTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dbProxy.DbProxyTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxyTimeouts(
   create: str = None,
@@ -1841,13 +1947,13 @@ dbProxy.DbProxyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#create DbProxy#create}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#delete DbProxy#delete}. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#update DbProxy#update}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#create DbProxy#create}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#delete DbProxy#delete}. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#update DbProxy#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.dbProxy.DbProxyTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1855,11 +1961,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#create DbProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#create DbProxy#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.dbProxy.DbProxyTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1867,11 +1973,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#delete DbProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#delete DbProxy#delete}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.dbProxy.DbProxyTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.dbProxy.DbProxyTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1879,18 +1985,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/db_proxy#update DbProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/db_proxy#update DbProxy#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DbProxyAuthList <a name="DbProxyAuthList" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList"></a>
+### DbProxyAuthList <a name="DbProxyAuthList" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxyAuthList(
   terraform_resource: IInterpolatingParent,
@@ -1901,13 +2007,13 @@ dbProxy.DbProxyAuthList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1915,7 +2021,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1923,7 +2029,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1935,15 +2041,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1955,19 +2061,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.resolve"></a>
 
 ```python
 def resolve(
@@ -1977,13 +2083,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1993,7 +2099,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.get"></a>
 
 ```python
 def get(
@@ -2001,7 +2107,7 @@ def get(
 ) -> DbProxyAuthOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2014,13 +2120,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2034,7 +2140,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2044,23 +2150,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dbProxy.DbProxyAuthList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dbProxy.DbProxyAuthList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[DbProxyAuth]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>]
 
 ---
 
 
-### DbProxyAuthOutputReference <a name="DbProxyAuthOutputReference" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference"></a>
+### DbProxyAuthOutputReference <a name="DbProxyAuthOutputReference" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxyAuthOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2072,14 +2178,14 @@ dbProxy.DbProxyAuthOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2087,7 +2193,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2095,7 +2201,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2103,7 +2209,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2115,35 +2221,35 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetAuthScheme">reset_auth_scheme</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetClientPasswordAuthType">reset_client_password_auth_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetIamAuth">reset_iam_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetSecretArn">reset_secret_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetUsername">reset_username</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetAuthScheme">reset_auth_scheme</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetClientPasswordAuthType">reset_client_password_auth_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetIamAuth">reset_iam_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetSecretArn">reset_secret_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetUsername">reset_username</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2151,13 +2257,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2165,13 +2271,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2179,13 +2285,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2193,13 +2299,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2207,13 +2313,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2221,13 +2327,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2235,13 +2341,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2249,13 +2355,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2263,13 +2369,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2277,13 +2383,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2293,13 +2399,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2309,37 +2415,37 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_auth_scheme` <a name="reset_auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetAuthScheme"></a>
+##### `reset_auth_scheme` <a name="reset_auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetAuthScheme"></a>
 
 ```python
 def reset_auth_scheme() -> None
 ```
 
-##### `reset_client_password_auth_type` <a name="reset_client_password_auth_type" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetClientPasswordAuthType"></a>
+##### `reset_client_password_auth_type` <a name="reset_client_password_auth_type" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetClientPasswordAuthType"></a>
 
 ```python
 def reset_client_password_auth_type() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_iam_auth` <a name="reset_iam_auth" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetIamAuth"></a>
+##### `reset_iam_auth` <a name="reset_iam_auth" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetIamAuth"></a>
 
 ```python
 def reset_iam_auth() -> None
 ```
 
-##### `reset_secret_arn` <a name="reset_secret_arn" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetSecretArn"></a>
+##### `reset_secret_arn` <a name="reset_secret_arn" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetSecretArn"></a>
 
 ```python
 def reset_secret_arn() -> None
 ```
 
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.resetUsername"></a>
+##### `reset_username` <a name="reset_username" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.resetUsername"></a>
 
 ```python
 def reset_username() -> None
@@ -2350,25 +2456,25 @@ def reset_username() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authSchemeInput">auth_scheme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthTypeInput">client_password_auth_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuthInput">iam_auth_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArnInput">secret_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authScheme">auth_scheme</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthType">client_password_auth_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuth">iam_auth</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArn">secret_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authSchemeInput">auth_scheme_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthTypeInput">client_password_auth_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuthInput">iam_auth_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArnInput">secret_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authScheme">auth_scheme</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthType">client_password_auth_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuth">iam_auth</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArn">secret_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2382,7 +2488,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2392,7 +2498,7 @@ fqn: str
 
 ---
 
-##### `auth_scheme_input`<sup>Optional</sup> <a name="auth_scheme_input" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authSchemeInput"></a>
+##### `auth_scheme_input`<sup>Optional</sup> <a name="auth_scheme_input" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authSchemeInput"></a>
 
 ```python
 auth_scheme_input: str
@@ -2402,7 +2508,7 @@ auth_scheme_input: str
 
 ---
 
-##### `client_password_auth_type_input`<sup>Optional</sup> <a name="client_password_auth_type_input" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthTypeInput"></a>
+##### `client_password_auth_type_input`<sup>Optional</sup> <a name="client_password_auth_type_input" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthTypeInput"></a>
 
 ```python
 client_password_auth_type_input: str
@@ -2412,7 +2518,7 @@ client_password_auth_type_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -2422,7 +2528,7 @@ description_input: str
 
 ---
 
-##### `iam_auth_input`<sup>Optional</sup> <a name="iam_auth_input" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuthInput"></a>
+##### `iam_auth_input`<sup>Optional</sup> <a name="iam_auth_input" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuthInput"></a>
 
 ```python
 iam_auth_input: str
@@ -2432,7 +2538,7 @@ iam_auth_input: str
 
 ---
 
-##### `secret_arn_input`<sup>Optional</sup> <a name="secret_arn_input" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArnInput"></a>
+##### `secret_arn_input`<sup>Optional</sup> <a name="secret_arn_input" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArnInput"></a>
 
 ```python
 secret_arn_input: str
@@ -2442,7 +2548,7 @@ secret_arn_input: str
 
 ---
 
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.usernameInput"></a>
+##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.usernameInput"></a>
 
 ```python
 username_input: str
@@ -2452,7 +2558,7 @@ username_input: str
 
 ---
 
-##### `auth_scheme`<sup>Required</sup> <a name="auth_scheme" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authScheme"></a>
+##### `auth_scheme`<sup>Required</sup> <a name="auth_scheme" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.authScheme"></a>
 
 ```python
 auth_scheme: str
@@ -2462,7 +2568,7 @@ auth_scheme: str
 
 ---
 
-##### `client_password_auth_type`<sup>Required</sup> <a name="client_password_auth_type" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthType"></a>
+##### `client_password_auth_type`<sup>Required</sup> <a name="client_password_auth_type" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.clientPasswordAuthType"></a>
 
 ```python
 client_password_auth_type: str
@@ -2472,7 +2578,7 @@ client_password_auth_type: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.description"></a>
 
 ```python
 description: str
@@ -2482,7 +2588,7 @@ description: str
 
 ---
 
-##### `iam_auth`<sup>Required</sup> <a name="iam_auth" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuth"></a>
+##### `iam_auth`<sup>Required</sup> <a name="iam_auth" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.iamAuth"></a>
 
 ```python
 iam_auth: str
@@ -2492,7 +2598,7 @@ iam_auth: str
 
 ---
 
-##### `secret_arn`<sup>Required</sup> <a name="secret_arn" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArn"></a>
+##### `secret_arn`<sup>Required</sup> <a name="secret_arn" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.secretArn"></a>
 
 ```python
 secret_arn: str
@@ -2502,7 +2608,7 @@ secret_arn: str
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.username"></a>
 
 ```python
 username: str
@@ -2512,23 +2618,23 @@ username: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DbProxyAuth
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dbProxy.DbProxyAuth">DbProxyAuth</a>
 
 ---
 
 
-### DbProxyTimeoutsOutputReference <a name="DbProxyTimeoutsOutputReference" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference"></a>
+### DbProxyTimeoutsOutputReference <a name="DbProxyTimeoutsOutputReference" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import db_proxy
+from cdktn_provider_aws import db_proxy
 
 dbProxy.DbProxyTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2538,12 +2644,12 @@ dbProxy.DbProxyTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2551,7 +2657,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2563,32 +2669,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2596,13 +2702,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2610,13 +2716,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2624,13 +2730,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2638,13 +2744,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2652,13 +2758,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2666,13 +2772,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2680,13 +2786,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2694,13 +2800,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2708,13 +2814,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2722,13 +2828,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2738,13 +2844,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2754,19 +2860,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2777,19 +2883,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2803,7 +2909,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2813,7 +2919,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2823,7 +2929,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2833,7 +2939,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2843,7 +2949,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2853,7 +2959,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2863,7 +2969,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2873,13 +2979,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DbProxyTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dbProxy.DbProxyTimeouts">DbProxyTimeouts</a>
 
 ---
 

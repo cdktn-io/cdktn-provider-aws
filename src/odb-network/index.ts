@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface OdbNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Availability Zone (AZ) where the odb network is located. Changing this will force terraform to create new resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The AZ ID of the AZ where the ODB network is located. Changing this will force terraform to create new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
   */
   readonly availabilityZoneId: string;
   /**
@@ -36,7 +36,7 @@ export interface OdbNetworkConfig extends cdktf.TerraformMetaArguments {
   * 	   - 224.0.0.0 - 239.255.255.255
   * 	   - 240.0.0.0 - 255.255.255.255
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
   */
   readonly backupSubnetCidr: string;
   /**
@@ -51,65 +51,65 @@ export interface OdbNetworkConfig extends cdktf.TerraformMetaArguments {
   *    	- 224.0.0.0 - 239.255.255.255
   *    	- 240.0.0.0 - 255.255.255.255
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
   */
   readonly clientSubnetCidr: string;
   /**
   * The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
   */
   readonly customDomainName?: string;
   /**
   * The default DNS prefix for the network resource. Changing this will force terraform to create new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
   */
   readonly defaultDnsPrefix?: string;
   /**
   * If set to true deletes associated OCI resources. Default false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
   */
   readonly deleteAssociatedResources?: boolean | cdktf.IResolvable;
   /**
   * The user-friendly name for the odb network. Changing this will force terraform to create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
   */
   readonly displayName: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#region OdbNetwork#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#region OdbNetwork#region}
   */
   readonly region?: string;
   /**
   * Specifies the configuration for Amazon S3 access from the ODB network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
   */
   readonly s3Access: string;
   /**
   * Specifies the endpoint policy for Amazon S3 access from the ODB network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
   */
   readonly s3PolicyDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#tags OdbNetwork#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#tags OdbNetwork#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * Specifies the configuration for Zero-ETL access from the ODB network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
   */
   readonly zeroEtlAccess: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
   */
   readonly timeouts?: OdbNetworkTimeouts;
 }
@@ -636,19 +636,19 @@ export interface OdbNetworkTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#create OdbNetwork#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#create OdbNetwork#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#delete OdbNetwork#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#delete OdbNetwork#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#update OdbNetwork#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#update OdbNetwork#update}
   */
   readonly update?: string;
 }
@@ -800,7 +800,7 @@ export class OdbNetworkTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network aws_odb_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network aws_odb_network}
 */
 export class OdbNetwork extends cdktf.TerraformResource {
 
@@ -816,7 +816,7 @@ export class OdbNetwork extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OdbNetwork resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbNetwork to import
-  * @param importFromId The id of the existing OdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -828,7 +828,7 @@ export class OdbNetwork extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/odb_network aws_odb_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network aws_odb_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -839,7 +839,7 @@ export class OdbNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'aws_odb_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

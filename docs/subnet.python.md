@@ -1,15 +1,15 @@
-# `subnet` Submodule <a name="`subnet` Submodule" id="@cdktf/provider-aws.subnet"></a>
+# `subnet` Submodule <a name="`subnet` Submodule" id="@cdktn/provider-aws.subnet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Subnet <a name="Subnet" id="@cdktf/provider-aws.subnet.Subnet"></a>
+### Subnet <a name="Subnet" id="@cdktn/provider-aws.subnet.Subnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet aws_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet aws_subnet}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.subnet.Subnet.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.subnet.Subnet.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.Subnet(
   scope: Construct,
@@ -47,40 +47,40 @@ subnet.Subnet(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#id Subnet#id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags Subnet#tags}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -88,7 +88,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -98,220 +98,220 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.vpcId"></a>
+##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.vpcId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
 
 ---
 
-##### `assign_ipv6_address_on_creation`<sup>Optional</sup> <a name="assign_ipv6_address_on_creation" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.assignIpv6AddressOnCreation"></a>
+##### `assign_ipv6_address_on_creation`<sup>Optional</sup> <a name="assign_ipv6_address_on_creation" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.assignIpv6AddressOnCreation"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
 
 ---
 
-##### `availability_zone`<sup>Optional</sup> <a name="availability_zone" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZone"></a>
+##### `availability_zone`<sup>Optional</sup> <a name="availability_zone" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZone"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
 
 ---
 
-##### `availability_zone_id`<sup>Optional</sup> <a name="availability_zone_id" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZoneId"></a>
+##### `availability_zone_id`<sup>Optional</sup> <a name="availability_zone_id" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZoneId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
 
 ---
 
-##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.cidrBlock"></a>
+##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.cidrBlock"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
 
 ---
 
-##### `customer_owned_ipv4_pool`<sup>Optional</sup> <a name="customer_owned_ipv4_pool" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.customerOwnedIpv4Pool"></a>
+##### `customer_owned_ipv4_pool`<sup>Optional</sup> <a name="customer_owned_ipv4_pool" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.customerOwnedIpv4Pool"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
 
 ---
 
-##### `enable_dns64`<sup>Optional</sup> <a name="enable_dns64" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableDns64"></a>
+##### `enable_dns64`<sup>Optional</sup> <a name="enable_dns64" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableDns64"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
 
 ---
 
-##### `enable_lni_at_device_index`<sup>Optional</sup> <a name="enable_lni_at_device_index" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableLniAtDeviceIndex"></a>
+##### `enable_lni_at_device_index`<sup>Optional</sup> <a name="enable_lni_at_device_index" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableLniAtDeviceIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
 
 ---
 
-##### `enable_resource_name_dns_aaaa_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsAaaaRecordOnLaunch"></a>
+##### `enable_resource_name_dns_aaaa_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsAaaaRecordOnLaunch"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
 
 ---
 
-##### `enable_resource_name_dns_a_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_a_record_on_launch" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsARecordOnLaunch"></a>
+##### `enable_resource_name_dns_a_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_a_record_on_launch" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsARecordOnLaunch"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `ipv6_cidr_block`<sup>Optional</sup> <a name="ipv6_cidr_block" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.ipv6CidrBlock"></a>
+##### `ipv6_cidr_block`<sup>Optional</sup> <a name="ipv6_cidr_block" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6CidrBlock"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
 
 ---
 
-##### `ipv6_native`<sup>Optional</sup> <a name="ipv6_native" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.ipv6Native"></a>
+##### `ipv6_native`<sup>Optional</sup> <a name="ipv6_native" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6Native"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
 
 ---
 
-##### `map_customer_owned_ip_on_launch`<sup>Optional</sup> <a name="map_customer_owned_ip_on_launch" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.mapCustomerOwnedIpOnLaunch"></a>
+##### `map_customer_owned_ip_on_launch`<sup>Optional</sup> <a name="map_customer_owned_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapCustomerOwnedIpOnLaunch"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
 
 ---
 
-##### `map_public_ip_on_launch`<sup>Optional</sup> <a name="map_public_ip_on_launch" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.mapPublicIpOnLaunch"></a>
+##### `map_public_ip_on_launch`<sup>Optional</sup> <a name="map_public_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapPublicIpOnLaunch"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
 
 ---
 
-##### `outpost_arn`<sup>Optional</sup> <a name="outpost_arn" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.outpostArn"></a>
+##### `outpost_arn`<sup>Optional</sup> <a name="outpost_arn" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.outpostArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
 
 ---
 
-##### `private_dns_hostname_type_on_launch`<sup>Optional</sup> <a name="private_dns_hostname_type_on_launch" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.privateDnsHostnameTypeOnLaunch"></a>
+##### `private_dns_hostname_type_on_launch`<sup>Optional</sup> <a name="private_dns_hostname_type_on_launch" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.privateDnsHostnameTypeOnLaunch"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#region Subnet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#region Subnet#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags Subnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags_all Subnet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.subnet.Subnet.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -319,54 +319,54 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetAssignIpv6AddressOnCreation">reset_assign_ipv6_address_on_creation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetAvailabilityZone">reset_availability_zone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetAvailabilityZoneId">reset_availability_zone_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetCidrBlock">reset_cidr_block</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetCustomerOwnedIpv4Pool">reset_customer_owned_ipv4_pool</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableDns64">reset_enable_dns64</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableLniAtDeviceIndex">reset_enable_lni_at_device_index</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch">reset_enable_resource_name_dns_aaaa_record_on_launch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsARecordOnLaunch">reset_enable_resource_name_dns_a_record_on_launch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetIpv6CidrBlock">reset_ipv6_cidr_block</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetIpv6Native">reset_ipv6_native</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetMapCustomerOwnedIpOnLaunch">reset_map_customer_owned_ip_on_launch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetMapPublicIpOnLaunch">reset_map_public_ip_on_launch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetOutpostArn">reset_outpost_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetPrivateDnsHostnameTypeOnLaunch">reset_private_dns_hostname_type_on_launch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetTagsAll">reset_tags_all</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetAssignIpv6AddressOnCreation">reset_assign_ipv6_address_on_creation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetAvailabilityZone">reset_availability_zone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetAvailabilityZoneId">reset_availability_zone_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetCidrBlock">reset_cidr_block</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetCustomerOwnedIpv4Pool">reset_customer_owned_ipv4_pool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetEnableDns64">reset_enable_dns64</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetEnableLniAtDeviceIndex">reset_enable_lni_at_device_index</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch">reset_enable_resource_name_dns_aaaa_record_on_launch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetEnableResourceNameDnsARecordOnLaunch">reset_enable_resource_name_dns_a_record_on_launch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv6CidrBlock">reset_ipv6_cidr_block</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv6Native">reset_ipv6_native</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetMapCustomerOwnedIpOnLaunch">reset_map_customer_owned_ip_on_launch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetMapPublicIpOnLaunch">reset_map_public_ip_on_launch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetOutpostArn">reset_outpost_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetPrivateDnsHostnameTypeOnLaunch">reset_private_dns_hostname_type_on_launch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.subnet.Subnet.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.subnet.Subnet.toString"></a>
 
 ```python
 def to_string() -> str
@@ -374,7 +374,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.subnet.Subnet.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.subnet.Subnet.addOverride"></a>
 
 ```python
 def add_override(
@@ -383,19 +383,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.subnet.Subnet.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.subnet.Subnet.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.subnet.Subnet.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.subnet.Subnet.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.subnet.Subnet.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.subnet.Subnet.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -405,7 +405,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.subnet.Subnet.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.subnet.Subnet.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -413,7 +413,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.subnet.Subnet.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.subnet.Subnet.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -421,19 +421,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.subnet.Subnet.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.subnet.Subnet.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.subnet.Subnet.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.subnet.Subnet.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.subnet.Subnet.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.subnet.Subnet.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -441,7 +441,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.subnet.Subnet.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.subnet.Subnet.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -451,7 +451,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.subnet.Subnet.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.subnet.Subnet.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -459,7 +459,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.subnet.Subnet.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.subnet.Subnet.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -467,13 +467,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.subnet.Subnet.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.subnet.Subnet.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -481,13 +481,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.subnet.Subnet.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.subnet.Subnet.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -495,13 +495,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.subnet.Subnet.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.subnet.Subnet.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -509,13 +509,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.subnet.Subnet.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.subnet.Subnet.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -523,13 +523,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.subnet.Subnet.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.subnet.Subnet.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -537,13 +537,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.subnet.Subnet.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.subnet.Subnet.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -551,13 +551,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.subnet.Subnet.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.subnet.Subnet.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -565,13 +565,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.subnet.Subnet.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.subnet.Subnet.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -579,19 +579,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.subnet.Subnet.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.subnet.Subnet.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.subnet.Subnet.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.subnet.Subnet.importFrom"></a>
 
 ```python
 def import_from(
@@ -600,19 +600,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.subnet.Subnet.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.subnet.Subnet.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.subnet.Subnet.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.subnet.Subnet.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.subnet.Subnet.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.subnet.Subnet.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -620,13 +620,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.Subnet.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.Subnet.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.subnet.Subnet.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.subnet.Subnet.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -638,7 +638,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.subnet.Subnet.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.subnet.Subnet.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -646,7 +646,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.subnet.Subnet.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.subnet.Subnet.moveTo"></a>
 
 ```python
 def move_to(
@@ -657,7 +657,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.subnet.Subnet.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.subnet.Subnet.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -665,7 +665,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.subnet.Subnet.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.subnet.Subnet.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -673,7 +673,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.subnet.Subnet.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.subnet.Subnet.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -683,7 +683,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.subnet.Subnet.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.subnet.Subnet.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -691,7 +691,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-aws.subnet.Subnet.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.subnet.Subnet.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -700,137 +700,137 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.subnet.Subnet.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.subnet.Subnet.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#create Subnet#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.subnet.Subnet.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.subnet.Subnet.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
-##### `reset_assign_ipv6_address_on_creation` <a name="reset_assign_ipv6_address_on_creation" id="@cdktf/provider-aws.subnet.Subnet.resetAssignIpv6AddressOnCreation"></a>
+##### `reset_assign_ipv6_address_on_creation` <a name="reset_assign_ipv6_address_on_creation" id="@cdktn/provider-aws.subnet.Subnet.resetAssignIpv6AddressOnCreation"></a>
 
 ```python
 def reset_assign_ipv6_address_on_creation() -> None
 ```
 
-##### `reset_availability_zone` <a name="reset_availability_zone" id="@cdktf/provider-aws.subnet.Subnet.resetAvailabilityZone"></a>
+##### `reset_availability_zone` <a name="reset_availability_zone" id="@cdktn/provider-aws.subnet.Subnet.resetAvailabilityZone"></a>
 
 ```python
 def reset_availability_zone() -> None
 ```
 
-##### `reset_availability_zone_id` <a name="reset_availability_zone_id" id="@cdktf/provider-aws.subnet.Subnet.resetAvailabilityZoneId"></a>
+##### `reset_availability_zone_id` <a name="reset_availability_zone_id" id="@cdktn/provider-aws.subnet.Subnet.resetAvailabilityZoneId"></a>
 
 ```python
 def reset_availability_zone_id() -> None
 ```
 
-##### `reset_cidr_block` <a name="reset_cidr_block" id="@cdktf/provider-aws.subnet.Subnet.resetCidrBlock"></a>
+##### `reset_cidr_block` <a name="reset_cidr_block" id="@cdktn/provider-aws.subnet.Subnet.resetCidrBlock"></a>
 
 ```python
 def reset_cidr_block() -> None
 ```
 
-##### `reset_customer_owned_ipv4_pool` <a name="reset_customer_owned_ipv4_pool" id="@cdktf/provider-aws.subnet.Subnet.resetCustomerOwnedIpv4Pool"></a>
+##### `reset_customer_owned_ipv4_pool` <a name="reset_customer_owned_ipv4_pool" id="@cdktn/provider-aws.subnet.Subnet.resetCustomerOwnedIpv4Pool"></a>
 
 ```python
 def reset_customer_owned_ipv4_pool() -> None
 ```
 
-##### `reset_enable_dns64` <a name="reset_enable_dns64" id="@cdktf/provider-aws.subnet.Subnet.resetEnableDns64"></a>
+##### `reset_enable_dns64` <a name="reset_enable_dns64" id="@cdktn/provider-aws.subnet.Subnet.resetEnableDns64"></a>
 
 ```python
 def reset_enable_dns64() -> None
 ```
 
-##### `reset_enable_lni_at_device_index` <a name="reset_enable_lni_at_device_index" id="@cdktf/provider-aws.subnet.Subnet.resetEnableLniAtDeviceIndex"></a>
+##### `reset_enable_lni_at_device_index` <a name="reset_enable_lni_at_device_index" id="@cdktn/provider-aws.subnet.Subnet.resetEnableLniAtDeviceIndex"></a>
 
 ```python
 def reset_enable_lni_at_device_index() -> None
 ```
 
-##### `reset_enable_resource_name_dns_aaaa_record_on_launch` <a name="reset_enable_resource_name_dns_aaaa_record_on_launch" id="@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch"></a>
+##### `reset_enable_resource_name_dns_aaaa_record_on_launch` <a name="reset_enable_resource_name_dns_aaaa_record_on_launch" id="@cdktn/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch"></a>
 
 ```python
 def reset_enable_resource_name_dns_aaaa_record_on_launch() -> None
 ```
 
-##### `reset_enable_resource_name_dns_a_record_on_launch` <a name="reset_enable_resource_name_dns_a_record_on_launch" id="@cdktf/provider-aws.subnet.Subnet.resetEnableResourceNameDnsARecordOnLaunch"></a>
+##### `reset_enable_resource_name_dns_a_record_on_launch` <a name="reset_enable_resource_name_dns_a_record_on_launch" id="@cdktn/provider-aws.subnet.Subnet.resetEnableResourceNameDnsARecordOnLaunch"></a>
 
 ```python
 def reset_enable_resource_name_dns_a_record_on_launch() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.subnet.Subnet.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.subnet.Subnet.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_ipv6_cidr_block` <a name="reset_ipv6_cidr_block" id="@cdktf/provider-aws.subnet.Subnet.resetIpv6CidrBlock"></a>
+##### `reset_ipv6_cidr_block` <a name="reset_ipv6_cidr_block" id="@cdktn/provider-aws.subnet.Subnet.resetIpv6CidrBlock"></a>
 
 ```python
 def reset_ipv6_cidr_block() -> None
 ```
 
-##### `reset_ipv6_native` <a name="reset_ipv6_native" id="@cdktf/provider-aws.subnet.Subnet.resetIpv6Native"></a>
+##### `reset_ipv6_native` <a name="reset_ipv6_native" id="@cdktn/provider-aws.subnet.Subnet.resetIpv6Native"></a>
 
 ```python
 def reset_ipv6_native() -> None
 ```
 
-##### `reset_map_customer_owned_ip_on_launch` <a name="reset_map_customer_owned_ip_on_launch" id="@cdktf/provider-aws.subnet.Subnet.resetMapCustomerOwnedIpOnLaunch"></a>
+##### `reset_map_customer_owned_ip_on_launch` <a name="reset_map_customer_owned_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.resetMapCustomerOwnedIpOnLaunch"></a>
 
 ```python
 def reset_map_customer_owned_ip_on_launch() -> None
 ```
 
-##### `reset_map_public_ip_on_launch` <a name="reset_map_public_ip_on_launch" id="@cdktf/provider-aws.subnet.Subnet.resetMapPublicIpOnLaunch"></a>
+##### `reset_map_public_ip_on_launch` <a name="reset_map_public_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.resetMapPublicIpOnLaunch"></a>
 
 ```python
 def reset_map_public_ip_on_launch() -> None
 ```
 
-##### `reset_outpost_arn` <a name="reset_outpost_arn" id="@cdktf/provider-aws.subnet.Subnet.resetOutpostArn"></a>
+##### `reset_outpost_arn` <a name="reset_outpost_arn" id="@cdktn/provider-aws.subnet.Subnet.resetOutpostArn"></a>
 
 ```python
 def reset_outpost_arn() -> None
 ```
 
-##### `reset_private_dns_hostname_type_on_launch` <a name="reset_private_dns_hostname_type_on_launch" id="@cdktf/provider-aws.subnet.Subnet.resetPrivateDnsHostnameTypeOnLaunch"></a>
+##### `reset_private_dns_hostname_type_on_launch` <a name="reset_private_dns_hostname_type_on_launch" id="@cdktn/provider-aws.subnet.Subnet.resetPrivateDnsHostnameTypeOnLaunch"></a>
 
 ```python
 def reset_private_dns_hostname_type_on_launch() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.subnet.Subnet.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.subnet.Subnet.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.subnet.Subnet.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.subnet.Subnet.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.subnet.Subnet.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.subnet.Subnet.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.subnet.Subnet.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.subnet.Subnet.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -840,17 +840,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Subnet resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Subnet resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.subnet.Subnet.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.subnet.Subnet.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.Subnet.is_construct(
   x: typing.Any
@@ -873,7 +873,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.subnet.Subnet.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.subnet.Subnet.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -881,42 +881,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.subnet.Subnet.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.subnet.Subnet.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.Subnet.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.subnet.Subnet.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.subnet.Subnet.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.subnet.Subnet.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.subnet.Subnet.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.Subnet.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.subnet.Subnet.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.subnet.Subnet.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.subnet.Subnet.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.subnet.Subnet.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.Subnet.generate_config_for_import(
   scope: Construct,
@@ -928,7 +928,7 @@ subnet.Subnet.generate_config_for_import(
 
 Generates CDKTF code for importing a Subnet resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.subnet.Subnet.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.subnet.Subnet.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -936,7 +936,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.subnet.Subnet.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.subnet.Subnet.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -944,17 +944,17 @@ The construct id used in the generated config for the Subnet to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.subnet.Subnet.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.subnet.Subnet.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Subnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.subnet.Subnet.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.subnet.Subnet.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -966,69 +966,69 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.ipv6CidrBlockAssociationId">ipv6_cidr_block_association_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference">SubnetTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreationInput">assign_ipv6_address_on_creation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.availabilityZoneIdInput">availability_zone_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.availabilityZoneInput">availability_zone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.cidrBlockInput">cidr_block_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.customerOwnedIpv4PoolInput">customer_owned_ipv4_pool_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableDns64Input">enable_dns64_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndexInput">enable_lni_at_device_index_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput">enable_resource_name_dns_aaaa_record_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunchInput">enable_resource_name_dns_a_record_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.ipv6CidrBlockInput">ipv6_cidr_block_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.ipv6NativeInput">ipv6_native_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunchInput">map_customer_owned_ip_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunchInput">map_public_ip_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.outpostArnInput">outpost_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunchInput">private_dns_hostname_type_on_launch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.cidrBlock">cidr_block</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.outpostArn">outpost_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.vpcId">vpc_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlockAssociationId">ipv6_cidr_block_association_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference">SubnetTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreationInput">assign_ipv6_address_on_creation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.availabilityZoneIdInput">availability_zone_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.availabilityZoneInput">availability_zone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.cidrBlockInput">cidr_block_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.customerOwnedIpv4PoolInput">customer_owned_ipv4_pool_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableDns64Input">enable_dns64_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndexInput">enable_lni_at_device_index_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput">enable_resource_name_dns_aaaa_record_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunchInput">enable_resource_name_dns_a_record_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlockInput">ipv6_cidr_block_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6NativeInput">ipv6_native_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunchInput">map_customer_owned_ip_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunchInput">map_public_ip_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.outpostArnInput">outpost_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunchInput">private_dns_hostname_type_on_launch_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.vpcIdInput">vpc_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.cidrBlock">cidr_block</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.outpostArn">outpost_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.vpcId">vpc_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.subnet.Subnet.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.subnet.Subnet.property.node"></a>
 
 ```python
 node: Node
@@ -1040,7 +1040,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.subnet.Subnet.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.subnet.Subnet.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1050,7 +1050,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.subnet.Subnet.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.subnet.Subnet.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1060,7 +1060,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.subnet.Subnet.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.subnet.Subnet.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1070,7 +1070,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.subnet.Subnet.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.subnet.Subnet.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1080,7 +1080,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.subnet.Subnet.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.subnet.Subnet.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1090,7 +1090,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.subnet.Subnet.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.subnet.Subnet.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1100,7 +1100,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.subnet.Subnet.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.subnet.Subnet.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1110,7 +1110,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.subnet.Subnet.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.subnet.Subnet.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1120,7 +1120,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.subnet.Subnet.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.subnet.Subnet.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1130,7 +1130,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.subnet.Subnet.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.subnet.Subnet.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1140,7 +1140,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.subnet.Subnet.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.subnet.Subnet.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1150,7 +1150,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.subnet.Subnet.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.subnet.Subnet.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1160,7 +1160,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.subnet.Subnet.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.subnet.Subnet.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1170,7 +1170,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.subnet.Subnet.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.subnet.Subnet.property.arn"></a>
 
 ```python
 arn: str
@@ -1180,7 +1180,7 @@ arn: str
 
 ---
 
-##### `ipv6_cidr_block_association_id`<sup>Required</sup> <a name="ipv6_cidr_block_association_id" id="@cdktf/provider-aws.subnet.Subnet.property.ipv6CidrBlockAssociationId"></a>
+##### `ipv6_cidr_block_association_id`<sup>Required</sup> <a name="ipv6_cidr_block_association_id" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlockAssociationId"></a>
 
 ```python
 ipv6_cidr_block_association_id: str
@@ -1190,7 +1190,7 @@ ipv6_cidr_block_association_id: str
 
 ---
 
-##### `owner_id`<sup>Required</sup> <a name="owner_id" id="@cdktf/provider-aws.subnet.Subnet.property.ownerId"></a>
+##### `owner_id`<sup>Required</sup> <a name="owner_id" id="@cdktn/provider-aws.subnet.Subnet.property.ownerId"></a>
 
 ```python
 owner_id: str
@@ -1200,17 +1200,17 @@ owner_id: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.subnet.Subnet.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.subnet.Subnet.property.timeouts"></a>
 
 ```python
 timeouts: SubnetTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference">SubnetTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference">SubnetTimeoutsOutputReference</a>
 
 ---
 
-##### `assign_ipv6_address_on_creation_input`<sup>Optional</sup> <a name="assign_ipv6_address_on_creation_input" id="@cdktf/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreationInput"></a>
+##### `assign_ipv6_address_on_creation_input`<sup>Optional</sup> <a name="assign_ipv6_address_on_creation_input" id="@cdktn/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreationInput"></a>
 
 ```python
 assign_ipv6_address_on_creation_input: bool | IResolvable
@@ -1220,7 +1220,7 @@ assign_ipv6_address_on_creation_input: bool | IResolvable
 
 ---
 
-##### `availability_zone_id_input`<sup>Optional</sup> <a name="availability_zone_id_input" id="@cdktf/provider-aws.subnet.Subnet.property.availabilityZoneIdInput"></a>
+##### `availability_zone_id_input`<sup>Optional</sup> <a name="availability_zone_id_input" id="@cdktn/provider-aws.subnet.Subnet.property.availabilityZoneIdInput"></a>
 
 ```python
 availability_zone_id_input: str
@@ -1230,7 +1230,7 @@ availability_zone_id_input: str
 
 ---
 
-##### `availability_zone_input`<sup>Optional</sup> <a name="availability_zone_input" id="@cdktf/provider-aws.subnet.Subnet.property.availabilityZoneInput"></a>
+##### `availability_zone_input`<sup>Optional</sup> <a name="availability_zone_input" id="@cdktn/provider-aws.subnet.Subnet.property.availabilityZoneInput"></a>
 
 ```python
 availability_zone_input: str
@@ -1240,7 +1240,7 @@ availability_zone_input: str
 
 ---
 
-##### `cidr_block_input`<sup>Optional</sup> <a name="cidr_block_input" id="@cdktf/provider-aws.subnet.Subnet.property.cidrBlockInput"></a>
+##### `cidr_block_input`<sup>Optional</sup> <a name="cidr_block_input" id="@cdktn/provider-aws.subnet.Subnet.property.cidrBlockInput"></a>
 
 ```python
 cidr_block_input: str
@@ -1250,7 +1250,7 @@ cidr_block_input: str
 
 ---
 
-##### `customer_owned_ipv4_pool_input`<sup>Optional</sup> <a name="customer_owned_ipv4_pool_input" id="@cdktf/provider-aws.subnet.Subnet.property.customerOwnedIpv4PoolInput"></a>
+##### `customer_owned_ipv4_pool_input`<sup>Optional</sup> <a name="customer_owned_ipv4_pool_input" id="@cdktn/provider-aws.subnet.Subnet.property.customerOwnedIpv4PoolInput"></a>
 
 ```python
 customer_owned_ipv4_pool_input: str
@@ -1260,7 +1260,7 @@ customer_owned_ipv4_pool_input: str
 
 ---
 
-##### `enable_dns64_input`<sup>Optional</sup> <a name="enable_dns64_input" id="@cdktf/provider-aws.subnet.Subnet.property.enableDns64Input"></a>
+##### `enable_dns64_input`<sup>Optional</sup> <a name="enable_dns64_input" id="@cdktn/provider-aws.subnet.Subnet.property.enableDns64Input"></a>
 
 ```python
 enable_dns64_input: bool | IResolvable
@@ -1270,7 +1270,7 @@ enable_dns64_input: bool | IResolvable
 
 ---
 
-##### `enable_lni_at_device_index_input`<sup>Optional</sup> <a name="enable_lni_at_device_index_input" id="@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndexInput"></a>
+##### `enable_lni_at_device_index_input`<sup>Optional</sup> <a name="enable_lni_at_device_index_input" id="@cdktn/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndexInput"></a>
 
 ```python
 enable_lni_at_device_index_input: typing.Union[int, float]
@@ -1280,7 +1280,7 @@ enable_lni_at_device_index_input: typing.Union[int, float]
 
 ---
 
-##### `enable_resource_name_dns_aaaa_record_on_launch_input`<sup>Optional</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch_input" id="@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput"></a>
+##### `enable_resource_name_dns_aaaa_record_on_launch_input`<sup>Optional</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch_input" id="@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput"></a>
 
 ```python
 enable_resource_name_dns_aaaa_record_on_launch_input: bool | IResolvable
@@ -1290,7 +1290,7 @@ enable_resource_name_dns_aaaa_record_on_launch_input: bool | IResolvable
 
 ---
 
-##### `enable_resource_name_dns_a_record_on_launch_input`<sup>Optional</sup> <a name="enable_resource_name_dns_a_record_on_launch_input" id="@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunchInput"></a>
+##### `enable_resource_name_dns_a_record_on_launch_input`<sup>Optional</sup> <a name="enable_resource_name_dns_a_record_on_launch_input" id="@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunchInput"></a>
 
 ```python
 enable_resource_name_dns_a_record_on_launch_input: bool | IResolvable
@@ -1300,7 +1300,7 @@ enable_resource_name_dns_a_record_on_launch_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.subnet.Subnet.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.subnet.Subnet.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1310,7 +1310,7 @@ id_input: str
 
 ---
 
-##### `ipv6_cidr_block_input`<sup>Optional</sup> <a name="ipv6_cidr_block_input" id="@cdktf/provider-aws.subnet.Subnet.property.ipv6CidrBlockInput"></a>
+##### `ipv6_cidr_block_input`<sup>Optional</sup> <a name="ipv6_cidr_block_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlockInput"></a>
 
 ```python
 ipv6_cidr_block_input: str
@@ -1320,7 +1320,7 @@ ipv6_cidr_block_input: str
 
 ---
 
-##### `ipv6_native_input`<sup>Optional</sup> <a name="ipv6_native_input" id="@cdktf/provider-aws.subnet.Subnet.property.ipv6NativeInput"></a>
+##### `ipv6_native_input`<sup>Optional</sup> <a name="ipv6_native_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6NativeInput"></a>
 
 ```python
 ipv6_native_input: bool | IResolvable
@@ -1330,7 +1330,7 @@ ipv6_native_input: bool | IResolvable
 
 ---
 
-##### `map_customer_owned_ip_on_launch_input`<sup>Optional</sup> <a name="map_customer_owned_ip_on_launch_input" id="@cdktf/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunchInput"></a>
+##### `map_customer_owned_ip_on_launch_input`<sup>Optional</sup> <a name="map_customer_owned_ip_on_launch_input" id="@cdktn/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunchInput"></a>
 
 ```python
 map_customer_owned_ip_on_launch_input: bool | IResolvable
@@ -1340,7 +1340,7 @@ map_customer_owned_ip_on_launch_input: bool | IResolvable
 
 ---
 
-##### `map_public_ip_on_launch_input`<sup>Optional</sup> <a name="map_public_ip_on_launch_input" id="@cdktf/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunchInput"></a>
+##### `map_public_ip_on_launch_input`<sup>Optional</sup> <a name="map_public_ip_on_launch_input" id="@cdktn/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunchInput"></a>
 
 ```python
 map_public_ip_on_launch_input: bool | IResolvable
@@ -1350,7 +1350,7 @@ map_public_ip_on_launch_input: bool | IResolvable
 
 ---
 
-##### `outpost_arn_input`<sup>Optional</sup> <a name="outpost_arn_input" id="@cdktf/provider-aws.subnet.Subnet.property.outpostArnInput"></a>
+##### `outpost_arn_input`<sup>Optional</sup> <a name="outpost_arn_input" id="@cdktn/provider-aws.subnet.Subnet.property.outpostArnInput"></a>
 
 ```python
 outpost_arn_input: str
@@ -1360,7 +1360,7 @@ outpost_arn_input: str
 
 ---
 
-##### `private_dns_hostname_type_on_launch_input`<sup>Optional</sup> <a name="private_dns_hostname_type_on_launch_input" id="@cdktf/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunchInput"></a>
+##### `private_dns_hostname_type_on_launch_input`<sup>Optional</sup> <a name="private_dns_hostname_type_on_launch_input" id="@cdktn/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunchInput"></a>
 
 ```python
 private_dns_hostname_type_on_launch_input: str
@@ -1370,7 +1370,7 @@ private_dns_hostname_type_on_launch_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.subnet.Subnet.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.subnet.Subnet.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1380,7 +1380,7 @@ region_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.subnet.Subnet.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.subnet.Subnet.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1390,7 +1390,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.subnet.Subnet.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.subnet.Subnet.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1400,17 +1400,17 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.subnet.Subnet.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.subnet.Subnet.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | SubnetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
 
 ---
 
-##### `vpc_id_input`<sup>Optional</sup> <a name="vpc_id_input" id="@cdktf/provider-aws.subnet.Subnet.property.vpcIdInput"></a>
+##### `vpc_id_input`<sup>Optional</sup> <a name="vpc_id_input" id="@cdktn/provider-aws.subnet.Subnet.property.vpcIdInput"></a>
 
 ```python
 vpc_id_input: str
@@ -1420,7 +1420,7 @@ vpc_id_input: str
 
 ---
 
-##### `assign_ipv6_address_on_creation`<sup>Required</sup> <a name="assign_ipv6_address_on_creation" id="@cdktf/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreation"></a>
+##### `assign_ipv6_address_on_creation`<sup>Required</sup> <a name="assign_ipv6_address_on_creation" id="@cdktn/provider-aws.subnet.Subnet.property.assignIpv6AddressOnCreation"></a>
 
 ```python
 assign_ipv6_address_on_creation: bool | IResolvable
@@ -1430,7 +1430,7 @@ assign_ipv6_address_on_creation: bool | IResolvable
 
 ---
 
-##### `availability_zone`<sup>Required</sup> <a name="availability_zone" id="@cdktf/provider-aws.subnet.Subnet.property.availabilityZone"></a>
+##### `availability_zone`<sup>Required</sup> <a name="availability_zone" id="@cdktn/provider-aws.subnet.Subnet.property.availabilityZone"></a>
 
 ```python
 availability_zone: str
@@ -1440,7 +1440,7 @@ availability_zone: str
 
 ---
 
-##### `availability_zone_id`<sup>Required</sup> <a name="availability_zone_id" id="@cdktf/provider-aws.subnet.Subnet.property.availabilityZoneId"></a>
+##### `availability_zone_id`<sup>Required</sup> <a name="availability_zone_id" id="@cdktn/provider-aws.subnet.Subnet.property.availabilityZoneId"></a>
 
 ```python
 availability_zone_id: str
@@ -1450,7 +1450,7 @@ availability_zone_id: str
 
 ---
 
-##### `cidr_block`<sup>Required</sup> <a name="cidr_block" id="@cdktf/provider-aws.subnet.Subnet.property.cidrBlock"></a>
+##### `cidr_block`<sup>Required</sup> <a name="cidr_block" id="@cdktn/provider-aws.subnet.Subnet.property.cidrBlock"></a>
 
 ```python
 cidr_block: str
@@ -1460,7 +1460,7 @@ cidr_block: str
 
 ---
 
-##### `customer_owned_ipv4_pool`<sup>Required</sup> <a name="customer_owned_ipv4_pool" id="@cdktf/provider-aws.subnet.Subnet.property.customerOwnedIpv4Pool"></a>
+##### `customer_owned_ipv4_pool`<sup>Required</sup> <a name="customer_owned_ipv4_pool" id="@cdktn/provider-aws.subnet.Subnet.property.customerOwnedIpv4Pool"></a>
 
 ```python
 customer_owned_ipv4_pool: str
@@ -1470,7 +1470,7 @@ customer_owned_ipv4_pool: str
 
 ---
 
-##### `enable_dns64`<sup>Required</sup> <a name="enable_dns64" id="@cdktf/provider-aws.subnet.Subnet.property.enableDns64"></a>
+##### `enable_dns64`<sup>Required</sup> <a name="enable_dns64" id="@cdktn/provider-aws.subnet.Subnet.property.enableDns64"></a>
 
 ```python
 enable_dns64: bool | IResolvable
@@ -1480,7 +1480,7 @@ enable_dns64: bool | IResolvable
 
 ---
 
-##### `enable_lni_at_device_index`<sup>Required</sup> <a name="enable_lni_at_device_index" id="@cdktf/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndex"></a>
+##### `enable_lni_at_device_index`<sup>Required</sup> <a name="enable_lni_at_device_index" id="@cdktn/provider-aws.subnet.Subnet.property.enableLniAtDeviceIndex"></a>
 
 ```python
 enable_lni_at_device_index: typing.Union[int, float]
@@ -1490,7 +1490,7 @@ enable_lni_at_device_index: typing.Union[int, float]
 
 ---
 
-##### `enable_resource_name_dns_aaaa_record_on_launch`<sup>Required</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch" id="@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch"></a>
+##### `enable_resource_name_dns_aaaa_record_on_launch`<sup>Required</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch" id="@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch"></a>
 
 ```python
 enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable
@@ -1500,7 +1500,7 @@ enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable
 
 ---
 
-##### `enable_resource_name_dns_a_record_on_launch`<sup>Required</sup> <a name="enable_resource_name_dns_a_record_on_launch" id="@cdktf/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunch"></a>
+##### `enable_resource_name_dns_a_record_on_launch`<sup>Required</sup> <a name="enable_resource_name_dns_a_record_on_launch" id="@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunch"></a>
 
 ```python
 enable_resource_name_dns_a_record_on_launch: bool | IResolvable
@@ -1510,7 +1510,7 @@ enable_resource_name_dns_a_record_on_launch: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.subnet.Subnet.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.subnet.Subnet.property.id"></a>
 
 ```python
 id: str
@@ -1520,7 +1520,7 @@ id: str
 
 ---
 
-##### `ipv6_cidr_block`<sup>Required</sup> <a name="ipv6_cidr_block" id="@cdktf/provider-aws.subnet.Subnet.property.ipv6CidrBlock"></a>
+##### `ipv6_cidr_block`<sup>Required</sup> <a name="ipv6_cidr_block" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlock"></a>
 
 ```python
 ipv6_cidr_block: str
@@ -1530,7 +1530,7 @@ ipv6_cidr_block: str
 
 ---
 
-##### `ipv6_native`<sup>Required</sup> <a name="ipv6_native" id="@cdktf/provider-aws.subnet.Subnet.property.ipv6Native"></a>
+##### `ipv6_native`<sup>Required</sup> <a name="ipv6_native" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6Native"></a>
 
 ```python
 ipv6_native: bool | IResolvable
@@ -1540,7 +1540,7 @@ ipv6_native: bool | IResolvable
 
 ---
 
-##### `map_customer_owned_ip_on_launch`<sup>Required</sup> <a name="map_customer_owned_ip_on_launch" id="@cdktf/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunch"></a>
+##### `map_customer_owned_ip_on_launch`<sup>Required</sup> <a name="map_customer_owned_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunch"></a>
 
 ```python
 map_customer_owned_ip_on_launch: bool | IResolvable
@@ -1550,7 +1550,7 @@ map_customer_owned_ip_on_launch: bool | IResolvable
 
 ---
 
-##### `map_public_ip_on_launch`<sup>Required</sup> <a name="map_public_ip_on_launch" id="@cdktf/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunch"></a>
+##### `map_public_ip_on_launch`<sup>Required</sup> <a name="map_public_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunch"></a>
 
 ```python
 map_public_ip_on_launch: bool | IResolvable
@@ -1560,7 +1560,7 @@ map_public_ip_on_launch: bool | IResolvable
 
 ---
 
-##### `outpost_arn`<sup>Required</sup> <a name="outpost_arn" id="@cdktf/provider-aws.subnet.Subnet.property.outpostArn"></a>
+##### `outpost_arn`<sup>Required</sup> <a name="outpost_arn" id="@cdktn/provider-aws.subnet.Subnet.property.outpostArn"></a>
 
 ```python
 outpost_arn: str
@@ -1570,7 +1570,7 @@ outpost_arn: str
 
 ---
 
-##### `private_dns_hostname_type_on_launch`<sup>Required</sup> <a name="private_dns_hostname_type_on_launch" id="@cdktf/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunch"></a>
+##### `private_dns_hostname_type_on_launch`<sup>Required</sup> <a name="private_dns_hostname_type_on_launch" id="@cdktn/provider-aws.subnet.Subnet.property.privateDnsHostnameTypeOnLaunch"></a>
 
 ```python
 private_dns_hostname_type_on_launch: str
@@ -1580,7 +1580,7 @@ private_dns_hostname_type_on_launch: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.subnet.Subnet.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.subnet.Subnet.property.region"></a>
 
 ```python
 region: str
@@ -1590,7 +1590,7 @@ region: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.subnet.Subnet.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.subnet.Subnet.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1600,7 +1600,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.subnet.Subnet.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.subnet.Subnet.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1610,7 +1610,7 @@ tags_all: typing.Mapping[str]
 
 ---
 
-##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktf/provider-aws.subnet.Subnet.property.vpcId"></a>
+##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktn/provider-aws.subnet.Subnet.property.vpcId"></a>
 
 ```python
 vpc_id: str
@@ -1624,11 +1624,11 @@ vpc_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.Subnet.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.subnet.Subnet.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.subnet.Subnet.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1640,12 +1640,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SubnetConfig <a name="SubnetConfig" id="@cdktf/provider-aws.subnet.SubnetConfig"></a>
+### SubnetConfig <a name="SubnetConfig" id="@cdktn/provider-aws.subnet.SubnetConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.subnet.SubnetConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.subnet.SubnetConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.SubnetConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1683,38 +1683,38 @@ subnet.SubnetConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#id Subnet#id}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags Subnet#tags}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.subnet.SubnetConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.subnet.SubnetConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1724,7 +1724,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.subnet.SubnetConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.subnet.SubnetConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1734,7 +1734,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.subnet.SubnetConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.subnet.SubnetConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1744,7 +1744,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.subnet.SubnetConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.subnet.SubnetConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1754,7 +1754,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.subnet.SubnetConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.subnet.SubnetConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1764,7 +1764,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.subnet.SubnetConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.subnet.SubnetConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1774,7 +1774,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.subnet.SubnetConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.subnet.SubnetConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1784,7 +1784,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktf/provider-aws.subnet.SubnetConfig.property.vpcId"></a>
+##### `vpc_id`<sup>Required</sup> <a name="vpc_id" id="@cdktn/provider-aws.subnet.SubnetConfig.property.vpcId"></a>
 
 ```python
 vpc_id: str
@@ -1792,11 +1792,11 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
 
 ---
 
-##### `assign_ipv6_address_on_creation`<sup>Optional</sup> <a name="assign_ipv6_address_on_creation" id="@cdktf/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation"></a>
+##### `assign_ipv6_address_on_creation`<sup>Optional</sup> <a name="assign_ipv6_address_on_creation" id="@cdktn/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation"></a>
 
 ```python
 assign_ipv6_address_on_creation: bool | IResolvable
@@ -1804,11 +1804,11 @@ assign_ipv6_address_on_creation: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
 
 ---
 
-##### `availability_zone`<sup>Optional</sup> <a name="availability_zone" id="@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZone"></a>
+##### `availability_zone`<sup>Optional</sup> <a name="availability_zone" id="@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZone"></a>
 
 ```python
 availability_zone: str
@@ -1816,11 +1816,11 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
 
 ---
 
-##### `availability_zone_id`<sup>Optional</sup> <a name="availability_zone_id" id="@cdktf/provider-aws.subnet.SubnetConfig.property.availabilityZoneId"></a>
+##### `availability_zone_id`<sup>Optional</sup> <a name="availability_zone_id" id="@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZoneId"></a>
 
 ```python
 availability_zone_id: str
@@ -1828,11 +1828,11 @@ availability_zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
 
 ---
 
-##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktf/provider-aws.subnet.SubnetConfig.property.cidrBlock"></a>
+##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktn/provider-aws.subnet.SubnetConfig.property.cidrBlock"></a>
 
 ```python
 cidr_block: str
@@ -1840,11 +1840,11 @@ cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
 
 ---
 
-##### `customer_owned_ipv4_pool`<sup>Optional</sup> <a name="customer_owned_ipv4_pool" id="@cdktf/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool"></a>
+##### `customer_owned_ipv4_pool`<sup>Optional</sup> <a name="customer_owned_ipv4_pool" id="@cdktn/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool"></a>
 
 ```python
 customer_owned_ipv4_pool: str
@@ -1852,11 +1852,11 @@ customer_owned_ipv4_pool: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
 
 ---
 
-##### `enable_dns64`<sup>Optional</sup> <a name="enable_dns64" id="@cdktf/provider-aws.subnet.SubnetConfig.property.enableDns64"></a>
+##### `enable_dns64`<sup>Optional</sup> <a name="enable_dns64" id="@cdktn/provider-aws.subnet.SubnetConfig.property.enableDns64"></a>
 
 ```python
 enable_dns64: bool | IResolvable
@@ -1864,11 +1864,11 @@ enable_dns64: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
 
 ---
 
-##### `enable_lni_at_device_index`<sup>Optional</sup> <a name="enable_lni_at_device_index" id="@cdktf/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex"></a>
+##### `enable_lni_at_device_index`<sup>Optional</sup> <a name="enable_lni_at_device_index" id="@cdktn/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex"></a>
 
 ```python
 enable_lni_at_device_index: typing.Union[int, float]
@@ -1876,11 +1876,11 @@ enable_lni_at_device_index: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
 
 ---
 
-##### `enable_resource_name_dns_aaaa_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch" id="@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch"></a>
+##### `enable_resource_name_dns_aaaa_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_aaaa_record_on_launch" id="@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch"></a>
 
 ```python
 enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable
@@ -1888,11 +1888,11 @@ enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
 
 ---
 
-##### `enable_resource_name_dns_a_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_a_record_on_launch" id="@cdktf/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch"></a>
+##### `enable_resource_name_dns_a_record_on_launch`<sup>Optional</sup> <a name="enable_resource_name_dns_a_record_on_launch" id="@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch"></a>
 
 ```python
 enable_resource_name_dns_a_record_on_launch: bool | IResolvable
@@ -1900,11 +1900,11 @@ enable_resource_name_dns_a_record_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.subnet.SubnetConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.subnet.SubnetConfig.property.id"></a>
 
 ```python
 id: str
@@ -1912,14 +1912,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `ipv6_cidr_block`<sup>Optional</sup> <a name="ipv6_cidr_block" id="@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock"></a>
+##### `ipv6_cidr_block`<sup>Optional</sup> <a name="ipv6_cidr_block" id="@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock"></a>
 
 ```python
 ipv6_cidr_block: str
@@ -1927,11 +1927,11 @@ ipv6_cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
 
 ---
 
-##### `ipv6_native`<sup>Optional</sup> <a name="ipv6_native" id="@cdktf/provider-aws.subnet.SubnetConfig.property.ipv6Native"></a>
+##### `ipv6_native`<sup>Optional</sup> <a name="ipv6_native" id="@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6Native"></a>
 
 ```python
 ipv6_native: bool | IResolvable
@@ -1939,11 +1939,11 @@ ipv6_native: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
 
 ---
 
-##### `map_customer_owned_ip_on_launch`<sup>Optional</sup> <a name="map_customer_owned_ip_on_launch" id="@cdktf/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch"></a>
+##### `map_customer_owned_ip_on_launch`<sup>Optional</sup> <a name="map_customer_owned_ip_on_launch" id="@cdktn/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch"></a>
 
 ```python
 map_customer_owned_ip_on_launch: bool | IResolvable
@@ -1951,11 +1951,11 @@ map_customer_owned_ip_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
 
 ---
 
-##### `map_public_ip_on_launch`<sup>Optional</sup> <a name="map_public_ip_on_launch" id="@cdktf/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch"></a>
+##### `map_public_ip_on_launch`<sup>Optional</sup> <a name="map_public_ip_on_launch" id="@cdktn/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch"></a>
 
 ```python
 map_public_ip_on_launch: bool | IResolvable
@@ -1963,11 +1963,11 @@ map_public_ip_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
 
 ---
 
-##### `outpost_arn`<sup>Optional</sup> <a name="outpost_arn" id="@cdktf/provider-aws.subnet.SubnetConfig.property.outpostArn"></a>
+##### `outpost_arn`<sup>Optional</sup> <a name="outpost_arn" id="@cdktn/provider-aws.subnet.SubnetConfig.property.outpostArn"></a>
 
 ```python
 outpost_arn: str
@@ -1975,11 +1975,11 @@ outpost_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
 
 ---
 
-##### `private_dns_hostname_type_on_launch`<sup>Optional</sup> <a name="private_dns_hostname_type_on_launch" id="@cdktf/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch"></a>
+##### `private_dns_hostname_type_on_launch`<sup>Optional</sup> <a name="private_dns_hostname_type_on_launch" id="@cdktn/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch"></a>
 
 ```python
 private_dns_hostname_type_on_launch: str
@@ -1987,11 +1987,11 @@ private_dns_hostname_type_on_launch: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.subnet.SubnetConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.subnet.SubnetConfig.property.region"></a>
 
 ```python
 region: str
@@ -2001,11 +2001,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#region Subnet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#region Subnet#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.subnet.SubnetConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.subnet.SubnetConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -2013,11 +2013,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags Subnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.subnet.SubnetConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.subnet.SubnetConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -2025,30 +2025,30 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#tags_all Subnet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.subnet.SubnetConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.subnet.SubnetConfig.property.timeouts"></a>
 
 ```python
 timeouts: SubnetTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
-### SubnetTimeouts <a name="SubnetTimeouts" id="@cdktf/provider-aws.subnet.SubnetTimeouts"></a>
+### SubnetTimeouts <a name="SubnetTimeouts" id="@cdktn/provider-aws.subnet.SubnetTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.subnet.SubnetTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.subnet.SubnetTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.SubnetTimeouts(
   create: str = None,
@@ -2060,12 +2060,12 @@ subnet.SubnetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#create Subnet#create}. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#delete Subnet#delete}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#create Subnet#create}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#delete Subnet#delete}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.subnet.SubnetTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.subnet.SubnetTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2073,11 +2073,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#create Subnet#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.subnet.SubnetTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.subnet.SubnetTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2085,18 +2085,18 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SubnetTimeoutsOutputReference <a name="SubnetTimeoutsOutputReference" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference"></a>
+### SubnetTimeoutsOutputReference <a name="SubnetTimeoutsOutputReference" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import subnet
+from cdktn_provider_aws import subnet
 
 subnet.SubnetTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2106,12 +2106,12 @@ subnet.SubnetTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2119,7 +2119,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2131,31 +2131,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2163,13 +2163,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2177,13 +2177,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2191,13 +2191,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2205,13 +2205,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2219,13 +2219,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2233,13 +2233,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2247,13 +2247,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2261,13 +2261,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2275,13 +2275,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2289,13 +2289,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2305,13 +2305,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2321,13 +2321,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
@@ -2338,17 +2338,17 @@ def reset_delete() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2362,7 +2362,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2372,7 +2372,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2382,7 +2382,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2392,7 +2392,7 @@ delete_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2402,7 +2402,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2412,13 +2412,13 @@ delete: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.subnet.SubnetTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | SubnetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a>
 
 ---
 

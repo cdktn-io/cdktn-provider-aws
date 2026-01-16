@@ -1,28 +1,28 @@
-# `autoscalingNotification` Submodule <a name="`autoscalingNotification` Submodule" id="@cdktf/provider-aws.autoscalingNotification"></a>
+# `autoscalingNotification` Submodule <a name="`autoscalingNotification` Submodule" id="@cdktn/provider-aws.autoscalingNotification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AutoscalingNotification <a name="AutoscalingNotification" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification"></a>
+### AutoscalingNotification <a name="AutoscalingNotification" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification aws_autoscaling_notification}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification aws_autoscaling_notification}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer"></a>
 
 ```typescript
-import { autoscalingNotification } from '@cdktf/provider-aws'
+import { autoscalingNotification } from '@cdktn/provider-aws'
 
 new autoscalingNotification.AutoscalingNotification(scope: Construct, id: string, config: AutoscalingNotificationConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig">AutoscalingNotificationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig">AutoscalingNotificationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig">AutoscalingNotificationConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig">AutoscalingNotificationConfig</a>
 
 ---
 
@@ -50,35 +50,35 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.resetRegion">resetRegion</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toString"></a>
 
 ```typescript
 public toString(): string
@@ -86,25 +86,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -112,7 +112,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -120,7 +120,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -128,19 +128,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -148,7 +148,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -156,7 +156,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -164,151 +164,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -318,7 +318,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -326,7 +326,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -334,7 +334,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -342,7 +342,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -350,7 +350,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -358,7 +358,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -366,13 +366,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
@@ -382,17 +382,17 @@ public resetRegion(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AutoscalingNotification resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AutoscalingNotification resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct"></a>
 
 ```typescript
-import { autoscalingNotification } from '@cdktf/provider-aws'
+import { autoscalingNotification } from '@cdktn/provider-aws'
 
 autoscalingNotification.AutoscalingNotification.isConstruct(x: any)
 ```
@@ -413,7 +413,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -421,45 +421,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement"></a>
 
 ```typescript
-import { autoscalingNotification } from '@cdktf/provider-aws'
+import { autoscalingNotification } from '@cdktn/provider-aws'
 
 autoscalingNotification.AutoscalingNotification.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource"></a>
 
 ```typescript
-import { autoscalingNotification } from '@cdktf/provider-aws'
+import { autoscalingNotification } from '@cdktn/provider-aws'
 
 autoscalingNotification.AutoscalingNotification.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport"></a>
 
 ```typescript
-import { autoscalingNotification } from '@cdktf/provider-aws'
+import { autoscalingNotification } from '@cdktn/provider-aws'
 
 autoscalingNotification.AutoscalingNotification.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a AutoscalingNotification resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -467,7 +467,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -475,17 +475,17 @@ The construct id used in the generated config for the AutoscalingNotification to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing AutoscalingNotification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -497,34 +497,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNamesInput">groupNamesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.notificationsInput">notificationsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArnInput">topicArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNames">groupNames</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.notifications">notifications</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArn">topicArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNamesInput">groupNamesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.notificationsInput">notificationsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArnInput">topicArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNames">groupNames</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.notifications">notifications</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArn">topicArn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -536,7 +536,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -546,7 +546,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -556,7 +556,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -566,7 +566,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -576,7 +576,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -586,7 +586,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -596,7 +596,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -606,7 +606,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -616,7 +616,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -626,7 +626,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -636,7 +636,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -646,7 +646,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -656,7 +656,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -666,7 +666,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `groupNamesInput`<sup>Optional</sup> <a name="groupNamesInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNamesInput"></a>
+##### `groupNamesInput`<sup>Optional</sup> <a name="groupNamesInput" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNamesInput"></a>
 
 ```typescript
 public readonly groupNamesInput: string[];
@@ -676,7 +676,7 @@ public readonly groupNamesInput: string[];
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -686,7 +686,7 @@ public readonly idInput: string;
 
 ---
 
-##### `notificationsInput`<sup>Optional</sup> <a name="notificationsInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.notificationsInput"></a>
+##### `notificationsInput`<sup>Optional</sup> <a name="notificationsInput" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.notificationsInput"></a>
 
 ```typescript
 public readonly notificationsInput: string[];
@@ -696,7 +696,7 @@ public readonly notificationsInput: string[];
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -706,7 +706,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `topicArnInput`<sup>Optional</sup> <a name="topicArnInput" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArnInput"></a>
+##### `topicArnInput`<sup>Optional</sup> <a name="topicArnInput" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArnInput"></a>
 
 ```typescript
 public readonly topicArnInput: string;
@@ -716,7 +716,7 @@ public readonly topicArnInput: string;
 
 ---
 
-##### `groupNames`<sup>Required</sup> <a name="groupNames" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNames"></a>
+##### `groupNames`<sup>Required</sup> <a name="groupNames" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.groupNames"></a>
 
 ```typescript
 public readonly groupNames: string[];
@@ -726,7 +726,7 @@ public readonly groupNames: string[];
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -736,7 +736,7 @@ public readonly id: string;
 
 ---
 
-##### `notifications`<sup>Required</sup> <a name="notifications" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.notifications"></a>
+##### `notifications`<sup>Required</sup> <a name="notifications" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.notifications"></a>
 
 ```typescript
 public readonly notifications: string[];
@@ -746,7 +746,7 @@ public readonly notifications: string[];
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -756,7 +756,7 @@ public readonly region: string;
 
 ---
 
-##### `topicArn`<sup>Required</sup> <a name="topicArn" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArn"></a>
+##### `topicArn`<sup>Required</sup> <a name="topicArn" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.topicArn"></a>
 
 ```typescript
 public readonly topicArn: string;
@@ -770,11 +770,11 @@ public readonly topicArn: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotification.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -786,12 +786,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AutoscalingNotificationConfig <a name="AutoscalingNotificationConfig" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig"></a>
+### AutoscalingNotificationConfig <a name="AutoscalingNotificationConfig" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.Initializer"></a>
 
 ```typescript
-import { autoscalingNotification } from '@cdktf/provider-aws'
+import { autoscalingNotification } from '@cdktn/provider-aws'
 
 const autoscalingNotificationConfig: autoscalingNotification.AutoscalingNotificationConfig = { ... }
 ```
@@ -800,22 +800,22 @@ const autoscalingNotificationConfig: autoscalingNotification.AutoscalingNotifica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.groupNames">groupNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.notifications">notifications</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}. |
-| <code><a href="#@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.groupNames">groupNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.notifications">notifications</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.topicArn">topicArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}. |
+| <code><a href="#@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -825,7 +825,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -835,7 +835,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -845,7 +845,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -855,7 +855,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -865,7 +865,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -875,7 +875,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -885,7 +885,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `groupNames`<sup>Required</sup> <a name="groupNames" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.groupNames"></a>
+##### `groupNames`<sup>Required</sup> <a name="groupNames" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.groupNames"></a>
 
 ```typescript
 public readonly groupNames: string[];
@@ -893,11 +893,11 @@ public readonly groupNames: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}.
 
 ---
 
-##### `notifications`<sup>Required</sup> <a name="notifications" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.notifications"></a>
+##### `notifications`<sup>Required</sup> <a name="notifications" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.notifications"></a>
 
 ```typescript
 public readonly notifications: string[];
@@ -905,11 +905,11 @@ public readonly notifications: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}.
 
 ---
 
-##### `topicArn`<sup>Required</sup> <a name="topicArn" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.topicArn"></a>
+##### `topicArn`<sup>Required</sup> <a name="topicArn" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.topicArn"></a>
 
 ```typescript
 public readonly topicArn: string;
@@ -917,11 +917,11 @@ public readonly topicArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -929,14 +929,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.autoscalingNotification.AutoscalingNotificationConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -946,7 +946,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/autoscaling_notification#region AutoscalingNotification#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/autoscaling_notification#region AutoscalingNotification#region}
 
 ---
 

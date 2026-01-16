@@ -1,28 +1,28 @@
-# `flowLog` Submodule <a name="`flowLog` Submodule" id="@cdktf/provider-aws.flowLog"></a>
+# `flowLog` Submodule <a name="`flowLog` Submodule" id="@cdktn/provider-aws.flowLog"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### FlowLog <a name="FlowLog" id="@cdktf/provider-aws.flowLog.FlowLog"></a>
+### FlowLog <a name="FlowLog" id="@cdktn/provider-aws.flowLog.FlowLog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log aws_flow_log}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log aws_flow_log}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.flowLog.FlowLog.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.flowLog.FlowLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 flowlog.NewFlowLog(scope Construct, id *string, config FlowLogConfig) FlowLog
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig">FlowLogConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig">FlowLogConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.flowLog.FlowLog.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.flowLog.FlowLog.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-aws.flowLog.FlowLog.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.flowLog.FlowLog.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.flowLog.FlowLogConfig">FlowLogConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogConfig">FlowLogConfig</a>
 
 ---
 
@@ -50,52 +50,52 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.putDestinationOptions">PutDestinationOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole">ResetDeliverCrossAccountRole</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetDestinationOptions">ResetDestinationOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetEniId">ResetEniId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetIamRoleArn">ResetIamRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetLogDestination">ResetLogDestination</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetLogDestinationType">ResetLogDestinationType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetLogFormat">ResetLogFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetMaxAggregationInterval">ResetMaxAggregationInterval</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetRegionalNatGatewayId">ResetRegionalNatGatewayId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetSubnetId">ResetSubnetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetTrafficType">ResetTrafficType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetTransitGatewayAttachmentId">ResetTransitGatewayAttachmentId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetTransitGatewayId">ResetTransitGatewayId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.resetVpcId">ResetVpcId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.putDestinationOptions">PutDestinationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole">ResetDeliverCrossAccountRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetDestinationOptions">ResetDestinationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetEniId">ResetEniId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetIamRoleArn">ResetIamRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetLogDestination">ResetLogDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetLogDestinationType">ResetLogDestinationType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetLogFormat">ResetLogFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetMaxAggregationInterval">ResetMaxAggregationInterval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetRegionalNatGatewayId">ResetRegionalNatGatewayId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetSubnetId">ResetSubnetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTagsAll">ResetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTrafficType">ResetTrafficType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTransitGatewayAttachmentId">ResetTransitGatewayAttachmentId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetTransitGatewayId">ResetTransitGatewayId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.resetVpcId">ResetVpcId</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.flowLog.FlowLog.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.flowLog.FlowLog.toString"></a>
 
 ```go
 func ToString() *string
@@ -103,25 +103,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.flowLog.FlowLog.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.flowLog.FlowLog.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.flowLog.FlowLog.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.flowLog.FlowLog.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.flowLog.FlowLog.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.flowLog.FlowLog.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.flowLog.FlowLog.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.flowLog.FlowLog.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -129,7 +129,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.flowLog.FlowLog.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.flowLog.FlowLog.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -137,7 +137,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.flowLog.FlowLog.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.flowLog.FlowLog.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -145,19 +145,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.flowLog.FlowLog.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.flowLog.FlowLog.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.flowLog.FlowLog.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.flowLog.FlowLog.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.flowLog.FlowLog.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.flowLog.FlowLog.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -165,7 +165,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.flowLog.FlowLog.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.flowLog.FlowLog.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -173,7 +173,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.flowLog.FlowLog.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.flowLog.FlowLog.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -181,151 +181,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.flowLog.FlowLog.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.flowLog.FlowLog.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.flowLog.FlowLog.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.flowLog.FlowLog.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.flowLog.FlowLog.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.flowLog.FlowLog.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.flowLog.FlowLog.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.flowLog.FlowLog.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLog.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLog.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.flowLog.FlowLog.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.flowLog.FlowLog.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -335,7 +335,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.flowLog.FlowLog.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.flowLog.FlowLog.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -343,7 +343,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.flowLog.FlowLog.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.flowLog.FlowLog.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -351,7 +351,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.flowLog.FlowLog.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.flowLog.FlowLog.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -359,7 +359,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.flowLog.FlowLog.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.flowLog.FlowLog.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -367,7 +367,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.flowLog.FlowLog.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.flowLog.FlowLog.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -375,7 +375,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.flowLog.FlowLog.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.flowLog.FlowLog.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -383,121 +383,121 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutDestinationOptions` <a name="PutDestinationOptions" id="@cdktf/provider-aws.flowLog.FlowLog.putDestinationOptions"></a>
+##### `PutDestinationOptions` <a name="PutDestinationOptions" id="@cdktn/provider-aws.flowLog.FlowLog.putDestinationOptions"></a>
 
 ```go
 func PutDestinationOptions(value FlowLogDestinationOptions)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.flowLog.FlowLog.putDestinationOptions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.flowLog.FlowLog.putDestinationOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
 
 ---
 
-##### `ResetDeliverCrossAccountRole` <a name="ResetDeliverCrossAccountRole" id="@cdktf/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole"></a>
+##### `ResetDeliverCrossAccountRole` <a name="ResetDeliverCrossAccountRole" id="@cdktn/provider-aws.flowLog.FlowLog.resetDeliverCrossAccountRole"></a>
 
 ```go
 func ResetDeliverCrossAccountRole()
 ```
 
-##### `ResetDestinationOptions` <a name="ResetDestinationOptions" id="@cdktf/provider-aws.flowLog.FlowLog.resetDestinationOptions"></a>
+##### `ResetDestinationOptions` <a name="ResetDestinationOptions" id="@cdktn/provider-aws.flowLog.FlowLog.resetDestinationOptions"></a>
 
 ```go
 func ResetDestinationOptions()
 ```
 
-##### `ResetEniId` <a name="ResetEniId" id="@cdktf/provider-aws.flowLog.FlowLog.resetEniId"></a>
+##### `ResetEniId` <a name="ResetEniId" id="@cdktn/provider-aws.flowLog.FlowLog.resetEniId"></a>
 
 ```go
 func ResetEniId()
 ```
 
-##### `ResetIamRoleArn` <a name="ResetIamRoleArn" id="@cdktf/provider-aws.flowLog.FlowLog.resetIamRoleArn"></a>
+##### `ResetIamRoleArn` <a name="ResetIamRoleArn" id="@cdktn/provider-aws.flowLog.FlowLog.resetIamRoleArn"></a>
 
 ```go
 func ResetIamRoleArn()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.flowLog.FlowLog.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.flowLog.FlowLog.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetLogDestination` <a name="ResetLogDestination" id="@cdktf/provider-aws.flowLog.FlowLog.resetLogDestination"></a>
+##### `ResetLogDestination` <a name="ResetLogDestination" id="@cdktn/provider-aws.flowLog.FlowLog.resetLogDestination"></a>
 
 ```go
 func ResetLogDestination()
 ```
 
-##### `ResetLogDestinationType` <a name="ResetLogDestinationType" id="@cdktf/provider-aws.flowLog.FlowLog.resetLogDestinationType"></a>
+##### `ResetLogDestinationType` <a name="ResetLogDestinationType" id="@cdktn/provider-aws.flowLog.FlowLog.resetLogDestinationType"></a>
 
 ```go
 func ResetLogDestinationType()
 ```
 
-##### `ResetLogFormat` <a name="ResetLogFormat" id="@cdktf/provider-aws.flowLog.FlowLog.resetLogFormat"></a>
+##### `ResetLogFormat` <a name="ResetLogFormat" id="@cdktn/provider-aws.flowLog.FlowLog.resetLogFormat"></a>
 
 ```go
 func ResetLogFormat()
 ```
 
-##### `ResetMaxAggregationInterval` <a name="ResetMaxAggregationInterval" id="@cdktf/provider-aws.flowLog.FlowLog.resetMaxAggregationInterval"></a>
+##### `ResetMaxAggregationInterval` <a name="ResetMaxAggregationInterval" id="@cdktn/provider-aws.flowLog.FlowLog.resetMaxAggregationInterval"></a>
 
 ```go
 func ResetMaxAggregationInterval()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.flowLog.FlowLog.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.flowLog.FlowLog.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetRegionalNatGatewayId` <a name="ResetRegionalNatGatewayId" id="@cdktf/provider-aws.flowLog.FlowLog.resetRegionalNatGatewayId"></a>
+##### `ResetRegionalNatGatewayId` <a name="ResetRegionalNatGatewayId" id="@cdktn/provider-aws.flowLog.FlowLog.resetRegionalNatGatewayId"></a>
 
 ```go
 func ResetRegionalNatGatewayId()
 ```
 
-##### `ResetSubnetId` <a name="ResetSubnetId" id="@cdktf/provider-aws.flowLog.FlowLog.resetSubnetId"></a>
+##### `ResetSubnetId` <a name="ResetSubnetId" id="@cdktn/provider-aws.flowLog.FlowLog.resetSubnetId"></a>
 
 ```go
 func ResetSubnetId()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-aws.flowLog.FlowLog.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.flowLog.FlowLog.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktf/provider-aws.flowLog.FlowLog.resetTagsAll"></a>
+##### `ResetTagsAll` <a name="ResetTagsAll" id="@cdktn/provider-aws.flowLog.FlowLog.resetTagsAll"></a>
 
 ```go
 func ResetTagsAll()
 ```
 
-##### `ResetTrafficType` <a name="ResetTrafficType" id="@cdktf/provider-aws.flowLog.FlowLog.resetTrafficType"></a>
+##### `ResetTrafficType` <a name="ResetTrafficType" id="@cdktn/provider-aws.flowLog.FlowLog.resetTrafficType"></a>
 
 ```go
 func ResetTrafficType()
 ```
 
-##### `ResetTransitGatewayAttachmentId` <a name="ResetTransitGatewayAttachmentId" id="@cdktf/provider-aws.flowLog.FlowLog.resetTransitGatewayAttachmentId"></a>
+##### `ResetTransitGatewayAttachmentId` <a name="ResetTransitGatewayAttachmentId" id="@cdktn/provider-aws.flowLog.FlowLog.resetTransitGatewayAttachmentId"></a>
 
 ```go
 func ResetTransitGatewayAttachmentId()
 ```
 
-##### `ResetTransitGatewayId` <a name="ResetTransitGatewayId" id="@cdktf/provider-aws.flowLog.FlowLog.resetTransitGatewayId"></a>
+##### `ResetTransitGatewayId` <a name="ResetTransitGatewayId" id="@cdktn/provider-aws.flowLog.FlowLog.resetTransitGatewayId"></a>
 
 ```go
 func ResetTransitGatewayId()
 ```
 
-##### `ResetVpcId` <a name="ResetVpcId" id="@cdktf/provider-aws.flowLog.FlowLog.resetVpcId"></a>
+##### `ResetVpcId` <a name="ResetVpcId" id="@cdktn/provider-aws.flowLog.FlowLog.resetVpcId"></a>
 
 ```go
 func ResetVpcId()
@@ -507,17 +507,17 @@ func ResetVpcId()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a FlowLog resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a FlowLog resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.flowLog.FlowLog.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.flowLog.FlowLog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 flowlog.FlowLog_IsConstruct(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.flowLog.FlowLog.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.flowLog.FlowLog.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -546,45 +546,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.flowLog.FlowLog.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.flowLog.FlowLog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 flowlog.FlowLog_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.flowLog.FlowLog.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.flowLog.FlowLog.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.flowLog.FlowLog.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.flowLog.FlowLog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 flowlog.FlowLog_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.flowLog.FlowLog.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.flowLog.FlowLog.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.flowLog.FlowLog.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.flowLog.FlowLog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 flowlog.FlowLog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a FlowLog resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -592,7 +592,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -600,17 +600,17 @@ The construct id used in the generated config for the FlowLog to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing FlowLog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.flowLog.FlowLog.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -622,61 +622,61 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptions">DestinationOptions</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference">FlowLogDestinationOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput">DeliverCrossAccountRoleInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptionsInput">DestinationOptionsInput</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.eniIdInput">EniIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.iamRoleArnInput">IamRoleArnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.logDestinationInput">LogDestinationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.logDestinationTypeInput">LogDestinationTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.logFormatInput">LogFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.maxAggregationIntervalInput">MaxAggregationIntervalInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.regionalNatGatewayIdInput">RegionalNatGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.subnetIdInput">SubnetIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.trafficTypeInput">TrafficTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentIdInput">TransitGatewayAttachmentIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.vpcIdInput">VpcIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRole">DeliverCrossAccountRole</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.eniId">EniId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.logDestination">LogDestination</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.logDestinationType">LogDestinationType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.logFormat">LogFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.maxAggregationInterval">MaxAggregationInterval</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.regionalNatGatewayId">RegionalNatGatewayId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.subnetId">SubnetId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.trafficType">TrafficType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentId">TransitGatewayAttachmentId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.vpcId">VpcId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.arn">Arn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.destinationOptions">DestinationOptions</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference">FlowLogDestinationOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput">DeliverCrossAccountRoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.destinationOptionsInput">DestinationOptionsInput</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.eniIdInput">EniIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.iamRoleArnInput">IamRoleArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.logDestinationInput">LogDestinationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.logDestinationTypeInput">LogDestinationTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.logFormatInput">LogFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.maxAggregationIntervalInput">MaxAggregationIntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.regionalNatGatewayIdInput">RegionalNatGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.subnetIdInput">SubnetIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagsAllInput">TagsAllInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.trafficTypeInput">TrafficTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentIdInput">TransitGatewayAttachmentIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayIdInput">TransitGatewayIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.vpcIdInput">VpcIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRole">DeliverCrossAccountRole</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.eniId">EniId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.logDestination">LogDestination</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.logDestinationType">LogDestinationType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.logFormat">LogFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.maxAggregationInterval">MaxAggregationInterval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.regionalNatGatewayId">RegionalNatGatewayId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.subnetId">SubnetId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.trafficType">TrafficType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentId">TransitGatewayAttachmentId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.vpcId">VpcId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.flowLog.FlowLog.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.flowLog.FlowLog.property.node"></a>
 
 ```go
 func Node() Node
@@ -688,7 +688,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.flowLog.FlowLog.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.flowLog.FlowLog.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -698,7 +698,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.flowLog.FlowLog.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.flowLog.FlowLog.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -708,7 +708,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.flowLog.FlowLog.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.flowLog.FlowLog.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -718,7 +718,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.flowLog.FlowLog.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.flowLog.FlowLog.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -728,7 +728,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.flowLog.FlowLog.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.flowLog.FlowLog.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -738,7 +738,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.flowLog.FlowLog.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.flowLog.FlowLog.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -748,7 +748,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.flowLog.FlowLog.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.flowLog.FlowLog.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -758,7 +758,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.flowLog.FlowLog.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.flowLog.FlowLog.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -768,7 +768,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.flowLog.FlowLog.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.flowLog.FlowLog.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -778,7 +778,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.flowLog.FlowLog.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.flowLog.FlowLog.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -788,7 +788,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.flowLog.FlowLog.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.flowLog.FlowLog.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -798,7 +798,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.flowLog.FlowLog.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.flowLog.FlowLog.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -808,7 +808,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.flowLog.FlowLog.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.flowLog.FlowLog.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -818,7 +818,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktf/provider-aws.flowLog.FlowLog.property.arn"></a>
+##### `Arn`<sup>Required</sup> <a name="Arn" id="@cdktn/provider-aws.flowLog.FlowLog.property.arn"></a>
 
 ```go
 func Arn() *string
@@ -828,17 +828,17 @@ func Arn() *string
 
 ---
 
-##### `DestinationOptions`<sup>Required</sup> <a name="DestinationOptions" id="@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptions"></a>
+##### `DestinationOptions`<sup>Required</sup> <a name="DestinationOptions" id="@cdktn/provider-aws.flowLog.FlowLog.property.destinationOptions"></a>
 
 ```go
 func DestinationOptions() FlowLogDestinationOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference">FlowLogDestinationOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference">FlowLogDestinationOptionsOutputReference</a>
 
 ---
 
-##### `DeliverCrossAccountRoleInput`<sup>Optional</sup> <a name="DeliverCrossAccountRoleInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput"></a>
+##### `DeliverCrossAccountRoleInput`<sup>Optional</sup> <a name="DeliverCrossAccountRoleInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRoleInput"></a>
 
 ```go
 func DeliverCrossAccountRoleInput() *string
@@ -848,17 +848,17 @@ func DeliverCrossAccountRoleInput() *string
 
 ---
 
-##### `DestinationOptionsInput`<sup>Optional</sup> <a name="DestinationOptionsInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.destinationOptionsInput"></a>
+##### `DestinationOptionsInput`<sup>Optional</sup> <a name="DestinationOptionsInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.destinationOptionsInput"></a>
 
 ```go
 func DestinationOptionsInput() FlowLogDestinationOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
 
 ---
 
-##### `EniIdInput`<sup>Optional</sup> <a name="EniIdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.eniIdInput"></a>
+##### `EniIdInput`<sup>Optional</sup> <a name="EniIdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.eniIdInput"></a>
 
 ```go
 func EniIdInput() *string
@@ -868,7 +868,7 @@ func EniIdInput() *string
 
 ---
 
-##### `IamRoleArnInput`<sup>Optional</sup> <a name="IamRoleArnInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.iamRoleArnInput"></a>
+##### `IamRoleArnInput`<sup>Optional</sup> <a name="IamRoleArnInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.iamRoleArnInput"></a>
 
 ```go
 func IamRoleArnInput() *string
@@ -878,7 +878,7 @@ func IamRoleArnInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -888,7 +888,7 @@ func IdInput() *string
 
 ---
 
-##### `LogDestinationInput`<sup>Optional</sup> <a name="LogDestinationInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.logDestinationInput"></a>
+##### `LogDestinationInput`<sup>Optional</sup> <a name="LogDestinationInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.logDestinationInput"></a>
 
 ```go
 func LogDestinationInput() *string
@@ -898,7 +898,7 @@ func LogDestinationInput() *string
 
 ---
 
-##### `LogDestinationTypeInput`<sup>Optional</sup> <a name="LogDestinationTypeInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.logDestinationTypeInput"></a>
+##### `LogDestinationTypeInput`<sup>Optional</sup> <a name="LogDestinationTypeInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.logDestinationTypeInput"></a>
 
 ```go
 func LogDestinationTypeInput() *string
@@ -908,7 +908,7 @@ func LogDestinationTypeInput() *string
 
 ---
 
-##### `LogFormatInput`<sup>Optional</sup> <a name="LogFormatInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.logFormatInput"></a>
+##### `LogFormatInput`<sup>Optional</sup> <a name="LogFormatInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.logFormatInput"></a>
 
 ```go
 func LogFormatInput() *string
@@ -918,7 +918,7 @@ func LogFormatInput() *string
 
 ---
 
-##### `MaxAggregationIntervalInput`<sup>Optional</sup> <a name="MaxAggregationIntervalInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.maxAggregationIntervalInput"></a>
+##### `MaxAggregationIntervalInput`<sup>Optional</sup> <a name="MaxAggregationIntervalInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.maxAggregationIntervalInput"></a>
 
 ```go
 func MaxAggregationIntervalInput() *f64
@@ -928,7 +928,7 @@ func MaxAggregationIntervalInput() *f64
 
 ---
 
-##### `RegionalNatGatewayIdInput`<sup>Optional</sup> <a name="RegionalNatGatewayIdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.regionalNatGatewayIdInput"></a>
+##### `RegionalNatGatewayIdInput`<sup>Optional</sup> <a name="RegionalNatGatewayIdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.regionalNatGatewayIdInput"></a>
 
 ```go
 func RegionalNatGatewayIdInput() *string
@@ -938,7 +938,7 @@ func RegionalNatGatewayIdInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -948,7 +948,7 @@ func RegionInput() *string
 
 ---
 
-##### `SubnetIdInput`<sup>Optional</sup> <a name="SubnetIdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.subnetIdInput"></a>
+##### `SubnetIdInput`<sup>Optional</sup> <a name="SubnetIdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.subnetIdInput"></a>
 
 ```go
 func SubnetIdInput() *string
@@ -958,7 +958,7 @@ func SubnetIdInput() *string
 
 ---
 
-##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.tagsAllInput"></a>
+##### `TagsAllInput`<sup>Optional</sup> <a name="TagsAllInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.tagsAllInput"></a>
 
 ```go
 func TagsAllInput() *map[string]*string
@@ -968,7 +968,7 @@ func TagsAllInput() *map[string]*string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -978,7 +978,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TrafficTypeInput`<sup>Optional</sup> <a name="TrafficTypeInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.trafficTypeInput"></a>
+##### `TrafficTypeInput`<sup>Optional</sup> <a name="TrafficTypeInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.trafficTypeInput"></a>
 
 ```go
 func TrafficTypeInput() *string
@@ -988,7 +988,7 @@ func TrafficTypeInput() *string
 
 ---
 
-##### `TransitGatewayAttachmentIdInput`<sup>Optional</sup> <a name="TransitGatewayAttachmentIdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentIdInput"></a>
+##### `TransitGatewayAttachmentIdInput`<sup>Optional</sup> <a name="TransitGatewayAttachmentIdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentIdInput"></a>
 
 ```go
 func TransitGatewayAttachmentIdInput() *string
@@ -998,7 +998,7 @@ func TransitGatewayAttachmentIdInput() *string
 
 ---
 
-##### `TransitGatewayIdInput`<sup>Optional</sup> <a name="TransitGatewayIdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayIdInput"></a>
+##### `TransitGatewayIdInput`<sup>Optional</sup> <a name="TransitGatewayIdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayIdInput"></a>
 
 ```go
 func TransitGatewayIdInput() *string
@@ -1008,7 +1008,7 @@ func TransitGatewayIdInput() *string
 
 ---
 
-##### `VpcIdInput`<sup>Optional</sup> <a name="VpcIdInput" id="@cdktf/provider-aws.flowLog.FlowLog.property.vpcIdInput"></a>
+##### `VpcIdInput`<sup>Optional</sup> <a name="VpcIdInput" id="@cdktn/provider-aws.flowLog.FlowLog.property.vpcIdInput"></a>
 
 ```go
 func VpcIdInput() *string
@@ -1018,7 +1018,7 @@ func VpcIdInput() *string
 
 ---
 
-##### `DeliverCrossAccountRole`<sup>Required</sup> <a name="DeliverCrossAccountRole" id="@cdktf/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRole"></a>
+##### `DeliverCrossAccountRole`<sup>Required</sup> <a name="DeliverCrossAccountRole" id="@cdktn/provider-aws.flowLog.FlowLog.property.deliverCrossAccountRole"></a>
 
 ```go
 func DeliverCrossAccountRole() *string
@@ -1028,7 +1028,7 @@ func DeliverCrossAccountRole() *string
 
 ---
 
-##### `EniId`<sup>Required</sup> <a name="EniId" id="@cdktf/provider-aws.flowLog.FlowLog.property.eniId"></a>
+##### `EniId`<sup>Required</sup> <a name="EniId" id="@cdktn/provider-aws.flowLog.FlowLog.property.eniId"></a>
 
 ```go
 func EniId() *string
@@ -1038,7 +1038,7 @@ func EniId() *string
 
 ---
 
-##### `IamRoleArn`<sup>Required</sup> <a name="IamRoleArn" id="@cdktf/provider-aws.flowLog.FlowLog.property.iamRoleArn"></a>
+##### `IamRoleArn`<sup>Required</sup> <a name="IamRoleArn" id="@cdktn/provider-aws.flowLog.FlowLog.property.iamRoleArn"></a>
 
 ```go
 func IamRoleArn() *string
@@ -1048,7 +1048,7 @@ func IamRoleArn() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.flowLog.FlowLog.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.flowLog.FlowLog.property.id"></a>
 
 ```go
 func Id() *string
@@ -1058,7 +1058,7 @@ func Id() *string
 
 ---
 
-##### `LogDestination`<sup>Required</sup> <a name="LogDestination" id="@cdktf/provider-aws.flowLog.FlowLog.property.logDestination"></a>
+##### `LogDestination`<sup>Required</sup> <a name="LogDestination" id="@cdktn/provider-aws.flowLog.FlowLog.property.logDestination"></a>
 
 ```go
 func LogDestination() *string
@@ -1068,7 +1068,7 @@ func LogDestination() *string
 
 ---
 
-##### `LogDestinationType`<sup>Required</sup> <a name="LogDestinationType" id="@cdktf/provider-aws.flowLog.FlowLog.property.logDestinationType"></a>
+##### `LogDestinationType`<sup>Required</sup> <a name="LogDestinationType" id="@cdktn/provider-aws.flowLog.FlowLog.property.logDestinationType"></a>
 
 ```go
 func LogDestinationType() *string
@@ -1078,7 +1078,7 @@ func LogDestinationType() *string
 
 ---
 
-##### `LogFormat`<sup>Required</sup> <a name="LogFormat" id="@cdktf/provider-aws.flowLog.FlowLog.property.logFormat"></a>
+##### `LogFormat`<sup>Required</sup> <a name="LogFormat" id="@cdktn/provider-aws.flowLog.FlowLog.property.logFormat"></a>
 
 ```go
 func LogFormat() *string
@@ -1088,7 +1088,7 @@ func LogFormat() *string
 
 ---
 
-##### `MaxAggregationInterval`<sup>Required</sup> <a name="MaxAggregationInterval" id="@cdktf/provider-aws.flowLog.FlowLog.property.maxAggregationInterval"></a>
+##### `MaxAggregationInterval`<sup>Required</sup> <a name="MaxAggregationInterval" id="@cdktn/provider-aws.flowLog.FlowLog.property.maxAggregationInterval"></a>
 
 ```go
 func MaxAggregationInterval() *f64
@@ -1098,7 +1098,7 @@ func MaxAggregationInterval() *f64
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.flowLog.FlowLog.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.flowLog.FlowLog.property.region"></a>
 
 ```go
 func Region() *string
@@ -1108,7 +1108,7 @@ func Region() *string
 
 ---
 
-##### `RegionalNatGatewayId`<sup>Required</sup> <a name="RegionalNatGatewayId" id="@cdktf/provider-aws.flowLog.FlowLog.property.regionalNatGatewayId"></a>
+##### `RegionalNatGatewayId`<sup>Required</sup> <a name="RegionalNatGatewayId" id="@cdktn/provider-aws.flowLog.FlowLog.property.regionalNatGatewayId"></a>
 
 ```go
 func RegionalNatGatewayId() *string
@@ -1118,7 +1118,7 @@ func RegionalNatGatewayId() *string
 
 ---
 
-##### `SubnetId`<sup>Required</sup> <a name="SubnetId" id="@cdktf/provider-aws.flowLog.FlowLog.property.subnetId"></a>
+##### `SubnetId`<sup>Required</sup> <a name="SubnetId" id="@cdktn/provider-aws.flowLog.FlowLog.property.subnetId"></a>
 
 ```go
 func SubnetId() *string
@@ -1128,7 +1128,7 @@ func SubnetId() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-aws.flowLog.FlowLog.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-aws.flowLog.FlowLog.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -1138,7 +1138,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktf/provider-aws.flowLog.FlowLog.property.tagsAll"></a>
+##### `TagsAll`<sup>Required</sup> <a name="TagsAll" id="@cdktn/provider-aws.flowLog.FlowLog.property.tagsAll"></a>
 
 ```go
 func TagsAll() *map[string]*string
@@ -1148,7 +1148,7 @@ func TagsAll() *map[string]*string
 
 ---
 
-##### `TrafficType`<sup>Required</sup> <a name="TrafficType" id="@cdktf/provider-aws.flowLog.FlowLog.property.trafficType"></a>
+##### `TrafficType`<sup>Required</sup> <a name="TrafficType" id="@cdktn/provider-aws.flowLog.FlowLog.property.trafficType"></a>
 
 ```go
 func TrafficType() *string
@@ -1158,7 +1158,7 @@ func TrafficType() *string
 
 ---
 
-##### `TransitGatewayAttachmentId`<sup>Required</sup> <a name="TransitGatewayAttachmentId" id="@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentId"></a>
+##### `TransitGatewayAttachmentId`<sup>Required</sup> <a name="TransitGatewayAttachmentId" id="@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayAttachmentId"></a>
 
 ```go
 func TransitGatewayAttachmentId() *string
@@ -1168,7 +1168,7 @@ func TransitGatewayAttachmentId() *string
 
 ---
 
-##### `TransitGatewayId`<sup>Required</sup> <a name="TransitGatewayId" id="@cdktf/provider-aws.flowLog.FlowLog.property.transitGatewayId"></a>
+##### `TransitGatewayId`<sup>Required</sup> <a name="TransitGatewayId" id="@cdktn/provider-aws.flowLog.FlowLog.property.transitGatewayId"></a>
 
 ```go
 func TransitGatewayId() *string
@@ -1178,7 +1178,7 @@ func TransitGatewayId() *string
 
 ---
 
-##### `VpcId`<sup>Required</sup> <a name="VpcId" id="@cdktf/provider-aws.flowLog.FlowLog.property.vpcId"></a>
+##### `VpcId`<sup>Required</sup> <a name="VpcId" id="@cdktn/provider-aws.flowLog.FlowLog.property.vpcId"></a>
 
 ```go
 func VpcId() *string
@@ -1192,11 +1192,11 @@ func VpcId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLog.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLog.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.flowLog.FlowLog.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.flowLog.FlowLog.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1208,12 +1208,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### FlowLogConfig <a name="FlowLogConfig" id="@cdktf/provider-aws.flowLog.FlowLogConfig"></a>
+### FlowLogConfig <a name="FlowLogConfig" id="@cdktn/provider-aws.flowLog.FlowLogConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.flowLog.FlowLogConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.flowLog.FlowLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 &flowlog.FlowLogConfig {
 	Connection: interface{},
@@ -1224,7 +1224,7 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DeliverCrossAccountRole: *string,
-	DestinationOptions: github.com/cdktf/cdktf-provider-aws-go/aws/v21.flowLog.FlowLogDestinationOptions,
+	DestinationOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.flowLog.FlowLogDestinationOptions,
 	EniId: *string,
 	IamRoleArn: *string,
 	Id: *string,
@@ -1248,35 +1248,35 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole">DeliverCrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.destinationOptions">DestinationOptions</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | destination_options block. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.eniId">EniId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#eni_id FlowLog#eni_id}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#id FlowLog#id}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.logDestination">LogDestination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#log_destination FlowLog#log_destination}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.logDestinationType">LogDestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.logFormat">LogFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#log_format FlowLog#log_format}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.maxAggregationInterval">MaxAggregationInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.regionalNatGatewayId">RegionalNatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#tags FlowLog#tags}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#tags_all FlowLog#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.trafficType">TrafficType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.transitGatewayAttachmentId">TransitGatewayAttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole">DeliverCrossAccountRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.destinationOptions">DestinationOptions</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | destination_options block. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.eniId">EniId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#eni_id FlowLog#eni_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn">IamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#id FlowLog#id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestination">LogDestination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#log_destination FlowLog#log_destination}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestinationType">LogDestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.logFormat">LogFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#log_format FlowLog#log_format}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.maxAggregationInterval">MaxAggregationInterval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.regionalNatGatewayId">RegionalNatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#tags FlowLog#tags}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#tags_all FlowLog#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.trafficType">TrafficType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayAttachmentId">TransitGatewayAttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayId">TransitGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1286,7 +1286,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1296,7 +1296,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1306,7 +1306,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1316,7 +1316,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1326,7 +1326,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1336,7 +1336,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1346,7 +1346,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DeliverCrossAccountRole`<sup>Optional</sup> <a name="DeliverCrossAccountRole" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole"></a>
+##### `DeliverCrossAccountRole`<sup>Optional</sup> <a name="DeliverCrossAccountRole" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.deliverCrossAccountRole"></a>
 
 ```go
 DeliverCrossAccountRole *string
@@ -1354,25 +1354,25 @@ DeliverCrossAccountRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#deliver_cross_account_role FlowLog#deliver_cross_account_role}.
 
 ---
 
-##### `DestinationOptions`<sup>Optional</sup> <a name="DestinationOptions" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.destinationOptions"></a>
+##### `DestinationOptions`<sup>Optional</sup> <a name="DestinationOptions" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.destinationOptions"></a>
 
 ```go
 DestinationOptions FlowLogDestinationOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
 
 destination_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#destination_options FlowLog#destination_options}
 
 ---
 
-##### `EniId`<sup>Optional</sup> <a name="EniId" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.eniId"></a>
+##### `EniId`<sup>Optional</sup> <a name="EniId" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.eniId"></a>
 
 ```go
 EniId *string
@@ -1380,11 +1380,11 @@ EniId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#eni_id FlowLog#eni_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#eni_id FlowLog#eni_id}.
 
 ---
 
-##### `IamRoleArn`<sup>Optional</sup> <a name="IamRoleArn" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn"></a>
+##### `IamRoleArn`<sup>Optional</sup> <a name="IamRoleArn" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.iamRoleArn"></a>
 
 ```go
 IamRoleArn *string
@@ -1392,11 +1392,11 @@ IamRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#iam_role_arn FlowLog#iam_role_arn}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1404,14 +1404,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#id FlowLog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#id FlowLog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `LogDestination`<sup>Optional</sup> <a name="LogDestination" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.logDestination"></a>
+##### `LogDestination`<sup>Optional</sup> <a name="LogDestination" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestination"></a>
 
 ```go
 LogDestination *string
@@ -1419,11 +1419,11 @@ LogDestination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#log_destination FlowLog#log_destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#log_destination FlowLog#log_destination}.
 
 ---
 
-##### `LogDestinationType`<sup>Optional</sup> <a name="LogDestinationType" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.logDestinationType"></a>
+##### `LogDestinationType`<sup>Optional</sup> <a name="LogDestinationType" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.logDestinationType"></a>
 
 ```go
 LogDestinationType *string
@@ -1431,11 +1431,11 @@ LogDestinationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#log_destination_type FlowLog#log_destination_type}.
 
 ---
 
-##### `LogFormat`<sup>Optional</sup> <a name="LogFormat" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.logFormat"></a>
+##### `LogFormat`<sup>Optional</sup> <a name="LogFormat" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.logFormat"></a>
 
 ```go
 LogFormat *string
@@ -1443,11 +1443,11 @@ LogFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#log_format FlowLog#log_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#log_format FlowLog#log_format}.
 
 ---
 
-##### `MaxAggregationInterval`<sup>Optional</sup> <a name="MaxAggregationInterval" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.maxAggregationInterval"></a>
+##### `MaxAggregationInterval`<sup>Optional</sup> <a name="MaxAggregationInterval" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.maxAggregationInterval"></a>
 
 ```go
 MaxAggregationInterval *f64
@@ -1455,11 +1455,11 @@ MaxAggregationInterval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#max_aggregation_interval FlowLog#max_aggregation_interval}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1469,11 +1469,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#region FlowLog#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#region FlowLog#region}
 
 ---
 
-##### `RegionalNatGatewayId`<sup>Optional</sup> <a name="RegionalNatGatewayId" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.regionalNatGatewayId"></a>
+##### `RegionalNatGatewayId`<sup>Optional</sup> <a name="RegionalNatGatewayId" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.regionalNatGatewayId"></a>
 
 ```go
 RegionalNatGatewayId *string
@@ -1481,11 +1481,11 @@ RegionalNatGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#regional_nat_gateway_id FlowLog#regional_nat_gateway_id}.
 
 ---
 
-##### `SubnetId`<sup>Optional</sup> <a name="SubnetId" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.subnetId"></a>
+##### `SubnetId`<sup>Optional</sup> <a name="SubnetId" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.subnetId"></a>
 
 ```go
 SubnetId *string
@@ -1493,11 +1493,11 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#subnet_id FlowLog#subnet_id}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1505,11 +1505,11 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#tags FlowLog#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#tags FlowLog#tags}.
 
 ---
 
-##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.tagsAll"></a>
+##### `TagsAll`<sup>Optional</sup> <a name="TagsAll" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.tagsAll"></a>
 
 ```go
 TagsAll *map[string]*string
@@ -1517,11 +1517,11 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#tags_all FlowLog#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#tags_all FlowLog#tags_all}.
 
 ---
 
-##### `TrafficType`<sup>Optional</sup> <a name="TrafficType" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.trafficType"></a>
+##### `TrafficType`<sup>Optional</sup> <a name="TrafficType" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.trafficType"></a>
 
 ```go
 TrafficType *string
@@ -1529,11 +1529,11 @@ TrafficType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#traffic_type FlowLog#traffic_type}.
 
 ---
 
-##### `TransitGatewayAttachmentId`<sup>Optional</sup> <a name="TransitGatewayAttachmentId" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.transitGatewayAttachmentId"></a>
+##### `TransitGatewayAttachmentId`<sup>Optional</sup> <a name="TransitGatewayAttachmentId" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayAttachmentId"></a>
 
 ```go
 TransitGatewayAttachmentId *string
@@ -1541,11 +1541,11 @@ TransitGatewayAttachmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#transit_gateway_attachment_id FlowLog#transit_gateway_attachment_id}.
 
 ---
 
-##### `TransitGatewayId`<sup>Optional</sup> <a name="TransitGatewayId" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.transitGatewayId"></a>
+##### `TransitGatewayId`<sup>Optional</sup> <a name="TransitGatewayId" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.transitGatewayId"></a>
 
 ```go
 TransitGatewayId *string
@@ -1553,11 +1553,11 @@ TransitGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#transit_gateway_id FlowLog#transit_gateway_id}.
 
 ---
 
-##### `VpcId`<sup>Optional</sup> <a name="VpcId" id="@cdktf/provider-aws.flowLog.FlowLogConfig.property.vpcId"></a>
+##### `VpcId`<sup>Optional</sup> <a name="VpcId" id="@cdktn/provider-aws.flowLog.FlowLogConfig.property.vpcId"></a>
 
 ```go
 VpcId *string
@@ -1565,16 +1565,16 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#vpc_id FlowLog#vpc_id}.
 
 ---
 
-### FlowLogDestinationOptions <a name="FlowLogDestinationOptions" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptions"></a>
+### FlowLogDestinationOptions <a name="FlowLogDestinationOptions" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 &flowlog.FlowLogDestinationOptions {
 	FileFormat: *string,
@@ -1587,13 +1587,13 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.property.fileFormat">FileFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#file_format FlowLog#file_format}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.property.hiveCompatiblePartitions">HiveCompatiblePartitions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.property.perHourPartition">PerHourPartition</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.fileFormat">FileFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#file_format FlowLog#file_format}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.hiveCompatiblePartitions">HiveCompatiblePartitions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.perHourPartition">PerHourPartition</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}. |
 
 ---
 
-##### `FileFormat`<sup>Optional</sup> <a name="FileFormat" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.property.fileFormat"></a>
+##### `FileFormat`<sup>Optional</sup> <a name="FileFormat" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.fileFormat"></a>
 
 ```go
 FileFormat *string
@@ -1601,11 +1601,11 @@ FileFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#file_format FlowLog#file_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#file_format FlowLog#file_format}.
 
 ---
 
-##### `HiveCompatiblePartitions`<sup>Optional</sup> <a name="HiveCompatiblePartitions" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.property.hiveCompatiblePartitions"></a>
+##### `HiveCompatiblePartitions`<sup>Optional</sup> <a name="HiveCompatiblePartitions" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.hiveCompatiblePartitions"></a>
 
 ```go
 HiveCompatiblePartitions interface{}
@@ -1613,11 +1613,11 @@ HiveCompatiblePartitions interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#hive_compatible_partitions FlowLog#hive_compatible_partitions}.
 
 ---
 
-##### `PerHourPartition`<sup>Optional</sup> <a name="PerHourPartition" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptions.property.perHourPartition"></a>
+##### `PerHourPartition`<sup>Optional</sup> <a name="PerHourPartition" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptions.property.perHourPartition"></a>
 
 ```go
 PerHourPartition interface{}
@@ -1625,30 +1625,30 @@ PerHourPartition interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/flow_log#per_hour_partition FlowLog#per_hour_partition}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### FlowLogDestinationOptionsOutputReference <a name="FlowLogDestinationOptionsOutputReference" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference"></a>
+### FlowLogDestinationOptionsOutputReference <a name="FlowLogDestinationOptionsOutputReference" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/flowlog"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/flowlog"
 
 flowlog.NewFlowLogDestinationOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FlowLogDestinationOptionsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1656,7 +1656,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1668,152 +1668,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetFileFormat">ResetFileFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetHiveCompatiblePartitions">ResetHiveCompatiblePartitions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetPerHourPartition">ResetPerHourPartition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetFileFormat">ResetFileFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetHiveCompatiblePartitions">ResetHiveCompatiblePartitions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetPerHourPartition">ResetPerHourPartition</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1821,13 +1821,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1837,19 +1837,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetFileFormat` <a name="ResetFileFormat" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetFileFormat"></a>
+##### `ResetFileFormat` <a name="ResetFileFormat" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetFileFormat"></a>
 
 ```go
 func ResetFileFormat()
 ```
 
-##### `ResetHiveCompatiblePartitions` <a name="ResetHiveCompatiblePartitions" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetHiveCompatiblePartitions"></a>
+##### `ResetHiveCompatiblePartitions` <a name="ResetHiveCompatiblePartitions" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetHiveCompatiblePartitions"></a>
 
 ```go
 func ResetHiveCompatiblePartitions()
 ```
 
-##### `ResetPerHourPartition` <a name="ResetPerHourPartition" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetPerHourPartition"></a>
+##### `ResetPerHourPartition` <a name="ResetPerHourPartition" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.resetPerHourPartition"></a>
 
 ```go
 func ResetPerHourPartition()
@@ -1860,19 +1860,19 @@ func ResetPerHourPartition()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormatInput">FileFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitionsInput">HiveCompatiblePartitionsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartitionInput">PerHourPartitionInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormat">FileFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitions">HiveCompatiblePartitions</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartition">PerHourPartition</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormatInput">FileFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitionsInput">HiveCompatiblePartitionsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartitionInput">PerHourPartitionInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormat">FileFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitions">HiveCompatiblePartitions</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartition">PerHourPartition</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1886,7 +1886,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1896,7 +1896,7 @@ func Fqn() *string
 
 ---
 
-##### `FileFormatInput`<sup>Optional</sup> <a name="FileFormatInput" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormatInput"></a>
+##### `FileFormatInput`<sup>Optional</sup> <a name="FileFormatInput" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormatInput"></a>
 
 ```go
 func FileFormatInput() *string
@@ -1906,7 +1906,7 @@ func FileFormatInput() *string
 
 ---
 
-##### `HiveCompatiblePartitionsInput`<sup>Optional</sup> <a name="HiveCompatiblePartitionsInput" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitionsInput"></a>
+##### `HiveCompatiblePartitionsInput`<sup>Optional</sup> <a name="HiveCompatiblePartitionsInput" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitionsInput"></a>
 
 ```go
 func HiveCompatiblePartitionsInput() interface{}
@@ -1916,7 +1916,7 @@ func HiveCompatiblePartitionsInput() interface{}
 
 ---
 
-##### `PerHourPartitionInput`<sup>Optional</sup> <a name="PerHourPartitionInput" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartitionInput"></a>
+##### `PerHourPartitionInput`<sup>Optional</sup> <a name="PerHourPartitionInput" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartitionInput"></a>
 
 ```go
 func PerHourPartitionInput() interface{}
@@ -1926,7 +1926,7 @@ func PerHourPartitionInput() interface{}
 
 ---
 
-##### `FileFormat`<sup>Required</sup> <a name="FileFormat" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormat"></a>
+##### `FileFormat`<sup>Required</sup> <a name="FileFormat" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.fileFormat"></a>
 
 ```go
 func FileFormat() *string
@@ -1936,7 +1936,7 @@ func FileFormat() *string
 
 ---
 
-##### `HiveCompatiblePartitions`<sup>Required</sup> <a name="HiveCompatiblePartitions" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitions"></a>
+##### `HiveCompatiblePartitions`<sup>Required</sup> <a name="HiveCompatiblePartitions" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.hiveCompatiblePartitions"></a>
 
 ```go
 func HiveCompatiblePartitions() interface{}
@@ -1946,7 +1946,7 @@ func HiveCompatiblePartitions() interface{}
 
 ---
 
-##### `PerHourPartition`<sup>Required</sup> <a name="PerHourPartition" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartition"></a>
+##### `PerHourPartition`<sup>Required</sup> <a name="PerHourPartition" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.perHourPartition"></a>
 
 ```go
 func PerHourPartition() interface{}
@@ -1956,13 +1956,13 @@ func PerHourPartition() interface{}
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() FlowLogDestinationOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
+- *Type:* <a href="#@cdktn/provider-aws.flowLog.FlowLogDestinationOptions">FlowLogDestinationOptions</a>
 
 ---
 

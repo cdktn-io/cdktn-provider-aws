@@ -1,15 +1,15 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-aws.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-aws.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AwsProvider <a name="AwsProvider" id="@cdktf/provider-aws.provider.AwsProvider"></a>
+### AwsProvider <a name="AwsProvider" id="@cdktn/provider-aws.provider.AwsProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs aws}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs aws}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.provider.AwsProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.provider.AwsProvider.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProvider(
   scope: Construct,
@@ -48,53 +48,55 @@ provider.AwsProvider(
   token: str = None,
   token_bucket_rate_limiter_capacity: typing.Union[int, float] = None,
   use_dualstack_endpoint: bool | IResolvable = None,
-  use_fips_endpoint: bool | IResolvable = None
+  use_fips_endpoint: bool | IResolvable = None,
+  user_agent: typing.List[str] = None
 )
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.accessKey">access_key</a></code> | <code>str</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | assume_role block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | assume_role_with_web_identity block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | default_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | endpoints block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpProxy">http_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpsProxy">https_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | ignore_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of times an AWS API request is being executed. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.noProxy">no_proxy</a></code> | <code>str</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.retryMode">retry_mode</a></code> | <code>str</code> | Specifies how retries are attempted. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip static validation of region name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.stsRegion">sts_region</a></code> | <code>str</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.tagPolicyCompliance">tag_policy_compliance</a></code> | <code>str</code> | The severity with which to enforce organizational tagging policies on resources managed by this provider instance. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | session token. A session token is only required if you are using temporary security credentials. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.accessKey">access_key</a></code> | <code>str</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | assume_role block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | File containing custom root and intermediate certificates. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | default_tags block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | endpoints block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.httpProxy">http_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.httpsProxy">https_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | ignore_tags block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of times an AWS API request is being executed. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.noProxy">no_proxy</a></code> | <code>str</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.retryMode">retry_mode</a></code> | <code>str</code> | Specifies how retries are attempted. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.stsRegion">sts_region</a></code> | <code>str</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.tagPolicyCompliance">tag_policy_compliance</a></code> | <code>str</code> | The severity with which to enforce organizational tagging policies on resources managed by this provider instance. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | session token. A session token is only required if you are using temporary security credentials. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | The capacity of the AWS SDK's token bucket rate limiter. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.userAgent">user_agent</a></code> | <code>typing.List[str]</code> | Product details to append to the User-Agent string sent in all AWS API calls. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -102,7 +104,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -112,55 +114,55 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.accessKey"></a>
+##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.accessKey"></a>
 
 - *Type:* str
 
 The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#access_key AwsProvider#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#access_key AwsProvider#access_key}
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.alias"></a>
 
 - *Type:* str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#alias AwsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#alias AwsProvider#alias}
 
 ---
 
-##### `allowed_account_ids`<sup>Optional</sup> <a name="allowed_account_ids" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.allowedAccountIds"></a>
+##### `allowed_account_ids`<sup>Optional</sup> <a name="allowed_account_ids" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.allowedAccountIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}.
 
 ---
 
-##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole"></a>
+##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRole"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#assume_role AwsProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#assume_role AwsProvider#assume_role}
 
 ---
 
-##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity"></a>
+##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.assumeRoleWithWebIdentity"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 assume_role_with_web_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
 
 ---
 
-##### `custom_ca_bundle`<sup>Optional</sup> <a name="custom_ca_bundle" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.customCaBundle"></a>
+##### `custom_ca_bundle`<sup>Optional</sup> <a name="custom_ca_bundle" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.customCaBundle"></a>
 
 - *Type:* str
 
@@ -168,59 +170,59 @@ File containing custom root and intermediate certificates.
 
 Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#custom_ca_bundle AwsProvider#custom_ca_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#custom_ca_bundle AwsProvider#custom_ca_bundle}
 
 ---
 
-##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags"></a>
+##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.defaultTags"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#default_tags AwsProvider#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#default_tags AwsProvider#default_tags}
 
 ---
 
-##### `ec2_metadata_service_endpoint`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpoint"></a>
+##### `ec2_metadata_service_endpoint`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpoint"></a>
 
 - *Type:* str
 
 Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
 
 ---
 
-##### `ec2_metadata_service_endpoint_mode`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpointMode"></a>
+##### `ec2_metadata_service_endpoint_mode`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.ec2MetadataServiceEndpointMode"></a>
 
 - *Type:* str
 
 Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints"></a>
+##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.endpoints"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#endpoints AwsProvider#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#endpoints AwsProvider#endpoints}
 
 ---
 
-##### `forbidden_account_ids`<sup>Optional</sup> <a name="forbidden_account_ids" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.forbiddenAccountIds"></a>
+##### `forbidden_account_ids`<sup>Optional</sup> <a name="forbidden_account_ids" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.forbiddenAccountIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
 
 ---
 
-##### `http_proxy`<sup>Optional</sup> <a name="http_proxy" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpProxy"></a>
+##### `http_proxy`<sup>Optional</sup> <a name="http_proxy" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.httpProxy"></a>
 
 - *Type:* str
 
@@ -228,11 +230,11 @@ URL of a proxy to use for HTTP requests when accessing the AWS API.
 
 Can also be set using the `HTTP_PROXY` or `http_proxy` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#http_proxy AwsProvider#http_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#http_proxy AwsProvider#http_proxy}
 
 ---
 
-##### `https_proxy`<sup>Optional</sup> <a name="https_proxy" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.httpsProxy"></a>
+##### `https_proxy`<sup>Optional</sup> <a name="https_proxy" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.httpsProxy"></a>
 
 - *Type:* str
 
@@ -240,31 +242,31 @@ URL of a proxy to use for HTTPS requests when accessing the AWS API.
 
 Can also be set using the `HTTPS_PROXY` or `https_proxy` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#https_proxy AwsProvider#https_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#https_proxy AwsProvider#https_proxy}
 
 ---
 
-##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags"></a>
+##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.ignoreTags"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ignore_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ignore_tags AwsProvider#ignore_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ignore_tags AwsProvider#ignore_tags}
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.insecure"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#insecure AwsProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#insecure AwsProvider#insecure}
 
 ---
 
-##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.maxRetries"></a>
+##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.maxRetries"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -273,11 +275,11 @@ The maximum number of times an AWS API request is being executed.
 If the API request still fails, an error is
 thrown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#max_retries AwsProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#max_retries AwsProvider#max_retries}
 
 ---
 
-##### `no_proxy`<sup>Optional</sup> <a name="no_proxy" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.noProxy"></a>
+##### `no_proxy`<sup>Optional</sup> <a name="no_proxy" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.noProxy"></a>
 
 - *Type:* str
 
@@ -285,31 +287,31 @@ Comma-separated list of hosts that should not use HTTP or HTTPS proxies.
 
 Can also be set using the `NO_PROXY` or `no_proxy` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#no_proxy AwsProvider#no_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#no_proxy AwsProvider#no_proxy}
 
 ---
 
-##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.profile"></a>
+##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.profile"></a>
 
 - *Type:* str
 
 The profile for API operations. If not set, the default profile created with `aws configure` will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#profile AwsProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#profile AwsProvider#profile}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#region AwsProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#region AwsProvider#region}
 
 ---
 
-##### `retry_mode`<sup>Optional</sup> <a name="retry_mode" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.retryMode"></a>
+##### `retry_mode`<sup>Optional</sup> <a name="retry_mode" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.retryMode"></a>
 
 - *Type:* str
 
@@ -317,11 +319,11 @@ Specifies how retries are attempted.
 
 Valid values are `standard` and `adaptive`. Can also be configured using the `AWS_RETRY_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#retry_mode AwsProvider#retry_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#retry_mode AwsProvider#retry_mode}
 
 ---
 
-##### `s3_us_east1_regional_endpoint`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsEast1RegionalEndpoint"></a>
+##### `s3_us_east1_regional_endpoint`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsEast1RegionalEndpoint"></a>
 
 - *Type:* str
 
@@ -329,71 +331,71 @@ Specifies whether S3 API calls in the `us-east-1` region use the legacy global e
 
 Valid values are `legacy` or `regional`. Can also be configured using the `AWS_S3_US_EAST_1_REGIONAL_ENDPOINT` environment variable or the `s3_us_east_1_regional_endpoint` shared config file parameter
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3_us_east_1_regional_endpoint AwsProvider#s3_us_east_1_regional_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3_us_east_1_regional_endpoint AwsProvider#s3_us_east_1_regional_endpoint}
 
 ---
 
-##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle"></a>
+##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.s3UsePathStyle"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3_use_path_style AwsProvider#s3_use_path_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3_use_path_style AwsProvider#s3_use_path_style}
 
 ---
 
-##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.secretKey"></a>
+##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.secretKey"></a>
 
 - *Type:* str
 
 The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#secret_key AwsProvider#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#secret_key AwsProvider#secret_key}
 
 ---
 
-##### `shared_config_files`<sup>Optional</sup> <a name="shared_config_files" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedConfigFiles"></a>
+##### `shared_config_files`<sup>Optional</sup> <a name="shared_config_files" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.sharedConfigFiles"></a>
 
 - *Type:* typing.List[str]
 
 List of paths to shared config files. If not set, defaults to [~/.aws/config].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#shared_config_files AwsProvider#shared_config_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#shared_config_files AwsProvider#shared_config_files}
 
 ---
 
-##### `shared_credentials_files`<sup>Optional</sup> <a name="shared_credentials_files" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.sharedCredentialsFiles"></a>
+##### `shared_credentials_files`<sup>Optional</sup> <a name="shared_credentials_files" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.sharedCredentialsFiles"></a>
 
 - *Type:* typing.List[str]
 
 List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#shared_credentials_files AwsProvider#shared_credentials_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#shared_credentials_files AwsProvider#shared_credentials_files}
 
 ---
 
-##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation"></a>
+##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipCredentialsValidation"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
 
 ---
 
-##### `skip_metadata_api_check`<sup>Optional</sup> <a name="skip_metadata_api_check" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipMetadataApiCheck"></a>
+##### `skip_metadata_api_check`<sup>Optional</sup> <a name="skip_metadata_api_check" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipMetadataApiCheck"></a>
 
 - *Type:* str
 
 Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
 
 ---
 
-##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation"></a>
+##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipRegionValidation"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -401,31 +403,31 @@ Skip static validation of region name.
 
 Used by users of alternative AWS-like APIs or users w/ access to regions that are not public (yet).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_region_validation AwsProvider#skip_region_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_region_validation AwsProvider#skip_region_validation}
 
 ---
 
-##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId"></a>
+##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.skipRequestingAccountId"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
 
 ---
 
-##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.stsRegion"></a>
+##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.stsRegion"></a>
 
 - *Type:* str
 
 The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sts_region AwsProvider#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sts_region AwsProvider#sts_region}
 
 ---
 
-##### `tag_policy_compliance`<sup>Optional</sup> <a name="tag_policy_compliance" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.tagPolicyCompliance"></a>
+##### `tag_policy_compliance`<sup>Optional</sup> <a name="tag_policy_compliance" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.tagPolicyCompliance"></a>
 
 - *Type:* str
 
@@ -433,47 +435,57 @@ The severity with which to enforce organizational tagging policies on resources 
 
 At this time this only includes compliance with required tag keys by resource type. Valid values are "error", "warning", and "disabled". When unset or "disabled", tag policy compliance will not be enforced by the provider. Can also be configured with the TF_AWS_TAG_POLICY_COMPLIANCE environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#tag_policy_compliance AwsProvider#tag_policy_compliance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#tag_policy_compliance AwsProvider#tag_policy_compliance}
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.token"></a>
 
 - *Type:* str
 
 session token. A session token is only required if you are using temporary security credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#token AwsProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#token AwsProvider#token}
 
 ---
 
-##### `token_bucket_rate_limiter_capacity`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.tokenBucketRateLimiterCapacity"></a>
+##### `token_bucket_rate_limiter_capacity`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.tokenBucketRateLimiterCapacity"></a>
 
 - *Type:* typing.Union[int, float]
 
 The capacity of the AWS SDK's token bucket rate limiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#token_bucket_rate_limiter_capacity AwsProvider#token_bucket_rate_limiter_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#token_bucket_rate_limiter_capacity AwsProvider#token_bucket_rate_limiter_capacity}
 
 ---
 
-##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint"></a>
+##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.useDualstackEndpoint"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
 Resolve an endpoint with DualStack capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
 
 ---
 
-##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint"></a>
+##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.useFipsEndpoint"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
 Resolve an endpoint with FIPS capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
+
+---
+
+##### `user_agent`<sup>Optional</sup> <a name="user_agent" id="@cdktn/provider-aws.provider.AwsProvider.Initializer.parameter.userAgent"></a>
+
+- *Type:* typing.List[str]
+
+Product details to append to the User-Agent string sent in all AWS API calls.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#user_agent AwsProvider#user_agent}
 
 ---
 
@@ -481,52 +493,53 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetAccessKey">reset_access_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetAlias">reset_alias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetAllowedAccountIds">reset_allowed_account_ids</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetAssumeRole">reset_assume_role</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetAssumeRoleWithWebIdentity">reset_assume_role_with_web_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetCustomCaBundle">reset_custom_ca_bundle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetDefaultTags">reset_default_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpoint">reset_ec2_metadata_service_endpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpointMode">reset_ec2_metadata_service_endpoint_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetEndpoints">reset_endpoints</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetForbiddenAccountIds">reset_forbidden_account_ids</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetHttpProxy">reset_http_proxy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetHttpsProxy">reset_https_proxy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetIgnoreTags">reset_ignore_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetInsecure">reset_insecure</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetMaxRetries">reset_max_retries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetNoProxy">reset_no_proxy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetProfile">reset_profile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetRetryMode">reset_retry_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetS3UsEast1RegionalEndpoint">reset_s3_us_east1_regional_endpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetS3UsePathStyle">reset_s3_use_path_style</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSecretKey">reset_secret_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSharedConfigFiles">reset_shared_config_files</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSharedCredentialsFiles">reset_shared_credentials_files</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSkipCredentialsValidation">reset_skip_credentials_validation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSkipMetadataApiCheck">reset_skip_metadata_api_check</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSkipRegionValidation">reset_skip_region_validation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetSkipRequestingAccountId">reset_skip_requesting_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetStsRegion">reset_sts_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetTagPolicyCompliance">reset_tag_policy_compliance</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetToken">reset_token</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetTokenBucketRateLimiterCapacity">reset_token_bucket_rate_limiter_capacity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetUseDualstackEndpoint">reset_use_dualstack_endpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.resetUseFipsEndpoint">reset_use_fips_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetAccessKey">reset_access_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetAlias">reset_alias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetAllowedAccountIds">reset_allowed_account_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetAssumeRole">reset_assume_role</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetAssumeRoleWithWebIdentity">reset_assume_role_with_web_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetCustomCaBundle">reset_custom_ca_bundle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetDefaultTags">reset_default_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpoint">reset_ec2_metadata_service_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpointMode">reset_ec2_metadata_service_endpoint_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetEndpoints">reset_endpoints</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetForbiddenAccountIds">reset_forbidden_account_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetHttpProxy">reset_http_proxy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetHttpsProxy">reset_https_proxy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetIgnoreTags">reset_ignore_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetInsecure">reset_insecure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetMaxRetries">reset_max_retries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetNoProxy">reset_no_proxy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetProfile">reset_profile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetRetryMode">reset_retry_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetS3UsEast1RegionalEndpoint">reset_s3_us_east1_regional_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetS3UsePathStyle">reset_s3_use_path_style</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSecretKey">reset_secret_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSharedConfigFiles">reset_shared_config_files</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSharedCredentialsFiles">reset_shared_credentials_files</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSkipCredentialsValidation">reset_skip_credentials_validation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSkipMetadataApiCheck">reset_skip_metadata_api_check</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSkipRegionValidation">reset_skip_region_validation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetSkipRequestingAccountId">reset_skip_requesting_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetStsRegion">reset_sts_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetTagPolicyCompliance">reset_tag_policy_compliance</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetToken">reset_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetTokenBucketRateLimiterCapacity">reset_token_bucket_rate_limiter_capacity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetUseDualstackEndpoint">reset_use_dualstack_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetUseFipsEndpoint">reset_use_fips_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.resetUserAgent">reset_user_agent</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.provider.AwsProvider.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.provider.AwsProvider.toString"></a>
 
 ```python
 def to_string() -> str
@@ -534,7 +547,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.provider.AwsProvider.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.provider.AwsProvider.addOverride"></a>
 
 ```python
 def add_override(
@@ -543,19 +556,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.provider.AwsProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.provider.AwsProvider.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.provider.AwsProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.provider.AwsProvider.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.provider.AwsProvider.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.provider.AwsProvider.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -565,7 +578,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.provider.AwsProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.provider.AwsProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -573,7 +586,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.provider.AwsProvider.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.provider.AwsProvider.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -581,19 +594,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.provider.AwsProvider.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.provider.AwsProvider.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.provider.AwsProvider.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.provider.AwsProvider.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.provider.AwsProvider.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.provider.AwsProvider.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -601,231 +614,237 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `reset_access_key` <a name="reset_access_key" id="@cdktf/provider-aws.provider.AwsProvider.resetAccessKey"></a>
+##### `reset_access_key` <a name="reset_access_key" id="@cdktn/provider-aws.provider.AwsProvider.resetAccessKey"></a>
 
 ```python
 def reset_access_key() -> None
 ```
 
-##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-aws.provider.AwsProvider.resetAlias"></a>
+##### `reset_alias` <a name="reset_alias" id="@cdktn/provider-aws.provider.AwsProvider.resetAlias"></a>
 
 ```python
 def reset_alias() -> None
 ```
 
-##### `reset_allowed_account_ids` <a name="reset_allowed_account_ids" id="@cdktf/provider-aws.provider.AwsProvider.resetAllowedAccountIds"></a>
+##### `reset_allowed_account_ids` <a name="reset_allowed_account_ids" id="@cdktn/provider-aws.provider.AwsProvider.resetAllowedAccountIds"></a>
 
 ```python
 def reset_allowed_account_ids() -> None
 ```
 
-##### `reset_assume_role` <a name="reset_assume_role" id="@cdktf/provider-aws.provider.AwsProvider.resetAssumeRole"></a>
+##### `reset_assume_role` <a name="reset_assume_role" id="@cdktn/provider-aws.provider.AwsProvider.resetAssumeRole"></a>
 
 ```python
 def reset_assume_role() -> None
 ```
 
-##### `reset_assume_role_with_web_identity` <a name="reset_assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProvider.resetAssumeRoleWithWebIdentity"></a>
+##### `reset_assume_role_with_web_identity` <a name="reset_assume_role_with_web_identity" id="@cdktn/provider-aws.provider.AwsProvider.resetAssumeRoleWithWebIdentity"></a>
 
 ```python
 def reset_assume_role_with_web_identity() -> None
 ```
 
-##### `reset_custom_ca_bundle` <a name="reset_custom_ca_bundle" id="@cdktf/provider-aws.provider.AwsProvider.resetCustomCaBundle"></a>
+##### `reset_custom_ca_bundle` <a name="reset_custom_ca_bundle" id="@cdktn/provider-aws.provider.AwsProvider.resetCustomCaBundle"></a>
 
 ```python
 def reset_custom_ca_bundle() -> None
 ```
 
-##### `reset_default_tags` <a name="reset_default_tags" id="@cdktf/provider-aws.provider.AwsProvider.resetDefaultTags"></a>
+##### `reset_default_tags` <a name="reset_default_tags" id="@cdktn/provider-aws.provider.AwsProvider.resetDefaultTags"></a>
 
 ```python
 def reset_default_tags() -> None
 ```
 
-##### `reset_ec2_metadata_service_endpoint` <a name="reset_ec2_metadata_service_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpoint"></a>
+##### `reset_ec2_metadata_service_endpoint` <a name="reset_ec2_metadata_service_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpoint"></a>
 
 ```python
 def reset_ec2_metadata_service_endpoint() -> None
 ```
 
-##### `reset_ec2_metadata_service_endpoint_mode` <a name="reset_ec2_metadata_service_endpoint_mode" id="@cdktf/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpointMode"></a>
+##### `reset_ec2_metadata_service_endpoint_mode` <a name="reset_ec2_metadata_service_endpoint_mode" id="@cdktn/provider-aws.provider.AwsProvider.resetEc2MetadataServiceEndpointMode"></a>
 
 ```python
 def reset_ec2_metadata_service_endpoint_mode() -> None
 ```
 
-##### `reset_endpoints` <a name="reset_endpoints" id="@cdktf/provider-aws.provider.AwsProvider.resetEndpoints"></a>
+##### `reset_endpoints` <a name="reset_endpoints" id="@cdktn/provider-aws.provider.AwsProvider.resetEndpoints"></a>
 
 ```python
 def reset_endpoints() -> None
 ```
 
-##### `reset_forbidden_account_ids` <a name="reset_forbidden_account_ids" id="@cdktf/provider-aws.provider.AwsProvider.resetForbiddenAccountIds"></a>
+##### `reset_forbidden_account_ids` <a name="reset_forbidden_account_ids" id="@cdktn/provider-aws.provider.AwsProvider.resetForbiddenAccountIds"></a>
 
 ```python
 def reset_forbidden_account_ids() -> None
 ```
 
-##### `reset_http_proxy` <a name="reset_http_proxy" id="@cdktf/provider-aws.provider.AwsProvider.resetHttpProxy"></a>
+##### `reset_http_proxy` <a name="reset_http_proxy" id="@cdktn/provider-aws.provider.AwsProvider.resetHttpProxy"></a>
 
 ```python
 def reset_http_proxy() -> None
 ```
 
-##### `reset_https_proxy` <a name="reset_https_proxy" id="@cdktf/provider-aws.provider.AwsProvider.resetHttpsProxy"></a>
+##### `reset_https_proxy` <a name="reset_https_proxy" id="@cdktn/provider-aws.provider.AwsProvider.resetHttpsProxy"></a>
 
 ```python
 def reset_https_proxy() -> None
 ```
 
-##### `reset_ignore_tags` <a name="reset_ignore_tags" id="@cdktf/provider-aws.provider.AwsProvider.resetIgnoreTags"></a>
+##### `reset_ignore_tags` <a name="reset_ignore_tags" id="@cdktn/provider-aws.provider.AwsProvider.resetIgnoreTags"></a>
 
 ```python
 def reset_ignore_tags() -> None
 ```
 
-##### `reset_insecure` <a name="reset_insecure" id="@cdktf/provider-aws.provider.AwsProvider.resetInsecure"></a>
+##### `reset_insecure` <a name="reset_insecure" id="@cdktn/provider-aws.provider.AwsProvider.resetInsecure"></a>
 
 ```python
 def reset_insecure() -> None
 ```
 
-##### `reset_max_retries` <a name="reset_max_retries" id="@cdktf/provider-aws.provider.AwsProvider.resetMaxRetries"></a>
+##### `reset_max_retries` <a name="reset_max_retries" id="@cdktn/provider-aws.provider.AwsProvider.resetMaxRetries"></a>
 
 ```python
 def reset_max_retries() -> None
 ```
 
-##### `reset_no_proxy` <a name="reset_no_proxy" id="@cdktf/provider-aws.provider.AwsProvider.resetNoProxy"></a>
+##### `reset_no_proxy` <a name="reset_no_proxy" id="@cdktn/provider-aws.provider.AwsProvider.resetNoProxy"></a>
 
 ```python
 def reset_no_proxy() -> None
 ```
 
-##### `reset_profile` <a name="reset_profile" id="@cdktf/provider-aws.provider.AwsProvider.resetProfile"></a>
+##### `reset_profile` <a name="reset_profile" id="@cdktn/provider-aws.provider.AwsProvider.resetProfile"></a>
 
 ```python
 def reset_profile() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.provider.AwsProvider.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.provider.AwsProvider.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_retry_mode` <a name="reset_retry_mode" id="@cdktf/provider-aws.provider.AwsProvider.resetRetryMode"></a>
+##### `reset_retry_mode` <a name="reset_retry_mode" id="@cdktn/provider-aws.provider.AwsProvider.resetRetryMode"></a>
 
 ```python
 def reset_retry_mode() -> None
 ```
 
-##### `reset_s3_us_east1_regional_endpoint` <a name="reset_s3_us_east1_regional_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.resetS3UsEast1RegionalEndpoint"></a>
+##### `reset_s3_us_east1_regional_endpoint` <a name="reset_s3_us_east1_regional_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.resetS3UsEast1RegionalEndpoint"></a>
 
 ```python
 def reset_s3_us_east1_regional_endpoint() -> None
 ```
 
-##### `reset_s3_use_path_style` <a name="reset_s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProvider.resetS3UsePathStyle"></a>
+##### `reset_s3_use_path_style` <a name="reset_s3_use_path_style" id="@cdktn/provider-aws.provider.AwsProvider.resetS3UsePathStyle"></a>
 
 ```python
 def reset_s3_use_path_style() -> None
 ```
 
-##### `reset_secret_key` <a name="reset_secret_key" id="@cdktf/provider-aws.provider.AwsProvider.resetSecretKey"></a>
+##### `reset_secret_key` <a name="reset_secret_key" id="@cdktn/provider-aws.provider.AwsProvider.resetSecretKey"></a>
 
 ```python
 def reset_secret_key() -> None
 ```
 
-##### `reset_shared_config_files` <a name="reset_shared_config_files" id="@cdktf/provider-aws.provider.AwsProvider.resetSharedConfigFiles"></a>
+##### `reset_shared_config_files` <a name="reset_shared_config_files" id="@cdktn/provider-aws.provider.AwsProvider.resetSharedConfigFiles"></a>
 
 ```python
 def reset_shared_config_files() -> None
 ```
 
-##### `reset_shared_credentials_files` <a name="reset_shared_credentials_files" id="@cdktf/provider-aws.provider.AwsProvider.resetSharedCredentialsFiles"></a>
+##### `reset_shared_credentials_files` <a name="reset_shared_credentials_files" id="@cdktn/provider-aws.provider.AwsProvider.resetSharedCredentialsFiles"></a>
 
 ```python
 def reset_shared_credentials_files() -> None
 ```
 
-##### `reset_skip_credentials_validation` <a name="reset_skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProvider.resetSkipCredentialsValidation"></a>
+##### `reset_skip_credentials_validation` <a name="reset_skip_credentials_validation" id="@cdktn/provider-aws.provider.AwsProvider.resetSkipCredentialsValidation"></a>
 
 ```python
 def reset_skip_credentials_validation() -> None
 ```
 
-##### `reset_skip_metadata_api_check` <a name="reset_skip_metadata_api_check" id="@cdktf/provider-aws.provider.AwsProvider.resetSkipMetadataApiCheck"></a>
+##### `reset_skip_metadata_api_check` <a name="reset_skip_metadata_api_check" id="@cdktn/provider-aws.provider.AwsProvider.resetSkipMetadataApiCheck"></a>
 
 ```python
 def reset_skip_metadata_api_check() -> None
 ```
 
-##### `reset_skip_region_validation` <a name="reset_skip_region_validation" id="@cdktf/provider-aws.provider.AwsProvider.resetSkipRegionValidation"></a>
+##### `reset_skip_region_validation` <a name="reset_skip_region_validation" id="@cdktn/provider-aws.provider.AwsProvider.resetSkipRegionValidation"></a>
 
 ```python
 def reset_skip_region_validation() -> None
 ```
 
-##### `reset_skip_requesting_account_id` <a name="reset_skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProvider.resetSkipRequestingAccountId"></a>
+##### `reset_skip_requesting_account_id` <a name="reset_skip_requesting_account_id" id="@cdktn/provider-aws.provider.AwsProvider.resetSkipRequestingAccountId"></a>
 
 ```python
 def reset_skip_requesting_account_id() -> None
 ```
 
-##### `reset_sts_region` <a name="reset_sts_region" id="@cdktf/provider-aws.provider.AwsProvider.resetStsRegion"></a>
+##### `reset_sts_region` <a name="reset_sts_region" id="@cdktn/provider-aws.provider.AwsProvider.resetStsRegion"></a>
 
 ```python
 def reset_sts_region() -> None
 ```
 
-##### `reset_tag_policy_compliance` <a name="reset_tag_policy_compliance" id="@cdktf/provider-aws.provider.AwsProvider.resetTagPolicyCompliance"></a>
+##### `reset_tag_policy_compliance` <a name="reset_tag_policy_compliance" id="@cdktn/provider-aws.provider.AwsProvider.resetTagPolicyCompliance"></a>
 
 ```python
 def reset_tag_policy_compliance() -> None
 ```
 
-##### `reset_token` <a name="reset_token" id="@cdktf/provider-aws.provider.AwsProvider.resetToken"></a>
+##### `reset_token` <a name="reset_token" id="@cdktn/provider-aws.provider.AwsProvider.resetToken"></a>
 
 ```python
 def reset_token() -> None
 ```
 
-##### `reset_token_bucket_rate_limiter_capacity` <a name="reset_token_bucket_rate_limiter_capacity" id="@cdktf/provider-aws.provider.AwsProvider.resetTokenBucketRateLimiterCapacity"></a>
+##### `reset_token_bucket_rate_limiter_capacity` <a name="reset_token_bucket_rate_limiter_capacity" id="@cdktn/provider-aws.provider.AwsProvider.resetTokenBucketRateLimiterCapacity"></a>
 
 ```python
 def reset_token_bucket_rate_limiter_capacity() -> None
 ```
 
-##### `reset_use_dualstack_endpoint` <a name="reset_use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.resetUseDualstackEndpoint"></a>
+##### `reset_use_dualstack_endpoint` <a name="reset_use_dualstack_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.resetUseDualstackEndpoint"></a>
 
 ```python
 def reset_use_dualstack_endpoint() -> None
 ```
 
-##### `reset_use_fips_endpoint` <a name="reset_use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.resetUseFipsEndpoint"></a>
+##### `reset_use_fips_endpoint` <a name="reset_use_fips_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.resetUseFipsEndpoint"></a>
 
 ```python
 def reset_use_fips_endpoint() -> None
+```
+
+##### `reset_user_agent` <a name="reset_user_agent" id="@cdktn/provider-aws.provider.AwsProvider.resetUserAgent"></a>
+
+```python
+def reset_user_agent() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AwsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AwsProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.provider.AwsProvider.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.provider.AwsProvider.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProvider.is_construct(
   x: typing.Any
@@ -848,7 +867,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.provider.AwsProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.provider.AwsProvider.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -856,42 +875,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.provider.AwsProvider.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProvider.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.provider.AwsProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformProvider"></a>
+##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktn/provider-aws.provider.AwsProvider.isTerraformProvider"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProvider.is_terraform_provider(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.provider.AwsProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.provider.AwsProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.provider.AwsProvider.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProvider.generate_config_for_import(
   scope: Construct,
@@ -903,7 +922,7 @@ provider.AwsProvider.generate_config_for_import(
 
 Generates CDKTF code for importing a AwsProvider resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -911,7 +930,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -919,17 +938,17 @@ The construct id used in the generated config for the AwsProvider to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing AwsProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.provider.AwsProvider.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -941,88 +960,90 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">allowed_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput">assume_role_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assume_role_with_web_identity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.customCaBundleInput">custom_ca_bundle_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput">default_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput">ec2_metadata_service_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput">ec2_metadata_service_endpoint_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput">endpoints_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput">forbidden_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpProxyInput">http_proxy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpsProxyInput">https_proxy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignore_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.noProxyInput">no_proxy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.retryModeInput">retry_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput">s3_us_east1_regional_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3_use_path_style_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.secretKeyInput">secret_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput">shared_config_files_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput">shared_credentials_files_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skip_credentials_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput">skip_metadata_api_check_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skip_region_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skip_requesting_account_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.stsRegionInput">sts_region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tagPolicyComplianceInput">tag_policy_compliance_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput">token_bucket_rate_limiter_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">use_dualstack_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">use_fips_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpProxy">http_proxy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.httpsProxy">https_proxy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.noProxy">no_proxy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.profile">profile</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.retryMode">retry_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.stsRegion">sts_region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tagPolicyCompliance">tag_policy_compliance</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput">allowed_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleInput">assume_role_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput">assume_role_with_web_identity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.customCaBundleInput">custom_ca_bundle_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.defaultTagsInput">default_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput">ec2_metadata_service_endpoint_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput">ec2_metadata_service_endpoint_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.endpointsInput">endpoints_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput">forbidden_account_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpProxyInput">http_proxy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpsProxyInput">https_proxy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ignoreTagsInput">ignore_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.noProxyInput">no_proxy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.retryModeInput">retry_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput">s3_us_east1_regional_endpoint_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput">s3_use_path_style_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.secretKeyInput">secret_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput">shared_config_files_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput">shared_credentials_files_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput">skip_credentials_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput">skip_metadata_api_check_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidationInput">skip_region_validation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput">skip_requesting_account_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.stsRegionInput">sts_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tagPolicyComplianceInput">tag_policy_compliance_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput">token_bucket_rate_limiter_capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput">use_dualstack_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpointInput">use_fips_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.userAgentInput">user_agent_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpProxy">http_proxy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.httpsProxy">https_proxy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.noProxy">no_proxy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.profile">profile</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.retryMode">retry_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.stsRegion">sts_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tagPolicyCompliance">tag_policy_compliance</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.userAgent">user_agent</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.provider.AwsProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.provider.AwsProvider.property.node"></a>
 
 ```python
 node: Node
@@ -1034,7 +1055,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.provider.AwsProvider.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.provider.AwsProvider.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1044,7 +1065,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.provider.AwsProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.provider.AwsProvider.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1054,7 +1075,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.provider.AwsProvider.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.provider.AwsProvider.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1064,7 +1085,7 @@ friendly_unique_id: str
 
 ---
 
-##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktf/provider-aws.provider.AwsProvider.property.metaAttributes"></a>
+##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktn/provider-aws.provider.AwsProvider.property.metaAttributes"></a>
 
 ```python
 meta_attributes: typing.Mapping[typing.Any]
@@ -1074,7 +1095,7 @@ meta_attributes: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.provider.AwsProvider.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.provider.AwsProvider.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1084,7 +1105,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.provider.AwsProvider.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1094,7 +1115,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktf/provider-aws.provider.AwsProvider.property.terraformProviderSource"></a>
+##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktn/provider-aws.provider.AwsProvider.property.terraformProviderSource"></a>
 
 ```python
 terraform_provider_source: str
@@ -1104,7 +1125,7 @@ terraform_provider_source: str
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-aws.provider.AwsProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-aws.provider.AwsProvider.property.alias"></a>
 
 ```python
 alias: str
@@ -1114,7 +1135,7 @@ alias: str
 
 ---
 
-##### `access_key_input`<sup>Optional</sup> <a name="access_key_input" id="@cdktf/provider-aws.provider.AwsProvider.property.accessKeyInput"></a>
+##### `access_key_input`<sup>Optional</sup> <a name="access_key_input" id="@cdktn/provider-aws.provider.AwsProvider.property.accessKeyInput"></a>
 
 ```python
 access_key_input: str
@@ -1124,7 +1145,7 @@ access_key_input: str
 
 ---
 
-##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktf/provider-aws.provider.AwsProvider.property.aliasInput"></a>
+##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktn/provider-aws.provider.AwsProvider.property.aliasInput"></a>
 
 ```python
 alias_input: str
@@ -1134,7 +1155,7 @@ alias_input: str
 
 ---
 
-##### `allowed_account_ids_input`<sup>Optional</sup> <a name="allowed_account_ids_input" id="@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput"></a>
+##### `allowed_account_ids_input`<sup>Optional</sup> <a name="allowed_account_ids_input" id="@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIdsInput"></a>
 
 ```python
 allowed_account_ids_input: typing.List[str]
@@ -1144,27 +1165,27 @@ allowed_account_ids_input: typing.List[str]
 
 ---
 
-##### `assume_role_input`<sup>Optional</sup> <a name="assume_role_input" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleInput"></a>
+##### `assume_role_input`<sup>Optional</sup> <a name="assume_role_input" id="@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleInput"></a>
 
 ```python
 assume_role_input: IResolvable | typing.List[AwsProviderAssumeRole]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 ---
 
-##### `assume_role_with_web_identity_input`<sup>Optional</sup> <a name="assume_role_with_web_identity_input" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput"></a>
+##### `assume_role_with_web_identity_input`<sup>Optional</sup> <a name="assume_role_with_web_identity_input" id="@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentityInput"></a>
 
 ```python
 assume_role_with_web_identity_input: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 ---
 
-##### `custom_ca_bundle_input`<sup>Optional</sup> <a name="custom_ca_bundle_input" id="@cdktf/provider-aws.provider.AwsProvider.property.customCaBundleInput"></a>
+##### `custom_ca_bundle_input`<sup>Optional</sup> <a name="custom_ca_bundle_input" id="@cdktn/provider-aws.provider.AwsProvider.property.customCaBundleInput"></a>
 
 ```python
 custom_ca_bundle_input: str
@@ -1174,17 +1195,17 @@ custom_ca_bundle_input: str
 
 ---
 
-##### `default_tags_input`<sup>Optional</sup> <a name="default_tags_input" id="@cdktf/provider-aws.provider.AwsProvider.property.defaultTagsInput"></a>
+##### `default_tags_input`<sup>Optional</sup> <a name="default_tags_input" id="@cdktn/provider-aws.provider.AwsProvider.property.defaultTagsInput"></a>
 
 ```python
 default_tags_input: IResolvable | typing.List[AwsProviderDefaultTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 ---
 
-##### `ec2_metadata_service_endpoint_input`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_input" id="@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput"></a>
+##### `ec2_metadata_service_endpoint_input`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_input" id="@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointInput"></a>
 
 ```python
 ec2_metadata_service_endpoint_input: str
@@ -1194,7 +1215,7 @@ ec2_metadata_service_endpoint_input: str
 
 ---
 
-##### `ec2_metadata_service_endpoint_mode_input`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode_input" id="@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput"></a>
+##### `ec2_metadata_service_endpoint_mode_input`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode_input" id="@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointModeInput"></a>
 
 ```python
 ec2_metadata_service_endpoint_mode_input: str
@@ -1204,17 +1225,17 @@ ec2_metadata_service_endpoint_mode_input: str
 
 ---
 
-##### `endpoints_input`<sup>Optional</sup> <a name="endpoints_input" id="@cdktf/provider-aws.provider.AwsProvider.property.endpointsInput"></a>
+##### `endpoints_input`<sup>Optional</sup> <a name="endpoints_input" id="@cdktn/provider-aws.provider.AwsProvider.property.endpointsInput"></a>
 
 ```python
 endpoints_input: IResolvable | typing.List[AwsProviderEndpoints]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 ---
 
-##### `forbidden_account_ids_input`<sup>Optional</sup> <a name="forbidden_account_ids_input" id="@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput"></a>
+##### `forbidden_account_ids_input`<sup>Optional</sup> <a name="forbidden_account_ids_input" id="@cdktn/provider-aws.provider.AwsProvider.property.forbiddenAccountIdsInput"></a>
 
 ```python
 forbidden_account_ids_input: typing.List[str]
@@ -1224,7 +1245,7 @@ forbidden_account_ids_input: typing.List[str]
 
 ---
 
-##### `http_proxy_input`<sup>Optional</sup> <a name="http_proxy_input" id="@cdktf/provider-aws.provider.AwsProvider.property.httpProxyInput"></a>
+##### `http_proxy_input`<sup>Optional</sup> <a name="http_proxy_input" id="@cdktn/provider-aws.provider.AwsProvider.property.httpProxyInput"></a>
 
 ```python
 http_proxy_input: str
@@ -1234,7 +1255,7 @@ http_proxy_input: str
 
 ---
 
-##### `https_proxy_input`<sup>Optional</sup> <a name="https_proxy_input" id="@cdktf/provider-aws.provider.AwsProvider.property.httpsProxyInput"></a>
+##### `https_proxy_input`<sup>Optional</sup> <a name="https_proxy_input" id="@cdktn/provider-aws.provider.AwsProvider.property.httpsProxyInput"></a>
 
 ```python
 https_proxy_input: str
@@ -1244,17 +1265,17 @@ https_proxy_input: str
 
 ---
 
-##### `ignore_tags_input`<sup>Optional</sup> <a name="ignore_tags_input" id="@cdktf/provider-aws.provider.AwsProvider.property.ignoreTagsInput"></a>
+##### `ignore_tags_input`<sup>Optional</sup> <a name="ignore_tags_input" id="@cdktn/provider-aws.provider.AwsProvider.property.ignoreTagsInput"></a>
 
 ```python
 ignore_tags_input: IResolvable | typing.List[AwsProviderIgnoreTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ---
 
-##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktf/provider-aws.provider.AwsProvider.property.insecureInput"></a>
+##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktn/provider-aws.provider.AwsProvider.property.insecureInput"></a>
 
 ```python
 insecure_input: bool | IResolvable
@@ -1264,7 +1285,7 @@ insecure_input: bool | IResolvable
 
 ---
 
-##### `max_retries_input`<sup>Optional</sup> <a name="max_retries_input" id="@cdktf/provider-aws.provider.AwsProvider.property.maxRetriesInput"></a>
+##### `max_retries_input`<sup>Optional</sup> <a name="max_retries_input" id="@cdktn/provider-aws.provider.AwsProvider.property.maxRetriesInput"></a>
 
 ```python
 max_retries_input: typing.Union[int, float]
@@ -1274,7 +1295,7 @@ max_retries_input: typing.Union[int, float]
 
 ---
 
-##### `no_proxy_input`<sup>Optional</sup> <a name="no_proxy_input" id="@cdktf/provider-aws.provider.AwsProvider.property.noProxyInput"></a>
+##### `no_proxy_input`<sup>Optional</sup> <a name="no_proxy_input" id="@cdktn/provider-aws.provider.AwsProvider.property.noProxyInput"></a>
 
 ```python
 no_proxy_input: str
@@ -1284,7 +1305,7 @@ no_proxy_input: str
 
 ---
 
-##### `profile_input`<sup>Optional</sup> <a name="profile_input" id="@cdktf/provider-aws.provider.AwsProvider.property.profileInput"></a>
+##### `profile_input`<sup>Optional</sup> <a name="profile_input" id="@cdktn/provider-aws.provider.AwsProvider.property.profileInput"></a>
 
 ```python
 profile_input: str
@@ -1294,7 +1315,7 @@ profile_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.provider.AwsProvider.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.provider.AwsProvider.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1304,7 +1325,7 @@ region_input: str
 
 ---
 
-##### `retry_mode_input`<sup>Optional</sup> <a name="retry_mode_input" id="@cdktf/provider-aws.provider.AwsProvider.property.retryModeInput"></a>
+##### `retry_mode_input`<sup>Optional</sup> <a name="retry_mode_input" id="@cdktn/provider-aws.provider.AwsProvider.property.retryModeInput"></a>
 
 ```python
 retry_mode_input: str
@@ -1314,7 +1335,7 @@ retry_mode_input: str
 
 ---
 
-##### `s3_us_east1_regional_endpoint_input`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint_input" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput"></a>
+##### `s3_us_east1_regional_endpoint_input`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint_input" id="@cdktn/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpointInput"></a>
 
 ```python
 s3_us_east1_regional_endpoint_input: str
@@ -1324,7 +1345,7 @@ s3_us_east1_regional_endpoint_input: str
 
 ---
 
-##### `s3_use_path_style_input`<sup>Optional</sup> <a name="s3_use_path_style_input" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput"></a>
+##### `s3_use_path_style_input`<sup>Optional</sup> <a name="s3_use_path_style_input" id="@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyleInput"></a>
 
 ```python
 s3_use_path_style_input: bool | IResolvable
@@ -1334,7 +1355,7 @@ s3_use_path_style_input: bool | IResolvable
 
 ---
 
-##### `secret_key_input`<sup>Optional</sup> <a name="secret_key_input" id="@cdktf/provider-aws.provider.AwsProvider.property.secretKeyInput"></a>
+##### `secret_key_input`<sup>Optional</sup> <a name="secret_key_input" id="@cdktn/provider-aws.provider.AwsProvider.property.secretKeyInput"></a>
 
 ```python
 secret_key_input: str
@@ -1344,7 +1365,7 @@ secret_key_input: str
 
 ---
 
-##### `shared_config_files_input`<sup>Optional</sup> <a name="shared_config_files_input" id="@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput"></a>
+##### `shared_config_files_input`<sup>Optional</sup> <a name="shared_config_files_input" id="@cdktn/provider-aws.provider.AwsProvider.property.sharedConfigFilesInput"></a>
 
 ```python
 shared_config_files_input: typing.List[str]
@@ -1354,7 +1375,7 @@ shared_config_files_input: typing.List[str]
 
 ---
 
-##### `shared_credentials_files_input`<sup>Optional</sup> <a name="shared_credentials_files_input" id="@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput"></a>
+##### `shared_credentials_files_input`<sup>Optional</sup> <a name="shared_credentials_files_input" id="@cdktn/provider-aws.provider.AwsProvider.property.sharedCredentialsFilesInput"></a>
 
 ```python
 shared_credentials_files_input: typing.List[str]
@@ -1364,7 +1385,7 @@ shared_credentials_files_input: typing.List[str]
 
 ---
 
-##### `skip_credentials_validation_input`<sup>Optional</sup> <a name="skip_credentials_validation_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput"></a>
+##### `skip_credentials_validation_input`<sup>Optional</sup> <a name="skip_credentials_validation_input" id="@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidationInput"></a>
 
 ```python
 skip_credentials_validation_input: bool | IResolvable
@@ -1374,7 +1395,7 @@ skip_credentials_validation_input: bool | IResolvable
 
 ---
 
-##### `skip_metadata_api_check_input`<sup>Optional</sup> <a name="skip_metadata_api_check_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput"></a>
+##### `skip_metadata_api_check_input`<sup>Optional</sup> <a name="skip_metadata_api_check_input" id="@cdktn/provider-aws.provider.AwsProvider.property.skipMetadataApiCheckInput"></a>
 
 ```python
 skip_metadata_api_check_input: str
@@ -1384,7 +1405,7 @@ skip_metadata_api_check_input: str
 
 ---
 
-##### `skip_region_validation_input`<sup>Optional</sup> <a name="skip_region_validation_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidationInput"></a>
+##### `skip_region_validation_input`<sup>Optional</sup> <a name="skip_region_validation_input" id="@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidationInput"></a>
 
 ```python
 skip_region_validation_input: bool | IResolvable
@@ -1394,7 +1415,7 @@ skip_region_validation_input: bool | IResolvable
 
 ---
 
-##### `skip_requesting_account_id_input`<sup>Optional</sup> <a name="skip_requesting_account_id_input" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput"></a>
+##### `skip_requesting_account_id_input`<sup>Optional</sup> <a name="skip_requesting_account_id_input" id="@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountIdInput"></a>
 
 ```python
 skip_requesting_account_id_input: bool | IResolvable
@@ -1404,7 +1425,7 @@ skip_requesting_account_id_input: bool | IResolvable
 
 ---
 
-##### `sts_region_input`<sup>Optional</sup> <a name="sts_region_input" id="@cdktf/provider-aws.provider.AwsProvider.property.stsRegionInput"></a>
+##### `sts_region_input`<sup>Optional</sup> <a name="sts_region_input" id="@cdktn/provider-aws.provider.AwsProvider.property.stsRegionInput"></a>
 
 ```python
 sts_region_input: str
@@ -1414,7 +1435,7 @@ sts_region_input: str
 
 ---
 
-##### `tag_policy_compliance_input`<sup>Optional</sup> <a name="tag_policy_compliance_input" id="@cdktf/provider-aws.provider.AwsProvider.property.tagPolicyComplianceInput"></a>
+##### `tag_policy_compliance_input`<sup>Optional</sup> <a name="tag_policy_compliance_input" id="@cdktn/provider-aws.provider.AwsProvider.property.tagPolicyComplianceInput"></a>
 
 ```python
 tag_policy_compliance_input: str
@@ -1424,7 +1445,7 @@ tag_policy_compliance_input: str
 
 ---
 
-##### `token_bucket_rate_limiter_capacity_input`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity_input" id="@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput"></a>
+##### `token_bucket_rate_limiter_capacity_input`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity_input" id="@cdktn/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacityInput"></a>
 
 ```python
 token_bucket_rate_limiter_capacity_input: typing.Union[int, float]
@@ -1434,7 +1455,7 @@ token_bucket_rate_limiter_capacity_input: typing.Union[int, float]
 
 ---
 
-##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktf/provider-aws.provider.AwsProvider.property.tokenInput"></a>
+##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktn/provider-aws.provider.AwsProvider.property.tokenInput"></a>
 
 ```python
 token_input: str
@@ -1444,7 +1465,7 @@ token_input: str
 
 ---
 
-##### `use_dualstack_endpoint_input`<sup>Optional</sup> <a name="use_dualstack_endpoint_input" id="@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput"></a>
+##### `use_dualstack_endpoint_input`<sup>Optional</sup> <a name="use_dualstack_endpoint_input" id="@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpointInput"></a>
 
 ```python
 use_dualstack_endpoint_input: bool | IResolvable
@@ -1454,7 +1475,7 @@ use_dualstack_endpoint_input: bool | IResolvable
 
 ---
 
-##### `use_fips_endpoint_input`<sup>Optional</sup> <a name="use_fips_endpoint_input" id="@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpointInput"></a>
+##### `use_fips_endpoint_input`<sup>Optional</sup> <a name="use_fips_endpoint_input" id="@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpointInput"></a>
 
 ```python
 use_fips_endpoint_input: bool | IResolvable
@@ -1464,7 +1485,17 @@ use_fips_endpoint_input: bool | IResolvable
 
 ---
 
-##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktf/provider-aws.provider.AwsProvider.property.accessKey"></a>
+##### `user_agent_input`<sup>Optional</sup> <a name="user_agent_input" id="@cdktn/provider-aws.provider.AwsProvider.property.userAgentInput"></a>
+
+```python
+user_agent_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktn/provider-aws.provider.AwsProvider.property.accessKey"></a>
 
 ```python
 access_key: str
@@ -1474,7 +1505,7 @@ access_key: str
 
 ---
 
-##### `allowed_account_ids`<sup>Optional</sup> <a name="allowed_account_ids" id="@cdktf/provider-aws.provider.AwsProvider.property.allowedAccountIds"></a>
+##### `allowed_account_ids`<sup>Optional</sup> <a name="allowed_account_ids" id="@cdktn/provider-aws.provider.AwsProvider.property.allowedAccountIds"></a>
 
 ```python
 allowed_account_ids: typing.List[str]
@@ -1484,27 +1515,27 @@ allowed_account_ids: typing.List[str]
 
 ---
 
-##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRole"></a>
+##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktn/provider-aws.provider.AwsProvider.property.assumeRole"></a>
 
 ```python
 assume_role: IResolvable | typing.List[AwsProviderAssumeRole]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 ---
 
-##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity"></a>
+##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktn/provider-aws.provider.AwsProvider.property.assumeRoleWithWebIdentity"></a>
 
 ```python
 assume_role_with_web_identity: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 ---
 
-##### `custom_ca_bundle`<sup>Optional</sup> <a name="custom_ca_bundle" id="@cdktf/provider-aws.provider.AwsProvider.property.customCaBundle"></a>
+##### `custom_ca_bundle`<sup>Optional</sup> <a name="custom_ca_bundle" id="@cdktn/provider-aws.provider.AwsProvider.property.customCaBundle"></a>
 
 ```python
 custom_ca_bundle: str
@@ -1514,17 +1545,17 @@ custom_ca_bundle: str
 
 ---
 
-##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktf/provider-aws.provider.AwsProvider.property.defaultTags"></a>
+##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktn/provider-aws.provider.AwsProvider.property.defaultTags"></a>
 
 ```python
 default_tags: IResolvable | typing.List[AwsProviderDefaultTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 ---
 
-##### `ec2_metadata_service_endpoint`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint"></a>
+##### `ec2_metadata_service_endpoint`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpoint"></a>
 
 ```python
 ec2_metadata_service_endpoint: str
@@ -1534,7 +1565,7 @@ ec2_metadata_service_endpoint: str
 
 ---
 
-##### `ec2_metadata_service_endpoint_mode`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode" id="@cdktf/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode"></a>
+##### `ec2_metadata_service_endpoint_mode`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode" id="@cdktn/provider-aws.provider.AwsProvider.property.ec2MetadataServiceEndpointMode"></a>
 
 ```python
 ec2_metadata_service_endpoint_mode: str
@@ -1544,17 +1575,17 @@ ec2_metadata_service_endpoint_mode: str
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProvider.property.endpoints"></a>
+##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktn/provider-aws.provider.AwsProvider.property.endpoints"></a>
 
 ```python
 endpoints: IResolvable | typing.List[AwsProviderEndpoints]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 ---
 
-##### `forbidden_account_ids`<sup>Optional</sup> <a name="forbidden_account_ids" id="@cdktf/provider-aws.provider.AwsProvider.property.forbiddenAccountIds"></a>
+##### `forbidden_account_ids`<sup>Optional</sup> <a name="forbidden_account_ids" id="@cdktn/provider-aws.provider.AwsProvider.property.forbiddenAccountIds"></a>
 
 ```python
 forbidden_account_ids: typing.List[str]
@@ -1564,7 +1595,7 @@ forbidden_account_ids: typing.List[str]
 
 ---
 
-##### `http_proxy`<sup>Optional</sup> <a name="http_proxy" id="@cdktf/provider-aws.provider.AwsProvider.property.httpProxy"></a>
+##### `http_proxy`<sup>Optional</sup> <a name="http_proxy" id="@cdktn/provider-aws.provider.AwsProvider.property.httpProxy"></a>
 
 ```python
 http_proxy: str
@@ -1574,7 +1605,7 @@ http_proxy: str
 
 ---
 
-##### `https_proxy`<sup>Optional</sup> <a name="https_proxy" id="@cdktf/provider-aws.provider.AwsProvider.property.httpsProxy"></a>
+##### `https_proxy`<sup>Optional</sup> <a name="https_proxy" id="@cdktn/provider-aws.provider.AwsProvider.property.httpsProxy"></a>
 
 ```python
 https_proxy: str
@@ -1584,17 +1615,17 @@ https_proxy: str
 
 ---
 
-##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktf/provider-aws.provider.AwsProvider.property.ignoreTags"></a>
+##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktn/provider-aws.provider.AwsProvider.property.ignoreTags"></a>
 
 ```python
 ignore_tags: IResolvable | typing.List[AwsProviderIgnoreTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProvider.property.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-aws.provider.AwsProvider.property.insecure"></a>
 
 ```python
 insecure: bool | IResolvable
@@ -1604,7 +1635,7 @@ insecure: bool | IResolvable
 
 ---
 
-##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktf/provider-aws.provider.AwsProvider.property.maxRetries"></a>
+##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktn/provider-aws.provider.AwsProvider.property.maxRetries"></a>
 
 ```python
 max_retries: typing.Union[int, float]
@@ -1614,7 +1645,7 @@ max_retries: typing.Union[int, float]
 
 ---
 
-##### `no_proxy`<sup>Optional</sup> <a name="no_proxy" id="@cdktf/provider-aws.provider.AwsProvider.property.noProxy"></a>
+##### `no_proxy`<sup>Optional</sup> <a name="no_proxy" id="@cdktn/provider-aws.provider.AwsProvider.property.noProxy"></a>
 
 ```python
 no_proxy: str
@@ -1624,7 +1655,7 @@ no_proxy: str
 
 ---
 
-##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktf/provider-aws.provider.AwsProvider.property.profile"></a>
+##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktn/provider-aws.provider.AwsProvider.property.profile"></a>
 
 ```python
 profile: str
@@ -1634,7 +1665,7 @@ profile: str
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.provider.AwsProvider.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.provider.AwsProvider.property.region"></a>
 
 ```python
 region: str
@@ -1644,7 +1675,7 @@ region: str
 
 ---
 
-##### `retry_mode`<sup>Optional</sup> <a name="retry_mode" id="@cdktf/provider-aws.provider.AwsProvider.property.retryMode"></a>
+##### `retry_mode`<sup>Optional</sup> <a name="retry_mode" id="@cdktn/provider-aws.provider.AwsProvider.property.retryMode"></a>
 
 ```python
 retry_mode: str
@@ -1654,7 +1685,7 @@ retry_mode: str
 
 ---
 
-##### `s3_us_east1_regional_endpoint`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint"></a>
+##### `s3_us_east1_regional_endpoint`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.property.s3UsEast1RegionalEndpoint"></a>
 
 ```python
 s3_us_east1_regional_endpoint: str
@@ -1664,7 +1695,7 @@ s3_us_east1_regional_endpoint: str
 
 ---
 
-##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProvider.property.s3UsePathStyle"></a>
+##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktn/provider-aws.provider.AwsProvider.property.s3UsePathStyle"></a>
 
 ```python
 s3_use_path_style: bool | IResolvable
@@ -1674,7 +1705,7 @@ s3_use_path_style: bool | IResolvable
 
 ---
 
-##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktf/provider-aws.provider.AwsProvider.property.secretKey"></a>
+##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktn/provider-aws.provider.AwsProvider.property.secretKey"></a>
 
 ```python
 secret_key: str
@@ -1684,7 +1715,7 @@ secret_key: str
 
 ---
 
-##### `shared_config_files`<sup>Optional</sup> <a name="shared_config_files" id="@cdktf/provider-aws.provider.AwsProvider.property.sharedConfigFiles"></a>
+##### `shared_config_files`<sup>Optional</sup> <a name="shared_config_files" id="@cdktn/provider-aws.provider.AwsProvider.property.sharedConfigFiles"></a>
 
 ```python
 shared_config_files: typing.List[str]
@@ -1694,7 +1725,7 @@ shared_config_files: typing.List[str]
 
 ---
 
-##### `shared_credentials_files`<sup>Optional</sup> <a name="shared_credentials_files" id="@cdktf/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles"></a>
+##### `shared_credentials_files`<sup>Optional</sup> <a name="shared_credentials_files" id="@cdktn/provider-aws.provider.AwsProvider.property.sharedCredentialsFiles"></a>
 
 ```python
 shared_credentials_files: typing.List[str]
@@ -1704,7 +1735,7 @@ shared_credentials_files: typing.List[str]
 
 ---
 
-##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProvider.property.skipCredentialsValidation"></a>
+##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktn/provider-aws.provider.AwsProvider.property.skipCredentialsValidation"></a>
 
 ```python
 skip_credentials_validation: bool | IResolvable
@@ -1714,7 +1745,7 @@ skip_credentials_validation: bool | IResolvable
 
 ---
 
-##### `skip_metadata_api_check`<sup>Optional</sup> <a name="skip_metadata_api_check" id="@cdktf/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck"></a>
+##### `skip_metadata_api_check`<sup>Optional</sup> <a name="skip_metadata_api_check" id="@cdktn/provider-aws.provider.AwsProvider.property.skipMetadataApiCheck"></a>
 
 ```python
 skip_metadata_api_check: str
@@ -1724,7 +1755,7 @@ skip_metadata_api_check: str
 
 ---
 
-##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRegionValidation"></a>
+##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktn/provider-aws.provider.AwsProvider.property.skipRegionValidation"></a>
 
 ```python
 skip_region_validation: bool | IResolvable
@@ -1734,7 +1765,7 @@ skip_region_validation: bool | IResolvable
 
 ---
 
-##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProvider.property.skipRequestingAccountId"></a>
+##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktn/provider-aws.provider.AwsProvider.property.skipRequestingAccountId"></a>
 
 ```python
 skip_requesting_account_id: bool | IResolvable
@@ -1744,7 +1775,7 @@ skip_requesting_account_id: bool | IResolvable
 
 ---
 
-##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktf/provider-aws.provider.AwsProvider.property.stsRegion"></a>
+##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktn/provider-aws.provider.AwsProvider.property.stsRegion"></a>
 
 ```python
 sts_region: str
@@ -1754,7 +1785,7 @@ sts_region: str
 
 ---
 
-##### `tag_policy_compliance`<sup>Optional</sup> <a name="tag_policy_compliance" id="@cdktf/provider-aws.provider.AwsProvider.property.tagPolicyCompliance"></a>
+##### `tag_policy_compliance`<sup>Optional</sup> <a name="tag_policy_compliance" id="@cdktn/provider-aws.provider.AwsProvider.property.tagPolicyCompliance"></a>
 
 ```python
 tag_policy_compliance: str
@@ -1764,7 +1795,7 @@ tag_policy_compliance: str
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-aws.provider.AwsProvider.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-aws.provider.AwsProvider.property.token"></a>
 
 ```python
 token: str
@@ -1774,7 +1805,7 @@ token: str
 
 ---
 
-##### `token_bucket_rate_limiter_capacity`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity" id="@cdktf/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity"></a>
+##### `token_bucket_rate_limiter_capacity`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity" id="@cdktn/provider-aws.provider.AwsProvider.property.tokenBucketRateLimiterCapacity"></a>
 
 ```python
 token_bucket_rate_limiter_capacity: typing.Union[int, float]
@@ -1784,7 +1815,7 @@ token_bucket_rate_limiter_capacity: typing.Union[int, float]
 
 ---
 
-##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.useDualstackEndpoint"></a>
+##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.property.useDualstackEndpoint"></a>
 
 ```python
 use_dualstack_endpoint: bool | IResolvable
@@ -1794,7 +1825,7 @@ use_dualstack_endpoint: bool | IResolvable
 
 ---
 
-##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProvider.property.useFipsEndpoint"></a>
+##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktn/provider-aws.provider.AwsProvider.property.useFipsEndpoint"></a>
 
 ```python
 use_fips_endpoint: bool | IResolvable
@@ -1804,15 +1835,25 @@ use_fips_endpoint: bool | IResolvable
 
 ---
 
+##### `user_agent`<sup>Optional</sup> <a name="user_agent" id="@cdktn/provider-aws.provider.AwsProvider.property.userAgent"></a>
+
+```python
+user_agent: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.provider.AwsProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.provider.AwsProvider.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1824,12 +1865,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AwsProviderAssumeRole <a name="AwsProviderAssumeRole" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole"></a>
+### AwsProviderAssumeRole <a name="AwsProviderAssumeRole" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProviderAssumeRole(
   duration: str = None,
@@ -1848,19 +1889,19 @@ provider.AwsProviderAssumeRole(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.duration">duration</a></code> | <code>str</code> | The duration, between 15 minutes and 12 hours, of the role session. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.externalId">external_id</a></code> | <code>str</code> | A unique identifier that might be required when you assume a role in another account. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.policy">policy</a></code> | <code>str</code> | IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.policyArns">policy_arns</a></code> | <code>typing.List[str]</code> | Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.roleArn">role_arn</a></code> | <code>str</code> | Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.sessionName">session_name</a></code> | <code>str</code> | An identifier for the assumed role session. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.sourceIdentity">source_identity</a></code> | <code>str</code> | Source identity specified by the principal assuming the role. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Assume role session tags. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.transitiveTagKeys">transitive_tag_keys</a></code> | <code>typing.List[str]</code> | Assume role session tag keys to pass to any subsequent sessions. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.duration">duration</a></code> | <code>str</code> | The duration, between 15 minutes and 12 hours, of the role session. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.externalId">external_id</a></code> | <code>str</code> | A unique identifier that might be required when you assume a role in another account. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.policy">policy</a></code> | <code>str</code> | IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.policyArns">policy_arns</a></code> | <code>typing.List[str]</code> | Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.roleArn">role_arn</a></code> | <code>str</code> | Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.sessionName">session_name</a></code> | <code>str</code> | An identifier for the assumed role session. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.sourceIdentity">source_identity</a></code> | <code>str</code> | Source identity specified by the principal assuming the role. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Assume role session tags. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.transitiveTagKeys">transitive_tag_keys</a></code> | <code>typing.List[str]</code> | Assume role session tag keys to pass to any subsequent sessions. |
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.duration"></a>
+##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.duration"></a>
 
 ```python
 duration: str
@@ -1872,11 +1913,11 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#duration AwsProvider#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#duration AwsProvider#duration}
 
 ---
 
-##### `external_id`<sup>Optional</sup> <a name="external_id" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.externalId"></a>
+##### `external_id`<sup>Optional</sup> <a name="external_id" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.externalId"></a>
 
 ```python
 external_id: str
@@ -1886,11 +1927,11 @@ external_id: str
 
 A unique identifier that might be required when you assume a role in another account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#external_id AwsProvider#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#external_id AwsProvider#external_id}
 
 ---
 
-##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.policy"></a>
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.policy"></a>
 
 ```python
 policy: str
@@ -1900,11 +1941,11 @@ policy: str
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#policy AwsProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#policy AwsProvider#policy}
 
 ---
 
-##### `policy_arns`<sup>Optional</sup> <a name="policy_arns" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.policyArns"></a>
+##### `policy_arns`<sup>Optional</sup> <a name="policy_arns" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.policyArns"></a>
 
 ```python
 policy_arns: typing.List[str]
@@ -1914,11 +1955,11 @@ policy_arns: typing.List[str]
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#policy_arns AwsProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#policy_arns AwsProvider#policy_arns}
 
 ---
 
-##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.roleArn"></a>
+##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.roleArn"></a>
 
 ```python
 role_arn: str
@@ -1928,11 +1969,11 @@ role_arn: str
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#role_arn AwsProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#role_arn AwsProvider#role_arn}
 
 ---
 
-##### `session_name`<sup>Optional</sup> <a name="session_name" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.sessionName"></a>
+##### `session_name`<sup>Optional</sup> <a name="session_name" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.sessionName"></a>
 
 ```python
 session_name: str
@@ -1942,11 +1983,11 @@ session_name: str
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#session_name AwsProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#session_name AwsProvider#session_name}
 
 ---
 
-##### `source_identity`<sup>Optional</sup> <a name="source_identity" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.sourceIdentity"></a>
+##### `source_identity`<sup>Optional</sup> <a name="source_identity" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.sourceIdentity"></a>
 
 ```python
 source_identity: str
@@ -1956,11 +1997,11 @@ source_identity: str
 
 Source identity specified by the principal assuming the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#source_identity AwsProvider#source_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#source_identity AwsProvider#source_identity}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1970,11 +2011,11 @@ tags: typing.Mapping[str]
 
 Assume role session tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#tags AwsProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#tags AwsProvider#tags}
 
 ---
 
-##### `transitive_tag_keys`<sup>Optional</sup> <a name="transitive_tag_keys" id="@cdktf/provider-aws.provider.AwsProviderAssumeRole.property.transitiveTagKeys"></a>
+##### `transitive_tag_keys`<sup>Optional</sup> <a name="transitive_tag_keys" id="@cdktn/provider-aws.provider.AwsProviderAssumeRole.property.transitiveTagKeys"></a>
 
 ```python
 transitive_tag_keys: typing.List[str]
@@ -1984,16 +2025,16 @@ transitive_tag_keys: typing.List[str]
 
 Assume role session tag keys to pass to any subsequent sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#transitive_tag_keys AwsProvider#transitive_tag_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#transitive_tag_keys AwsProvider#transitive_tag_keys}
 
 ---
 
-### AwsProviderAssumeRoleWithWebIdentity <a name="AwsProviderAssumeRoleWithWebIdentity" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity"></a>
+### AwsProviderAssumeRoleWithWebIdentity <a name="AwsProviderAssumeRoleWithWebIdentity" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProviderAssumeRoleWithWebIdentity(
   duration: str = None,
@@ -2010,17 +2051,17 @@ provider.AwsProviderAssumeRoleWithWebIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.duration">duration</a></code> | <code>str</code> | The duration, between 15 minutes and 12 hours, of the role session. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policy">policy</a></code> | <code>str</code> | IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policyArns">policy_arns</a></code> | <code>typing.List[str]</code> | Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.roleArn">role_arn</a></code> | <code>str</code> | Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.sessionName">session_name</a></code> | <code>str</code> | An identifier for the assumed role session. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityToken">web_identity_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#web_identity_token AwsProvider#web_identity_token}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityTokenFile">web_identity_token_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#web_identity_token_file AwsProvider#web_identity_token_file}. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.duration">duration</a></code> | <code>str</code> | The duration, between 15 minutes and 12 hours, of the role session. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policy">policy</a></code> | <code>str</code> | IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policyArns">policy_arns</a></code> | <code>typing.List[str]</code> | Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.roleArn">role_arn</a></code> | <code>str</code> | Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.sessionName">session_name</a></code> | <code>str</code> | An identifier for the assumed role session. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityToken">web_identity_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#web_identity_token AwsProvider#web_identity_token}. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityTokenFile">web_identity_token_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#web_identity_token_file AwsProvider#web_identity_token_file}. |
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.duration"></a>
+##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.duration"></a>
 
 ```python
 duration: str
@@ -2032,11 +2073,11 @@ The duration, between 15 minutes and 12 hours, of the role session.
 
 Valid time units are ns, us (or µs), ms, s, h, or m.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#duration AwsProvider#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#duration AwsProvider#duration}
 
 ---
 
-##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policy"></a>
+##### `policy`<sup>Optional</sup> <a name="policy" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policy"></a>
 
 ```python
 policy: str
@@ -2046,11 +2087,11 @@ policy: str
 
 IAM Policy JSON describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#policy AwsProvider#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#policy AwsProvider#policy}
 
 ---
 
-##### `policy_arns`<sup>Optional</sup> <a name="policy_arns" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policyArns"></a>
+##### `policy_arns`<sup>Optional</sup> <a name="policy_arns" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.policyArns"></a>
 
 ```python
 policy_arns: typing.List[str]
@@ -2060,11 +2101,11 @@ policy_arns: typing.List[str]
 
 Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#policy_arns AwsProvider#policy_arns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#policy_arns AwsProvider#policy_arns}
 
 ---
 
-##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.roleArn"></a>
+##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.roleArn"></a>
 
 ```python
 role_arn: str
@@ -2074,11 +2115,11 @@ role_arn: str
 
 Amazon Resource Name (ARN) of an IAM Role to assume prior to making API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#role_arn AwsProvider#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#role_arn AwsProvider#role_arn}
 
 ---
 
-##### `session_name`<sup>Optional</sup> <a name="session_name" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.sessionName"></a>
+##### `session_name`<sup>Optional</sup> <a name="session_name" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.sessionName"></a>
 
 ```python
 session_name: str
@@ -2088,11 +2129,11 @@ session_name: str
 
 An identifier for the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#session_name AwsProvider#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#session_name AwsProvider#session_name}
 
 ---
 
-##### `web_identity_token`<sup>Optional</sup> <a name="web_identity_token" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityToken"></a>
+##### `web_identity_token`<sup>Optional</sup> <a name="web_identity_token" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityToken"></a>
 
 ```python
 web_identity_token: str
@@ -2100,11 +2141,11 @@ web_identity_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#web_identity_token AwsProvider#web_identity_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#web_identity_token AwsProvider#web_identity_token}.
 
 ---
 
-##### `web_identity_token_file`<sup>Optional</sup> <a name="web_identity_token_file" id="@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityTokenFile"></a>
+##### `web_identity_token_file`<sup>Optional</sup> <a name="web_identity_token_file" id="@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity.property.webIdentityTokenFile"></a>
 
 ```python
 web_identity_token_file: str
@@ -2112,16 +2153,16 @@ web_identity_token_file: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#web_identity_token_file AwsProvider#web_identity_token_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#web_identity_token_file AwsProvider#web_identity_token_file}.
 
 ---
 
-### AwsProviderConfig <a name="AwsProviderConfig" id="@cdktf/provider-aws.provider.AwsProviderConfig"></a>
+### AwsProviderConfig <a name="AwsProviderConfig" id="@cdktn/provider-aws.provider.AwsProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProviderConfig(
   access_key: str = None,
@@ -2158,7 +2199,8 @@ provider.AwsProviderConfig(
   token: str = None,
   token_bucket_rate_limiter_capacity: typing.Union[int, float] = None,
   use_dualstack_endpoint: bool | IResolvable = None,
-  use_fips_endpoint: bool | IResolvable = None
+  use_fips_endpoint: bool | IResolvable = None,
+  user_agent: typing.List[str] = None
 )
 ```
 
@@ -2166,45 +2208,46 @@ provider.AwsProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.accessKey">access_key</a></code> | <code>str</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | assume_role block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | assume_role_with_web_identity block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | File containing custom root and intermediate certificates. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | default_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | endpoints block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpProxy">http_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.httpsProxy">https_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | ignore_tags block. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of times an AWS API request is being executed. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.noProxy">no_proxy</a></code> | <code>str</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.profile">profile</a></code> | <code>str</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.region">region</a></code> | <code>str</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.retryMode">retry_mode</a></code> | <code>str</code> | Specifies how retries are attempted. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.secretKey">secret_key</a></code> | <code>str</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip static validation of region name. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.stsRegion">sts_region</a></code> | <code>str</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.tagPolicyCompliance">tag_policy_compliance</a></code> | <code>str</code> | The severity with which to enforce organizational tagging policies on resources managed by this provider instance. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.token">token</a></code> | <code>str</code> | session token. A session token is only required if you are using temporary security credentials. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | The capacity of the AWS SDK's token bucket rate limiter. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.accessKey">access_key</a></code> | <code>str</code> | The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds">allowed_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRole">assume_role</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]</code> | assume_role block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity">assume_role_with_web_identity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]</code> | assume_role_with_web_identity block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.customCaBundle">custom_ca_bundle</a></code> | <code>str</code> | File containing custom root and intermediate certificates. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.defaultTags">default_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]</code> | default_tags block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint">ec2_metadata_service_endpoint</a></code> | <code>str</code> | Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode">ec2_metadata_service_endpoint_mode</a></code> | <code>str</code> | Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.endpoints">endpoints</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]</code> | endpoints block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds">forbidden_account_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.httpProxy">http_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTP requests when accessing the AWS API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.httpsProxy">https_proxy</a></code> | <code>str</code> | URL of a proxy to use for HTTPS requests when accessing the AWS API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.ignoreTags">ignore_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]</code> | ignore_tags block. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | The maximum number of times an AWS API request is being executed. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.noProxy">no_proxy</a></code> | <code>str</code> | Comma-separated list of hosts that should not use HTTP or HTTPS proxies. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.profile">profile</a></code> | <code>str</code> | The profile for API operations. If not set, the default profile created with `aws configure` will be used. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.region">region</a></code> | <code>str</code> | The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.retryMode">retry_mode</a></code> | <code>str</code> | Specifies how retries are attempted. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint">s3_us_east1_regional_endpoint</a></code> | <code>str</code> | Specifies whether S3 API calls in the `us-east-1` region use the legacy global endpoint or a regional endpoint. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle">s3_use_path_style</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.secretKey">secret_key</a></code> | <code>str</code> | The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles">shared_config_files</a></code> | <code>typing.List[str]</code> | List of paths to shared config files. If not set, defaults to [~/.aws/config]. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles">shared_credentials_files</a></code> | <code>typing.List[str]</code> | List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials]. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck">skip_metadata_api_check</a></code> | <code>str</code> | Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation">skip_region_validation</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip static validation of region name. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId">skip_requesting_account_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.stsRegion">sts_region</a></code> | <code>str</code> | The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.tagPolicyCompliance">tag_policy_compliance</a></code> | <code>str</code> | The severity with which to enforce organizational tagging policies on resources managed by this provider instance. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.token">token</a></code> | <code>str</code> | session token. A session token is only required if you are using temporary security credentials. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity">token_bucket_rate_limiter_capacity</a></code> | <code>typing.Union[int, float]</code> | The capacity of the AWS SDK's token bucket rate limiter. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint">use_dualstack_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with DualStack capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint">use_fips_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Resolve an endpoint with FIPS capability. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderConfig.property.userAgent">user_agent</a></code> | <code>typing.List[str]</code> | Product details to append to the User-Agent string sent in all AWS API calls. |
 
 ---
 
-##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.accessKey"></a>
+##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.accessKey"></a>
 
 ```python
 access_key: str
@@ -2214,11 +2257,11 @@ access_key: str
 
 The access key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#access_key AwsProvider#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#access_key AwsProvider#access_key}
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.alias"></a>
 
 ```python
 alias: str
@@ -2228,11 +2271,11 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#alias AwsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#alias AwsProvider#alias}
 
 ---
 
-##### `allowed_account_ids`<sup>Optional</sup> <a name="allowed_account_ids" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds"></a>
+##### `allowed_account_ids`<sup>Optional</sup> <a name="allowed_account_ids" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.allowedAccountIds"></a>
 
 ```python
 allowed_account_ids: typing.List[str]
@@ -2240,39 +2283,39 @@ allowed_account_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#allowed_account_ids AwsProvider#allowed_account_ids}.
 
 ---
 
-##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRole"></a>
+##### `assume_role`<sup>Optional</sup> <a name="assume_role" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRole"></a>
 
 ```python
 assume_role: IResolvable | typing.List[AwsProviderAssumeRole]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRole">AwsProviderAssumeRole</a>]
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#assume_role AwsProvider#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#assume_role AwsProvider#assume_role}
 
 ---
 
-##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity"></a>
+##### `assume_role_with_web_identity`<sup>Optional</sup> <a name="assume_role_with_web_identity" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.assumeRoleWithWebIdentity"></a>
 
 ```python
 assume_role_with_web_identity: IResolvable | typing.List[AwsProviderAssumeRoleWithWebIdentity]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderAssumeRoleWithWebIdentity">AwsProviderAssumeRoleWithWebIdentity</a>]
 
 assume_role_with_web_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
 
 ---
 
-##### `custom_ca_bundle`<sup>Optional</sup> <a name="custom_ca_bundle" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.customCaBundle"></a>
+##### `custom_ca_bundle`<sup>Optional</sup> <a name="custom_ca_bundle" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.customCaBundle"></a>
 
 ```python
 custom_ca_bundle: str
@@ -2284,25 +2327,25 @@ File containing custom root and intermediate certificates.
 
 Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#custom_ca_bundle AwsProvider#custom_ca_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#custom_ca_bundle AwsProvider#custom_ca_bundle}
 
 ---
 
-##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.defaultTags"></a>
+##### `default_tags`<sup>Optional</sup> <a name="default_tags" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.defaultTags"></a>
 
 ```python
 default_tags: IResolvable | typing.List[AwsProviderDefaultTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags">AwsProviderDefaultTags</a>]
 
 default_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#default_tags AwsProvider#default_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#default_tags AwsProvider#default_tags}
 
 ---
 
-##### `ec2_metadata_service_endpoint`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint"></a>
+##### `ec2_metadata_service_endpoint`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpoint"></a>
 
 ```python
 ec2_metadata_service_endpoint: str
@@ -2312,11 +2355,11 @@ ec2_metadata_service_endpoint: str
 
 Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
 
 ---
 
-##### `ec2_metadata_service_endpoint_mode`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode"></a>
+##### `ec2_metadata_service_endpoint_mode`<sup>Optional</sup> <a name="ec2_metadata_service_endpoint_mode" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.ec2MetadataServiceEndpointMode"></a>
 
 ```python
 ec2_metadata_service_endpoint_mode: str
@@ -2326,25 +2369,25 @@ ec2_metadata_service_endpoint_mode: str
 
 Protocol to use with EC2 metadata service endpoint.Valid values are `IPv4` and `IPv6`. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ec2_metadata_service_endpoint_mode AwsProvider#ec2_metadata_service_endpoint_mode}
 
 ---
 
-##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.endpoints"></a>
+##### `endpoints`<sup>Optional</sup> <a name="endpoints" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.endpoints"></a>
 
 ```python
 endpoints: IResolvable | typing.List[AwsProviderEndpoints]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints">AwsProviderEndpoints</a>]
 
 endpoints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#endpoints AwsProvider#endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#endpoints AwsProvider#endpoints}
 
 ---
 
-##### `forbidden_account_ids`<sup>Optional</sup> <a name="forbidden_account_ids" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds"></a>
+##### `forbidden_account_ids`<sup>Optional</sup> <a name="forbidden_account_ids" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.forbiddenAccountIds"></a>
 
 ```python
 forbidden_account_ids: typing.List[str]
@@ -2352,11 +2395,11 @@ forbidden_account_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#forbidden_account_ids AwsProvider#forbidden_account_ids}.
 
 ---
 
-##### `http_proxy`<sup>Optional</sup> <a name="http_proxy" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.httpProxy"></a>
+##### `http_proxy`<sup>Optional</sup> <a name="http_proxy" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.httpProxy"></a>
 
 ```python
 http_proxy: str
@@ -2368,11 +2411,11 @@ URL of a proxy to use for HTTP requests when accessing the AWS API.
 
 Can also be set using the `HTTP_PROXY` or `http_proxy` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#http_proxy AwsProvider#http_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#http_proxy AwsProvider#http_proxy}
 
 ---
 
-##### `https_proxy`<sup>Optional</sup> <a name="https_proxy" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.httpsProxy"></a>
+##### `https_proxy`<sup>Optional</sup> <a name="https_proxy" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.httpsProxy"></a>
 
 ```python
 https_proxy: str
@@ -2384,25 +2427,25 @@ URL of a proxy to use for HTTPS requests when accessing the AWS API.
 
 Can also be set using the `HTTPS_PROXY` or `https_proxy` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#https_proxy AwsProvider#https_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#https_proxy AwsProvider#https_proxy}
 
 ---
 
-##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.ignoreTags"></a>
+##### `ignore_tags`<sup>Optional</sup> <a name="ignore_tags" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.ignoreTags"></a>
 
 ```python
 ignore_tags: IResolvable | typing.List[AwsProviderIgnoreTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags">AwsProviderIgnoreTags</a>]
 
 ignore_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ignore_tags AwsProvider#ignore_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ignore_tags AwsProvider#ignore_tags}
 
 ---
 
-##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.insecure"></a>
+##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.insecure"></a>
 
 ```python
 insecure: bool | IResolvable
@@ -2412,11 +2455,11 @@ insecure: bool | IResolvable
 
 Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#insecure AwsProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#insecure AwsProvider#insecure}
 
 ---
 
-##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.maxRetries"></a>
+##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.maxRetries"></a>
 
 ```python
 max_retries: typing.Union[int, float]
@@ -2429,11 +2472,11 @@ The maximum number of times an AWS API request is being executed.
 If the API request still fails, an error is
 thrown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#max_retries AwsProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#max_retries AwsProvider#max_retries}
 
 ---
 
-##### `no_proxy`<sup>Optional</sup> <a name="no_proxy" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.noProxy"></a>
+##### `no_proxy`<sup>Optional</sup> <a name="no_proxy" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.noProxy"></a>
 
 ```python
 no_proxy: str
@@ -2445,11 +2488,11 @@ Comma-separated list of hosts that should not use HTTP or HTTPS proxies.
 
 Can also be set using the `NO_PROXY` or `no_proxy` environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#no_proxy AwsProvider#no_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#no_proxy AwsProvider#no_proxy}
 
 ---
 
-##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.profile"></a>
+##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.profile"></a>
 
 ```python
 profile: str
@@ -2459,11 +2502,11 @@ profile: str
 
 The profile for API operations. If not set, the default profile created with `aws configure` will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#profile AwsProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#profile AwsProvider#profile}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.region"></a>
 
 ```python
 region: str
@@ -2473,11 +2516,11 @@ region: str
 
 The region where AWS operations will take place. Examples are us-east-1, us-west-2, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#region AwsProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#region AwsProvider#region}
 
 ---
 
-##### `retry_mode`<sup>Optional</sup> <a name="retry_mode" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.retryMode"></a>
+##### `retry_mode`<sup>Optional</sup> <a name="retry_mode" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.retryMode"></a>
 
 ```python
 retry_mode: str
@@ -2489,11 +2532,11 @@ Specifies how retries are attempted.
 
 Valid values are `standard` and `adaptive`. Can also be configured using the `AWS_RETRY_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#retry_mode AwsProvider#retry_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#retry_mode AwsProvider#retry_mode}
 
 ---
 
-##### `s3_us_east1_regional_endpoint`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint"></a>
+##### `s3_us_east1_regional_endpoint`<sup>Optional</sup> <a name="s3_us_east1_regional_endpoint" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsEast1RegionalEndpoint"></a>
 
 ```python
 s3_us_east1_regional_endpoint: str
@@ -2505,11 +2548,11 @@ Specifies whether S3 API calls in the `us-east-1` region use the legacy global e
 
 Valid values are `legacy` or `regional`. Can also be configured using the `AWS_S3_US_EAST_1_REGIONAL_ENDPOINT` environment variable or the `s3_us_east_1_regional_endpoint` shared config file parameter
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3_us_east_1_regional_endpoint AwsProvider#s3_us_east_1_regional_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3_us_east_1_regional_endpoint AwsProvider#s3_us_east_1_regional_endpoint}
 
 ---
 
-##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle"></a>
+##### `s3_use_path_style`<sup>Optional</sup> <a name="s3_use_path_style" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.s3UsePathStyle"></a>
 
 ```python
 s3_use_path_style: bool | IResolvable
@@ -2519,11 +2562,11 @@ s3_use_path_style: bool | IResolvable
 
 Set this to true to enable the request to use path-style addressing, i.e., https://s3.amazonaws.com/BUCKET/KEY. By default, the S3 client will use virtual hosted bucket addressing when possible (https://BUCKET.s3.amazonaws.com/KEY). Specific to the Amazon S3 service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3_use_path_style AwsProvider#s3_use_path_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3_use_path_style AwsProvider#s3_use_path_style}
 
 ---
 
-##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.secretKey"></a>
+##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.secretKey"></a>
 
 ```python
 secret_key: str
@@ -2533,11 +2576,11 @@ secret_key: str
 
 The secret key for API operations. You can retrieve this from the 'Security & Credentials' section of the AWS console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#secret_key AwsProvider#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#secret_key AwsProvider#secret_key}
 
 ---
 
-##### `shared_config_files`<sup>Optional</sup> <a name="shared_config_files" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles"></a>
+##### `shared_config_files`<sup>Optional</sup> <a name="shared_config_files" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.sharedConfigFiles"></a>
 
 ```python
 shared_config_files: typing.List[str]
@@ -2547,11 +2590,11 @@ shared_config_files: typing.List[str]
 
 List of paths to shared config files. If not set, defaults to [~/.aws/config].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#shared_config_files AwsProvider#shared_config_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#shared_config_files AwsProvider#shared_config_files}
 
 ---
 
-##### `shared_credentials_files`<sup>Optional</sup> <a name="shared_credentials_files" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles"></a>
+##### `shared_credentials_files`<sup>Optional</sup> <a name="shared_credentials_files" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.sharedCredentialsFiles"></a>
 
 ```python
 shared_credentials_files: typing.List[str]
@@ -2561,11 +2604,11 @@ shared_credentials_files: typing.List[str]
 
 List of paths to shared credentials files. If not set, defaults to [~/.aws/credentials].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#shared_credentials_files AwsProvider#shared_credentials_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#shared_credentials_files AwsProvider#shared_credentials_files}
 
 ---
 
-##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation"></a>
+##### `skip_credentials_validation`<sup>Optional</sup> <a name="skip_credentials_validation" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.skipCredentialsValidation"></a>
 
 ```python
 skip_credentials_validation: bool | IResolvable
@@ -2575,11 +2618,11 @@ skip_credentials_validation: bool | IResolvable
 
 Skip the credentials validation via STS API. Used for AWS API implementations that do not have STS available/implemented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_credentials_validation AwsProvider#skip_credentials_validation}
 
 ---
 
-##### `skip_metadata_api_check`<sup>Optional</sup> <a name="skip_metadata_api_check" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck"></a>
+##### `skip_metadata_api_check`<sup>Optional</sup> <a name="skip_metadata_api_check" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.skipMetadataApiCheck"></a>
 
 ```python
 skip_metadata_api_check: str
@@ -2589,11 +2632,11 @@ skip_metadata_api_check: str
 
 Skip the AWS Metadata API check. Used for AWS API implementations that do not have a metadata api endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_metadata_api_check AwsProvider#skip_metadata_api_check}
 
 ---
 
-##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation"></a>
+##### `skip_region_validation`<sup>Optional</sup> <a name="skip_region_validation" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRegionValidation"></a>
 
 ```python
 skip_region_validation: bool | IResolvable
@@ -2605,11 +2648,11 @@ Skip static validation of region name.
 
 Used by users of alternative AWS-like APIs or users w/ access to regions that are not public (yet).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_region_validation AwsProvider#skip_region_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_region_validation AwsProvider#skip_region_validation}
 
 ---
 
-##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId"></a>
+##### `skip_requesting_account_id`<sup>Optional</sup> <a name="skip_requesting_account_id" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.skipRequestingAccountId"></a>
 
 ```python
 skip_requesting_account_id: bool | IResolvable
@@ -2619,11 +2662,11 @@ skip_requesting_account_id: bool | IResolvable
 
 Skip requesting the account ID. Used for AWS API implementations that do not have IAM/STS API and/or metadata API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#skip_requesting_account_id AwsProvider#skip_requesting_account_id}
 
 ---
 
-##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.stsRegion"></a>
+##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.stsRegion"></a>
 
 ```python
 sts_region: str
@@ -2633,11 +2676,11 @@ sts_region: str
 
 The region where AWS STS operations will take place. Examples are us-east-1 and us-west-2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sts_region AwsProvider#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sts_region AwsProvider#sts_region}
 
 ---
 
-##### `tag_policy_compliance`<sup>Optional</sup> <a name="tag_policy_compliance" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.tagPolicyCompliance"></a>
+##### `tag_policy_compliance`<sup>Optional</sup> <a name="tag_policy_compliance" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.tagPolicyCompliance"></a>
 
 ```python
 tag_policy_compliance: str
@@ -2649,11 +2692,11 @@ The severity with which to enforce organizational tagging policies on resources 
 
 At this time this only includes compliance with required tag keys by resource type. Valid values are "error", "warning", and "disabled". When unset or "disabled", tag policy compliance will not be enforced by the provider. Can also be configured with the TF_AWS_TAG_POLICY_COMPLIANCE environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#tag_policy_compliance AwsProvider#tag_policy_compliance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#tag_policy_compliance AwsProvider#tag_policy_compliance}
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.token"></a>
 
 ```python
 token: str
@@ -2663,11 +2706,11 @@ token: str
 
 session token. A session token is only required if you are using temporary security credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#token AwsProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#token AwsProvider#token}
 
 ---
 
-##### `token_bucket_rate_limiter_capacity`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity"></a>
+##### `token_bucket_rate_limiter_capacity`<sup>Optional</sup> <a name="token_bucket_rate_limiter_capacity" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.tokenBucketRateLimiterCapacity"></a>
 
 ```python
 token_bucket_rate_limiter_capacity: typing.Union[int, float]
@@ -2677,11 +2720,11 @@ token_bucket_rate_limiter_capacity: typing.Union[int, float]
 
 The capacity of the AWS SDK's token bucket rate limiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#token_bucket_rate_limiter_capacity AwsProvider#token_bucket_rate_limiter_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#token_bucket_rate_limiter_capacity AwsProvider#token_bucket_rate_limiter_capacity}
 
 ---
 
-##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint"></a>
+##### `use_dualstack_endpoint`<sup>Optional</sup> <a name="use_dualstack_endpoint" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.useDualstackEndpoint"></a>
 
 ```python
 use_dualstack_endpoint: bool | IResolvable
@@ -2691,11 +2734,11 @@ use_dualstack_endpoint: bool | IResolvable
 
 Resolve an endpoint with DualStack capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#use_dualstack_endpoint AwsProvider#use_dualstack_endpoint}
 
 ---
 
-##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktf/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint"></a>
+##### `use_fips_endpoint`<sup>Optional</sup> <a name="use_fips_endpoint" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.useFipsEndpoint"></a>
 
 ```python
 use_fips_endpoint: bool | IResolvable
@@ -2705,16 +2748,30 @@ use_fips_endpoint: bool | IResolvable
 
 Resolve an endpoint with FIPS capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#use_fips_endpoint AwsProvider#use_fips_endpoint}
 
 ---
 
-### AwsProviderDefaultTags <a name="AwsProviderDefaultTags" id="@cdktf/provider-aws.provider.AwsProviderDefaultTags"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderDefaultTags.Initializer"></a>
+##### `user_agent`<sup>Optional</sup> <a name="user_agent" id="@cdktn/provider-aws.provider.AwsProviderConfig.property.userAgent"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+user_agent: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Product details to append to the User-Agent string sent in all AWS API calls.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#user_agent AwsProvider#user_agent}
+
+---
+
+### AwsProviderDefaultTags <a name="AwsProviderDefaultTags" id="@cdktn/provider-aws.provider.AwsProviderDefaultTags"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderDefaultTags.Initializer"></a>
+
+```python
+from cdktn_provider_aws import provider
 
 provider.AwsProviderDefaultTags(
   tags: typing.Mapping[str] = None
@@ -2725,11 +2782,11 @@ provider.AwsProviderDefaultTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderDefaultTags.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Resource tags to default across all resources. Can also be configured with environment variables like `TF_AWS_DEFAULT_TAGS_<tag_name>`. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderDefaultTags.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Resource tags to default across all resources. Can also be configured with environment variables like `TF_AWS_DEFAULT_TAGS_<tag_name>`. |
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.provider.AwsProviderDefaultTags.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.provider.AwsProviderDefaultTags.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -2739,16 +2796,16 @@ tags: typing.Mapping[str]
 
 Resource tags to default across all resources. Can also be configured with environment variables like `TF_AWS_DEFAULT_TAGS_<tag_name>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#tags AwsProvider#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#tags AwsProvider#tags}
 
 ---
 
-### AwsProviderEndpoints <a name="AwsProviderEndpoints" id="@cdktf/provider-aws.provider.AwsProviderEndpoints"></a>
+### AwsProviderEndpoints <a name="AwsProviderEndpoints" id="@cdktn/provider-aws.provider.AwsProviderEndpoints"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProviderEndpoints(
   accessanalyzer: str = None,
@@ -3065,317 +3122,317 @@ provider.AwsProviderEndpoints(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.accessanalyzer">accessanalyzer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.account">account</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.acm">acm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.acmpca">acmpca</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.amg">amg</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.amp">amp</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.amplify">amplify</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.apigateway">apigateway</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.apigatewayv2">apigatewayv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appautoscaling">appautoscaling</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appconfig">appconfig</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appfabric">appfabric</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appflow">appflow</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appintegrations">appintegrations</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appintegrationsservice">appintegrationsservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.applicationautoscaling">applicationautoscaling</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.applicationinsights">applicationinsights</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.applicationsignals">applicationsignals</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appmesh">appmesh</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appregistry">appregistry</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.apprunner">apprunner</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appstream">appstream</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appsync">appsync</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.arcregionswitch">arcregionswitch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.arczonalshift">arczonalshift</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.athena">athena</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.auditmanager">auditmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.autoscaling">autoscaling</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.autoscalingplans">autoscalingplans</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.backup">backup</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.batch">batch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bcmdataexports">bcmdataexports</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.beanstalk">beanstalk</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bedrock">bedrock</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bedrockagent">bedrockagent</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bedrockagentcore">bedrockagentcore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.billing">billing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.budgets">budgets</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ce">ce</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chatbot">chatbot</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chime">chime</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">chimesdkmediapipelines</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice">chimesdkvoice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms">cleanrooms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9">cloud9</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol">cloudcontrol</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi">cloudcontrolapi</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudformation">cloudformation</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudfront">cloudfront</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudfrontkeyvaluestore">cloudfrontkeyvaluestore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudhsm">cloudhsm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudhsmv2">cloudhsmv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudsearch">cloudsearch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudtrail">cloudtrail</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatch">cloudwatch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevents">cloudwatchevents</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevidently">cloudwatchevidently</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlog">cloudwatchlog</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlogs">cloudwatchlogs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchobservabilityaccessmanager">cloudwatchobservabilityaccessmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchrum">cloudwatchrum</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codeartifact">codeartifact</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codebuild">codebuild</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codecatalyst">codecatalyst</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codecommit">codecommit</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codeconnections">codeconnections</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codedeploy">codedeploy</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codeguruprofiler">codeguruprofiler</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codegurureviewer">codegurureviewer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codepipeline">codepipeline</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codestarconnections">codestarconnections</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codestarnotifications">codestarnotifications</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentity">cognitoidentity</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentityprovider">cognitoidentityprovider</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cognitoidp">cognitoidp</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.comprehend">comprehend</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.computeoptimizer">computeoptimizer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.config">config</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.configservice">configservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.connect">connect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.connectcases">connectcases</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.controltower">controltower</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.costandusagereportservice">costandusagereportservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.costexplorer">costexplorer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.costoptimizationhub">costoptimizationhub</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cur">cur</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.customerprofiles">customerprofiles</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.databasemigration">databasemigration</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.databasemigrationservice">databasemigrationservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.databrew">databrew</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dataexchange">dataexchange</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.datapipeline">datapipeline</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.datasync">datasync</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.datazone">datazone</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dax">dax</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.deploy">deploy</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.detective">detective</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.devicefarm">devicefarm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.devopsguru">devopsguru</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.directconnect">directconnect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.directoryservice">directoryservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dlm">dlm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dms">dms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdb">docdb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic">docdbelastic</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.drs">drs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ds">ds</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dsql">dsql</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dynamodb">dynamodb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ec2">ec2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ecr">ecr</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ecrpublic">ecrpublic</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ecs">ecs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.efs">efs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.eks">eks</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticache">elasticache</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticbeanstalk">elasticbeanstalk</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancing">elasticloadbalancing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancingv2">elasticloadbalancingv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticsearch">elasticsearch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticsearchservice">elasticsearchservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elastictranscoder">elastictranscoder</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elb">elb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elbv2">elbv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.emr">emr</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.emrcontainers">emrcontainers</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.emrserverless">emrserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.es">es</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.eventbridge">eventbridge</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.events">events</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.evidently">evidently</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.evs">evs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.finspace">finspace</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.firehose">firehose</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.fis">fis</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.fms">fms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.fsx">fsx</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.gamelift">gamelift</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.glacier">glacier</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.globalaccelerator">globalaccelerator</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.glue">glue</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.gluedatabrew">gluedatabrew</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.grafana">grafana</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.greengrass">greengrass</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.groundstation">groundstation</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.guardduty">guardduty</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.healthlake">healthlake</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.iam">iam</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.identitystore">identitystore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.imagebuilder">imagebuilder</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.inspector">inspector</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.inspector2">inspector2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.inspectorv2">inspectorv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.internetmonitor">internetmonitor</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.invoicing">invoicing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.iot">iot</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ivs">ivs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ivschat">ivschat</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kafka">kafka</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kafkaconnect">kafkaconnect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kendra">kendra</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.keyspaces">keyspaces</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesis">kinesis</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalytics">kinesisanalytics</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalyticsv2">kinesisanalyticsv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesisvideo">kinesisvideo</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kms">kms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lakeformation">lakeformation</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lambda">lambda</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.launchwizard">launchwizard</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lex">lex</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuilding">lexmodelbuilding</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuildingservice">lexmodelbuildingservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodels">lexmodels</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodelsv2">lexmodelsv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexv2Models">lexv2_models</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.licensemanager">licensemanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lightsail">lightsail</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.location">location</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.locationservice">locationservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.logs">logs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.m2">m2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.macie2">macie2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.managedgrafana">managedgrafana</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediaconnect">mediaconnect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediaconvert">mediaconvert</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.medialive">medialive</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediapackage">mediapackage</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediapackagev2">mediapackagev2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediapackagevod">mediapackagevod</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediastore">mediastore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.memorydb">memorydb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mgn">mgn</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mq">mq</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.msk">msk</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mwaa">mwaa</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mwaaserverless">mwaaserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.neptune">neptune</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.neptunegraph">neptunegraph</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkfirewall">networkfirewall</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkflowmonitor">networkflowmonitor</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkmanager">networkmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkmonitor">networkmonitor</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.notifications">notifications</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.notificationscontacts">notificationscontacts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.oam">oam</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.observabilityadmin">observabilityadmin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.odb">odb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearch">opensearch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearchingestion">opensearchingestion</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearchserverless">opensearchserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearchservice">opensearchservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.organizations">organizations</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.osis">osis</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.outposts">outposts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.paymentcryptography">paymentcryptography</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pcaconnectorad">pcaconnectorad</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pcs">pcs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pinpoint">pinpoint</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pinpointsmsvoicev2">pinpointsmsvoicev2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pipes">pipes</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.polly">polly</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pricing">pricing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.prometheus">prometheus</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.prometheusservice">prometheusservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.qbusiness">qbusiness</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.qldb">qldb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.quicksight">quicksight</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ram">ram</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rbin">rbin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rds">rds</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rdsdata">rdsdata</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rdsdataservice">rdsdataservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.recyclebin">recyclebin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshift">redshift</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshiftdata">redshiftdata</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshiftdataapiservice">redshiftdataapiservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshiftserverless">redshiftserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rekognition">rekognition</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resiliencehub">resiliencehub</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourceexplorer2">resourceexplorer2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourcegroups">resourcegroups</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstagging">resourcegroupstagging</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstaggingapi">resourcegroupstaggingapi</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rolesanywhere">rolesanywhere</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53">route53</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Domains">route53_domains</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Profiles">route53_profiles</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Recoverycontrolconfig">route53_recoverycontrolconfig</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Recoveryreadiness">route53_recoveryreadiness</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Resolver">route53_resolver</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rum">rum</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3">s3</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Api">s3_api</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Control">s3_control</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Outposts">s3_outposts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Tables">s3_tables</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Vectors">s3_vectors</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sagemaker">sagemaker</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.scheduler">scheduler</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.schemas">schemas</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.secretsmanager">secretsmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securityhub">securityhub</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securitylake">securitylake</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository">serverlessapplicationrepository</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapprepo">serverlessapprepo</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessrepo">serverlessrepo</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicecatalog">servicecatalog</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicecatalogappregistry">servicecatalogappregistry</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicediscovery">servicediscovery</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicequotas">servicequotas</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ses">ses</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sesv2">sesv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sfn">sfn</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.shield">shield</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.signer">signer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sns">sns</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sqs">sqs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssm">ssm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmcontacts">ssmcontacts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmincidents">ssmincidents</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmquicksetup">ssmquicksetup</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmsap">ssmsap</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sso">sso</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssoadmin">ssoadmin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.stepfunctions">stepfunctions</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.storagegateway">storagegateway</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sts">sts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.swf">swf</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.synthetics">synthetics</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.taxsettings">taxsettings</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.timestreaminfluxdb">timestreaminfluxdb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.timestreamquery">timestreamquery</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.timestreamwrite">timestreamwrite</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transcribe">transcribe</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transcribeservice">transcribeservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transfer">transfer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.verifiedpermissions">verifiedpermissions</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.vpclattice">vpclattice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.waf">waf</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafregional">wafregional</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafv2">wafv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wellarchitected">wellarchitected</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.workmail">workmail</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.workspaces">workspaces</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.workspacesweb">workspacesweb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderEndpoints.property.xray">xray</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.accessanalyzer">accessanalyzer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.account">account</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.acm">acm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.acmpca">acmpca</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.amg">amg</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.amp">amp</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.amplify">amplify</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.apigateway">apigateway</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.apigatewayv2">apigatewayv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appautoscaling">appautoscaling</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appconfig">appconfig</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appfabric">appfabric</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appflow">appflow</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appintegrations">appintegrations</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appintegrationsservice">appintegrationsservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.applicationautoscaling">applicationautoscaling</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.applicationinsights">applicationinsights</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.applicationsignals">applicationsignals</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appmesh">appmesh</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appregistry">appregistry</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.apprunner">apprunner</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appstream">appstream</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appsync">appsync</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.arcregionswitch">arcregionswitch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.arczonalshift">arczonalshift</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.athena">athena</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.auditmanager">auditmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.autoscaling">autoscaling</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.autoscalingplans">autoscalingplans</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.backup">backup</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.batch">batch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bcmdataexports">bcmdataexports</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.beanstalk">beanstalk</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bedrock">bedrock</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bedrockagent">bedrockagent</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bedrockagentcore">bedrockagentcore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.billing">billing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.budgets">budgets</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ce">ce</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chatbot">chatbot</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chime">chime</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines">chimesdkmediapipelines</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice">chimesdkvoice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms">cleanrooms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloud9">cloud9</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol">cloudcontrol</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi">cloudcontrolapi</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudformation">cloudformation</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudfront">cloudfront</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudfrontkeyvaluestore">cloudfrontkeyvaluestore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudhsm">cloudhsm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudhsmv2">cloudhsmv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudsearch">cloudsearch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudtrail">cloudtrail</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatch">cloudwatch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevents">cloudwatchevents</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevidently">cloudwatchevidently</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlog">cloudwatchlog</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlogs">cloudwatchlogs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchobservabilityaccessmanager">cloudwatchobservabilityaccessmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchrum">cloudwatchrum</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codeartifact">codeartifact</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codebuild">codebuild</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codecatalyst">codecatalyst</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codecommit">codecommit</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codeconnections">codeconnections</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codedeploy">codedeploy</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codeguruprofiler">codeguruprofiler</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codegurureviewer">codegurureviewer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codepipeline">codepipeline</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codestarconnections">codestarconnections</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codestarnotifications">codestarnotifications</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentity">cognitoidentity</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentityprovider">cognitoidentityprovider</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cognitoidp">cognitoidp</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.comprehend">comprehend</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.computeoptimizer">computeoptimizer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.config">config</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.configservice">configservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.connect">connect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.connectcases">connectcases</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.controltower">controltower</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.costandusagereportservice">costandusagereportservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.costexplorer">costexplorer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.costoptimizationhub">costoptimizationhub</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cur">cur</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.customerprofiles">customerprofiles</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.databasemigration">databasemigration</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.databasemigrationservice">databasemigrationservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.databrew">databrew</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dataexchange">dataexchange</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.datapipeline">datapipeline</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.datasync">datasync</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.datazone">datazone</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dax">dax</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.deploy">deploy</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.detective">detective</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.devicefarm">devicefarm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.devopsguru">devopsguru</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.directconnect">directconnect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.directoryservice">directoryservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dlm">dlm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dms">dms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.docdb">docdb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic">docdbelastic</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.drs">drs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ds">ds</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dsql">dsql</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dynamodb">dynamodb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ec2">ec2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ecr">ecr</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ecrpublic">ecrpublic</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ecs">ecs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.efs">efs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.eks">eks</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticache">elasticache</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticbeanstalk">elasticbeanstalk</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancing">elasticloadbalancing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancingv2">elasticloadbalancingv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticsearch">elasticsearch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticsearchservice">elasticsearchservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elastictranscoder">elastictranscoder</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elb">elb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elbv2">elbv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.emr">emr</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.emrcontainers">emrcontainers</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.emrserverless">emrserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.es">es</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.eventbridge">eventbridge</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.events">events</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.evidently">evidently</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.evs">evs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.finspace">finspace</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.firehose">firehose</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.fis">fis</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.fms">fms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.fsx">fsx</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.gamelift">gamelift</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.glacier">glacier</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.globalaccelerator">globalaccelerator</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.glue">glue</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.gluedatabrew">gluedatabrew</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.grafana">grafana</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.greengrass">greengrass</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.groundstation">groundstation</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.guardduty">guardduty</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.healthlake">healthlake</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.iam">iam</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.identitystore">identitystore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.imagebuilder">imagebuilder</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.inspector">inspector</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.inspector2">inspector2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.inspectorv2">inspectorv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.internetmonitor">internetmonitor</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.invoicing">invoicing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.iot">iot</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ivs">ivs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ivschat">ivschat</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kafka">kafka</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kafkaconnect">kafkaconnect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kendra">kendra</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.keyspaces">keyspaces</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesis">kinesis</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalytics">kinesisanalytics</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalyticsv2">kinesisanalyticsv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesisvideo">kinesisvideo</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kms">kms</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lakeformation">lakeformation</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lambda">lambda</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.launchwizard">launchwizard</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lex">lex</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuilding">lexmodelbuilding</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuildingservice">lexmodelbuildingservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodels">lexmodels</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodelsv2">lexmodelsv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexv2Models">lexv2_models</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.licensemanager">licensemanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lightsail">lightsail</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.location">location</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.locationservice">locationservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.logs">logs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.m2">m2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.macie2">macie2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.managedgrafana">managedgrafana</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediaconnect">mediaconnect</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediaconvert">mediaconvert</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.medialive">medialive</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediapackage">mediapackage</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediapackagev2">mediapackagev2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediapackagevod">mediapackagevod</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediastore">mediastore</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.memorydb">memorydb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mgn">mgn</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mq">mq</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.msk">msk</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mwaa">mwaa</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mwaaserverless">mwaaserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.neptune">neptune</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.neptunegraph">neptunegraph</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkfirewall">networkfirewall</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkflowmonitor">networkflowmonitor</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkmanager">networkmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkmonitor">networkmonitor</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.notifications">notifications</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.notificationscontacts">notificationscontacts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.oam">oam</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.observabilityadmin">observabilityadmin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.odb">odb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearch">opensearch</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearchingestion">opensearchingestion</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearchserverless">opensearchserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearchservice">opensearchservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.organizations">organizations</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.osis">osis</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.outposts">outposts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.paymentcryptography">paymentcryptography</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pcaconnectorad">pcaconnectorad</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pcs">pcs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pinpoint">pinpoint</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pinpointsmsvoicev2">pinpointsmsvoicev2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pipes">pipes</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.polly">polly</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pricing">pricing</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.prometheus">prometheus</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.prometheusservice">prometheusservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.qbusiness">qbusiness</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.qldb">qldb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.quicksight">quicksight</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ram">ram</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rbin">rbin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rds">rds</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rdsdata">rdsdata</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rdsdataservice">rdsdataservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.recyclebin">recyclebin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshift">redshift</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshiftdata">redshiftdata</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshiftdataapiservice">redshiftdataapiservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshiftserverless">redshiftserverless</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rekognition">rekognition</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resiliencehub">resiliencehub</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourceexplorer2">resourceexplorer2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourcegroups">resourcegroups</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstagging">resourcegroupstagging</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstaggingapi">resourcegroupstaggingapi</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rolesanywhere">rolesanywhere</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53">route53</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Domains">route53_domains</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Profiles">route53_profiles</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Recoverycontrolconfig">route53_recoverycontrolconfig</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Recoveryreadiness">route53_recoveryreadiness</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Resolver">route53_resolver</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rum">rum</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3">s3</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Api">s3_api</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Control">s3_control</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Outposts">s3_outposts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Tables">s3_tables</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Vectors">s3_vectors</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sagemaker">sagemaker</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.scheduler">scheduler</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.schemas">schemas</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.secretsmanager">secretsmanager</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.securityhub">securityhub</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.securitylake">securitylake</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository">serverlessapplicationrepository</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.serverlessapprepo">serverlessapprepo</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.serverlessrepo">serverlessrepo</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicecatalog">servicecatalog</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicecatalogappregistry">servicecatalogappregistry</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicediscovery">servicediscovery</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicequotas">servicequotas</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ses">ses</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sesv2">sesv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sfn">sfn</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.shield">shield</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.signer">signer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sns">sns</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sqs">sqs</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssm">ssm</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmcontacts">ssmcontacts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmincidents">ssmincidents</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmquicksetup">ssmquicksetup</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmsap">ssmsap</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sso">sso</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssoadmin">ssoadmin</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.stepfunctions">stepfunctions</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.storagegateway">storagegateway</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sts">sts</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.swf">swf</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.synthetics">synthetics</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.taxsettings">taxsettings</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.timestreaminfluxdb">timestreaminfluxdb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.timestreamquery">timestreamquery</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.timestreamwrite">timestreamwrite</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.transcribe">transcribe</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.transcribeservice">transcribeservice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.transfer">transfer</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.verifiedpermissions">verifiedpermissions</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.vpclattice">vpclattice</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.waf">waf</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.wafregional">wafregional</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.wafv2">wafv2</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.wellarchitected">wellarchitected</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.workmail">workmail</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.workspaces">workspaces</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.workspacesweb">workspacesweb</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderEndpoints.property.xray">xray</a></code> | <code>str</code> | Use this to override the default service endpoint URL. |
 
 ---
 
-##### `accessanalyzer`<sup>Optional</sup> <a name="accessanalyzer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.accessanalyzer"></a>
+##### `accessanalyzer`<sup>Optional</sup> <a name="accessanalyzer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.accessanalyzer"></a>
 
 ```python
 accessanalyzer: str
@@ -3385,11 +3442,11 @@ accessanalyzer: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#accessanalyzer AwsProvider#accessanalyzer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#accessanalyzer AwsProvider#accessanalyzer}
 
 ---
 
-##### `account`<sup>Optional</sup> <a name="account" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.account"></a>
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.account"></a>
 
 ```python
 account: str
@@ -3399,11 +3456,11 @@ account: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#account AwsProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#account AwsProvider#account}
 
 ---
 
-##### `acm`<sup>Optional</sup> <a name="acm" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.acm"></a>
+##### `acm`<sup>Optional</sup> <a name="acm" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.acm"></a>
 
 ```python
 acm: str
@@ -3413,11 +3470,11 @@ acm: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#acm AwsProvider#acm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#acm AwsProvider#acm}
 
 ---
 
-##### `acmpca`<sup>Optional</sup> <a name="acmpca" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.acmpca"></a>
+##### `acmpca`<sup>Optional</sup> <a name="acmpca" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.acmpca"></a>
 
 ```python
 acmpca: str
@@ -3427,11 +3484,11 @@ acmpca: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#acmpca AwsProvider#acmpca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#acmpca AwsProvider#acmpca}
 
 ---
 
-##### `amg`<sup>Optional</sup> <a name="amg" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.amg"></a>
+##### `amg`<sup>Optional</sup> <a name="amg" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.amg"></a>
 
 ```python
 amg: str
@@ -3441,11 +3498,11 @@ amg: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#amg AwsProvider#amg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#amg AwsProvider#amg}
 
 ---
 
-##### `amp`<sup>Optional</sup> <a name="amp" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.amp"></a>
+##### `amp`<sup>Optional</sup> <a name="amp" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.amp"></a>
 
 ```python
 amp: str
@@ -3455,11 +3512,11 @@ amp: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#amp AwsProvider#amp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#amp AwsProvider#amp}
 
 ---
 
-##### `amplify`<sup>Optional</sup> <a name="amplify" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.amplify"></a>
+##### `amplify`<sup>Optional</sup> <a name="amplify" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.amplify"></a>
 
 ```python
 amplify: str
@@ -3469,11 +3526,11 @@ amplify: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#amplify AwsProvider#amplify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#amplify AwsProvider#amplify}
 
 ---
 
-##### `apigateway`<sup>Optional</sup> <a name="apigateway" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.apigateway"></a>
+##### `apigateway`<sup>Optional</sup> <a name="apigateway" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.apigateway"></a>
 
 ```python
 apigateway: str
@@ -3483,11 +3540,11 @@ apigateway: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#apigateway AwsProvider#apigateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#apigateway AwsProvider#apigateway}
 
 ---
 
-##### `apigatewayv2`<sup>Optional</sup> <a name="apigatewayv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.apigatewayv2"></a>
+##### `apigatewayv2`<sup>Optional</sup> <a name="apigatewayv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.apigatewayv2"></a>
 
 ```python
 apigatewayv2: str
@@ -3497,11 +3554,11 @@ apigatewayv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#apigatewayv2 AwsProvider#apigatewayv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#apigatewayv2 AwsProvider#apigatewayv2}
 
 ---
 
-##### `appautoscaling`<sup>Optional</sup> <a name="appautoscaling" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appautoscaling"></a>
+##### `appautoscaling`<sup>Optional</sup> <a name="appautoscaling" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appautoscaling"></a>
 
 ```python
 appautoscaling: str
@@ -3511,11 +3568,11 @@ appautoscaling: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appautoscaling AwsProvider#appautoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appautoscaling AwsProvider#appautoscaling}
 
 ---
 
-##### `appconfig`<sup>Optional</sup> <a name="appconfig" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appconfig"></a>
+##### `appconfig`<sup>Optional</sup> <a name="appconfig" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appconfig"></a>
 
 ```python
 appconfig: str
@@ -3525,11 +3582,11 @@ appconfig: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appconfig AwsProvider#appconfig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appconfig AwsProvider#appconfig}
 
 ---
 
-##### `appfabric`<sup>Optional</sup> <a name="appfabric" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appfabric"></a>
+##### `appfabric`<sup>Optional</sup> <a name="appfabric" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appfabric"></a>
 
 ```python
 appfabric: str
@@ -3539,11 +3596,11 @@ appfabric: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appfabric AwsProvider#appfabric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appfabric AwsProvider#appfabric}
 
 ---
 
-##### `appflow`<sup>Optional</sup> <a name="appflow" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appflow"></a>
+##### `appflow`<sup>Optional</sup> <a name="appflow" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appflow"></a>
 
 ```python
 appflow: str
@@ -3553,11 +3610,11 @@ appflow: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appflow AwsProvider#appflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appflow AwsProvider#appflow}
 
 ---
 
-##### `appintegrations`<sup>Optional</sup> <a name="appintegrations" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appintegrations"></a>
+##### `appintegrations`<sup>Optional</sup> <a name="appintegrations" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appintegrations"></a>
 
 ```python
 appintegrations: str
@@ -3567,11 +3624,11 @@ appintegrations: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appintegrations AwsProvider#appintegrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appintegrations AwsProvider#appintegrations}
 
 ---
 
-##### `appintegrationsservice`<sup>Optional</sup> <a name="appintegrationsservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appintegrationsservice"></a>
+##### `appintegrationsservice`<sup>Optional</sup> <a name="appintegrationsservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appintegrationsservice"></a>
 
 ```python
 appintegrationsservice: str
@@ -3581,11 +3638,11 @@ appintegrationsservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appintegrationsservice AwsProvider#appintegrationsservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appintegrationsservice AwsProvider#appintegrationsservice}
 
 ---
 
-##### `applicationautoscaling`<sup>Optional</sup> <a name="applicationautoscaling" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.applicationautoscaling"></a>
+##### `applicationautoscaling`<sup>Optional</sup> <a name="applicationautoscaling" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.applicationautoscaling"></a>
 
 ```python
 applicationautoscaling: str
@@ -3595,11 +3652,11 @@ applicationautoscaling: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#applicationautoscaling AwsProvider#applicationautoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#applicationautoscaling AwsProvider#applicationautoscaling}
 
 ---
 
-##### `applicationinsights`<sup>Optional</sup> <a name="applicationinsights" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.applicationinsights"></a>
+##### `applicationinsights`<sup>Optional</sup> <a name="applicationinsights" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.applicationinsights"></a>
 
 ```python
 applicationinsights: str
@@ -3609,11 +3666,11 @@ applicationinsights: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#applicationinsights AwsProvider#applicationinsights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#applicationinsights AwsProvider#applicationinsights}
 
 ---
 
-##### `applicationsignals`<sup>Optional</sup> <a name="applicationsignals" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.applicationsignals"></a>
+##### `applicationsignals`<sup>Optional</sup> <a name="applicationsignals" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.applicationsignals"></a>
 
 ```python
 applicationsignals: str
@@ -3623,11 +3680,11 @@ applicationsignals: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#applicationsignals AwsProvider#applicationsignals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#applicationsignals AwsProvider#applicationsignals}
 
 ---
 
-##### `appmesh`<sup>Optional</sup> <a name="appmesh" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appmesh"></a>
+##### `appmesh`<sup>Optional</sup> <a name="appmesh" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appmesh"></a>
 
 ```python
 appmesh: str
@@ -3637,11 +3694,11 @@ appmesh: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appmesh AwsProvider#appmesh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appmesh AwsProvider#appmesh}
 
 ---
 
-##### `appregistry`<sup>Optional</sup> <a name="appregistry" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appregistry"></a>
+##### `appregistry`<sup>Optional</sup> <a name="appregistry" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appregistry"></a>
 
 ```python
 appregistry: str
@@ -3651,11 +3708,11 @@ appregistry: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appregistry AwsProvider#appregistry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appregistry AwsProvider#appregistry}
 
 ---
 
-##### `apprunner`<sup>Optional</sup> <a name="apprunner" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.apprunner"></a>
+##### `apprunner`<sup>Optional</sup> <a name="apprunner" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.apprunner"></a>
 
 ```python
 apprunner: str
@@ -3665,11 +3722,11 @@ apprunner: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#apprunner AwsProvider#apprunner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#apprunner AwsProvider#apprunner}
 
 ---
 
-##### `appstream`<sup>Optional</sup> <a name="appstream" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appstream"></a>
+##### `appstream`<sup>Optional</sup> <a name="appstream" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appstream"></a>
 
 ```python
 appstream: str
@@ -3679,11 +3736,11 @@ appstream: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appstream AwsProvider#appstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appstream AwsProvider#appstream}
 
 ---
 
-##### `appsync`<sup>Optional</sup> <a name="appsync" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.appsync"></a>
+##### `appsync`<sup>Optional</sup> <a name="appsync" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.appsync"></a>
 
 ```python
 appsync: str
@@ -3693,11 +3750,11 @@ appsync: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#appsync AwsProvider#appsync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#appsync AwsProvider#appsync}
 
 ---
 
-##### `arcregionswitch`<sup>Optional</sup> <a name="arcregionswitch" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.arcregionswitch"></a>
+##### `arcregionswitch`<sup>Optional</sup> <a name="arcregionswitch" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.arcregionswitch"></a>
 
 ```python
 arcregionswitch: str
@@ -3707,11 +3764,11 @@ arcregionswitch: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#arcregionswitch AwsProvider#arcregionswitch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#arcregionswitch AwsProvider#arcregionswitch}
 
 ---
 
-##### `arczonalshift`<sup>Optional</sup> <a name="arczonalshift" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.arczonalshift"></a>
+##### `arczonalshift`<sup>Optional</sup> <a name="arczonalshift" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.arczonalshift"></a>
 
 ```python
 arczonalshift: str
@@ -3721,11 +3778,11 @@ arczonalshift: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#arczonalshift AwsProvider#arczonalshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#arczonalshift AwsProvider#arczonalshift}
 
 ---
 
-##### `athena`<sup>Optional</sup> <a name="athena" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.athena"></a>
+##### `athena`<sup>Optional</sup> <a name="athena" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.athena"></a>
 
 ```python
 athena: str
@@ -3735,11 +3792,11 @@ athena: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#athena AwsProvider#athena}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#athena AwsProvider#athena}
 
 ---
 
-##### `auditmanager`<sup>Optional</sup> <a name="auditmanager" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.auditmanager"></a>
+##### `auditmanager`<sup>Optional</sup> <a name="auditmanager" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.auditmanager"></a>
 
 ```python
 auditmanager: str
@@ -3749,11 +3806,11 @@ auditmanager: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#auditmanager AwsProvider#auditmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#auditmanager AwsProvider#auditmanager}
 
 ---
 
-##### `autoscaling`<sup>Optional</sup> <a name="autoscaling" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.autoscaling"></a>
+##### `autoscaling`<sup>Optional</sup> <a name="autoscaling" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.autoscaling"></a>
 
 ```python
 autoscaling: str
@@ -3763,11 +3820,11 @@ autoscaling: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#autoscaling AwsProvider#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#autoscaling AwsProvider#autoscaling}
 
 ---
 
-##### `autoscalingplans`<sup>Optional</sup> <a name="autoscalingplans" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.autoscalingplans"></a>
+##### `autoscalingplans`<sup>Optional</sup> <a name="autoscalingplans" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.autoscalingplans"></a>
 
 ```python
 autoscalingplans: str
@@ -3777,11 +3834,11 @@ autoscalingplans: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#autoscalingplans AwsProvider#autoscalingplans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#autoscalingplans AwsProvider#autoscalingplans}
 
 ---
 
-##### `backup`<sup>Optional</sup> <a name="backup" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.backup"></a>
+##### `backup`<sup>Optional</sup> <a name="backup" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.backup"></a>
 
 ```python
 backup: str
@@ -3791,11 +3848,11 @@ backup: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#backup AwsProvider#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#backup AwsProvider#backup}
 
 ---
 
-##### `batch`<sup>Optional</sup> <a name="batch" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.batch"></a>
+##### `batch`<sup>Optional</sup> <a name="batch" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.batch"></a>
 
 ```python
 batch: str
@@ -3805,11 +3862,11 @@ batch: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#batch AwsProvider#batch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#batch AwsProvider#batch}
 
 ---
 
-##### `bcmdataexports`<sup>Optional</sup> <a name="bcmdataexports" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bcmdataexports"></a>
+##### `bcmdataexports`<sup>Optional</sup> <a name="bcmdataexports" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bcmdataexports"></a>
 
 ```python
 bcmdataexports: str
@@ -3819,11 +3876,11 @@ bcmdataexports: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#bcmdataexports AwsProvider#bcmdataexports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#bcmdataexports AwsProvider#bcmdataexports}
 
 ---
 
-##### `beanstalk`<sup>Optional</sup> <a name="beanstalk" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.beanstalk"></a>
+##### `beanstalk`<sup>Optional</sup> <a name="beanstalk" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.beanstalk"></a>
 
 ```python
 beanstalk: str
@@ -3833,11 +3890,11 @@ beanstalk: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#beanstalk AwsProvider#beanstalk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#beanstalk AwsProvider#beanstalk}
 
 ---
 
-##### `bedrock`<sup>Optional</sup> <a name="bedrock" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bedrock"></a>
+##### `bedrock`<sup>Optional</sup> <a name="bedrock" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bedrock"></a>
 
 ```python
 bedrock: str
@@ -3847,11 +3904,11 @@ bedrock: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#bedrock AwsProvider#bedrock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#bedrock AwsProvider#bedrock}
 
 ---
 
-##### `bedrockagent`<sup>Optional</sup> <a name="bedrockagent" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bedrockagent"></a>
+##### `bedrockagent`<sup>Optional</sup> <a name="bedrockagent" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bedrockagent"></a>
 
 ```python
 bedrockagent: str
@@ -3861,11 +3918,11 @@ bedrockagent: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#bedrockagent AwsProvider#bedrockagent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#bedrockagent AwsProvider#bedrockagent}
 
 ---
 
-##### `bedrockagentcore`<sup>Optional</sup> <a name="bedrockagentcore" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.bedrockagentcore"></a>
+##### `bedrockagentcore`<sup>Optional</sup> <a name="bedrockagentcore" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.bedrockagentcore"></a>
 
 ```python
 bedrockagentcore: str
@@ -3875,11 +3932,11 @@ bedrockagentcore: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#bedrockagentcore AwsProvider#bedrockagentcore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#bedrockagentcore AwsProvider#bedrockagentcore}
 
 ---
 
-##### `billing`<sup>Optional</sup> <a name="billing" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.billing"></a>
+##### `billing`<sup>Optional</sup> <a name="billing" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.billing"></a>
 
 ```python
 billing: str
@@ -3889,11 +3946,11 @@ billing: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#billing AwsProvider#billing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#billing AwsProvider#billing}
 
 ---
 
-##### `budgets`<sup>Optional</sup> <a name="budgets" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.budgets"></a>
+##### `budgets`<sup>Optional</sup> <a name="budgets" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.budgets"></a>
 
 ```python
 budgets: str
@@ -3903,11 +3960,11 @@ budgets: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#budgets AwsProvider#budgets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#budgets AwsProvider#budgets}
 
 ---
 
-##### `ce`<sup>Optional</sup> <a name="ce" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ce"></a>
+##### `ce`<sup>Optional</sup> <a name="ce" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ce"></a>
 
 ```python
 ce: str
@@ -3917,11 +3974,11 @@ ce: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ce AwsProvider#ce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ce AwsProvider#ce}
 
 ---
 
-##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chatbot"></a>
+##### `chatbot`<sup>Optional</sup> <a name="chatbot" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chatbot"></a>
 
 ```python
 chatbot: str
@@ -3931,11 +3988,11 @@ chatbot: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#chatbot AwsProvider#chatbot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#chatbot AwsProvider#chatbot}
 
 ---
 
-##### `chime`<sup>Optional</sup> <a name="chime" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chime"></a>
+##### `chime`<sup>Optional</sup> <a name="chime" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chime"></a>
 
 ```python
 chime: str
@@ -3945,11 +4002,11 @@ chime: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#chime AwsProvider#chime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#chime AwsProvider#chime}
 
 ---
 
-##### `chimesdkmediapipelines`<sup>Optional</sup> <a name="chimesdkmediapipelines" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines"></a>
+##### `chimesdkmediapipelines`<sup>Optional</sup> <a name="chimesdkmediapipelines" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chimesdkmediapipelines"></a>
 
 ```python
 chimesdkmediapipelines: str
@@ -3959,11 +4016,11 @@ chimesdkmediapipelines: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
 
 ---
 
-##### `chimesdkvoice`<sup>Optional</sup> <a name="chimesdkvoice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice"></a>
+##### `chimesdkvoice`<sup>Optional</sup> <a name="chimesdkvoice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.chimesdkvoice"></a>
 
 ```python
 chimesdkvoice: str
@@ -3973,11 +4030,11 @@ chimesdkvoice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#chimesdkvoice AwsProvider#chimesdkvoice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#chimesdkvoice AwsProvider#chimesdkvoice}
 
 ---
 
-##### `cleanrooms`<sup>Optional</sup> <a name="cleanrooms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms"></a>
+##### `cleanrooms`<sup>Optional</sup> <a name="cleanrooms" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cleanrooms"></a>
 
 ```python
 cleanrooms: str
@@ -3987,11 +4044,11 @@ cleanrooms: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cleanrooms AwsProvider#cleanrooms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cleanrooms AwsProvider#cleanrooms}
 
 ---
 
-##### `cloud9`<sup>Optional</sup> <a name="cloud9" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloud9"></a>
+##### `cloud9`<sup>Optional</sup> <a name="cloud9" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloud9"></a>
 
 ```python
 cloud9: str
@@ -4001,11 +4058,11 @@ cloud9: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloud9 AwsProvider#cloud9}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloud9 AwsProvider#cloud9}
 
 ---
 
-##### `cloudcontrol`<sup>Optional</sup> <a name="cloudcontrol" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol"></a>
+##### `cloudcontrol`<sup>Optional</sup> <a name="cloudcontrol" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrol"></a>
 
 ```python
 cloudcontrol: str
@@ -4015,11 +4072,11 @@ cloudcontrol: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudcontrol AwsProvider#cloudcontrol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudcontrol AwsProvider#cloudcontrol}
 
 ---
 
-##### `cloudcontrolapi`<sup>Optional</sup> <a name="cloudcontrolapi" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi"></a>
+##### `cloudcontrolapi`<sup>Optional</sup> <a name="cloudcontrolapi" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudcontrolapi"></a>
 
 ```python
 cloudcontrolapi: str
@@ -4029,11 +4086,11 @@ cloudcontrolapi: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudcontrolapi AwsProvider#cloudcontrolapi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudcontrolapi AwsProvider#cloudcontrolapi}
 
 ---
 
-##### `cloudformation`<sup>Optional</sup> <a name="cloudformation" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudformation"></a>
+##### `cloudformation`<sup>Optional</sup> <a name="cloudformation" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudformation"></a>
 
 ```python
 cloudformation: str
@@ -4043,11 +4100,11 @@ cloudformation: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudformation AwsProvider#cloudformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudformation AwsProvider#cloudformation}
 
 ---
 
-##### `cloudfront`<sup>Optional</sup> <a name="cloudfront" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudfront"></a>
+##### `cloudfront`<sup>Optional</sup> <a name="cloudfront" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudfront"></a>
 
 ```python
 cloudfront: str
@@ -4057,11 +4114,11 @@ cloudfront: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudfront AwsProvider#cloudfront}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudfront AwsProvider#cloudfront}
 
 ---
 
-##### `cloudfrontkeyvaluestore`<sup>Optional</sup> <a name="cloudfrontkeyvaluestore" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudfrontkeyvaluestore"></a>
+##### `cloudfrontkeyvaluestore`<sup>Optional</sup> <a name="cloudfrontkeyvaluestore" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudfrontkeyvaluestore"></a>
 
 ```python
 cloudfrontkeyvaluestore: str
@@ -4071,11 +4128,11 @@ cloudfrontkeyvaluestore: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudfrontkeyvaluestore AwsProvider#cloudfrontkeyvaluestore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudfrontkeyvaluestore AwsProvider#cloudfrontkeyvaluestore}
 
 ---
 
-##### `cloudhsm`<sup>Optional</sup> <a name="cloudhsm" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudhsm"></a>
+##### `cloudhsm`<sup>Optional</sup> <a name="cloudhsm" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudhsm"></a>
 
 ```python
 cloudhsm: str
@@ -4085,11 +4142,11 @@ cloudhsm: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudhsm AwsProvider#cloudhsm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudhsm AwsProvider#cloudhsm}
 
 ---
 
-##### `cloudhsmv2`<sup>Optional</sup> <a name="cloudhsmv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudhsmv2"></a>
+##### `cloudhsmv2`<sup>Optional</sup> <a name="cloudhsmv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudhsmv2"></a>
 
 ```python
 cloudhsmv2: str
@@ -4099,11 +4156,11 @@ cloudhsmv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudhsmv2 AwsProvider#cloudhsmv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudhsmv2 AwsProvider#cloudhsmv2}
 
 ---
 
-##### `cloudsearch`<sup>Optional</sup> <a name="cloudsearch" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudsearch"></a>
+##### `cloudsearch`<sup>Optional</sup> <a name="cloudsearch" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudsearch"></a>
 
 ```python
 cloudsearch: str
@@ -4113,11 +4170,11 @@ cloudsearch: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudsearch AwsProvider#cloudsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudsearch AwsProvider#cloudsearch}
 
 ---
 
-##### `cloudtrail`<sup>Optional</sup> <a name="cloudtrail" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudtrail"></a>
+##### `cloudtrail`<sup>Optional</sup> <a name="cloudtrail" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudtrail"></a>
 
 ```python
 cloudtrail: str
@@ -4127,11 +4184,11 @@ cloudtrail: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudtrail AwsProvider#cloudtrail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudtrail AwsProvider#cloudtrail}
 
 ---
 
-##### `cloudwatch`<sup>Optional</sup> <a name="cloudwatch" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatch"></a>
+##### `cloudwatch`<sup>Optional</sup> <a name="cloudwatch" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatch"></a>
 
 ```python
 cloudwatch: str
@@ -4141,11 +4198,11 @@ cloudwatch: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatch AwsProvider#cloudwatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatch AwsProvider#cloudwatch}
 
 ---
 
-##### `cloudwatchevents`<sup>Optional</sup> <a name="cloudwatchevents" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevents"></a>
+##### `cloudwatchevents`<sup>Optional</sup> <a name="cloudwatchevents" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevents"></a>
 
 ```python
 cloudwatchevents: str
@@ -4155,11 +4212,11 @@ cloudwatchevents: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatchevents AwsProvider#cloudwatchevents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatchevents AwsProvider#cloudwatchevents}
 
 ---
 
-##### `cloudwatchevidently`<sup>Optional</sup> <a name="cloudwatchevidently" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevidently"></a>
+##### `cloudwatchevidently`<sup>Optional</sup> <a name="cloudwatchevidently" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchevidently"></a>
 
 ```python
 cloudwatchevidently: str
@@ -4169,11 +4226,11 @@ cloudwatchevidently: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatchevidently AwsProvider#cloudwatchevidently}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatchevidently AwsProvider#cloudwatchevidently}
 
 ---
 
-##### `cloudwatchlog`<sup>Optional</sup> <a name="cloudwatchlog" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlog"></a>
+##### `cloudwatchlog`<sup>Optional</sup> <a name="cloudwatchlog" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlog"></a>
 
 ```python
 cloudwatchlog: str
@@ -4183,11 +4240,11 @@ cloudwatchlog: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatchlog AwsProvider#cloudwatchlog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatchlog AwsProvider#cloudwatchlog}
 
 ---
 
-##### `cloudwatchlogs`<sup>Optional</sup> <a name="cloudwatchlogs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlogs"></a>
+##### `cloudwatchlogs`<sup>Optional</sup> <a name="cloudwatchlogs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchlogs"></a>
 
 ```python
 cloudwatchlogs: str
@@ -4197,11 +4254,11 @@ cloudwatchlogs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatchlogs AwsProvider#cloudwatchlogs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatchlogs AwsProvider#cloudwatchlogs}
 
 ---
 
-##### `cloudwatchobservabilityaccessmanager`<sup>Optional</sup> <a name="cloudwatchobservabilityaccessmanager" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchobservabilityaccessmanager"></a>
+##### `cloudwatchobservabilityaccessmanager`<sup>Optional</sup> <a name="cloudwatchobservabilityaccessmanager" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchobservabilityaccessmanager"></a>
 
 ```python
 cloudwatchobservabilityaccessmanager: str
@@ -4211,11 +4268,11 @@ cloudwatchobservabilityaccessmanager: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatchobservabilityaccessmanager AwsProvider#cloudwatchobservabilityaccessmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatchobservabilityaccessmanager AwsProvider#cloudwatchobservabilityaccessmanager}
 
 ---
 
-##### `cloudwatchrum`<sup>Optional</sup> <a name="cloudwatchrum" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchrum"></a>
+##### `cloudwatchrum`<sup>Optional</sup> <a name="cloudwatchrum" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cloudwatchrum"></a>
 
 ```python
 cloudwatchrum: str
@@ -4225,11 +4282,11 @@ cloudwatchrum: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cloudwatchrum AwsProvider#cloudwatchrum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cloudwatchrum AwsProvider#cloudwatchrum}
 
 ---
 
-##### `codeartifact`<sup>Optional</sup> <a name="codeartifact" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codeartifact"></a>
+##### `codeartifact`<sup>Optional</sup> <a name="codeartifact" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codeartifact"></a>
 
 ```python
 codeartifact: str
@@ -4239,11 +4296,11 @@ codeartifact: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codeartifact AwsProvider#codeartifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codeartifact AwsProvider#codeartifact}
 
 ---
 
-##### `codebuild`<sup>Optional</sup> <a name="codebuild" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codebuild"></a>
+##### `codebuild`<sup>Optional</sup> <a name="codebuild" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codebuild"></a>
 
 ```python
 codebuild: str
@@ -4253,11 +4310,11 @@ codebuild: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codebuild AwsProvider#codebuild}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codebuild AwsProvider#codebuild}
 
 ---
 
-##### `codecatalyst`<sup>Optional</sup> <a name="codecatalyst" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codecatalyst"></a>
+##### `codecatalyst`<sup>Optional</sup> <a name="codecatalyst" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codecatalyst"></a>
 
 ```python
 codecatalyst: str
@@ -4267,11 +4324,11 @@ codecatalyst: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codecatalyst AwsProvider#codecatalyst}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codecatalyst AwsProvider#codecatalyst}
 
 ---
 
-##### `codecommit`<sup>Optional</sup> <a name="codecommit" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codecommit"></a>
+##### `codecommit`<sup>Optional</sup> <a name="codecommit" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codecommit"></a>
 
 ```python
 codecommit: str
@@ -4281,11 +4338,11 @@ codecommit: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codecommit AwsProvider#codecommit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codecommit AwsProvider#codecommit}
 
 ---
 
-##### `codeconnections`<sup>Optional</sup> <a name="codeconnections" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codeconnections"></a>
+##### `codeconnections`<sup>Optional</sup> <a name="codeconnections" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codeconnections"></a>
 
 ```python
 codeconnections: str
@@ -4295,11 +4352,11 @@ codeconnections: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codeconnections AwsProvider#codeconnections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codeconnections AwsProvider#codeconnections}
 
 ---
 
-##### `codedeploy`<sup>Optional</sup> <a name="codedeploy" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codedeploy"></a>
+##### `codedeploy`<sup>Optional</sup> <a name="codedeploy" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codedeploy"></a>
 
 ```python
 codedeploy: str
@@ -4309,11 +4366,11 @@ codedeploy: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codedeploy AwsProvider#codedeploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codedeploy AwsProvider#codedeploy}
 
 ---
 
-##### `codeguruprofiler`<sup>Optional</sup> <a name="codeguruprofiler" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codeguruprofiler"></a>
+##### `codeguruprofiler`<sup>Optional</sup> <a name="codeguruprofiler" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codeguruprofiler"></a>
 
 ```python
 codeguruprofiler: str
@@ -4323,11 +4380,11 @@ codeguruprofiler: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codeguruprofiler AwsProvider#codeguruprofiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codeguruprofiler AwsProvider#codeguruprofiler}
 
 ---
 
-##### `codegurureviewer`<sup>Optional</sup> <a name="codegurureviewer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codegurureviewer"></a>
+##### `codegurureviewer`<sup>Optional</sup> <a name="codegurureviewer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codegurureviewer"></a>
 
 ```python
 codegurureviewer: str
@@ -4337,11 +4394,11 @@ codegurureviewer: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codegurureviewer AwsProvider#codegurureviewer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codegurureviewer AwsProvider#codegurureviewer}
 
 ---
 
-##### `codepipeline`<sup>Optional</sup> <a name="codepipeline" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codepipeline"></a>
+##### `codepipeline`<sup>Optional</sup> <a name="codepipeline" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codepipeline"></a>
 
 ```python
 codepipeline: str
@@ -4351,11 +4408,11 @@ codepipeline: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codepipeline AwsProvider#codepipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codepipeline AwsProvider#codepipeline}
 
 ---
 
-##### `codestarconnections`<sup>Optional</sup> <a name="codestarconnections" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codestarconnections"></a>
+##### `codestarconnections`<sup>Optional</sup> <a name="codestarconnections" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codestarconnections"></a>
 
 ```python
 codestarconnections: str
@@ -4365,11 +4422,11 @@ codestarconnections: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codestarconnections AwsProvider#codestarconnections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codestarconnections AwsProvider#codestarconnections}
 
 ---
 
-##### `codestarnotifications`<sup>Optional</sup> <a name="codestarnotifications" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.codestarnotifications"></a>
+##### `codestarnotifications`<sup>Optional</sup> <a name="codestarnotifications" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.codestarnotifications"></a>
 
 ```python
 codestarnotifications: str
@@ -4379,11 +4436,11 @@ codestarnotifications: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#codestarnotifications AwsProvider#codestarnotifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#codestarnotifications AwsProvider#codestarnotifications}
 
 ---
 
-##### `cognitoidentity`<sup>Optional</sup> <a name="cognitoidentity" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentity"></a>
+##### `cognitoidentity`<sup>Optional</sup> <a name="cognitoidentity" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentity"></a>
 
 ```python
 cognitoidentity: str
@@ -4393,11 +4450,11 @@ cognitoidentity: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cognitoidentity AwsProvider#cognitoidentity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cognitoidentity AwsProvider#cognitoidentity}
 
 ---
 
-##### `cognitoidentityprovider`<sup>Optional</sup> <a name="cognitoidentityprovider" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentityprovider"></a>
+##### `cognitoidentityprovider`<sup>Optional</sup> <a name="cognitoidentityprovider" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cognitoidentityprovider"></a>
 
 ```python
 cognitoidentityprovider: str
@@ -4407,11 +4464,11 @@ cognitoidentityprovider: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cognitoidentityprovider AwsProvider#cognitoidentityprovider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cognitoidentityprovider AwsProvider#cognitoidentityprovider}
 
 ---
 
-##### `cognitoidp`<sup>Optional</sup> <a name="cognitoidp" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cognitoidp"></a>
+##### `cognitoidp`<sup>Optional</sup> <a name="cognitoidp" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cognitoidp"></a>
 
 ```python
 cognitoidp: str
@@ -4421,11 +4478,11 @@ cognitoidp: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cognitoidp AwsProvider#cognitoidp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cognitoidp AwsProvider#cognitoidp}
 
 ---
 
-##### `comprehend`<sup>Optional</sup> <a name="comprehend" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.comprehend"></a>
+##### `comprehend`<sup>Optional</sup> <a name="comprehend" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.comprehend"></a>
 
 ```python
 comprehend: str
@@ -4435,11 +4492,11 @@ comprehend: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#comprehend AwsProvider#comprehend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#comprehend AwsProvider#comprehend}
 
 ---
 
-##### `computeoptimizer`<sup>Optional</sup> <a name="computeoptimizer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.computeoptimizer"></a>
+##### `computeoptimizer`<sup>Optional</sup> <a name="computeoptimizer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.computeoptimizer"></a>
 
 ```python
 computeoptimizer: str
@@ -4449,11 +4506,11 @@ computeoptimizer: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#computeoptimizer AwsProvider#computeoptimizer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#computeoptimizer AwsProvider#computeoptimizer}
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.config"></a>
 
 ```python
 config: str
@@ -4463,11 +4520,11 @@ config: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#config AwsProvider#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#config AwsProvider#config}
 
 ---
 
-##### `configservice`<sup>Optional</sup> <a name="configservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.configservice"></a>
+##### `configservice`<sup>Optional</sup> <a name="configservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.configservice"></a>
 
 ```python
 configservice: str
@@ -4477,11 +4534,11 @@ configservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#configservice AwsProvider#configservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#configservice AwsProvider#configservice}
 
 ---
 
-##### `connect`<sup>Optional</sup> <a name="connect" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.connect"></a>
+##### `connect`<sup>Optional</sup> <a name="connect" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.connect"></a>
 
 ```python
 connect: str
@@ -4491,11 +4548,11 @@ connect: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#connect AwsProvider#connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#connect AwsProvider#connect}
 
 ---
 
-##### `connectcases`<sup>Optional</sup> <a name="connectcases" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.connectcases"></a>
+##### `connectcases`<sup>Optional</sup> <a name="connectcases" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.connectcases"></a>
 
 ```python
 connectcases: str
@@ -4505,11 +4562,11 @@ connectcases: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#connectcases AwsProvider#connectcases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#connectcases AwsProvider#connectcases}
 
 ---
 
-##### `controltower`<sup>Optional</sup> <a name="controltower" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.controltower"></a>
+##### `controltower`<sup>Optional</sup> <a name="controltower" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.controltower"></a>
 
 ```python
 controltower: str
@@ -4519,11 +4576,11 @@ controltower: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#controltower AwsProvider#controltower}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#controltower AwsProvider#controltower}
 
 ---
 
-##### `costandusagereportservice`<sup>Optional</sup> <a name="costandusagereportservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.costandusagereportservice"></a>
+##### `costandusagereportservice`<sup>Optional</sup> <a name="costandusagereportservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.costandusagereportservice"></a>
 
 ```python
 costandusagereportservice: str
@@ -4533,11 +4590,11 @@ costandusagereportservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#costandusagereportservice AwsProvider#costandusagereportservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#costandusagereportservice AwsProvider#costandusagereportservice}
 
 ---
 
-##### `costexplorer`<sup>Optional</sup> <a name="costexplorer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.costexplorer"></a>
+##### `costexplorer`<sup>Optional</sup> <a name="costexplorer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.costexplorer"></a>
 
 ```python
 costexplorer: str
@@ -4547,11 +4604,11 @@ costexplorer: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#costexplorer AwsProvider#costexplorer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#costexplorer AwsProvider#costexplorer}
 
 ---
 
-##### `costoptimizationhub`<sup>Optional</sup> <a name="costoptimizationhub" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.costoptimizationhub"></a>
+##### `costoptimizationhub`<sup>Optional</sup> <a name="costoptimizationhub" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.costoptimizationhub"></a>
 
 ```python
 costoptimizationhub: str
@@ -4561,11 +4618,11 @@ costoptimizationhub: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#costoptimizationhub AwsProvider#costoptimizationhub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#costoptimizationhub AwsProvider#costoptimizationhub}
 
 ---
 
-##### `cur`<sup>Optional</sup> <a name="cur" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.cur"></a>
+##### `cur`<sup>Optional</sup> <a name="cur" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.cur"></a>
 
 ```python
 cur: str
@@ -4575,11 +4632,11 @@ cur: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#cur AwsProvider#cur}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#cur AwsProvider#cur}
 
 ---
 
-##### `customerprofiles`<sup>Optional</sup> <a name="customerprofiles" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.customerprofiles"></a>
+##### `customerprofiles`<sup>Optional</sup> <a name="customerprofiles" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.customerprofiles"></a>
 
 ```python
 customerprofiles: str
@@ -4589,11 +4646,11 @@ customerprofiles: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#customerprofiles AwsProvider#customerprofiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#customerprofiles AwsProvider#customerprofiles}
 
 ---
 
-##### `databasemigration`<sup>Optional</sup> <a name="databasemigration" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.databasemigration"></a>
+##### `databasemigration`<sup>Optional</sup> <a name="databasemigration" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.databasemigration"></a>
 
 ```python
 databasemigration: str
@@ -4603,11 +4660,11 @@ databasemigration: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#databasemigration AwsProvider#databasemigration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#databasemigration AwsProvider#databasemigration}
 
 ---
 
-##### `databasemigrationservice`<sup>Optional</sup> <a name="databasemigrationservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.databasemigrationservice"></a>
+##### `databasemigrationservice`<sup>Optional</sup> <a name="databasemigrationservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.databasemigrationservice"></a>
 
 ```python
 databasemigrationservice: str
@@ -4617,11 +4674,11 @@ databasemigrationservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#databasemigrationservice AwsProvider#databasemigrationservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#databasemigrationservice AwsProvider#databasemigrationservice}
 
 ---
 
-##### `databrew`<sup>Optional</sup> <a name="databrew" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.databrew"></a>
+##### `databrew`<sup>Optional</sup> <a name="databrew" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.databrew"></a>
 
 ```python
 databrew: str
@@ -4631,11 +4688,11 @@ databrew: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#databrew AwsProvider#databrew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#databrew AwsProvider#databrew}
 
 ---
 
-##### `dataexchange`<sup>Optional</sup> <a name="dataexchange" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dataexchange"></a>
+##### `dataexchange`<sup>Optional</sup> <a name="dataexchange" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dataexchange"></a>
 
 ```python
 dataexchange: str
@@ -4645,11 +4702,11 @@ dataexchange: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#dataexchange AwsProvider#dataexchange}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#dataexchange AwsProvider#dataexchange}
 
 ---
 
-##### `datapipeline`<sup>Optional</sup> <a name="datapipeline" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.datapipeline"></a>
+##### `datapipeline`<sup>Optional</sup> <a name="datapipeline" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.datapipeline"></a>
 
 ```python
 datapipeline: str
@@ -4659,11 +4716,11 @@ datapipeline: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#datapipeline AwsProvider#datapipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#datapipeline AwsProvider#datapipeline}
 
 ---
 
-##### `datasync`<sup>Optional</sup> <a name="datasync" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.datasync"></a>
+##### `datasync`<sup>Optional</sup> <a name="datasync" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.datasync"></a>
 
 ```python
 datasync: str
@@ -4673,11 +4730,11 @@ datasync: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#datasync AwsProvider#datasync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#datasync AwsProvider#datasync}
 
 ---
 
-##### `datazone`<sup>Optional</sup> <a name="datazone" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.datazone"></a>
+##### `datazone`<sup>Optional</sup> <a name="datazone" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.datazone"></a>
 
 ```python
 datazone: str
@@ -4687,11 +4744,11 @@ datazone: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#datazone AwsProvider#datazone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#datazone AwsProvider#datazone}
 
 ---
 
-##### `dax`<sup>Optional</sup> <a name="dax" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dax"></a>
+##### `dax`<sup>Optional</sup> <a name="dax" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dax"></a>
 
 ```python
 dax: str
@@ -4701,11 +4758,11 @@ dax: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#dax AwsProvider#dax}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#dax AwsProvider#dax}
 
 ---
 
-##### `deploy`<sup>Optional</sup> <a name="deploy" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.deploy"></a>
+##### `deploy`<sup>Optional</sup> <a name="deploy" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.deploy"></a>
 
 ```python
 deploy: str
@@ -4715,11 +4772,11 @@ deploy: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#deploy AwsProvider#deploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#deploy AwsProvider#deploy}
 
 ---
 
-##### `detective`<sup>Optional</sup> <a name="detective" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.detective"></a>
+##### `detective`<sup>Optional</sup> <a name="detective" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.detective"></a>
 
 ```python
 detective: str
@@ -4729,11 +4786,11 @@ detective: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#detective AwsProvider#detective}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#detective AwsProvider#detective}
 
 ---
 
-##### `devicefarm`<sup>Optional</sup> <a name="devicefarm" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.devicefarm"></a>
+##### `devicefarm`<sup>Optional</sup> <a name="devicefarm" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.devicefarm"></a>
 
 ```python
 devicefarm: str
@@ -4743,11 +4800,11 @@ devicefarm: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#devicefarm AwsProvider#devicefarm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#devicefarm AwsProvider#devicefarm}
 
 ---
 
-##### `devopsguru`<sup>Optional</sup> <a name="devopsguru" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.devopsguru"></a>
+##### `devopsguru`<sup>Optional</sup> <a name="devopsguru" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.devopsguru"></a>
 
 ```python
 devopsguru: str
@@ -4757,11 +4814,11 @@ devopsguru: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#devopsguru AwsProvider#devopsguru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#devopsguru AwsProvider#devopsguru}
 
 ---
 
-##### `directconnect`<sup>Optional</sup> <a name="directconnect" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.directconnect"></a>
+##### `directconnect`<sup>Optional</sup> <a name="directconnect" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.directconnect"></a>
 
 ```python
 directconnect: str
@@ -4771,11 +4828,11 @@ directconnect: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#directconnect AwsProvider#directconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#directconnect AwsProvider#directconnect}
 
 ---
 
-##### `directoryservice`<sup>Optional</sup> <a name="directoryservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.directoryservice"></a>
+##### `directoryservice`<sup>Optional</sup> <a name="directoryservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.directoryservice"></a>
 
 ```python
 directoryservice: str
@@ -4785,11 +4842,11 @@ directoryservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#directoryservice AwsProvider#directoryservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#directoryservice AwsProvider#directoryservice}
 
 ---
 
-##### `dlm`<sup>Optional</sup> <a name="dlm" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dlm"></a>
+##### `dlm`<sup>Optional</sup> <a name="dlm" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dlm"></a>
 
 ```python
 dlm: str
@@ -4799,11 +4856,11 @@ dlm: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#dlm AwsProvider#dlm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#dlm AwsProvider#dlm}
 
 ---
 
-##### `dms`<sup>Optional</sup> <a name="dms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dms"></a>
+##### `dms`<sup>Optional</sup> <a name="dms" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dms"></a>
 
 ```python
 dms: str
@@ -4813,11 +4870,11 @@ dms: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#dms AwsProvider#dms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#dms AwsProvider#dms}
 
 ---
 
-##### `docdb`<sup>Optional</sup> <a name="docdb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdb"></a>
+##### `docdb`<sup>Optional</sup> <a name="docdb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.docdb"></a>
 
 ```python
 docdb: str
@@ -4827,11 +4884,11 @@ docdb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#docdb AwsProvider#docdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#docdb AwsProvider#docdb}
 
 ---
 
-##### `docdbelastic`<sup>Optional</sup> <a name="docdbelastic" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic"></a>
+##### `docdbelastic`<sup>Optional</sup> <a name="docdbelastic" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.docdbelastic"></a>
 
 ```python
 docdbelastic: str
@@ -4841,11 +4898,11 @@ docdbelastic: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#docdbelastic AwsProvider#docdbelastic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#docdbelastic AwsProvider#docdbelastic}
 
 ---
 
-##### `drs`<sup>Optional</sup> <a name="drs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.drs"></a>
+##### `drs`<sup>Optional</sup> <a name="drs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.drs"></a>
 
 ```python
 drs: str
@@ -4855,11 +4912,11 @@ drs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#drs AwsProvider#drs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#drs AwsProvider#drs}
 
 ---
 
-##### `ds`<sup>Optional</sup> <a name="ds" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ds"></a>
+##### `ds`<sup>Optional</sup> <a name="ds" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ds"></a>
 
 ```python
 ds: str
@@ -4869,11 +4926,11 @@ ds: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ds AwsProvider#ds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ds AwsProvider#ds}
 
 ---
 
-##### `dsql`<sup>Optional</sup> <a name="dsql" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dsql"></a>
+##### `dsql`<sup>Optional</sup> <a name="dsql" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dsql"></a>
 
 ```python
 dsql: str
@@ -4883,11 +4940,11 @@ dsql: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#dsql AwsProvider#dsql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#dsql AwsProvider#dsql}
 
 ---
 
-##### `dynamodb`<sup>Optional</sup> <a name="dynamodb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.dynamodb"></a>
+##### `dynamodb`<sup>Optional</sup> <a name="dynamodb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.dynamodb"></a>
 
 ```python
 dynamodb: str
@@ -4897,11 +4954,11 @@ dynamodb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#dynamodb AwsProvider#dynamodb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#dynamodb AwsProvider#dynamodb}
 
 ---
 
-##### `ec2`<sup>Optional</sup> <a name="ec2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ec2"></a>
+##### `ec2`<sup>Optional</sup> <a name="ec2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ec2"></a>
 
 ```python
 ec2: str
@@ -4911,11 +4968,11 @@ ec2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ec2 AwsProvider#ec2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ec2 AwsProvider#ec2}
 
 ---
 
-##### `ecr`<sup>Optional</sup> <a name="ecr" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ecr"></a>
+##### `ecr`<sup>Optional</sup> <a name="ecr" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ecr"></a>
 
 ```python
 ecr: str
@@ -4925,11 +4982,11 @@ ecr: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ecr AwsProvider#ecr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ecr AwsProvider#ecr}
 
 ---
 
-##### `ecrpublic`<sup>Optional</sup> <a name="ecrpublic" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ecrpublic"></a>
+##### `ecrpublic`<sup>Optional</sup> <a name="ecrpublic" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ecrpublic"></a>
 
 ```python
 ecrpublic: str
@@ -4939,11 +4996,11 @@ ecrpublic: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ecrpublic AwsProvider#ecrpublic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ecrpublic AwsProvider#ecrpublic}
 
 ---
 
-##### `ecs`<sup>Optional</sup> <a name="ecs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ecs"></a>
+##### `ecs`<sup>Optional</sup> <a name="ecs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ecs"></a>
 
 ```python
 ecs: str
@@ -4953,11 +5010,11 @@ ecs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ecs AwsProvider#ecs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ecs AwsProvider#ecs}
 
 ---
 
-##### `efs`<sup>Optional</sup> <a name="efs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.efs"></a>
+##### `efs`<sup>Optional</sup> <a name="efs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.efs"></a>
 
 ```python
 efs: str
@@ -4967,11 +5024,11 @@ efs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#efs AwsProvider#efs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#efs AwsProvider#efs}
 
 ---
 
-##### `eks`<sup>Optional</sup> <a name="eks" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.eks"></a>
+##### `eks`<sup>Optional</sup> <a name="eks" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.eks"></a>
 
 ```python
 eks: str
@@ -4981,11 +5038,11 @@ eks: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#eks AwsProvider#eks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#eks AwsProvider#eks}
 
 ---
 
-##### `elasticache`<sup>Optional</sup> <a name="elasticache" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticache"></a>
+##### `elasticache`<sup>Optional</sup> <a name="elasticache" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticache"></a>
 
 ```python
 elasticache: str
@@ -4995,11 +5052,11 @@ elasticache: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elasticache AwsProvider#elasticache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elasticache AwsProvider#elasticache}
 
 ---
 
-##### `elasticbeanstalk`<sup>Optional</sup> <a name="elasticbeanstalk" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticbeanstalk"></a>
+##### `elasticbeanstalk`<sup>Optional</sup> <a name="elasticbeanstalk" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticbeanstalk"></a>
 
 ```python
 elasticbeanstalk: str
@@ -5009,11 +5066,11 @@ elasticbeanstalk: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elasticbeanstalk AwsProvider#elasticbeanstalk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elasticbeanstalk AwsProvider#elasticbeanstalk}
 
 ---
 
-##### `elasticloadbalancing`<sup>Optional</sup> <a name="elasticloadbalancing" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancing"></a>
+##### `elasticloadbalancing`<sup>Optional</sup> <a name="elasticloadbalancing" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancing"></a>
 
 ```python
 elasticloadbalancing: str
@@ -5023,11 +5080,11 @@ elasticloadbalancing: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elasticloadbalancing AwsProvider#elasticloadbalancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elasticloadbalancing AwsProvider#elasticloadbalancing}
 
 ---
 
-##### `elasticloadbalancingv2`<sup>Optional</sup> <a name="elasticloadbalancingv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancingv2"></a>
+##### `elasticloadbalancingv2`<sup>Optional</sup> <a name="elasticloadbalancingv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticloadbalancingv2"></a>
 
 ```python
 elasticloadbalancingv2: str
@@ -5037,11 +5094,11 @@ elasticloadbalancingv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elasticloadbalancingv2 AwsProvider#elasticloadbalancingv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elasticloadbalancingv2 AwsProvider#elasticloadbalancingv2}
 
 ---
 
-##### `elasticsearch`<sup>Optional</sup> <a name="elasticsearch" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticsearch"></a>
+##### `elasticsearch`<sup>Optional</sup> <a name="elasticsearch" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticsearch"></a>
 
 ```python
 elasticsearch: str
@@ -5051,11 +5108,11 @@ elasticsearch: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elasticsearch AwsProvider#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elasticsearch AwsProvider#elasticsearch}
 
 ---
 
-##### `elasticsearchservice`<sup>Optional</sup> <a name="elasticsearchservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elasticsearchservice"></a>
+##### `elasticsearchservice`<sup>Optional</sup> <a name="elasticsearchservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elasticsearchservice"></a>
 
 ```python
 elasticsearchservice: str
@@ -5065,11 +5122,11 @@ elasticsearchservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elasticsearchservice AwsProvider#elasticsearchservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elasticsearchservice AwsProvider#elasticsearchservice}
 
 ---
 
-##### `elastictranscoder`<sup>Optional</sup> <a name="elastictranscoder" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elastictranscoder"></a>
+##### `elastictranscoder`<sup>Optional</sup> <a name="elastictranscoder" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elastictranscoder"></a>
 
 ```python
 elastictranscoder: str
@@ -5079,11 +5136,11 @@ elastictranscoder: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elastictranscoder AwsProvider#elastictranscoder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elastictranscoder AwsProvider#elastictranscoder}
 
 ---
 
-##### `elb`<sup>Optional</sup> <a name="elb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elb"></a>
+##### `elb`<sup>Optional</sup> <a name="elb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elb"></a>
 
 ```python
 elb: str
@@ -5093,11 +5150,11 @@ elb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elb AwsProvider#elb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elb AwsProvider#elb}
 
 ---
 
-##### `elbv2`<sup>Optional</sup> <a name="elbv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.elbv2"></a>
+##### `elbv2`<sup>Optional</sup> <a name="elbv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.elbv2"></a>
 
 ```python
 elbv2: str
@@ -5107,11 +5164,11 @@ elbv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#elbv2 AwsProvider#elbv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#elbv2 AwsProvider#elbv2}
 
 ---
 
-##### `emr`<sup>Optional</sup> <a name="emr" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.emr"></a>
+##### `emr`<sup>Optional</sup> <a name="emr" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.emr"></a>
 
 ```python
 emr: str
@@ -5121,11 +5178,11 @@ emr: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#emr AwsProvider#emr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#emr AwsProvider#emr}
 
 ---
 
-##### `emrcontainers`<sup>Optional</sup> <a name="emrcontainers" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.emrcontainers"></a>
+##### `emrcontainers`<sup>Optional</sup> <a name="emrcontainers" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.emrcontainers"></a>
 
 ```python
 emrcontainers: str
@@ -5135,11 +5192,11 @@ emrcontainers: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#emrcontainers AwsProvider#emrcontainers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#emrcontainers AwsProvider#emrcontainers}
 
 ---
 
-##### `emrserverless`<sup>Optional</sup> <a name="emrserverless" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.emrserverless"></a>
+##### `emrserverless`<sup>Optional</sup> <a name="emrserverless" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.emrserverless"></a>
 
 ```python
 emrserverless: str
@@ -5149,11 +5206,11 @@ emrserverless: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#emrserverless AwsProvider#emrserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#emrserverless AwsProvider#emrserverless}
 
 ---
 
-##### `es`<sup>Optional</sup> <a name="es" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.es"></a>
+##### `es`<sup>Optional</sup> <a name="es" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.es"></a>
 
 ```python
 es: str
@@ -5163,11 +5220,11 @@ es: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#es AwsProvider#es}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#es AwsProvider#es}
 
 ---
 
-##### `eventbridge`<sup>Optional</sup> <a name="eventbridge" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.eventbridge"></a>
+##### `eventbridge`<sup>Optional</sup> <a name="eventbridge" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.eventbridge"></a>
 
 ```python
 eventbridge: str
@@ -5177,11 +5234,11 @@ eventbridge: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#eventbridge AwsProvider#eventbridge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#eventbridge AwsProvider#eventbridge}
 
 ---
 
-##### `events`<sup>Optional</sup> <a name="events" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.events"></a>
+##### `events`<sup>Optional</sup> <a name="events" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.events"></a>
 
 ```python
 events: str
@@ -5191,11 +5248,11 @@ events: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#events AwsProvider#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#events AwsProvider#events}
 
 ---
 
-##### `evidently`<sup>Optional</sup> <a name="evidently" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.evidently"></a>
+##### `evidently`<sup>Optional</sup> <a name="evidently" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.evidently"></a>
 
 ```python
 evidently: str
@@ -5205,11 +5262,11 @@ evidently: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#evidently AwsProvider#evidently}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#evidently AwsProvider#evidently}
 
 ---
 
-##### `evs`<sup>Optional</sup> <a name="evs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.evs"></a>
+##### `evs`<sup>Optional</sup> <a name="evs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.evs"></a>
 
 ```python
 evs: str
@@ -5219,11 +5276,11 @@ evs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#evs AwsProvider#evs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#evs AwsProvider#evs}
 
 ---
 
-##### `finspace`<sup>Optional</sup> <a name="finspace" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.finspace"></a>
+##### `finspace`<sup>Optional</sup> <a name="finspace" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.finspace"></a>
 
 ```python
 finspace: str
@@ -5233,11 +5290,11 @@ finspace: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#finspace AwsProvider#finspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#finspace AwsProvider#finspace}
 
 ---
 
-##### `firehose`<sup>Optional</sup> <a name="firehose" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.firehose"></a>
+##### `firehose`<sup>Optional</sup> <a name="firehose" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.firehose"></a>
 
 ```python
 firehose: str
@@ -5247,11 +5304,11 @@ firehose: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#firehose AwsProvider#firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#firehose AwsProvider#firehose}
 
 ---
 
-##### `fis`<sup>Optional</sup> <a name="fis" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.fis"></a>
+##### `fis`<sup>Optional</sup> <a name="fis" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.fis"></a>
 
 ```python
 fis: str
@@ -5261,11 +5318,11 @@ fis: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#fis AwsProvider#fis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#fis AwsProvider#fis}
 
 ---
 
-##### `fms`<sup>Optional</sup> <a name="fms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.fms"></a>
+##### `fms`<sup>Optional</sup> <a name="fms" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.fms"></a>
 
 ```python
 fms: str
@@ -5275,11 +5332,11 @@ fms: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#fms AwsProvider#fms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#fms AwsProvider#fms}
 
 ---
 
-##### `fsx`<sup>Optional</sup> <a name="fsx" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.fsx"></a>
+##### `fsx`<sup>Optional</sup> <a name="fsx" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.fsx"></a>
 
 ```python
 fsx: str
@@ -5289,11 +5346,11 @@ fsx: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#fsx AwsProvider#fsx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#fsx AwsProvider#fsx}
 
 ---
 
-##### `gamelift`<sup>Optional</sup> <a name="gamelift" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.gamelift"></a>
+##### `gamelift`<sup>Optional</sup> <a name="gamelift" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.gamelift"></a>
 
 ```python
 gamelift: str
@@ -5303,11 +5360,11 @@ gamelift: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#gamelift AwsProvider#gamelift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#gamelift AwsProvider#gamelift}
 
 ---
 
-##### `glacier`<sup>Optional</sup> <a name="glacier" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.glacier"></a>
+##### `glacier`<sup>Optional</sup> <a name="glacier" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.glacier"></a>
 
 ```python
 glacier: str
@@ -5317,11 +5374,11 @@ glacier: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#glacier AwsProvider#glacier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#glacier AwsProvider#glacier}
 
 ---
 
-##### `globalaccelerator`<sup>Optional</sup> <a name="globalaccelerator" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.globalaccelerator"></a>
+##### `globalaccelerator`<sup>Optional</sup> <a name="globalaccelerator" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.globalaccelerator"></a>
 
 ```python
 globalaccelerator: str
@@ -5331,11 +5388,11 @@ globalaccelerator: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#globalaccelerator AwsProvider#globalaccelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#globalaccelerator AwsProvider#globalaccelerator}
 
 ---
 
-##### `glue`<sup>Optional</sup> <a name="glue" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.glue"></a>
+##### `glue`<sup>Optional</sup> <a name="glue" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.glue"></a>
 
 ```python
 glue: str
@@ -5345,11 +5402,11 @@ glue: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#glue AwsProvider#glue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#glue AwsProvider#glue}
 
 ---
 
-##### `gluedatabrew`<sup>Optional</sup> <a name="gluedatabrew" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.gluedatabrew"></a>
+##### `gluedatabrew`<sup>Optional</sup> <a name="gluedatabrew" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.gluedatabrew"></a>
 
 ```python
 gluedatabrew: str
@@ -5359,11 +5416,11 @@ gluedatabrew: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#gluedatabrew AwsProvider#gluedatabrew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#gluedatabrew AwsProvider#gluedatabrew}
 
 ---
 
-##### `grafana`<sup>Optional</sup> <a name="grafana" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.grafana"></a>
+##### `grafana`<sup>Optional</sup> <a name="grafana" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.grafana"></a>
 
 ```python
 grafana: str
@@ -5373,11 +5430,11 @@ grafana: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#grafana AwsProvider#grafana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#grafana AwsProvider#grafana}
 
 ---
 
-##### `greengrass`<sup>Optional</sup> <a name="greengrass" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.greengrass"></a>
+##### `greengrass`<sup>Optional</sup> <a name="greengrass" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.greengrass"></a>
 
 ```python
 greengrass: str
@@ -5387,11 +5444,11 @@ greengrass: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#greengrass AwsProvider#greengrass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#greengrass AwsProvider#greengrass}
 
 ---
 
-##### `groundstation`<sup>Optional</sup> <a name="groundstation" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.groundstation"></a>
+##### `groundstation`<sup>Optional</sup> <a name="groundstation" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.groundstation"></a>
 
 ```python
 groundstation: str
@@ -5401,11 +5458,11 @@ groundstation: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#groundstation AwsProvider#groundstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#groundstation AwsProvider#groundstation}
 
 ---
 
-##### `guardduty`<sup>Optional</sup> <a name="guardduty" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.guardduty"></a>
+##### `guardduty`<sup>Optional</sup> <a name="guardduty" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.guardduty"></a>
 
 ```python
 guardduty: str
@@ -5415,11 +5472,11 @@ guardduty: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#guardduty AwsProvider#guardduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#guardduty AwsProvider#guardduty}
 
 ---
 
-##### `healthlake`<sup>Optional</sup> <a name="healthlake" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.healthlake"></a>
+##### `healthlake`<sup>Optional</sup> <a name="healthlake" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.healthlake"></a>
 
 ```python
 healthlake: str
@@ -5429,11 +5486,11 @@ healthlake: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#healthlake AwsProvider#healthlake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#healthlake AwsProvider#healthlake}
 
 ---
 
-##### `iam`<sup>Optional</sup> <a name="iam" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.iam"></a>
+##### `iam`<sup>Optional</sup> <a name="iam" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.iam"></a>
 
 ```python
 iam: str
@@ -5443,11 +5500,11 @@ iam: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#iam AwsProvider#iam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#iam AwsProvider#iam}
 
 ---
 
-##### `identitystore`<sup>Optional</sup> <a name="identitystore" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.identitystore"></a>
+##### `identitystore`<sup>Optional</sup> <a name="identitystore" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.identitystore"></a>
 
 ```python
 identitystore: str
@@ -5457,11 +5514,11 @@ identitystore: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#identitystore AwsProvider#identitystore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#identitystore AwsProvider#identitystore}
 
 ---
 
-##### `imagebuilder`<sup>Optional</sup> <a name="imagebuilder" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.imagebuilder"></a>
+##### `imagebuilder`<sup>Optional</sup> <a name="imagebuilder" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.imagebuilder"></a>
 
 ```python
 imagebuilder: str
@@ -5471,11 +5528,11 @@ imagebuilder: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#imagebuilder AwsProvider#imagebuilder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#imagebuilder AwsProvider#imagebuilder}
 
 ---
 
-##### `inspector`<sup>Optional</sup> <a name="inspector" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.inspector"></a>
+##### `inspector`<sup>Optional</sup> <a name="inspector" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.inspector"></a>
 
 ```python
 inspector: str
@@ -5485,11 +5542,11 @@ inspector: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#inspector AwsProvider#inspector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#inspector AwsProvider#inspector}
 
 ---
 
-##### `inspector2`<sup>Optional</sup> <a name="inspector2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.inspector2"></a>
+##### `inspector2`<sup>Optional</sup> <a name="inspector2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.inspector2"></a>
 
 ```python
 inspector2: str
@@ -5499,11 +5556,11 @@ inspector2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#inspector2 AwsProvider#inspector2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#inspector2 AwsProvider#inspector2}
 
 ---
 
-##### `inspectorv2`<sup>Optional</sup> <a name="inspectorv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.inspectorv2"></a>
+##### `inspectorv2`<sup>Optional</sup> <a name="inspectorv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.inspectorv2"></a>
 
 ```python
 inspectorv2: str
@@ -5513,11 +5570,11 @@ inspectorv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#inspectorv2 AwsProvider#inspectorv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#inspectorv2 AwsProvider#inspectorv2}
 
 ---
 
-##### `internetmonitor`<sup>Optional</sup> <a name="internetmonitor" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.internetmonitor"></a>
+##### `internetmonitor`<sup>Optional</sup> <a name="internetmonitor" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.internetmonitor"></a>
 
 ```python
 internetmonitor: str
@@ -5527,11 +5584,11 @@ internetmonitor: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#internetmonitor AwsProvider#internetmonitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#internetmonitor AwsProvider#internetmonitor}
 
 ---
 
-##### `invoicing`<sup>Optional</sup> <a name="invoicing" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.invoicing"></a>
+##### `invoicing`<sup>Optional</sup> <a name="invoicing" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.invoicing"></a>
 
 ```python
 invoicing: str
@@ -5541,11 +5598,11 @@ invoicing: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#invoicing AwsProvider#invoicing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#invoicing AwsProvider#invoicing}
 
 ---
 
-##### `iot`<sup>Optional</sup> <a name="iot" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.iot"></a>
+##### `iot`<sup>Optional</sup> <a name="iot" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.iot"></a>
 
 ```python
 iot: str
@@ -5555,11 +5612,11 @@ iot: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#iot AwsProvider#iot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#iot AwsProvider#iot}
 
 ---
 
-##### `ivs`<sup>Optional</sup> <a name="ivs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ivs"></a>
+##### `ivs`<sup>Optional</sup> <a name="ivs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ivs"></a>
 
 ```python
 ivs: str
@@ -5569,11 +5626,11 @@ ivs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ivs AwsProvider#ivs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ivs AwsProvider#ivs}
 
 ---
 
-##### `ivschat`<sup>Optional</sup> <a name="ivschat" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ivschat"></a>
+##### `ivschat`<sup>Optional</sup> <a name="ivschat" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ivschat"></a>
 
 ```python
 ivschat: str
@@ -5583,11 +5640,11 @@ ivschat: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ivschat AwsProvider#ivschat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ivschat AwsProvider#ivschat}
 
 ---
 
-##### `kafka`<sup>Optional</sup> <a name="kafka" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kafka"></a>
+##### `kafka`<sup>Optional</sup> <a name="kafka" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kafka"></a>
 
 ```python
 kafka: str
@@ -5597,11 +5654,11 @@ kafka: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kafka AwsProvider#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kafka AwsProvider#kafka}
 
 ---
 
-##### `kafkaconnect`<sup>Optional</sup> <a name="kafkaconnect" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kafkaconnect"></a>
+##### `kafkaconnect`<sup>Optional</sup> <a name="kafkaconnect" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kafkaconnect"></a>
 
 ```python
 kafkaconnect: str
@@ -5611,11 +5668,11 @@ kafkaconnect: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kafkaconnect AwsProvider#kafkaconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kafkaconnect AwsProvider#kafkaconnect}
 
 ---
 
-##### `kendra`<sup>Optional</sup> <a name="kendra" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kendra"></a>
+##### `kendra`<sup>Optional</sup> <a name="kendra" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kendra"></a>
 
 ```python
 kendra: str
@@ -5625,11 +5682,11 @@ kendra: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kendra AwsProvider#kendra}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kendra AwsProvider#kendra}
 
 ---
 
-##### `keyspaces`<sup>Optional</sup> <a name="keyspaces" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.keyspaces"></a>
+##### `keyspaces`<sup>Optional</sup> <a name="keyspaces" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.keyspaces"></a>
 
 ```python
 keyspaces: str
@@ -5639,11 +5696,11 @@ keyspaces: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#keyspaces AwsProvider#keyspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#keyspaces AwsProvider#keyspaces}
 
 ---
 
-##### `kinesis`<sup>Optional</sup> <a name="kinesis" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesis"></a>
+##### `kinesis`<sup>Optional</sup> <a name="kinesis" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesis"></a>
 
 ```python
 kinesis: str
@@ -5653,11 +5710,11 @@ kinesis: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kinesis AwsProvider#kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kinesis AwsProvider#kinesis}
 
 ---
 
-##### `kinesisanalytics`<sup>Optional</sup> <a name="kinesisanalytics" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalytics"></a>
+##### `kinesisanalytics`<sup>Optional</sup> <a name="kinesisanalytics" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalytics"></a>
 
 ```python
 kinesisanalytics: str
@@ -5667,11 +5724,11 @@ kinesisanalytics: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kinesisanalytics AwsProvider#kinesisanalytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kinesisanalytics AwsProvider#kinesisanalytics}
 
 ---
 
-##### `kinesisanalyticsv2`<sup>Optional</sup> <a name="kinesisanalyticsv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalyticsv2"></a>
+##### `kinesisanalyticsv2`<sup>Optional</sup> <a name="kinesisanalyticsv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesisanalyticsv2"></a>
 
 ```python
 kinesisanalyticsv2: str
@@ -5681,11 +5738,11 @@ kinesisanalyticsv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kinesisanalyticsv2 AwsProvider#kinesisanalyticsv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kinesisanalyticsv2 AwsProvider#kinesisanalyticsv2}
 
 ---
 
-##### `kinesisvideo`<sup>Optional</sup> <a name="kinesisvideo" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kinesisvideo"></a>
+##### `kinesisvideo`<sup>Optional</sup> <a name="kinesisvideo" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kinesisvideo"></a>
 
 ```python
 kinesisvideo: str
@@ -5695,11 +5752,11 @@ kinesisvideo: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kinesisvideo AwsProvider#kinesisvideo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kinesisvideo AwsProvider#kinesisvideo}
 
 ---
 
-##### `kms`<sup>Optional</sup> <a name="kms" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.kms"></a>
+##### `kms`<sup>Optional</sup> <a name="kms" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.kms"></a>
 
 ```python
 kms: str
@@ -5709,11 +5766,11 @@ kms: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#kms AwsProvider#kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#kms AwsProvider#kms}
 
 ---
 
-##### `lakeformation`<sup>Optional</sup> <a name="lakeformation" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lakeformation"></a>
+##### `lakeformation`<sup>Optional</sup> <a name="lakeformation" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lakeformation"></a>
 
 ```python
 lakeformation: str
@@ -5723,11 +5780,11 @@ lakeformation: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lakeformation AwsProvider#lakeformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lakeformation AwsProvider#lakeformation}
 
 ---
 
-##### `lambda`<sup>Optional</sup> <a name="lambda" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lambda"></a>
+##### `lambda`<sup>Optional</sup> <a name="lambda" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lambda"></a>
 
 ```python
 lambda: str
@@ -5737,11 +5794,11 @@ lambda: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lambda AwsProvider#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lambda AwsProvider#lambda}
 
 ---
 
-##### `launchwizard`<sup>Optional</sup> <a name="launchwizard" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.launchwizard"></a>
+##### `launchwizard`<sup>Optional</sup> <a name="launchwizard" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.launchwizard"></a>
 
 ```python
 launchwizard: str
@@ -5751,11 +5808,11 @@ launchwizard: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#launchwizard AwsProvider#launchwizard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#launchwizard AwsProvider#launchwizard}
 
 ---
 
-##### `lex`<sup>Optional</sup> <a name="lex" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lex"></a>
+##### `lex`<sup>Optional</sup> <a name="lex" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lex"></a>
 
 ```python
 lex: str
@@ -5765,11 +5822,11 @@ lex: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lex AwsProvider#lex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lex AwsProvider#lex}
 
 ---
 
-##### `lexmodelbuilding`<sup>Optional</sup> <a name="lexmodelbuilding" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuilding"></a>
+##### `lexmodelbuilding`<sup>Optional</sup> <a name="lexmodelbuilding" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuilding"></a>
 
 ```python
 lexmodelbuilding: str
@@ -5779,11 +5836,11 @@ lexmodelbuilding: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lexmodelbuilding AwsProvider#lexmodelbuilding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lexmodelbuilding AwsProvider#lexmodelbuilding}
 
 ---
 
-##### `lexmodelbuildingservice`<sup>Optional</sup> <a name="lexmodelbuildingservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuildingservice"></a>
+##### `lexmodelbuildingservice`<sup>Optional</sup> <a name="lexmodelbuildingservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodelbuildingservice"></a>
 
 ```python
 lexmodelbuildingservice: str
@@ -5793,11 +5850,11 @@ lexmodelbuildingservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lexmodelbuildingservice AwsProvider#lexmodelbuildingservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lexmodelbuildingservice AwsProvider#lexmodelbuildingservice}
 
 ---
 
-##### `lexmodels`<sup>Optional</sup> <a name="lexmodels" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodels"></a>
+##### `lexmodels`<sup>Optional</sup> <a name="lexmodels" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodels"></a>
 
 ```python
 lexmodels: str
@@ -5807,11 +5864,11 @@ lexmodels: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lexmodels AwsProvider#lexmodels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lexmodels AwsProvider#lexmodels}
 
 ---
 
-##### `lexmodelsv2`<sup>Optional</sup> <a name="lexmodelsv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexmodelsv2"></a>
+##### `lexmodelsv2`<sup>Optional</sup> <a name="lexmodelsv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexmodelsv2"></a>
 
 ```python
 lexmodelsv2: str
@@ -5821,11 +5878,11 @@ lexmodelsv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lexmodelsv2 AwsProvider#lexmodelsv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lexmodelsv2 AwsProvider#lexmodelsv2}
 
 ---
 
-##### `lexv2_models`<sup>Optional</sup> <a name="lexv2_models" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lexv2Models"></a>
+##### `lexv2_models`<sup>Optional</sup> <a name="lexv2_models" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lexv2Models"></a>
 
 ```python
 lexv2_models: str
@@ -5835,11 +5892,11 @@ lexv2_models: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lexv2models AwsProvider#lexv2models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lexv2models AwsProvider#lexv2models}
 
 ---
 
-##### `licensemanager`<sup>Optional</sup> <a name="licensemanager" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.licensemanager"></a>
+##### `licensemanager`<sup>Optional</sup> <a name="licensemanager" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.licensemanager"></a>
 
 ```python
 licensemanager: str
@@ -5849,11 +5906,11 @@ licensemanager: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#licensemanager AwsProvider#licensemanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#licensemanager AwsProvider#licensemanager}
 
 ---
 
-##### `lightsail`<sup>Optional</sup> <a name="lightsail" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.lightsail"></a>
+##### `lightsail`<sup>Optional</sup> <a name="lightsail" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.lightsail"></a>
 
 ```python
 lightsail: str
@@ -5863,11 +5920,11 @@ lightsail: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#lightsail AwsProvider#lightsail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#lightsail AwsProvider#lightsail}
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.location"></a>
 
 ```python
 location: str
@@ -5877,11 +5934,11 @@ location: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#location AwsProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#location AwsProvider#location}
 
 ---
 
-##### `locationservice`<sup>Optional</sup> <a name="locationservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.locationservice"></a>
+##### `locationservice`<sup>Optional</sup> <a name="locationservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.locationservice"></a>
 
 ```python
 locationservice: str
@@ -5891,11 +5948,11 @@ locationservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#locationservice AwsProvider#locationservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#locationservice AwsProvider#locationservice}
 
 ---
 
-##### `logs`<sup>Optional</sup> <a name="logs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.logs"></a>
+##### `logs`<sup>Optional</sup> <a name="logs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.logs"></a>
 
 ```python
 logs: str
@@ -5905,11 +5962,11 @@ logs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#logs AwsProvider#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#logs AwsProvider#logs}
 
 ---
 
-##### `m2`<sup>Optional</sup> <a name="m2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.m2"></a>
+##### `m2`<sup>Optional</sup> <a name="m2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.m2"></a>
 
 ```python
 m2: str
@@ -5919,11 +5976,11 @@ m2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#m2 AwsProvider#m2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#m2 AwsProvider#m2}
 
 ---
 
-##### `macie2`<sup>Optional</sup> <a name="macie2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.macie2"></a>
+##### `macie2`<sup>Optional</sup> <a name="macie2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.macie2"></a>
 
 ```python
 macie2: str
@@ -5933,11 +5990,11 @@ macie2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#macie2 AwsProvider#macie2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#macie2 AwsProvider#macie2}
 
 ---
 
-##### `managedgrafana`<sup>Optional</sup> <a name="managedgrafana" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.managedgrafana"></a>
+##### `managedgrafana`<sup>Optional</sup> <a name="managedgrafana" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.managedgrafana"></a>
 
 ```python
 managedgrafana: str
@@ -5947,11 +6004,11 @@ managedgrafana: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#managedgrafana AwsProvider#managedgrafana}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#managedgrafana AwsProvider#managedgrafana}
 
 ---
 
-##### `mediaconnect`<sup>Optional</sup> <a name="mediaconnect" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediaconnect"></a>
+##### `mediaconnect`<sup>Optional</sup> <a name="mediaconnect" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediaconnect"></a>
 
 ```python
 mediaconnect: str
@@ -5961,11 +6018,11 @@ mediaconnect: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mediaconnect AwsProvider#mediaconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mediaconnect AwsProvider#mediaconnect}
 
 ---
 
-##### `mediaconvert`<sup>Optional</sup> <a name="mediaconvert" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediaconvert"></a>
+##### `mediaconvert`<sup>Optional</sup> <a name="mediaconvert" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediaconvert"></a>
 
 ```python
 mediaconvert: str
@@ -5975,11 +6032,11 @@ mediaconvert: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mediaconvert AwsProvider#mediaconvert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mediaconvert AwsProvider#mediaconvert}
 
 ---
 
-##### `medialive`<sup>Optional</sup> <a name="medialive" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.medialive"></a>
+##### `medialive`<sup>Optional</sup> <a name="medialive" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.medialive"></a>
 
 ```python
 medialive: str
@@ -5989,11 +6046,11 @@ medialive: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#medialive AwsProvider#medialive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#medialive AwsProvider#medialive}
 
 ---
 
-##### `mediapackage`<sup>Optional</sup> <a name="mediapackage" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediapackage"></a>
+##### `mediapackage`<sup>Optional</sup> <a name="mediapackage" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediapackage"></a>
 
 ```python
 mediapackage: str
@@ -6003,11 +6060,11 @@ mediapackage: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mediapackage AwsProvider#mediapackage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mediapackage AwsProvider#mediapackage}
 
 ---
 
-##### `mediapackagev2`<sup>Optional</sup> <a name="mediapackagev2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediapackagev2"></a>
+##### `mediapackagev2`<sup>Optional</sup> <a name="mediapackagev2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediapackagev2"></a>
 
 ```python
 mediapackagev2: str
@@ -6017,11 +6074,11 @@ mediapackagev2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mediapackagev2 AwsProvider#mediapackagev2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mediapackagev2 AwsProvider#mediapackagev2}
 
 ---
 
-##### `mediapackagevod`<sup>Optional</sup> <a name="mediapackagevod" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediapackagevod"></a>
+##### `mediapackagevod`<sup>Optional</sup> <a name="mediapackagevod" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediapackagevod"></a>
 
 ```python
 mediapackagevod: str
@@ -6031,11 +6088,11 @@ mediapackagevod: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mediapackagevod AwsProvider#mediapackagevod}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mediapackagevod AwsProvider#mediapackagevod}
 
 ---
 
-##### `mediastore`<sup>Optional</sup> <a name="mediastore" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mediastore"></a>
+##### `mediastore`<sup>Optional</sup> <a name="mediastore" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mediastore"></a>
 
 ```python
 mediastore: str
@@ -6045,11 +6102,11 @@ mediastore: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mediastore AwsProvider#mediastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mediastore AwsProvider#mediastore}
 
 ---
 
-##### `memorydb`<sup>Optional</sup> <a name="memorydb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.memorydb"></a>
+##### `memorydb`<sup>Optional</sup> <a name="memorydb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.memorydb"></a>
 
 ```python
 memorydb: str
@@ -6059,11 +6116,11 @@ memorydb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#memorydb AwsProvider#memorydb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#memorydb AwsProvider#memorydb}
 
 ---
 
-##### `mgn`<sup>Optional</sup> <a name="mgn" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mgn"></a>
+##### `mgn`<sup>Optional</sup> <a name="mgn" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mgn"></a>
 
 ```python
 mgn: str
@@ -6073,11 +6130,11 @@ mgn: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mgn AwsProvider#mgn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mgn AwsProvider#mgn}
 
 ---
 
-##### `mq`<sup>Optional</sup> <a name="mq" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mq"></a>
+##### `mq`<sup>Optional</sup> <a name="mq" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mq"></a>
 
 ```python
 mq: str
@@ -6087,11 +6144,11 @@ mq: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mq AwsProvider#mq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mq AwsProvider#mq}
 
 ---
 
-##### `msk`<sup>Optional</sup> <a name="msk" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.msk"></a>
+##### `msk`<sup>Optional</sup> <a name="msk" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.msk"></a>
 
 ```python
 msk: str
@@ -6101,11 +6158,11 @@ msk: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#msk AwsProvider#msk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#msk AwsProvider#msk}
 
 ---
 
-##### `mwaa`<sup>Optional</sup> <a name="mwaa" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mwaa"></a>
+##### `mwaa`<sup>Optional</sup> <a name="mwaa" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mwaa"></a>
 
 ```python
 mwaa: str
@@ -6115,11 +6172,11 @@ mwaa: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mwaa AwsProvider#mwaa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mwaa AwsProvider#mwaa}
 
 ---
 
-##### `mwaaserverless`<sup>Optional</sup> <a name="mwaaserverless" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.mwaaserverless"></a>
+##### `mwaaserverless`<sup>Optional</sup> <a name="mwaaserverless" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.mwaaserverless"></a>
 
 ```python
 mwaaserverless: str
@@ -6129,11 +6186,11 @@ mwaaserverless: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#mwaaserverless AwsProvider#mwaaserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#mwaaserverless AwsProvider#mwaaserverless}
 
 ---
 
-##### `neptune`<sup>Optional</sup> <a name="neptune" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.neptune"></a>
+##### `neptune`<sup>Optional</sup> <a name="neptune" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.neptune"></a>
 
 ```python
 neptune: str
@@ -6143,11 +6200,11 @@ neptune: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#neptune AwsProvider#neptune}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#neptune AwsProvider#neptune}
 
 ---
 
-##### `neptunegraph`<sup>Optional</sup> <a name="neptunegraph" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.neptunegraph"></a>
+##### `neptunegraph`<sup>Optional</sup> <a name="neptunegraph" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.neptunegraph"></a>
 
 ```python
 neptunegraph: str
@@ -6157,11 +6214,11 @@ neptunegraph: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#neptunegraph AwsProvider#neptunegraph}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#neptunegraph AwsProvider#neptunegraph}
 
 ---
 
-##### `networkfirewall`<sup>Optional</sup> <a name="networkfirewall" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkfirewall"></a>
+##### `networkfirewall`<sup>Optional</sup> <a name="networkfirewall" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkfirewall"></a>
 
 ```python
 networkfirewall: str
@@ -6171,11 +6228,11 @@ networkfirewall: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#networkfirewall AwsProvider#networkfirewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#networkfirewall AwsProvider#networkfirewall}
 
 ---
 
-##### `networkflowmonitor`<sup>Optional</sup> <a name="networkflowmonitor" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkflowmonitor"></a>
+##### `networkflowmonitor`<sup>Optional</sup> <a name="networkflowmonitor" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkflowmonitor"></a>
 
 ```python
 networkflowmonitor: str
@@ -6185,11 +6242,11 @@ networkflowmonitor: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#networkflowmonitor AwsProvider#networkflowmonitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#networkflowmonitor AwsProvider#networkflowmonitor}
 
 ---
 
-##### `networkmanager`<sup>Optional</sup> <a name="networkmanager" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkmanager"></a>
+##### `networkmanager`<sup>Optional</sup> <a name="networkmanager" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkmanager"></a>
 
 ```python
 networkmanager: str
@@ -6199,11 +6256,11 @@ networkmanager: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#networkmanager AwsProvider#networkmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#networkmanager AwsProvider#networkmanager}
 
 ---
 
-##### `networkmonitor`<sup>Optional</sup> <a name="networkmonitor" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.networkmonitor"></a>
+##### `networkmonitor`<sup>Optional</sup> <a name="networkmonitor" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.networkmonitor"></a>
 
 ```python
 networkmonitor: str
@@ -6213,11 +6270,11 @@ networkmonitor: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#networkmonitor AwsProvider#networkmonitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#networkmonitor AwsProvider#networkmonitor}
 
 ---
 
-##### `notifications`<sup>Optional</sup> <a name="notifications" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.notifications"></a>
+##### `notifications`<sup>Optional</sup> <a name="notifications" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.notifications"></a>
 
 ```python
 notifications: str
@@ -6227,11 +6284,11 @@ notifications: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#notifications AwsProvider#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#notifications AwsProvider#notifications}
 
 ---
 
-##### `notificationscontacts`<sup>Optional</sup> <a name="notificationscontacts" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.notificationscontacts"></a>
+##### `notificationscontacts`<sup>Optional</sup> <a name="notificationscontacts" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.notificationscontacts"></a>
 
 ```python
 notificationscontacts: str
@@ -6241,11 +6298,11 @@ notificationscontacts: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#notificationscontacts AwsProvider#notificationscontacts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#notificationscontacts AwsProvider#notificationscontacts}
 
 ---
 
-##### `oam`<sup>Optional</sup> <a name="oam" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.oam"></a>
+##### `oam`<sup>Optional</sup> <a name="oam" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.oam"></a>
 
 ```python
 oam: str
@@ -6255,11 +6312,11 @@ oam: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#oam AwsProvider#oam}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#oam AwsProvider#oam}
 
 ---
 
-##### `observabilityadmin`<sup>Optional</sup> <a name="observabilityadmin" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.observabilityadmin"></a>
+##### `observabilityadmin`<sup>Optional</sup> <a name="observabilityadmin" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.observabilityadmin"></a>
 
 ```python
 observabilityadmin: str
@@ -6269,11 +6326,11 @@ observabilityadmin: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#observabilityadmin AwsProvider#observabilityadmin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#observabilityadmin AwsProvider#observabilityadmin}
 
 ---
 
-##### `odb`<sup>Optional</sup> <a name="odb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.odb"></a>
+##### `odb`<sup>Optional</sup> <a name="odb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.odb"></a>
 
 ```python
 odb: str
@@ -6283,11 +6340,11 @@ odb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#odb AwsProvider#odb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#odb AwsProvider#odb}
 
 ---
 
-##### `opensearch`<sup>Optional</sup> <a name="opensearch" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearch"></a>
+##### `opensearch`<sup>Optional</sup> <a name="opensearch" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearch"></a>
 
 ```python
 opensearch: str
@@ -6297,11 +6354,11 @@ opensearch: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#opensearch AwsProvider#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#opensearch AwsProvider#opensearch}
 
 ---
 
-##### `opensearchingestion`<sup>Optional</sup> <a name="opensearchingestion" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearchingestion"></a>
+##### `opensearchingestion`<sup>Optional</sup> <a name="opensearchingestion" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearchingestion"></a>
 
 ```python
 opensearchingestion: str
@@ -6311,11 +6368,11 @@ opensearchingestion: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#opensearchingestion AwsProvider#opensearchingestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#opensearchingestion AwsProvider#opensearchingestion}
 
 ---
 
-##### `opensearchserverless`<sup>Optional</sup> <a name="opensearchserverless" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearchserverless"></a>
+##### `opensearchserverless`<sup>Optional</sup> <a name="opensearchserverless" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearchserverless"></a>
 
 ```python
 opensearchserverless: str
@@ -6325,11 +6382,11 @@ opensearchserverless: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#opensearchserverless AwsProvider#opensearchserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#opensearchserverless AwsProvider#opensearchserverless}
 
 ---
 
-##### `opensearchservice`<sup>Optional</sup> <a name="opensearchservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.opensearchservice"></a>
+##### `opensearchservice`<sup>Optional</sup> <a name="opensearchservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.opensearchservice"></a>
 
 ```python
 opensearchservice: str
@@ -6339,11 +6396,11 @@ opensearchservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#opensearchservice AwsProvider#opensearchservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#opensearchservice AwsProvider#opensearchservice}
 
 ---
 
-##### `organizations`<sup>Optional</sup> <a name="organizations" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.organizations"></a>
+##### `organizations`<sup>Optional</sup> <a name="organizations" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.organizations"></a>
 
 ```python
 organizations: str
@@ -6353,11 +6410,11 @@ organizations: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#organizations AwsProvider#organizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#organizations AwsProvider#organizations}
 
 ---
 
-##### `osis`<sup>Optional</sup> <a name="osis" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.osis"></a>
+##### `osis`<sup>Optional</sup> <a name="osis" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.osis"></a>
 
 ```python
 osis: str
@@ -6367,11 +6424,11 @@ osis: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#osis AwsProvider#osis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#osis AwsProvider#osis}
 
 ---
 
-##### `outposts`<sup>Optional</sup> <a name="outposts" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.outposts"></a>
+##### `outposts`<sup>Optional</sup> <a name="outposts" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.outposts"></a>
 
 ```python
 outposts: str
@@ -6381,11 +6438,11 @@ outposts: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#outposts AwsProvider#outposts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#outposts AwsProvider#outposts}
 
 ---
 
-##### `paymentcryptography`<sup>Optional</sup> <a name="paymentcryptography" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.paymentcryptography"></a>
+##### `paymentcryptography`<sup>Optional</sup> <a name="paymentcryptography" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.paymentcryptography"></a>
 
 ```python
 paymentcryptography: str
@@ -6395,11 +6452,11 @@ paymentcryptography: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#paymentcryptography AwsProvider#paymentcryptography}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#paymentcryptography AwsProvider#paymentcryptography}
 
 ---
 
-##### `pcaconnectorad`<sup>Optional</sup> <a name="pcaconnectorad" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pcaconnectorad"></a>
+##### `pcaconnectorad`<sup>Optional</sup> <a name="pcaconnectorad" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pcaconnectorad"></a>
 
 ```python
 pcaconnectorad: str
@@ -6409,11 +6466,11 @@ pcaconnectorad: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#pcaconnectorad AwsProvider#pcaconnectorad}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#pcaconnectorad AwsProvider#pcaconnectorad}
 
 ---
 
-##### `pcs`<sup>Optional</sup> <a name="pcs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pcs"></a>
+##### `pcs`<sup>Optional</sup> <a name="pcs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pcs"></a>
 
 ```python
 pcs: str
@@ -6423,11 +6480,11 @@ pcs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#pcs AwsProvider#pcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#pcs AwsProvider#pcs}
 
 ---
 
-##### `pinpoint`<sup>Optional</sup> <a name="pinpoint" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pinpoint"></a>
+##### `pinpoint`<sup>Optional</sup> <a name="pinpoint" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pinpoint"></a>
 
 ```python
 pinpoint: str
@@ -6437,11 +6494,11 @@ pinpoint: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#pinpoint AwsProvider#pinpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#pinpoint AwsProvider#pinpoint}
 
 ---
 
-##### `pinpointsmsvoicev2`<sup>Optional</sup> <a name="pinpointsmsvoicev2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pinpointsmsvoicev2"></a>
+##### `pinpointsmsvoicev2`<sup>Optional</sup> <a name="pinpointsmsvoicev2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pinpointsmsvoicev2"></a>
 
 ```python
 pinpointsmsvoicev2: str
@@ -6451,11 +6508,11 @@ pinpointsmsvoicev2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#pinpointsmsvoicev2 AwsProvider#pinpointsmsvoicev2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#pinpointsmsvoicev2 AwsProvider#pinpointsmsvoicev2}
 
 ---
 
-##### `pipes`<sup>Optional</sup> <a name="pipes" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pipes"></a>
+##### `pipes`<sup>Optional</sup> <a name="pipes" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pipes"></a>
 
 ```python
 pipes: str
@@ -6465,11 +6522,11 @@ pipes: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#pipes AwsProvider#pipes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#pipes AwsProvider#pipes}
 
 ---
 
-##### `polly`<sup>Optional</sup> <a name="polly" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.polly"></a>
+##### `polly`<sup>Optional</sup> <a name="polly" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.polly"></a>
 
 ```python
 polly: str
@@ -6479,11 +6536,11 @@ polly: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#polly AwsProvider#polly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#polly AwsProvider#polly}
 
 ---
 
-##### `pricing`<sup>Optional</sup> <a name="pricing" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.pricing"></a>
+##### `pricing`<sup>Optional</sup> <a name="pricing" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.pricing"></a>
 
 ```python
 pricing: str
@@ -6493,11 +6550,11 @@ pricing: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#pricing AwsProvider#pricing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#pricing AwsProvider#pricing}
 
 ---
 
-##### `prometheus`<sup>Optional</sup> <a name="prometheus" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.prometheus"></a>
+##### `prometheus`<sup>Optional</sup> <a name="prometheus" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.prometheus"></a>
 
 ```python
 prometheus: str
@@ -6507,11 +6564,11 @@ prometheus: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#prometheus AwsProvider#prometheus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#prometheus AwsProvider#prometheus}
 
 ---
 
-##### `prometheusservice`<sup>Optional</sup> <a name="prometheusservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.prometheusservice"></a>
+##### `prometheusservice`<sup>Optional</sup> <a name="prometheusservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.prometheusservice"></a>
 
 ```python
 prometheusservice: str
@@ -6521,11 +6578,11 @@ prometheusservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#prometheusservice AwsProvider#prometheusservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#prometheusservice AwsProvider#prometheusservice}
 
 ---
 
-##### `qbusiness`<sup>Optional</sup> <a name="qbusiness" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.qbusiness"></a>
+##### `qbusiness`<sup>Optional</sup> <a name="qbusiness" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.qbusiness"></a>
 
 ```python
 qbusiness: str
@@ -6535,11 +6592,11 @@ qbusiness: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#qbusiness AwsProvider#qbusiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#qbusiness AwsProvider#qbusiness}
 
 ---
 
-##### `qldb`<sup>Optional</sup> <a name="qldb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.qldb"></a>
+##### `qldb`<sup>Optional</sup> <a name="qldb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.qldb"></a>
 
 ```python
 qldb: str
@@ -6549,11 +6606,11 @@ qldb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#qldb AwsProvider#qldb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#qldb AwsProvider#qldb}
 
 ---
 
-##### `quicksight`<sup>Optional</sup> <a name="quicksight" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.quicksight"></a>
+##### `quicksight`<sup>Optional</sup> <a name="quicksight" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.quicksight"></a>
 
 ```python
 quicksight: str
@@ -6563,11 +6620,11 @@ quicksight: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#quicksight AwsProvider#quicksight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#quicksight AwsProvider#quicksight}
 
 ---
 
-##### `ram`<sup>Optional</sup> <a name="ram" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ram"></a>
+##### `ram`<sup>Optional</sup> <a name="ram" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ram"></a>
 
 ```python
 ram: str
@@ -6577,11 +6634,11 @@ ram: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ram AwsProvider#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ram AwsProvider#ram}
 
 ---
 
-##### `rbin`<sup>Optional</sup> <a name="rbin" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rbin"></a>
+##### `rbin`<sup>Optional</sup> <a name="rbin" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rbin"></a>
 
 ```python
 rbin: str
@@ -6591,11 +6648,11 @@ rbin: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rbin AwsProvider#rbin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rbin AwsProvider#rbin}
 
 ---
 
-##### `rds`<sup>Optional</sup> <a name="rds" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rds"></a>
+##### `rds`<sup>Optional</sup> <a name="rds" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rds"></a>
 
 ```python
 rds: str
@@ -6605,11 +6662,11 @@ rds: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rds AwsProvider#rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rds AwsProvider#rds}
 
 ---
 
-##### `rdsdata`<sup>Optional</sup> <a name="rdsdata" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rdsdata"></a>
+##### `rdsdata`<sup>Optional</sup> <a name="rdsdata" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rdsdata"></a>
 
 ```python
 rdsdata: str
@@ -6619,11 +6676,11 @@ rdsdata: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rdsdata AwsProvider#rdsdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rdsdata AwsProvider#rdsdata}
 
 ---
 
-##### `rdsdataservice`<sup>Optional</sup> <a name="rdsdataservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rdsdataservice"></a>
+##### `rdsdataservice`<sup>Optional</sup> <a name="rdsdataservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rdsdataservice"></a>
 
 ```python
 rdsdataservice: str
@@ -6633,11 +6690,11 @@ rdsdataservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rdsdataservice AwsProvider#rdsdataservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rdsdataservice AwsProvider#rdsdataservice}
 
 ---
 
-##### `recyclebin`<sup>Optional</sup> <a name="recyclebin" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.recyclebin"></a>
+##### `recyclebin`<sup>Optional</sup> <a name="recyclebin" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.recyclebin"></a>
 
 ```python
 recyclebin: str
@@ -6647,11 +6704,11 @@ recyclebin: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#recyclebin AwsProvider#recyclebin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#recyclebin AwsProvider#recyclebin}
 
 ---
 
-##### `redshift`<sup>Optional</sup> <a name="redshift" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshift"></a>
+##### `redshift`<sup>Optional</sup> <a name="redshift" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshift"></a>
 
 ```python
 redshift: str
@@ -6661,11 +6718,11 @@ redshift: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#redshift AwsProvider#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#redshift AwsProvider#redshift}
 
 ---
 
-##### `redshiftdata`<sup>Optional</sup> <a name="redshiftdata" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshiftdata"></a>
+##### `redshiftdata`<sup>Optional</sup> <a name="redshiftdata" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshiftdata"></a>
 
 ```python
 redshiftdata: str
@@ -6675,11 +6732,11 @@ redshiftdata: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#redshiftdata AwsProvider#redshiftdata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#redshiftdata AwsProvider#redshiftdata}
 
 ---
 
-##### `redshiftdataapiservice`<sup>Optional</sup> <a name="redshiftdataapiservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshiftdataapiservice"></a>
+##### `redshiftdataapiservice`<sup>Optional</sup> <a name="redshiftdataapiservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshiftdataapiservice"></a>
 
 ```python
 redshiftdataapiservice: str
@@ -6689,11 +6746,11 @@ redshiftdataapiservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#redshiftdataapiservice AwsProvider#redshiftdataapiservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#redshiftdataapiservice AwsProvider#redshiftdataapiservice}
 
 ---
 
-##### `redshiftserverless`<sup>Optional</sup> <a name="redshiftserverless" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.redshiftserverless"></a>
+##### `redshiftserverless`<sup>Optional</sup> <a name="redshiftserverless" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.redshiftserverless"></a>
 
 ```python
 redshiftserverless: str
@@ -6703,11 +6760,11 @@ redshiftserverless: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#redshiftserverless AwsProvider#redshiftserverless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#redshiftserverless AwsProvider#redshiftserverless}
 
 ---
 
-##### `rekognition`<sup>Optional</sup> <a name="rekognition" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rekognition"></a>
+##### `rekognition`<sup>Optional</sup> <a name="rekognition" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rekognition"></a>
 
 ```python
 rekognition: str
@@ -6717,11 +6774,11 @@ rekognition: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rekognition AwsProvider#rekognition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rekognition AwsProvider#rekognition}
 
 ---
 
-##### `resiliencehub`<sup>Optional</sup> <a name="resiliencehub" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resiliencehub"></a>
+##### `resiliencehub`<sup>Optional</sup> <a name="resiliencehub" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resiliencehub"></a>
 
 ```python
 resiliencehub: str
@@ -6731,11 +6788,11 @@ resiliencehub: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#resiliencehub AwsProvider#resiliencehub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#resiliencehub AwsProvider#resiliencehub}
 
 ---
 
-##### `resourceexplorer2`<sup>Optional</sup> <a name="resourceexplorer2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourceexplorer2"></a>
+##### `resourceexplorer2`<sup>Optional</sup> <a name="resourceexplorer2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourceexplorer2"></a>
 
 ```python
 resourceexplorer2: str
@@ -6745,11 +6802,11 @@ resourceexplorer2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#resourceexplorer2 AwsProvider#resourceexplorer2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#resourceexplorer2 AwsProvider#resourceexplorer2}
 
 ---
 
-##### `resourcegroups`<sup>Optional</sup> <a name="resourcegroups" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourcegroups"></a>
+##### `resourcegroups`<sup>Optional</sup> <a name="resourcegroups" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourcegroups"></a>
 
 ```python
 resourcegroups: str
@@ -6759,11 +6816,11 @@ resourcegroups: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#resourcegroups AwsProvider#resourcegroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#resourcegroups AwsProvider#resourcegroups}
 
 ---
 
-##### `resourcegroupstagging`<sup>Optional</sup> <a name="resourcegroupstagging" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstagging"></a>
+##### `resourcegroupstagging`<sup>Optional</sup> <a name="resourcegroupstagging" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstagging"></a>
 
 ```python
 resourcegroupstagging: str
@@ -6773,11 +6830,11 @@ resourcegroupstagging: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#resourcegroupstagging AwsProvider#resourcegroupstagging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#resourcegroupstagging AwsProvider#resourcegroupstagging}
 
 ---
 
-##### `resourcegroupstaggingapi`<sup>Optional</sup> <a name="resourcegroupstaggingapi" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstaggingapi"></a>
+##### `resourcegroupstaggingapi`<sup>Optional</sup> <a name="resourcegroupstaggingapi" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.resourcegroupstaggingapi"></a>
 
 ```python
 resourcegroupstaggingapi: str
@@ -6787,11 +6844,11 @@ resourcegroupstaggingapi: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#resourcegroupstaggingapi AwsProvider#resourcegroupstaggingapi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#resourcegroupstaggingapi AwsProvider#resourcegroupstaggingapi}
 
 ---
 
-##### `rolesanywhere`<sup>Optional</sup> <a name="rolesanywhere" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rolesanywhere"></a>
+##### `rolesanywhere`<sup>Optional</sup> <a name="rolesanywhere" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rolesanywhere"></a>
 
 ```python
 rolesanywhere: str
@@ -6801,11 +6858,11 @@ rolesanywhere: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rolesanywhere AwsProvider#rolesanywhere}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rolesanywhere AwsProvider#rolesanywhere}
 
 ---
 
-##### `route53`<sup>Optional</sup> <a name="route53" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53"></a>
+##### `route53`<sup>Optional</sup> <a name="route53" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53"></a>
 
 ```python
 route53: str
@@ -6815,11 +6872,11 @@ route53: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#route53 AwsProvider#route53}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#route53 AwsProvider#route53}
 
 ---
 
-##### `route53_domains`<sup>Optional</sup> <a name="route53_domains" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Domains"></a>
+##### `route53_domains`<sup>Optional</sup> <a name="route53_domains" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Domains"></a>
 
 ```python
 route53_domains: str
@@ -6829,11 +6886,11 @@ route53_domains: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#route53domains AwsProvider#route53domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#route53domains AwsProvider#route53domains}
 
 ---
 
-##### `route53_profiles`<sup>Optional</sup> <a name="route53_profiles" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Profiles"></a>
+##### `route53_profiles`<sup>Optional</sup> <a name="route53_profiles" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Profiles"></a>
 
 ```python
 route53_profiles: str
@@ -6843,11 +6900,11 @@ route53_profiles: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#route53profiles AwsProvider#route53profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#route53profiles AwsProvider#route53profiles}
 
 ---
 
-##### `route53_recoverycontrolconfig`<sup>Optional</sup> <a name="route53_recoverycontrolconfig" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Recoverycontrolconfig"></a>
+##### `route53_recoverycontrolconfig`<sup>Optional</sup> <a name="route53_recoverycontrolconfig" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Recoverycontrolconfig"></a>
 
 ```python
 route53_recoverycontrolconfig: str
@@ -6857,11 +6914,11 @@ route53_recoverycontrolconfig: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#route53recoverycontrolconfig AwsProvider#route53recoverycontrolconfig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#route53recoverycontrolconfig AwsProvider#route53recoverycontrolconfig}
 
 ---
 
-##### `route53_recoveryreadiness`<sup>Optional</sup> <a name="route53_recoveryreadiness" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Recoveryreadiness"></a>
+##### `route53_recoveryreadiness`<sup>Optional</sup> <a name="route53_recoveryreadiness" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Recoveryreadiness"></a>
 
 ```python
 route53_recoveryreadiness: str
@@ -6871,11 +6928,11 @@ route53_recoveryreadiness: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#route53recoveryreadiness AwsProvider#route53recoveryreadiness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#route53recoveryreadiness AwsProvider#route53recoveryreadiness}
 
 ---
 
-##### `route53_resolver`<sup>Optional</sup> <a name="route53_resolver" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.route53Resolver"></a>
+##### `route53_resolver`<sup>Optional</sup> <a name="route53_resolver" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.route53Resolver"></a>
 
 ```python
 route53_resolver: str
@@ -6885,11 +6942,11 @@ route53_resolver: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#route53resolver AwsProvider#route53resolver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#route53resolver AwsProvider#route53resolver}
 
 ---
 
-##### `rum`<sup>Optional</sup> <a name="rum" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.rum"></a>
+##### `rum`<sup>Optional</sup> <a name="rum" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.rum"></a>
 
 ```python
 rum: str
@@ -6899,11 +6956,11 @@ rum: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#rum AwsProvider#rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#rum AwsProvider#rum}
 
 ---
 
-##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3"></a>
+##### `s3`<sup>Optional</sup> <a name="s3" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3"></a>
 
 ```python
 s3: str
@@ -6913,11 +6970,11 @@ s3: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3 AwsProvider#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3 AwsProvider#s3}
 
 ---
 
-##### `s3_api`<sup>Optional</sup> <a name="s3_api" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Api"></a>
+##### `s3_api`<sup>Optional</sup> <a name="s3_api" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Api"></a>
 
 ```python
 s3_api: str
@@ -6927,11 +6984,11 @@ s3_api: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3api AwsProvider#s3api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3api AwsProvider#s3api}
 
 ---
 
-##### `s3_control`<sup>Optional</sup> <a name="s3_control" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Control"></a>
+##### `s3_control`<sup>Optional</sup> <a name="s3_control" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Control"></a>
 
 ```python
 s3_control: str
@@ -6941,11 +6998,11 @@ s3_control: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3control AwsProvider#s3control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3control AwsProvider#s3control}
 
 ---
 
-##### `s3_outposts`<sup>Optional</sup> <a name="s3_outposts" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Outposts"></a>
+##### `s3_outposts`<sup>Optional</sup> <a name="s3_outposts" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Outposts"></a>
 
 ```python
 s3_outposts: str
@@ -6955,11 +7012,11 @@ s3_outposts: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3outposts AwsProvider#s3outposts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3outposts AwsProvider#s3outposts}
 
 ---
 
-##### `s3_tables`<sup>Optional</sup> <a name="s3_tables" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Tables"></a>
+##### `s3_tables`<sup>Optional</sup> <a name="s3_tables" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Tables"></a>
 
 ```python
 s3_tables: str
@@ -6969,11 +7026,11 @@ s3_tables: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3tables AwsProvider#s3tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3tables AwsProvider#s3tables}
 
 ---
 
-##### `s3_vectors`<sup>Optional</sup> <a name="s3_vectors" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.s3Vectors"></a>
+##### `s3_vectors`<sup>Optional</sup> <a name="s3_vectors" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.s3Vectors"></a>
 
 ```python
 s3_vectors: str
@@ -6983,11 +7040,11 @@ s3_vectors: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#s3vectors AwsProvider#s3vectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#s3vectors AwsProvider#s3vectors}
 
 ---
 
-##### `sagemaker`<sup>Optional</sup> <a name="sagemaker" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sagemaker"></a>
+##### `sagemaker`<sup>Optional</sup> <a name="sagemaker" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sagemaker"></a>
 
 ```python
 sagemaker: str
@@ -6997,11 +7054,11 @@ sagemaker: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sagemaker AwsProvider#sagemaker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sagemaker AwsProvider#sagemaker}
 
 ---
 
-##### `scheduler`<sup>Optional</sup> <a name="scheduler" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.scheduler"></a>
+##### `scheduler`<sup>Optional</sup> <a name="scheduler" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.scheduler"></a>
 
 ```python
 scheduler: str
@@ -7011,11 +7068,11 @@ scheduler: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#scheduler AwsProvider#scheduler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#scheduler AwsProvider#scheduler}
 
 ---
 
-##### `schemas`<sup>Optional</sup> <a name="schemas" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.schemas"></a>
+##### `schemas`<sup>Optional</sup> <a name="schemas" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.schemas"></a>
 
 ```python
 schemas: str
@@ -7025,11 +7082,11 @@ schemas: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#schemas AwsProvider#schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#schemas AwsProvider#schemas}
 
 ---
 
-##### `secretsmanager`<sup>Optional</sup> <a name="secretsmanager" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.secretsmanager"></a>
+##### `secretsmanager`<sup>Optional</sup> <a name="secretsmanager" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.secretsmanager"></a>
 
 ```python
 secretsmanager: str
@@ -7039,11 +7096,11 @@ secretsmanager: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#secretsmanager AwsProvider#secretsmanager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#secretsmanager AwsProvider#secretsmanager}
 
 ---
 
-##### `securityhub`<sup>Optional</sup> <a name="securityhub" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securityhub"></a>
+##### `securityhub`<sup>Optional</sup> <a name="securityhub" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.securityhub"></a>
 
 ```python
 securityhub: str
@@ -7053,11 +7110,11 @@ securityhub: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#securityhub AwsProvider#securityhub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#securityhub AwsProvider#securityhub}
 
 ---
 
-##### `securitylake`<sup>Optional</sup> <a name="securitylake" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.securitylake"></a>
+##### `securitylake`<sup>Optional</sup> <a name="securitylake" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.securitylake"></a>
 
 ```python
 securitylake: str
@@ -7067,11 +7124,11 @@ securitylake: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#securitylake AwsProvider#securitylake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#securitylake AwsProvider#securitylake}
 
 ---
 
-##### `serverlessapplicationrepository`<sup>Optional</sup> <a name="serverlessapplicationrepository" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository"></a>
+##### `serverlessapplicationrepository`<sup>Optional</sup> <a name="serverlessapplicationrepository" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.serverlessapplicationrepository"></a>
 
 ```python
 serverlessapplicationrepository: str
@@ -7081,11 +7138,11 @@ serverlessapplicationrepository: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#serverlessapplicationrepository AwsProvider#serverlessapplicationrepository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#serverlessapplicationrepository AwsProvider#serverlessapplicationrepository}
 
 ---
 
-##### `serverlessapprepo`<sup>Optional</sup> <a name="serverlessapprepo" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessapprepo"></a>
+##### `serverlessapprepo`<sup>Optional</sup> <a name="serverlessapprepo" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.serverlessapprepo"></a>
 
 ```python
 serverlessapprepo: str
@@ -7095,11 +7152,11 @@ serverlessapprepo: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#serverlessapprepo AwsProvider#serverlessapprepo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#serverlessapprepo AwsProvider#serverlessapprepo}
 
 ---
 
-##### `serverlessrepo`<sup>Optional</sup> <a name="serverlessrepo" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.serverlessrepo"></a>
+##### `serverlessrepo`<sup>Optional</sup> <a name="serverlessrepo" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.serverlessrepo"></a>
 
 ```python
 serverlessrepo: str
@@ -7109,11 +7166,11 @@ serverlessrepo: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#serverlessrepo AwsProvider#serverlessrepo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#serverlessrepo AwsProvider#serverlessrepo}
 
 ---
 
-##### `servicecatalog`<sup>Optional</sup> <a name="servicecatalog" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicecatalog"></a>
+##### `servicecatalog`<sup>Optional</sup> <a name="servicecatalog" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicecatalog"></a>
 
 ```python
 servicecatalog: str
@@ -7123,11 +7180,11 @@ servicecatalog: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#servicecatalog AwsProvider#servicecatalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#servicecatalog AwsProvider#servicecatalog}
 
 ---
 
-##### `servicecatalogappregistry`<sup>Optional</sup> <a name="servicecatalogappregistry" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicecatalogappregistry"></a>
+##### `servicecatalogappregistry`<sup>Optional</sup> <a name="servicecatalogappregistry" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicecatalogappregistry"></a>
 
 ```python
 servicecatalogappregistry: str
@@ -7137,11 +7194,11 @@ servicecatalogappregistry: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#servicecatalogappregistry AwsProvider#servicecatalogappregistry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#servicecatalogappregistry AwsProvider#servicecatalogappregistry}
 
 ---
 
-##### `servicediscovery`<sup>Optional</sup> <a name="servicediscovery" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicediscovery"></a>
+##### `servicediscovery`<sup>Optional</sup> <a name="servicediscovery" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicediscovery"></a>
 
 ```python
 servicediscovery: str
@@ -7151,11 +7208,11 @@ servicediscovery: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#servicediscovery AwsProvider#servicediscovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#servicediscovery AwsProvider#servicediscovery}
 
 ---
 
-##### `servicequotas`<sup>Optional</sup> <a name="servicequotas" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.servicequotas"></a>
+##### `servicequotas`<sup>Optional</sup> <a name="servicequotas" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.servicequotas"></a>
 
 ```python
 servicequotas: str
@@ -7165,11 +7222,11 @@ servicequotas: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#servicequotas AwsProvider#servicequotas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#servicequotas AwsProvider#servicequotas}
 
 ---
 
-##### `ses`<sup>Optional</sup> <a name="ses" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ses"></a>
+##### `ses`<sup>Optional</sup> <a name="ses" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ses"></a>
 
 ```python
 ses: str
@@ -7179,11 +7236,11 @@ ses: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ses AwsProvider#ses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ses AwsProvider#ses}
 
 ---
 
-##### `sesv2`<sup>Optional</sup> <a name="sesv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sesv2"></a>
+##### `sesv2`<sup>Optional</sup> <a name="sesv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sesv2"></a>
 
 ```python
 sesv2: str
@@ -7193,11 +7250,11 @@ sesv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sesv2 AwsProvider#sesv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sesv2 AwsProvider#sesv2}
 
 ---
 
-##### `sfn`<sup>Optional</sup> <a name="sfn" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sfn"></a>
+##### `sfn`<sup>Optional</sup> <a name="sfn" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sfn"></a>
 
 ```python
 sfn: str
@@ -7207,11 +7264,11 @@ sfn: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sfn AwsProvider#sfn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sfn AwsProvider#sfn}
 
 ---
 
-##### `shield`<sup>Optional</sup> <a name="shield" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.shield"></a>
+##### `shield`<sup>Optional</sup> <a name="shield" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.shield"></a>
 
 ```python
 shield: str
@@ -7221,11 +7278,11 @@ shield: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#shield AwsProvider#shield}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#shield AwsProvider#shield}
 
 ---
 
-##### `signer`<sup>Optional</sup> <a name="signer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.signer"></a>
+##### `signer`<sup>Optional</sup> <a name="signer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.signer"></a>
 
 ```python
 signer: str
@@ -7235,11 +7292,11 @@ signer: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#signer AwsProvider#signer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#signer AwsProvider#signer}
 
 ---
 
-##### `sns`<sup>Optional</sup> <a name="sns" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sns"></a>
+##### `sns`<sup>Optional</sup> <a name="sns" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sns"></a>
 
 ```python
 sns: str
@@ -7249,11 +7306,11 @@ sns: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sns AwsProvider#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sns AwsProvider#sns}
 
 ---
 
-##### `sqs`<sup>Optional</sup> <a name="sqs" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sqs"></a>
+##### `sqs`<sup>Optional</sup> <a name="sqs" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sqs"></a>
 
 ```python
 sqs: str
@@ -7263,11 +7320,11 @@ sqs: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sqs AwsProvider#sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sqs AwsProvider#sqs}
 
 ---
 
-##### `ssm`<sup>Optional</sup> <a name="ssm" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssm"></a>
+##### `ssm`<sup>Optional</sup> <a name="ssm" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssm"></a>
 
 ```python
 ssm: str
@@ -7277,11 +7334,11 @@ ssm: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ssm AwsProvider#ssm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ssm AwsProvider#ssm}
 
 ---
 
-##### `ssmcontacts`<sup>Optional</sup> <a name="ssmcontacts" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmcontacts"></a>
+##### `ssmcontacts`<sup>Optional</sup> <a name="ssmcontacts" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmcontacts"></a>
 
 ```python
 ssmcontacts: str
@@ -7291,11 +7348,11 @@ ssmcontacts: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ssmcontacts AwsProvider#ssmcontacts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ssmcontacts AwsProvider#ssmcontacts}
 
 ---
 
-##### `ssmincidents`<sup>Optional</sup> <a name="ssmincidents" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmincidents"></a>
+##### `ssmincidents`<sup>Optional</sup> <a name="ssmincidents" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmincidents"></a>
 
 ```python
 ssmincidents: str
@@ -7305,11 +7362,11 @@ ssmincidents: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ssmincidents AwsProvider#ssmincidents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ssmincidents AwsProvider#ssmincidents}
 
 ---
 
-##### `ssmquicksetup`<sup>Optional</sup> <a name="ssmquicksetup" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmquicksetup"></a>
+##### `ssmquicksetup`<sup>Optional</sup> <a name="ssmquicksetup" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmquicksetup"></a>
 
 ```python
 ssmquicksetup: str
@@ -7319,11 +7376,11 @@ ssmquicksetup: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ssmquicksetup AwsProvider#ssmquicksetup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ssmquicksetup AwsProvider#ssmquicksetup}
 
 ---
 
-##### `ssmsap`<sup>Optional</sup> <a name="ssmsap" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssmsap"></a>
+##### `ssmsap`<sup>Optional</sup> <a name="ssmsap" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssmsap"></a>
 
 ```python
 ssmsap: str
@@ -7333,11 +7390,11 @@ ssmsap: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ssmsap AwsProvider#ssmsap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ssmsap AwsProvider#ssmsap}
 
 ---
 
-##### `sso`<sup>Optional</sup> <a name="sso" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sso"></a>
+##### `sso`<sup>Optional</sup> <a name="sso" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sso"></a>
 
 ```python
 sso: str
@@ -7347,11 +7404,11 @@ sso: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sso AwsProvider#sso}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sso AwsProvider#sso}
 
 ---
 
-##### `ssoadmin`<sup>Optional</sup> <a name="ssoadmin" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.ssoadmin"></a>
+##### `ssoadmin`<sup>Optional</sup> <a name="ssoadmin" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.ssoadmin"></a>
 
 ```python
 ssoadmin: str
@@ -7361,11 +7418,11 @@ ssoadmin: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#ssoadmin AwsProvider#ssoadmin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#ssoadmin AwsProvider#ssoadmin}
 
 ---
 
-##### `stepfunctions`<sup>Optional</sup> <a name="stepfunctions" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.stepfunctions"></a>
+##### `stepfunctions`<sup>Optional</sup> <a name="stepfunctions" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.stepfunctions"></a>
 
 ```python
 stepfunctions: str
@@ -7375,11 +7432,11 @@ stepfunctions: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#stepfunctions AwsProvider#stepfunctions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#stepfunctions AwsProvider#stepfunctions}
 
 ---
 
-##### `storagegateway`<sup>Optional</sup> <a name="storagegateway" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.storagegateway"></a>
+##### `storagegateway`<sup>Optional</sup> <a name="storagegateway" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.storagegateway"></a>
 
 ```python
 storagegateway: str
@@ -7389,11 +7446,11 @@ storagegateway: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#storagegateway AwsProvider#storagegateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#storagegateway AwsProvider#storagegateway}
 
 ---
 
-##### `sts`<sup>Optional</sup> <a name="sts" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.sts"></a>
+##### `sts`<sup>Optional</sup> <a name="sts" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.sts"></a>
 
 ```python
 sts: str
@@ -7403,11 +7460,11 @@ sts: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#sts AwsProvider#sts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#sts AwsProvider#sts}
 
 ---
 
-##### `swf`<sup>Optional</sup> <a name="swf" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.swf"></a>
+##### `swf`<sup>Optional</sup> <a name="swf" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.swf"></a>
 
 ```python
 swf: str
@@ -7417,11 +7474,11 @@ swf: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#swf AwsProvider#swf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#swf AwsProvider#swf}
 
 ---
 
-##### `synthetics`<sup>Optional</sup> <a name="synthetics" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.synthetics"></a>
+##### `synthetics`<sup>Optional</sup> <a name="synthetics" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.synthetics"></a>
 
 ```python
 synthetics: str
@@ -7431,11 +7488,11 @@ synthetics: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#synthetics AwsProvider#synthetics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#synthetics AwsProvider#synthetics}
 
 ---
 
-##### `taxsettings`<sup>Optional</sup> <a name="taxsettings" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.taxsettings"></a>
+##### `taxsettings`<sup>Optional</sup> <a name="taxsettings" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.taxsettings"></a>
 
 ```python
 taxsettings: str
@@ -7445,11 +7502,11 @@ taxsettings: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#taxsettings AwsProvider#taxsettings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#taxsettings AwsProvider#taxsettings}
 
 ---
 
-##### `timestreaminfluxdb`<sup>Optional</sup> <a name="timestreaminfluxdb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.timestreaminfluxdb"></a>
+##### `timestreaminfluxdb`<sup>Optional</sup> <a name="timestreaminfluxdb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.timestreaminfluxdb"></a>
 
 ```python
 timestreaminfluxdb: str
@@ -7459,11 +7516,11 @@ timestreaminfluxdb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#timestreaminfluxdb AwsProvider#timestreaminfluxdb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#timestreaminfluxdb AwsProvider#timestreaminfluxdb}
 
 ---
 
-##### `timestreamquery`<sup>Optional</sup> <a name="timestreamquery" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.timestreamquery"></a>
+##### `timestreamquery`<sup>Optional</sup> <a name="timestreamquery" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.timestreamquery"></a>
 
 ```python
 timestreamquery: str
@@ -7473,11 +7530,11 @@ timestreamquery: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#timestreamquery AwsProvider#timestreamquery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#timestreamquery AwsProvider#timestreamquery}
 
 ---
 
-##### `timestreamwrite`<sup>Optional</sup> <a name="timestreamwrite" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.timestreamwrite"></a>
+##### `timestreamwrite`<sup>Optional</sup> <a name="timestreamwrite" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.timestreamwrite"></a>
 
 ```python
 timestreamwrite: str
@@ -7487,11 +7544,11 @@ timestreamwrite: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#timestreamwrite AwsProvider#timestreamwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#timestreamwrite AwsProvider#timestreamwrite}
 
 ---
 
-##### `transcribe`<sup>Optional</sup> <a name="transcribe" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transcribe"></a>
+##### `transcribe`<sup>Optional</sup> <a name="transcribe" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.transcribe"></a>
 
 ```python
 transcribe: str
@@ -7501,11 +7558,11 @@ transcribe: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#transcribe AwsProvider#transcribe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#transcribe AwsProvider#transcribe}
 
 ---
 
-##### `transcribeservice`<sup>Optional</sup> <a name="transcribeservice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transcribeservice"></a>
+##### `transcribeservice`<sup>Optional</sup> <a name="transcribeservice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.transcribeservice"></a>
 
 ```python
 transcribeservice: str
@@ -7515,11 +7572,11 @@ transcribeservice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#transcribeservice AwsProvider#transcribeservice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#transcribeservice AwsProvider#transcribeservice}
 
 ---
 
-##### `transfer`<sup>Optional</sup> <a name="transfer" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.transfer"></a>
+##### `transfer`<sup>Optional</sup> <a name="transfer" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.transfer"></a>
 
 ```python
 transfer: str
@@ -7529,11 +7586,11 @@ transfer: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#transfer AwsProvider#transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#transfer AwsProvider#transfer}
 
 ---
 
-##### `verifiedpermissions`<sup>Optional</sup> <a name="verifiedpermissions" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.verifiedpermissions"></a>
+##### `verifiedpermissions`<sup>Optional</sup> <a name="verifiedpermissions" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.verifiedpermissions"></a>
 
 ```python
 verifiedpermissions: str
@@ -7543,11 +7600,11 @@ verifiedpermissions: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#verifiedpermissions AwsProvider#verifiedpermissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#verifiedpermissions AwsProvider#verifiedpermissions}
 
 ---
 
-##### `vpclattice`<sup>Optional</sup> <a name="vpclattice" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.vpclattice"></a>
+##### `vpclattice`<sup>Optional</sup> <a name="vpclattice" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.vpclattice"></a>
 
 ```python
 vpclattice: str
@@ -7557,11 +7614,11 @@ vpclattice: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#vpclattice AwsProvider#vpclattice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#vpclattice AwsProvider#vpclattice}
 
 ---
 
-##### `waf`<sup>Optional</sup> <a name="waf" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.waf"></a>
+##### `waf`<sup>Optional</sup> <a name="waf" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.waf"></a>
 
 ```python
 waf: str
@@ -7571,11 +7628,11 @@ waf: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#waf AwsProvider#waf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#waf AwsProvider#waf}
 
 ---
 
-##### `wafregional`<sup>Optional</sup> <a name="wafregional" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafregional"></a>
+##### `wafregional`<sup>Optional</sup> <a name="wafregional" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.wafregional"></a>
 
 ```python
 wafregional: str
@@ -7585,11 +7642,11 @@ wafregional: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#wafregional AwsProvider#wafregional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#wafregional AwsProvider#wafregional}
 
 ---
 
-##### `wafv2`<sup>Optional</sup> <a name="wafv2" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wafv2"></a>
+##### `wafv2`<sup>Optional</sup> <a name="wafv2" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.wafv2"></a>
 
 ```python
 wafv2: str
@@ -7599,11 +7656,11 @@ wafv2: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#wafv2 AwsProvider#wafv2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#wafv2 AwsProvider#wafv2}
 
 ---
 
-##### `wellarchitected`<sup>Optional</sup> <a name="wellarchitected" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.wellarchitected"></a>
+##### `wellarchitected`<sup>Optional</sup> <a name="wellarchitected" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.wellarchitected"></a>
 
 ```python
 wellarchitected: str
@@ -7613,11 +7670,11 @@ wellarchitected: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#wellarchitected AwsProvider#wellarchitected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#wellarchitected AwsProvider#wellarchitected}
 
 ---
 
-##### `workmail`<sup>Optional</sup> <a name="workmail" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.workmail"></a>
+##### `workmail`<sup>Optional</sup> <a name="workmail" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.workmail"></a>
 
 ```python
 workmail: str
@@ -7627,11 +7684,11 @@ workmail: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#workmail AwsProvider#workmail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#workmail AwsProvider#workmail}
 
 ---
 
-##### `workspaces`<sup>Optional</sup> <a name="workspaces" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.workspaces"></a>
+##### `workspaces`<sup>Optional</sup> <a name="workspaces" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.workspaces"></a>
 
 ```python
 workspaces: str
@@ -7641,11 +7698,11 @@ workspaces: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#workspaces AwsProvider#workspaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#workspaces AwsProvider#workspaces}
 
 ---
 
-##### `workspacesweb`<sup>Optional</sup> <a name="workspacesweb" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.workspacesweb"></a>
+##### `workspacesweb`<sup>Optional</sup> <a name="workspacesweb" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.workspacesweb"></a>
 
 ```python
 workspacesweb: str
@@ -7655,11 +7712,11 @@ workspacesweb: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#workspacesweb AwsProvider#workspacesweb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#workspacesweb AwsProvider#workspacesweb}
 
 ---
 
-##### `xray`<sup>Optional</sup> <a name="xray" id="@cdktf/provider-aws.provider.AwsProviderEndpoints.property.xray"></a>
+##### `xray`<sup>Optional</sup> <a name="xray" id="@cdktn/provider-aws.provider.AwsProviderEndpoints.property.xray"></a>
 
 ```python
 xray: str
@@ -7669,16 +7726,16 @@ xray: str
 
 Use this to override the default service endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#xray AwsProvider#xray}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#xray AwsProvider#xray}
 
 ---
 
-### AwsProviderIgnoreTags <a name="AwsProviderIgnoreTags" id="@cdktf/provider-aws.provider.AwsProviderIgnoreTags"></a>
+### AwsProviderIgnoreTags <a name="AwsProviderIgnoreTags" id="@cdktn/provider-aws.provider.AwsProviderIgnoreTags"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.provider.AwsProviderIgnoreTags.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.provider.AwsProviderIgnoreTags.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import provider
+from cdktn_provider_aws import provider
 
 provider.AwsProviderIgnoreTags(
   key_prefixes: typing.List[str] = None,
@@ -7690,12 +7747,12 @@ provider.AwsProviderIgnoreTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags.property.keyPrefixes">key_prefixes</a></code> | <code>typing.List[str]</code> | Resource tag key prefixes to ignore across all resources. Can also be configured with the TF_AWS_IGNORE_TAGS_KEY_PREFIXES environment variable. |
-| <code><a href="#@cdktf/provider-aws.provider.AwsProviderIgnoreTags.property.keys">keys</a></code> | <code>typing.List[str]</code> | Resource tag keys to ignore across all resources. Can also be configured with the TF_AWS_IGNORE_TAGS_KEYS environment variable. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags.property.keyPrefixes">key_prefixes</a></code> | <code>typing.List[str]</code> | Resource tag key prefixes to ignore across all resources. Can also be configured with the TF_AWS_IGNORE_TAGS_KEY_PREFIXES environment variable. |
+| <code><a href="#@cdktn/provider-aws.provider.AwsProviderIgnoreTags.property.keys">keys</a></code> | <code>typing.List[str]</code> | Resource tag keys to ignore across all resources. Can also be configured with the TF_AWS_IGNORE_TAGS_KEYS environment variable. |
 
 ---
 
-##### `key_prefixes`<sup>Optional</sup> <a name="key_prefixes" id="@cdktf/provider-aws.provider.AwsProviderIgnoreTags.property.keyPrefixes"></a>
+##### `key_prefixes`<sup>Optional</sup> <a name="key_prefixes" id="@cdktn/provider-aws.provider.AwsProviderIgnoreTags.property.keyPrefixes"></a>
 
 ```python
 key_prefixes: typing.List[str]
@@ -7705,11 +7762,11 @@ key_prefixes: typing.List[str]
 
 Resource tag key prefixes to ignore across all resources. Can also be configured with the TF_AWS_IGNORE_TAGS_KEY_PREFIXES environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#key_prefixes AwsProvider#key_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#key_prefixes AwsProvider#key_prefixes}
 
 ---
 
-##### `keys`<sup>Optional</sup> <a name="keys" id="@cdktf/provider-aws.provider.AwsProviderIgnoreTags.property.keys"></a>
+##### `keys`<sup>Optional</sup> <a name="keys" id="@cdktn/provider-aws.provider.AwsProviderIgnoreTags.property.keys"></a>
 
 ```python
 keys: typing.List[str]
@@ -7719,7 +7776,7 @@ keys: typing.List[str]
 
 Resource tag keys to ignore across all resources. Can also be configured with the TF_AWS_IGNORE_TAGS_KEYS environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs#keys AwsProvider#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs#keys AwsProvider#keys}
 
 ---
 

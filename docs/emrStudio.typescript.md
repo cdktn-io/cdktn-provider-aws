@@ -1,28 +1,28 @@
-# `emrStudio` Submodule <a name="`emrStudio` Submodule" id="@cdktf/provider-aws.emrStudio"></a>
+# `emrStudio` Submodule <a name="`emrStudio` Submodule" id="@cdktn/provider-aws.emrStudio"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### EmrStudio <a name="EmrStudio" id="@cdktf/provider-aws.emrStudio.EmrStudio"></a>
+### EmrStudio <a name="EmrStudio" id="@cdktn/provider-aws.emrStudio.EmrStudio"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio aws_emr_studio}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio aws_emr_studio}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.emrStudio.EmrStudio.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.emrStudio.EmrStudio.Initializer"></a>
 
 ```typescript
-import { emrStudio } from '@cdktf/provider-aws'
+import { emrStudio } from '@cdktn/provider-aws'
 
 new emrStudio.EmrStudio(scope: Construct, id: string, config: EmrStudioConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig">EmrStudioConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig">EmrStudioConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.emrStudio.EmrStudio.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.emrStudio.EmrStudio.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrStudio.EmrStudio.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.emrStudio.EmrStudio.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.emrStudio.EmrStudio.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.emrStudio.EmrStudio.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig">EmrStudioConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig">EmrStudioConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetEncryptionKeyArn">resetEncryptionKeyArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetIdpAuthUrl">resetIdpAuthUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetIdpRelayStateParameterName">resetIdpRelayStateParameterName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetTagsAll">resetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.resetUserRole">resetUserRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetEncryptionKeyArn">resetEncryptionKeyArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetIdpAuthUrl">resetIdpAuthUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetIdpRelayStateParameterName">resetIdpRelayStateParameterName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.resetUserRole">resetUserRole</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.emrStudio.EmrStudio.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.emrStudio.EmrStudio.toString"></a>
 
 ```typescript
 public toString(): string
@@ -93,25 +93,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.emrStudio.EmrStudio.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.emrStudio.EmrStudio.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.emrStudio.EmrStudio.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.emrStudio.EmrStudio.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.emrStudio.EmrStudio.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.emrStudio.EmrStudio.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.emrStudio.EmrStudio.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.emrStudio.EmrStudio.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -119,7 +119,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.emrStudio.EmrStudio.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.emrStudio.EmrStudio.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -135,19 +135,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.emrStudio.EmrStudio.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.emrStudio.EmrStudio.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.emrStudio.EmrStudio.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.emrStudio.EmrStudio.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.emrStudio.EmrStudio.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.emrStudio.EmrStudio.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -155,7 +155,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.emrStudio.EmrStudio.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.emrStudio.EmrStudio.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -163,7 +163,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.emrStudio.EmrStudio.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.emrStudio.EmrStudio.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.emrStudio.EmrStudio.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.emrStudio.EmrStudio.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.emrStudio.EmrStudio.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.emrStudio.EmrStudio.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrStudio.EmrStudio.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.emrStudio.EmrStudio.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrStudio.EmrStudio.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.emrStudio.EmrStudio.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.emrStudio.EmrStudio.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.emrStudio.EmrStudio.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -341,7 +341,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -365,7 +365,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrStudio.EmrStudio.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.emrStudio.EmrStudio.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -373,55 +373,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetEncryptionKeyArn` <a name="resetEncryptionKeyArn" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetEncryptionKeyArn"></a>
+##### `resetEncryptionKeyArn` <a name="resetEncryptionKeyArn" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetEncryptionKeyArn"></a>
 
 ```typescript
 public resetEncryptionKeyArn(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetIdpAuthUrl` <a name="resetIdpAuthUrl" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetIdpAuthUrl"></a>
+##### `resetIdpAuthUrl` <a name="resetIdpAuthUrl" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetIdpAuthUrl"></a>
 
 ```typescript
 public resetIdpAuthUrl(): void
 ```
 
-##### `resetIdpRelayStateParameterName` <a name="resetIdpRelayStateParameterName" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetIdpRelayStateParameterName"></a>
+##### `resetIdpRelayStateParameterName` <a name="resetIdpRelayStateParameterName" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetIdpRelayStateParameterName"></a>
 
 ```typescript
 public resetIdpRelayStateParameterName(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
 ```
 
-##### `resetUserRole` <a name="resetUserRole" id="@cdktf/provider-aws.emrStudio.EmrStudio.resetUserRole"></a>
+##### `resetUserRole` <a name="resetUserRole" id="@cdktn/provider-aws.emrStudio.EmrStudio.resetUserRole"></a>
 
 ```typescript
 public resetUserRole(): void
@@ -431,17 +431,17 @@ public resetUserRole(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a EmrStudio resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a EmrStudio resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.emrStudio.EmrStudio.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.emrStudio.EmrStudio.isConstruct"></a>
 
 ```typescript
-import { emrStudio } from '@cdktf/provider-aws'
+import { emrStudio } from '@cdktn/provider-aws'
 
 emrStudio.EmrStudio.isConstruct(x: any)
 ```
@@ -462,7 +462,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.emrStudio.EmrStudio.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.emrStudio.EmrStudio.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -470,45 +470,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.emrStudio.EmrStudio.isTerraformElement"></a>
 
 ```typescript
-import { emrStudio } from '@cdktf/provider-aws'
+import { emrStudio } from '@cdktn/provider-aws'
 
 emrStudio.EmrStudio.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.emrStudio.EmrStudio.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.emrStudio.EmrStudio.isTerraformResource"></a>
 
 ```typescript
-import { emrStudio } from '@cdktf/provider-aws'
+import { emrStudio } from '@cdktn/provider-aws'
 
 emrStudio.EmrStudio.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.emrStudio.EmrStudio.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.emrStudio.EmrStudio.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.emrStudio.EmrStudio.generateConfigForImport"></a>
 
 ```typescript
-import { emrStudio } from '@cdktf/provider-aws'
+import { emrStudio } from '@cdktn/provider-aws'
 
 emrStudio.EmrStudio.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a EmrStudio resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -516,7 +516,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -524,17 +524,17 @@ The construct id used in the generated config for the EmrStudio to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing EmrStudio that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.emrStudio.EmrStudio.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -546,60 +546,60 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.url">url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.authModeInput">authModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.defaultS3LocationInput">defaultS3LocationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArnInput">encryptionKeyArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupIdInput">engineSecurityGroupIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.idpAuthUrlInput">idpAuthUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterNameInput">idpRelayStateParameterNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.serviceRoleInput">serviceRoleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.subnetIdsInput">subnetIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.userRoleInput">userRoleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupIdInput">workspaceSecurityGroupIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.authMode">authMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.defaultS3Location">defaultS3Location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupId">engineSecurityGroupId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.idpAuthUrl">idpAuthUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterName">idpRelayStateParameterName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.serviceRole">serviceRole</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.userRole">userRole</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.vpcId">vpcId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupId">workspaceSecurityGroupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.authModeInput">authModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.defaultS3LocationInput">defaultS3LocationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArnInput">encryptionKeyArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupIdInput">engineSecurityGroupIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.idpAuthUrlInput">idpAuthUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterNameInput">idpRelayStateParameterNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.serviceRoleInput">serviceRoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.subnetIdsInput">subnetIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.userRoleInput">userRoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupIdInput">workspaceSecurityGroupIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.authMode">authMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.defaultS3Location">defaultS3Location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupId">engineSecurityGroupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.idpAuthUrl">idpAuthUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterName">idpRelayStateParameterName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.serviceRole">serviceRole</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.userRole">userRole</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.vpcId">vpcId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupId">workspaceSecurityGroupId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -611,7 +611,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -621,7 +621,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -631,7 +631,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -641,7 +641,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -651,7 +651,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -661,7 +661,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -671,7 +671,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -681,7 +681,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -691,7 +691,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -701,7 +701,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -711,7 +711,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -721,7 +721,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -731,7 +731,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -741,7 +741,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -751,7 +751,7 @@ public readonly arn: string;
 
 ---
 
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.url"></a>
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.url"></a>
 
 ```typescript
 public readonly url: string;
@@ -761,7 +761,7 @@ public readonly url: string;
 
 ---
 
-##### `authModeInput`<sup>Optional</sup> <a name="authModeInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.authModeInput"></a>
+##### `authModeInput`<sup>Optional</sup> <a name="authModeInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.authModeInput"></a>
 
 ```typescript
 public readonly authModeInput: string;
@@ -771,7 +771,7 @@ public readonly authModeInput: string;
 
 ---
 
-##### `defaultS3LocationInput`<sup>Optional</sup> <a name="defaultS3LocationInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.defaultS3LocationInput"></a>
+##### `defaultS3LocationInput`<sup>Optional</sup> <a name="defaultS3LocationInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.defaultS3LocationInput"></a>
 
 ```typescript
 public readonly defaultS3LocationInput: string;
@@ -781,7 +781,7 @@ public readonly defaultS3LocationInput: string;
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -791,7 +791,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `encryptionKeyArnInput`<sup>Optional</sup> <a name="encryptionKeyArnInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArnInput"></a>
+##### `encryptionKeyArnInput`<sup>Optional</sup> <a name="encryptionKeyArnInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArnInput"></a>
 
 ```typescript
 public readonly encryptionKeyArnInput: string;
@@ -801,7 +801,7 @@ public readonly encryptionKeyArnInput: string;
 
 ---
 
-##### `engineSecurityGroupIdInput`<sup>Optional</sup> <a name="engineSecurityGroupIdInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupIdInput"></a>
+##### `engineSecurityGroupIdInput`<sup>Optional</sup> <a name="engineSecurityGroupIdInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupIdInput"></a>
 
 ```typescript
 public readonly engineSecurityGroupIdInput: string;
@@ -811,7 +811,7 @@ public readonly engineSecurityGroupIdInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -821,7 +821,7 @@ public readonly idInput: string;
 
 ---
 
-##### `idpAuthUrlInput`<sup>Optional</sup> <a name="idpAuthUrlInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.idpAuthUrlInput"></a>
+##### `idpAuthUrlInput`<sup>Optional</sup> <a name="idpAuthUrlInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.idpAuthUrlInput"></a>
 
 ```typescript
 public readonly idpAuthUrlInput: string;
@@ -831,7 +831,7 @@ public readonly idpAuthUrlInput: string;
 
 ---
 
-##### `idpRelayStateParameterNameInput`<sup>Optional</sup> <a name="idpRelayStateParameterNameInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterNameInput"></a>
+##### `idpRelayStateParameterNameInput`<sup>Optional</sup> <a name="idpRelayStateParameterNameInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterNameInput"></a>
 
 ```typescript
 public readonly idpRelayStateParameterNameInput: string;
@@ -841,7 +841,7 @@ public readonly idpRelayStateParameterNameInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -851,7 +851,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -861,7 +861,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `serviceRoleInput`<sup>Optional</sup> <a name="serviceRoleInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.serviceRoleInput"></a>
+##### `serviceRoleInput`<sup>Optional</sup> <a name="serviceRoleInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.serviceRoleInput"></a>
 
 ```typescript
 public readonly serviceRoleInput: string;
@@ -871,7 +871,7 @@ public readonly serviceRoleInput: string;
 
 ---
 
-##### `subnetIdsInput`<sup>Optional</sup> <a name="subnetIdsInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.subnetIdsInput"></a>
+##### `subnetIdsInput`<sup>Optional</sup> <a name="subnetIdsInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.subnetIdsInput"></a>
 
 ```typescript
 public readonly subnetIdsInput: string[];
@@ -881,7 +881,7 @@ public readonly subnetIdsInput: string[];
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -891,7 +891,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -901,7 +901,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `userRoleInput`<sup>Optional</sup> <a name="userRoleInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.userRoleInput"></a>
+##### `userRoleInput`<sup>Optional</sup> <a name="userRoleInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.userRoleInput"></a>
 
 ```typescript
 public readonly userRoleInput: string;
@@ -911,7 +911,7 @@ public readonly userRoleInput: string;
 
 ---
 
-##### `vpcIdInput`<sup>Optional</sup> <a name="vpcIdInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.vpcIdInput"></a>
+##### `vpcIdInput`<sup>Optional</sup> <a name="vpcIdInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.vpcIdInput"></a>
 
 ```typescript
 public readonly vpcIdInput: string;
@@ -921,7 +921,7 @@ public readonly vpcIdInput: string;
 
 ---
 
-##### `workspaceSecurityGroupIdInput`<sup>Optional</sup> <a name="workspaceSecurityGroupIdInput" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupIdInput"></a>
+##### `workspaceSecurityGroupIdInput`<sup>Optional</sup> <a name="workspaceSecurityGroupIdInput" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupIdInput"></a>
 
 ```typescript
 public readonly workspaceSecurityGroupIdInput: string;
@@ -931,7 +931,7 @@ public readonly workspaceSecurityGroupIdInput: string;
 
 ---
 
-##### `authMode`<sup>Required</sup> <a name="authMode" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.authMode"></a>
+##### `authMode`<sup>Required</sup> <a name="authMode" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.authMode"></a>
 
 ```typescript
 public readonly authMode: string;
@@ -941,7 +941,7 @@ public readonly authMode: string;
 
 ---
 
-##### `defaultS3Location`<sup>Required</sup> <a name="defaultS3Location" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.defaultS3Location"></a>
+##### `defaultS3Location`<sup>Required</sup> <a name="defaultS3Location" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.defaultS3Location"></a>
 
 ```typescript
 public readonly defaultS3Location: string;
@@ -951,7 +951,7 @@ public readonly defaultS3Location: string;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -961,7 +961,7 @@ public readonly description: string;
 
 ---
 
-##### `encryptionKeyArn`<sup>Required</sup> <a name="encryptionKeyArn" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArn"></a>
+##### `encryptionKeyArn`<sup>Required</sup> <a name="encryptionKeyArn" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.encryptionKeyArn"></a>
 
 ```typescript
 public readonly encryptionKeyArn: string;
@@ -971,7 +971,7 @@ public readonly encryptionKeyArn: string;
 
 ---
 
-##### `engineSecurityGroupId`<sup>Required</sup> <a name="engineSecurityGroupId" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupId"></a>
+##### `engineSecurityGroupId`<sup>Required</sup> <a name="engineSecurityGroupId" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.engineSecurityGroupId"></a>
 
 ```typescript
 public readonly engineSecurityGroupId: string;
@@ -981,7 +981,7 @@ public readonly engineSecurityGroupId: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -991,7 +991,7 @@ public readonly id: string;
 
 ---
 
-##### `idpAuthUrl`<sup>Required</sup> <a name="idpAuthUrl" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.idpAuthUrl"></a>
+##### `idpAuthUrl`<sup>Required</sup> <a name="idpAuthUrl" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.idpAuthUrl"></a>
 
 ```typescript
 public readonly idpAuthUrl: string;
@@ -1001,7 +1001,7 @@ public readonly idpAuthUrl: string;
 
 ---
 
-##### `idpRelayStateParameterName`<sup>Required</sup> <a name="idpRelayStateParameterName" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterName"></a>
+##### `idpRelayStateParameterName`<sup>Required</sup> <a name="idpRelayStateParameterName" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.idpRelayStateParameterName"></a>
 
 ```typescript
 public readonly idpRelayStateParameterName: string;
@@ -1011,7 +1011,7 @@ public readonly idpRelayStateParameterName: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1021,7 +1021,7 @@ public readonly name: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1031,7 +1031,7 @@ public readonly region: string;
 
 ---
 
-##### `serviceRole`<sup>Required</sup> <a name="serviceRole" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.serviceRole"></a>
+##### `serviceRole`<sup>Required</sup> <a name="serviceRole" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.serviceRole"></a>
 
 ```typescript
 public readonly serviceRole: string;
@@ -1041,7 +1041,7 @@ public readonly serviceRole: string;
 
 ---
 
-##### `subnetIds`<sup>Required</sup> <a name="subnetIds" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.subnetIds"></a>
+##### `subnetIds`<sup>Required</sup> <a name="subnetIds" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.subnetIds"></a>
 
 ```typescript
 public readonly subnetIds: string[];
@@ -1051,7 +1051,7 @@ public readonly subnetIds: string[];
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1061,7 +1061,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1071,7 +1071,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 ---
 
-##### `userRole`<sup>Required</sup> <a name="userRole" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.userRole"></a>
+##### `userRole`<sup>Required</sup> <a name="userRole" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.userRole"></a>
 
 ```typescript
 public readonly userRole: string;
@@ -1081,7 +1081,7 @@ public readonly userRole: string;
 
 ---
 
-##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.vpcId"></a>
+##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.vpcId"></a>
 
 ```typescript
 public readonly vpcId: string;
@@ -1091,7 +1091,7 @@ public readonly vpcId: string;
 
 ---
 
-##### `workspaceSecurityGroupId`<sup>Required</sup> <a name="workspaceSecurityGroupId" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupId"></a>
+##### `workspaceSecurityGroupId`<sup>Required</sup> <a name="workspaceSecurityGroupId" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.workspaceSecurityGroupId"></a>
 
 ```typescript
 public readonly workspaceSecurityGroupId: string;
@@ -1105,11 +1105,11 @@ public readonly workspaceSecurityGroupId: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudio.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudio.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.emrStudio.EmrStudio.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.emrStudio.EmrStudio.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1121,12 +1121,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### EmrStudioConfig <a name="EmrStudioConfig" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig"></a>
+### EmrStudioConfig <a name="EmrStudioConfig" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.Initializer"></a>
 
 ```typescript
-import { emrStudio } from '@cdktf/provider-aws'
+import { emrStudio } from '@cdktn/provider-aws'
 
 const emrStudioConfig: emrStudio.EmrStudioConfig = { ... }
 ```
@@ -1135,34 +1135,34 @@ const emrStudioConfig: emrStudio.EmrStudioConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.authMode">authMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.defaultS3Location">defaultS3Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.engineSecurityGroupId">engineSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#name EmrStudio#name}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.serviceRole">serviceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#service_role EmrStudio#service_role}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.workspaceSecurityGroupId">workspaceSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#description EmrStudio#description}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#encryption_key_arn EmrStudio#encryption_key_arn}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#id EmrStudio#id}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpAuthUrl">idpAuthUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpRelayStateParameterName">idpRelayStateParameterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#tags EmrStudio#tags}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.userRole">userRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#user_role EmrStudio#user_role}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.authMode">authMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.defaultS3Location">defaultS3Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.engineSecurityGroupId">engineSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#name EmrStudio#name}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.serviceRole">serviceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#service_role EmrStudio#service_role}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.subnetIds">subnetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.workspaceSecurityGroupId">workspaceSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#description EmrStudio#description}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.encryptionKeyArn">encryptionKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#encryption_key_arn EmrStudio#encryption_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#id EmrStudio#id}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.idpAuthUrl">idpAuthUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.idpRelayStateParameterName">idpRelayStateParameterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#tags EmrStudio#tags}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.userRole">userRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#user_role EmrStudio#user_role}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1172,7 +1172,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1182,7 +1182,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1192,7 +1192,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1202,7 +1202,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1212,7 +1212,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1222,7 +1222,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1232,7 +1232,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `authMode`<sup>Required</sup> <a name="authMode" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.authMode"></a>
+##### `authMode`<sup>Required</sup> <a name="authMode" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.authMode"></a>
 
 ```typescript
 public readonly authMode: string;
@@ -1240,11 +1240,11 @@ public readonly authMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#auth_mode EmrStudio#auth_mode}.
 
 ---
 
-##### `defaultS3Location`<sup>Required</sup> <a name="defaultS3Location" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.defaultS3Location"></a>
+##### `defaultS3Location`<sup>Required</sup> <a name="defaultS3Location" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.defaultS3Location"></a>
 
 ```typescript
 public readonly defaultS3Location: string;
@@ -1252,11 +1252,11 @@ public readonly defaultS3Location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#default_s3_location EmrStudio#default_s3_location}.
 
 ---
 
-##### `engineSecurityGroupId`<sup>Required</sup> <a name="engineSecurityGroupId" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.engineSecurityGroupId"></a>
+##### `engineSecurityGroupId`<sup>Required</sup> <a name="engineSecurityGroupId" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.engineSecurityGroupId"></a>
 
 ```typescript
 public readonly engineSecurityGroupId: string;
@@ -1264,11 +1264,11 @@ public readonly engineSecurityGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#engine_security_group_id EmrStudio#engine_security_group_id}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1276,11 +1276,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#name EmrStudio#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#name EmrStudio#name}.
 
 ---
 
-##### `serviceRole`<sup>Required</sup> <a name="serviceRole" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.serviceRole"></a>
+##### `serviceRole`<sup>Required</sup> <a name="serviceRole" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.serviceRole"></a>
 
 ```typescript
 public readonly serviceRole: string;
@@ -1288,11 +1288,11 @@ public readonly serviceRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#service_role EmrStudio#service_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#service_role EmrStudio#service_role}.
 
 ---
 
-##### `subnetIds`<sup>Required</sup> <a name="subnetIds" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.subnetIds"></a>
+##### `subnetIds`<sup>Required</sup> <a name="subnetIds" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.subnetIds"></a>
 
 ```typescript
 public readonly subnetIds: string[];
@@ -1300,11 +1300,11 @@ public readonly subnetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#subnet_ids EmrStudio#subnet_ids}.
 
 ---
 
-##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.vpcId"></a>
+##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.vpcId"></a>
 
 ```typescript
 public readonly vpcId: string;
@@ -1312,11 +1312,11 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#vpc_id EmrStudio#vpc_id}.
 
 ---
 
-##### `workspaceSecurityGroupId`<sup>Required</sup> <a name="workspaceSecurityGroupId" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.workspaceSecurityGroupId"></a>
+##### `workspaceSecurityGroupId`<sup>Required</sup> <a name="workspaceSecurityGroupId" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.workspaceSecurityGroupId"></a>
 
 ```typescript
 public readonly workspaceSecurityGroupId: string;
@@ -1324,11 +1324,11 @@ public readonly workspaceSecurityGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#workspace_security_group_id EmrStudio#workspace_security_group_id}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1336,11 +1336,11 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#description EmrStudio#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#description EmrStudio#description}.
 
 ---
 
-##### `encryptionKeyArn`<sup>Optional</sup> <a name="encryptionKeyArn" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.encryptionKeyArn"></a>
+##### `encryptionKeyArn`<sup>Optional</sup> <a name="encryptionKeyArn" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.encryptionKeyArn"></a>
 
 ```typescript
 public readonly encryptionKeyArn: string;
@@ -1348,11 +1348,11 @@ public readonly encryptionKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#encryption_key_arn EmrStudio#encryption_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#encryption_key_arn EmrStudio#encryption_key_arn}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1360,14 +1360,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#id EmrStudio#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#id EmrStudio#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `idpAuthUrl`<sup>Optional</sup> <a name="idpAuthUrl" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpAuthUrl"></a>
+##### `idpAuthUrl`<sup>Optional</sup> <a name="idpAuthUrl" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.idpAuthUrl"></a>
 
 ```typescript
 public readonly idpAuthUrl: string;
@@ -1375,11 +1375,11 @@ public readonly idpAuthUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#idp_auth_url EmrStudio#idp_auth_url}.
 
 ---
 
-##### `idpRelayStateParameterName`<sup>Optional</sup> <a name="idpRelayStateParameterName" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.idpRelayStateParameterName"></a>
+##### `idpRelayStateParameterName`<sup>Optional</sup> <a name="idpRelayStateParameterName" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.idpRelayStateParameterName"></a>
 
 ```typescript
 public readonly idpRelayStateParameterName: string;
@@ -1387,11 +1387,11 @@ public readonly idpRelayStateParameterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#idp_relay_state_parameter_name EmrStudio#idp_relay_state_parameter_name}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1401,11 +1401,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#region EmrStudio#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#region EmrStudio#region}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1413,11 +1413,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#tags EmrStudio#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#tags EmrStudio#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1425,11 +1425,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#tags_all EmrStudio#tags_all}.
 
 ---
 
-##### `userRole`<sup>Optional</sup> <a name="userRole" id="@cdktf/provider-aws.emrStudio.EmrStudioConfig.property.userRole"></a>
+##### `userRole`<sup>Optional</sup> <a name="userRole" id="@cdktn/provider-aws.emrStudio.EmrStudioConfig.property.userRole"></a>
 
 ```typescript
 public readonly userRole: string;
@@ -1437,7 +1437,7 @@ public readonly userRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/emr_studio#user_role EmrStudio#user_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/emr_studio#user_role EmrStudio#user_role}.
 
 ---
 

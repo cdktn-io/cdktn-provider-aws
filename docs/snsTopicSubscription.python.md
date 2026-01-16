@@ -1,15 +1,15 @@
-# `snsTopicSubscription` Submodule <a name="`snsTopicSubscription` Submodule" id="@cdktf/provider-aws.snsTopicSubscription"></a>
+# `snsTopicSubscription` Submodule <a name="`snsTopicSubscription` Submodule" id="@cdktn/provider-aws.snsTopicSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SnsTopicSubscription <a name="SnsTopicSubscription" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription"></a>
+### SnsTopicSubscription <a name="SnsTopicSubscription" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import sns_topic_subscription
+from cdktn_provider_aws import sns_topic_subscription
 
 snsTopicSubscription.SnsTopicSubscription(
   scope: Construct,
@@ -40,33 +40,33 @@ snsTopicSubscription.SnsTopicSubscription(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.confirmationTimeoutInMinutes">confirmation_timeout_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.deliveryPolicy">delivery_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpointAutoConfirms">endpoint_auto_confirms</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicy">filter_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicyScope">filter_policy_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.rawMessageDelivery">raw_message_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.redrivePolicy">redrive_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.replayPolicy">replay_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.subscriptionRoleArn">subscription_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.confirmationTimeoutInMinutes">confirmation_timeout_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.deliveryPolicy">delivery_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpointAutoConfirms">endpoint_auto_confirms</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicy">filter_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicyScope">filter_policy_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.rawMessageDelivery">raw_message_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.redrivePolicy">redrive_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.replayPolicy">replay_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.subscriptionRoleArn">subscription_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -74,7 +74,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -84,162 +84,162 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpoint"></a>
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpoint"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}.
 
 ---
 
-##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.protocol"></a>
+##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.protocol"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}.
 
 ---
 
-##### `topic_arn`<sup>Required</sup> <a name="topic_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.topicArn"></a>
+##### `topic_arn`<sup>Required</sup> <a name="topic_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.topicArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}.
 
 ---
 
-##### `confirmation_timeout_in_minutes`<sup>Optional</sup> <a name="confirmation_timeout_in_minutes" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.confirmationTimeoutInMinutes"></a>
+##### `confirmation_timeout_in_minutes`<sup>Optional</sup> <a name="confirmation_timeout_in_minutes" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.confirmationTimeoutInMinutes"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}.
 
 ---
 
-##### `delivery_policy`<sup>Optional</sup> <a name="delivery_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.deliveryPolicy"></a>
+##### `delivery_policy`<sup>Optional</sup> <a name="delivery_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.deliveryPolicy"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}.
 
 ---
 
-##### `endpoint_auto_confirms`<sup>Optional</sup> <a name="endpoint_auto_confirms" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpointAutoConfirms"></a>
+##### `endpoint_auto_confirms`<sup>Optional</sup> <a name="endpoint_auto_confirms" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.endpointAutoConfirms"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}.
 
 ---
 
-##### `filter_policy`<sup>Optional</sup> <a name="filter_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicy"></a>
+##### `filter_policy`<sup>Optional</sup> <a name="filter_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicy"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
 
 ---
 
-##### `filter_policy_scope`<sup>Optional</sup> <a name="filter_policy_scope" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicyScope"></a>
+##### `filter_policy_scope`<sup>Optional</sup> <a name="filter_policy_scope" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.filterPolicyScope"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `raw_message_delivery`<sup>Optional</sup> <a name="raw_message_delivery" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.rawMessageDelivery"></a>
+##### `raw_message_delivery`<sup>Optional</sup> <a name="raw_message_delivery" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.rawMessageDelivery"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}.
 
 ---
 
-##### `redrive_policy`<sup>Optional</sup> <a name="redrive_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.redrivePolicy"></a>
+##### `redrive_policy`<sup>Optional</sup> <a name="redrive_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.redrivePolicy"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#region SnsTopicSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#region SnsTopicSubscription#region}
 
 ---
 
-##### `replay_policy`<sup>Optional</sup> <a name="replay_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.replayPolicy"></a>
+##### `replay_policy`<sup>Optional</sup> <a name="replay_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.replayPolicy"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}.
 
 ---
 
-##### `subscription_role_arn`<sup>Optional</sup> <a name="subscription_role_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.subscriptionRoleArn"></a>
+##### `subscription_role_arn`<sup>Optional</sup> <a name="subscription_role_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer.parameter.subscriptionRoleArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}.
 
 ---
 
@@ -247,44 +247,44 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetConfirmationTimeoutInMinutes">reset_confirmation_timeout_in_minutes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetDeliveryPolicy">reset_delivery_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetEndpointAutoConfirms">reset_endpoint_auto_confirms</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicy">reset_filter_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicyScope">reset_filter_policy_scope</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRawMessageDelivery">reset_raw_message_delivery</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRedrivePolicy">reset_redrive_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetReplayPolicy">reset_replay_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetSubscriptionRoleArn">reset_subscription_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetConfirmationTimeoutInMinutes">reset_confirmation_timeout_in_minutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetDeliveryPolicy">reset_delivery_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetEndpointAutoConfirms">reset_endpoint_auto_confirms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicy">reset_filter_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicyScope">reset_filter_policy_scope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRawMessageDelivery">reset_raw_message_delivery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRedrivePolicy">reset_redrive_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetReplayPolicy">reset_replay_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetSubscriptionRoleArn">reset_subscription_role_arn</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toString"></a>
 
 ```python
 def to_string() -> str
@@ -292,7 +292,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride"></a>
 
 ```python
 def add_override(
@@ -301,19 +301,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -323,7 +323,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -331,7 +331,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -339,19 +339,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -359,7 +359,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -369,7 +369,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -377,7 +377,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -385,13 +385,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -399,13 +399,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -413,13 +413,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -427,13 +427,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -441,13 +441,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -455,13 +455,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -469,13 +469,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -483,13 +483,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -497,19 +497,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom"></a>
 
 ```python
 def import_from(
@@ -518,19 +518,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -538,13 +538,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -556,7 +556,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -564,7 +564,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo"></a>
 
 ```python
 def move_to(
@@ -575,7 +575,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -583,7 +583,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -591,7 +591,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -601,7 +601,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -609,67 +609,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_confirmation_timeout_in_minutes` <a name="reset_confirmation_timeout_in_minutes" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetConfirmationTimeoutInMinutes"></a>
+##### `reset_confirmation_timeout_in_minutes` <a name="reset_confirmation_timeout_in_minutes" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetConfirmationTimeoutInMinutes"></a>
 
 ```python
 def reset_confirmation_timeout_in_minutes() -> None
 ```
 
-##### `reset_delivery_policy` <a name="reset_delivery_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetDeliveryPolicy"></a>
+##### `reset_delivery_policy` <a name="reset_delivery_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetDeliveryPolicy"></a>
 
 ```python
 def reset_delivery_policy() -> None
 ```
 
-##### `reset_endpoint_auto_confirms` <a name="reset_endpoint_auto_confirms" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetEndpointAutoConfirms"></a>
+##### `reset_endpoint_auto_confirms` <a name="reset_endpoint_auto_confirms" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetEndpointAutoConfirms"></a>
 
 ```python
 def reset_endpoint_auto_confirms() -> None
 ```
 
-##### `reset_filter_policy` <a name="reset_filter_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicy"></a>
+##### `reset_filter_policy` <a name="reset_filter_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicy"></a>
 
 ```python
 def reset_filter_policy() -> None
 ```
 
-##### `reset_filter_policy_scope` <a name="reset_filter_policy_scope" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicyScope"></a>
+##### `reset_filter_policy_scope` <a name="reset_filter_policy_scope" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetFilterPolicyScope"></a>
 
 ```python
 def reset_filter_policy_scope() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_raw_message_delivery` <a name="reset_raw_message_delivery" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRawMessageDelivery"></a>
+##### `reset_raw_message_delivery` <a name="reset_raw_message_delivery" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRawMessageDelivery"></a>
 
 ```python
 def reset_raw_message_delivery() -> None
 ```
 
-##### `reset_redrive_policy` <a name="reset_redrive_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRedrivePolicy"></a>
+##### `reset_redrive_policy` <a name="reset_redrive_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRedrivePolicy"></a>
 
 ```python
 def reset_redrive_policy() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_replay_policy` <a name="reset_replay_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetReplayPolicy"></a>
+##### `reset_replay_policy` <a name="reset_replay_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetReplayPolicy"></a>
 
 ```python
 def reset_replay_policy() -> None
 ```
 
-##### `reset_subscription_role_arn` <a name="reset_subscription_role_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetSubscriptionRoleArn"></a>
+##### `reset_subscription_role_arn` <a name="reset_subscription_role_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.resetSubscriptionRoleArn"></a>
 
 ```python
 def reset_subscription_role_arn() -> None
@@ -679,17 +679,17 @@ def reset_subscription_role_arn() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SnsTopicSubscription resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SnsTopicSubscription resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import sns_topic_subscription
+from cdktn_provider_aws import sns_topic_subscription
 
 snsTopicSubscription.SnsTopicSubscription.is_construct(
   x: typing.Any
@@ -712,7 +712,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -720,42 +720,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import sns_topic_subscription
+from cdktn_provider_aws import sns_topic_subscription
 
 snsTopicSubscription.SnsTopicSubscription.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import sns_topic_subscription
+from cdktn_provider_aws import sns_topic_subscription
 
 snsTopicSubscription.SnsTopicSubscription.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import sns_topic_subscription
+from cdktn_provider_aws import sns_topic_subscription
 
 snsTopicSubscription.SnsTopicSubscription.generate_config_for_import(
   scope: Construct,
@@ -767,7 +767,7 @@ snsTopicSubscription.SnsTopicSubscription.generate_config_for_import(
 
 Generates CDKTF code for importing a SnsTopicSubscription resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -775,7 +775,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -783,17 +783,17 @@ The construct id used in the generated config for the SnsTopicSubscription to im
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing SnsTopicSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -805,56 +805,56 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationWasAuthenticated">confirmation_was_authenticated</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.pendingConfirmation">pending_confirmation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutesInput">confirmation_timeout_in_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicyInput">delivery_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirmsInput">endpoint_auto_confirms_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyInput">filter_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScopeInput">filter_policy_scope_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocolInput">protocol_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDeliveryInput">raw_message_delivery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicyInput">redrive_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicyInput">replay_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArnInput">subscription_role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArnInput">topic_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutes">confirmation_timeout_in_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicy">delivery_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirms">endpoint_auto_confirms</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicy">filter_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScope">filter_policy_scope</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDelivery">raw_message_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicy">redrive_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicy">replay_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArn">subscription_role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationWasAuthenticated">confirmation_was_authenticated</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.ownerId">owner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.pendingConfirmation">pending_confirmation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutesInput">confirmation_timeout_in_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicyInput">delivery_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirmsInput">endpoint_auto_confirms_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyInput">filter_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScopeInput">filter_policy_scope_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocolInput">protocol_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDeliveryInput">raw_message_delivery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicyInput">redrive_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicyInput">replay_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArnInput">subscription_role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArnInput">topic_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutes">confirmation_timeout_in_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicy">delivery_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirms">endpoint_auto_confirms</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicy">filter_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScope">filter_policy_scope</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDelivery">raw_message_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicy">redrive_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicy">replay_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArn">subscription_role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArn">topic_arn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.node"></a>
 
 ```python
 node: Node
@@ -866,7 +866,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -876,7 +876,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.fqn"></a>
 
 ```python
 fqn: str
@@ -886,7 +886,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -896,7 +896,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -906,7 +906,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -916,7 +916,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -926,7 +926,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -936,7 +936,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -946,7 +946,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -956,7 +956,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -966,7 +966,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -976,7 +976,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -986,7 +986,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -996,7 +996,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.arn"></a>
 
 ```python
 arn: str
@@ -1006,7 +1006,7 @@ arn: str
 
 ---
 
-##### `confirmation_was_authenticated`<sup>Required</sup> <a name="confirmation_was_authenticated" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationWasAuthenticated"></a>
+##### `confirmation_was_authenticated`<sup>Required</sup> <a name="confirmation_was_authenticated" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationWasAuthenticated"></a>
 
 ```python
 confirmation_was_authenticated: IResolvable
@@ -1016,7 +1016,7 @@ confirmation_was_authenticated: IResolvable
 
 ---
 
-##### `owner_id`<sup>Required</sup> <a name="owner_id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.ownerId"></a>
+##### `owner_id`<sup>Required</sup> <a name="owner_id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.ownerId"></a>
 
 ```python
 owner_id: str
@@ -1026,7 +1026,7 @@ owner_id: str
 
 ---
 
-##### `pending_confirmation`<sup>Required</sup> <a name="pending_confirmation" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.pendingConfirmation"></a>
+##### `pending_confirmation`<sup>Required</sup> <a name="pending_confirmation" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.pendingConfirmation"></a>
 
 ```python
 pending_confirmation: IResolvable
@@ -1036,7 +1036,7 @@ pending_confirmation: IResolvable
 
 ---
 
-##### `confirmation_timeout_in_minutes_input`<sup>Optional</sup> <a name="confirmation_timeout_in_minutes_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutesInput"></a>
+##### `confirmation_timeout_in_minutes_input`<sup>Optional</sup> <a name="confirmation_timeout_in_minutes_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutesInput"></a>
 
 ```python
 confirmation_timeout_in_minutes_input: typing.Union[int, float]
@@ -1046,7 +1046,7 @@ confirmation_timeout_in_minutes_input: typing.Union[int, float]
 
 ---
 
-##### `delivery_policy_input`<sup>Optional</sup> <a name="delivery_policy_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicyInput"></a>
+##### `delivery_policy_input`<sup>Optional</sup> <a name="delivery_policy_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicyInput"></a>
 
 ```python
 delivery_policy_input: str
@@ -1056,7 +1056,7 @@ delivery_policy_input: str
 
 ---
 
-##### `endpoint_auto_confirms_input`<sup>Optional</sup> <a name="endpoint_auto_confirms_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirmsInput"></a>
+##### `endpoint_auto_confirms_input`<sup>Optional</sup> <a name="endpoint_auto_confirms_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirmsInput"></a>
 
 ```python
 endpoint_auto_confirms_input: bool | IResolvable
@@ -1066,7 +1066,7 @@ endpoint_auto_confirms_input: bool | IResolvable
 
 ---
 
-##### `endpoint_input`<sup>Optional</sup> <a name="endpoint_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointInput"></a>
+##### `endpoint_input`<sup>Optional</sup> <a name="endpoint_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointInput"></a>
 
 ```python
 endpoint_input: str
@@ -1076,7 +1076,7 @@ endpoint_input: str
 
 ---
 
-##### `filter_policy_input`<sup>Optional</sup> <a name="filter_policy_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyInput"></a>
+##### `filter_policy_input`<sup>Optional</sup> <a name="filter_policy_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyInput"></a>
 
 ```python
 filter_policy_input: str
@@ -1086,7 +1086,7 @@ filter_policy_input: str
 
 ---
 
-##### `filter_policy_scope_input`<sup>Optional</sup> <a name="filter_policy_scope_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScopeInput"></a>
+##### `filter_policy_scope_input`<sup>Optional</sup> <a name="filter_policy_scope_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScopeInput"></a>
 
 ```python
 filter_policy_scope_input: str
@@ -1096,7 +1096,7 @@ filter_policy_scope_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1106,7 +1106,7 @@ id_input: str
 
 ---
 
-##### `protocol_input`<sup>Optional</sup> <a name="protocol_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocolInput"></a>
+##### `protocol_input`<sup>Optional</sup> <a name="protocol_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocolInput"></a>
 
 ```python
 protocol_input: str
@@ -1116,7 +1116,7 @@ protocol_input: str
 
 ---
 
-##### `raw_message_delivery_input`<sup>Optional</sup> <a name="raw_message_delivery_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDeliveryInput"></a>
+##### `raw_message_delivery_input`<sup>Optional</sup> <a name="raw_message_delivery_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDeliveryInput"></a>
 
 ```python
 raw_message_delivery_input: bool | IResolvable
@@ -1126,7 +1126,7 @@ raw_message_delivery_input: bool | IResolvable
 
 ---
 
-##### `redrive_policy_input`<sup>Optional</sup> <a name="redrive_policy_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicyInput"></a>
+##### `redrive_policy_input`<sup>Optional</sup> <a name="redrive_policy_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicyInput"></a>
 
 ```python
 redrive_policy_input: str
@@ -1136,7 +1136,7 @@ redrive_policy_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1146,7 +1146,7 @@ region_input: str
 
 ---
 
-##### `replay_policy_input`<sup>Optional</sup> <a name="replay_policy_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicyInput"></a>
+##### `replay_policy_input`<sup>Optional</sup> <a name="replay_policy_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicyInput"></a>
 
 ```python
 replay_policy_input: str
@@ -1156,7 +1156,7 @@ replay_policy_input: str
 
 ---
 
-##### `subscription_role_arn_input`<sup>Optional</sup> <a name="subscription_role_arn_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArnInput"></a>
+##### `subscription_role_arn_input`<sup>Optional</sup> <a name="subscription_role_arn_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArnInput"></a>
 
 ```python
 subscription_role_arn_input: str
@@ -1166,7 +1166,7 @@ subscription_role_arn_input: str
 
 ---
 
-##### `topic_arn_input`<sup>Optional</sup> <a name="topic_arn_input" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArnInput"></a>
+##### `topic_arn_input`<sup>Optional</sup> <a name="topic_arn_input" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArnInput"></a>
 
 ```python
 topic_arn_input: str
@@ -1176,7 +1176,7 @@ topic_arn_input: str
 
 ---
 
-##### `confirmation_timeout_in_minutes`<sup>Required</sup> <a name="confirmation_timeout_in_minutes" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutes"></a>
+##### `confirmation_timeout_in_minutes`<sup>Required</sup> <a name="confirmation_timeout_in_minutes" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.confirmationTimeoutInMinutes"></a>
 
 ```python
 confirmation_timeout_in_minutes: typing.Union[int, float]
@@ -1186,7 +1186,7 @@ confirmation_timeout_in_minutes: typing.Union[int, float]
 
 ---
 
-##### `delivery_policy`<sup>Required</sup> <a name="delivery_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicy"></a>
+##### `delivery_policy`<sup>Required</sup> <a name="delivery_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.deliveryPolicy"></a>
 
 ```python
 delivery_policy: str
@@ -1196,7 +1196,7 @@ delivery_policy: str
 
 ---
 
-##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpoint"></a>
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpoint"></a>
 
 ```python
 endpoint: str
@@ -1206,7 +1206,7 @@ endpoint: str
 
 ---
 
-##### `endpoint_auto_confirms`<sup>Required</sup> <a name="endpoint_auto_confirms" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirms"></a>
+##### `endpoint_auto_confirms`<sup>Required</sup> <a name="endpoint_auto_confirms" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.endpointAutoConfirms"></a>
 
 ```python
 endpoint_auto_confirms: bool | IResolvable
@@ -1216,7 +1216,7 @@ endpoint_auto_confirms: bool | IResolvable
 
 ---
 
-##### `filter_policy`<sup>Required</sup> <a name="filter_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicy"></a>
+##### `filter_policy`<sup>Required</sup> <a name="filter_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicy"></a>
 
 ```python
 filter_policy: str
@@ -1226,7 +1226,7 @@ filter_policy: str
 
 ---
 
-##### `filter_policy_scope`<sup>Required</sup> <a name="filter_policy_scope" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScope"></a>
+##### `filter_policy_scope`<sup>Required</sup> <a name="filter_policy_scope" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.filterPolicyScope"></a>
 
 ```python
 filter_policy_scope: str
@@ -1236,7 +1236,7 @@ filter_policy_scope: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.id"></a>
 
 ```python
 id: str
@@ -1246,7 +1246,7 @@ id: str
 
 ---
 
-##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocol"></a>
+##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.protocol"></a>
 
 ```python
 protocol: str
@@ -1256,7 +1256,7 @@ protocol: str
 
 ---
 
-##### `raw_message_delivery`<sup>Required</sup> <a name="raw_message_delivery" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDelivery"></a>
+##### `raw_message_delivery`<sup>Required</sup> <a name="raw_message_delivery" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.rawMessageDelivery"></a>
 
 ```python
 raw_message_delivery: bool | IResolvable
@@ -1266,7 +1266,7 @@ raw_message_delivery: bool | IResolvable
 
 ---
 
-##### `redrive_policy`<sup>Required</sup> <a name="redrive_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicy"></a>
+##### `redrive_policy`<sup>Required</sup> <a name="redrive_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.redrivePolicy"></a>
 
 ```python
 redrive_policy: str
@@ -1276,7 +1276,7 @@ redrive_policy: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.region"></a>
 
 ```python
 region: str
@@ -1286,7 +1286,7 @@ region: str
 
 ---
 
-##### `replay_policy`<sup>Required</sup> <a name="replay_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicy"></a>
+##### `replay_policy`<sup>Required</sup> <a name="replay_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.replayPolicy"></a>
 
 ```python
 replay_policy: str
@@ -1296,7 +1296,7 @@ replay_policy: str
 
 ---
 
-##### `subscription_role_arn`<sup>Required</sup> <a name="subscription_role_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArn"></a>
+##### `subscription_role_arn`<sup>Required</sup> <a name="subscription_role_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.subscriptionRoleArn"></a>
 
 ```python
 subscription_role_arn: str
@@ -1306,7 +1306,7 @@ subscription_role_arn: str
 
 ---
 
-##### `topic_arn`<sup>Required</sup> <a name="topic_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArn"></a>
+##### `topic_arn`<sup>Required</sup> <a name="topic_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.topicArn"></a>
 
 ```python
 topic_arn: str
@@ -1320,11 +1320,11 @@ topic_arn: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1336,12 +1336,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SnsTopicSubscriptionConfig <a name="SnsTopicSubscriptionConfig" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig"></a>
+### SnsTopicSubscriptionConfig <a name="SnsTopicSubscriptionConfig" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import sns_topic_subscription
+from cdktn_provider_aws import sns_topic_subscription
 
 snsTopicSubscription.SnsTopicSubscriptionConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1372,31 +1372,31 @@ snsTopicSubscription.SnsTopicSubscriptionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.confirmationTimeoutInMinutes">confirmation_timeout_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.deliveryPolicy">delivery_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpointAutoConfirms">endpoint_auto_confirms</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicy">filter_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicyScope">filter_policy_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.rawMessageDelivery">raw_message_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.redrivePolicy">redrive_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.replayPolicy">replay_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}. |
-| <code><a href="#@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.subscriptionRoleArn">subscription_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpoint">endpoint</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.topicArn">topic_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.confirmationTimeoutInMinutes">confirmation_timeout_in_minutes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.deliveryPolicy">delivery_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpointAutoConfirms">endpoint_auto_confirms</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicy">filter_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicyScope">filter_policy_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.rawMessageDelivery">raw_message_delivery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.redrivePolicy">redrive_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.replayPolicy">replay_policy</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.subscriptionRoleArn">subscription_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1406,7 +1406,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1416,7 +1416,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1426,7 +1426,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1436,7 +1436,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1446,7 +1446,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1456,7 +1456,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1466,7 +1466,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpoint"></a>
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpoint"></a>
 
 ```python
 endpoint: str
@@ -1474,11 +1474,11 @@ endpoint: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}.
 
 ---
 
-##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.protocol"></a>
+##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.protocol"></a>
 
 ```python
 protocol: str
@@ -1486,11 +1486,11 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}.
 
 ---
 
-##### `topic_arn`<sup>Required</sup> <a name="topic_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.topicArn"></a>
+##### `topic_arn`<sup>Required</sup> <a name="topic_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.topicArn"></a>
 
 ```python
 topic_arn: str
@@ -1498,11 +1498,11 @@ topic_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}.
 
 ---
 
-##### `confirmation_timeout_in_minutes`<sup>Optional</sup> <a name="confirmation_timeout_in_minutes" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.confirmationTimeoutInMinutes"></a>
+##### `confirmation_timeout_in_minutes`<sup>Optional</sup> <a name="confirmation_timeout_in_minutes" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.confirmationTimeoutInMinutes"></a>
 
 ```python
 confirmation_timeout_in_minutes: typing.Union[int, float]
@@ -1510,11 +1510,11 @@ confirmation_timeout_in_minutes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}.
 
 ---
 
-##### `delivery_policy`<sup>Optional</sup> <a name="delivery_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.deliveryPolicy"></a>
+##### `delivery_policy`<sup>Optional</sup> <a name="delivery_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.deliveryPolicy"></a>
 
 ```python
 delivery_policy: str
@@ -1522,11 +1522,11 @@ delivery_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}.
 
 ---
 
-##### `endpoint_auto_confirms`<sup>Optional</sup> <a name="endpoint_auto_confirms" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpointAutoConfirms"></a>
+##### `endpoint_auto_confirms`<sup>Optional</sup> <a name="endpoint_auto_confirms" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpointAutoConfirms"></a>
 
 ```python
 endpoint_auto_confirms: bool | IResolvable
@@ -1534,11 +1534,11 @@ endpoint_auto_confirms: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}.
 
 ---
 
-##### `filter_policy`<sup>Optional</sup> <a name="filter_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicy"></a>
+##### `filter_policy`<sup>Optional</sup> <a name="filter_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicy"></a>
 
 ```python
 filter_policy: str
@@ -1546,11 +1546,11 @@ filter_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
 
 ---
 
-##### `filter_policy_scope`<sup>Optional</sup> <a name="filter_policy_scope" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicyScope"></a>
+##### `filter_policy_scope`<sup>Optional</sup> <a name="filter_policy_scope" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicyScope"></a>
 
 ```python
 filter_policy_scope: str
@@ -1558,11 +1558,11 @@ filter_policy_scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.id"></a>
 
 ```python
 id: str
@@ -1570,14 +1570,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `raw_message_delivery`<sup>Optional</sup> <a name="raw_message_delivery" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.rawMessageDelivery"></a>
+##### `raw_message_delivery`<sup>Optional</sup> <a name="raw_message_delivery" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.rawMessageDelivery"></a>
 
 ```python
 raw_message_delivery: bool | IResolvable
@@ -1585,11 +1585,11 @@ raw_message_delivery: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}.
 
 ---
 
-##### `redrive_policy`<sup>Optional</sup> <a name="redrive_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.redrivePolicy"></a>
+##### `redrive_policy`<sup>Optional</sup> <a name="redrive_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.redrivePolicy"></a>
 
 ```python
 redrive_policy: str
@@ -1597,11 +1597,11 @@ redrive_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.region"></a>
 
 ```python
 region: str
@@ -1611,11 +1611,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#region SnsTopicSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#region SnsTopicSubscription#region}
 
 ---
 
-##### `replay_policy`<sup>Optional</sup> <a name="replay_policy" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.replayPolicy"></a>
+##### `replay_policy`<sup>Optional</sup> <a name="replay_policy" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.replayPolicy"></a>
 
 ```python
 replay_policy: str
@@ -1623,11 +1623,11 @@ replay_policy: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}.
 
 ---
 
-##### `subscription_role_arn`<sup>Optional</sup> <a name="subscription_role_arn" id="@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.subscriptionRoleArn"></a>
+##### `subscription_role_arn`<sup>Optional</sup> <a name="subscription_role_arn" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.subscriptionRoleArn"></a>
 
 ```python
 subscription_role_arn: str
@@ -1635,7 +1635,7 @@ subscription_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}.
 
 ---
 

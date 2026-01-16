@@ -1,28 +1,28 @@
-# `cognitoUser` Submodule <a name="`cognitoUser` Submodule" id="@cdktf/provider-aws.cognitoUser"></a>
+# `cognitoUser` Submodule <a name="`cognitoUser` Submodule" id="@cdktn/provider-aws.cognitoUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### CognitoUser <a name="CognitoUser" id="@cdktf/provider-aws.cognitoUser.CognitoUser"></a>
+### CognitoUser <a name="CognitoUser" id="@cdktn/provider-aws.cognitoUser.CognitoUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user aws_cognito_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user aws_cognito_user}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitouser"
 
 cognitouser.NewCognitoUser(scope Construct, id *string, config CognitoUserConfig) CognitoUser
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig">CognitoUserConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig">CognitoUserConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.cognitoUser.CognitoUser.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig">CognitoUserConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig">CognitoUserConfig</a>
 
 ---
 
@@ -50,44 +50,44 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetAttributes">ResetAttributes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetClientMetadata">ResetClientMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetDesiredDeliveryMediums">ResetDesiredDeliveryMediums</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetForceAliasCreation">ResetForceAliasCreation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetMessageAction">ResetMessageAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetRegion">ResetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetTemporaryPassword">ResetTemporaryPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.resetValidationData">ResetValidationData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetAttributes">ResetAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetClientMetadata">ResetClientMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetDesiredDeliveryMediums">ResetDesiredDeliveryMediums</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetEnabled">ResetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetForceAliasCreation">ResetForceAliasCreation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetMessageAction">ResetMessageAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetTemporaryPassword">ResetTemporaryPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.resetValidationData">ResetValidationData</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-aws.cognitoUser.CognitoUser.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.cognitoUser.CognitoUser.toString"></a>
 
 ```go
 func ToString() *string
@@ -95,25 +95,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-aws.cognitoUser.CognitoUser.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-aws.cognitoUser.CognitoUser.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.cognitoUser.CognitoUser.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.cognitoUser.CognitoUser.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.cognitoUser.CognitoUser.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.cognitoUser.CognitoUser.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -121,7 +121,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -129,7 +129,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -137,19 +137,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-aws.cognitoUser.CognitoUser.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-aws.cognitoUser.CognitoUser.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-aws.cognitoUser.CognitoUser.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-aws.cognitoUser.CognitoUser.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-aws.cognitoUser.CognitoUser.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-aws.cognitoUser.CognitoUser.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -157,7 +157,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-aws.cognitoUser.CognitoUser.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-aws.cognitoUser.CognitoUser.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -165,7 +165,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.cognitoUser.CognitoUser.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.cognitoUser.CognitoUser.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -173,151 +173,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-aws.cognitoUser.CognitoUser.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-aws.cognitoUser.CognitoUser.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-aws.cognitoUser.CognitoUser.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-aws.cognitoUser.CognitoUser.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.cognitoUser.CognitoUser.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.cognitoUser.CognitoUser.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.cognitoUser.CognitoUser.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.cognitoUser.CognitoUser.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.cognitoUser.CognitoUser.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.cognitoUser.CognitoUser.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -327,7 +327,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -343,7 +343,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -351,7 +351,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -359,7 +359,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -367,7 +367,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.cognitoUser.CognitoUser.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.cognitoUser.CognitoUser.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -375,67 +375,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAttributes` <a name="ResetAttributes" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetAttributes"></a>
+##### `ResetAttributes` <a name="ResetAttributes" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetAttributes"></a>
 
 ```go
 func ResetAttributes()
 ```
 
-##### `ResetClientMetadata` <a name="ResetClientMetadata" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetClientMetadata"></a>
+##### `ResetClientMetadata` <a name="ResetClientMetadata" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetClientMetadata"></a>
 
 ```go
 func ResetClientMetadata()
 ```
 
-##### `ResetDesiredDeliveryMediums` <a name="ResetDesiredDeliveryMediums" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetDesiredDeliveryMediums"></a>
+##### `ResetDesiredDeliveryMediums` <a name="ResetDesiredDeliveryMediums" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetDesiredDeliveryMediums"></a>
 
 ```go
 func ResetDesiredDeliveryMediums()
 ```
 
-##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetEnabled"></a>
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetEnabled"></a>
 
 ```go
 func ResetEnabled()
 ```
 
-##### `ResetForceAliasCreation` <a name="ResetForceAliasCreation" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetForceAliasCreation"></a>
+##### `ResetForceAliasCreation` <a name="ResetForceAliasCreation" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetForceAliasCreation"></a>
 
 ```go
 func ResetForceAliasCreation()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetMessageAction` <a name="ResetMessageAction" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetMessageAction"></a>
+##### `ResetMessageAction` <a name="ResetMessageAction" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetMessageAction"></a>
 
 ```go
 func ResetMessageAction()
 ```
 
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetPassword"></a>
+##### `ResetPassword` <a name="ResetPassword" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetPassword"></a>
 
 ```go
 func ResetPassword()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetRegion"></a>
 
 ```go
 func ResetRegion()
 ```
 
-##### `ResetTemporaryPassword` <a name="ResetTemporaryPassword" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetTemporaryPassword"></a>
+##### `ResetTemporaryPassword` <a name="ResetTemporaryPassword" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetTemporaryPassword"></a>
 
 ```go
 func ResetTemporaryPassword()
 ```
 
-##### `ResetValidationData` <a name="ResetValidationData" id="@cdktf/provider-aws.cognitoUser.CognitoUser.resetValidationData"></a>
+##### `ResetValidationData` <a name="ResetValidationData" id="@cdktn/provider-aws.cognitoUser.CognitoUser.resetValidationData"></a>
 
 ```go
 func ResetValidationData()
@@ -445,17 +445,17 @@ func ResetValidationData()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CognitoUser resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CognitoUser resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoUser.CognitoUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitouser"
 
 cognitouser.CognitoUser_IsConstruct(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.cognitoUser.CognitoUser.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -484,45 +484,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoUser.CognitoUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitouser"
 
 cognitouser.CognitoUser_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.cognitoUser.CognitoUser.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoUser.CognitoUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitouser"
 
 cognitouser.CognitoUser_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.cognitoUser.CognitoUser.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.cognitoUser.CognitoUser.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-aws.cognitoUser.CognitoUser.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoUser.CognitoUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitouser"
 
 cognitouser.CognitoUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a CognitoUser resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -530,7 +530,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -538,17 +538,17 @@ The construct id used in the generated config for the CognitoUser to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing CognitoUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.cognitoUser.CognitoUser.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -560,56 +560,56 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.creationDate">CreationDate</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.lastModifiedDate">LastModifiedDate</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.mfaSettingList">MfaSettingList</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.preferredMfaSetting">PreferredMfaSetting</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.status">Status</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.sub">Sub</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.attributesInput">AttributesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.clientMetadataInput">ClientMetadataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediumsInput">DesiredDeliveryMediumsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreationInput">ForceAliasCreationInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.messageActionInput">MessageActionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.temporaryPasswordInput">TemporaryPasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.userPoolIdInput">UserPoolIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.validationDataInput">ValidationDataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.clientMetadata">ClientMetadata</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediums">DesiredDeliveryMediums</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreation">ForceAliasCreation</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.messageAction">MessageAction</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.password">Password</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.temporaryPassword">TemporaryPassword</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.username">Username</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.validationData">ValidationData</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.creationDate">CreationDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.lastModifiedDate">LastModifiedDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.mfaSettingList">MfaSettingList</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.preferredMfaSetting">PreferredMfaSetting</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.sub">Sub</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.attributesInput">AttributesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.clientMetadataInput">ClientMetadataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediumsInput">DesiredDeliveryMediumsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreationInput">ForceAliasCreationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.messageActionInput">MessageActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.temporaryPasswordInput">TemporaryPasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.userPoolIdInput">UserPoolIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.validationDataInput">ValidationDataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.clientMetadata">ClientMetadata</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediums">DesiredDeliveryMediums</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreation">ForceAliasCreation</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.messageAction">MessageAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.temporaryPassword">TemporaryPassword</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.username">Username</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.validationData">ValidationData</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.node"></a>
 
 ```go
 func Node() Node
@@ -621,7 +621,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -631,7 +631,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -641,7 +641,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -651,7 +651,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -661,7 +661,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -671,7 +671,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -681,7 +681,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -691,7 +691,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -701,7 +701,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -711,7 +711,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -721,7 +721,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -731,7 +731,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -741,7 +741,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -751,7 +751,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CreationDate`<sup>Required</sup> <a name="CreationDate" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.creationDate"></a>
+##### `CreationDate`<sup>Required</sup> <a name="CreationDate" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.creationDate"></a>
 
 ```go
 func CreationDate() *string
@@ -761,7 +761,7 @@ func CreationDate() *string
 
 ---
 
-##### `LastModifiedDate`<sup>Required</sup> <a name="LastModifiedDate" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.lastModifiedDate"></a>
+##### `LastModifiedDate`<sup>Required</sup> <a name="LastModifiedDate" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.lastModifiedDate"></a>
 
 ```go
 func LastModifiedDate() *string
@@ -771,7 +771,7 @@ func LastModifiedDate() *string
 
 ---
 
-##### `MfaSettingList`<sup>Required</sup> <a name="MfaSettingList" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.mfaSettingList"></a>
+##### `MfaSettingList`<sup>Required</sup> <a name="MfaSettingList" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.mfaSettingList"></a>
 
 ```go
 func MfaSettingList() *[]*string
@@ -781,7 +781,7 @@ func MfaSettingList() *[]*string
 
 ---
 
-##### `PreferredMfaSetting`<sup>Required</sup> <a name="PreferredMfaSetting" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.preferredMfaSetting"></a>
+##### `PreferredMfaSetting`<sup>Required</sup> <a name="PreferredMfaSetting" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.preferredMfaSetting"></a>
 
 ```go
 func PreferredMfaSetting() *string
@@ -791,7 +791,7 @@ func PreferredMfaSetting() *string
 
 ---
 
-##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.status"></a>
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.status"></a>
 
 ```go
 func Status() *string
@@ -801,7 +801,7 @@ func Status() *string
 
 ---
 
-##### `Sub`<sup>Required</sup> <a name="Sub" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.sub"></a>
+##### `Sub`<sup>Required</sup> <a name="Sub" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.sub"></a>
 
 ```go
 func Sub() *string
@@ -811,7 +811,7 @@ func Sub() *string
 
 ---
 
-##### `AttributesInput`<sup>Optional</sup> <a name="AttributesInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.attributesInput"></a>
+##### `AttributesInput`<sup>Optional</sup> <a name="AttributesInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.attributesInput"></a>
 
 ```go
 func AttributesInput() *map[string]*string
@@ -821,7 +821,7 @@ func AttributesInput() *map[string]*string
 
 ---
 
-##### `ClientMetadataInput`<sup>Optional</sup> <a name="ClientMetadataInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.clientMetadataInput"></a>
+##### `ClientMetadataInput`<sup>Optional</sup> <a name="ClientMetadataInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.clientMetadataInput"></a>
 
 ```go
 func ClientMetadataInput() *map[string]*string
@@ -831,7 +831,7 @@ func ClientMetadataInput() *map[string]*string
 
 ---
 
-##### `DesiredDeliveryMediumsInput`<sup>Optional</sup> <a name="DesiredDeliveryMediumsInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediumsInput"></a>
+##### `DesiredDeliveryMediumsInput`<sup>Optional</sup> <a name="DesiredDeliveryMediumsInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediumsInput"></a>
 
 ```go
 func DesiredDeliveryMediumsInput() *[]*string
@@ -841,7 +841,7 @@ func DesiredDeliveryMediumsInput() *[]*string
 
 ---
 
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.enabledInput"></a>
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.enabledInput"></a>
 
 ```go
 func EnabledInput() interface{}
@@ -851,7 +851,7 @@ func EnabledInput() interface{}
 
 ---
 
-##### `ForceAliasCreationInput`<sup>Optional</sup> <a name="ForceAliasCreationInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreationInput"></a>
+##### `ForceAliasCreationInput`<sup>Optional</sup> <a name="ForceAliasCreationInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreationInput"></a>
 
 ```go
 func ForceAliasCreationInput() interface{}
@@ -861,7 +861,7 @@ func ForceAliasCreationInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -871,7 +871,7 @@ func IdInput() *string
 
 ---
 
-##### `MessageActionInput`<sup>Optional</sup> <a name="MessageActionInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.messageActionInput"></a>
+##### `MessageActionInput`<sup>Optional</sup> <a name="MessageActionInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.messageActionInput"></a>
 
 ```go
 func MessageActionInput() *string
@@ -881,7 +881,7 @@ func MessageActionInput() *string
 
 ---
 
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.passwordInput"></a>
+##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.passwordInput"></a>
 
 ```go
 func PasswordInput() *string
@@ -891,7 +891,7 @@ func PasswordInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -901,7 +901,7 @@ func RegionInput() *string
 
 ---
 
-##### `TemporaryPasswordInput`<sup>Optional</sup> <a name="TemporaryPasswordInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.temporaryPasswordInput"></a>
+##### `TemporaryPasswordInput`<sup>Optional</sup> <a name="TemporaryPasswordInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.temporaryPasswordInput"></a>
 
 ```go
 func TemporaryPasswordInput() *string
@@ -911,7 +911,7 @@ func TemporaryPasswordInput() *string
 
 ---
 
-##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.usernameInput"></a>
+##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.usernameInput"></a>
 
 ```go
 func UsernameInput() *string
@@ -921,7 +921,7 @@ func UsernameInput() *string
 
 ---
 
-##### `UserPoolIdInput`<sup>Optional</sup> <a name="UserPoolIdInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.userPoolIdInput"></a>
+##### `UserPoolIdInput`<sup>Optional</sup> <a name="UserPoolIdInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.userPoolIdInput"></a>
 
 ```go
 func UserPoolIdInput() *string
@@ -931,7 +931,7 @@ func UserPoolIdInput() *string
 
 ---
 
-##### `ValidationDataInput`<sup>Optional</sup> <a name="ValidationDataInput" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.validationDataInput"></a>
+##### `ValidationDataInput`<sup>Optional</sup> <a name="ValidationDataInput" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.validationDataInput"></a>
 
 ```go
 func ValidationDataInput() *map[string]*string
@@ -941,7 +941,7 @@ func ValidationDataInput() *map[string]*string
 
 ---
 
-##### `Attributes`<sup>Required</sup> <a name="Attributes" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.attributes"></a>
+##### `Attributes`<sup>Required</sup> <a name="Attributes" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.attributes"></a>
 
 ```go
 func Attributes() *map[string]*string
@@ -951,7 +951,7 @@ func Attributes() *map[string]*string
 
 ---
 
-##### `ClientMetadata`<sup>Required</sup> <a name="ClientMetadata" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.clientMetadata"></a>
+##### `ClientMetadata`<sup>Required</sup> <a name="ClientMetadata" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.clientMetadata"></a>
 
 ```go
 func ClientMetadata() *map[string]*string
@@ -961,7 +961,7 @@ func ClientMetadata() *map[string]*string
 
 ---
 
-##### `DesiredDeliveryMediums`<sup>Required</sup> <a name="DesiredDeliveryMediums" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediums"></a>
+##### `DesiredDeliveryMediums`<sup>Required</sup> <a name="DesiredDeliveryMediums" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.desiredDeliveryMediums"></a>
 
 ```go
 func DesiredDeliveryMediums() *[]*string
@@ -971,7 +971,7 @@ func DesiredDeliveryMediums() *[]*string
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.enabled"></a>
 
 ```go
 func Enabled() interface{}
@@ -981,7 +981,7 @@ func Enabled() interface{}
 
 ---
 
-##### `ForceAliasCreation`<sup>Required</sup> <a name="ForceAliasCreation" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreation"></a>
+##### `ForceAliasCreation`<sup>Required</sup> <a name="ForceAliasCreation" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.forceAliasCreation"></a>
 
 ```go
 func ForceAliasCreation() interface{}
@@ -991,7 +991,7 @@ func ForceAliasCreation() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.id"></a>
 
 ```go
 func Id() *string
@@ -1001,7 +1001,7 @@ func Id() *string
 
 ---
 
-##### `MessageAction`<sup>Required</sup> <a name="MessageAction" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.messageAction"></a>
+##### `MessageAction`<sup>Required</sup> <a name="MessageAction" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.messageAction"></a>
 
 ```go
 func MessageAction() *string
@@ -1011,7 +1011,7 @@ func MessageAction() *string
 
 ---
 
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.password"></a>
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.password"></a>
 
 ```go
 func Password() *string
@@ -1021,7 +1021,7 @@ func Password() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.region"></a>
 
 ```go
 func Region() *string
@@ -1031,7 +1031,7 @@ func Region() *string
 
 ---
 
-##### `TemporaryPassword`<sup>Required</sup> <a name="TemporaryPassword" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.temporaryPassword"></a>
+##### `TemporaryPassword`<sup>Required</sup> <a name="TemporaryPassword" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.temporaryPassword"></a>
 
 ```go
 func TemporaryPassword() *string
@@ -1041,7 +1041,7 @@ func TemporaryPassword() *string
 
 ---
 
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.username"></a>
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.username"></a>
 
 ```go
 func Username() *string
@@ -1051,7 +1051,7 @@ func Username() *string
 
 ---
 
-##### `UserPoolId`<sup>Required</sup> <a name="UserPoolId" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.userPoolId"></a>
+##### `UserPoolId`<sup>Required</sup> <a name="UserPoolId" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.userPoolId"></a>
 
 ```go
 func UserPoolId() *string
@@ -1061,7 +1061,7 @@ func UserPoolId() *string
 
 ---
 
-##### `ValidationData`<sup>Required</sup> <a name="ValidationData" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.validationData"></a>
+##### `ValidationData`<sup>Required</sup> <a name="ValidationData" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.validationData"></a>
 
 ```go
 func ValidationData() *map[string]*string
@@ -1075,11 +1075,11 @@ func ValidationData() *map[string]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUser.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUser.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-aws.cognitoUser.CognitoUser.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-aws.cognitoUser.CognitoUser.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1091,12 +1091,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### CognitoUserConfig <a name="CognitoUserConfig" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig"></a>
+### CognitoUserConfig <a name="CognitoUserConfig" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitouser"
 
 &cognitouser.CognitoUserConfig {
 	Connection: interface{},
@@ -1126,30 +1126,30 @@ import "github.com/cdktf/cdktf-provider-aws-go/aws/v21/cognitouser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#username CognitoUser#username}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#attributes CognitoUser#attributes}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.clientMetadata">ClientMetadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.desiredDeliveryMediums">DesiredDeliveryMediums</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#enabled CognitoUser#enabled}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.forceAliasCreation">ForceAliasCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#id CognitoUser#id}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.messageAction">MessageAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#message_action CognitoUser#message_action}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#password CognitoUser#password}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.temporaryPassword">TemporaryPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}. |
-| <code><a href="#@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.validationData">ValidationData</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#username CognitoUser#username}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#attributes CognitoUser#attributes}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.clientMetadata">ClientMetadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.desiredDeliveryMediums">DesiredDeliveryMediums</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#enabled CognitoUser#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.forceAliasCreation">ForceAliasCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#id CognitoUser#id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.messageAction">MessageAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#message_action CognitoUser#message_action}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#password CognitoUser#password}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.temporaryPassword">TemporaryPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}. |
+| <code><a href="#@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.validationData">ValidationData</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1159,7 +1159,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1169,7 +1169,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1179,7 +1179,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1189,7 +1189,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1199,7 +1199,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1209,7 +1209,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1219,7 +1219,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.username"></a>
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.username"></a>
 
 ```go
 Username *string
@@ -1227,11 +1227,11 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#username CognitoUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#username CognitoUser#username}.
 
 ---
 
-##### `UserPoolId`<sup>Required</sup> <a name="UserPoolId" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.userPoolId"></a>
+##### `UserPoolId`<sup>Required</sup> <a name="UserPoolId" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.userPoolId"></a>
 
 ```go
 UserPoolId *string
@@ -1239,11 +1239,11 @@ UserPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#user_pool_id CognitoUser#user_pool_id}.
 
 ---
 
-##### `Attributes`<sup>Optional</sup> <a name="Attributes" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.attributes"></a>
+##### `Attributes`<sup>Optional</sup> <a name="Attributes" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.attributes"></a>
 
 ```go
 Attributes *map[string]*string
@@ -1251,11 +1251,11 @@ Attributes *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#attributes CognitoUser#attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#attributes CognitoUser#attributes}.
 
 ---
 
-##### `ClientMetadata`<sup>Optional</sup> <a name="ClientMetadata" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.clientMetadata"></a>
+##### `ClientMetadata`<sup>Optional</sup> <a name="ClientMetadata" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.clientMetadata"></a>
 
 ```go
 ClientMetadata *map[string]*string
@@ -1263,11 +1263,11 @@ ClientMetadata *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#client_metadata CognitoUser#client_metadata}.
 
 ---
 
-##### `DesiredDeliveryMediums`<sup>Optional</sup> <a name="DesiredDeliveryMediums" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.desiredDeliveryMediums"></a>
+##### `DesiredDeliveryMediums`<sup>Optional</sup> <a name="DesiredDeliveryMediums" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.desiredDeliveryMediums"></a>
 
 ```go
 DesiredDeliveryMediums *[]*string
@@ -1275,11 +1275,11 @@ DesiredDeliveryMediums *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#desired_delivery_mediums CognitoUser#desired_delivery_mediums}.
 
 ---
 
-##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.enabled"></a>
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.enabled"></a>
 
 ```go
 Enabled interface{}
@@ -1287,11 +1287,11 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#enabled CognitoUser#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#enabled CognitoUser#enabled}.
 
 ---
 
-##### `ForceAliasCreation`<sup>Optional</sup> <a name="ForceAliasCreation" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.forceAliasCreation"></a>
+##### `ForceAliasCreation`<sup>Optional</sup> <a name="ForceAliasCreation" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.forceAliasCreation"></a>
 
 ```go
 ForceAliasCreation interface{}
@@ -1299,11 +1299,11 @@ ForceAliasCreation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#force_alias_creation CognitoUser#force_alias_creation}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1311,14 +1311,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#id CognitoUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#id CognitoUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `MessageAction`<sup>Optional</sup> <a name="MessageAction" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.messageAction"></a>
+##### `MessageAction`<sup>Optional</sup> <a name="MessageAction" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.messageAction"></a>
 
 ```go
 MessageAction *string
@@ -1326,11 +1326,11 @@ MessageAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#message_action CognitoUser#message_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#message_action CognitoUser#message_action}.
 
 ---
 
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.password"></a>
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.password"></a>
 
 ```go
 Password *string
@@ -1338,11 +1338,11 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#password CognitoUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#password CognitoUser#password}.
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.region"></a>
 
 ```go
 Region *string
@@ -1352,11 +1352,11 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#region CognitoUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#region CognitoUser#region}
 
 ---
 
-##### `TemporaryPassword`<sup>Optional</sup> <a name="TemporaryPassword" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.temporaryPassword"></a>
+##### `TemporaryPassword`<sup>Optional</sup> <a name="TemporaryPassword" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.temporaryPassword"></a>
 
 ```go
 TemporaryPassword *string
@@ -1364,11 +1364,11 @@ TemporaryPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#temporary_password CognitoUser#temporary_password}.
 
 ---
 
-##### `ValidationData`<sup>Optional</sup> <a name="ValidationData" id="@cdktf/provider-aws.cognitoUser.CognitoUserConfig.property.validationData"></a>
+##### `ValidationData`<sup>Optional</sup> <a name="ValidationData" id="@cdktn/provider-aws.cognitoUser.CognitoUserConfig.property.validationData"></a>
 
 ```go
 ValidationData *map[string]*string
@@ -1376,7 +1376,7 @@ ValidationData *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_user#validation_data CognitoUser#validation_data}.
 
 ---
 

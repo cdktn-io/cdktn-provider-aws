@@ -1,28 +1,28 @@
-# `mediaConvertQueue` Submodule <a name="`mediaConvertQueue` Submodule" id="@cdktf/provider-aws.mediaConvertQueue"></a>
+# `mediaConvertQueue` Submodule <a name="`mediaConvertQueue` Submodule" id="@cdktn/provider-aws.mediaConvertQueue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### MediaConvertQueue <a name="MediaConvertQueue" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue"></a>
+### MediaConvertQueue <a name="MediaConvertQueue" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue aws_media_convert_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue aws_media_convert_queue}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 new mediaConvertQueue.MediaConvertQueue(scope: Construct, id: string, config: MediaConvertQueueConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig">MediaConvertQueueConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig">MediaConvertQueueConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig">MediaConvertQueueConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig">MediaConvertQueueConfig</a>
 
 ---
 
@@ -50,43 +50,43 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.putReservationPlanSettings">putReservationPlanSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetConcurrentJobs">resetConcurrentJobs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetPricingPlan">resetPricingPlan</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetReservationPlanSettings">resetReservationPlanSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetStatus">resetStatus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.putReservationPlanSettings">putReservationPlanSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetConcurrentJobs">resetConcurrentJobs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetPricingPlan">resetPricingPlan</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetReservationPlanSettings">resetReservationPlanSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetStatus">resetStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTagsAll">resetTagsAll</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toString"></a>
 
 ```typescript
 public toString(): string
@@ -94,25 +94,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -120,7 +120,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -128,7 +128,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -136,19 +136,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -156,7 +156,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -164,7 +164,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -172,151 +172,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -326,7 +326,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -342,7 +342,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -358,7 +358,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -366,7 +366,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -374,67 +374,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putReservationPlanSettings` <a name="putReservationPlanSettings" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.putReservationPlanSettings"></a>
+##### `putReservationPlanSettings` <a name="putReservationPlanSettings" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.putReservationPlanSettings"></a>
 
 ```typescript
 public putReservationPlanSettings(value: MediaConvertQueueReservationPlanSettings): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.putReservationPlanSettings.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.putReservationPlanSettings.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
+- *Type:* <a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
 
 ---
 
-##### `resetConcurrentJobs` <a name="resetConcurrentJobs" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetConcurrentJobs"></a>
+##### `resetConcurrentJobs` <a name="resetConcurrentJobs" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetConcurrentJobs"></a>
 
 ```typescript
 public resetConcurrentJobs(): void
 ```
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetPricingPlan` <a name="resetPricingPlan" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetPricingPlan"></a>
+##### `resetPricingPlan` <a name="resetPricingPlan" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetPricingPlan"></a>
 
 ```typescript
 public resetPricingPlan(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetReservationPlanSettings` <a name="resetReservationPlanSettings" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetReservationPlanSettings"></a>
+##### `resetReservationPlanSettings` <a name="resetReservationPlanSettings" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetReservationPlanSettings"></a>
 
 ```typescript
 public resetReservationPlanSettings(): void
 ```
 
-##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetStatus"></a>
+##### `resetStatus` <a name="resetStatus" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetStatus"></a>
 
 ```typescript
 public resetStatus(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
@@ -444,17 +444,17 @@ public resetTagsAll(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a MediaConvertQueue resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a MediaConvertQueue resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 mediaConvertQueue.MediaConvertQueue.isConstruct(x: any)
 ```
@@ -475,7 +475,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -483,45 +483,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 mediaConvertQueue.MediaConvertQueue.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 mediaConvertQueue.MediaConvertQueue.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 mediaConvertQueue.MediaConvertQueue.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a MediaConvertQueue resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -529,7 +529,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -537,17 +537,17 @@ The construct id used in the generated config for the MediaConvertQueue to impor
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing MediaConvertQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -559,45 +559,45 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.arn">arn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettings">reservationPlanSettings</a></code> | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference">MediaConvertQueueReservationPlanSettingsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobsInput">concurrentJobsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlanInput">pricingPlanInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettingsInput">reservationPlanSettingsInput</a></code> | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobs">concurrentJobs</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.arn">arn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettings">reservationPlanSettings</a></code> | <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference">MediaConvertQueueReservationPlanSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobsInput">concurrentJobsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlanInput">pricingPlanInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettingsInput">reservationPlanSettingsInput</a></code> | <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobs">concurrentJobs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -609,7 +609,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -619,7 +619,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -629,7 +629,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -639,7 +639,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -649,7 +649,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -659,7 +659,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -669,7 +669,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -679,7 +679,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -689,7 +689,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -699,7 +699,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -709,7 +709,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -719,7 +719,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -729,7 +729,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -739,7 +739,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.arn"></a>
 
 ```typescript
 public readonly arn: string;
@@ -749,17 +749,17 @@ public readonly arn: string;
 
 ---
 
-##### `reservationPlanSettings`<sup>Required</sup> <a name="reservationPlanSettings" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettings"></a>
+##### `reservationPlanSettings`<sup>Required</sup> <a name="reservationPlanSettings" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettings"></a>
 
 ```typescript
 public readonly reservationPlanSettings: MediaConvertQueueReservationPlanSettingsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference">MediaConvertQueueReservationPlanSettingsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference">MediaConvertQueueReservationPlanSettingsOutputReference</a>
 
 ---
 
-##### `concurrentJobsInput`<sup>Optional</sup> <a name="concurrentJobsInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobsInput"></a>
+##### `concurrentJobsInput`<sup>Optional</sup> <a name="concurrentJobsInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobsInput"></a>
 
 ```typescript
 public readonly concurrentJobsInput: number;
@@ -769,7 +769,7 @@ public readonly concurrentJobsInput: number;
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -779,7 +779,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -789,7 +789,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -799,7 +799,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `pricingPlanInput`<sup>Optional</sup> <a name="pricingPlanInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlanInput"></a>
+##### `pricingPlanInput`<sup>Optional</sup> <a name="pricingPlanInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlanInput"></a>
 
 ```typescript
 public readonly pricingPlanInput: string;
@@ -809,7 +809,7 @@ public readonly pricingPlanInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -819,17 +819,17 @@ public readonly regionInput: string;
 
 ---
 
-##### `reservationPlanSettingsInput`<sup>Optional</sup> <a name="reservationPlanSettingsInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettingsInput"></a>
+##### `reservationPlanSettingsInput`<sup>Optional</sup> <a name="reservationPlanSettingsInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.reservationPlanSettingsInput"></a>
 
 ```typescript
 public readonly reservationPlanSettingsInput: MediaConvertQueueReservationPlanSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
+- *Type:* <a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
 
 ---
 
-##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.statusInput"></a>
+##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.statusInput"></a>
 
 ```typescript
 public readonly statusInput: string;
@@ -839,7 +839,7 @@ public readonly statusInput: string;
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -849,7 +849,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -859,7 +859,7 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `concurrentJobs`<sup>Required</sup> <a name="concurrentJobs" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobs"></a>
+##### `concurrentJobs`<sup>Required</sup> <a name="concurrentJobs" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.concurrentJobs"></a>
 
 ```typescript
 public readonly concurrentJobs: number;
@@ -869,7 +869,7 @@ public readonly concurrentJobs: number;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -879,7 +879,7 @@ public readonly description: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -889,7 +889,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -899,7 +899,7 @@ public readonly name: string;
 
 ---
 
-##### `pricingPlan`<sup>Required</sup> <a name="pricingPlan" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlan"></a>
+##### `pricingPlan`<sup>Required</sup> <a name="pricingPlan" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.pricingPlan"></a>
 
 ```typescript
 public readonly pricingPlan: string;
@@ -909,7 +909,7 @@ public readonly pricingPlan: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -919,7 +919,7 @@ public readonly region: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -929,7 +929,7 @@ public readonly status: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -939,7 +939,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -953,11 +953,11 @@ public readonly tagsAll: {[ key: string ]: string};
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueue.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -969,12 +969,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### MediaConvertQueueConfig <a name="MediaConvertQueueConfig" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig"></a>
+### MediaConvertQueueConfig <a name="MediaConvertQueueConfig" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.Initializer"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 const mediaConvertQueueConfig: mediaConvertQueue.MediaConvertQueueConfig = { ... }
 ```
@@ -983,27 +983,27 @@ const mediaConvertQueueConfig: mediaConvertQueue.MediaConvertQueueConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.concurrentJobs">concurrentJobs</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#concurrent_jobs MediaConvertQueue#concurrent_jobs}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.reservationPlanSettings">reservationPlanSettings</a></code> | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | reservation_plan_settings block. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.concurrentJobs">concurrentJobs</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#concurrent_jobs MediaConvertQueue#concurrent_jobs}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.reservationPlanSettings">reservationPlanSettings</a></code> | <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | reservation_plan_settings block. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1013,7 +1013,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1023,7 +1023,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1033,7 +1033,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1043,7 +1043,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1053,7 +1053,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1063,7 +1063,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1073,7 +1073,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1081,11 +1081,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#name MediaConvertQueue#name}.
 
 ---
 
-##### `concurrentJobs`<sup>Optional</sup> <a name="concurrentJobs" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.concurrentJobs"></a>
+##### `concurrentJobs`<sup>Optional</sup> <a name="concurrentJobs" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.concurrentJobs"></a>
 
 ```typescript
 public readonly concurrentJobs: number;
@@ -1093,11 +1093,11 @@ public readonly concurrentJobs: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#concurrent_jobs MediaConvertQueue#concurrent_jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#concurrent_jobs MediaConvertQueue#concurrent_jobs}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1105,11 +1105,11 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#description MediaConvertQueue#description}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1117,14 +1117,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#id MediaConvertQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `pricingPlan`<sup>Optional</sup> <a name="pricingPlan" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.pricingPlan"></a>
+##### `pricingPlan`<sup>Optional</sup> <a name="pricingPlan" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.pricingPlan"></a>
 
 ```typescript
 public readonly pricingPlan: string;
@@ -1132,11 +1132,11 @@ public readonly pricingPlan: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#pricing_plan MediaConvertQueue#pricing_plan}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1146,25 +1146,25 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#region MediaConvertQueue#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#region MediaConvertQueue#region}
 
 ---
 
-##### `reservationPlanSettings`<sup>Optional</sup> <a name="reservationPlanSettings" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.reservationPlanSettings"></a>
+##### `reservationPlanSettings`<sup>Optional</sup> <a name="reservationPlanSettings" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.reservationPlanSettings"></a>
 
 ```typescript
 public readonly reservationPlanSettings: MediaConvertQueueReservationPlanSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
+- *Type:* <a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
 
 reservation_plan_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#reservation_plan_settings MediaConvertQueue#reservation_plan_settings}
 
 ---
 
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.status"></a>
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -1172,11 +1172,11 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#status MediaConvertQueue#status}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1184,11 +1184,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#tags MediaConvertQueue#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1196,16 +1196,16 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#tags_all MediaConvertQueue#tags_all}.
 
 ---
 
-### MediaConvertQueueReservationPlanSettings <a name="MediaConvertQueueReservationPlanSettings" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings"></a>
+### MediaConvertQueueReservationPlanSettings <a name="MediaConvertQueueReservationPlanSettings" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.Initializer"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 const mediaConvertQueueReservationPlanSettings: mediaConvertQueue.MediaConvertQueueReservationPlanSettings = { ... }
 ```
@@ -1214,13 +1214,13 @@ const mediaConvertQueueReservationPlanSettings: mediaConvertQueue.MediaConvertQu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.commitment">commitment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.renewalType">renewalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.reservedSlots">reservedSlots</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.commitment">commitment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.renewalType">renewalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.reservedSlots">reservedSlots</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}. |
 
 ---
 
-##### `commitment`<sup>Required</sup> <a name="commitment" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.commitment"></a>
+##### `commitment`<sup>Required</sup> <a name="commitment" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.commitment"></a>
 
 ```typescript
 public readonly commitment: string;
@@ -1228,11 +1228,11 @@ public readonly commitment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#commitment MediaConvertQueue#commitment}.
 
 ---
 
-##### `renewalType`<sup>Required</sup> <a name="renewalType" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.renewalType"></a>
+##### `renewalType`<sup>Required</sup> <a name="renewalType" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.renewalType"></a>
 
 ```typescript
 public readonly renewalType: string;
@@ -1240,11 +1240,11 @@ public readonly renewalType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#renewal_type MediaConvertQueue#renewal_type}.
 
 ---
 
-##### `reservedSlots`<sup>Required</sup> <a name="reservedSlots" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.reservedSlots"></a>
+##### `reservedSlots`<sup>Required</sup> <a name="reservedSlots" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings.property.reservedSlots"></a>
 
 ```typescript
 public readonly reservedSlots: number;
@@ -1252,30 +1252,30 @@ public readonly reservedSlots: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/media_convert_queue#reserved_slots MediaConvertQueue#reserved_slots}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### MediaConvertQueueReservationPlanSettingsOutputReference <a name="MediaConvertQueueReservationPlanSettingsOutputReference" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference"></a>
+### MediaConvertQueueReservationPlanSettingsOutputReference <a name="MediaConvertQueueReservationPlanSettingsOutputReference" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer"></a>
 
 ```typescript
-import { mediaConvertQueue } from '@cdktf/provider-aws'
+import { mediaConvertQueue } from '@cdktn/provider-aws'
 
 new mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1283,7 +1283,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1295,149 +1295,149 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1445,13 +1445,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1466,19 +1466,19 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitmentInput">commitmentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalTypeInput">renewalTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlotsInput">reservedSlotsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitment">commitment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalType">renewalType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlots">reservedSlots</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitmentInput">commitmentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalTypeInput">renewalTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlotsInput">reservedSlotsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitment">commitment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalType">renewalType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlots">reservedSlots</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1492,7 +1492,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1502,7 +1502,7 @@ public readonly fqn: string;
 
 ---
 
-##### `commitmentInput`<sup>Optional</sup> <a name="commitmentInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitmentInput"></a>
+##### `commitmentInput`<sup>Optional</sup> <a name="commitmentInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitmentInput"></a>
 
 ```typescript
 public readonly commitmentInput: string;
@@ -1512,7 +1512,7 @@ public readonly commitmentInput: string;
 
 ---
 
-##### `renewalTypeInput`<sup>Optional</sup> <a name="renewalTypeInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalTypeInput"></a>
+##### `renewalTypeInput`<sup>Optional</sup> <a name="renewalTypeInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalTypeInput"></a>
 
 ```typescript
 public readonly renewalTypeInput: string;
@@ -1522,7 +1522,7 @@ public readonly renewalTypeInput: string;
 
 ---
 
-##### `reservedSlotsInput`<sup>Optional</sup> <a name="reservedSlotsInput" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlotsInput"></a>
+##### `reservedSlotsInput`<sup>Optional</sup> <a name="reservedSlotsInput" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlotsInput"></a>
 
 ```typescript
 public readonly reservedSlotsInput: number;
@@ -1532,7 +1532,7 @@ public readonly reservedSlotsInput: number;
 
 ---
 
-##### `commitment`<sup>Required</sup> <a name="commitment" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitment"></a>
+##### `commitment`<sup>Required</sup> <a name="commitment" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.commitment"></a>
 
 ```typescript
 public readonly commitment: string;
@@ -1542,7 +1542,7 @@ public readonly commitment: string;
 
 ---
 
-##### `renewalType`<sup>Required</sup> <a name="renewalType" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalType"></a>
+##### `renewalType`<sup>Required</sup> <a name="renewalType" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.renewalType"></a>
 
 ```typescript
 public readonly renewalType: string;
@@ -1552,7 +1552,7 @@ public readonly renewalType: string;
 
 ---
 
-##### `reservedSlots`<sup>Required</sup> <a name="reservedSlots" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlots"></a>
+##### `reservedSlots`<sup>Required</sup> <a name="reservedSlots" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.reservedSlots"></a>
 
 ```typescript
 public readonly reservedSlots: number;
@@ -1562,13 +1562,13 @@ public readonly reservedSlots: number;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: MediaConvertQueueReservationPlanSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
+- *Type:* <a href="#@cdktn/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings">MediaConvertQueueReservationPlanSettings</a>
 
 ---
 

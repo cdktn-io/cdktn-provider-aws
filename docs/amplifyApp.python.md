@@ -1,15 +1,15 @@
-# `amplifyApp` Submodule <a name="`amplifyApp` Submodule" id="@cdktf/provider-aws.amplifyApp"></a>
+# `amplifyApp` Submodule <a name="`amplifyApp` Submodule" id="@cdktn/provider-aws.amplifyApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AmplifyApp <a name="AmplifyApp" id="@cdktf/provider-aws.amplifyApp.AmplifyApp"></a>
+### AmplifyApp <a name="AmplifyApp" id="@cdktn/provider-aws.amplifyApp.AmplifyApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app aws_amplify_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app aws_amplify_app}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyApp(
   scope: Construct,
@@ -51,44 +51,44 @@ amplifyApp.AmplifyApp(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#name AmplifyApp#name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.accessToken">access_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationConfig">auto_branch_creation_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | auto_branch_creation_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationPatterns">auto_branch_creation_patterns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.buildSpec">build_spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.cacheConfig">cache_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | cache_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.computeRoleArn">compute_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customHeaders">custom_headers</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customRule">custom_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | custom_rule block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#description AmplifyApp#description}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableAutoBranchCreation">enable_auto_branch_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoBuild">enable_branch_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoDeletion">enable_branch_auto_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.iamServiceRoleArn">iam_service_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#id AmplifyApp#id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.jobConfig">job_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | job_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.platform">platform</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#platform AmplifyApp#platform}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.repository">repository</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#repository AmplifyApp#repository}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags AmplifyApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#name AmplifyApp#name}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.accessToken">access_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationConfig">auto_branch_creation_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | auto_branch_creation_config block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationPatterns">auto_branch_creation_patterns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.buildSpec">build_spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.cacheConfig">cache_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | cache_config block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.computeRoleArn">compute_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customHeaders">custom_headers</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customRule">custom_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | custom_rule block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#description AmplifyApp#description}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableAutoBranchCreation">enable_auto_branch_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoBuild">enable_branch_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoDeletion">enable_branch_auto_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.iamServiceRoleArn">iam_service_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#id AmplifyApp#id}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.jobConfig">job_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | job_config block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.platform">platform</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#platform AmplifyApp#platform}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.repository">repository</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#repository AmplifyApp#repository}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags AmplifyApp#tags}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -96,7 +96,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -106,258 +106,258 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#name AmplifyApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#name AmplifyApp#name}.
 
 ---
 
-##### `access_token`<sup>Optional</sup> <a name="access_token" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.accessToken"></a>
+##### `access_token`<sup>Optional</sup> <a name="access_token" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.accessToken"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
 
 ---
 
-##### `auto_branch_creation_config`<sup>Optional</sup> <a name="auto_branch_creation_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationConfig"></a>
+##### `auto_branch_creation_config`<sup>Optional</sup> <a name="auto_branch_creation_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
 
 auto_branch_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
 
 ---
 
-##### `auto_branch_creation_patterns`<sup>Optional</sup> <a name="auto_branch_creation_patterns" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationPatterns"></a>
+##### `auto_branch_creation_patterns`<sup>Optional</sup> <a name="auto_branch_creation_patterns" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.autoBranchCreationPatterns"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
 
 ---
 
-##### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.basicAuthCredentials"></a>
+##### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.basicAuthCredentials"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
-##### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.buildSpec"></a>
+##### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.buildSpec"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
-##### `cache_config`<sup>Optional</sup> <a name="cache_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.cacheConfig"></a>
+##### `cache_config`<sup>Optional</sup> <a name="cache_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.cacheConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
 
 cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
 
 ---
 
-##### `compute_role_arn`<sup>Optional</sup> <a name="compute_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.computeRoleArn"></a>
+##### `compute_role_arn`<sup>Optional</sup> <a name="compute_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.computeRoleArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}.
 
 ---
 
-##### `custom_headers`<sup>Optional</sup> <a name="custom_headers" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customHeaders"></a>
+##### `custom_headers`<sup>Optional</sup> <a name="custom_headers" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customHeaders"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
 
 ---
 
-##### `custom_rule`<sup>Optional</sup> <a name="custom_rule" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customRule"></a>
+##### `custom_rule`<sup>Optional</sup> <a name="custom_rule" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.customRule"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
 
 custom_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#description AmplifyApp#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#description AmplifyApp#description}.
 
 ---
 
-##### `enable_auto_branch_creation`<sup>Optional</sup> <a name="enable_auto_branch_creation" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableAutoBranchCreation"></a>
+##### `enable_auto_branch_creation`<sup>Optional</sup> <a name="enable_auto_branch_creation" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableAutoBranchCreation"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
 
 ---
 
-##### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBasicAuth"></a>
+##### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBasicAuth"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
-##### `enable_branch_auto_build`<sup>Optional</sup> <a name="enable_branch_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoBuild"></a>
+##### `enable_branch_auto_build`<sup>Optional</sup> <a name="enable_branch_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoBuild"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
 
 ---
 
-##### `enable_branch_auto_deletion`<sup>Optional</sup> <a name="enable_branch_auto_deletion" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoDeletion"></a>
+##### `enable_branch_auto_deletion`<sup>Optional</sup> <a name="enable_branch_auto_deletion" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.enableBranchAutoDeletion"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
 
 ---
 
-##### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.environmentVariables"></a>
+##### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.environmentVariables"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
-##### `iam_service_role_arn`<sup>Optional</sup> <a name="iam_service_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.iamServiceRoleArn"></a>
+##### `iam_service_role_arn`<sup>Optional</sup> <a name="iam_service_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.iamServiceRoleArn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#id AmplifyApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#id AmplifyApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `job_config`<sup>Optional</sup> <a name="job_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.jobConfig"></a>
+##### `job_config`<sup>Optional</sup> <a name="job_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.jobConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
 
 job_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#job_config AmplifyApp#job_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#job_config AmplifyApp#job_config}
 
 ---
 
-##### `oauth_token`<sup>Optional</sup> <a name="oauth_token" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.oauthToken"></a>
+##### `oauth_token`<sup>Optional</sup> <a name="oauth_token" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.oauthToken"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
 
 ---
 
-##### `platform`<sup>Optional</sup> <a name="platform" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.platform"></a>
+##### `platform`<sup>Optional</sup> <a name="platform" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.platform"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#platform AmplifyApp#platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#platform AmplifyApp#platform}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#region AmplifyApp#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#region AmplifyApp#region}
 
 ---
 
-##### `repository`<sup>Optional</sup> <a name="repository" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.repository"></a>
+##### `repository`<sup>Optional</sup> <a name="repository" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.repository"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#repository AmplifyApp#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#repository AmplifyApp#repository}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags AmplifyApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags AmplifyApp#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.Initializer.parameter.tagsAll"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
 
 ---
 
@@ -365,61 +365,61 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig">put_auto_branch_creation_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.putCacheConfig">put_cache_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.putCustomRule">put_custom_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.putJobConfig">put_job_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetAccessToken">reset_access_token</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationConfig">reset_auto_branch_creation_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationPatterns">reset_auto_branch_creation_patterns</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetBasicAuthCredentials">reset_basic_auth_credentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetBuildSpec">reset_build_spec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCacheConfig">reset_cache_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetComputeRoleArn">reset_compute_role_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomHeaders">reset_custom_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomRule">reset_custom_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableAutoBranchCreation">reset_enable_auto_branch_creation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableBasicAuth">reset_enable_basic_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoBuild">reset_enable_branch_auto_build</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoDeletion">reset_enable_branch_auto_deletion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnvironmentVariables">reset_environment_variables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetIamServiceRoleArn">reset_iam_service_role_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetJobConfig">reset_job_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetOauthToken">reset_oauth_token</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetPlatform">reset_platform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetRepository">reset_repository</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.resetTagsAll">reset_tags_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig">put_auto_branch_creation_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.putCacheConfig">put_cache_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.putCustomRule">put_custom_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.putJobConfig">put_job_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetAccessToken">reset_access_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationConfig">reset_auto_branch_creation_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationPatterns">reset_auto_branch_creation_patterns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetBasicAuthCredentials">reset_basic_auth_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetBuildSpec">reset_build_spec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetCacheConfig">reset_cache_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetComputeRoleArn">reset_compute_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetCustomHeaders">reset_custom_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetCustomRule">reset_custom_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableAutoBranchCreation">reset_enable_auto_branch_creation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableBasicAuth">reset_enable_basic_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoBuild">reset_enable_branch_auto_build</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoDeletion">reset_enable_branch_auto_deletion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnvironmentVariables">reset_environment_variables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetIamServiceRoleArn">reset_iam_service_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetJobConfig">reset_job_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetOauthToken">reset_oauth_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetPlatform">reset_platform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetRepository">reset_repository</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.toString"></a>
 
 ```python
 def to_string() -> str
@@ -427,7 +427,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.addOverride"></a>
 
 ```python
 def add_override(
@@ -436,19 +436,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -458,7 +458,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -466,7 +466,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -474,19 +474,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -494,7 +494,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -504,7 +504,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -512,7 +512,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -520,13 +520,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -534,13 +534,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -548,13 +548,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -562,13 +562,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -576,13 +576,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -590,13 +590,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -604,13 +604,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -618,13 +618,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -632,19 +632,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.importFrom"></a>
 
 ```python
 def import_from(
@@ -653,19 +653,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -673,13 +673,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -691,7 +691,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -699,7 +699,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveTo"></a>
 
 ```python
 def move_to(
@@ -710,7 +710,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -718,7 +718,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -726,7 +726,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -736,7 +736,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -744,7 +744,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_auto_branch_creation_config` <a name="put_auto_branch_creation_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig"></a>
+##### `put_auto_branch_creation_config` <a name="put_auto_branch_creation_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig"></a>
 
 ```python
 def put_auto_branch_creation_config(
@@ -761,87 +761,87 @@ def put_auto_branch_creation_config(
 ) -> None
 ```
 
-###### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.basicAuthCredentials"></a>
+###### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.basicAuthCredentials"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
-###### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.buildSpec"></a>
+###### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.buildSpec"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
-###### `enable_auto_build`<sup>Optional</sup> <a name="enable_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enableAutoBuild"></a>
+###### `enable_auto_build`<sup>Optional</sup> <a name="enable_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enableAutoBuild"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}.
 
 ---
 
-###### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enableBasicAuth"></a>
+###### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enableBasicAuth"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
-###### `enable_performance_mode`<sup>Optional</sup> <a name="enable_performance_mode" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enablePerformanceMode"></a>
+###### `enable_performance_mode`<sup>Optional</sup> <a name="enable_performance_mode" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enablePerformanceMode"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}.
 
 ---
 
-###### `enable_pull_request_preview`<sup>Optional</sup> <a name="enable_pull_request_preview" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enablePullRequestPreview"></a>
+###### `enable_pull_request_preview`<sup>Optional</sup> <a name="enable_pull_request_preview" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.enablePullRequestPreview"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}.
 
 ---
 
-###### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.environmentVariables"></a>
+###### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.environmentVariables"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
-###### `framework`<sup>Optional</sup> <a name="framework" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.framework"></a>
+###### `framework`<sup>Optional</sup> <a name="framework" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.framework"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#framework AmplifyApp#framework}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#framework AmplifyApp#framework}.
 
 ---
 
-###### `pull_request_environment_name`<sup>Optional</sup> <a name="pull_request_environment_name" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.pullRequestEnvironmentName"></a>
+###### `pull_request_environment_name`<sup>Optional</sup> <a name="pull_request_environment_name" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.pullRequestEnvironmentName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}.
 
 ---
 
-###### `stage`<sup>Optional</sup> <a name="stage" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.stage"></a>
+###### `stage`<sup>Optional</sup> <a name="stage" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putAutoBranchCreationConfig.parameter.stage"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#stage AmplifyApp#stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#stage AmplifyApp#stage}.
 
 ---
 
-##### `put_cache_config` <a name="put_cache_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putCacheConfig"></a>
+##### `put_cache_config` <a name="put_cache_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putCacheConfig"></a>
 
 ```python
 def put_cache_config(
@@ -849,15 +849,15 @@ def put_cache_config(
 ) -> None
 ```
 
-###### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putCacheConfig.parameter.type"></a>
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putCacheConfig.parameter.type"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#type AmplifyApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#type AmplifyApp#type}.
 
 ---
 
-##### `put_custom_rule` <a name="put_custom_rule" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putCustomRule"></a>
+##### `put_custom_rule` <a name="put_custom_rule" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putCustomRule"></a>
 
 ```python
 def put_custom_rule(
@@ -865,13 +865,13 @@ def put_custom_rule(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putCustomRule.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putCustomRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
 
 ---
 
-##### `put_job_config` <a name="put_job_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putJobConfig"></a>
+##### `put_job_config` <a name="put_job_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putJobConfig"></a>
 
 ```python
 def put_job_config(
@@ -879,153 +879,153 @@ def put_job_config(
 ) -> None
 ```
 
-###### `build_compute_type`<sup>Optional</sup> <a name="build_compute_type" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.putJobConfig.parameter.buildComputeType"></a>
+###### `build_compute_type`<sup>Optional</sup> <a name="build_compute_type" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.putJobConfig.parameter.buildComputeType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_compute_type AmplifyApp#build_compute_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_compute_type AmplifyApp#build_compute_type}.
 
 ---
 
-##### `reset_access_token` <a name="reset_access_token" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetAccessToken"></a>
+##### `reset_access_token` <a name="reset_access_token" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetAccessToken"></a>
 
 ```python
 def reset_access_token() -> None
 ```
 
-##### `reset_auto_branch_creation_config` <a name="reset_auto_branch_creation_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationConfig"></a>
+##### `reset_auto_branch_creation_config` <a name="reset_auto_branch_creation_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationConfig"></a>
 
 ```python
 def reset_auto_branch_creation_config() -> None
 ```
 
-##### `reset_auto_branch_creation_patterns` <a name="reset_auto_branch_creation_patterns" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationPatterns"></a>
+##### `reset_auto_branch_creation_patterns` <a name="reset_auto_branch_creation_patterns" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetAutoBranchCreationPatterns"></a>
 
 ```python
 def reset_auto_branch_creation_patterns() -> None
 ```
 
-##### `reset_basic_auth_credentials` <a name="reset_basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetBasicAuthCredentials"></a>
+##### `reset_basic_auth_credentials` <a name="reset_basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetBasicAuthCredentials"></a>
 
 ```python
 def reset_basic_auth_credentials() -> None
 ```
 
-##### `reset_build_spec` <a name="reset_build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetBuildSpec"></a>
+##### `reset_build_spec` <a name="reset_build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetBuildSpec"></a>
 
 ```python
 def reset_build_spec() -> None
 ```
 
-##### `reset_cache_config` <a name="reset_cache_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCacheConfig"></a>
+##### `reset_cache_config` <a name="reset_cache_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetCacheConfig"></a>
 
 ```python
 def reset_cache_config() -> None
 ```
 
-##### `reset_compute_role_arn` <a name="reset_compute_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetComputeRoleArn"></a>
+##### `reset_compute_role_arn` <a name="reset_compute_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetComputeRoleArn"></a>
 
 ```python
 def reset_compute_role_arn() -> None
 ```
 
-##### `reset_custom_headers` <a name="reset_custom_headers" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomHeaders"></a>
+##### `reset_custom_headers` <a name="reset_custom_headers" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetCustomHeaders"></a>
 
 ```python
 def reset_custom_headers() -> None
 ```
 
-##### `reset_custom_rule` <a name="reset_custom_rule" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetCustomRule"></a>
+##### `reset_custom_rule` <a name="reset_custom_rule" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetCustomRule"></a>
 
 ```python
 def reset_custom_rule() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_enable_auto_branch_creation` <a name="reset_enable_auto_branch_creation" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableAutoBranchCreation"></a>
+##### `reset_enable_auto_branch_creation` <a name="reset_enable_auto_branch_creation" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableAutoBranchCreation"></a>
 
 ```python
 def reset_enable_auto_branch_creation() -> None
 ```
 
-##### `reset_enable_basic_auth` <a name="reset_enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableBasicAuth"></a>
+##### `reset_enable_basic_auth` <a name="reset_enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableBasicAuth"></a>
 
 ```python
 def reset_enable_basic_auth() -> None
 ```
 
-##### `reset_enable_branch_auto_build` <a name="reset_enable_branch_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoBuild"></a>
+##### `reset_enable_branch_auto_build` <a name="reset_enable_branch_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoBuild"></a>
 
 ```python
 def reset_enable_branch_auto_build() -> None
 ```
 
-##### `reset_enable_branch_auto_deletion` <a name="reset_enable_branch_auto_deletion" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoDeletion"></a>
+##### `reset_enable_branch_auto_deletion` <a name="reset_enable_branch_auto_deletion" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnableBranchAutoDeletion"></a>
 
 ```python
 def reset_enable_branch_auto_deletion() -> None
 ```
 
-##### `reset_environment_variables` <a name="reset_environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetEnvironmentVariables"></a>
+##### `reset_environment_variables` <a name="reset_environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetEnvironmentVariables"></a>
 
 ```python
 def reset_environment_variables() -> None
 ```
 
-##### `reset_iam_service_role_arn` <a name="reset_iam_service_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetIamServiceRoleArn"></a>
+##### `reset_iam_service_role_arn` <a name="reset_iam_service_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetIamServiceRoleArn"></a>
 
 ```python
 def reset_iam_service_role_arn() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_job_config` <a name="reset_job_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetJobConfig"></a>
+##### `reset_job_config` <a name="reset_job_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetJobConfig"></a>
 
 ```python
 def reset_job_config() -> None
 ```
 
-##### `reset_oauth_token` <a name="reset_oauth_token" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetOauthToken"></a>
+##### `reset_oauth_token` <a name="reset_oauth_token" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetOauthToken"></a>
 
 ```python
 def reset_oauth_token() -> None
 ```
 
-##### `reset_platform` <a name="reset_platform" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetPlatform"></a>
+##### `reset_platform` <a name="reset_platform" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetPlatform"></a>
 
 ```python
 def reset_platform() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_repository` <a name="reset_repository" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetRepository"></a>
+##### `reset_repository` <a name="reset_repository" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetRepository"></a>
 
 ```python
 def reset_repository() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_tags_all` <a name="reset_tags_all" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.resetTagsAll"></a>
+##### `reset_tags_all` <a name="reset_tags_all" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.resetTagsAll"></a>
 
 ```python
 def reset_tags_all() -> None
@@ -1035,17 +1035,17 @@ def reset_tags_all() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AmplifyApp resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AmplifyApp resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyApp.is_construct(
   x: typing.Any
@@ -1068,7 +1068,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1076,42 +1076,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyApp.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyApp.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyApp.generate_config_for_import(
   scope: Construct,
@@ -1123,7 +1123,7 @@ amplifyApp.AmplifyApp.generate_config_for_import(
 
 Generates CDKTF code for importing a AmplifyApp resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1131,7 +1131,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1139,17 +1139,17 @@ The construct id used in the generated config for the AmplifyApp to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing AmplifyApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -1161,77 +1161,77 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfig">auto_branch_creation_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference">AmplifyAppAutoBranchCreationConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cacheConfig">cache_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference">AmplifyAppCacheConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customRule">custom_rule</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList">AmplifyAppCustomRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.defaultDomain">default_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.jobConfig">job_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference">AmplifyAppJobConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.productionBranch">production_branch</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList">AmplifyAppProductionBranchList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.accessTokenInput">access_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfigInput">auto_branch_creation_config_input</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatternsInput">auto_branch_creation_patterns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentialsInput">basic_auth_credentials_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.buildSpecInput">build_spec_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cacheConfigInput">cache_config_input</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArnInput">compute_role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeadersInput">custom_headers_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customRuleInput">custom_rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreationInput">enable_auto_branch_creation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuthInput">enable_basic_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuildInput">enable_branch_auto_build_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletionInput">enable_branch_auto_deletion_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.environmentVariablesInput">environment_variables_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArnInput">iam_service_role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.jobConfigInput">job_config_input</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.oauthTokenInput">oauth_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.platformInput">platform_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.repositoryInput">repository_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.accessToken">access_token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatterns">auto_branch_creation_patterns</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.buildSpec">build_spec</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArn">compute_role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeaders">custom_headers</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreation">enable_auto_branch_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuild">enable_branch_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletion">enable_branch_auto_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArn">iam_service_role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.oauthToken">oauth_token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.platform">platform</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.repository">repository</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfig">auto_branch_creation_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference">AmplifyAppAutoBranchCreationConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.cacheConfig">cache_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference">AmplifyAppCacheConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customRule">custom_rule</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList">AmplifyAppCustomRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.defaultDomain">default_domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.jobConfig">job_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference">AmplifyAppJobConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.productionBranch">production_branch</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList">AmplifyAppProductionBranchList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.accessTokenInput">access_token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfigInput">auto_branch_creation_config_input</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatternsInput">auto_branch_creation_patterns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentialsInput">basic_auth_credentials_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.buildSpecInput">build_spec_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.cacheConfigInput">cache_config_input</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArnInput">compute_role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customHeadersInput">custom_headers_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customRuleInput">custom_rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreationInput">enable_auto_branch_creation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuthInput">enable_basic_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuildInput">enable_branch_auto_build_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletionInput">enable_branch_auto_deletion_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.environmentVariablesInput">environment_variables_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArnInput">iam_service_role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.jobConfigInput">job_config_input</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.oauthTokenInput">oauth_token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.platformInput">platform_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.repositoryInput">repository_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.accessToken">access_token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatterns">auto_branch_creation_patterns</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.buildSpec">build_spec</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArn">compute_role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customHeaders">custom_headers</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreation">enable_auto_branch_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuild">enable_branch_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletion">enable_branch_auto_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArn">iam_service_role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.oauthToken">oauth_token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.platform">platform</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.repository">repository</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.node"></a>
 
 ```python
 node: Node
@@ -1243,7 +1243,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1253,7 +1253,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1263,7 +1263,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1273,7 +1273,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1283,7 +1283,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1293,7 +1293,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1303,7 +1303,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1313,7 +1313,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1323,7 +1323,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1333,7 +1333,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1343,7 +1343,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1353,7 +1353,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1363,7 +1363,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1373,7 +1373,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.arn"></a>
 
 ```python
 arn: str
@@ -1383,37 +1383,37 @@ arn: str
 
 ---
 
-##### `auto_branch_creation_config`<sup>Required</sup> <a name="auto_branch_creation_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfig"></a>
+##### `auto_branch_creation_config`<sup>Required</sup> <a name="auto_branch_creation_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfig"></a>
 
 ```python
 auto_branch_creation_config: AmplifyAppAutoBranchCreationConfigOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference">AmplifyAppAutoBranchCreationConfigOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference">AmplifyAppAutoBranchCreationConfigOutputReference</a>
 
 ---
 
-##### `cache_config`<sup>Required</sup> <a name="cache_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cacheConfig"></a>
+##### `cache_config`<sup>Required</sup> <a name="cache_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.cacheConfig"></a>
 
 ```python
 cache_config: AmplifyAppCacheConfigOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference">AmplifyAppCacheConfigOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference">AmplifyAppCacheConfigOutputReference</a>
 
 ---
 
-##### `custom_rule`<sup>Required</sup> <a name="custom_rule" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customRule"></a>
+##### `custom_rule`<sup>Required</sup> <a name="custom_rule" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customRule"></a>
 
 ```python
 custom_rule: AmplifyAppCustomRuleList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList">AmplifyAppCustomRuleList</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList">AmplifyAppCustomRuleList</a>
 
 ---
 
-##### `default_domain`<sup>Required</sup> <a name="default_domain" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.defaultDomain"></a>
+##### `default_domain`<sup>Required</sup> <a name="default_domain" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.defaultDomain"></a>
 
 ```python
 default_domain: str
@@ -1423,27 +1423,27 @@ default_domain: str
 
 ---
 
-##### `job_config`<sup>Required</sup> <a name="job_config" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.jobConfig"></a>
+##### `job_config`<sup>Required</sup> <a name="job_config" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.jobConfig"></a>
 
 ```python
 job_config: AmplifyAppJobConfigOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference">AmplifyAppJobConfigOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference">AmplifyAppJobConfigOutputReference</a>
 
 ---
 
-##### `production_branch`<sup>Required</sup> <a name="production_branch" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.productionBranch"></a>
+##### `production_branch`<sup>Required</sup> <a name="production_branch" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.productionBranch"></a>
 
 ```python
 production_branch: AmplifyAppProductionBranchList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList">AmplifyAppProductionBranchList</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList">AmplifyAppProductionBranchList</a>
 
 ---
 
-##### `access_token_input`<sup>Optional</sup> <a name="access_token_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.accessTokenInput"></a>
+##### `access_token_input`<sup>Optional</sup> <a name="access_token_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.accessTokenInput"></a>
 
 ```python
 access_token_input: str
@@ -1453,17 +1453,17 @@ access_token_input: str
 
 ---
 
-##### `auto_branch_creation_config_input`<sup>Optional</sup> <a name="auto_branch_creation_config_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfigInput"></a>
+##### `auto_branch_creation_config_input`<sup>Optional</sup> <a name="auto_branch_creation_config_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationConfigInput"></a>
 
 ```python
 auto_branch_creation_config_input: AmplifyAppAutoBranchCreationConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
 
 ---
 
-##### `auto_branch_creation_patterns_input`<sup>Optional</sup> <a name="auto_branch_creation_patterns_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatternsInput"></a>
+##### `auto_branch_creation_patterns_input`<sup>Optional</sup> <a name="auto_branch_creation_patterns_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatternsInput"></a>
 
 ```python
 auto_branch_creation_patterns_input: typing.List[str]
@@ -1473,7 +1473,7 @@ auto_branch_creation_patterns_input: typing.List[str]
 
 ---
 
-##### `basic_auth_credentials_input`<sup>Optional</sup> <a name="basic_auth_credentials_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentialsInput"></a>
+##### `basic_auth_credentials_input`<sup>Optional</sup> <a name="basic_auth_credentials_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentialsInput"></a>
 
 ```python
 basic_auth_credentials_input: str
@@ -1483,7 +1483,7 @@ basic_auth_credentials_input: str
 
 ---
 
-##### `build_spec_input`<sup>Optional</sup> <a name="build_spec_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.buildSpecInput"></a>
+##### `build_spec_input`<sup>Optional</sup> <a name="build_spec_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.buildSpecInput"></a>
 
 ```python
 build_spec_input: str
@@ -1493,17 +1493,17 @@ build_spec_input: str
 
 ---
 
-##### `cache_config_input`<sup>Optional</sup> <a name="cache_config_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.cacheConfigInput"></a>
+##### `cache_config_input`<sup>Optional</sup> <a name="cache_config_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.cacheConfigInput"></a>
 
 ```python
 cache_config_input: AmplifyAppCacheConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
 
 ---
 
-##### `compute_role_arn_input`<sup>Optional</sup> <a name="compute_role_arn_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArnInput"></a>
+##### `compute_role_arn_input`<sup>Optional</sup> <a name="compute_role_arn_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArnInput"></a>
 
 ```python
 compute_role_arn_input: str
@@ -1513,7 +1513,7 @@ compute_role_arn_input: str
 
 ---
 
-##### `custom_headers_input`<sup>Optional</sup> <a name="custom_headers_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeadersInput"></a>
+##### `custom_headers_input`<sup>Optional</sup> <a name="custom_headers_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customHeadersInput"></a>
 
 ```python
 custom_headers_input: str
@@ -1523,17 +1523,17 @@ custom_headers_input: str
 
 ---
 
-##### `custom_rule_input`<sup>Optional</sup> <a name="custom_rule_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customRuleInput"></a>
+##### `custom_rule_input`<sup>Optional</sup> <a name="custom_rule_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customRuleInput"></a>
 
 ```python
 custom_rule_input: IResolvable | typing.List[AmplifyAppCustomRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1543,7 +1543,7 @@ description_input: str
 
 ---
 
-##### `enable_auto_branch_creation_input`<sup>Optional</sup> <a name="enable_auto_branch_creation_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreationInput"></a>
+##### `enable_auto_branch_creation_input`<sup>Optional</sup> <a name="enable_auto_branch_creation_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreationInput"></a>
 
 ```python
 enable_auto_branch_creation_input: bool | IResolvable
@@ -1553,7 +1553,7 @@ enable_auto_branch_creation_input: bool | IResolvable
 
 ---
 
-##### `enable_basic_auth_input`<sup>Optional</sup> <a name="enable_basic_auth_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuthInput"></a>
+##### `enable_basic_auth_input`<sup>Optional</sup> <a name="enable_basic_auth_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuthInput"></a>
 
 ```python
 enable_basic_auth_input: bool | IResolvable
@@ -1563,7 +1563,7 @@ enable_basic_auth_input: bool | IResolvable
 
 ---
 
-##### `enable_branch_auto_build_input`<sup>Optional</sup> <a name="enable_branch_auto_build_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuildInput"></a>
+##### `enable_branch_auto_build_input`<sup>Optional</sup> <a name="enable_branch_auto_build_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuildInput"></a>
 
 ```python
 enable_branch_auto_build_input: bool | IResolvable
@@ -1573,7 +1573,7 @@ enable_branch_auto_build_input: bool | IResolvable
 
 ---
 
-##### `enable_branch_auto_deletion_input`<sup>Optional</sup> <a name="enable_branch_auto_deletion_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletionInput"></a>
+##### `enable_branch_auto_deletion_input`<sup>Optional</sup> <a name="enable_branch_auto_deletion_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletionInput"></a>
 
 ```python
 enable_branch_auto_deletion_input: bool | IResolvable
@@ -1583,7 +1583,7 @@ enable_branch_auto_deletion_input: bool | IResolvable
 
 ---
 
-##### `environment_variables_input`<sup>Optional</sup> <a name="environment_variables_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.environmentVariablesInput"></a>
+##### `environment_variables_input`<sup>Optional</sup> <a name="environment_variables_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.environmentVariablesInput"></a>
 
 ```python
 environment_variables_input: typing.Mapping[str]
@@ -1593,7 +1593,7 @@ environment_variables_input: typing.Mapping[str]
 
 ---
 
-##### `iam_service_role_arn_input`<sup>Optional</sup> <a name="iam_service_role_arn_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArnInput"></a>
+##### `iam_service_role_arn_input`<sup>Optional</sup> <a name="iam_service_role_arn_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArnInput"></a>
 
 ```python
 iam_service_role_arn_input: str
@@ -1603,7 +1603,7 @@ iam_service_role_arn_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1613,17 +1613,17 @@ id_input: str
 
 ---
 
-##### `job_config_input`<sup>Optional</sup> <a name="job_config_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.jobConfigInput"></a>
+##### `job_config_input`<sup>Optional</sup> <a name="job_config_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.jobConfigInput"></a>
 
 ```python
 job_config_input: AmplifyAppJobConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1633,7 +1633,7 @@ name_input: str
 
 ---
 
-##### `oauth_token_input`<sup>Optional</sup> <a name="oauth_token_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.oauthTokenInput"></a>
+##### `oauth_token_input`<sup>Optional</sup> <a name="oauth_token_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.oauthTokenInput"></a>
 
 ```python
 oauth_token_input: str
@@ -1643,7 +1643,7 @@ oauth_token_input: str
 
 ---
 
-##### `platform_input`<sup>Optional</sup> <a name="platform_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.platformInput"></a>
+##### `platform_input`<sup>Optional</sup> <a name="platform_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.platformInput"></a>
 
 ```python
 platform_input: str
@@ -1653,7 +1653,7 @@ platform_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1663,7 +1663,7 @@ region_input: str
 
 ---
 
-##### `repository_input`<sup>Optional</sup> <a name="repository_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.repositoryInput"></a>
+##### `repository_input`<sup>Optional</sup> <a name="repository_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.repositoryInput"></a>
 
 ```python
 repository_input: str
@@ -1673,7 +1673,7 @@ repository_input: str
 
 ---
 
-##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tagsAllInput"></a>
+##### `tags_all_input`<sup>Optional</sup> <a name="tags_all_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tagsAllInput"></a>
 
 ```python
 tags_all_input: typing.Mapping[str]
@@ -1683,7 +1683,7 @@ tags_all_input: typing.Mapping[str]
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1693,7 +1693,7 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `access_token`<sup>Required</sup> <a name="access_token" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.accessToken"></a>
+##### `access_token`<sup>Required</sup> <a name="access_token" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.accessToken"></a>
 
 ```python
 access_token: str
@@ -1703,7 +1703,7 @@ access_token: str
 
 ---
 
-##### `auto_branch_creation_patterns`<sup>Required</sup> <a name="auto_branch_creation_patterns" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatterns"></a>
+##### `auto_branch_creation_patterns`<sup>Required</sup> <a name="auto_branch_creation_patterns" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.autoBranchCreationPatterns"></a>
 
 ```python
 auto_branch_creation_patterns: typing.List[str]
@@ -1713,7 +1713,7 @@ auto_branch_creation_patterns: typing.List[str]
 
 ---
 
-##### `basic_auth_credentials`<sup>Required</sup> <a name="basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentials"></a>
+##### `basic_auth_credentials`<sup>Required</sup> <a name="basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.basicAuthCredentials"></a>
 
 ```python
 basic_auth_credentials: str
@@ -1723,7 +1723,7 @@ basic_auth_credentials: str
 
 ---
 
-##### `build_spec`<sup>Required</sup> <a name="build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.buildSpec"></a>
+##### `build_spec`<sup>Required</sup> <a name="build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.buildSpec"></a>
 
 ```python
 build_spec: str
@@ -1733,7 +1733,7 @@ build_spec: str
 
 ---
 
-##### `compute_role_arn`<sup>Required</sup> <a name="compute_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArn"></a>
+##### `compute_role_arn`<sup>Required</sup> <a name="compute_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.computeRoleArn"></a>
 
 ```python
 compute_role_arn: str
@@ -1743,7 +1743,7 @@ compute_role_arn: str
 
 ---
 
-##### `custom_headers`<sup>Required</sup> <a name="custom_headers" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.customHeaders"></a>
+##### `custom_headers`<sup>Required</sup> <a name="custom_headers" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.customHeaders"></a>
 
 ```python
 custom_headers: str
@@ -1753,7 +1753,7 @@ custom_headers: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.description"></a>
 
 ```python
 description: str
@@ -1763,7 +1763,7 @@ description: str
 
 ---
 
-##### `enable_auto_branch_creation`<sup>Required</sup> <a name="enable_auto_branch_creation" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreation"></a>
+##### `enable_auto_branch_creation`<sup>Required</sup> <a name="enable_auto_branch_creation" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableAutoBranchCreation"></a>
 
 ```python
 enable_auto_branch_creation: bool | IResolvable
@@ -1773,7 +1773,7 @@ enable_auto_branch_creation: bool | IResolvable
 
 ---
 
-##### `enable_basic_auth`<sup>Required</sup> <a name="enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuth"></a>
+##### `enable_basic_auth`<sup>Required</sup> <a name="enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBasicAuth"></a>
 
 ```python
 enable_basic_auth: bool | IResolvable
@@ -1783,7 +1783,7 @@ enable_basic_auth: bool | IResolvable
 
 ---
 
-##### `enable_branch_auto_build`<sup>Required</sup> <a name="enable_branch_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuild"></a>
+##### `enable_branch_auto_build`<sup>Required</sup> <a name="enable_branch_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoBuild"></a>
 
 ```python
 enable_branch_auto_build: bool | IResolvable
@@ -1793,7 +1793,7 @@ enable_branch_auto_build: bool | IResolvable
 
 ---
 
-##### `enable_branch_auto_deletion`<sup>Required</sup> <a name="enable_branch_auto_deletion" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletion"></a>
+##### `enable_branch_auto_deletion`<sup>Required</sup> <a name="enable_branch_auto_deletion" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.enableBranchAutoDeletion"></a>
 
 ```python
 enable_branch_auto_deletion: bool | IResolvable
@@ -1803,7 +1803,7 @@ enable_branch_auto_deletion: bool | IResolvable
 
 ---
 
-##### `environment_variables`<sup>Required</sup> <a name="environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.environmentVariables"></a>
+##### `environment_variables`<sup>Required</sup> <a name="environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.environmentVariables"></a>
 
 ```python
 environment_variables: typing.Mapping[str]
@@ -1813,7 +1813,7 @@ environment_variables: typing.Mapping[str]
 
 ---
 
-##### `iam_service_role_arn`<sup>Required</sup> <a name="iam_service_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArn"></a>
+##### `iam_service_role_arn`<sup>Required</sup> <a name="iam_service_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.iamServiceRoleArn"></a>
 
 ```python
 iam_service_role_arn: str
@@ -1823,7 +1823,7 @@ iam_service_role_arn: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.id"></a>
 
 ```python
 id: str
@@ -1833,7 +1833,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.name"></a>
 
 ```python
 name: str
@@ -1843,7 +1843,7 @@ name: str
 
 ---
 
-##### `oauth_token`<sup>Required</sup> <a name="oauth_token" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.oauthToken"></a>
+##### `oauth_token`<sup>Required</sup> <a name="oauth_token" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.oauthToken"></a>
 
 ```python
 oauth_token: str
@@ -1853,7 +1853,7 @@ oauth_token: str
 
 ---
 
-##### `platform`<sup>Required</sup> <a name="platform" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.platform"></a>
+##### `platform`<sup>Required</sup> <a name="platform" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.platform"></a>
 
 ```python
 platform: str
@@ -1863,7 +1863,7 @@ platform: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.region"></a>
 
 ```python
 region: str
@@ -1873,7 +1873,7 @@ region: str
 
 ---
 
-##### `repository`<sup>Required</sup> <a name="repository" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.repository"></a>
+##### `repository`<sup>Required</sup> <a name="repository" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.repository"></a>
 
 ```python
 repository: str
@@ -1883,7 +1883,7 @@ repository: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1893,7 +1893,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tagsAll"></a>
+##### `tags_all`<sup>Required</sup> <a name="tags_all" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -1907,11 +1907,11 @@ tags_all: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.amplifyApp.AmplifyApp.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.amplifyApp.AmplifyApp.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1923,12 +1923,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AmplifyAppAutoBranchCreationConfig <a name="AmplifyAppAutoBranchCreationConfig" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig"></a>
+### AmplifyAppAutoBranchCreationConfig <a name="AmplifyAppAutoBranchCreationConfig" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppAutoBranchCreationConfig(
   basic_auth_credentials: str = None,
@@ -1948,20 +1948,20 @@ amplifyApp.AmplifyAppAutoBranchCreationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.buildSpec">build_spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableAutoBuild">enable_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePerformanceMode">enable_performance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePullRequestPreview">enable_pull_request_preview</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.framework">framework</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#framework AmplifyApp#framework}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.pullRequestEnvironmentName">pull_request_environment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.stage">stage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#stage AmplifyApp#stage}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.buildSpec">build_spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableAutoBuild">enable_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePerformanceMode">enable_performance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePullRequestPreview">enable_pull_request_preview</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.framework">framework</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#framework AmplifyApp#framework}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.pullRequestEnvironmentName">pull_request_environment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.stage">stage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#stage AmplifyApp#stage}. |
 
 ---
 
-##### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.basicAuthCredentials"></a>
+##### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.basicAuthCredentials"></a>
 
 ```python
 basic_auth_credentials: str
@@ -1969,11 +1969,11 @@ basic_auth_credentials: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
-##### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.buildSpec"></a>
+##### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.buildSpec"></a>
 
 ```python
 build_spec: str
@@ -1981,11 +1981,11 @@ build_spec: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
-##### `enable_auto_build`<sup>Optional</sup> <a name="enable_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableAutoBuild"></a>
+##### `enable_auto_build`<sup>Optional</sup> <a name="enable_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableAutoBuild"></a>
 
 ```python
 enable_auto_build: bool | IResolvable
@@ -1993,11 +1993,11 @@ enable_auto_build: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_build AmplifyApp#enable_auto_build}.
 
 ---
 
-##### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableBasicAuth"></a>
+##### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enableBasicAuth"></a>
 
 ```python
 enable_basic_auth: bool | IResolvable
@@ -2005,11 +2005,11 @@ enable_basic_auth: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
-##### `enable_performance_mode`<sup>Optional</sup> <a name="enable_performance_mode" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePerformanceMode"></a>
+##### `enable_performance_mode`<sup>Optional</sup> <a name="enable_performance_mode" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePerformanceMode"></a>
 
 ```python
 enable_performance_mode: bool | IResolvable
@@ -2017,11 +2017,11 @@ enable_performance_mode: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_performance_mode AmplifyApp#enable_performance_mode}.
 
 ---
 
-##### `enable_pull_request_preview`<sup>Optional</sup> <a name="enable_pull_request_preview" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePullRequestPreview"></a>
+##### `enable_pull_request_preview`<sup>Optional</sup> <a name="enable_pull_request_preview" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.enablePullRequestPreview"></a>
 
 ```python
 enable_pull_request_preview: bool | IResolvable
@@ -2029,11 +2029,11 @@ enable_pull_request_preview: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_pull_request_preview AmplifyApp#enable_pull_request_preview}.
 
 ---
 
-##### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.environmentVariables"></a>
+##### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.environmentVariables"></a>
 
 ```python
 environment_variables: typing.Mapping[str]
@@ -2041,11 +2041,11 @@ environment_variables: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
-##### `framework`<sup>Optional</sup> <a name="framework" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.framework"></a>
+##### `framework`<sup>Optional</sup> <a name="framework" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.framework"></a>
 
 ```python
 framework: str
@@ -2053,11 +2053,11 @@ framework: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#framework AmplifyApp#framework}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#framework AmplifyApp#framework}.
 
 ---
 
-##### `pull_request_environment_name`<sup>Optional</sup> <a name="pull_request_environment_name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.pullRequestEnvironmentName"></a>
+##### `pull_request_environment_name`<sup>Optional</sup> <a name="pull_request_environment_name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.pullRequestEnvironmentName"></a>
 
 ```python
 pull_request_environment_name: str
@@ -2065,11 +2065,11 @@ pull_request_environment_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#pull_request_environment_name AmplifyApp#pull_request_environment_name}.
 
 ---
 
-##### `stage`<sup>Optional</sup> <a name="stage" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.stage"></a>
+##### `stage`<sup>Optional</sup> <a name="stage" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig.property.stage"></a>
 
 ```python
 stage: str
@@ -2077,16 +2077,16 @@ stage: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#stage AmplifyApp#stage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#stage AmplifyApp#stage}.
 
 ---
 
-### AmplifyAppCacheConfig <a name="AmplifyAppCacheConfig" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig"></a>
+### AmplifyAppCacheConfig <a name="AmplifyAppCacheConfig" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppCacheConfig(
   type: str
@@ -2097,11 +2097,11 @@ amplifyApp.AmplifyAppCacheConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#type AmplifyApp#type}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#type AmplifyApp#type}. |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig.property.type"></a>
 
 ```python
 type: str
@@ -2109,16 +2109,16 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#type AmplifyApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#type AmplifyApp#type}.
 
 ---
 
-### AmplifyAppConfig <a name="AmplifyAppConfig" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig"></a>
+### AmplifyAppConfig <a name="AmplifyAppConfig" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2160,42 +2160,42 @@ amplifyApp.AmplifyAppConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#name AmplifyApp#name}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.accessToken">access_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationConfig">auto_branch_creation_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | auto_branch_creation_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationPatterns">auto_branch_creation_patterns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.buildSpec">build_spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.cacheConfig">cache_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | cache_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.computeRoleArn">compute_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customHeaders">custom_headers</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customRule">custom_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | custom_rule block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#description AmplifyApp#description}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableAutoBranchCreation">enable_auto_branch_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoBuild">enable_branch_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoDeletion">enable_branch_auto_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.iamServiceRoleArn">iam_service_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#id AmplifyApp#id}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.jobConfig">job_config</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | job_config block. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.platform">platform</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#platform AmplifyApp#platform}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.repository">repository</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#repository AmplifyApp#repository}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags AmplifyApp#tags}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#name AmplifyApp#name}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.accessToken">access_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationConfig">auto_branch_creation_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | auto_branch_creation_config block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationPatterns">auto_branch_creation_patterns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.buildSpec">build_spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.cacheConfig">cache_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | cache_config block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.computeRoleArn">compute_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.customHeaders">custom_headers</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.customRule">custom_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | custom_rule block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#description AmplifyApp#description}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableAutoBranchCreation">enable_auto_branch_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoBuild">enable_branch_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoDeletion">enable_branch_auto_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.iamServiceRoleArn">iam_service_role_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#id AmplifyApp#id}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.jobConfig">job_config</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | job_config block. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.oauthToken">oauth_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.platform">platform</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#platform AmplifyApp#platform}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.repository">repository</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#repository AmplifyApp#repository}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags AmplifyApp#tags}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -2205,7 +2205,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -2215,7 +2215,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -2225,7 +2225,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -2235,7 +2235,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -2245,7 +2245,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -2255,7 +2255,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -2265,7 +2265,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.name"></a>
 
 ```python
 name: str
@@ -2273,11 +2273,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#name AmplifyApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#name AmplifyApp#name}.
 
 ---
 
-##### `access_token`<sup>Optional</sup> <a name="access_token" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.accessToken"></a>
+##### `access_token`<sup>Optional</sup> <a name="access_token" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.accessToken"></a>
 
 ```python
 access_token: str
@@ -2285,25 +2285,25 @@ access_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#access_token AmplifyApp#access_token}.
 
 ---
 
-##### `auto_branch_creation_config`<sup>Optional</sup> <a name="auto_branch_creation_config" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationConfig"></a>
+##### `auto_branch_creation_config`<sup>Optional</sup> <a name="auto_branch_creation_config" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationConfig"></a>
 
 ```python
 auto_branch_creation_config: AmplifyAppAutoBranchCreationConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
 
 auto_branch_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#auto_branch_creation_config AmplifyApp#auto_branch_creation_config}
 
 ---
 
-##### `auto_branch_creation_patterns`<sup>Optional</sup> <a name="auto_branch_creation_patterns" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationPatterns"></a>
+##### `auto_branch_creation_patterns`<sup>Optional</sup> <a name="auto_branch_creation_patterns" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.autoBranchCreationPatterns"></a>
 
 ```python
 auto_branch_creation_patterns: typing.List[str]
@@ -2311,11 +2311,11 @@ auto_branch_creation_patterns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#auto_branch_creation_patterns AmplifyApp#auto_branch_creation_patterns}.
 
 ---
 
-##### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.basicAuthCredentials"></a>
+##### `basic_auth_credentials`<sup>Optional</sup> <a name="basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.basicAuthCredentials"></a>
 
 ```python
 basic_auth_credentials: str
@@ -2323,11 +2323,11 @@ basic_auth_credentials: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#basic_auth_credentials AmplifyApp#basic_auth_credentials}.
 
 ---
 
-##### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.buildSpec"></a>
+##### `build_spec`<sup>Optional</sup> <a name="build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.buildSpec"></a>
 
 ```python
 build_spec: str
@@ -2335,25 +2335,25 @@ build_spec: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_spec AmplifyApp#build_spec}.
 
 ---
 
-##### `cache_config`<sup>Optional</sup> <a name="cache_config" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.cacheConfig"></a>
+##### `cache_config`<sup>Optional</sup> <a name="cache_config" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.cacheConfig"></a>
 
 ```python
 cache_config: AmplifyAppCacheConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
 
 cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#cache_config AmplifyApp#cache_config}
 
 ---
 
-##### `compute_role_arn`<sup>Optional</sup> <a name="compute_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.computeRoleArn"></a>
+##### `compute_role_arn`<sup>Optional</sup> <a name="compute_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.computeRoleArn"></a>
 
 ```python
 compute_role_arn: str
@@ -2361,11 +2361,11 @@ compute_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#compute_role_arn AmplifyApp#compute_role_arn}.
 
 ---
 
-##### `custom_headers`<sup>Optional</sup> <a name="custom_headers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customHeaders"></a>
+##### `custom_headers`<sup>Optional</sup> <a name="custom_headers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.customHeaders"></a>
 
 ```python
 custom_headers: str
@@ -2373,25 +2373,25 @@ custom_headers: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#custom_headers AmplifyApp#custom_headers}.
 
 ---
 
-##### `custom_rule`<sup>Optional</sup> <a name="custom_rule" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.customRule"></a>
+##### `custom_rule`<sup>Optional</sup> <a name="custom_rule" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.customRule"></a>
 
 ```python
 custom_rule: IResolvable | typing.List[AmplifyAppCustomRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
 
 custom_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#custom_rule AmplifyApp#custom_rule}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.description"></a>
 
 ```python
 description: str
@@ -2399,11 +2399,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#description AmplifyApp#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#description AmplifyApp#description}.
 
 ---
 
-##### `enable_auto_branch_creation`<sup>Optional</sup> <a name="enable_auto_branch_creation" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableAutoBranchCreation"></a>
+##### `enable_auto_branch_creation`<sup>Optional</sup> <a name="enable_auto_branch_creation" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableAutoBranchCreation"></a>
 
 ```python
 enable_auto_branch_creation: bool | IResolvable
@@ -2411,11 +2411,11 @@ enable_auto_branch_creation: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_auto_branch_creation AmplifyApp#enable_auto_branch_creation}.
 
 ---
 
-##### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBasicAuth"></a>
+##### `enable_basic_auth`<sup>Optional</sup> <a name="enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBasicAuth"></a>
 
 ```python
 enable_basic_auth: bool | IResolvable
@@ -2423,11 +2423,11 @@ enable_basic_auth: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_basic_auth AmplifyApp#enable_basic_auth}.
 
 ---
 
-##### `enable_branch_auto_build`<sup>Optional</sup> <a name="enable_branch_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoBuild"></a>
+##### `enable_branch_auto_build`<sup>Optional</sup> <a name="enable_branch_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoBuild"></a>
 
 ```python
 enable_branch_auto_build: bool | IResolvable
@@ -2435,11 +2435,11 @@ enable_branch_auto_build: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_build AmplifyApp#enable_branch_auto_build}.
 
 ---
 
-##### `enable_branch_auto_deletion`<sup>Optional</sup> <a name="enable_branch_auto_deletion" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoDeletion"></a>
+##### `enable_branch_auto_deletion`<sup>Optional</sup> <a name="enable_branch_auto_deletion" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.enableBranchAutoDeletion"></a>
 
 ```python
 enable_branch_auto_deletion: bool | IResolvable
@@ -2447,11 +2447,11 @@ enable_branch_auto_deletion: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#enable_branch_auto_deletion AmplifyApp#enable_branch_auto_deletion}.
 
 ---
 
-##### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.environmentVariables"></a>
+##### `environment_variables`<sup>Optional</sup> <a name="environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.environmentVariables"></a>
 
 ```python
 environment_variables: typing.Mapping[str]
@@ -2459,11 +2459,11 @@ environment_variables: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#environment_variables AmplifyApp#environment_variables}.
 
 ---
 
-##### `iam_service_role_arn`<sup>Optional</sup> <a name="iam_service_role_arn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.iamServiceRoleArn"></a>
+##### `iam_service_role_arn`<sup>Optional</sup> <a name="iam_service_role_arn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.iamServiceRoleArn"></a>
 
 ```python
 iam_service_role_arn: str
@@ -2471,11 +2471,11 @@ iam_service_role_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#iam_service_role_arn AmplifyApp#iam_service_role_arn}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.id"></a>
 
 ```python
 id: str
@@ -2483,28 +2483,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#id AmplifyApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#id AmplifyApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `job_config`<sup>Optional</sup> <a name="job_config" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.jobConfig"></a>
+##### `job_config`<sup>Optional</sup> <a name="job_config" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.jobConfig"></a>
 
 ```python
 job_config: AmplifyAppJobConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
 
 job_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#job_config AmplifyApp#job_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#job_config AmplifyApp#job_config}
 
 ---
 
-##### `oauth_token`<sup>Optional</sup> <a name="oauth_token" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.oauthToken"></a>
+##### `oauth_token`<sup>Optional</sup> <a name="oauth_token" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.oauthToken"></a>
 
 ```python
 oauth_token: str
@@ -2512,11 +2512,11 @@ oauth_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#oauth_token AmplifyApp#oauth_token}.
 
 ---
 
-##### `platform`<sup>Optional</sup> <a name="platform" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.platform"></a>
+##### `platform`<sup>Optional</sup> <a name="platform" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.platform"></a>
 
 ```python
 platform: str
@@ -2524,11 +2524,11 @@ platform: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#platform AmplifyApp#platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#platform AmplifyApp#platform}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.region"></a>
 
 ```python
 region: str
@@ -2538,11 +2538,11 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#region AmplifyApp#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#region AmplifyApp#region}
 
 ---
 
-##### `repository`<sup>Optional</sup> <a name="repository" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.repository"></a>
+##### `repository`<sup>Optional</sup> <a name="repository" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.repository"></a>
 
 ```python
 repository: str
@@ -2550,11 +2550,11 @@ repository: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#repository AmplifyApp#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#repository AmplifyApp#repository}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -2562,11 +2562,11 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags AmplifyApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags AmplifyApp#tags}.
 
 ---
 
-##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktf/provider-aws.amplifyApp.AmplifyAppConfig.property.tagsAll"></a>
+##### `tags_all`<sup>Optional</sup> <a name="tags_all" id="@cdktn/provider-aws.amplifyApp.AmplifyAppConfig.property.tagsAll"></a>
 
 ```python
 tags_all: typing.Mapping[str]
@@ -2574,16 +2574,16 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#tags_all AmplifyApp#tags_all}.
 
 ---
 
-### AmplifyAppCustomRule <a name="AmplifyAppCustomRule" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule"></a>
+### AmplifyAppCustomRule <a name="AmplifyAppCustomRule" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppCustomRule(
   source: str,
@@ -2597,14 +2597,14 @@ amplifyApp.AmplifyAppCustomRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#source AmplifyApp#source}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#target AmplifyApp#target}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#condition AmplifyApp#condition}. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#status AmplifyApp#status}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.source">source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#source AmplifyApp#source}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#target AmplifyApp#target}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#condition AmplifyApp#condition}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#status AmplifyApp#status}. |
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.source"></a>
 
 ```python
 source: str
@@ -2612,11 +2612,11 @@ source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#source AmplifyApp#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#source AmplifyApp#source}.
 
 ---
 
-##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.target"></a>
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.target"></a>
 
 ```python
 target: str
@@ -2624,11 +2624,11 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#target AmplifyApp#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#target AmplifyApp#target}.
 
 ---
 
-##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.condition"></a>
+##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.condition"></a>
 
 ```python
 condition: str
@@ -2636,11 +2636,11 @@ condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#condition AmplifyApp#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#condition AmplifyApp#condition}.
 
 ---
 
-##### `status`<sup>Optional</sup> <a name="status" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule.property.status"></a>
+##### `status`<sup>Optional</sup> <a name="status" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule.property.status"></a>
 
 ```python
 status: str
@@ -2648,16 +2648,16 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#status AmplifyApp#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#status AmplifyApp#status}.
 
 ---
 
-### AmplifyAppJobConfig <a name="AmplifyAppJobConfig" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig"></a>
+### AmplifyAppJobConfig <a name="AmplifyAppJobConfig" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppJobConfig(
   build_compute_type: str = None
@@ -2668,11 +2668,11 @@ amplifyApp.AmplifyAppJobConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig.property.buildComputeType">build_compute_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_compute_type AmplifyApp#build_compute_type}. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig.property.buildComputeType">build_compute_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_compute_type AmplifyApp#build_compute_type}. |
 
 ---
 
-##### `build_compute_type`<sup>Optional</sup> <a name="build_compute_type" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig.property.buildComputeType"></a>
+##### `build_compute_type`<sup>Optional</sup> <a name="build_compute_type" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig.property.buildComputeType"></a>
 
 ```python
 build_compute_type: str
@@ -2680,16 +2680,16 @@ build_compute_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/amplify_app#build_compute_type AmplifyApp#build_compute_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/amplify_app#build_compute_type AmplifyApp#build_compute_type}.
 
 ---
 
-### AmplifyAppProductionBranch <a name="AmplifyAppProductionBranch" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch"></a>
+### AmplifyAppProductionBranch <a name="AmplifyAppProductionBranch" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranch"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranch.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppProductionBranch()
 ```
@@ -2697,12 +2697,12 @@ amplifyApp.AmplifyAppProductionBranch()
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### AmplifyAppAutoBranchCreationConfigOutputReference <a name="AmplifyAppAutoBranchCreationConfigOutputReference" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference"></a>
+### AmplifyAppAutoBranchCreationConfigOutputReference <a name="AmplifyAppAutoBranchCreationConfigOutputReference" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2712,12 +2712,12 @@ amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2725,7 +2725,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2737,39 +2737,39 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBasicAuthCredentials">reset_basic_auth_credentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBuildSpec">reset_build_spec</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableAutoBuild">reset_enable_auto_build</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableBasicAuth">reset_enable_basic_auth</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePerformanceMode">reset_enable_performance_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePullRequestPreview">reset_enable_pull_request_preview</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnvironmentVariables">reset_environment_variables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetFramework">reset_framework</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetPullRequestEnvironmentName">reset_pull_request_environment_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetStage">reset_stage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBasicAuthCredentials">reset_basic_auth_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBuildSpec">reset_build_spec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableAutoBuild">reset_enable_auto_build</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableBasicAuth">reset_enable_basic_auth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePerformanceMode">reset_enable_performance_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePullRequestPreview">reset_enable_pull_request_preview</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnvironmentVariables">reset_environment_variables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetFramework">reset_framework</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetPullRequestEnvironmentName">reset_pull_request_environment_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetStage">reset_stage</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2777,13 +2777,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2791,13 +2791,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2805,13 +2805,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2819,13 +2819,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2833,13 +2833,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2847,13 +2847,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2861,13 +2861,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2875,13 +2875,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2889,13 +2889,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2903,13 +2903,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2919,13 +2919,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2935,61 +2935,61 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_basic_auth_credentials` <a name="reset_basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBasicAuthCredentials"></a>
+##### `reset_basic_auth_credentials` <a name="reset_basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBasicAuthCredentials"></a>
 
 ```python
 def reset_basic_auth_credentials() -> None
 ```
 
-##### `reset_build_spec` <a name="reset_build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBuildSpec"></a>
+##### `reset_build_spec` <a name="reset_build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetBuildSpec"></a>
 
 ```python
 def reset_build_spec() -> None
 ```
 
-##### `reset_enable_auto_build` <a name="reset_enable_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableAutoBuild"></a>
+##### `reset_enable_auto_build` <a name="reset_enable_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableAutoBuild"></a>
 
 ```python
 def reset_enable_auto_build() -> None
 ```
 
-##### `reset_enable_basic_auth` <a name="reset_enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableBasicAuth"></a>
+##### `reset_enable_basic_auth` <a name="reset_enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnableBasicAuth"></a>
 
 ```python
 def reset_enable_basic_auth() -> None
 ```
 
-##### `reset_enable_performance_mode` <a name="reset_enable_performance_mode" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePerformanceMode"></a>
+##### `reset_enable_performance_mode` <a name="reset_enable_performance_mode" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePerformanceMode"></a>
 
 ```python
 def reset_enable_performance_mode() -> None
 ```
 
-##### `reset_enable_pull_request_preview` <a name="reset_enable_pull_request_preview" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePullRequestPreview"></a>
+##### `reset_enable_pull_request_preview` <a name="reset_enable_pull_request_preview" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnablePullRequestPreview"></a>
 
 ```python
 def reset_enable_pull_request_preview() -> None
 ```
 
-##### `reset_environment_variables` <a name="reset_environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnvironmentVariables"></a>
+##### `reset_environment_variables` <a name="reset_environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetEnvironmentVariables"></a>
 
 ```python
 def reset_environment_variables() -> None
 ```
 
-##### `reset_framework` <a name="reset_framework" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetFramework"></a>
+##### `reset_framework` <a name="reset_framework" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetFramework"></a>
 
 ```python
 def reset_framework() -> None
 ```
 
-##### `reset_pull_request_environment_name` <a name="reset_pull_request_environment_name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetPullRequestEnvironmentName"></a>
+##### `reset_pull_request_environment_name` <a name="reset_pull_request_environment_name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetPullRequestEnvironmentName"></a>
 
 ```python
 def reset_pull_request_environment_name() -> None
 ```
 
-##### `reset_stage` <a name="reset_stage" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetStage"></a>
+##### `reset_stage` <a name="reset_stage" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.resetStage"></a>
 
 ```python
 def reset_stage() -> None
@@ -3000,33 +3000,33 @@ def reset_stage() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentialsInput">basic_auth_credentials_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpecInput">build_spec_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuildInput">enable_auto_build_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuthInput">enable_basic_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceModeInput">enable_performance_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreviewInput">enable_pull_request_preview_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariablesInput">environment_variables_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.frameworkInput">framework_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentNameInput">pull_request_environment_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpec">build_spec</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuild">enable_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceMode">enable_performance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreview">enable_pull_request_preview</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.framework">framework</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentName">pull_request_environment_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stage">stage</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentialsInput">basic_auth_credentials_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpecInput">build_spec_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuildInput">enable_auto_build_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuthInput">enable_basic_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceModeInput">enable_performance_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreviewInput">enable_pull_request_preview_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariablesInput">environment_variables_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.frameworkInput">framework_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentNameInput">pull_request_environment_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentials">basic_auth_credentials</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpec">build_spec</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuild">enable_auto_build</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuth">enable_basic_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceMode">enable_performance_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreview">enable_pull_request_preview</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariables">environment_variables</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.framework">framework</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentName">pull_request_environment_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stage">stage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3040,7 +3040,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3050,7 +3050,7 @@ fqn: str
 
 ---
 
-##### `basic_auth_credentials_input`<sup>Optional</sup> <a name="basic_auth_credentials_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentialsInput"></a>
+##### `basic_auth_credentials_input`<sup>Optional</sup> <a name="basic_auth_credentials_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentialsInput"></a>
 
 ```python
 basic_auth_credentials_input: str
@@ -3060,7 +3060,7 @@ basic_auth_credentials_input: str
 
 ---
 
-##### `build_spec_input`<sup>Optional</sup> <a name="build_spec_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpecInput"></a>
+##### `build_spec_input`<sup>Optional</sup> <a name="build_spec_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpecInput"></a>
 
 ```python
 build_spec_input: str
@@ -3070,7 +3070,7 @@ build_spec_input: str
 
 ---
 
-##### `enable_auto_build_input`<sup>Optional</sup> <a name="enable_auto_build_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuildInput"></a>
+##### `enable_auto_build_input`<sup>Optional</sup> <a name="enable_auto_build_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuildInput"></a>
 
 ```python
 enable_auto_build_input: bool | IResolvable
@@ -3080,7 +3080,7 @@ enable_auto_build_input: bool | IResolvable
 
 ---
 
-##### `enable_basic_auth_input`<sup>Optional</sup> <a name="enable_basic_auth_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuthInput"></a>
+##### `enable_basic_auth_input`<sup>Optional</sup> <a name="enable_basic_auth_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuthInput"></a>
 
 ```python
 enable_basic_auth_input: bool | IResolvable
@@ -3090,7 +3090,7 @@ enable_basic_auth_input: bool | IResolvable
 
 ---
 
-##### `enable_performance_mode_input`<sup>Optional</sup> <a name="enable_performance_mode_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceModeInput"></a>
+##### `enable_performance_mode_input`<sup>Optional</sup> <a name="enable_performance_mode_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceModeInput"></a>
 
 ```python
 enable_performance_mode_input: bool | IResolvable
@@ -3100,7 +3100,7 @@ enable_performance_mode_input: bool | IResolvable
 
 ---
 
-##### `enable_pull_request_preview_input`<sup>Optional</sup> <a name="enable_pull_request_preview_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreviewInput"></a>
+##### `enable_pull_request_preview_input`<sup>Optional</sup> <a name="enable_pull_request_preview_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreviewInput"></a>
 
 ```python
 enable_pull_request_preview_input: bool | IResolvable
@@ -3110,7 +3110,7 @@ enable_pull_request_preview_input: bool | IResolvable
 
 ---
 
-##### `environment_variables_input`<sup>Optional</sup> <a name="environment_variables_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariablesInput"></a>
+##### `environment_variables_input`<sup>Optional</sup> <a name="environment_variables_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariablesInput"></a>
 
 ```python
 environment_variables_input: typing.Mapping[str]
@@ -3120,7 +3120,7 @@ environment_variables_input: typing.Mapping[str]
 
 ---
 
-##### `framework_input`<sup>Optional</sup> <a name="framework_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.frameworkInput"></a>
+##### `framework_input`<sup>Optional</sup> <a name="framework_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.frameworkInput"></a>
 
 ```python
 framework_input: str
@@ -3130,7 +3130,7 @@ framework_input: str
 
 ---
 
-##### `pull_request_environment_name_input`<sup>Optional</sup> <a name="pull_request_environment_name_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentNameInput"></a>
+##### `pull_request_environment_name_input`<sup>Optional</sup> <a name="pull_request_environment_name_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentNameInput"></a>
 
 ```python
 pull_request_environment_name_input: str
@@ -3140,7 +3140,7 @@ pull_request_environment_name_input: str
 
 ---
 
-##### `stage_input`<sup>Optional</sup> <a name="stage_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stageInput"></a>
+##### `stage_input`<sup>Optional</sup> <a name="stage_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stageInput"></a>
 
 ```python
 stage_input: str
@@ -3150,7 +3150,7 @@ stage_input: str
 
 ---
 
-##### `basic_auth_credentials`<sup>Required</sup> <a name="basic_auth_credentials" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentials"></a>
+##### `basic_auth_credentials`<sup>Required</sup> <a name="basic_auth_credentials" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.basicAuthCredentials"></a>
 
 ```python
 basic_auth_credentials: str
@@ -3160,7 +3160,7 @@ basic_auth_credentials: str
 
 ---
 
-##### `build_spec`<sup>Required</sup> <a name="build_spec" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpec"></a>
+##### `build_spec`<sup>Required</sup> <a name="build_spec" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.buildSpec"></a>
 
 ```python
 build_spec: str
@@ -3170,7 +3170,7 @@ build_spec: str
 
 ---
 
-##### `enable_auto_build`<sup>Required</sup> <a name="enable_auto_build" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuild"></a>
+##### `enable_auto_build`<sup>Required</sup> <a name="enable_auto_build" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableAutoBuild"></a>
 
 ```python
 enable_auto_build: bool | IResolvable
@@ -3180,7 +3180,7 @@ enable_auto_build: bool | IResolvable
 
 ---
 
-##### `enable_basic_auth`<sup>Required</sup> <a name="enable_basic_auth" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuth"></a>
+##### `enable_basic_auth`<sup>Required</sup> <a name="enable_basic_auth" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enableBasicAuth"></a>
 
 ```python
 enable_basic_auth: bool | IResolvable
@@ -3190,7 +3190,7 @@ enable_basic_auth: bool | IResolvable
 
 ---
 
-##### `enable_performance_mode`<sup>Required</sup> <a name="enable_performance_mode" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceMode"></a>
+##### `enable_performance_mode`<sup>Required</sup> <a name="enable_performance_mode" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePerformanceMode"></a>
 
 ```python
 enable_performance_mode: bool | IResolvable
@@ -3200,7 +3200,7 @@ enable_performance_mode: bool | IResolvable
 
 ---
 
-##### `enable_pull_request_preview`<sup>Required</sup> <a name="enable_pull_request_preview" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreview"></a>
+##### `enable_pull_request_preview`<sup>Required</sup> <a name="enable_pull_request_preview" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.enablePullRequestPreview"></a>
 
 ```python
 enable_pull_request_preview: bool | IResolvable
@@ -3210,7 +3210,7 @@ enable_pull_request_preview: bool | IResolvable
 
 ---
 
-##### `environment_variables`<sup>Required</sup> <a name="environment_variables" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariables"></a>
+##### `environment_variables`<sup>Required</sup> <a name="environment_variables" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.environmentVariables"></a>
 
 ```python
 environment_variables: typing.Mapping[str]
@@ -3220,7 +3220,7 @@ environment_variables: typing.Mapping[str]
 
 ---
 
-##### `framework`<sup>Required</sup> <a name="framework" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.framework"></a>
+##### `framework`<sup>Required</sup> <a name="framework" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.framework"></a>
 
 ```python
 framework: str
@@ -3230,7 +3230,7 @@ framework: str
 
 ---
 
-##### `pull_request_environment_name`<sup>Required</sup> <a name="pull_request_environment_name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentName"></a>
+##### `pull_request_environment_name`<sup>Required</sup> <a name="pull_request_environment_name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.pullRequestEnvironmentName"></a>
 
 ```python
 pull_request_environment_name: str
@@ -3240,7 +3240,7 @@ pull_request_environment_name: str
 
 ---
 
-##### `stage`<sup>Required</sup> <a name="stage" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stage"></a>
+##### `stage`<sup>Required</sup> <a name="stage" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.stage"></a>
 
 ```python
 stage: str
@@ -3250,23 +3250,23 @@ stage: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: AmplifyAppAutoBranchCreationConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig">AmplifyAppAutoBranchCreationConfig</a>
 
 ---
 
 
-### AmplifyAppCacheConfigOutputReference <a name="AmplifyAppCacheConfigOutputReference" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference"></a>
+### AmplifyAppCacheConfigOutputReference <a name="AmplifyAppCacheConfigOutputReference" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppCacheConfigOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3276,12 +3276,12 @@ amplifyApp.AmplifyAppCacheConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3289,7 +3289,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3301,29 +3301,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3331,13 +3331,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3345,13 +3345,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3359,13 +3359,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3373,13 +3373,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3387,13 +3387,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3401,13 +3401,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3415,13 +3415,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3429,13 +3429,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3443,13 +3443,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3457,13 +3457,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3473,13 +3473,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3494,15 +3494,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3516,7 +3516,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3526,7 +3526,7 @@ fqn: str
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -3536,7 +3536,7 @@ type_input: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -3546,23 +3546,23 @@ type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfigOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: AmplifyAppCacheConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCacheConfig">AmplifyAppCacheConfig</a>
 
 ---
 
 
-### AmplifyAppCustomRuleList <a name="AmplifyAppCustomRuleList" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList"></a>
+### AmplifyAppCustomRuleList <a name="AmplifyAppCustomRuleList" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppCustomRuleList(
   terraform_resource: IInterpolatingParent,
@@ -3573,13 +3573,13 @@ amplifyApp.AmplifyAppCustomRuleList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3587,7 +3587,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3595,7 +3595,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3607,15 +3607,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3627,19 +3627,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.resolve"></a>
 
 ```python
 def resolve(
@@ -3649,13 +3649,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3665,7 +3665,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.get"></a>
 
 ```python
 def get(
@@ -3673,7 +3673,7 @@ def get(
 ) -> AmplifyAppCustomRuleOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3686,13 +3686,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3706,7 +3706,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3716,23 +3716,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[AmplifyAppCustomRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>]
 
 ---
 
 
-### AmplifyAppCustomRuleOutputReference <a name="AmplifyAppCustomRuleOutputReference" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference"></a>
+### AmplifyAppCustomRuleOutputReference <a name="AmplifyAppCustomRuleOutputReference" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppCustomRuleOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3744,14 +3744,14 @@ amplifyApp.AmplifyAppCustomRuleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3759,7 +3759,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3767,7 +3767,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3775,7 +3775,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3787,31 +3787,31 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetCondition">reset_condition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetStatus">reset_status</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetCondition">reset_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetStatus">reset_status</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3819,13 +3819,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3833,13 +3833,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3847,13 +3847,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3861,13 +3861,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3875,13 +3875,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3889,13 +3889,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3903,13 +3903,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3917,13 +3917,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3931,13 +3931,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3945,13 +3945,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3961,13 +3961,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3977,13 +3977,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_condition` <a name="reset_condition" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetCondition"></a>
+##### `reset_condition` <a name="reset_condition" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetCondition"></a>
 
 ```python
 def reset_condition() -> None
 ```
 
-##### `reset_status` <a name="reset_status" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetStatus"></a>
+##### `reset_status` <a name="reset_status" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.resetStatus"></a>
 
 ```python
 def reset_status() -> None
@@ -3994,21 +3994,21 @@ def reset_status() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.conditionInput">condition_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.condition">condition</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.conditionInput">condition_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.sourceInput">source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.condition">condition</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4022,7 +4022,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4032,7 +4032,7 @@ fqn: str
 
 ---
 
-##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.conditionInput"></a>
+##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.conditionInput"></a>
 
 ```python
 condition_input: str
@@ -4042,7 +4042,7 @@ condition_input: str
 
 ---
 
-##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.sourceInput"></a>
+##### `source_input`<sup>Optional</sup> <a name="source_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.sourceInput"></a>
 
 ```python
 source_input: str
@@ -4052,7 +4052,7 @@ source_input: str
 
 ---
 
-##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.statusInput"></a>
+##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.statusInput"></a>
 
 ```python
 status_input: str
@@ -4062,7 +4062,7 @@ status_input: str
 
 ---
 
-##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.targetInput"></a>
+##### `target_input`<sup>Optional</sup> <a name="target_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.targetInput"></a>
 
 ```python
 target_input: str
@@ -4072,7 +4072,7 @@ target_input: str
 
 ---
 
-##### `condition`<sup>Required</sup> <a name="condition" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.condition"></a>
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.condition"></a>
 
 ```python
 condition: str
@@ -4082,7 +4082,7 @@ condition: str
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.source"></a>
 
 ```python
 source: str
@@ -4092,7 +4092,7 @@ source: str
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.status"></a>
 
 ```python
 status: str
@@ -4102,7 +4102,7 @@ status: str
 
 ---
 
-##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.target"></a>
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.target"></a>
 
 ```python
 target: str
@@ -4112,23 +4112,23 @@ target: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | AmplifyAppCustomRule
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule">AmplifyAppCustomRule</a>
 
 ---
 
 
-### AmplifyAppJobConfigOutputReference <a name="AmplifyAppJobConfigOutputReference" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference"></a>
+### AmplifyAppJobConfigOutputReference <a name="AmplifyAppJobConfigOutputReference" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppJobConfigOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4138,12 +4138,12 @@ amplifyApp.AmplifyAppJobConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4151,7 +4151,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4163,30 +4163,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resetBuildComputeType">reset_build_compute_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resetBuildComputeType">reset_build_compute_type</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4194,13 +4194,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4208,13 +4208,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4222,13 +4222,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4236,13 +4236,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4250,13 +4250,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4264,13 +4264,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4278,13 +4278,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4292,13 +4292,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4306,13 +4306,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4320,13 +4320,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4336,13 +4336,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4352,7 +4352,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_build_compute_type` <a name="reset_build_compute_type" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resetBuildComputeType"></a>
+##### `reset_build_compute_type` <a name="reset_build_compute_type" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.resetBuildComputeType"></a>
 
 ```python
 def reset_build_compute_type() -> None
@@ -4363,15 +4363,15 @@ def reset_build_compute_type() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeTypeInput">build_compute_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeType">build_compute_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeTypeInput">build_compute_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeType">build_compute_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4385,7 +4385,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4395,7 +4395,7 @@ fqn: str
 
 ---
 
-##### `build_compute_type_input`<sup>Optional</sup> <a name="build_compute_type_input" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeTypeInput"></a>
+##### `build_compute_type_input`<sup>Optional</sup> <a name="build_compute_type_input" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeTypeInput"></a>
 
 ```python
 build_compute_type_input: str
@@ -4405,7 +4405,7 @@ build_compute_type_input: str
 
 ---
 
-##### `build_compute_type`<sup>Required</sup> <a name="build_compute_type" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeType"></a>
+##### `build_compute_type`<sup>Required</sup> <a name="build_compute_type" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.buildComputeType"></a>
 
 ```python
 build_compute_type: str
@@ -4415,23 +4415,23 @@ build_compute_type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfigOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: AmplifyAppJobConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppJobConfig">AmplifyAppJobConfig</a>
 
 ---
 
 
-### AmplifyAppProductionBranchList <a name="AmplifyAppProductionBranchList" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList"></a>
+### AmplifyAppProductionBranchList <a name="AmplifyAppProductionBranchList" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppProductionBranchList(
   terraform_resource: IInterpolatingParent,
@@ -4442,13 +4442,13 @@ amplifyApp.AmplifyAppProductionBranchList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4456,7 +4456,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4464,7 +4464,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4476,15 +4476,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -4496,19 +4496,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.resolve"></a>
 
 ```python
 def resolve(
@@ -4518,13 +4518,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4534,7 +4534,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.get"></a>
 
 ```python
 def get(
@@ -4542,7 +4542,7 @@ def get(
 ) -> AmplifyAppProductionBranchOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4555,12 +4555,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4574,7 +4574,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4585,12 +4585,12 @@ fqn: str
 ---
 
 
-### AmplifyAppProductionBranchOutputReference <a name="AmplifyAppProductionBranchOutputReference" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference"></a>
+### AmplifyAppProductionBranchOutputReference <a name="AmplifyAppProductionBranchOutputReference" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import amplify_app
+from cdktn_provider_aws import amplify_app
 
 amplifyApp.AmplifyAppProductionBranchOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4602,14 +4602,14 @@ amplifyApp.AmplifyAppProductionBranchOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4617,7 +4617,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4625,7 +4625,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4633,7 +4633,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4645,29 +4645,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4675,13 +4675,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4689,13 +4689,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4703,13 +4703,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4717,13 +4717,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4731,13 +4731,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4745,13 +4745,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4759,13 +4759,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4773,13 +4773,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4787,13 +4787,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4801,13 +4801,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4817,13 +4817,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4838,17 +4838,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.branchName">branch_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.lastDeployTime">last_deploy_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.thumbnailUrl">thumbnail_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch">AmplifyAppProductionBranch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.branchName">branch_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.lastDeployTime">last_deploy_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.thumbnailUrl">thumbnail_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranch">AmplifyAppProductionBranch</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4862,7 +4862,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4872,7 +4872,7 @@ fqn: str
 
 ---
 
-##### `branch_name`<sup>Required</sup> <a name="branch_name" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.branchName"></a>
+##### `branch_name`<sup>Required</sup> <a name="branch_name" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.branchName"></a>
 
 ```python
 branch_name: str
@@ -4882,7 +4882,7 @@ branch_name: str
 
 ---
 
-##### `last_deploy_time`<sup>Required</sup> <a name="last_deploy_time" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.lastDeployTime"></a>
+##### `last_deploy_time`<sup>Required</sup> <a name="last_deploy_time" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.lastDeployTime"></a>
 
 ```python
 last_deploy_time: str
@@ -4892,7 +4892,7 @@ last_deploy_time: str
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.status"></a>
 
 ```python
 status: str
@@ -4902,7 +4902,7 @@ status: str
 
 ---
 
-##### `thumbnail_url`<sup>Required</sup> <a name="thumbnail_url" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.thumbnailUrl"></a>
+##### `thumbnail_url`<sup>Required</sup> <a name="thumbnail_url" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.thumbnailUrl"></a>
 
 ```python
 thumbnail_url: str
@@ -4912,13 +4912,13 @@ thumbnail_url: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: AmplifyAppProductionBranch
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch">AmplifyAppProductionBranch</a>
+- *Type:* <a href="#@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranch">AmplifyAppProductionBranch</a>
 
 ---
 

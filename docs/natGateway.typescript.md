@@ -1,28 +1,28 @@
-# `natGateway` Submodule <a name="`natGateway` Submodule" id="@cdktf/provider-aws.natGateway"></a>
+# `natGateway` Submodule <a name="`natGateway` Submodule" id="@cdktn/provider-aws.natGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NatGateway <a name="NatGateway" id="@cdktf/provider-aws.natGateway.NatGateway"></a>
+### NatGateway <a name="NatGateway" id="@cdktn/provider-aws.natGateway.NatGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway aws_nat_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway aws_nat_gateway}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGateway.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 new natGateway.NatGateway(scope: Construct, id: string, config?: NatGatewayConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig">NatGatewayConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig">NatGatewayConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.natGateway.NatGateway.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.natGateway.NatGateway.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-aws.natGateway.NatGateway.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-aws.natGateway.NatGateway.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig">NatGatewayConfig</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig">NatGatewayConfig</a>
 
 ---
 
@@ -50,50 +50,50 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress">putAvailabilityZoneAddress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetAllocationId">resetAllocationId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityMode">resetAvailabilityMode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityZoneAddress">resetAvailabilityZoneAddress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetConnectivityType">resetConnectivityType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetPrivateIp">resetPrivateIp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryAllocationIds">resetSecondaryAllocationIds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddressCount">resetSecondaryPrivateIpAddressCount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddresses">resetSecondaryPrivateIpAddresses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetSubnetId">resetSubnetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetTagsAll">resetTagsAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetTimeouts">resetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.resetVpcId">resetVpcId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress">putAvailabilityZoneAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetAllocationId">resetAllocationId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetAvailabilityMode">resetAvailabilityMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetAvailabilityZoneAddress">resetAvailabilityZoneAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetConnectivityType">resetConnectivityType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetPrivateIp">resetPrivateIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetSecondaryAllocationIds">resetSecondaryAllocationIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddressCount">resetSecondaryPrivateIpAddressCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddresses">resetSecondaryPrivateIpAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetSubnetId">resetSubnetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetTagsAll">resetTagsAll</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.resetVpcId">resetVpcId</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.natGateway.NatGateway.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.natGateway.NatGateway.toString"></a>
 
 ```typescript
 public toString(): string
@@ -101,25 +101,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-aws.natGateway.NatGateway.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-aws.natGateway.NatGateway.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.natGateway.NatGateway.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.natGateway.NatGateway.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.natGateway.NatGateway.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.natGateway.NatGateway.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-aws.natGateway.NatGateway.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-aws.natGateway.NatGateway.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -127,7 +127,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-aws.natGateway.NatGateway.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-aws.natGateway.NatGateway.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -135,7 +135,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-aws.natGateway.NatGateway.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-aws.natGateway.NatGateway.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -143,19 +143,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-aws.natGateway.NatGateway.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-aws.natGateway.NatGateway.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-aws.natGateway.NatGateway.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-aws.natGateway.NatGateway.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-aws.natGateway.NatGateway.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-aws.natGateway.NatGateway.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -163,7 +163,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-aws.natGateway.NatGateway.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-aws.natGateway.NatGateway.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -171,7 +171,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.natGateway.NatGateway.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.natGateway.NatGateway.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -179,151 +179,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-aws.natGateway.NatGateway.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-aws.natGateway.NatGateway.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-aws.natGateway.NatGateway.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-aws.natGateway.NatGateway.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.natGateway.NatGateway.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.natGateway.NatGateway.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.natGateway.NatGateway.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.natGateway.NatGateway.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGateway.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGateway.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-aws.natGateway.NatGateway.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-aws.natGateway.NatGateway.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -333,7 +333,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.natGateway.NatGateway.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.natGateway.NatGateway.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -341,7 +341,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-aws.natGateway.NatGateway.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-aws.natGateway.NatGateway.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -349,7 +349,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-aws.natGateway.NatGateway.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-aws.natGateway.NatGateway.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -357,7 +357,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.natGateway.NatGateway.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.natGateway.NatGateway.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -365,7 +365,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-aws.natGateway.NatGateway.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-aws.natGateway.NatGateway.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -373,7 +373,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.natGateway.NatGateway.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.natGateway.NatGateway.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -381,115 +381,115 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putAvailabilityZoneAddress` <a name="putAvailabilityZoneAddress" id="@cdktf/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress"></a>
+##### `putAvailabilityZoneAddress` <a name="putAvailabilityZoneAddress" id="@cdktn/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress"></a>
 
 ```typescript
 public putAvailabilityZoneAddress(value: IResolvable | NatGatewayAvailabilityZoneAddress[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.natGateway.NatGateway.putAvailabilityZoneAddress.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-aws.natGateway.NatGateway.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-aws.natGateway.NatGateway.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: NatGatewayTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.natGateway.NatGateway.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.natGateway.NatGateway.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
 
 ---
 
-##### `resetAllocationId` <a name="resetAllocationId" id="@cdktf/provider-aws.natGateway.NatGateway.resetAllocationId"></a>
+##### `resetAllocationId` <a name="resetAllocationId" id="@cdktn/provider-aws.natGateway.NatGateway.resetAllocationId"></a>
 
 ```typescript
 public resetAllocationId(): void
 ```
 
-##### `resetAvailabilityMode` <a name="resetAvailabilityMode" id="@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityMode"></a>
+##### `resetAvailabilityMode` <a name="resetAvailabilityMode" id="@cdktn/provider-aws.natGateway.NatGateway.resetAvailabilityMode"></a>
 
 ```typescript
 public resetAvailabilityMode(): void
 ```
 
-##### `resetAvailabilityZoneAddress` <a name="resetAvailabilityZoneAddress" id="@cdktf/provider-aws.natGateway.NatGateway.resetAvailabilityZoneAddress"></a>
+##### `resetAvailabilityZoneAddress` <a name="resetAvailabilityZoneAddress" id="@cdktn/provider-aws.natGateway.NatGateway.resetAvailabilityZoneAddress"></a>
 
 ```typescript
 public resetAvailabilityZoneAddress(): void
 ```
 
-##### `resetConnectivityType` <a name="resetConnectivityType" id="@cdktf/provider-aws.natGateway.NatGateway.resetConnectivityType"></a>
+##### `resetConnectivityType` <a name="resetConnectivityType" id="@cdktn/provider-aws.natGateway.NatGateway.resetConnectivityType"></a>
 
 ```typescript
 public resetConnectivityType(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-aws.natGateway.NatGateway.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-aws.natGateway.NatGateway.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetPrivateIp` <a name="resetPrivateIp" id="@cdktf/provider-aws.natGateway.NatGateway.resetPrivateIp"></a>
+##### `resetPrivateIp` <a name="resetPrivateIp" id="@cdktn/provider-aws.natGateway.NatGateway.resetPrivateIp"></a>
 
 ```typescript
 public resetPrivateIp(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-aws.natGateway.NatGateway.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-aws.natGateway.NatGateway.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetSecondaryAllocationIds` <a name="resetSecondaryAllocationIds" id="@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryAllocationIds"></a>
+##### `resetSecondaryAllocationIds` <a name="resetSecondaryAllocationIds" id="@cdktn/provider-aws.natGateway.NatGateway.resetSecondaryAllocationIds"></a>
 
 ```typescript
 public resetSecondaryAllocationIds(): void
 ```
 
-##### `resetSecondaryPrivateIpAddressCount` <a name="resetSecondaryPrivateIpAddressCount" id="@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddressCount"></a>
+##### `resetSecondaryPrivateIpAddressCount` <a name="resetSecondaryPrivateIpAddressCount" id="@cdktn/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddressCount"></a>
 
 ```typescript
 public resetSecondaryPrivateIpAddressCount(): void
 ```
 
-##### `resetSecondaryPrivateIpAddresses` <a name="resetSecondaryPrivateIpAddresses" id="@cdktf/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddresses"></a>
+##### `resetSecondaryPrivateIpAddresses` <a name="resetSecondaryPrivateIpAddresses" id="@cdktn/provider-aws.natGateway.NatGateway.resetSecondaryPrivateIpAddresses"></a>
 
 ```typescript
 public resetSecondaryPrivateIpAddresses(): void
 ```
 
-##### `resetSubnetId` <a name="resetSubnetId" id="@cdktf/provider-aws.natGateway.NatGateway.resetSubnetId"></a>
+##### `resetSubnetId` <a name="resetSubnetId" id="@cdktn/provider-aws.natGateway.NatGateway.resetSubnetId"></a>
 
 ```typescript
 public resetSubnetId(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-aws.natGateway.NatGateway.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-aws.natGateway.NatGateway.resetTags"></a>
 
 ```typescript
 public resetTags(): void
 ```
 
-##### `resetTagsAll` <a name="resetTagsAll" id="@cdktf/provider-aws.natGateway.NatGateway.resetTagsAll"></a>
+##### `resetTagsAll` <a name="resetTagsAll" id="@cdktn/provider-aws.natGateway.NatGateway.resetTagsAll"></a>
 
 ```typescript
 public resetTagsAll(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-aws.natGateway.NatGateway.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-aws.natGateway.NatGateway.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
 ```
 
-##### `resetVpcId` <a name="resetVpcId" id="@cdktf/provider-aws.natGateway.NatGateway.resetVpcId"></a>
+##### `resetVpcId` <a name="resetVpcId" id="@cdktn/provider-aws.natGateway.NatGateway.resetVpcId"></a>
 
 ```typescript
 public resetVpcId(): void
@@ -499,17 +499,17 @@ public resetVpcId(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NatGateway resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NatGateway resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-aws.natGateway.NatGateway.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-aws.natGateway.NatGateway.isConstruct"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 natGateway.NatGateway.isConstruct(x: any)
 ```
@@ -530,7 +530,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.natGateway.NatGateway.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.natGateway.NatGateway.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -538,45 +538,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-aws.natGateway.NatGateway.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-aws.natGateway.NatGateway.isTerraformElement"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 natGateway.NatGateway.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.natGateway.NatGateway.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.natGateway.NatGateway.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-aws.natGateway.NatGateway.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-aws.natGateway.NatGateway.isTerraformResource"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 natGateway.NatGateway.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.natGateway.NatGateway.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.natGateway.NatGateway.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-aws.natGateway.NatGateway.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 natGateway.NatGateway.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a NatGateway resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -584,7 +584,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -592,17 +592,17 @@ The construct id used in the generated config for the NatGateway to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing NatGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.natGateway.NatGateway.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -614,62 +614,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.associationId">associationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.autoProvisionZones">autoProvisionZones</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.autoScalingIps">autoScalingIps</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddress">availabilityZoneAddress</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList">NatGatewayAvailabilityZoneAddressList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.networkInterfaceId">networkInterfaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.publicIp">publicIp</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAddress">regionalNatGatewayAddress</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList">NatGatewayRegionalNatGatewayAddressList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAutoMode">regionalNatGatewayAutoMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.routeTableId">routeTableId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference">NatGatewayTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.allocationIdInput">allocationIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityModeInput">availabilityModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddressInput">availabilityZoneAddressInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.connectivityTypeInput">connectivityTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.privateIpInput">privateIpInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.secondaryAllocationIdsInput">secondaryAllocationIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCountInput">secondaryPrivateIpAddressCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressesInput">secondaryPrivateIpAddressesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.subnetIdInput">subnetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.allocationId">allocationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.availabilityMode">availabilityMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.connectivityType">connectivityType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.privateIp">privateIp</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.secondaryAllocationIds">secondaryAllocationIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCount">secondaryPrivateIpAddressCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddresses">secondaryPrivateIpAddresses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.subnetId">subnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.vpcId">vpcId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.associationId">associationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.autoProvisionZones">autoProvisionZones</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.autoScalingIps">autoScalingIps</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.availabilityZoneAddress">availabilityZoneAddress</a></code> | <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList">NatGatewayAvailabilityZoneAddressList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.networkInterfaceId">networkInterfaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.publicIp">publicIp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAddress">regionalNatGatewayAddress</a></code> | <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList">NatGatewayRegionalNatGatewayAddressList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAutoMode">regionalNatGatewayAutoMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.routeTableId">routeTableId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference">NatGatewayTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.allocationIdInput">allocationIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.availabilityModeInput">availabilityModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.availabilityZoneAddressInput">availabilityZoneAddressInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.connectivityTypeInput">connectivityTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.privateIpInput">privateIpInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.secondaryAllocationIdsInput">secondaryAllocationIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCountInput">secondaryPrivateIpAddressCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressesInput">secondaryPrivateIpAddressesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.subnetIdInput">subnetIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.vpcIdInput">vpcIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.allocationId">allocationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.availabilityMode">availabilityMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.connectivityType">connectivityType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.privateIp">privateIp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.secondaryAllocationIds">secondaryAllocationIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCount">secondaryPrivateIpAddressCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddresses">secondaryPrivateIpAddresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.subnetId">subnetId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.vpcId">vpcId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.natGateway.NatGateway.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.natGateway.NatGateway.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -681,7 +681,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-aws.natGateway.NatGateway.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-aws.natGateway.NatGateway.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -691,7 +691,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGateway.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.natGateway.NatGateway.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -701,7 +701,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-aws.natGateway.NatGateway.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-aws.natGateway.NatGateway.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -711,7 +711,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-aws.natGateway.NatGateway.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-aws.natGateway.NatGateway.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -721,7 +721,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-aws.natGateway.NatGateway.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-aws.natGateway.NatGateway.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -731,7 +731,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-aws.natGateway.NatGateway.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-aws.natGateway.NatGateway.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -741,7 +741,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.natGateway.NatGateway.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.natGateway.NatGateway.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -751,7 +751,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.natGateway.NatGateway.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.natGateway.NatGateway.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -761,7 +761,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.natGateway.NatGateway.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.natGateway.NatGateway.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -771,7 +771,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.natGateway.NatGateway.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.natGateway.NatGateway.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -781,7 +781,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.natGateway.NatGateway.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.natGateway.NatGateway.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -791,7 +791,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.natGateway.NatGateway.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.natGateway.NatGateway.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -801,7 +801,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.natGateway.NatGateway.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.natGateway.NatGateway.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -811,7 +811,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdktf/provider-aws.natGateway.NatGateway.property.associationId"></a>
+##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdktn/provider-aws.natGateway.NatGateway.property.associationId"></a>
 
 ```typescript
 public readonly associationId: string;
@@ -821,7 +821,7 @@ public readonly associationId: string;
 
 ---
 
-##### `autoProvisionZones`<sup>Required</sup> <a name="autoProvisionZones" id="@cdktf/provider-aws.natGateway.NatGateway.property.autoProvisionZones"></a>
+##### `autoProvisionZones`<sup>Required</sup> <a name="autoProvisionZones" id="@cdktn/provider-aws.natGateway.NatGateway.property.autoProvisionZones"></a>
 
 ```typescript
 public readonly autoProvisionZones: string;
@@ -831,7 +831,7 @@ public readonly autoProvisionZones: string;
 
 ---
 
-##### `autoScalingIps`<sup>Required</sup> <a name="autoScalingIps" id="@cdktf/provider-aws.natGateway.NatGateway.property.autoScalingIps"></a>
+##### `autoScalingIps`<sup>Required</sup> <a name="autoScalingIps" id="@cdktn/provider-aws.natGateway.NatGateway.property.autoScalingIps"></a>
 
 ```typescript
 public readonly autoScalingIps: string;
@@ -841,17 +841,17 @@ public readonly autoScalingIps: string;
 
 ---
 
-##### `availabilityZoneAddress`<sup>Required</sup> <a name="availabilityZoneAddress" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddress"></a>
+##### `availabilityZoneAddress`<sup>Required</sup> <a name="availabilityZoneAddress" id="@cdktn/provider-aws.natGateway.NatGateway.property.availabilityZoneAddress"></a>
 
 ```typescript
 public readonly availabilityZoneAddress: NatGatewayAvailabilityZoneAddressList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList">NatGatewayAvailabilityZoneAddressList</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList">NatGatewayAvailabilityZoneAddressList</a>
 
 ---
 
-##### `networkInterfaceId`<sup>Required</sup> <a name="networkInterfaceId" id="@cdktf/provider-aws.natGateway.NatGateway.property.networkInterfaceId"></a>
+##### `networkInterfaceId`<sup>Required</sup> <a name="networkInterfaceId" id="@cdktn/provider-aws.natGateway.NatGateway.property.networkInterfaceId"></a>
 
 ```typescript
 public readonly networkInterfaceId: string;
@@ -861,7 +861,7 @@ public readonly networkInterfaceId: string;
 
 ---
 
-##### `publicIp`<sup>Required</sup> <a name="publicIp" id="@cdktf/provider-aws.natGateway.NatGateway.property.publicIp"></a>
+##### `publicIp`<sup>Required</sup> <a name="publicIp" id="@cdktn/provider-aws.natGateway.NatGateway.property.publicIp"></a>
 
 ```typescript
 public readonly publicIp: string;
@@ -871,17 +871,17 @@ public readonly publicIp: string;
 
 ---
 
-##### `regionalNatGatewayAddress`<sup>Required</sup> <a name="regionalNatGatewayAddress" id="@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAddress"></a>
+##### `regionalNatGatewayAddress`<sup>Required</sup> <a name="regionalNatGatewayAddress" id="@cdktn/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAddress"></a>
 
 ```typescript
 public readonly regionalNatGatewayAddress: NatGatewayRegionalNatGatewayAddressList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList">NatGatewayRegionalNatGatewayAddressList</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList">NatGatewayRegionalNatGatewayAddressList</a>
 
 ---
 
-##### `regionalNatGatewayAutoMode`<sup>Required</sup> <a name="regionalNatGatewayAutoMode" id="@cdktf/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAutoMode"></a>
+##### `regionalNatGatewayAutoMode`<sup>Required</sup> <a name="regionalNatGatewayAutoMode" id="@cdktn/provider-aws.natGateway.NatGateway.property.regionalNatGatewayAutoMode"></a>
 
 ```typescript
 public readonly regionalNatGatewayAutoMode: string;
@@ -891,7 +891,7 @@ public readonly regionalNatGatewayAutoMode: string;
 
 ---
 
-##### `routeTableId`<sup>Required</sup> <a name="routeTableId" id="@cdktf/provider-aws.natGateway.NatGateway.property.routeTableId"></a>
+##### `routeTableId`<sup>Required</sup> <a name="routeTableId" id="@cdktn/provider-aws.natGateway.NatGateway.property.routeTableId"></a>
 
 ```typescript
 public readonly routeTableId: string;
@@ -901,17 +901,17 @@ public readonly routeTableId: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.natGateway.NatGateway.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.natGateway.NatGateway.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: NatGatewayTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference">NatGatewayTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference">NatGatewayTimeoutsOutputReference</a>
 
 ---
 
-##### `allocationIdInput`<sup>Optional</sup> <a name="allocationIdInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.allocationIdInput"></a>
+##### `allocationIdInput`<sup>Optional</sup> <a name="allocationIdInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.allocationIdInput"></a>
 
 ```typescript
 public readonly allocationIdInput: string;
@@ -921,7 +921,7 @@ public readonly allocationIdInput: string;
 
 ---
 
-##### `availabilityModeInput`<sup>Optional</sup> <a name="availabilityModeInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityModeInput"></a>
+##### `availabilityModeInput`<sup>Optional</sup> <a name="availabilityModeInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.availabilityModeInput"></a>
 
 ```typescript
 public readonly availabilityModeInput: string;
@@ -931,17 +931,17 @@ public readonly availabilityModeInput: string;
 
 ---
 
-##### `availabilityZoneAddressInput`<sup>Optional</sup> <a name="availabilityZoneAddressInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityZoneAddressInput"></a>
+##### `availabilityZoneAddressInput`<sup>Optional</sup> <a name="availabilityZoneAddressInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.availabilityZoneAddressInput"></a>
 
 ```typescript
 public readonly availabilityZoneAddressInput: IResolvable | NatGatewayAvailabilityZoneAddress[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
 
 ---
 
-##### `connectivityTypeInput`<sup>Optional</sup> <a name="connectivityTypeInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.connectivityTypeInput"></a>
+##### `connectivityTypeInput`<sup>Optional</sup> <a name="connectivityTypeInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.connectivityTypeInput"></a>
 
 ```typescript
 public readonly connectivityTypeInput: string;
@@ -951,7 +951,7 @@ public readonly connectivityTypeInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -961,7 +961,7 @@ public readonly idInput: string;
 
 ---
 
-##### `privateIpInput`<sup>Optional</sup> <a name="privateIpInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.privateIpInput"></a>
+##### `privateIpInput`<sup>Optional</sup> <a name="privateIpInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.privateIpInput"></a>
 
 ```typescript
 public readonly privateIpInput: string;
@@ -971,7 +971,7 @@ public readonly privateIpInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -981,7 +981,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `secondaryAllocationIdsInput`<sup>Optional</sup> <a name="secondaryAllocationIdsInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.secondaryAllocationIdsInput"></a>
+##### `secondaryAllocationIdsInput`<sup>Optional</sup> <a name="secondaryAllocationIdsInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.secondaryAllocationIdsInput"></a>
 
 ```typescript
 public readonly secondaryAllocationIdsInput: string[];
@@ -991,7 +991,7 @@ public readonly secondaryAllocationIdsInput: string[];
 
 ---
 
-##### `secondaryPrivateIpAddressCountInput`<sup>Optional</sup> <a name="secondaryPrivateIpAddressCountInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCountInput"></a>
+##### `secondaryPrivateIpAddressCountInput`<sup>Optional</sup> <a name="secondaryPrivateIpAddressCountInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCountInput"></a>
 
 ```typescript
 public readonly secondaryPrivateIpAddressCountInput: number;
@@ -1001,7 +1001,7 @@ public readonly secondaryPrivateIpAddressCountInput: number;
 
 ---
 
-##### `secondaryPrivateIpAddressesInput`<sup>Optional</sup> <a name="secondaryPrivateIpAddressesInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressesInput"></a>
+##### `secondaryPrivateIpAddressesInput`<sup>Optional</sup> <a name="secondaryPrivateIpAddressesInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressesInput"></a>
 
 ```typescript
 public readonly secondaryPrivateIpAddressesInput: string[];
@@ -1011,7 +1011,7 @@ public readonly secondaryPrivateIpAddressesInput: string[];
 
 ---
 
-##### `subnetIdInput`<sup>Optional</sup> <a name="subnetIdInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.subnetIdInput"></a>
+##### `subnetIdInput`<sup>Optional</sup> <a name="subnetIdInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.subnetIdInput"></a>
 
 ```typescript
 public readonly subnetIdInput: string;
@@ -1021,7 +1021,7 @@ public readonly subnetIdInput: string;
 
 ---
 
-##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.tagsAllInput"></a>
+##### `tagsAllInput`<sup>Optional</sup> <a name="tagsAllInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.tagsAllInput"></a>
 
 ```typescript
 public readonly tagsAllInput: {[ key: string ]: string};
@@ -1031,7 +1031,7 @@ public readonly tagsAllInput: {[ key: string ]: string};
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: {[ key: string ]: string};
@@ -1041,17 +1041,17 @@ public readonly tagsInput: {[ key: string ]: string};
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | NatGatewayTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
 
 ---
 
-##### `vpcIdInput`<sup>Optional</sup> <a name="vpcIdInput" id="@cdktf/provider-aws.natGateway.NatGateway.property.vpcIdInput"></a>
+##### `vpcIdInput`<sup>Optional</sup> <a name="vpcIdInput" id="@cdktn/provider-aws.natGateway.NatGateway.property.vpcIdInput"></a>
 
 ```typescript
 public readonly vpcIdInput: string;
@@ -1061,7 +1061,7 @@ public readonly vpcIdInput: string;
 
 ---
 
-##### `allocationId`<sup>Required</sup> <a name="allocationId" id="@cdktf/provider-aws.natGateway.NatGateway.property.allocationId"></a>
+##### `allocationId`<sup>Required</sup> <a name="allocationId" id="@cdktn/provider-aws.natGateway.NatGateway.property.allocationId"></a>
 
 ```typescript
 public readonly allocationId: string;
@@ -1071,7 +1071,7 @@ public readonly allocationId: string;
 
 ---
 
-##### `availabilityMode`<sup>Required</sup> <a name="availabilityMode" id="@cdktf/provider-aws.natGateway.NatGateway.property.availabilityMode"></a>
+##### `availabilityMode`<sup>Required</sup> <a name="availabilityMode" id="@cdktn/provider-aws.natGateway.NatGateway.property.availabilityMode"></a>
 
 ```typescript
 public readonly availabilityMode: string;
@@ -1081,7 +1081,7 @@ public readonly availabilityMode: string;
 
 ---
 
-##### `connectivityType`<sup>Required</sup> <a name="connectivityType" id="@cdktf/provider-aws.natGateway.NatGateway.property.connectivityType"></a>
+##### `connectivityType`<sup>Required</sup> <a name="connectivityType" id="@cdktn/provider-aws.natGateway.NatGateway.property.connectivityType"></a>
 
 ```typescript
 public readonly connectivityType: string;
@@ -1091,7 +1091,7 @@ public readonly connectivityType: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.natGateway.NatGateway.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.natGateway.NatGateway.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1101,7 +1101,7 @@ public readonly id: string;
 
 ---
 
-##### `privateIp`<sup>Required</sup> <a name="privateIp" id="@cdktf/provider-aws.natGateway.NatGateway.property.privateIp"></a>
+##### `privateIp`<sup>Required</sup> <a name="privateIp" id="@cdktn/provider-aws.natGateway.NatGateway.property.privateIp"></a>
 
 ```typescript
 public readonly privateIp: string;
@@ -1111,7 +1111,7 @@ public readonly privateIp: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.natGateway.NatGateway.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.natGateway.NatGateway.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1121,7 +1121,7 @@ public readonly region: string;
 
 ---
 
-##### `secondaryAllocationIds`<sup>Required</sup> <a name="secondaryAllocationIds" id="@cdktf/provider-aws.natGateway.NatGateway.property.secondaryAllocationIds"></a>
+##### `secondaryAllocationIds`<sup>Required</sup> <a name="secondaryAllocationIds" id="@cdktn/provider-aws.natGateway.NatGateway.property.secondaryAllocationIds"></a>
 
 ```typescript
 public readonly secondaryAllocationIds: string[];
@@ -1131,7 +1131,7 @@ public readonly secondaryAllocationIds: string[];
 
 ---
 
-##### `secondaryPrivateIpAddressCount`<sup>Required</sup> <a name="secondaryPrivateIpAddressCount" id="@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCount"></a>
+##### `secondaryPrivateIpAddressCount`<sup>Required</sup> <a name="secondaryPrivateIpAddressCount" id="@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddressCount"></a>
 
 ```typescript
 public readonly secondaryPrivateIpAddressCount: number;
@@ -1141,7 +1141,7 @@ public readonly secondaryPrivateIpAddressCount: number;
 
 ---
 
-##### `secondaryPrivateIpAddresses`<sup>Required</sup> <a name="secondaryPrivateIpAddresses" id="@cdktf/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddresses"></a>
+##### `secondaryPrivateIpAddresses`<sup>Required</sup> <a name="secondaryPrivateIpAddresses" id="@cdktn/provider-aws.natGateway.NatGateway.property.secondaryPrivateIpAddresses"></a>
 
 ```typescript
 public readonly secondaryPrivateIpAddresses: string[];
@@ -1151,7 +1151,7 @@ public readonly secondaryPrivateIpAddresses: string[];
 
 ---
 
-##### `subnetId`<sup>Required</sup> <a name="subnetId" id="@cdktf/provider-aws.natGateway.NatGateway.property.subnetId"></a>
+##### `subnetId`<sup>Required</sup> <a name="subnetId" id="@cdktn/provider-aws.natGateway.NatGateway.property.subnetId"></a>
 
 ```typescript
 public readonly subnetId: string;
@@ -1161,7 +1161,7 @@ public readonly subnetId: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-aws.natGateway.NatGateway.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-aws.natGateway.NatGateway.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1171,7 +1171,7 @@ public readonly tags: {[ key: string ]: string};
 
 ---
 
-##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktf/provider-aws.natGateway.NatGateway.property.tagsAll"></a>
+##### `tagsAll`<sup>Required</sup> <a name="tagsAll" id="@cdktn/provider-aws.natGateway.NatGateway.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1181,7 +1181,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 ---
 
-##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktf/provider-aws.natGateway.NatGateway.property.vpcId"></a>
+##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktn/provider-aws.natGateway.NatGateway.property.vpcId"></a>
 
 ```typescript
 public readonly vpcId: string;
@@ -1195,11 +1195,11 @@ public readonly vpcId: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGateway.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGateway.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.natGateway.NatGateway.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.natGateway.NatGateway.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1211,12 +1211,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NatGatewayAvailabilityZoneAddress <a name="NatGatewayAvailabilityZoneAddress" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress"></a>
+### NatGatewayAvailabilityZoneAddress <a name="NatGatewayAvailabilityZoneAddress" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 const natGatewayAvailabilityZoneAddress: natGateway.NatGatewayAvailabilityZoneAddress = { ... }
 ```
@@ -1225,13 +1225,13 @@ const natGatewayAvailabilityZoneAddress: natGateway.NatGatewayAvailabilityZoneAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.allocationIds">allocationIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.allocationIds">allocationIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}. |
 
 ---
 
-##### `allocationIds`<sup>Optional</sup> <a name="allocationIds" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.allocationIds"></a>
+##### `allocationIds`<sup>Optional</sup> <a name="allocationIds" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.allocationIds"></a>
 
 ```typescript
 public readonly allocationIds: string[];
@@ -1239,11 +1239,11 @@ public readonly allocationIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#allocation_ids NatGateway#allocation_ids}.
 
 ---
 
-##### `availabilityZone`<sup>Optional</sup> <a name="availabilityZone" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZone"></a>
+##### `availabilityZone`<sup>Optional</sup> <a name="availabilityZone" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZone"></a>
 
 ```typescript
 public readonly availabilityZone: string;
@@ -1251,11 +1251,11 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_zone NatGateway#availability_zone}.
 
 ---
 
-##### `availabilityZoneId`<sup>Optional</sup> <a name="availabilityZoneId" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZoneId"></a>
+##### `availabilityZoneId`<sup>Optional</sup> <a name="availabilityZoneId" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress.property.availabilityZoneId"></a>
 
 ```typescript
 public readonly availabilityZoneId: string;
@@ -1263,16 +1263,16 @@ public readonly availabilityZoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_zone_id NatGateway#availability_zone_id}.
 
 ---
 
-### NatGatewayConfig <a name="NatGatewayConfig" id="@cdktf/provider-aws.natGateway.NatGatewayConfig"></a>
+### NatGatewayConfig <a name="NatGatewayConfig" id="@cdktn/provider-aws.natGateway.NatGatewayConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 const natGatewayConfig: natGateway.NatGatewayConfig = { ... }
 ```
@@ -1281,32 +1281,32 @@ const natGatewayConfig: natGateway.NatGatewayConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityMode">availabilityMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityZoneAddress">availabilityZoneAddress</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]</code> | availability_zone_address block. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connectivityType">connectivityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#id NatGateway#id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.privateIp">privateIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryAllocationIds">secondaryAllocationIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddressCount">secondaryPrivateIpAddressCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddresses">secondaryPrivateIpAddresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.allocationId">allocationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.availabilityMode">availabilityMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.availabilityZoneAddress">availabilityZoneAddress</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]</code> | availability_zone_address block. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.connectivityType">connectivityType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#id NatGateway#id}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.privateIp">privateIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.secondaryAllocationIds">secondaryAllocationIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddressCount">secondaryPrivateIpAddressCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddresses">secondaryPrivateIpAddresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayConfig.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1316,7 +1316,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1326,7 +1326,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1336,7 +1336,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1346,7 +1346,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1356,7 +1356,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1366,7 +1366,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1376,7 +1376,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `allocationId`<sup>Optional</sup> <a name="allocationId" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.allocationId"></a>
+##### `allocationId`<sup>Optional</sup> <a name="allocationId" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.allocationId"></a>
 
 ```typescript
 public readonly allocationId: string;
@@ -1384,11 +1384,11 @@ public readonly allocationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#allocation_id NatGateway#allocation_id}.
 
 ---
 
-##### `availabilityMode`<sup>Optional</sup> <a name="availabilityMode" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityMode"></a>
+##### `availabilityMode`<sup>Optional</sup> <a name="availabilityMode" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.availabilityMode"></a>
 
 ```typescript
 public readonly availabilityMode: string;
@@ -1396,25 +1396,25 @@ public readonly availabilityMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_mode NatGateway#availability_mode}.
 
 ---
 
-##### `availabilityZoneAddress`<sup>Optional</sup> <a name="availabilityZoneAddress" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.availabilityZoneAddress"></a>
+##### `availabilityZoneAddress`<sup>Optional</sup> <a name="availabilityZoneAddress" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.availabilityZoneAddress"></a>
 
 ```typescript
 public readonly availabilityZoneAddress: IResolvable | NatGatewayAvailabilityZoneAddress[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
 
 availability_zone_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#availability_zone_address NatGateway#availability_zone_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#availability_zone_address NatGateway#availability_zone_address}
 
 ---
 
-##### `connectivityType`<sup>Optional</sup> <a name="connectivityType" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.connectivityType"></a>
+##### `connectivityType`<sup>Optional</sup> <a name="connectivityType" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.connectivityType"></a>
 
 ```typescript
 public readonly connectivityType: string;
@@ -1422,11 +1422,11 @@ public readonly connectivityType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#connectivity_type NatGateway#connectivity_type}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1434,14 +1434,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#id NatGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#id NatGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `privateIp`<sup>Optional</sup> <a name="privateIp" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.privateIp"></a>
+##### `privateIp`<sup>Optional</sup> <a name="privateIp" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.privateIp"></a>
 
 ```typescript
 public readonly privateIp: string;
@@ -1449,11 +1449,11 @@ public readonly privateIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#private_ip NatGateway#private_ip}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1463,11 +1463,11 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#region NatGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#region NatGateway#region}
 
 ---
 
-##### `secondaryAllocationIds`<sup>Optional</sup> <a name="secondaryAllocationIds" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryAllocationIds"></a>
+##### `secondaryAllocationIds`<sup>Optional</sup> <a name="secondaryAllocationIds" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.secondaryAllocationIds"></a>
 
 ```typescript
 public readonly secondaryAllocationIds: string[];
@@ -1475,11 +1475,11 @@ public readonly secondaryAllocationIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#secondary_allocation_ids NatGateway#secondary_allocation_ids}.
 
 ---
 
-##### `secondaryPrivateIpAddressCount`<sup>Optional</sup> <a name="secondaryPrivateIpAddressCount" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddressCount"></a>
+##### `secondaryPrivateIpAddressCount`<sup>Optional</sup> <a name="secondaryPrivateIpAddressCount" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddressCount"></a>
 
 ```typescript
 public readonly secondaryPrivateIpAddressCount: number;
@@ -1487,11 +1487,11 @@ public readonly secondaryPrivateIpAddressCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#secondary_private_ip_address_count NatGateway#secondary_private_ip_address_count}.
 
 ---
 
-##### `secondaryPrivateIpAddresses`<sup>Optional</sup> <a name="secondaryPrivateIpAddresses" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddresses"></a>
+##### `secondaryPrivateIpAddresses`<sup>Optional</sup> <a name="secondaryPrivateIpAddresses" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.secondaryPrivateIpAddresses"></a>
 
 ```typescript
 public readonly secondaryPrivateIpAddresses: string[];
@@ -1499,11 +1499,11 @@ public readonly secondaryPrivateIpAddresses: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#secondary_private_ip_addresses NatGateway#secondary_private_ip_addresses}.
 
 ---
 
-##### `subnetId`<sup>Optional</sup> <a name="subnetId" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.subnetId"></a>
+##### `subnetId`<sup>Optional</sup> <a name="subnetId" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.subnetId"></a>
 
 ```typescript
 public readonly subnetId: string;
@@ -1511,11 +1511,11 @@ public readonly subnetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#subnet_id NatGateway#subnet_id}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: {[ key: string ]: string};
@@ -1523,11 +1523,11 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#tags NatGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#tags NatGateway#tags}.
 
 ---
 
-##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.tagsAll"></a>
+##### `tagsAll`<sup>Optional</sup> <a name="tagsAll" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.tagsAll"></a>
 
 ```typescript
 public readonly tagsAll: {[ key: string ]: string};
@@ -1535,25 +1535,25 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#tags_all NatGateway#tags_all}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: NatGatewayTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
 
 ---
 
-##### `vpcId`<sup>Optional</sup> <a name="vpcId" id="@cdktf/provider-aws.natGateway.NatGatewayConfig.property.vpcId"></a>
+##### `vpcId`<sup>Optional</sup> <a name="vpcId" id="@cdktn/provider-aws.natGateway.NatGatewayConfig.property.vpcId"></a>
 
 ```typescript
 public readonly vpcId: string;
@@ -1561,27 +1561,27 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#vpc_id NatGateway#vpc_id}.
 
 ---
 
-### NatGatewayRegionalNatGatewayAddress <a name="NatGatewayRegionalNatGatewayAddress" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress"></a>
+### NatGatewayRegionalNatGatewayAddress <a name="NatGatewayRegionalNatGatewayAddress" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 const natGatewayRegionalNatGatewayAddress: natGateway.NatGatewayRegionalNatGatewayAddress = { ... }
 ```
 
 
-### NatGatewayTimeouts <a name="NatGatewayTimeouts" id="@cdktf/provider-aws.natGateway.NatGatewayTimeouts"></a>
+### NatGatewayTimeouts <a name="NatGatewayTimeouts" id="@cdktn/provider-aws.natGateway.NatGatewayTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.natGateway.NatGatewayTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGateway.NatGatewayTimeouts.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 const natGatewayTimeouts: natGateway.NatGatewayTimeouts = { ... }
 ```
@@ -1590,13 +1590,13 @@ const natGatewayTimeouts: natGateway.NatGatewayTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#create NatGateway#create}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#delete NatGateway#delete}. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#update NatGateway#update}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#create NatGateway#create}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#delete NatGateway#delete}. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#update NatGateway#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.natGateway.NatGatewayTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1604,11 +1604,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#create NatGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#create NatGateway#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.natGateway.NatGatewayTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1616,11 +1616,11 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#delete NatGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#delete NatGateway#delete}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.natGateway.NatGatewayTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.natGateway.NatGatewayTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1628,31 +1628,31 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/nat_gateway#update NatGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway#update NatGateway#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### NatGatewayAvailabilityZoneAddressList <a name="NatGatewayAvailabilityZoneAddressList" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList"></a>
+### NatGatewayAvailabilityZoneAddressList <a name="NatGatewayAvailabilityZoneAddressList" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 new natGateway.NatGatewayAvailabilityZoneAddressList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1660,7 +1660,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1668,7 +1668,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1680,15 +1680,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1698,19 +1698,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1718,13 +1718,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1734,13 +1734,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get"></a>
 
 ```typescript
 public get(index: number): NatGatewayAvailabilityZoneAddressOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1753,13 +1753,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1773,7 +1773,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1783,37 +1783,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | NatGatewayAvailabilityZoneAddress[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>[]
 
 ---
 
 
-### NatGatewayAvailabilityZoneAddressOutputReference <a name="NatGatewayAvailabilityZoneAddressOutputReference" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference"></a>
+### NatGatewayAvailabilityZoneAddressOutputReference <a name="NatGatewayAvailabilityZoneAddressOutputReference" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 new natGateway.NatGatewayAvailabilityZoneAddressOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1821,7 +1821,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1829,7 +1829,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1837,7 +1837,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1849,152 +1849,152 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAllocationIds">resetAllocationIds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZone">resetAvailabilityZone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZoneId">resetAvailabilityZoneId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAllocationIds">resetAllocationIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZone">resetAvailabilityZone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZoneId">resetAvailabilityZoneId</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2002,13 +2002,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2018,19 +2018,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetAllocationIds` <a name="resetAllocationIds" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAllocationIds"></a>
+##### `resetAllocationIds` <a name="resetAllocationIds" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAllocationIds"></a>
 
 ```typescript
 public resetAllocationIds(): void
 ```
 
-##### `resetAvailabilityZone` <a name="resetAvailabilityZone" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZone"></a>
+##### `resetAvailabilityZone` <a name="resetAvailabilityZone" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZone"></a>
 
 ```typescript
 public resetAvailabilityZone(): void
 ```
 
-##### `resetAvailabilityZoneId` <a name="resetAvailabilityZoneId" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZoneId"></a>
+##### `resetAvailabilityZoneId` <a name="resetAvailabilityZoneId" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.resetAvailabilityZoneId"></a>
 
 ```typescript
 public resetAvailabilityZoneId(): void
@@ -2041,19 +2041,19 @@ public resetAvailabilityZoneId(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIdsInput">allocationIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneIdInput">availabilityZoneIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneInput">availabilityZoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIds">allocationIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIdsInput">allocationIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneIdInput">availabilityZoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneInput">availabilityZoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIds">allocationIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2067,7 +2067,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2077,7 +2077,7 @@ public readonly fqn: string;
 
 ---
 
-##### `allocationIdsInput`<sup>Optional</sup> <a name="allocationIdsInput" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIdsInput"></a>
+##### `allocationIdsInput`<sup>Optional</sup> <a name="allocationIdsInput" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIdsInput"></a>
 
 ```typescript
 public readonly allocationIdsInput: string[];
@@ -2087,7 +2087,7 @@ public readonly allocationIdsInput: string[];
 
 ---
 
-##### `availabilityZoneIdInput`<sup>Optional</sup> <a name="availabilityZoneIdInput" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneIdInput"></a>
+##### `availabilityZoneIdInput`<sup>Optional</sup> <a name="availabilityZoneIdInput" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneIdInput"></a>
 
 ```typescript
 public readonly availabilityZoneIdInput: string;
@@ -2097,7 +2097,7 @@ public readonly availabilityZoneIdInput: string;
 
 ---
 
-##### `availabilityZoneInput`<sup>Optional</sup> <a name="availabilityZoneInput" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneInput"></a>
+##### `availabilityZoneInput`<sup>Optional</sup> <a name="availabilityZoneInput" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneInput"></a>
 
 ```typescript
 public readonly availabilityZoneInput: string;
@@ -2107,7 +2107,7 @@ public readonly availabilityZoneInput: string;
 
 ---
 
-##### `allocationIds`<sup>Required</sup> <a name="allocationIds" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIds"></a>
+##### `allocationIds`<sup>Required</sup> <a name="allocationIds" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.allocationIds"></a>
 
 ```typescript
 public readonly allocationIds: string[];
@@ -2117,7 +2117,7 @@ public readonly allocationIds: string[];
 
 ---
 
-##### `availabilityZone`<sup>Required</sup> <a name="availabilityZone" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZone"></a>
+##### `availabilityZone`<sup>Required</sup> <a name="availabilityZone" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZone"></a>
 
 ```typescript
 public readonly availabilityZone: string;
@@ -2127,7 +2127,7 @@ public readonly availabilityZone: string;
 
 ---
 
-##### `availabilityZoneId`<sup>Required</sup> <a name="availabilityZoneId" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneId"></a>
+##### `availabilityZoneId`<sup>Required</sup> <a name="availabilityZoneId" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.availabilityZoneId"></a>
 
 ```typescript
 public readonly availabilityZoneId: string;
@@ -2137,36 +2137,36 @@ public readonly availabilityZoneId: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddressOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | NatGatewayAvailabilityZoneAddress;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayAvailabilityZoneAddress">NatGatewayAvailabilityZoneAddress</a>
 
 ---
 
 
-### NatGatewayRegionalNatGatewayAddressList <a name="NatGatewayRegionalNatGatewayAddressList" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList"></a>
+### NatGatewayRegionalNatGatewayAddressList <a name="NatGatewayRegionalNatGatewayAddressList" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 new natGateway.NatGatewayRegionalNatGatewayAddressList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2174,7 +2174,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2182,7 +2182,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -2194,15 +2194,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -2212,19 +2212,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2232,13 +2232,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2248,13 +2248,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get"></a>
 
 ```typescript
 public get(index: number): NatGatewayRegionalNatGatewayAddressOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -2267,12 +2267,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2286,7 +2286,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2297,26 +2297,26 @@ public readonly fqn: string;
 ---
 
 
-### NatGatewayRegionalNatGatewayAddressOutputReference <a name="NatGatewayRegionalNatGatewayAddressOutputReference" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference"></a>
+### NatGatewayRegionalNatGatewayAddressOutputReference <a name="NatGatewayRegionalNatGatewayAddressOutputReference" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 new natGateway.NatGatewayRegionalNatGatewayAddressOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2324,7 +2324,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2332,7 +2332,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -2340,7 +2340,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -2352,149 +2352,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2502,13 +2502,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2523,20 +2523,20 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.allocationId">allocationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.associationId">associationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.networkInterfaceId">networkInterfaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.publicIp">publicIp</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress">NatGatewayRegionalNatGatewayAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.allocationId">allocationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.associationId">associationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZoneId">availabilityZoneId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.networkInterfaceId">networkInterfaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.publicIp">publicIp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress">NatGatewayRegionalNatGatewayAddress</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2550,7 +2550,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2560,7 +2560,7 @@ public readonly fqn: string;
 
 ---
 
-##### `allocationId`<sup>Required</sup> <a name="allocationId" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.allocationId"></a>
+##### `allocationId`<sup>Required</sup> <a name="allocationId" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.allocationId"></a>
 
 ```typescript
 public readonly allocationId: string;
@@ -2570,7 +2570,7 @@ public readonly allocationId: string;
 
 ---
 
-##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.associationId"></a>
+##### `associationId`<sup>Required</sup> <a name="associationId" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.associationId"></a>
 
 ```typescript
 public readonly associationId: string;
@@ -2580,7 +2580,7 @@ public readonly associationId: string;
 
 ---
 
-##### `availabilityZone`<sup>Required</sup> <a name="availabilityZone" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZone"></a>
+##### `availabilityZone`<sup>Required</sup> <a name="availabilityZone" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZone"></a>
 
 ```typescript
 public readonly availabilityZone: string;
@@ -2590,7 +2590,7 @@ public readonly availabilityZone: string;
 
 ---
 
-##### `availabilityZoneId`<sup>Required</sup> <a name="availabilityZoneId" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZoneId"></a>
+##### `availabilityZoneId`<sup>Required</sup> <a name="availabilityZoneId" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.availabilityZoneId"></a>
 
 ```typescript
 public readonly availabilityZoneId: string;
@@ -2600,7 +2600,7 @@ public readonly availabilityZoneId: string;
 
 ---
 
-##### `networkInterfaceId`<sup>Required</sup> <a name="networkInterfaceId" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.networkInterfaceId"></a>
+##### `networkInterfaceId`<sup>Required</sup> <a name="networkInterfaceId" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.networkInterfaceId"></a>
 
 ```typescript
 public readonly networkInterfaceId: string;
@@ -2610,7 +2610,7 @@ public readonly networkInterfaceId: string;
 
 ---
 
-##### `publicIp`<sup>Required</sup> <a name="publicIp" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.publicIp"></a>
+##### `publicIp`<sup>Required</sup> <a name="publicIp" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.publicIp"></a>
 
 ```typescript
 public readonly publicIp: string;
@@ -2620,7 +2620,7 @@ public readonly publicIp: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -2630,35 +2630,35 @@ public readonly status: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddressOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: NatGatewayRegionalNatGatewayAddress;
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress">NatGatewayRegionalNatGatewayAddress</a>
+- *Type:* <a href="#@cdktn/provider-aws.natGateway.NatGatewayRegionalNatGatewayAddress">NatGatewayRegionalNatGatewayAddress</a>
 
 ---
 
 
-### NatGatewayTimeoutsOutputReference <a name="NatGatewayTimeoutsOutputReference" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference"></a>
+### NatGatewayTimeoutsOutputReference <a name="NatGatewayTimeoutsOutputReference" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { natGateway } from '@cdktf/provider-aws'
+import { natGateway } from '@cdktn/provider-aws'
 
 new natGateway.NatGatewayTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2666,7 +2666,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2678,152 +2678,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2831,13 +2831,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2847,19 +2847,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -2870,19 +2870,19 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2896,7 +2896,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2906,7 +2906,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -2916,7 +2916,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -2926,7 +2926,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -2936,7 +2936,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -2946,7 +2946,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -2956,7 +2956,7 @@ public readonly delete: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -2966,13 +2966,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.natGateway.NatGatewayTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | NatGatewayTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a>
 
 ---
 

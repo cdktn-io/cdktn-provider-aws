@@ -1,15 +1,15 @@
-# `lexBot` Submodule <a name="`lexBot` Submodule" id="@cdktf/provider-aws.lexBot"></a>
+# `lexBot` Submodule <a name="`lexBot` Submodule" id="@cdktn/provider-aws.lexBot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### LexBot <a name="LexBot" id="@cdktf/provider-aws.lexBot.LexBot"></a>
+### LexBot <a name="LexBot" id="@cdktn/provider-aws.lexBot.LexBot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot aws_lex_bot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot aws_lex_bot}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBot.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBot.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBot(
   scope: Construct,
@@ -43,36 +43,36 @@ lexBot.LexBot(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.abortStatement">abort_statement</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | abort_statement block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.childDirected">child_directed</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.intent">intent</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | intent block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#name LexBot#name}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.clarificationPrompt">clarification_prompt</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | clarification_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.createVersion">create_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#description LexBot#description}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.detectSentiment">detect_sentiment</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.enableModelImprovements">enable_model_improvements</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#id LexBot#id}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.idleSessionTtlInSeconds">idle_session_ttl_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#locale LexBot#locale}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.nluIntentConfidenceThreshold">nlu_intent_confidence_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.processBehavior">process_behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.voiceId">voice_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#voice_id LexBot#voice_id}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.abortStatement">abort_statement</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | abort_statement block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.childDirected">child_directed</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.intent">intent</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | intent block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#name LexBot#name}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.clarificationPrompt">clarification_prompt</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | clarification_prompt block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.createVersion">create_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#description LexBot#description}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.detectSentiment">detect_sentiment</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.enableModelImprovements">enable_model_improvements</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#id LexBot#id}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.idleSessionTtlInSeconds">idle_session_ttl_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#locale LexBot#locale}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.nluIntentConfidenceThreshold">nlu_intent_confidence_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.processBehavior">process_behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.voiceId">voice_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#voice_id LexBot#voice_id}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -80,7 +80,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -90,194 +90,194 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `abort_statement`<sup>Required</sup> <a name="abort_statement" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.abortStatement"></a>
+##### `abort_statement`<sup>Required</sup> <a name="abort_statement" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.abortStatement"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
 
 abort_statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
 
 ---
 
-##### `child_directed`<sup>Required</sup> <a name="child_directed" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.childDirected"></a>
+##### `child_directed`<sup>Required</sup> <a name="child_directed" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.childDirected"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
 
 ---
 
-##### `intent`<sup>Required</sup> <a name="intent" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.intent"></a>
+##### `intent`<sup>Required</sup> <a name="intent" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.intent"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
 
 intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#intent LexBot#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#intent LexBot#intent}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#name LexBot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#name LexBot#name}.
 
 ---
 
-##### `clarification_prompt`<sup>Optional</sup> <a name="clarification_prompt" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.clarificationPrompt"></a>
+##### `clarification_prompt`<sup>Optional</sup> <a name="clarification_prompt" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.clarificationPrompt"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
 
 clarification_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
 
 ---
 
-##### `create_version`<sup>Optional</sup> <a name="create_version" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.createVersion"></a>
+##### `create_version`<sup>Optional</sup> <a name="create_version" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.createVersion"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create_version LexBot#create_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create_version LexBot#create_version}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#description LexBot#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#description LexBot#description}.
 
 ---
 
-##### `detect_sentiment`<sup>Optional</sup> <a name="detect_sentiment" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.detectSentiment"></a>
+##### `detect_sentiment`<sup>Optional</sup> <a name="detect_sentiment" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.detectSentiment"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
 
 ---
 
-##### `enable_model_improvements`<sup>Optional</sup> <a name="enable_model_improvements" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.enableModelImprovements"></a>
+##### `enable_model_improvements`<sup>Optional</sup> <a name="enable_model_improvements" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.enableModelImprovements"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#id LexBot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#id LexBot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `idle_session_ttl_in_seconds`<sup>Optional</sup> <a name="idle_session_ttl_in_seconds" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.idleSessionTtlInSeconds"></a>
+##### `idle_session_ttl_in_seconds`<sup>Optional</sup> <a name="idle_session_ttl_in_seconds" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.idleSessionTtlInSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}.
 
 ---
 
-##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.locale"></a>
+##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.locale"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#locale LexBot#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#locale LexBot#locale}.
 
 ---
 
-##### `nlu_intent_confidence_threshold`<sup>Optional</sup> <a name="nlu_intent_confidence_threshold" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.nluIntentConfidenceThreshold"></a>
+##### `nlu_intent_confidence_threshold`<sup>Optional</sup> <a name="nlu_intent_confidence_threshold" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.nluIntentConfidenceThreshold"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}.
 
 ---
 
-##### `process_behavior`<sup>Optional</sup> <a name="process_behavior" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.processBehavior"></a>
+##### `process_behavior`<sup>Optional</sup> <a name="process_behavior" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.processBehavior"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#region LexBot#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#region LexBot#region}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
 
 ---
 
-##### `voice_id`<sup>Optional</sup> <a name="voice_id" id="@cdktf/provider-aws.lexBot.LexBot.Initializer.parameter.voiceId"></a>
+##### `voice_id`<sup>Optional</sup> <a name="voice_id" id="@cdktn/provider-aws.lexBot.LexBot.Initializer.parameter.voiceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
 
 ---
 
@@ -285,50 +285,50 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.putAbortStatement">put_abort_statement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.putClarificationPrompt">put_clarification_prompt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.putIntent">put_intent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetClarificationPrompt">reset_clarification_prompt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetCreateVersion">reset_create_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetDetectSentiment">reset_detect_sentiment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetEnableModelImprovements">reset_enable_model_improvements</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetIdleSessionTtlInSeconds">reset_idle_session_ttl_in_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetLocale">reset_locale</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetNluIntentConfidenceThreshold">reset_nlu_intent_confidence_threshold</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetProcessBehavior">reset_process_behavior</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.resetVoiceId">reset_voice_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.putAbortStatement">put_abort_statement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.putClarificationPrompt">put_clarification_prompt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.putIntent">put_intent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetClarificationPrompt">reset_clarification_prompt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetCreateVersion">reset_create_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetDetectSentiment">reset_detect_sentiment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetEnableModelImprovements">reset_enable_model_improvements</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetIdleSessionTtlInSeconds">reset_idle_session_ttl_in_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetLocale">reset_locale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetNluIntentConfidenceThreshold">reset_nlu_intent_confidence_threshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetProcessBehavior">reset_process_behavior</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.resetVoiceId">reset_voice_id</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBot.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBot.toString"></a>
 
 ```python
 def to_string() -> str
@@ -336,7 +336,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-aws.lexBot.LexBot.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-aws.lexBot.LexBot.addOverride"></a>
 
 ```python
 def add_override(
@@ -345,19 +345,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-aws.lexBot.LexBot.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-aws.lexBot.LexBot.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.lexBot.LexBot.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lexBot.LexBot.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-aws.lexBot.LexBot.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-aws.lexBot.LexBot.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -367,7 +367,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-aws.lexBot.LexBot.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-aws.lexBot.LexBot.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -375,7 +375,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-aws.lexBot.LexBot.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-aws.lexBot.LexBot.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -383,19 +383,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-aws.lexBot.LexBot.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-aws.lexBot.LexBot.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-aws.lexBot.LexBot.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-aws.lexBot.LexBot.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-aws.lexBot.LexBot.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-aws.lexBot.LexBot.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -403,7 +403,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-aws.lexBot.LexBot.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-aws.lexBot.LexBot.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -413,7 +413,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.lexBot.LexBot.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.lexBot.LexBot.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -421,7 +421,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -429,13 +429,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -443,13 +443,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -457,13 +457,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -471,13 +471,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -485,13 +485,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -499,13 +499,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -513,13 +513,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -527,13 +527,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -541,19 +541,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-aws.lexBot.LexBot.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-aws.lexBot.LexBot.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-aws.lexBot.LexBot.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-aws.lexBot.LexBot.importFrom"></a>
 
 ```python
 def import_from(
@@ -562,19 +562,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBot.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBot.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lexBot.LexBot.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lexBot.LexBot.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBot.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBot.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -582,13 +582,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBot.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBot.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-aws.lexBot.LexBot.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-aws.lexBot.LexBot.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -600,7 +600,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBot.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBot.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -608,7 +608,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-aws.lexBot.LexBot.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-aws.lexBot.LexBot.moveTo"></a>
 
 ```python
 def move_to(
@@ -619,7 +619,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-aws.lexBot.LexBot.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-aws.lexBot.LexBot.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -627,7 +627,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-aws.lexBot.LexBot.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-aws.lexBot.LexBot.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -635,7 +635,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-aws.lexBot.LexBot.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-aws.lexBot.LexBot.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -645,7 +645,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBot.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBot.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -653,7 +653,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_abort_statement` <a name="put_abort_statement" id="@cdktf/provider-aws.lexBot.LexBot.putAbortStatement"></a>
+##### `put_abort_statement` <a name="put_abort_statement" id="@cdktn/provider-aws.lexBot.LexBot.putAbortStatement"></a>
 
 ```python
 def put_abort_statement(
@@ -662,25 +662,25 @@ def put_abort_statement(
 ) -> None
 ```
 
-###### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-aws.lexBot.LexBot.putAbortStatement.parameter.message"></a>
+###### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-aws.lexBot.LexBot.putAbortStatement.parameter.message"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#message LexBot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#message LexBot#message}
 
 ---
 
-###### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktf/provider-aws.lexBot.LexBot.putAbortStatement.parameter.responseCard"></a>
+###### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktn/provider-aws.lexBot.LexBot.putAbortStatement.parameter.responseCard"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#response_card LexBot#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#response_card LexBot#response_card}.
 
 ---
 
-##### `put_clarification_prompt` <a name="put_clarification_prompt" id="@cdktf/provider-aws.lexBot.LexBot.putClarificationPrompt"></a>
+##### `put_clarification_prompt` <a name="put_clarification_prompt" id="@cdktn/provider-aws.lexBot.LexBot.putClarificationPrompt"></a>
 
 ```python
 def put_clarification_prompt(
@@ -690,33 +690,33 @@ def put_clarification_prompt(
 ) -> None
 ```
 
-###### `max_attempts`<sup>Required</sup> <a name="max_attempts" id="@cdktf/provider-aws.lexBot.LexBot.putClarificationPrompt.parameter.maxAttempts"></a>
+###### `max_attempts`<sup>Required</sup> <a name="max_attempts" id="@cdktn/provider-aws.lexBot.LexBot.putClarificationPrompt.parameter.maxAttempts"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}.
 
 ---
 
-###### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-aws.lexBot.LexBot.putClarificationPrompt.parameter.message"></a>
+###### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-aws.lexBot.LexBot.putClarificationPrompt.parameter.message"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#message LexBot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#message LexBot#message}
 
 ---
 
-###### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktf/provider-aws.lexBot.LexBot.putClarificationPrompt.parameter.responseCard"></a>
+###### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktn/provider-aws.lexBot.LexBot.putClarificationPrompt.parameter.responseCard"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#response_card LexBot#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#response_card LexBot#response_card}.
 
 ---
 
-##### `put_intent` <a name="put_intent" id="@cdktf/provider-aws.lexBot.LexBot.putIntent"></a>
+##### `put_intent` <a name="put_intent" id="@cdktn/provider-aws.lexBot.LexBot.putIntent"></a>
 
 ```python
 def put_intent(
@@ -724,13 +724,13 @@ def put_intent(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.lexBot.LexBot.putIntent.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lexBot.LexBot.putIntent.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-aws.lexBot.LexBot.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.lexBot.LexBot.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -740,103 +740,103 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.lexBot.LexBot.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.lexBot.LexBot.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create LexBot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create LexBot#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.lexBot.LexBot.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.lexBot.LexBot.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#delete LexBot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#delete LexBot#delete}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.lexBot.LexBot.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.lexBot.LexBot.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#update LexBot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#update LexBot#update}.
 
 ---
 
-##### `reset_clarification_prompt` <a name="reset_clarification_prompt" id="@cdktf/provider-aws.lexBot.LexBot.resetClarificationPrompt"></a>
+##### `reset_clarification_prompt` <a name="reset_clarification_prompt" id="@cdktn/provider-aws.lexBot.LexBot.resetClarificationPrompt"></a>
 
 ```python
 def reset_clarification_prompt() -> None
 ```
 
-##### `reset_create_version` <a name="reset_create_version" id="@cdktf/provider-aws.lexBot.LexBot.resetCreateVersion"></a>
+##### `reset_create_version` <a name="reset_create_version" id="@cdktn/provider-aws.lexBot.LexBot.resetCreateVersion"></a>
 
 ```python
 def reset_create_version() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-aws.lexBot.LexBot.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-aws.lexBot.LexBot.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_detect_sentiment` <a name="reset_detect_sentiment" id="@cdktf/provider-aws.lexBot.LexBot.resetDetectSentiment"></a>
+##### `reset_detect_sentiment` <a name="reset_detect_sentiment" id="@cdktn/provider-aws.lexBot.LexBot.resetDetectSentiment"></a>
 
 ```python
 def reset_detect_sentiment() -> None
 ```
 
-##### `reset_enable_model_improvements` <a name="reset_enable_model_improvements" id="@cdktf/provider-aws.lexBot.LexBot.resetEnableModelImprovements"></a>
+##### `reset_enable_model_improvements` <a name="reset_enable_model_improvements" id="@cdktn/provider-aws.lexBot.LexBot.resetEnableModelImprovements"></a>
 
 ```python
 def reset_enable_model_improvements() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-aws.lexBot.LexBot.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-aws.lexBot.LexBot.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_idle_session_ttl_in_seconds` <a name="reset_idle_session_ttl_in_seconds" id="@cdktf/provider-aws.lexBot.LexBot.resetIdleSessionTtlInSeconds"></a>
+##### `reset_idle_session_ttl_in_seconds` <a name="reset_idle_session_ttl_in_seconds" id="@cdktn/provider-aws.lexBot.LexBot.resetIdleSessionTtlInSeconds"></a>
 
 ```python
 def reset_idle_session_ttl_in_seconds() -> None
 ```
 
-##### `reset_locale` <a name="reset_locale" id="@cdktf/provider-aws.lexBot.LexBot.resetLocale"></a>
+##### `reset_locale` <a name="reset_locale" id="@cdktn/provider-aws.lexBot.LexBot.resetLocale"></a>
 
 ```python
 def reset_locale() -> None
 ```
 
-##### `reset_nlu_intent_confidence_threshold` <a name="reset_nlu_intent_confidence_threshold" id="@cdktf/provider-aws.lexBot.LexBot.resetNluIntentConfidenceThreshold"></a>
+##### `reset_nlu_intent_confidence_threshold` <a name="reset_nlu_intent_confidence_threshold" id="@cdktn/provider-aws.lexBot.LexBot.resetNluIntentConfidenceThreshold"></a>
 
 ```python
 def reset_nlu_intent_confidence_threshold() -> None
 ```
 
-##### `reset_process_behavior` <a name="reset_process_behavior" id="@cdktf/provider-aws.lexBot.LexBot.resetProcessBehavior"></a>
+##### `reset_process_behavior` <a name="reset_process_behavior" id="@cdktn/provider-aws.lexBot.LexBot.resetProcessBehavior"></a>
 
 ```python
 def reset_process_behavior() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-aws.lexBot.LexBot.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-aws.lexBot.LexBot.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-aws.lexBot.LexBot.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-aws.lexBot.LexBot.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_voice_id` <a name="reset_voice_id" id="@cdktf/provider-aws.lexBot.LexBot.resetVoiceId"></a>
+##### `reset_voice_id` <a name="reset_voice_id" id="@cdktn/provider-aws.lexBot.LexBot.resetVoiceId"></a>
 
 ```python
 def reset_voice_id() -> None
@@ -846,17 +846,17 @@ def reset_voice_id() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a LexBot resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a LexBot resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-aws.lexBot.LexBot.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-aws.lexBot.LexBot.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBot.is_construct(
   x: typing.Any
@@ -879,7 +879,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lexBot.LexBot.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.lexBot.LexBot.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -887,42 +887,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-aws.lexBot.LexBot.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-aws.lexBot.LexBot.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBot.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lexBot.LexBot.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.lexBot.LexBot.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-aws.lexBot.LexBot.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-aws.lexBot.LexBot.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBot.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-aws.lexBot.LexBot.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-aws.lexBot.LexBot.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-aws.lexBot.LexBot.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-aws.lexBot.LexBot.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBot.generate_config_for_import(
   scope: Construct,
@@ -934,7 +934,7 @@ lexBot.LexBot.generate_config_for_import(
 
 Generates CDKTF code for importing a LexBot resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -942,7 +942,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -950,17 +950,17 @@ The construct id used in the generated config for the LexBot to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing LexBot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lexBot.LexBot.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -972,65 +972,65 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.abortStatement">abort_statement</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference">LexBotAbortStatementOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.arn">arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.checksum">checksum</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.clarificationPrompt">clarification_prompt</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference">LexBotClarificationPromptOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createdDate">created_date</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.failureReason">failure_reason</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.intent">intent</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList">LexBotIntentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.lastUpdatedDate">last_updated_date</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference">LexBotTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.abortStatementInput">abort_statement_input</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirectedInput">child_directed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.clarificationPromptInput">clarification_prompt_input</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersionInput">create_version_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.detectSentimentInput">detect_sentiment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput">enable_model_improvements_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.idleSessionTtlInSecondsInput">idle_session_ttl_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.intentInput">intent_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.localeInput">locale_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput">nlu_intent_confidence_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.processBehaviorInput">process_behavior_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.voiceIdInput">voice_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.childDirected">child_directed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.createVersion">create_version</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.detectSentiment">detect_sentiment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovements">enable_model_improvements</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.idleSessionTtlInSeconds">idle_session_ttl_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.locale">locale</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThreshold">nlu_intent_confidence_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.processBehavior">process_behavior</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.voiceId">voice_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.abortStatement">abort_statement</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference">LexBotAbortStatementOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.arn">arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.checksum">checksum</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.clarificationPrompt">clarification_prompt</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference">LexBotClarificationPromptOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.createdDate">created_date</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.failureReason">failure_reason</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.intent">intent</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList">LexBotIntentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.lastUpdatedDate">last_updated_date</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference">LexBotTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.version">version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.abortStatementInput">abort_statement_input</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.childDirectedInput">child_directed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.clarificationPromptInput">clarification_prompt_input</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.createVersionInput">create_version_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.detectSentimentInput">detect_sentiment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput">enable_model_improvements_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.idleSessionTtlInSecondsInput">idle_session_ttl_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.intentInput">intent_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.localeInput">locale_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput">nlu_intent_confidence_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.processBehaviorInput">process_behavior_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.voiceIdInput">voice_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.childDirected">child_directed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.createVersion">create_version</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.detectSentiment">detect_sentiment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.enableModelImprovements">enable_model_improvements</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.idleSessionTtlInSeconds">idle_session_ttl_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.locale">locale</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThreshold">nlu_intent_confidence_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.processBehavior">process_behavior</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.voiceId">voice_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-aws.lexBot.LexBot.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-aws.lexBot.LexBot.property.node"></a>
 
 ```python
 node: Node
@@ -1042,7 +1042,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-aws.lexBot.LexBot.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-aws.lexBot.LexBot.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1052,7 +1052,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBot.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBot.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1062,7 +1062,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-aws.lexBot.LexBot.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-aws.lexBot.LexBot.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1072,7 +1072,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-aws.lexBot.LexBot.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-aws.lexBot.LexBot.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1082,7 +1082,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-aws.lexBot.LexBot.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-aws.lexBot.LexBot.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1092,7 +1092,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-aws.lexBot.LexBot.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-aws.lexBot.LexBot.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1102,7 +1102,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.lexBot.LexBot.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.lexBot.LexBot.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1112,7 +1112,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.lexBot.LexBot.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.lexBot.LexBot.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1122,7 +1122,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.lexBot.LexBot.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.lexBot.LexBot.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1132,7 +1132,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.lexBot.LexBot.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.lexBot.LexBot.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1142,7 +1142,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.lexBot.LexBot.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.lexBot.LexBot.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1152,7 +1152,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lexBot.LexBot.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lexBot.LexBot.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1162,7 +1162,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.lexBot.LexBot.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.lexBot.LexBot.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1172,17 +1172,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `abort_statement`<sup>Required</sup> <a name="abort_statement" id="@cdktf/provider-aws.lexBot.LexBot.property.abortStatement"></a>
+##### `abort_statement`<sup>Required</sup> <a name="abort_statement" id="@cdktn/provider-aws.lexBot.LexBot.property.abortStatement"></a>
 
 ```python
 abort_statement: LexBotAbortStatementOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference">LexBotAbortStatementOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference">LexBotAbortStatementOutputReference</a>
 
 ---
 
-##### `arn`<sup>Required</sup> <a name="arn" id="@cdktf/provider-aws.lexBot.LexBot.property.arn"></a>
+##### `arn`<sup>Required</sup> <a name="arn" id="@cdktn/provider-aws.lexBot.LexBot.property.arn"></a>
 
 ```python
 arn: str
@@ -1192,7 +1192,7 @@ arn: str
 
 ---
 
-##### `checksum`<sup>Required</sup> <a name="checksum" id="@cdktf/provider-aws.lexBot.LexBot.property.checksum"></a>
+##### `checksum`<sup>Required</sup> <a name="checksum" id="@cdktn/provider-aws.lexBot.LexBot.property.checksum"></a>
 
 ```python
 checksum: str
@@ -1202,17 +1202,17 @@ checksum: str
 
 ---
 
-##### `clarification_prompt`<sup>Required</sup> <a name="clarification_prompt" id="@cdktf/provider-aws.lexBot.LexBot.property.clarificationPrompt"></a>
+##### `clarification_prompt`<sup>Required</sup> <a name="clarification_prompt" id="@cdktn/provider-aws.lexBot.LexBot.property.clarificationPrompt"></a>
 
 ```python
 clarification_prompt: LexBotClarificationPromptOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference">LexBotClarificationPromptOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference">LexBotClarificationPromptOutputReference</a>
 
 ---
 
-##### `created_date`<sup>Required</sup> <a name="created_date" id="@cdktf/provider-aws.lexBot.LexBot.property.createdDate"></a>
+##### `created_date`<sup>Required</sup> <a name="created_date" id="@cdktn/provider-aws.lexBot.LexBot.property.createdDate"></a>
 
 ```python
 created_date: str
@@ -1222,7 +1222,7 @@ created_date: str
 
 ---
 
-##### `failure_reason`<sup>Required</sup> <a name="failure_reason" id="@cdktf/provider-aws.lexBot.LexBot.property.failureReason"></a>
+##### `failure_reason`<sup>Required</sup> <a name="failure_reason" id="@cdktn/provider-aws.lexBot.LexBot.property.failureReason"></a>
 
 ```python
 failure_reason: str
@@ -1232,17 +1232,17 @@ failure_reason: str
 
 ---
 
-##### `intent`<sup>Required</sup> <a name="intent" id="@cdktf/provider-aws.lexBot.LexBot.property.intent"></a>
+##### `intent`<sup>Required</sup> <a name="intent" id="@cdktn/provider-aws.lexBot.LexBot.property.intent"></a>
 
 ```python
 intent: LexBotIntentList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotIntentList">LexBotIntentList</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotIntentList">LexBotIntentList</a>
 
 ---
 
-##### `last_updated_date`<sup>Required</sup> <a name="last_updated_date" id="@cdktf/provider-aws.lexBot.LexBot.property.lastUpdatedDate"></a>
+##### `last_updated_date`<sup>Required</sup> <a name="last_updated_date" id="@cdktn/provider-aws.lexBot.LexBot.property.lastUpdatedDate"></a>
 
 ```python
 last_updated_date: str
@@ -1252,7 +1252,7 @@ last_updated_date: str
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-aws.lexBot.LexBot.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.lexBot.LexBot.property.status"></a>
 
 ```python
 status: str
@@ -1262,17 +1262,17 @@ status: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-aws.lexBot.LexBot.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-aws.lexBot.LexBot.property.timeouts"></a>
 
 ```python
 timeouts: LexBotTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference">LexBotTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference">LexBotTimeoutsOutputReference</a>
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-aws.lexBot.LexBot.property.version"></a>
+##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-aws.lexBot.LexBot.property.version"></a>
 
 ```python
 version: str
@@ -1282,17 +1282,17 @@ version: str
 
 ---
 
-##### `abort_statement_input`<sup>Optional</sup> <a name="abort_statement_input" id="@cdktf/provider-aws.lexBot.LexBot.property.abortStatementInput"></a>
+##### `abort_statement_input`<sup>Optional</sup> <a name="abort_statement_input" id="@cdktn/provider-aws.lexBot.LexBot.property.abortStatementInput"></a>
 
 ```python
 abort_statement_input: LexBotAbortStatement
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
 
 ---
 
-##### `child_directed_input`<sup>Optional</sup> <a name="child_directed_input" id="@cdktf/provider-aws.lexBot.LexBot.property.childDirectedInput"></a>
+##### `child_directed_input`<sup>Optional</sup> <a name="child_directed_input" id="@cdktn/provider-aws.lexBot.LexBot.property.childDirectedInput"></a>
 
 ```python
 child_directed_input: bool | IResolvable
@@ -1302,17 +1302,17 @@ child_directed_input: bool | IResolvable
 
 ---
 
-##### `clarification_prompt_input`<sup>Optional</sup> <a name="clarification_prompt_input" id="@cdktf/provider-aws.lexBot.LexBot.property.clarificationPromptInput"></a>
+##### `clarification_prompt_input`<sup>Optional</sup> <a name="clarification_prompt_input" id="@cdktn/provider-aws.lexBot.LexBot.property.clarificationPromptInput"></a>
 
 ```python
 clarification_prompt_input: LexBotClarificationPrompt
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
 
 ---
 
-##### `create_version_input`<sup>Optional</sup> <a name="create_version_input" id="@cdktf/provider-aws.lexBot.LexBot.property.createVersionInput"></a>
+##### `create_version_input`<sup>Optional</sup> <a name="create_version_input" id="@cdktn/provider-aws.lexBot.LexBot.property.createVersionInput"></a>
 
 ```python
 create_version_input: bool | IResolvable
@@ -1322,7 +1322,7 @@ create_version_input: bool | IResolvable
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-aws.lexBot.LexBot.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-aws.lexBot.LexBot.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1332,7 +1332,7 @@ description_input: str
 
 ---
 
-##### `detect_sentiment_input`<sup>Optional</sup> <a name="detect_sentiment_input" id="@cdktf/provider-aws.lexBot.LexBot.property.detectSentimentInput"></a>
+##### `detect_sentiment_input`<sup>Optional</sup> <a name="detect_sentiment_input" id="@cdktn/provider-aws.lexBot.LexBot.property.detectSentimentInput"></a>
 
 ```python
 detect_sentiment_input: bool | IResolvable
@@ -1342,7 +1342,7 @@ detect_sentiment_input: bool | IResolvable
 
 ---
 
-##### `enable_model_improvements_input`<sup>Optional</sup> <a name="enable_model_improvements_input" id="@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput"></a>
+##### `enable_model_improvements_input`<sup>Optional</sup> <a name="enable_model_improvements_input" id="@cdktn/provider-aws.lexBot.LexBot.property.enableModelImprovementsInput"></a>
 
 ```python
 enable_model_improvements_input: bool | IResolvable
@@ -1352,7 +1352,7 @@ enable_model_improvements_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-aws.lexBot.LexBot.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-aws.lexBot.LexBot.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1362,7 +1362,7 @@ id_input: str
 
 ---
 
-##### `idle_session_ttl_in_seconds_input`<sup>Optional</sup> <a name="idle_session_ttl_in_seconds_input" id="@cdktf/provider-aws.lexBot.LexBot.property.idleSessionTtlInSecondsInput"></a>
+##### `idle_session_ttl_in_seconds_input`<sup>Optional</sup> <a name="idle_session_ttl_in_seconds_input" id="@cdktn/provider-aws.lexBot.LexBot.property.idleSessionTtlInSecondsInput"></a>
 
 ```python
 idle_session_ttl_in_seconds_input: typing.Union[int, float]
@@ -1372,17 +1372,17 @@ idle_session_ttl_in_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `intent_input`<sup>Optional</sup> <a name="intent_input" id="@cdktf/provider-aws.lexBot.LexBot.property.intentInput"></a>
+##### `intent_input`<sup>Optional</sup> <a name="intent_input" id="@cdktn/provider-aws.lexBot.LexBot.property.intentInput"></a>
 
 ```python
 intent_input: IResolvable | typing.List[LexBotIntent]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
 
 ---
 
-##### `locale_input`<sup>Optional</sup> <a name="locale_input" id="@cdktf/provider-aws.lexBot.LexBot.property.localeInput"></a>
+##### `locale_input`<sup>Optional</sup> <a name="locale_input" id="@cdktn/provider-aws.lexBot.LexBot.property.localeInput"></a>
 
 ```python
 locale_input: str
@@ -1392,7 +1392,7 @@ locale_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-aws.lexBot.LexBot.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-aws.lexBot.LexBot.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1402,7 +1402,7 @@ name_input: str
 
 ---
 
-##### `nlu_intent_confidence_threshold_input`<sup>Optional</sup> <a name="nlu_intent_confidence_threshold_input" id="@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput"></a>
+##### `nlu_intent_confidence_threshold_input`<sup>Optional</sup> <a name="nlu_intent_confidence_threshold_input" id="@cdktn/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThresholdInput"></a>
 
 ```python
 nlu_intent_confidence_threshold_input: typing.Union[int, float]
@@ -1412,7 +1412,7 @@ nlu_intent_confidence_threshold_input: typing.Union[int, float]
 
 ---
 
-##### `process_behavior_input`<sup>Optional</sup> <a name="process_behavior_input" id="@cdktf/provider-aws.lexBot.LexBot.property.processBehaviorInput"></a>
+##### `process_behavior_input`<sup>Optional</sup> <a name="process_behavior_input" id="@cdktn/provider-aws.lexBot.LexBot.property.processBehaviorInput"></a>
 
 ```python
 process_behavior_input: str
@@ -1422,7 +1422,7 @@ process_behavior_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-aws.lexBot.LexBot.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-aws.lexBot.LexBot.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1432,17 +1432,17 @@ region_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-aws.lexBot.LexBot.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-aws.lexBot.LexBot.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | LexBotTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 ---
 
-##### `voice_id_input`<sup>Optional</sup> <a name="voice_id_input" id="@cdktf/provider-aws.lexBot.LexBot.property.voiceIdInput"></a>
+##### `voice_id_input`<sup>Optional</sup> <a name="voice_id_input" id="@cdktn/provider-aws.lexBot.LexBot.property.voiceIdInput"></a>
 
 ```python
 voice_id_input: str
@@ -1452,7 +1452,7 @@ voice_id_input: str
 
 ---
 
-##### `child_directed`<sup>Required</sup> <a name="child_directed" id="@cdktf/provider-aws.lexBot.LexBot.property.childDirected"></a>
+##### `child_directed`<sup>Required</sup> <a name="child_directed" id="@cdktn/provider-aws.lexBot.LexBot.property.childDirected"></a>
 
 ```python
 child_directed: bool | IResolvable
@@ -1462,7 +1462,7 @@ child_directed: bool | IResolvable
 
 ---
 
-##### `create_version`<sup>Required</sup> <a name="create_version" id="@cdktf/provider-aws.lexBot.LexBot.property.createVersion"></a>
+##### `create_version`<sup>Required</sup> <a name="create_version" id="@cdktn/provider-aws.lexBot.LexBot.property.createVersion"></a>
 
 ```python
 create_version: bool | IResolvable
@@ -1472,7 +1472,7 @@ create_version: bool | IResolvable
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-aws.lexBot.LexBot.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-aws.lexBot.LexBot.property.description"></a>
 
 ```python
 description: str
@@ -1482,7 +1482,7 @@ description: str
 
 ---
 
-##### `detect_sentiment`<sup>Required</sup> <a name="detect_sentiment" id="@cdktf/provider-aws.lexBot.LexBot.property.detectSentiment"></a>
+##### `detect_sentiment`<sup>Required</sup> <a name="detect_sentiment" id="@cdktn/provider-aws.lexBot.LexBot.property.detectSentiment"></a>
 
 ```python
 detect_sentiment: bool | IResolvable
@@ -1492,7 +1492,7 @@ detect_sentiment: bool | IResolvable
 
 ---
 
-##### `enable_model_improvements`<sup>Required</sup> <a name="enable_model_improvements" id="@cdktf/provider-aws.lexBot.LexBot.property.enableModelImprovements"></a>
+##### `enable_model_improvements`<sup>Required</sup> <a name="enable_model_improvements" id="@cdktn/provider-aws.lexBot.LexBot.property.enableModelImprovements"></a>
 
 ```python
 enable_model_improvements: bool | IResolvable
@@ -1502,7 +1502,7 @@ enable_model_improvements: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBot.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBot.property.id"></a>
 
 ```python
 id: str
@@ -1512,7 +1512,7 @@ id: str
 
 ---
 
-##### `idle_session_ttl_in_seconds`<sup>Required</sup> <a name="idle_session_ttl_in_seconds" id="@cdktf/provider-aws.lexBot.LexBot.property.idleSessionTtlInSeconds"></a>
+##### `idle_session_ttl_in_seconds`<sup>Required</sup> <a name="idle_session_ttl_in_seconds" id="@cdktn/provider-aws.lexBot.LexBot.property.idleSessionTtlInSeconds"></a>
 
 ```python
 idle_session_ttl_in_seconds: typing.Union[int, float]
@@ -1522,7 +1522,7 @@ idle_session_ttl_in_seconds: typing.Union[int, float]
 
 ---
 
-##### `locale`<sup>Required</sup> <a name="locale" id="@cdktf/provider-aws.lexBot.LexBot.property.locale"></a>
+##### `locale`<sup>Required</sup> <a name="locale" id="@cdktn/provider-aws.lexBot.LexBot.property.locale"></a>
 
 ```python
 locale: str
@@ -1532,7 +1532,7 @@ locale: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.lexBot.LexBot.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.lexBot.LexBot.property.name"></a>
 
 ```python
 name: str
@@ -1542,7 +1542,7 @@ name: str
 
 ---
 
-##### `nlu_intent_confidence_threshold`<sup>Required</sup> <a name="nlu_intent_confidence_threshold" id="@cdktf/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThreshold"></a>
+##### `nlu_intent_confidence_threshold`<sup>Required</sup> <a name="nlu_intent_confidence_threshold" id="@cdktn/provider-aws.lexBot.LexBot.property.nluIntentConfidenceThreshold"></a>
 
 ```python
 nlu_intent_confidence_threshold: typing.Union[int, float]
@@ -1552,7 +1552,7 @@ nlu_intent_confidence_threshold: typing.Union[int, float]
 
 ---
 
-##### `process_behavior`<sup>Required</sup> <a name="process_behavior" id="@cdktf/provider-aws.lexBot.LexBot.property.processBehavior"></a>
+##### `process_behavior`<sup>Required</sup> <a name="process_behavior" id="@cdktn/provider-aws.lexBot.LexBot.property.processBehavior"></a>
 
 ```python
 process_behavior: str
@@ -1562,7 +1562,7 @@ process_behavior: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-aws.lexBot.LexBot.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-aws.lexBot.LexBot.property.region"></a>
 
 ```python
 region: str
@@ -1572,7 +1572,7 @@ region: str
 
 ---
 
-##### `voice_id`<sup>Required</sup> <a name="voice_id" id="@cdktf/provider-aws.lexBot.LexBot.property.voiceId"></a>
+##### `voice_id`<sup>Required</sup> <a name="voice_id" id="@cdktn/provider-aws.lexBot.LexBot.property.voiceId"></a>
 
 ```python
 voice_id: str
@@ -1586,11 +1586,11 @@ voice_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBot.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBot.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-aws.lexBot.LexBot.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-aws.lexBot.LexBot.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1602,12 +1602,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### LexBotAbortStatement <a name="LexBotAbortStatement" id="@cdktf/provider-aws.lexBot.LexBotAbortStatement"></a>
+### LexBotAbortStatement <a name="LexBotAbortStatement" id="@cdktn/provider-aws.lexBot.LexBotAbortStatement"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotAbortStatement.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotAbortStatement.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotAbortStatement(
   message: IResolvable | typing.List[LexBotAbortStatementMessage],
@@ -1619,26 +1619,26 @@ lexBot.LexBotAbortStatement(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.message">message</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.responseCard">response_card</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement.property.message">message</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | message block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement.property.responseCard">response_card</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.message"></a>
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-aws.lexBot.LexBotAbortStatement.property.message"></a>
 
 ```python
 message: IResolvable | typing.List[LexBotAbortStatementMessage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#message LexBot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#message LexBot#message}
 
 ---
 
-##### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktf/provider-aws.lexBot.LexBotAbortStatement.property.responseCard"></a>
+##### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktn/provider-aws.lexBot.LexBotAbortStatement.property.responseCard"></a>
 
 ```python
 response_card: str
@@ -1646,16 +1646,16 @@ response_card: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#response_card LexBot#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#response_card LexBot#response_card}.
 
 ---
 
-### LexBotAbortStatementMessage <a name="LexBotAbortStatementMessage" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage"></a>
+### LexBotAbortStatementMessage <a name="LexBotAbortStatementMessage" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotAbortStatementMessage(
   content: str,
@@ -1668,13 +1668,13 @@ lexBot.LexBotAbortStatementMessage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content LexBot#content}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content LexBot#content}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.property.content"></a>
 
 ```python
 content: str
@@ -1682,11 +1682,11 @@ content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content LexBot#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content LexBot#content}.
 
 ---
 
-##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.contentType"></a>
+##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.property.contentType"></a>
 
 ```python
 content_type: str
@@ -1694,11 +1694,11 @@ content_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content_type LexBot#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content_type LexBot#content_type}.
 
 ---
 
-##### `group_number`<sup>Optional</sup> <a name="group_number" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage.property.groupNumber"></a>
+##### `group_number`<sup>Optional</sup> <a name="group_number" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage.property.groupNumber"></a>
 
 ```python
 group_number: typing.Union[int, float]
@@ -1706,16 +1706,16 @@ group_number: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#group_number LexBot#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#group_number LexBot#group_number}.
 
 ---
 
-### LexBotClarificationPrompt <a name="LexBotClarificationPrompt" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt"></a>
+### LexBotClarificationPrompt <a name="LexBotClarificationPrompt" id="@cdktn/provider-aws.lexBot.LexBotClarificationPrompt"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotClarificationPrompt(
   max_attempts: typing.Union[int, float],
@@ -1728,13 +1728,13 @@ lexBot.LexBotClarificationPrompt(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts">max_attempts</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.message">message</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | message block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard">response_card</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts">max_attempts</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.property.message">message</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | message block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard">response_card</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#response_card LexBot#response_card}. |
 
 ---
 
-##### `max_attempts`<sup>Required</sup> <a name="max_attempts" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts"></a>
+##### `max_attempts`<sup>Required</sup> <a name="max_attempts" id="@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.property.maxAttempts"></a>
 
 ```python
 max_attempts: typing.Union[int, float]
@@ -1742,25 +1742,25 @@ max_attempts: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#max_attempts LexBot#max_attempts}.
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.message"></a>
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.property.message"></a>
 
 ```python
 message: IResolvable | typing.List[LexBotClarificationPromptMessage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
 
 message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#message LexBot#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#message LexBot#message}
 
 ---
 
-##### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktf/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard"></a>
+##### `response_card`<sup>Optional</sup> <a name="response_card" id="@cdktn/provider-aws.lexBot.LexBotClarificationPrompt.property.responseCard"></a>
 
 ```python
 response_card: str
@@ -1768,16 +1768,16 @@ response_card: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#response_card LexBot#response_card}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#response_card LexBot#response_card}.
 
 ---
 
-### LexBotClarificationPromptMessage <a name="LexBotClarificationPromptMessage" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage"></a>
+### LexBotClarificationPromptMessage <a name="LexBotClarificationPromptMessage" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotClarificationPromptMessage(
   content: str,
@@ -1790,13 +1790,13 @@ lexBot.LexBotClarificationPromptMessage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content LexBot#content}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content LexBot#content}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content_type LexBot#content_type}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#group_number LexBot#group_number}. |
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.property.content"></a>
 
 ```python
 content: str
@@ -1804,11 +1804,11 @@ content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content LexBot#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content LexBot#content}.
 
 ---
 
-##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.contentType"></a>
+##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.property.contentType"></a>
 
 ```python
 content_type: str
@@ -1816,11 +1816,11 @@ content_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#content_type LexBot#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#content_type LexBot#content_type}.
 
 ---
 
-##### `group_number`<sup>Optional</sup> <a name="group_number" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage.property.groupNumber"></a>
+##### `group_number`<sup>Optional</sup> <a name="group_number" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage.property.groupNumber"></a>
 
 ```python
 group_number: typing.Union[int, float]
@@ -1828,16 +1828,16 @@ group_number: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#group_number LexBot#group_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#group_number LexBot#group_number}.
 
 ---
 
-### LexBotConfig <a name="LexBotConfig" id="@cdktf/provider-aws.lexBot.LexBotConfig"></a>
+### LexBotConfig <a name="LexBotConfig" id="@cdktn/provider-aws.lexBot.LexBotConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1871,34 +1871,34 @@ lexBot.LexBotConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.abortStatement">abort_statement</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | abort_statement block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected">child_directed</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.intent">intent</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | intent block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#name LexBot#name}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.clarificationPrompt">clarification_prompt</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | clarification_prompt block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion">create_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#description LexBot#description}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment">detect_sentiment</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements">enable_model_improvements</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#id LexBot#id}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds">idle_session_ttl_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#locale LexBot#locale}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.nluIntentConfidenceThreshold">nlu_intent_confidence_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.processBehavior">process_behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotConfig.property.voiceId">voice_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#voice_id LexBot#voice_id}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.abortStatement">abort_statement</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | abort_statement block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.childDirected">child_directed</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#child_directed LexBot#child_directed}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.intent">intent</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | intent block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#name LexBot#name}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.clarificationPrompt">clarification_prompt</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | clarification_prompt block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.createVersion">create_version</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create_version LexBot#create_version}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#description LexBot#description}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.detectSentiment">detect_sentiment</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements">enable_model_improvements</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#id LexBot#id}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds">idle_session_ttl_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#locale LexBot#locale}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.nluIntentConfidenceThreshold">nlu_intent_confidence_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.processBehavior">process_behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotConfig.property.voiceId">voice_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#voice_id LexBot#voice_id}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1908,7 +1908,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1918,7 +1918,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1928,7 +1928,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1938,7 +1938,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1948,7 +1948,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1958,7 +1958,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1968,21 +1968,21 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `abort_statement`<sup>Required</sup> <a name="abort_statement" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.abortStatement"></a>
+##### `abort_statement`<sup>Required</sup> <a name="abort_statement" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.abortStatement"></a>
 
 ```python
 abort_statement: LexBotAbortStatement
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
 
 abort_statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#abort_statement LexBot#abort_statement}
 
 ---
 
-##### `child_directed`<sup>Required</sup> <a name="child_directed" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.childDirected"></a>
+##### `child_directed`<sup>Required</sup> <a name="child_directed" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.childDirected"></a>
 
 ```python
 child_directed: bool | IResolvable
@@ -1990,25 +1990,25 @@ child_directed: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#child_directed LexBot#child_directed}.
 
 ---
 
-##### `intent`<sup>Required</sup> <a name="intent" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.intent"></a>
+##### `intent`<sup>Required</sup> <a name="intent" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.intent"></a>
 
 ```python
 intent: IResolvable | typing.List[LexBotIntent]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
 
 intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#intent LexBot#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#intent LexBot#intent}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.name"></a>
 
 ```python
 name: str
@@ -2016,25 +2016,25 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#name LexBot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#name LexBot#name}.
 
 ---
 
-##### `clarification_prompt`<sup>Optional</sup> <a name="clarification_prompt" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.clarificationPrompt"></a>
+##### `clarification_prompt`<sup>Optional</sup> <a name="clarification_prompt" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.clarificationPrompt"></a>
 
 ```python
 clarification_prompt: LexBotClarificationPrompt
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
 
 clarification_prompt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#clarification_prompt LexBot#clarification_prompt}
 
 ---
 
-##### `create_version`<sup>Optional</sup> <a name="create_version" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.createVersion"></a>
+##### `create_version`<sup>Optional</sup> <a name="create_version" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.createVersion"></a>
 
 ```python
 create_version: bool | IResolvable
@@ -2042,11 +2042,11 @@ create_version: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create_version LexBot#create_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create_version LexBot#create_version}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.description"></a>
 
 ```python
 description: str
@@ -2054,11 +2054,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#description LexBot#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#description LexBot#description}.
 
 ---
 
-##### `detect_sentiment`<sup>Optional</sup> <a name="detect_sentiment" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.detectSentiment"></a>
+##### `detect_sentiment`<sup>Optional</sup> <a name="detect_sentiment" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.detectSentiment"></a>
 
 ```python
 detect_sentiment: bool | IResolvable
@@ -2066,11 +2066,11 @@ detect_sentiment: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#detect_sentiment LexBot#detect_sentiment}.
 
 ---
 
-##### `enable_model_improvements`<sup>Optional</sup> <a name="enable_model_improvements" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements"></a>
+##### `enable_model_improvements`<sup>Optional</sup> <a name="enable_model_improvements" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.enableModelImprovements"></a>
 
 ```python
 enable_model_improvements: bool | IResolvable
@@ -2078,11 +2078,11 @@ enable_model_improvements: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#enable_model_improvements LexBot#enable_model_improvements}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.id"></a>
 
 ```python
 id: str
@@ -2090,14 +2090,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#id LexBot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#id LexBot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `idle_session_ttl_in_seconds`<sup>Optional</sup> <a name="idle_session_ttl_in_seconds" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds"></a>
+##### `idle_session_ttl_in_seconds`<sup>Optional</sup> <a name="idle_session_ttl_in_seconds" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.idleSessionTtlInSeconds"></a>
 
 ```python
 idle_session_ttl_in_seconds: typing.Union[int, float]
@@ -2105,11 +2105,11 @@ idle_session_ttl_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}.
 
 ---
 
-##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.locale"></a>
+##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.locale"></a>
 
 ```python
 locale: str
@@ -2117,11 +2117,11 @@ locale: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#locale LexBot#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#locale LexBot#locale}.
 
 ---
 
-##### `nlu_intent_confidence_threshold`<sup>Optional</sup> <a name="nlu_intent_confidence_threshold" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.nluIntentConfidenceThreshold"></a>
+##### `nlu_intent_confidence_threshold`<sup>Optional</sup> <a name="nlu_intent_confidence_threshold" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.nluIntentConfidenceThreshold"></a>
 
 ```python
 nlu_intent_confidence_threshold: typing.Union[int, float]
@@ -2129,11 +2129,11 @@ nlu_intent_confidence_threshold: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#nlu_intent_confidence_threshold LexBot#nlu_intent_confidence_threshold}.
 
 ---
 
-##### `process_behavior`<sup>Optional</sup> <a name="process_behavior" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.processBehavior"></a>
+##### `process_behavior`<sup>Optional</sup> <a name="process_behavior" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.processBehavior"></a>
 
 ```python
 process_behavior: str
@@ -2141,11 +2141,11 @@ process_behavior: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#process_behavior LexBot#process_behavior}.
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.region"></a>
 
 ```python
 region: str
@@ -2155,25 +2155,25 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#region LexBot#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#region LexBot#region}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.timeouts"></a>
 
 ```python
 timeouts: LexBotTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#timeouts LexBot#timeouts}
 
 ---
 
-##### `voice_id`<sup>Optional</sup> <a name="voice_id" id="@cdktf/provider-aws.lexBot.LexBotConfig.property.voiceId"></a>
+##### `voice_id`<sup>Optional</sup> <a name="voice_id" id="@cdktn/provider-aws.lexBot.LexBotConfig.property.voiceId"></a>
 
 ```python
 voice_id: str
@@ -2181,16 +2181,16 @@ voice_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#voice_id LexBot#voice_id}.
 
 ---
 
-### LexBotIntent <a name="LexBotIntent" id="@cdktf/provider-aws.lexBot.LexBotIntent"></a>
+### LexBotIntent <a name="LexBotIntent" id="@cdktn/provider-aws.lexBot.LexBotIntent"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotIntent.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotIntent.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotIntent(
   intent_name: str,
@@ -2202,12 +2202,12 @@ lexBot.LexBotIntent(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent.property.intentName">intent_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#intent_name LexBot#intent_name}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntent.property.intentVersion">intent_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#intent_version LexBot#intent_version}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntent.property.intentName">intent_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#intent_name LexBot#intent_name}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntent.property.intentVersion">intent_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#intent_version LexBot#intent_version}. |
 
 ---
 
-##### `intent_name`<sup>Required</sup> <a name="intent_name" id="@cdktf/provider-aws.lexBot.LexBotIntent.property.intentName"></a>
+##### `intent_name`<sup>Required</sup> <a name="intent_name" id="@cdktn/provider-aws.lexBot.LexBotIntent.property.intentName"></a>
 
 ```python
 intent_name: str
@@ -2215,11 +2215,11 @@ intent_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#intent_name LexBot#intent_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#intent_name LexBot#intent_name}.
 
 ---
 
-##### `intent_version`<sup>Required</sup> <a name="intent_version" id="@cdktf/provider-aws.lexBot.LexBotIntent.property.intentVersion"></a>
+##### `intent_version`<sup>Required</sup> <a name="intent_version" id="@cdktn/provider-aws.lexBot.LexBotIntent.property.intentVersion"></a>
 
 ```python
 intent_version: str
@@ -2227,16 +2227,16 @@ intent_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#intent_version LexBot#intent_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#intent_version LexBot#intent_version}.
 
 ---
 
-### LexBotTimeouts <a name="LexBotTimeouts" id="@cdktf/provider-aws.lexBot.LexBotTimeouts"></a>
+### LexBotTimeouts <a name="LexBotTimeouts" id="@cdktn/provider-aws.lexBot.LexBotTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-aws.lexBot.LexBotTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexBot.LexBotTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotTimeouts(
   create: str = None,
@@ -2249,13 +2249,13 @@ lexBot.LexBotTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create LexBot#create}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#delete LexBot#delete}. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#update LexBot#update}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create LexBot#create}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#delete LexBot#delete}. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#update LexBot#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-aws.lexBot.LexBotTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-aws.lexBot.LexBotTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2263,11 +2263,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#create LexBot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#create LexBot#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-aws.lexBot.LexBotTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-aws.lexBot.LexBotTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2275,11 +2275,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#delete LexBot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#delete LexBot#delete}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-aws.lexBot.LexBotTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-aws.lexBot.LexBotTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2287,18 +2287,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/lex_bot#update LexBot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lex_bot#update LexBot#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### LexBotAbortStatementMessageList <a name="LexBotAbortStatementMessageList" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList"></a>
+### LexBotAbortStatementMessageList <a name="LexBotAbortStatementMessageList" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotAbortStatementMessageList(
   terraform_resource: IInterpolatingParent,
@@ -2309,13 +2309,13 @@ lexBot.LexBotAbortStatementMessageList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2323,7 +2323,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2331,7 +2331,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2343,15 +2343,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2363,19 +2363,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.resolve"></a>
 
 ```python
 def resolve(
@@ -2385,13 +2385,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2401,7 +2401,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.get"></a>
 
 ```python
 def get(
@@ -2409,7 +2409,7 @@ def get(
 ) -> LexBotAbortStatementMessageOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2422,13 +2422,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2442,7 +2442,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2452,23 +2452,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[LexBotAbortStatementMessage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
 
 ---
 
 
-### LexBotAbortStatementMessageOutputReference <a name="LexBotAbortStatementMessageOutputReference" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference"></a>
+### LexBotAbortStatementMessageOutputReference <a name="LexBotAbortStatementMessageOutputReference" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotAbortStatementMessageOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2480,14 +2480,14 @@ lexBot.LexBotAbortStatementMessageOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2495,7 +2495,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2503,7 +2503,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2511,7 +2511,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2523,30 +2523,30 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resetGroupNumber">reset_group_number</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resetGroupNumber">reset_group_number</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2554,13 +2554,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2568,13 +2568,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2582,13 +2582,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2596,13 +2596,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2610,13 +2610,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2624,13 +2624,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2638,13 +2638,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2652,13 +2652,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2666,13 +2666,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2680,13 +2680,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2696,13 +2696,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2712,7 +2712,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_group_number` <a name="reset_group_number" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resetGroupNumber"></a>
+##### `reset_group_number` <a name="reset_group_number" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.resetGroupNumber"></a>
 
 ```python
 def reset_group_number() -> None
@@ -2723,19 +2723,19 @@ def reset_group_number() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentTypeInput">content_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumberInput">group_number_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentTypeInput">content_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumberInput">group_number_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2749,7 +2749,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2759,7 +2759,7 @@ fqn: str
 
 ---
 
-##### `content_input`<sup>Optional</sup> <a name="content_input" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentInput"></a>
+##### `content_input`<sup>Optional</sup> <a name="content_input" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentInput"></a>
 
 ```python
 content_input: str
@@ -2769,7 +2769,7 @@ content_input: str
 
 ---
 
-##### `content_type_input`<sup>Optional</sup> <a name="content_type_input" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentTypeInput"></a>
+##### `content_type_input`<sup>Optional</sup> <a name="content_type_input" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentTypeInput"></a>
 
 ```python
 content_type_input: str
@@ -2779,7 +2779,7 @@ content_type_input: str
 
 ---
 
-##### `group_number_input`<sup>Optional</sup> <a name="group_number_input" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumberInput"></a>
+##### `group_number_input`<sup>Optional</sup> <a name="group_number_input" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumberInput"></a>
 
 ```python
 group_number_input: typing.Union[int, float]
@@ -2789,7 +2789,7 @@ group_number_input: typing.Union[int, float]
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.content"></a>
 
 ```python
 content: str
@@ -2799,7 +2799,7 @@ content: str
 
 ---
 
-##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType"></a>
+##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.contentType"></a>
 
 ```python
 content_type: str
@@ -2809,7 +2809,7 @@ content_type: str
 
 ---
 
-##### `group_number`<sup>Required</sup> <a name="group_number" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber"></a>
+##### `group_number`<sup>Required</sup> <a name="group_number" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.groupNumber"></a>
 
 ```python
 group_number: typing.Union[int, float]
@@ -2819,23 +2819,23 @@ group_number: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | LexBotAbortStatementMessage
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>
 
 ---
 
 
-### LexBotAbortStatementOutputReference <a name="LexBotAbortStatementOutputReference" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference"></a>
+### LexBotAbortStatementOutputReference <a name="LexBotAbortStatementOutputReference" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotAbortStatementOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2845,12 +2845,12 @@ lexBot.LexBotAbortStatementOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2858,7 +2858,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2870,31 +2870,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage">put_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.resetResponseCard">reset_response_card</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage">put_message</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.resetResponseCard">reset_response_card</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2902,13 +2902,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2916,13 +2916,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2930,13 +2930,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2944,13 +2944,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2958,13 +2958,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2972,13 +2972,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2986,13 +2986,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3000,13 +3000,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3014,13 +3014,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3028,13 +3028,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3044,13 +3044,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3060,7 +3060,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_message` <a name="put_message" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage"></a>
+##### `put_message` <a name="put_message" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage"></a>
 
 ```python
 def put_message(
@@ -3068,13 +3068,13 @@ def put_message(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
 
 ---
 
-##### `reset_response_card` <a name="reset_response_card" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.resetResponseCard"></a>
+##### `reset_response_card` <a name="reset_response_card" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.resetResponseCard"></a>
 
 ```python
 def reset_response_card() -> None
@@ -3085,17 +3085,17 @@ def reset_response_card() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.message">message</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList">LexBotAbortStatementMessageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput">message_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCardInput">response_card_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCard">response_card</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.message">message</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList">LexBotAbortStatementMessageList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput">message_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCardInput">response_card_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCard">response_card</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3109,7 +3109,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3119,27 +3119,27 @@ fqn: str
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.message"></a>
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.message"></a>
 
 ```python
 message: LexBotAbortStatementMessageList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList">LexBotAbortStatementMessageList</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessageList">LexBotAbortStatementMessageList</a>
 
 ---
 
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput"></a>
+##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.messageInput"></a>
 
 ```python
 message_input: IResolvable | typing.List[LexBotAbortStatementMessage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatementMessage">LexBotAbortStatementMessage</a>]
 
 ---
 
-##### `response_card_input`<sup>Optional</sup> <a name="response_card_input" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCardInput"></a>
+##### `response_card_input`<sup>Optional</sup> <a name="response_card_input" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCardInput"></a>
 
 ```python
 response_card_input: str
@@ -3149,7 +3149,7 @@ response_card_input: str
 
 ---
 
-##### `response_card`<sup>Required</sup> <a name="response_card" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCard"></a>
+##### `response_card`<sup>Required</sup> <a name="response_card" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.responseCard"></a>
 
 ```python
 response_card: str
@@ -3159,23 +3159,23 @@ response_card: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotAbortStatementOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: LexBotAbortStatement
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotAbortStatement">LexBotAbortStatement</a>
 
 ---
 
 
-### LexBotClarificationPromptMessageList <a name="LexBotClarificationPromptMessageList" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList"></a>
+### LexBotClarificationPromptMessageList <a name="LexBotClarificationPromptMessageList" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotClarificationPromptMessageList(
   terraform_resource: IInterpolatingParent,
@@ -3186,13 +3186,13 @@ lexBot.LexBotClarificationPromptMessageList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3200,7 +3200,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3208,7 +3208,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3220,15 +3220,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3240,19 +3240,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.resolve"></a>
 
 ```python
 def resolve(
@@ -3262,13 +3262,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3278,7 +3278,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.get"></a>
 
 ```python
 def get(
@@ -3286,7 +3286,7 @@ def get(
 ) -> LexBotClarificationPromptMessageOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3299,13 +3299,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3319,7 +3319,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3329,23 +3329,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[LexBotClarificationPromptMessage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
 
 ---
 
 
-### LexBotClarificationPromptMessageOutputReference <a name="LexBotClarificationPromptMessageOutputReference" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference"></a>
+### LexBotClarificationPromptMessageOutputReference <a name="LexBotClarificationPromptMessageOutputReference" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotClarificationPromptMessageOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3357,14 +3357,14 @@ lexBot.LexBotClarificationPromptMessageOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3372,7 +3372,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3380,7 +3380,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3388,7 +3388,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3400,30 +3400,30 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resetGroupNumber">reset_group_number</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resetGroupNumber">reset_group_number</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3431,13 +3431,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3445,13 +3445,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3459,13 +3459,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3473,13 +3473,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3487,13 +3487,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3501,13 +3501,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3515,13 +3515,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3529,13 +3529,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3543,13 +3543,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3557,13 +3557,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3573,13 +3573,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3589,7 +3589,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_group_number` <a name="reset_group_number" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resetGroupNumber"></a>
+##### `reset_group_number` <a name="reset_group_number" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.resetGroupNumber"></a>
 
 ```python
 def reset_group_number() -> None
@@ -3600,19 +3600,19 @@ def reset_group_number() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentTypeInput">content_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumberInput">group_number_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentInput">content_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentTypeInput">content_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumberInput">group_number_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber">group_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3626,7 +3626,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3636,7 +3636,7 @@ fqn: str
 
 ---
 
-##### `content_input`<sup>Optional</sup> <a name="content_input" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentInput"></a>
+##### `content_input`<sup>Optional</sup> <a name="content_input" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentInput"></a>
 
 ```python
 content_input: str
@@ -3646,7 +3646,7 @@ content_input: str
 
 ---
 
-##### `content_type_input`<sup>Optional</sup> <a name="content_type_input" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentTypeInput"></a>
+##### `content_type_input`<sup>Optional</sup> <a name="content_type_input" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentTypeInput"></a>
 
 ```python
 content_type_input: str
@@ -3656,7 +3656,7 @@ content_type_input: str
 
 ---
 
-##### `group_number_input`<sup>Optional</sup> <a name="group_number_input" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumberInput"></a>
+##### `group_number_input`<sup>Optional</sup> <a name="group_number_input" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumberInput"></a>
 
 ```python
 group_number_input: typing.Union[int, float]
@@ -3666,7 +3666,7 @@ group_number_input: typing.Union[int, float]
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.content"></a>
 
 ```python
 content: str
@@ -3676,7 +3676,7 @@ content: str
 
 ---
 
-##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType"></a>
+##### `content_type`<sup>Required</sup> <a name="content_type" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.contentType"></a>
 
 ```python
 content_type: str
@@ -3686,7 +3686,7 @@ content_type: str
 
 ---
 
-##### `group_number`<sup>Required</sup> <a name="group_number" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber"></a>
+##### `group_number`<sup>Required</sup> <a name="group_number" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.groupNumber"></a>
 
 ```python
 group_number: typing.Union[int, float]
@@ -3696,23 +3696,23 @@ group_number: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | LexBotClarificationPromptMessage
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>
 
 ---
 
 
-### LexBotClarificationPromptOutputReference <a name="LexBotClarificationPromptOutputReference" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference"></a>
+### LexBotClarificationPromptOutputReference <a name="LexBotClarificationPromptOutputReference" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotClarificationPromptOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3722,12 +3722,12 @@ lexBot.LexBotClarificationPromptOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3735,7 +3735,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3747,31 +3747,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage">put_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resetResponseCard">reset_response_card</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage">put_message</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resetResponseCard">reset_response_card</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3779,13 +3779,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3793,13 +3793,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3807,13 +3807,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3821,13 +3821,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3835,13 +3835,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3849,13 +3849,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3863,13 +3863,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3877,13 +3877,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3891,13 +3891,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3905,13 +3905,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3921,13 +3921,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3937,7 +3937,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_message` <a name="put_message" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage"></a>
+##### `put_message` <a name="put_message" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage"></a>
 
 ```python
 def put_message(
@@ -3945,13 +3945,13 @@ def put_message(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.putMessage.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
 
 ---
 
-##### `reset_response_card` <a name="reset_response_card" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resetResponseCard"></a>
+##### `reset_response_card` <a name="reset_response_card" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.resetResponseCard"></a>
 
 ```python
 def reset_response_card() -> None
@@ -3962,19 +3962,19 @@ def reset_response_card() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.message">message</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList">LexBotClarificationPromptMessageList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttemptsInput">max_attempts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput">message_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCardInput">response_card_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttempts">max_attempts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCard">response_card</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.message">message</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList">LexBotClarificationPromptMessageList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttemptsInput">max_attempts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput">message_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCardInput">response_card_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttempts">max_attempts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCard">response_card</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3988,7 +3988,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3998,17 +3998,17 @@ fqn: str
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.message"></a>
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.message"></a>
 
 ```python
 message: LexBotClarificationPromptMessageList
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList">LexBotClarificationPromptMessageList</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessageList">LexBotClarificationPromptMessageList</a>
 
 ---
 
-##### `max_attempts_input`<sup>Optional</sup> <a name="max_attempts_input" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttemptsInput"></a>
+##### `max_attempts_input`<sup>Optional</sup> <a name="max_attempts_input" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttemptsInput"></a>
 
 ```python
 max_attempts_input: typing.Union[int, float]
@@ -4018,17 +4018,17 @@ max_attempts_input: typing.Union[int, float]
 
 ---
 
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput"></a>
+##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.messageInput"></a>
 
 ```python
 message_input: IResolvable | typing.List[LexBotClarificationPromptMessage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPromptMessage">LexBotClarificationPromptMessage</a>]
 
 ---
 
-##### `response_card_input`<sup>Optional</sup> <a name="response_card_input" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCardInput"></a>
+##### `response_card_input`<sup>Optional</sup> <a name="response_card_input" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCardInput"></a>
 
 ```python
 response_card_input: str
@@ -4038,7 +4038,7 @@ response_card_input: str
 
 ---
 
-##### `max_attempts`<sup>Required</sup> <a name="max_attempts" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttempts"></a>
+##### `max_attempts`<sup>Required</sup> <a name="max_attempts" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.maxAttempts"></a>
 
 ```python
 max_attempts: typing.Union[int, float]
@@ -4048,7 +4048,7 @@ max_attempts: typing.Union[int, float]
 
 ---
 
-##### `response_card`<sup>Required</sup> <a name="response_card" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCard"></a>
+##### `response_card`<sup>Required</sup> <a name="response_card" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.responseCard"></a>
 
 ```python
 response_card: str
@@ -4058,23 +4058,23 @@ response_card: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotClarificationPromptOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: LexBotClarificationPrompt
 ```
 
-- *Type:* <a href="#@cdktf/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
+- *Type:* <a href="#@cdktn/provider-aws.lexBot.LexBotClarificationPrompt">LexBotClarificationPrompt</a>
 
 ---
 
 
-### LexBotIntentList <a name="LexBotIntentList" id="@cdktf/provider-aws.lexBot.LexBotIntentList"></a>
+### LexBotIntentList <a name="LexBotIntentList" id="@cdktn/provider-aws.lexBot.LexBotIntentList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotIntentList(
   terraform_resource: IInterpolatingParent,
@@ -4085,13 +4085,13 @@ lexBot.LexBotIntentList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4099,7 +4099,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4107,7 +4107,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.lexBot.LexBotIntentList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4119,15 +4119,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-aws.lexBot.LexBotIntentList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.lexBot.LexBotIntentList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -4139,19 +4139,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-aws.lexBot.LexBotIntentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.lexBot.LexBotIntentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotIntentList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotIntentList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotIntentList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotIntentList.resolve"></a>
 
 ```python
 def resolve(
@@ -4161,13 +4161,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotIntentList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotIntentList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotIntentList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotIntentList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4177,7 +4177,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-aws.lexBot.LexBotIntentList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-aws.lexBot.LexBotIntentList.get"></a>
 
 ```python
 def get(
@@ -4185,7 +4185,7 @@ def get(
 ) -> LexBotIntentOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-aws.lexBot.LexBotIntentList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.lexBot.LexBotIntentList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4198,13 +4198,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotIntentList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotIntentList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4218,7 +4218,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotIntentList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotIntentList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4228,23 +4228,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotIntentList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotIntentList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[LexBotIntent]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>]
 
 ---
 
 
-### LexBotIntentOutputReference <a name="LexBotIntentOutputReference" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference"></a>
+### LexBotIntentOutputReference <a name="LexBotIntentOutputReference" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotIntentOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4256,14 +4256,14 @@ lexBot.LexBotIntentOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4271,7 +4271,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4279,7 +4279,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4287,7 +4287,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4299,29 +4299,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4329,13 +4329,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4343,13 +4343,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4357,13 +4357,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4371,13 +4371,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4385,13 +4385,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4399,13 +4399,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4413,13 +4413,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4427,13 +4427,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4441,13 +4441,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4455,13 +4455,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4471,13 +4471,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4492,17 +4492,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentNameInput">intent_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput">intent_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName">intent_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion">intent_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentNameInput">intent_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput">intent_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName">intent_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion">intent_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4516,7 +4516,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4526,7 +4526,7 @@ fqn: str
 
 ---
 
-##### `intent_name_input`<sup>Optional</sup> <a name="intent_name_input" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentNameInput"></a>
+##### `intent_name_input`<sup>Optional</sup> <a name="intent_name_input" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentNameInput"></a>
 
 ```python
 intent_name_input: str
@@ -4536,7 +4536,7 @@ intent_name_input: str
 
 ---
 
-##### `intent_version_input`<sup>Optional</sup> <a name="intent_version_input" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput"></a>
+##### `intent_version_input`<sup>Optional</sup> <a name="intent_version_input" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersionInput"></a>
 
 ```python
 intent_version_input: str
@@ -4546,7 +4546,7 @@ intent_version_input: str
 
 ---
 
-##### `intent_name`<sup>Required</sup> <a name="intent_name" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName"></a>
+##### `intent_name`<sup>Required</sup> <a name="intent_name" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentName"></a>
 
 ```python
 intent_name: str
@@ -4556,7 +4556,7 @@ intent_name: str
 
 ---
 
-##### `intent_version`<sup>Required</sup> <a name="intent_version" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion"></a>
+##### `intent_version`<sup>Required</sup> <a name="intent_version" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.intentVersion"></a>
 
 ```python
 intent_version: str
@@ -4566,23 +4566,23 @@ intent_version: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotIntentOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | LexBotIntent
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lexBot.LexBotIntent">LexBotIntent</a>
 
 ---
 
 
-### LexBotTimeoutsOutputReference <a name="LexBotTimeoutsOutputReference" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference"></a>
+### LexBotTimeoutsOutputReference <a name="LexBotTimeoutsOutputReference" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_aws import lex_bot
+from cdktn_provider_aws import lex_bot
 
 lexBot.LexBotTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4592,12 +4592,12 @@ lexBot.LexBotTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4605,7 +4605,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4617,32 +4617,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4650,13 +4650,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4664,13 +4664,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4678,13 +4678,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4692,13 +4692,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4706,13 +4706,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4720,13 +4720,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4734,13 +4734,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4748,13 +4748,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4762,13 +4762,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4776,13 +4776,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4792,13 +4792,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4808,19 +4808,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -4831,19 +4831,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4857,7 +4857,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4867,7 +4867,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -4877,7 +4877,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -4887,7 +4887,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -4897,7 +4897,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -4907,7 +4907,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -4917,7 +4917,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -4927,13 +4927,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.lexBot.LexBotTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | LexBotTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.lexBot.LexBotTimeouts">LexBotTimeouts</a>
 
 ---
 

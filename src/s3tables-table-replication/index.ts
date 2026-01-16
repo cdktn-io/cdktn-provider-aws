@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication
+// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +15,27 @@ export interface S3TablesTableReplicationConfig extends cdktf.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}
   */
   readonly tableArn: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
   */
   readonly rule?: S3TablesTableReplicationRule[] | cdktf.IResolvable;
 }
 export interface S3TablesTableReplicationRuleDestination {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}
   */
   readonly destinationTableBucketArn: string;
 }
@@ -150,7 +150,7 @@ export interface S3TablesTableReplicationRule {
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#destination S3TablesTableReplication#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination S3TablesTableReplication#destination}
   */
   readonly destination?: S3TablesTableReplicationRuleDestination[] | cdktf.IResolvable;
 }
@@ -266,7 +266,7 @@ export class S3TablesTableReplicationRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication}
 */
 export class S3TablesTableReplication extends cdktf.TerraformResource {
 
@@ -282,7 +282,7 @@ export class S3TablesTableReplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3TablesTableReplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3TablesTableReplication to import
-  * @param importFromId The id of the existing S3TablesTableReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3TablesTableReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3TablesTableReplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -294,7 +294,7 @@ export class S3TablesTableReplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -305,7 +305,7 @@ export class S3TablesTableReplication extends cdktf.TerraformResource {
       terraformResourceType: 'aws_s3tables_table_replication',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.25.0',
+        providerVersion: '6.28.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
