@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant
+// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,21 +15,21 @@ export interface Sesv2TenantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#region Sesv2Tenant#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#region Sesv2Tenant#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#tags Sesv2Tenant#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#tags Sesv2Tenant#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#tenant_name Sesv2Tenant#tenant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#tenant_name Sesv2Tenant#tenant_name}
   */
   readonly tenantName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant aws_sesv2_tenant}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant aws_sesv2_tenant}
 */
 export class Sesv2Tenant extends cdktf.TerraformResource {
 
@@ -45,7 +45,7 @@ export class Sesv2Tenant extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Sesv2Tenant resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sesv2Tenant to import
-  * @param importFromId The id of the existing Sesv2Tenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Sesv2Tenant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sesv2Tenant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -57,7 +57,7 @@ export class Sesv2Tenant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant aws_sesv2_tenant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant aws_sesv2_tenant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class Sesv2Tenant extends cdktf.TerraformResource {
       terraformResourceType: 'aws_sesv2_tenant',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.28.0',
+        providerVersion: '6.31.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

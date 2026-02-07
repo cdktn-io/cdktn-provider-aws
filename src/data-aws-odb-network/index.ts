@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network
+// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOdbNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,9 +22,99 @@ export interface DataAwsOdbNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#region DataAwsOdbNetwork#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#region DataAwsOdbNetwork#region}
   */
   readonly region?: string;
+}
+export interface DataAwsOdbNetworkManagedServicesKmsAccess {
+}
+
+export function dataAwsOdbNetworkManagedServicesKmsAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesKmsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsOdbNetworkManagedServicesKmsAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesKmsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsOdbNetworkManagedServicesKmsAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOdbNetworkManagedServicesKmsAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOdbNetworkManagedServicesKmsAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // domain_name - computed: true, optional: false, required: false
+  public get domainName() {
+    return this.getStringAttribute('domain_name');
+  }
+
+  // ipv4_addresses - computed: true, optional: false, required: false
+  public get ipv4Addresses() {
+    return this.getListAttribute('ipv4_addresses');
+  }
+
+  // kms_policy_document - computed: true, optional: false, required: false
+  public get kmsPolicyDocument() {
+    return this.getStringAttribute('kms_policy_document');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+}
+
+export class DataAwsOdbNetworkManagedServicesKmsAccessList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOdbNetworkManagedServicesKmsAccessOutputReference {
+    return new DataAwsOdbNetworkManagedServicesKmsAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAwsOdbNetworkManagedServicesManagedS3BackupAccess {
 }
@@ -276,6 +366,96 @@ export class DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList extends 
     return new DataAwsOdbNetworkManagedServicesServiceNetworkEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataAwsOdbNetworkManagedServicesStsAccess {
+}
+
+export function dataAwsOdbNetworkManagedServicesStsAccessToTerraform(struct?: DataAwsOdbNetworkManagedServicesStsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAwsOdbNetworkManagedServicesStsAccessToHclTerraform(struct?: DataAwsOdbNetworkManagedServicesStsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAwsOdbNetworkManagedServicesStsAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAwsOdbNetworkManagedServicesStsAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAwsOdbNetworkManagedServicesStsAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // domain_name - computed: true, optional: false, required: false
+  public get domainName() {
+    return this.getStringAttribute('domain_name');
+  }
+
+  // ipv4_addresses - computed: true, optional: false, required: false
+  public get ipv4Addresses() {
+    return this.getListAttribute('ipv4_addresses');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // sts_policy_document - computed: true, optional: false, required: false
+  public get stsPolicyDocument() {
+    return this.getStringAttribute('sts_policy_document');
+  }
+}
+
+export class DataAwsOdbNetworkManagedServicesStsAccessList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAwsOdbNetworkManagedServicesStsAccessOutputReference {
+    return new DataAwsOdbNetworkManagedServicesStsAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataAwsOdbNetworkManagedServicesZeroTlAccess {
 }
 
@@ -407,6 +587,12 @@ export class DataAwsOdbNetworkManagedServicesOutputReference extends cdktf.Compl
     }
   }
 
+  // kms_access - computed: true, optional: false, required: false
+  private _kmsAccess = new DataAwsOdbNetworkManagedServicesKmsAccessList(this, "kms_access", false);
+  public get kmsAccess() {
+    return this._kmsAccess;
+  }
+
   // managed_s3_backup_access - computed: true, optional: false, required: false
   private _managedS3BackupAccess = new DataAwsOdbNetworkManagedServicesManagedS3BackupAccessList(this, "managed_s3_backup_access", false);
   public get managedS3BackupAccess() {
@@ -438,6 +624,12 @@ export class DataAwsOdbNetworkManagedServicesOutputReference extends cdktf.Compl
   private _serviceNetworkEndpoint = new DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList(this, "service_network_endpoint", false);
   public get serviceNetworkEndpoint() {
     return this._serviceNetworkEndpoint;
+  }
+
+  // sts_access - computed: true, optional: false, required: false
+  private _stsAccess = new DataAwsOdbNetworkManagedServicesStsAccessList(this, "sts_access", false);
+  public get stsAccess() {
+    return this._stsAccess;
   }
 
   // zero_tl_access - computed: true, optional: false, required: false
@@ -547,7 +739,7 @@ export class DataAwsOdbNetworkOciDnsForwardingConfigsList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network aws_odb_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network aws_odb_network}
 */
 export class DataAwsOdbNetwork extends cdktf.TerraformDataSource {
 
@@ -563,7 +755,7 @@ export class DataAwsOdbNetwork extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsOdbNetwork resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsOdbNetwork to import
-  * @param importFromId The id of the existing DataAwsOdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsOdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsOdbNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -575,7 +767,7 @@ export class DataAwsOdbNetwork extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network aws_odb_network} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network aws_odb_network} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -586,7 +778,7 @@ export class DataAwsOdbNetwork extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_odb_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.28.0',
+        providerVersion: '6.31.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

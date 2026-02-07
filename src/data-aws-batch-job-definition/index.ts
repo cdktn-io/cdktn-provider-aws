@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition
+// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}
   */
   readonly name?: string;
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#region DataAwsBatchJobDefinition#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#region DataAwsBatchJobDefinition#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}
   */
   readonly revision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}
   */
   readonly status?: string;
 }
@@ -246,6 +246,11 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecuri
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // allow_privilege_escalation - computed: true, optional: false, required: false
+  public get allowPrivilegeEscalation() {
+    return this.getBooleanAttribute('allow_privilege_escalation');
   }
 
   // privileged - computed: true, optional: false, required: false
@@ -782,6 +787,11 @@ export class DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSe
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // allow_privilege_escalation - computed: true, optional: false, required: false
+  public get allowPrivilegeEscalation() {
+    return this.getBooleanAttribute('allow_privilege_escalation');
   }
 
   // privileged - computed: true, optional: false, required: false
@@ -3721,7 +3731,7 @@ export class DataAwsBatchJobDefinitionTimeoutList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition aws_batch_job_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition aws_batch_job_definition}
 */
 export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
 
@@ -3737,7 +3747,7 @@ export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAwsBatchJobDefinition resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAwsBatchJobDefinition to import
-  * @param importFromId The id of the existing DataAwsBatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAwsBatchJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAwsBatchJobDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3749,7 +3759,7 @@ export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition aws_batch_job_definition} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition aws_batch_job_definition} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3760,7 +3770,7 @@ export class DataAwsBatchJobDefinition extends cdktf.TerraformDataSource {
       terraformResourceType: 'aws_batch_job_definition',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.28.0',
+        providerVersion: '6.31.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
